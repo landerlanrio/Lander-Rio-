@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /business-desk/recebido/
+Disallow: /radar-performance/recebido/
+Sitemap: https://landerrio.com.br/sitemap.xml

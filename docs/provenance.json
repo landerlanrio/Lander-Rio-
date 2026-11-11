@@ -1,0 +1,19 @@
+{
+  "project": "lander-rio-oficial",
+  "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
+  "production_url": "https://landerrio.com.br",
+  "deployment_id": "6af28cd36c8c0ece64548aca",
+  "deployment_published_at_utc": "2026-11-10T03:17:49.936Z",
+  "deployment_source": "api",
+  "source": "ChatGPT Library archive",
+  "source_name": "LANDER_RIO_SITE_COMPLETO_v23_10_SEIS_FEEDBACKS_PREPUBLICACAO.zip",
+  "source_sha256": "62078510fbbfcccc4caf1042234fb48232540c948ca78a034eca034c77b9bfc9",
+  "version": "23.10",
+  "release": "lander-v23.10-seis-registros-recebimento-2026-11-10",
+  "archive_count": 171,
+  "html_count": 81,
+  "manifest_listed_files": 170,
+  "relationship_to_production": "probable matching upload; NOT remote byte-for-byte verified",
+  "source_bundle_contains_original_deploy_zip": false,
+  "created_on": "2026-11-11"
+}

@@ -1,0 +1,697 @@
+{
+  "catalog": {
+    "id": "lander-rio-food-catalog-br",
+    "version": "2026.09.22-v1",
+    "releasedAt": "2026-09-22",
+    "basis": "100 g de parte comestível",
+    "strategy": "Brasil-first: TBCA/TACO → USDA FDC → rótulo da marca",
+    "foods": 36,
+    "schemaVersion": 1,
+    "directVerified": 8,
+    "note": "Estado/preparo faz parte da identidade do alimento; cru e cozido não são intercambiáveis."
+  },
+  "sources": {
+    "TBCA": {
+      "name": "TBCA — Tabela Brasileira de Composição de Alimentos",
+      "url": "https://www.tbca.net.br/",
+      "scope": "Alimentos brasileiros; entradas com código TBCA são validações diretas.",
+      "licenseNote": "Base pública consultável; conferir termos vigentes antes de redistribuição em massa."
+    },
+    "TACO": {
+      "name": "TACO — Tabela Brasileira de Composição de Alimentos, 4ª edição",
+      "url": "https://nepa.unicamp.br/tabela-brasileira-de-composicao-de-alimentos-4a-edicao/",
+      "scope": "Referência brasileira para alimentos e preparações comuns.",
+      "licenseNote": "Publicação do NEPA/UNICAMP disponibilizada publicamente."
+    },
+    "USDA_FDC": {
+      "name": "USDA FoodData Central",
+      "url": "https://fdc.nal.usda.gov/",
+      "scope": "Fallback para alimentos genéricos sem equivalente brasileiro adequado.",
+      "licenseNote": "Dados em domínio público/CC0; API de produção exige chave mantida no servidor."
+    },
+    "LABEL": {
+      "name": "Rótulo do fabricante",
+      "url": null,
+      "scope": "Suplementos e industrializados com variação material entre marcas.",
+      "licenseNote": "O rótulo do produto efetivamente consumido prevalece."
+    }
+  },
+  "foods": [
+    {
+      "id": "arroz",
+      "name": "Arroz branco polido, cozido, sem óleo e sem sal",
+      "state": "cozido",
+      "role": "carb",
+      "kcal": 131,
+      "p": 2.38,
+      "c": 30,
+      "f": 0.41,
+      "fiber": 1.2,
+      "source": {
+        "provider": "TBCA",
+        "code": "BRC0018A",
+        "reference": "Arroz polido, cozido, s/ óleo, s/ sal, Brasil",
+        "status": "direct-verified",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "feijao",
+      "name": "Feijão carioca cozido com caldo",
+      "state": "cozido",
+      "role": "legume",
+      "kcal": 76,
+      "p": 4.8,
+      "c": 13.6,
+      "f": 0.5,
+      "fiber": 8.5,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição — feijão carioca cozido",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "frango",
+      "name": "Peito de frango grelhado",
+      "state": "cozido",
+      "role": "protein",
+      "kcal": 159,
+      "p": 32,
+      "c": 0,
+      "f": 2.5,
+      "fiber": 0,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "patinho",
+      "name": "Patinho bovino magro",
+      "state": "cozido",
+      "role": "protein",
+      "kcal": 219,
+      "p": 35.9,
+      "c": 0,
+      "f": 7.3,
+      "fiber": 0,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "ovo",
+      "name": "Ovo de galinha inteiro, cozido, sem sal",
+      "state": "cozido",
+      "role": "protein",
+      "kcal": 125,
+      "p": 10.4,
+      "c": 1.38,
+      "f": 8.7,
+      "fiber": 0,
+      "source": {
+        "provider": "TBCA",
+        "code": "BRC0010J",
+        "reference": "Ovo, galinha, inteiro, cozido, s/ sal, Brasil",
+        "status": "direct-verified",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "clara_ovo",
+      "name": "Clara de ovo",
+      "state": "cozido",
+      "role": "protein",
+      "kcal": 48,
+      "p": 10.9,
+      "c": 0.7,
+      "f": 0.2,
+      "fiber": 0,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "tilapia",
+      "name": "Tilápia grelhada",
+      "state": "cozido",
+      "role": "protein",
+      "kcal": 128,
+      "p": 26,
+      "c": 0,
+      "f": 2.7,
+      "fiber": 0,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "sardinha",
+      "name": "Sardinha",
+      "state": "cozido",
+      "role": "protein",
+      "kcal": 208,
+      "p": 24.6,
+      "c": 0,
+      "f": 11.5,
+      "fiber": 0,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "pao",
+      "name": "Pão integral",
+      "state": "pronto",
+      "role": "carb",
+      "kcal": 253,
+      "p": 9.4,
+      "c": 49,
+      "f": 3.7,
+      "fiber": 6.5,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "tapioca",
+      "name": "Tapioca preparada",
+      "state": "pronto",
+      "role": "carb",
+      "kcal": 232,
+      "p": 0.4,
+      "c": 57.5,
+      "f": 0.1,
+      "fiber": 0.2,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "cuscuz",
+      "name": "Cuscuz de milho cozido no vapor, sem sal",
+      "state": "cozido",
+      "role": "carb",
+      "kcal": 109,
+      "p": 2.16,
+      "c": 24.7,
+      "f": 0.68,
+      "fiber": 2.05,
+      "source": {
+        "provider": "TBCA",
+        "code": "BRC0409A",
+        "reference": "Farinha de milho, cuscuz, cozido no vapor, s/ sal, Brasil",
+        "status": "direct-verified",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "aveia",
+      "name": "Aveia em flocos",
+      "state": "seco",
+      "role": "carb",
+      "kcal": 394,
+      "p": 13.9,
+      "c": 66.6,
+      "f": 8.5,
+      "fiber": 9.1,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "leite",
+      "name": "Leite semidesnatado",
+      "state": "líquido",
+      "role": "dairy",
+      "kcal": 46,
+      "p": 3.2,
+      "c": 4.8,
+      "f": 1.6,
+      "fiber": 0,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "iogurte",
+      "name": "Iogurte natural, média de amostras",
+      "state": "pronto",
+      "role": "dairy",
+      "kcal": 57,
+      "p": 4.02,
+      "c": 4.76,
+      "f": 2.43,
+      "fiber": 0,
+      "source": {
+        "provider": "TBCA",
+        "code": "BRC0020G",
+        "reference": "Iogurte, natural, Brasil (média de diferentes amostras)",
+        "status": "direct-verified",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "queijo",
+      "name": "Queijo Minas frescal",
+      "state": "pronto",
+      "role": "protein",
+      "kcal": 243,
+      "p": 15.9,
+      "c": 3.02,
+      "f": 18.6,
+      "fiber": 0,
+      "source": {
+        "provider": "TBCA",
+        "code": "BRC0052G",
+        "reference": "Queijo, Minas, frescal, Brasil",
+        "status": "direct-verified",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "whey",
+      "name": "Whey protein",
+      "state": "pó",
+      "role": "protein",
+      "kcal": 400,
+      "p": 78,
+      "c": 8,
+      "f": 6,
+      "fiber": 0,
+      "source": {
+        "provider": "LABEL",
+        "reference": "Rótulo nutricional da marca escolhida",
+        "status": "variable-by-brand",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": true
+    },
+    {
+      "id": "proteina_vegetal",
+      "name": "Proteína vegetal em pó (ervilha/arroz)",
+      "state": "pó",
+      "role": "protein",
+      "kcal": 380,
+      "p": 75,
+      "c": 10,
+      "f": 5,
+      "fiber": 3,
+      "source": {
+        "provider": "LABEL",
+        "reference": "Rótulo nutricional da marca escolhida",
+        "status": "variable-by-brand",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": true
+    },
+    {
+      "id": "banana",
+      "name": "Banana prata, in natura",
+      "state": "cru",
+      "role": "fruit",
+      "kcal": 107,
+      "p": 1.11,
+      "c": 25.9,
+      "f": 0.28,
+      "fiber": 1.95,
+      "source": {
+        "provider": "TBCA",
+        "code": "BRC0011C",
+        "reference": "Banana, prata, in natura, Brasil",
+        "status": "direct-verified",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "maca",
+      "name": "Maçã",
+      "state": "cru",
+      "role": "fruit",
+      "kcal": 56,
+      "p": 0.3,
+      "c": 15.2,
+      "f": 0.2,
+      "fiber": 2.1,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "mamao",
+      "name": "Mamão",
+      "state": "cru",
+      "role": "fruit",
+      "kcal": 40,
+      "p": 0.5,
+      "c": 10.4,
+      "f": 0.1,
+      "fiber": 1,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "batata",
+      "name": "Batata inglesa sem casca, cozida e drenada, sem óleo/sal",
+      "state": "cozido",
+      "role": "carb",
+      "kcal": 52,
+      "p": 1.33,
+      "c": 12.3,
+      "f": 0.05,
+      "fiber": 1.47,
+      "source": {
+        "provider": "TBCA",
+        "code": "BRC0041B",
+        "reference": "Batata, inglesa, s/ casca, cozida, drenada, s/ óleo, s/ sal, Brasil",
+        "status": "direct-verified",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "batata_doce",
+      "name": "Batata-doce cozida",
+      "state": "cozido",
+      "role": "carb",
+      "kcal": 77,
+      "p": 0.6,
+      "c": 18.4,
+      "f": 0.1,
+      "fiber": 2.2,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "mandioca",
+      "name": "Mandioca cozida",
+      "state": "cozido",
+      "role": "carb",
+      "kcal": 125,
+      "p": 0.6,
+      "c": 30.1,
+      "f": 0.3,
+      "fiber": 1.6,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "macarrao",
+      "name": "Macarrão de trigo refinado, cozido, sem óleo/sal",
+      "state": "cozido",
+      "role": "carb",
+      "kcal": 161,
+      "p": 4.57,
+      "c": 34.7,
+      "f": 0.74,
+      "fiber": 1.17,
+      "source": {
+        "provider": "TBCA",
+        "code": "BRD0006A",
+        "reference": "Macarrão, c/ farinha de trigo refinada, cozido, s/ óleo, s/ sal, Brasil",
+        "status": "direct-verified",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "azeite",
+      "name": "Azeite de oliva (salada/preparo)",
+      "state": "líquido",
+      "role": "fat",
+      "kcal": 884,
+      "p": 0,
+      "c": 0,
+      "f": 100,
+      "fiber": 0,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "abacate",
+      "name": "Abacate",
+      "state": "cru",
+      "role": "fat",
+      "kcal": 96,
+      "p": 1.2,
+      "c": 6,
+      "f": 8.4,
+      "fiber": 6.3,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "pasta_amendoim",
+      "name": "Pasta de amendoim",
+      "state": "pronto",
+      "role": "fat",
+      "kcal": 588,
+      "p": 25,
+      "c": 20,
+      "f": 50,
+      "fiber": 6,
+      "source": {
+        "provider": "USDA_FDC",
+        "reference": "USDA FoodData Central — alimento genérico equivalente",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "brocolis",
+      "name": "Brócolis cozido",
+      "state": "cozido",
+      "role": "veg",
+      "kcal": 25,
+      "p": 2.1,
+      "c": 4.4,
+      "f": 0.4,
+      "fiber": 3.4,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "cenoura",
+      "name": "Cenoura cozida",
+      "state": "cozido",
+      "role": "veg",
+      "kcal": 30,
+      "p": 0.8,
+      "c": 6.7,
+      "f": 0.2,
+      "fiber": 2.6,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "tomate",
+      "name": "Tomate",
+      "state": "cru",
+      "role": "veg",
+      "kcal": 18,
+      "p": 0.9,
+      "c": 3.9,
+      "f": 0.2,
+      "fiber": 1.2,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "alface",
+      "name": "Alface",
+      "state": "cru",
+      "role": "veg",
+      "kcal": 15,
+      "p": 1.4,
+      "c": 2.9,
+      "f": 0.2,
+      "fiber": 1.3,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "lentilha",
+      "name": "Lentilha cozida",
+      "state": "cozido",
+      "role": "protein",
+      "kcal": 93,
+      "p": 6.3,
+      "c": 16.3,
+      "f": 0.5,
+      "fiber": 7.9,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "grao_bico",
+      "name": "Grão-de-bico cozido",
+      "state": "cozido",
+      "role": "protein",
+      "kcal": 164,
+      "p": 8.9,
+      "c": 27.4,
+      "f": 2.6,
+      "fiber": 7.6,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu firme",
+      "state": "pronto",
+      "role": "protein",
+      "kcal": 92,
+      "p": 10.1,
+      "c": 2.3,
+      "f": 5.3,
+      "fiber": 1,
+      "source": {
+        "provider": "USDA_FDC",
+        "reference": "USDA FoodData Central — alimento genérico equivalente",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "pts",
+      "name": "Proteína texturizada de soja",
+      "state": "seco",
+      "role": "protein",
+      "kcal": 330,
+      "p": 50,
+      "c": 30,
+      "f": 1,
+      "fiber": 14,
+      "source": {
+        "provider": "TACO",
+        "reference": "Tabela Brasileira de Composição de Alimentos (TACO), 4ª edição",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    },
+    {
+      "id": "castanhas",
+      "name": "Castanhas",
+      "state": "pronto",
+      "role": "fat",
+      "kcal": 607,
+      "p": 20,
+      "c": 21,
+      "f": 54,
+      "fiber": 7,
+      "source": {
+        "provider": "USDA_FDC",
+        "reference": "USDA FoodData Central — alimento genérico equivalente",
+        "status": "reference-mapped",
+        "verifiedAt": "2026-09-22"
+      },
+      "requiresLabelConfirmation": false
+    }
+  ]
+}

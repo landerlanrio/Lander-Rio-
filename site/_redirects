@@ -1,0 +1,24 @@
+/api/nutrition/lead https://artcokrtuqppgtawuczq.supabase.co/functions/v1/nutrition-entry 200!
+/api/workout/lead https://artcokrtuqppgtawuczq.supabase.co/functions/v1/workout-entry 200!
+/api/instagram/latest https://artcokrtuqppgtawuczq.supabase.co/functions/v1/instagram-latest 200!
+
+/performance-lab/  /treino/  301!
+/performance-lab/*  /treino/  301!
+/performance-club/  /treino/  301!
+/atacado.html /atacado/ 301
+/varejo.html /varejo/ 301
+/marcas.html /marcas/ 301
+/sobre.html /sobre/ 301
+/contato.html /contato/ 301
+/faq /perguntas-frequentes/ 301
+/privacidade.html /privacidade 301
+/termos.html /termos 301
+/dieta.html /dieta/ 301
+/nutrition /dieta/ 301
+/nutrition-blueprint /dieta/ 301
+
+/procedencia /autenticidade/ 301
+/procedencia/ /autenticidade/ 301
+
+/comece/ /contato/ 301
+/comecar/ /contato/ 301

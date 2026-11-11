@@ -1,0 +1,39 @@
+/* LANDER RIO | Recebimentos — v23.9 — proof-first, privacy-first, no claims of verification */
+.lr-receipts{position:relative;padding:90px 0 82px;background:#111511;color:var(--paper);border-top:1px solid #2f392c;border-bottom:1px solid #303a2e;isolation:isolate}
+.lr-receipts:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 64% 48% at 95% 0%,rgba(209,237,105,.063),transparent 74%)}
+.lr-receipts-heading{display:grid;grid-template-columns:1.25fr .7fr;gap:42px;align-items:end;margin-bottom:35px}
+.lr-receipts .kicker{color:#c4d2b7;font-size:10px;letter-spacing:.17em}
+.lr-receipts h2{margin-top:21px;font-size:clamp(38px,4.3vw,60px);line-height:1.04;letter-spacing:-.052em;max-width:730px;font-weight:560}
+.lr-receipts h2 em{font-style:normal;color:var(--lime)}
+.lr-receipts-aside{padding-bottom:3px;max-width:440px}
+.lr-receipts-aside p{color:#bdc6b8;font-size:15px;line-height:1.75}
+.lr-receipts-aside p+p{margin-top:12px}
+.lr-receipts-link{display:inline-flex;align-items:center;justify-content:space-between;gap:30px;min-height:48px;margin-top:19px;border-bottom:1px solid var(--lime);color:var(--paper);font-size:14px;font-weight:650}
+.lr-receipts-link:hover{color:var(--lime);text-decoration:none}
+.lr-receipts-link span{color:var(--lime);font-size:22px}
+.lr-receipts-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.lr-receipts-grid--home{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lr-receipt-card{overflow:hidden;min-width:0;display:flex;flex-direction:column;border:1px solid #3d4638;background:#191d19;border-radius:6px}
+.lr-receipt-image-link{position:relative;display:block;overflow:hidden;min-height:230px;height:245px;background:#272b26;border-bottom:1px solid #3e4638}
+.lr-receipt-image-link img{width:100%;height:100%;object-fit:cover;object-position:center 43%;filter:saturate(.82);transition:transform .35s ease}
+.lr-receipt-image-link:hover img{transform:scale(1.025)}
+.lr-receipt-image-note{position:absolute;bottom:11px;left:11px;right:11px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;background:rgba(14,18,14,.88);border:1px solid #ffffff38;backdrop-filter:blur(6px);color:#edf2e9;border-radius:3px;font-size:11px;font-weight:580}
+.lr-receipt-image-note span{color:var(--lime);font-size:18px}
+.lr-receipt-copy{padding:22px 19px 26px;flex:1;display:flex;flex-direction:column}
+.lr-receipt-number{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 12px;color:var(--lime);font-size:9px;letter-spacing:.13em;font-weight:700}
+.lr-receipt-number span:last-child{color:#b4c0a9}
+.lr-receipt-copy h3{margin-top:17px;font-size:20px;letter-spacing:-.032em;font-weight:590}
+.lr-receipt-quote{margin:18px 0 0;padding:0;border:0;font-size:18px;font-weight:510;line-height:1.52;letter-spacing:-.02em;color:#f2f5ee;max-width:35ch}
+.lr-receipt-quote--quiet{color:#c5cdbc;font-size:17px}
+.lr-receipt-context{margin-top:auto;padding-top:22px;color:#a7b1a1;font-size:12px;line-height:1.6}
+.lr-receipts-disclosure{display:flex;align-items:flex-start;gap:25px;margin-top:25px;padding-top:18px;border-top:1px solid #364133}
+.lr-receipts-disclosure span{flex:0 0 215px;color:var(--lime);font-size:10px;font-weight:670;letter-spacing:.12em;line-height:1.7}
+.lr-receipts-disclosure p{color:#aebaa9;font-size:12px;line-height:1.7;max-width:850px}
+.lr-receipts--detail{padding:65px 0 90px;margin-top:25px}
+.lr-receipts--detail .lr-receipt-copy h3{font-size:19px}
+.lr-receipts--detail .lr-receipt-quote{font-size:16px}
+.lr-receipts-mini{font-size:12px!important;color:#a9b5a4!important}
+@media(max-width:1150px){.lr-receipts-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lr-receipts-grid--home{grid-template-columns:repeat(3,minmax(0,1fr))}.lr-receipt-number{font-size:8px}.lr-receipt-quote{font-size:16px}}
+@media(max-width:780px){.lr-receipts{padding:62px 0}.lr-receipts-heading{grid-template-columns:1fr;gap:17px}.lr-receipts-grid--home{grid-template-columns:repeat(2,minmax(0,1fr))}.lr-receipt-image-link{height:245px}.lr-receipts-disclosure{display:block}.lr-receipts-disclosure p{margin-top:9px}}
+@media(max-width:600px){.lr-receipts{padding:51px 0 59px}.lr-receipts-heading{gap:17px;margin-bottom:25px}.lr-receipts .kicker{font-size:9px}.lr-receipts h2{margin-top:17px;font-size:clamp(33px,9vw,43px)}.lr-receipts-aside p{font-size:14px}.lr-receipts-grid,.lr-receipts-grid--home{grid-template-columns:1fr;gap:15px}.lr-receipt-image-link{height:236px;min-height:0}.lr-receipt-copy{padding:20px 18px 22px}.lr-receipt-copy h3{margin-top:12px;font-size:21px}.lr-receipt-quote{margin-top:10px;font-size:18px}.lr-receipt-context{padding-top:13px;font-size:12px}.lr-receipts--detail{padding:53px 0 66px}.lr-receipts-disclosure{margin-top:23px}.lr-receipts-disclosure span{display:block;max-width:100%}}
+@media(prefers-reduced-motion:reduce){.lr-receipt-image-link img{transition:none}}

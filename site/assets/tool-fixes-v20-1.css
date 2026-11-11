@@ -1,0 +1,16 @@
+/* Accessibility corrections preserve the training engine and the access gate. */
+.tb-progress .tb-steps li{opacity:1}
+.tb-progress .tb-steps li:not(.active):not(.complete)>span{color:#abb8a5;border-color:#687762}
+.tb-progress .tb-steps li:not(.active):not(.complete) strong{color:#b7c5b2}
+.tb-cardio-summary p:not(.tb-eyebrow){color:#b4c4ae}
+.tb-day-tab[aria-pressed=true]{color:#111b0d;background:#d1ed69;border-color:#a6bf6f}
+.diet-coach-page .shell,.diet-coach-page main,.diet-coach-page section,.diet-coach-page .panel{min-width:0;max-width:100%}
+.diet-coach-page .seo-header-inner{flex-wrap:wrap;min-width:0}
+.diet-coach-page .seo-nav{flex-wrap:wrap;min-width:0}
+.diet-coach-page [hidden]{display:none!important}
+.diet-coach-page::before{inset:0}
+.diet-coach-page .hero::before,.diet-coach-page .hero::after{content:none!important}
+.diet-coach-page .hero h1{font-size:clamp(2.5rem,7vw,4.75rem)!important;line-height:1.04!important;max-width:760px!important;letter-spacing:-.045em!important}
+.diet-coach-page .seo-header{margin-inline:auto}
+.diet-coach-page .shell .topbar{position:relative!important;top:auto!important;width:100%!important;border-radius:12px}
+@media(max-width:600px){.diet-coach-page .seo-header-inner{gap:10px;padding:12px 0}.diet-coach-page .seo-nav{gap:8px 16px}.diet-coach-page .seo-nav a{display:inline-flex;min-height:40px;align-items:center}}

@@ -1,24 +1,44 @@
-# LANDER RIO — PERFORMANCE CULTURE
+# LANDER RIO — Site oficial (base recuperada v23.10)
 
-Repositório **privado** de versionamento do site oficial `https://landerrio.com.br`.
+Repositório **destinado a ser privado**. Não publicar esta pasta em um repositório público.
 
-## Estado da migração
+## Estado e procedência
 
-A conta GitHub foi autorizada. O pacote de recuperação **v23.10** está preparado e validado localmente, mas **ainda não foi importado nesta branch**. Evite conectar esta `main` vazia à produção Netlify.
+- Fonte: `LANDER_RIO_SITE_COMPLETO_v23_10_SEIS_FEEDBACKS_PREPUBLICACAO.zip`, recuperado da Biblioteca da LANDER RIO.
+- Release do pacote: `lander-v23.10-seis-registros-recebimento-2026-11-10`.
+- Site de referência: https://landerrio.com.br.
+- Projeto Netlify (produção): `lander-rio-oficial`, ID `1632727b-a57d-4edb-85f7-9fc99bc98842`.
+- Deploy de referência: `6af28cd36c8c0ece64548aca`, publicado em 10/11/2026.
+- **Reconstrução de alta confiança, mas sem prova de igualdade byte a byte com o deploy Netlify**. O ZIP foi criado minutos antes do deploy; o total de 81 páginas HTML bate com o relatório de publicação da Netlify; a home pública contém os 6 relatos de recebimento. O arquivo ZIP original do deploy não foi extraído da infraestrutura Netlify neste procedimento.
+- Nenhuma operação foi executada no site de produção.
 
-**Backup Git preparado:** `LANDER_RIO_GIT_HISTORICO_V23_10.bundle`
+## Estrutura
 
-- SHA-256 esperado: `e79270f432bfd19117c28ef1308ba262600e0a7c073f16956199fc94137b2405`
-- Commit local validado: `d2492636da0841b8ae26025b078841a8cc40930e`
-- Site Netlify: `lander-rio-oficial`
-- Deploy de referência: `6af28cd36c8c0ece64548aca` (10/11/2026)
-- Origem: ZIP v23.10 recuperado da Biblioteca; **não foi demonstrada igualdade byte a byte com o deploy publicado**.
+- `site/` — cópia original dos 171 arquivos do pacote de publicação, sem qualquer alteração de conteúdo.
+- `site/_headers`, `site/_redirects` — regras existentes preservadas.
+- `site/netlify.toml` — configuração original preservada para rastreabilidade.
+- `netlify.toml` — configuração do repositório com diretório de publicação `site` e testes antes do build.
+- `.github/workflows/ci.yml` — CI somente para validação, **sem deploy e sem secrets**.
+- `scripts/` — verificação de integridade, referências e testes HTTP.
+- `docs/` — procedência, segurança e procedimento de migração.
 
-## Segurança operacional
+## Testes (sem dependências externas)
 
-1. Manter este repositório **Private**.
-2. Importar a cópia validada em `staging`, conservando o histórico no branch de recuperação.
-3. Executar os testes automatizados antes de qualquer merge em `main`.
-4. Não ativar deploy automático na Netlify em produção sem homologação, aprovação e plano de rollback.
+```bash
+python3 scripts/verify_site.py
+python3 scripts/smoke_http.py
+# opcional, se Node.js estiver disponível:
+find site -name '*.js' -type f -print0 | xargs -0 -n1 node --check
+```
 
-O código do website ainda precisa ser importado. Este README é apenas a inicialização segura do repositório.
+## Implantação segura
+
+Não conecte este repositório diretamente à produção antes de validar uma prévia isolada.
+
+1. Criar repositório GitHub **privado** e enviar `main`, `staging` e a tag de baseline.
+2. Configurar CI obrigatória e proteção da branch `main` quando a conta/permissões permitirem.
+3. Criar um **novo site de prévia** Netlify ligado à branch `staging`; a configuração deve manter a produção atual sem vínculo e sem alterações.
+4. Validar páginas, formulários, navegação, Analytics/privacidade, links WhatsApp e APIs Supabase em ambiente de prévia.
+5. Somente após aprovação, considerar uma migração do projeto de produção para deploy contínuo, com rollback pronto.
+
+**Status:** Git local preparado; repositório privado remoto e conexão Netlify ainda pendentes de permissões adequadas. Consulte [docs/MIGRACAO_SEGURA.md](docs/MIGRACAO_SEGURA.md).

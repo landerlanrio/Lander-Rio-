@@ -1,0 +1,9 @@
+"$schema" = "https://open-api.netlify.com/netlify.schema.json"
+
+[build]
+  publish = "site"
+  command = "python3 scripts/verify_site.py && python3 scripts/smoke_http.py"
+
+# Production deploys must remain disabled until explicit approval.
+# This file does NOT connect the repository to Netlify.
+# The historic site/netlify.toml is preserved byte-for-byte from the archive.

@@ -1,0 +1,5 @@
+[build]
+  publish = "."
+
+# Static release: no build or environment secrets required.
+# Existing forms and redirects are preserved. Both tools use the existing Supabase APIs.

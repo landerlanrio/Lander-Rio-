@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "manifest_sha256_pass": 170,
+  "site_files": 171,
+  "html_pages": 81,
+  "html_references_checked": 3415,
+  "sitemap_urls": 78,
+  "json_files": 11,
+  "http_routes_passed": 15,
+  "javascript_files_syntax_passed": 24,
+  "tests_environment": "local, static HTTP only, no real browser or remote Supabase/WhatsApp/form tests",
+  "remote_production_hash_comparison": false,
+  "css_asset_references_checked": 4
+}

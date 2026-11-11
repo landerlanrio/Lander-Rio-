@@ -1,0 +1,18 @@
+/* LANDER RIO — editorial encyclopedia integration v23.3 */
+.site-head .main-nav a[href="/enciclopedia/"]{color:#d1ed69}
+.lr-encyclopedia-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:25px 28px;margin:22px 0 21px;border:1px solid #596a40;border-radius:14px;background:linear-gradient(105deg,#151b14,#202a19 70%,#172015);color:#f4f5ee;text-decoration:none!important;transition:border-color .15s ease,transform .15s ease}
+.lr-encyclopedia-banner:hover{border-color:#d1ed69;transform:translateY(-2px)}
+.lr-encyclopedia-banner-body{display:flex;flex-direction:column;gap:7px;max-width:760px}
+.lr-encyclopedia-banner-body small{font-size:10px;color:#d1ed69;font-weight:750;letter-spacing:.15em}
+.lr-encyclopedia-banner-body strong{font-size:clamp(21px,2.3vw,31px);line-height:1.12;letter-spacing:-.035em}
+.lr-encyclopedia-banner-body>span{color:#bcc8b7;font-size:13px;line-height:1.55}
+.lr-encyclopedia-banner-action{color:#d1ed69;white-space:nowrap;font-size:13px;font-weight:700}
+@media(max-width:780px){.site-head .main-nav{gap:12px}.site-head .main-nav a{font-size:11px}.lr-encyclopedia-banner{padding:20px;align-items:flex-start;flex-direction:column;gap:14px}.lr-encyclopedia-banner-action{font-size:13px}}
+@media(max-width:600px){.site-head .main-nav a{font-size:14px}}
+
+/* Edition v23.4: align editorial entry to brand typography and color. */
+.lr-encyclopedia-banner{border-radius:4px;border-color:#4e5b3e;background:linear-gradient(108deg,#151c15 0%,#202c1b 100%);padding:30px 32px;min-height:150px}
+.lr-encyclopedia-banner-body strong{font-weight:600;letter-spacing:-.05em;font-size:clamp(24px,2.55vw,36px)}
+.lr-encyclopedia-banner-body>span{font-size:14px;color:#e0e6dc}
+.lr-encyclopedia-banner-action{color:#d1ed69;font-size:14px;border-bottom:1px solid #d1ed69;padding-bottom:6px}
+@media(max-width:620px){.lr-encyclopedia-banner{padding:25px 22px;min-height:auto}.lr-encyclopedia-banner-body strong{font-size:27px}}

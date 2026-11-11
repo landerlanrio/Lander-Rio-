@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - LANDER_RIO_GIT_HISTORICO_V23_10.bundle
+      - .github/workflows/import-backup.yml
 
 permissions:
   contents: write

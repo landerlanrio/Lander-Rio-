@@ -1,0 +1,63 @@
+name: LANDER RIO | Importar backup Git validado
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - LANDER_RIO_GIT_HISTORICO_V23_10.bundle
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lander-rio-importacao-v23-10
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.repository == 'landerlanrio/Lander-Rio-'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Verificar SHA-256 e integridade do bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "e79270f432bfd19117c28ef1308ba262600e0a7c073f16956199fc94137b2405  LANDER_RIO_GIT_HISTORICO_V23_10.bundle" | sha256sum -c -
+          git bundle verify LANDER_RIO_GIT_HISTORICO_V23_10.bundle
+
+      - name: Importar historico e validar site sem publicar
+        shell: bash
+        run: |
+          set -euo pipefail
+          BUNDLE="LANDER_RIO_GIT_HISTORICO_V23_10.bundle"
+          EXPECTED="d2492636da0841b8ae26025b078841a8cc40930e"
+          SOURCE_SHA="$(git bundle list-heads "$BUNDLE" | awk '$2=="refs/heads/main" {print $1}')"
+          test "$SOURCE_SHA" = "$EXPECTED"
+          test -z "$(git ls-remote --heads origin staging)"
+          test -z "$(git ls-remote --heads origin recovery-v23-10)"
+          git fetch "$BUNDLE" "refs/heads/main:refs/remotes/recovered/main"
+          test "$(git ls-tree -r --name-only "$SOURCE_SHA" site | wc -l | tr -d ' ')" -eq 171
+          git switch -c staging
+          git restore --source="$SOURCE_SHA" --staged --worktree -- .github/workflows/ci.yml .gitignore README.md docs netlify.toml scripts site
+          git rm -f --ignore-unmatch "$BUNDLE"
+          python3 scripts/verify_site.py
+          python3 scripts/smoke_http.py
+          find site -type f -name '*.js' -print0 | xargs -0 -r -n1 node --check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: import validated LANDER RIO v23.10 site to staging"
+          git push origin "$SOURCE_SHA:refs/heads/recovery-v23-10"
+          git push --set-upstream origin staging
+
+      - name: Registrar resultado sem deploy
+        shell: bash
+        run: |
+          echo "Importacao validada: branch staging criada e historico preservado em recovery-v23-10." >> "$GITHUB_STEP_SUMMARY"
+          echo "Nao houve publicacao no Netlify. Revise e abra um pull request para main." >> "$GITHUB_STEP_SUMMARY"

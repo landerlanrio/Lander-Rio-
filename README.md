@@ -35,10 +35,10 @@ find site -name '*.js' -type f -print0 | xargs -0 -n1 node --check
 
 Não conecte este repositório diretamente à produção antes de validar uma prévia isolada.
 
-1. Criar repositório GitHub **privado** e enviar `main`, `staging` e a tag de baseline.
-2. Configurar CI obrigatória e proteção da branch `main` quando a conta/permissões permitirem.
+1. Repositório GitHub **privado** criado; `staging` e `recovery-v23-10` disponíveis. O histórico Git original está preservado no arquivo `.bundle` no histórico de `main` (a tag de origem não foi enviada ao remoto).
+2. CI de verificação criada em `.github/workflows/ci.yml`; revisar exigência de aprovação e proteção da branch `main` antes da migração.
 3. Criar um **novo site de prévia** Netlify ligado à branch `staging`; a configuração deve manter a produção atual sem vínculo e sem alterações.
 4. Validar páginas, formulários, navegação, Analytics/privacidade, links WhatsApp e APIs Supabase em ambiente de prévia.
 5. Somente após aprovação, considerar uma migração do projeto de produção para deploy contínuo, com rollback pronto.
 
-**Status:** Git local preparado; repositório privado remoto e conexão Netlify ainda pendentes de permissões adequadas. Consulte [docs/MIGRACAO_SEGURA.md](docs/MIGRACAO_SEGURA.md).
+**Status em 11/11/2026:** repositório privado confirmado; os 171 arquivos do pacote foram importados em `staging` e preservados em `recovery-v23-10`. O backup Git original continua no histórico de `main`, e a validação automatizada foi instalada sem qualquer job de deploy. **A produção do Netlify não foi vinculada ao GitHub.** A versão recuperada não tem equivalência byte a byte confirmada com o deploy de produção. Consulte [docs/MIGRACAO_SEGURA.md](docs/MIGRACAO_SEGURA.md).

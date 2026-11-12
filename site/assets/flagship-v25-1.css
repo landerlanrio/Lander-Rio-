@@ -101,3 +101,8 @@
 @media(max-width:360px){.flagship-v25 .v251-brands .brand-strip-title{font-size:42px}.flagship-v25 .v251-hero-shortcuts a{font-size:10px;padding-inline:8px}}
 @media(prefers-reduced-motion:reduce){.flagship-v25 .v251-brands .brand-card,.flagship-v25 .v251-commercial .v251-channel{transition:none!important;transform:none!important}}
 @media print{.flagship-v25 .v251-brands .brand-track{flex-wrap:wrap;overflow:visible}.flagship-v25 .v251-commercial .profiles{display:block}.flagship-v25 .v251-commercial .v251-channel{min-height:0;break-inside:avoid}}
+/* QA mobile refinement: headline must not isolate the word "AS" on its own line. */
+@media(max-width:600px){
+ .flagship-v25 .v251-brands .brand-strip-head{display:block}
+ .flagship-v25 .v251-brands .brand-strip-controls{display:flex;justify-content:flex-end;margin:14px 0 0}
+}

@@ -96,3 +96,11 @@ test('proposed SQL isolates access and records idempotency',()=>{
  assert.match(sql,/revoke all on all tables in schema revenue_intelligence from public, anon, authenticated/);
  assert.match(sql,/revoke all on all sequences in schema revenue_intelligence from public, anon, authenticated/);
 });
+
+test('UTC timestamps with or without millisecond fractions sort chronologically',()=>{
+ const x=ev('whatsapp_open_click','z-first',{occurred_at:'2026-11-01T12:00:00Z'});
+ const y=ev('conversation_confirmed','a-second',{...evidence,occurred_at:'2026-11-01T12:00:00.001Z'});
+ const r=reconcile([y,x]);
+ assert.equal(r.rejected_count,0);
+ assert.equal(r.opportunities[0].confirmed_conversation,true);
+});

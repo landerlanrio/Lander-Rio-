@@ -12,7 +12,12 @@ function reconcile(rows){
  if(!Array.isArray(rows))throw new TypeError('events must be an array');
  const ids=new Set(),byReference=new Map(),rejected=[];
  // Preserve input order as the tie-breaker when timestamps are identical.
- const ordered=[...rows].sort((a,b)=>String(a?.occurred_at||'').localeCompare(String(b?.occurred_at||'')));
+ const ordered=[...rows].sort((a,b)=>{
+  const left=Date.parse(a?.occurred_at||''),right=Date.parse(b?.occurred_at||'');
+  if(!Number.isFinite(left))return Number.isFinite(right)?1:0;
+  if(!Number.isFinite(right))return -1;
+  return left-right;
+ });
  for(const e of ordered){
   if(!e||typeof e!=='object'||Array.isArray(e)||typeof e.event_id!=='string'||!e.event_id.trim()||e.event_id.length>128||ids.has(e.event_id)){rejected.push('duplicate_or_invalid_id');continue;}
   if(Object.keys(e).some(key=>!EVENT_KEYS.has(key))){rejected.push('unexpected_event_field');continue;}

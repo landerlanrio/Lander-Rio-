@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');
+const {test}=require('node:test');
+const crypto=require('node:crypto');
+const m=require('./lead-tracking.js');
+test('secure references are unique and valid',()=>{const a=m.reference(crypto.randomUUID),b=m.reference(crypto.randomUUID);assert.notEqual(a,b);assert.match(a,/^LR-[0-9A-F-]{36}$/);});
+test('rejects missing consent',()=>assert.throws(()=>m.prepare({segment:'atacado'},crypto.randomUUID),/consent/));
+test('sanitizes untrusted segment and source',()=>{const p=m.prepare({consent:true,segment:'<script>',source:'invalid'},crypto.randomUUID);assert.equal(p.segment,'geral');assert.equal(p.source,'unknown');});
+test('no evidence cannot confirm a conversation',()=>assert.throws(()=>m.event({type:'conversation_confirmed',reference:m.reference(crypto.randomUUID),consent:true,randomUUID:crypto.randomUUID}),/evidence/));
+test('sale requires verified evidence and BRL',()=>{const ref=m.reference(crypto.randomUUID);assert.throws(()=>m.event({type:'sale_confirmed',reference:ref,consent:true,evidence_verified:true,evidence_id:'order-1',amount:-1,currency:'BRL',randomUUID:crypto.randomUUID}),/amount/);});
+test('sale with evidence is structured',()=>{const e=m.event({type:'sale_confirmed',reference:m.reference(crypto.randomUUID),consent:true,evidence_verified:true,evidence_id:'order-1',amount:150,currency:'BRL',randomUUID:crypto.randomUUID});assert.equal(e.stage,'won');assert.equal(e.amount,150);});
+test('rejects stage regression and post-sale mutation',()=>{assert.throws(()=>m.transition('qualified','whatsapp_open_click'),/regression/);assert.throws(()=>m.transition('won','lead_lost'),/terminal/);});
+test('valid progression',()=>assert.equal(m.transition('qualified','proposal_created'),'proposal'));

@@ -28,7 +28,7 @@ Status: proposta de implementação, **sem integração em produção**. Base: s
 
 ## Fase 1.1 — Reconciliação e validação
 - `reconcile.js` agrega eventos por referência, remove duplicados por event_id, separa clique de conversa confirmada e exige evidência para vendas.
-- `test-reconcile.cjs`: 7 testes adicionais, executados pelo quality gate com `node --test revenue-intelligence/test-*.cjs`.
+- `test-reconcile.cjs`: 10 testes adicionais, executados pelo quality gate com `node --test revenue-intelligence/test-*.cjs`.
 - O reconciliador é uma biblioteca isolada: não processa dados reais nem acessa banco ou WhatsApp.
 - A soma de vendas é apenas sobre eventos validados da entrada; a conciliação contábil e os estornos continuam pendentes.
 
@@ -44,3 +44,9 @@ Status: proposta de implementação, **sem integração em produção**. Base: s
 3. Validar retenção, consentimento, autenticação e segregação de dados comerciais.
 4. Revisar migração e aplicar somente em sandbox aprovado, nunca diretamente no banco atual.
 5. Preparar rollback e testes ponta a ponta sem dados de clientes.
+
+## Revisão adicional
+- Inspecionado o código ativo de `lander-crm`: healthcheck apenas; não persiste oportunidades.
+- Inspecionado `whatsapp-webhook`: já existe validação de assinatura HMAC; não alterar a função ativa nesta etapa.
+- `INTEGRATION-GATES.md` descreve contrato seguro e critérios de homologação sem chamadas de produção.
+- Foram adicionados testes para impedir saltos indevidos no funil (total: 18 testes definidos).

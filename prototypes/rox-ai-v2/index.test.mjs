@@ -97,3 +97,58 @@ test('untrusted reply payload cannot inject malformed JSON as a successful answe
 test('assistant system policy remains explicit about non-human status and restricted substances',()=>{
  const s=modelInstructions();assert.match(s,/assistente VIRTUAL/);assert.match(s,/Nunca finja ser humano/);assert.match(s,/Não ajude a comercializar medicamentos/);assert.match(s,/Nunca peça CPF/);
 });
+
+test('v3 backend exposes allowlisted dry-run contracts but performs zero integrations',async()=>{
+ reset();
+ const r=await execute('Quero revender no atacado');
+ assert.equal(r.status,200);assert.equal(r.data.mode,'handoff');
+ assert.equal(r.data.qualification.segment,'atacado');
+ assert.equal(r.data.qualification.stage,'needs_topic');
+ assert.equal(r.data.integrations.whatsapp.sent,false);
+ assert.equal(r.data.integrations.whatsapp.conversation_confirmed,false);
+ assert.equal(r.data.integrations.hubspot.synced,false);
+ assert.equal(r.data.integrations.supabase.row_written,false);
+ assert.equal(calls.length,0);
+});
+test('v3 backend qualifies catalog follow-up using only ephemeral prior user text',async()=>{
+ reset();
+ const r=await execute('Quero catálogo',{messages:[
+  {role:'user',content:'Quero revender no atacado'},
+  {role:'assistant',content:'Que assunto?'},
+  {role:'user',content:'Quero catálogo'}
+ ]});
+ assert.equal(r.status,200);assert.equal(r.data.mode,'handoff');
+ assert.equal(r.data.qualification.segment,'atacado');
+ assert.equal(r.data.qualification.topic_id,'catalogo');
+ assert.equal(r.data.qualification.stage,'ready_for_human');
+ assert.equal(calls.length,0);
+});
+test('v3 backend distinguishes retail and general audience',async()=>{
+ reset();
+ const retail=await execute('Quero comprar no varejo');
+ assert.equal(retail.data.mode,'handoff');
+ assert.equal(retail.data.qualification.segment,'varejo');
+ const unrelated=await execute('Qual o preço do iPhone?');
+ assert.equal(unrelated.data.mode,'offline');
+ assert.equal(unrelated.data.integrations,undefined);
+ assert.equal(calls.length,0);
+});
+test('v3 backend adds a natural virtual-assistant response without a model',async()=>{
+ reset();
+ const r=await execute('Você é humano?');
+ assert.equal(r.status,200);assert.equal(r.data.mode,'offline');
+ assert.match(r.data.reply,/assistente virtual/i);
+ assert.equal(calls.length,0);
+});
+test('v3 health and privacy safeguards block restricted handoffs and identifiers',async()=>{
+ reset();
+ for(const q of ['Tem Ozempic no atacado?','Tirzena para revenda','Me passa uma prescrição']){
+  const r=await execute(q);
+  assert.equal(r.data.mode,'clinical',q);
+  assert.equal(r.data.integrations,undefined,q);
+ }
+ const p=await execute('Meu CPF é 123.456.789-09');
+ assert.equal(p.data.mode,'privacy');
+ assert.equal(p.data.integrations,undefined);
+ assert.equal(calls.length,0);
+});

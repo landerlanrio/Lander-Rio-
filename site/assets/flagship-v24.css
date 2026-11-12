@@ -166,3 +166,14 @@ body.flagship-v24{
  .flagship-v24 .lr-chat-root,.flagship-v24 .mobile-contact{display:none!important}
  .flagship-v24 .flagship-stage{min-height:280px}
 }
+
+/* v24.2 — QA: persistent handoff visibility; mobile float respects the sticky bar */
+.flagship-v24 .lr-chat-handoff{display:flex;flex:0 0 auto;width:calc(100% - 26px);margin:0 13px 3px;min-height:48px}
+.flagship-v24 .lr-chat-quick button{min-height:44px}
+.flagship-v24 .lr-chat-quick button:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:600px){
+ .flagship-v24 .lr-chat-root{bottom:calc(17px + env(safe-area-inset-bottom))}
+ .flagship-v24:has(.mobile-contact.visible) .lr-chat-root{bottom:calc(83px + env(safe-area-inset-bottom))}
+ .flagship-v24:has(.lr-chat-panel:not([hidden])) .mobile-contact{visibility:hidden;pointer-events:none}
+ body.flagship-v24.menu-open .lr-chat-root{visibility:hidden;pointer-events:none}
+}

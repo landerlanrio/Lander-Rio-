@@ -20,6 +20,30 @@ class FlagshipV25(unittest.TestCase):
         cls.css=(SITE/'assets/flagship-v25.css').read_text(encoding='utf-8')
         cls.js=(SITE/'assets/rox-demo-v25.js').read_text(encoding='utf-8')
         cls.parser=Parse();cls.parser.feed(cls.html)
+    def test_brand_commercial_focus_v251(self):
+        self.assertIn('class="brand-strip brand-strip--opening v251-brands"',self.html)
+        self.assertIn('v251-commercial',self.html)
+        self.assertIn('ATACADO <em>OU</em>',self.html)
+        self.assertIn('v251-hero-shortcuts',self.html)
+        self.assertIn('href="/marcas/"',self.html)
+        self.assertEqual(self.html.count('class="brand-card"'),14)
+
+    def test_large_commercial_panels_have_intent_tags(self):
+        self.assertIn('v251-channel--wholesale',self.html)
+        self.assertIn('v251-channel--retail',self.html)
+        self.assertIn('data-profile="atacado"',self.html)
+        self.assertIn('data-profile="varejo"',self.html)
+        self.assertIn('rel="noopener noreferrer"',self.html)
+
+    def test_new_stylesheet_present_and_responsive(self):
+        self.assertIn('flagship-v25-1.css',self.html)
+        path=SITE/'assets/flagship-v25-1.css'
+        self.assertTrue(path.is_file())
+        content=path.read_text(encoding='utf-8')
+        self.assertIn('@media(max-width:600px)',content)
+        self.assertIn('prefers-reduced-motion:reduce',content)
+        self.assertNotIn('http://',content)
+
     def test_single_h1(self):self.assertEqual(self.parser.h1,1)
     def test_headline(self):self.assertRegex(self.html,r'PERFORMANCE</span><span>IS <em>CULTURE\.</em>')
     def test_semantic_navigation(self):
@@ -56,8 +80,9 @@ class FlagshipV25(unittest.TestCase):
         self.assertIn('id="profile-select"',self.html)
         self.assertIn('id="message-preview"',self.html)
     def test_brand_directory_unchanged(self):self.assertEqual(self.html.count('class="brand-card"'),14)
-    def test_brand_below_primary_paths(self):
-        self.assertLess(self.html.index('id="ecossistema"'),self.html.index('id="marcas"'))
+    def test_brand_visible_before_ecosystem(self):
+        self.assertLess(self.html.index('id="marcas"'),self.html.index('id="perfis"'))
+        self.assertLess(self.html.index('id="perfis"'),self.html.index('id="ecossistema"'))
     def test_no_inline_secret_in_new_files(self):
         self.assertNotRegex(self.css+self.js,r'(sk-proj-|ghp_[A-Za-z0-9]{24}|-----BEGIN PRIVATE KEY)')
     def test_rox_offline_only(self):

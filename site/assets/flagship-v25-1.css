@@ -1,0 +1,103 @@
+/* LANDER RIO — Flagship 25.1: brand directory and commercial decision journeys.
+   Scoped to homepage. Uses only existing images, routes and scripts. No third-party assets. */
+.flagship-v25 .v251-section-kicker{display:flex;align-items:center;gap:11px;margin:0 0 22px;font-size:11px;font-weight:760;line-height:1.5;letter-spacing:.18em;color:#c7ff28;text-transform:uppercase}
+.flagship-v25 .v251-section-kicker::before{content:"";width:26px;height:2px;background:#c7ff28;flex:0 0 auto}
+/* The brands are now a primary identity section, immediately after the performance pillars. */
+.flagship-v25 .v251-brands{background:#0d100e;border-block:1px solid #353e36;padding:clamp(54px,6vw,96px) 0 clamp(45px,5vw,82px);scroll-margin-top:90px}
+.flagship-v25 .v251-brands .brand-strip-head{align-items:flex-end;gap:30px;margin:0 0 25px}
+.flagship-v25 .v251-brands .brand-strip-head>div:first-child{max-width:740px}
+.flagship-v25 .v251-brands .brand-strip-title{font-family:Impact,"Arial Narrow",Arial,sans-serif;font-weight:750;font-size:clamp(46px,5.6vw,94px);line-height:.96;letter-spacing:-.038em;color:#f2f0eb;text-transform:uppercase;margin:0}
+.flagship-v25 .v251-brands .brand-strip-title em{font-style:normal;color:#c7ff28}
+.flagship-v25 .v251-brands .brand-strip-subtitle{font-size:clamp(13px,1.1vw,16px);line-height:1.6;color:#b8beb9;margin:17px 0 0;max-width:55ch}
+.flagship-v25 .v251-brands .brand-strip-controls{display:flex;gap:10px;margin-bottom:3px}
+.flagship-v25 .v251-brands .brand-strip-controls button{min-width:48px;min-height:48px;border-radius:50%;border:1px solid #64716a;background:#1a1f1b;color:#fff}
+.flagship-v25 .v251-brands .brand-strip-controls button:hover:not([aria-disabled="true"]){background:#2b3527;border-color:#c7ff28}
+.flagship-v25 .v251-brands .brand-track{display:flex;gap:15px;scroll-snap-type:x mandatory;padding:3px 0 16px;margin:0;overflow-x:auto;scrollbar-color:#819852 #202820;scrollbar-width:thin}
+.flagship-v25 .v251-brands .brand-card{flex:0 0 clamp(204px,21vw,276px);min-width:0;background:#171b18;border:1px solid #404a41;border-radius:11px;overflow:hidden;scroll-snap-align:start;transition:border-color .18s,background-color .18s,transform .18s}
+.flagship-v25 .v251-brands .brand-card:hover{background:#1d231e;border-color:#b6e352;transform:translateY(-3px)}
+.flagship-v25 .v251-brands .brand-visual{height:clamp(152px,14vw,195px);display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at 50% 40%,#252d23 0%,#151916 75%)}
+.flagship-v25 .v251-brands .brand-visual img.brand-logo-v23{display:block;width:auto!important;max-width:100%;max-height:128px;height:auto!important;object-fit:contain;filter:drop-shadow(0 8px 20px #0008)}
+.flagship-v25 .v251-brands .brand-card figcaption{border-top:1px solid #353e38;padding:15px 17px 17px;color:#f3f4ed;font-size:13px;font-weight:700;letter-spacing:.02em;min-height:54px}
+.flagship-v25 .v251-brands .brand-strip-foot{display:flex!important;align-items:center;justify-content:space-between;gap:20px;margin-top:17px;font-size:10px;letter-spacing:.01em;text-transform:none;color:#adb5ae}
+.flagship-v25 .v251-brands .brand-strip-foot>span{max-width:73ch}
+.flagship-v25 .v251-all-brands{display:inline-flex;align-items:center;gap:18px;min-height:48px;padding:11px 15px;border:1px solid #b8ec49;background:#c7ff28;color:#0b0c08;font-size:12px;font-weight:820;white-space:nowrap;letter-spacing:.01em;text-transform:uppercase}
+.flagship-v25 .v251-all-brands:hover{background:#e0ff89;border-color:#e0ff89;text-decoration:none}
+.flagship-v25 .v251-all-brands span{font-size:18px;line-height:1}
+/* Commercial paths are now high on the home, with two decisive large cards. */
+.flagship-v25 #perfis.v251-commercial{background:#131715!important;border-bottom:1px solid #353e37;padding:clamp(70px,7.5vw,118px) 0 clamp(66px,7vw,100px);scroll-margin-top:80px;color:#f2f0eb}
+.flagship-v25 .v251-commercial .v251-commercial-head{align-items:end;gap:35px;margin-bottom:37px}
+.flagship-v25 .v251-commercial .v251-commercial-head h2{font-family:Impact,"Arial Narrow",Arial,sans-serif;font-weight:750;font-size:clamp(55px,6.5vw,100px);line-height:.9;letter-spacing:-.04em;max-width:900px;color:#f2f0eb}
+.flagship-v25 .v251-commercial .v251-commercial-head h2 em{font-style:normal;color:#c7ff28}
+.flagship-v25 .v251-commercial .v251-commercial-head p{max-width:47ch;font-size:16px;line-height:1.65;color:#bbc4bc}
+.flagship-v25 .v251-commercial .profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.flagship-v25 .v251-commercial .v251-channel{position:relative;isolation:isolate;overflow:hidden;min-height:465px;padding:clamp(25px,3vw,47px);border:1px solid #5f6c60;border-radius:10px;background:#1b211c;align-items:flex-start;display:flex;flex-direction:column;gap:17px;box-shadow:inset 0 0 0 1px #ffffff09;transition:transform .18s,border-color .18s}
+.flagship-v25 .v251-commercial .v251-channel:hover{border-color:#c7ff28;transform:translateY(-2px)}
+.flagship-v25 .v251-commercial .v251-channel::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 85% 10%,#7a8d3c25,transparent 44%),linear-gradient(138deg,#202820,#0e120f 85%)}
+.flagship-v25 .v251-commercial .v251-channel--retail::before{background:radial-gradient(ellipse at 80% 12%,#9e9e742c,transparent 46%),linear-gradient(138deg,#292b27,#111613 80%)}
+.flagship-v25 .v251-commercial .v251-channel::after{content:"";position:absolute;z-index:-1;inset:auto 0 0 auto;width:65%;height:46%;background:linear-gradient(145deg,transparent,#c7ff280c);pointer-events:none}
+.flagship-v25 .v251-commercial .v251-channel-art{position:absolute;right:22px;top:12px;font-family:Impact,"Arial Narrow",Arial,sans-serif;font-size:clamp(145px,15vw,255px);font-style:italic;font-weight:900;line-height:.9;letter-spacing:-.09em;color:#c7ff280c;pointer-events:none;user-select:none}
+.flagship-v25 .v251-commercial .v251-channel-art span{font-size:18px;vertical-align:top;margin-left:2px;letter-spacing:0;color:#c7ff285d}
+.flagship-v25 .v251-commercial .v251-channel .num{font-size:10px;font-weight:800;letter-spacing:.23em;color:#c7ff28;margin-bottom:2px}
+.flagship-v25 .v251-commercial .v251-channel h3{color:#f2f0eb;font-family:Impact,"Arial Narrow",Arial,sans-serif;font-style:italic;font-weight:760;font-size:clamp(43px,4.3vw,69px);line-height:.94;letter-spacing:-.045em;max-width:12ch;margin:3px 0 0}
+.flagship-v25 .v251-commercial .v251-channel p{max-width:46ch;color:#d1d6ce;font-size:15px;line-height:1.6;margin:0}
+.flagship-v25 .v251-commercial .v251-channel ul{margin:0 0 4px;padding:0;list-style:none;color:#c9d0c6}
+.flagship-v25 .v251-commercial .v251-channel li{font-size:13px;line-height:1.7;color:#c6cbc4}
+.flagship-v25 .v251-commercial .v251-channel .btn{display:flex;width:100%;justify-content:space-between;min-height:55px;margin-top:auto;border-radius:4px;background:#c7ff28;color:#090909;font-weight:810;font-size:14px;padding:15px 18px}
+.flagship-v25 .v251-commercial .v251-channel--retail .btn{background:#f2f0eb;color:#090909}
+.flagship-v25 .v251-commercial .v251-channel .btn:hover{background:#e2ff8b;text-decoration:none}
+.flagship-v25 .v251-commercial .v251-channel .text-link{color:#d0d9d0;font-size:12px;min-height:30px;margin:0;opacity:.94}
+.flagship-v25 .v251-commercial .v251-partners{grid-column:1/-1;display:grid;grid-template-columns:1.3fr 1.8fr auto;column-gap:20px;align-items:center;border:1px solid #3d473d;border-radius:9px;background:#1a201b;padding:22px 28px;min-height:140px}
+.flagship-v25 .v251-commercial .v251-partners .num{color:#c7ff28;grid-column:1;grid-row:1;font-size:10px;letter-spacing:.17em}
+.flagship-v25 .v251-commercial .v251-partners h3{grid-column:1;grid-row:2;font-size:clamp(22px,2.2vw,30px);font-style:normal}
+.flagship-v25 .v251-commercial .v251-partners p{grid-column:2;grid-row:1;font-size:13px;line-height:1.5}
+.flagship-v25 .v251-commercial .v251-partners ul{grid-column:2;grid-row:2;list-style:none;padding:0;margin:0;display:flex;gap:13px;flex-wrap:wrap}
+.flagship-v25 .v251-commercial .v251-partners li{font-size:11px;line-height:1.4}
+.flagship-v25 .v251-commercial .v251-partners .btn{grid-column:3;grid-row:1/3;min-height:48px;padding:14px 18px;background:#2b332a;color:#f2f0eb;border:1px solid #667261;white-space:nowrap}
+.flagship-v25 .v251-commercial .v251-partners .text-link{display:none}
+/* Atacado/Varejo shortcuts in the first screen create visible commercial intent early. */
+.flagship-v25 .v251-hero-shortcuts{display:flex;align-items:center;gap:0;margin-top:23px;padding:0;max-width:650px;flex-wrap:wrap}
+.flagship-v25 .v251-hero-shortcuts>span{font-size:10px;letter-spacing:.15em;font-weight:780;color:#aeb8b0;margin-right:17px}
+.flagship-v25 .v251-hero-shortcuts a{display:inline-flex;align-items:center;gap:12px;padding:10px 14px;font-size:11px;font-weight:800;letter-spacing:.085em;color:#f2f0eb;border-left:1px solid #5b675a;min-height:44px;white-space:nowrap}
+.flagship-v25 .v251-hero-shortcuts a:hover{color:#c7ff28;text-decoration:none}
+.flagship-v25 .v251-hero-shortcuts a span{color:#c7ff28;font-size:16px}
+@media(max-width:1050px){
+ .flagship-v25 .v251-commercial .v251-channel{min-height:425px}
+ .flagship-v25 .v251-commercial .v251-partners{display:flex;flex-wrap:wrap;gap:10px 24px}
+ .flagship-v25 .v251-commercial .v251-partners h3{margin-right:auto}
+ .flagship-v25 .v251-commercial .v251-partners p,.flagship-v25 .v251-commercial .v251-partners ul{display:none}
+}
+@media(max-width:600px){
+ .flagship-v25 .v251-hero-shortcuts{margin-top:17px;gap:6px 0}
+ .flagship-v25 .v251-hero-shortcuts>span{width:100%;margin:0;font-size:9px}
+ .flagship-v25 .v251-hero-shortcuts a:first-of-type{border-left:0;padding-left:0}
+ .flagship-v25 .v251-hero-shortcuts a{font-size:11px;padding:7px 11px;min-height:42px}
+ .flagship-v25 .v251-brands{padding:52px 0 48px;scroll-margin-top:74px}
+ .flagship-v25 .v251-brands .v251-section-kicker{margin-bottom:17px}
+ .flagship-v25 .v251-brands .brand-strip-head{display:flex;align-items:end;gap:10px;margin-bottom:22px}
+ .flagship-v25 .v251-brands .brand-strip-title{font-size:clamp(44px,12vw,65px)}
+ .flagship-v25 .v251-brands .brand-strip-subtitle{font-size:12px;line-height:1.55;margin-top:13px}
+ .flagship-v25 .v251-brands .brand-strip-controls{align-self:flex-end;gap:6px}
+ .flagship-v25 .v251-brands .brand-strip-controls button{width:42px;min-width:42px;height:42px;min-height:42px}
+ .flagship-v25 .v251-brands .brand-card{flex-basis:196px;border-radius:8px}
+ .flagship-v25 .v251-brands .brand-visual{height:150px;padding:14px}
+ .flagship-v25 .v251-brands .brand-visual img.brand-logo-v23{max-height:107px}
+ .flagship-v25 .v251-brands .brand-track{gap:11px}
+ .flagship-v25 .v251-brands .brand-strip-foot{flex-direction:column;align-items:stretch;gap:15px;font-size:10px;line-height:1.55}
+ .flagship-v25 .v251-all-brands{width:100%;justify-content:space-between;min-height:48px}
+ .flagship-v25 #perfis.v251-commercial{padding:65px 0 62px;scroll-margin-top:70px}
+ .flagship-v25 .v251-commercial .v251-commercial-head{margin-bottom:27px}
+ .flagship-v25 .v251-commercial .v251-commercial-head h2{font-size:clamp(49px,13vw,69px)}
+ .flagship-v25 .v251-commercial .v251-commercial-head p{font-size:13px;margin-top:19px}
+ .flagship-v25 .v251-commercial .profiles{grid-template-columns:1fr;gap:12px}
+ .flagship-v25 .v251-commercial .v251-channel{min-height:420px;padding:25px 22px;gap:13px}
+ .flagship-v25 .v251-commercial .v251-channel-art{font-size:170px;right:14px;top:14px}
+ .flagship-v25 .v251-commercial .v251-channel h3{font-size:clamp(39px,12vw,55px)}
+ .flagship-v25 .v251-commercial .v251-channel p{font-size:13px}
+ .flagship-v25 .v251-commercial .v251-channel li{font-size:12px}
+ .flagship-v25 .v251-commercial .v251-partners{padding:23px 22px;min-height:160px}
+ .flagship-v25 .v251-commercial .v251-partners h3{font-size:26px}
+ .flagship-v25 .v251-commercial .v251-partners .btn{width:100%;justify-content:space-between}
+}
+@media(max-width:360px){.flagship-v25 .v251-brands .brand-strip-title{font-size:42px}.flagship-v25 .v251-hero-shortcuts a{font-size:10px;padding-inline:8px}}
+@media(prefers-reduced-motion:reduce){.flagship-v25 .v251-brands .brand-card,.flagship-v25 .v251-commercial .v251-channel{transition:none!important;transform:none!important}}
+@media print{.flagship-v25 .v251-brands .brand-track{flex-wrap:wrap;overflow:visible}.flagship-v25 .v251-commercial .profiles{display:block}.flagship-v25 .v251-commercial .v251-channel{min-height:0;break-inside:avoid}}

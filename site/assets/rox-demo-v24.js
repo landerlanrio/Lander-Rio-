@@ -19,7 +19,7 @@
  function classify(raw){
   const s=normalize(raw);
   if(!s)return 'empty';
-  if(matcher(s,/(\b\d+\s*(mg|ui|ml)\b|dosagem|posologia|anabol|esteroide|tirzepat|retatrut|clenbuterol|receita medica|automedic|hormon)/))return 'clinical';
+  if(matcher(s,/(\b\d+\s*(mg|ui|ml)\b|\b(dose|doses|dosagem|posologia)\b|testosteron|insulin|somatrop|anabol|esteroid|esteroide|tirzepat|retatrut|clenbuterol|receita medica|automedic|hormon)/))return 'clinical';
   if(matcher(s,/(atendente|humano|pessoa real|equipe|whatsapp|falar com alguem|contato)/))return 'handoff';
   if(matcher(s,/(revend|atacado|distribui|pedido minimo|lojista)/))return 'wholesale';
   if(matcher(s,/(parcer|influencia|divulg|colaborac)/))return 'partnership';

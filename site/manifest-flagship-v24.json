@@ -1,0 +1,10 @@
+{
+  "version": "24.1",
+  "base_manifest": "manifest-v23-10.json",
+  "scope": "Flagship homepage override; legacy release.json deliberately unchanged",
+  "files": {
+    "index.html": "3033c1dcc211a61402f5fca67446d6cbfc2dafa4ce933f44b8781d8c63c352bd",
+    "assets/flagship-v24.css": "0f7d59e4705a89695dda765464431b298c722439dc17c9fba75db055620c1040",
+    "assets/rox-demo-v24.js": "606115371dcff22e04f7e03a31e0a1550e83dea0c10efd994df2dfed7b5853bb"
+  }
+}

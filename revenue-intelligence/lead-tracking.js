@@ -34,6 +34,9 @@ function transition(current,type){
  assert(current!=='won'&&current!=='lost','terminal stage');
  assert(rank[next]>=rank[current],'stage regression');
  if(next==='won')assert(current==='proposal'||current==='qualified','sale requires qualification');
+ if(next==='conversation_confirmed')assert(current==='clicked','conversation requires prior click');
+ if(next==='qualified')assert(current==='conversation_confirmed','qualification requires verified conversation');
+ if(next==='proposal')assert(current==='qualified','proposal requires qualification');
  return next;
 }
 return Object.freeze({TYPES,STAGES,reference,prepare,event,transition});

@@ -20,11 +20,13 @@ function harness(){
     focus(){}
     appendChild(el){this.children.push(el)}
     querySelector(selector){return this.map?.[selector]||null}
+    querySelectorAll(selector){return selector==='button'?this.children.filter(x=>x.name==='button'):[]}
     closest(selector){if(selector==='button[data-question]'&&this.dataset.question)return this;return null}
   }
   const root=new Element('root'),launcher=new Element('launcher'),panel=new Element('panel'),closer=new Element('close'),
         form=new Element('form'),input=new Element('input'),log=new Element('log'),quick=new Element('quick'),
         handoff=new Element('handoff'),submit=new Element('submit');
+  quick.children=Array.from({length:4},()=>new Element('button'));
   root.map={
     '[data-rox-launcher]':launcher,'[data-rox-panel]':panel,'[data-rox-close]':closer,
     '[data-rox-form]':form,'[data-rox-input]':input,'[data-rox-log]':log,
@@ -105,5 +107,9 @@ test('turn guard limits offline demonstration',()=>{
   for(let i=0;i<24;i++){h.input.value='oi';h.form.dispatch('submit')}
   assert.equal(h.input.disabled,true);
   assert.equal(h.submit.disabled,true);
+  assert.ok(h.quick.children.every(button=>button.disabled&&button.attributes['aria-disabled']==='true'));
+  const count=h.log.children.length;
+  h.input.value='oi';h.form.dispatch('submit');
+  assert.equal(h.log.children.length,count,'Do not append messages after turn cap');
   assert.equal(h.network(),0);
 });

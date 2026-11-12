@@ -39,7 +39,7 @@ class FlagshipTests(unittest.TestCase):
         self.assertIn('PERFORMANCE',self.home)
         self.assertIn('IS <em>CULTURE.</em>',self.home)
     def test_editorial_before_commercial_directory(self):
-        self.assertLess(self.home.index('class="hero flagship-hero"'),self.home.index('id="marcas"'))
+        self.assertLess(self.home.index('class="hero flagship-hero wrap"'),self.home.index('id="marcas"'))
     def test_original_journeys_preserved(self):
         for route in ('/treino/','/dieta/','/atacado/','/varejo/','/conteudos/','/enciclopedia/','/contato/','/privacidade'):
             self.assertTrue(any((a.get('href') or '').startswith(route) for a in self.doc.links),route)

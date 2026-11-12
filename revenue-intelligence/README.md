@@ -50,3 +50,10 @@ Status: proposta de implementação, **sem integração em produção**. Base: s
 - Inspecionado `whatsapp-webhook`: já existe validação de assinatura HMAC; não alterar a função ativa nesta etapa.
 - `INTEGRATION-GATES.md` descreve contrato seguro e critérios de homologação sem chamadas de produção.
 - Foram adicionados testes para impedir saltos indevidos no funil (total: 18 testes definidos).
+
+## Homologação sem custos — simulador local
+- `local-store.js`: persistência **em memória**, sem rede, com idempotência, validação de origem, rejeição de duplicações e transições.
+- `test-local-store.cjs`: 8 cenários sintéticos, incluídos automaticamente no quality gate (`node --test revenue-intelligence/test-*.cjs`).
+- Total de 26 testes unitários/integração simulada. Os testes não usam dados reais nem cobram Supabase.
+- Esta simulação não equivale a um banco Postgres, RLS, webhook ou integração HubSpot real. A implantação de backend continua bloqueada sem ambiente isolado aprovado.
+- Decisão explícita: usuário não autorizou cobrança no Supabase. Não criar branch faturável nem executar SQL de escrita no projeto principal.

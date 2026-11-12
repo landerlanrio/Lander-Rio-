@@ -148,7 +148,8 @@ body.flagship-v24{
  .flagship-v24 .section-top h2,.flagship-v24 .editorial-home h2{font-size:clamp(40px,10vw,55px)}
  .flagship-v24 .section-top>p{font-size:15px}
  .flagship-v24 .lr-chat-root{bottom:calc(98px + env(safe-area-inset-bottom));right:13px}
- .flagship-v24 .lr-chat-launcher{min-height:52px;padding:5px 12px 5px 6px;font-size:11px}
+ .flagship-v24 .lr-chat-launcher{width:51px;min-height:51px;padding:5px;justify-content:center;border-radius:50%}
+ .flagship-v24 .lr-chat-launcher>span:last-child{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
  .flagship-v24 .lr-chat-monogram{width:39px;height:39px}
  .flagship-v24 .lr-chat-panel{bottom:63px;height:min(510px,calc(100dvh - 184px))}
 }

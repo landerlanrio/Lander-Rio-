@@ -81,6 +81,7 @@
   handoff.hidden=false;
  }
  function respond(value){
+  if(turns>=MAX_TURNS)return;
   const raw=String(value||'').trim().slice(0,240);
   if(!raw)return;
   append(raw,'user');
@@ -91,7 +92,8 @@
   if(turns>=MAX_TURNS){
    input.disabled=true;
    form.querySelector('button[type=submit]').disabled=true;
-   append('Esta demonstração chegou ao limite de interações desta sessão. Você pode fechar e abrir o ROX novamente ou seguir para o atendimento oficial.');
+   quick.querySelectorAll('button').forEach(button=>{button.disabled=true;button.setAttribute('aria-disabled','true')});
+   append('Esta demonstração chegou ao limite de interações desta sessão. Recarregue a página para reiniciar ou siga para o atendimento oficial.');
   }
   log.scrollTop=log.scrollHeight;
  }

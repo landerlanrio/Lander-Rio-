@@ -1,0 +1,166 @@
+/* LANDER RIO | Reference-faithful hero + Brand Vault, version 26.0.
+   Mobile-first overrides; no external fonts or runtime dependencies. */
+body.v26-reference{--lime:#c7ff28;--paper:#f2f0eb;--ink:#090909;background:#090a09;color:#f2f0eb}
+.v26-reference .site-head{z-index:45;background:#080909f7;border-bottom:1px solid #40443f;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.v26-reference .site-head .nav-row{min-height:75px;height:75px;gap:13px;display:flex;align-items:center}
+.v26-reference .site-head .brand{flex:0 0 auto;min-width:0;display:flex;align-items:center}
+.v26-reference .site-head .brand .v25-lockup{display:block;width:clamp(165px,21vw,310px);height:auto;max-height:70px;object-fit:contain;object-position:left center}
+.v26-reference .site-head .head-contact{background:var(--lime);color:#080909;font-size:12px;font-weight:750;border-radius:100px}
+.v26-reference .v26-search-toggle{display:grid;place-items:center;border:0;border-left:1px solid #5b6059;background:transparent;color:#f2f0eb;flex:0 0 auto;width:47px;height:44px;cursor:pointer}
+.v26-reference .menu-toggle{border:0;background:transparent;color:var(--lime);flex:0 0 auto;display:grid;place-items:center;width:45px;height:44px;padding:8px;cursor:pointer}
+.v26-reference .menu-toggle svg{width:29px;height:29px;stroke-width:2.5}
+.v26-reference .v26-search[hidden]{display:none!important}
+.v26-reference .v26-search{position:sticky;top:75px;z-index:43;border-bottom:1px solid #424b3d;background:#101411;padding:15px clamp(16px,5vw,65px)}
+.v26-reference .v26-search-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px}
+.v26-reference .v26-search label{font-size:13px;letter-spacing:.05em}
+.v26-reference .v26-search input{min-width:0;background:#20241f;color:#f3f4ea;border:1px solid #676f62;padding:12px 14px;border-radius:4px;font-size:16px}
+.v26-reference .v26-search button{min-height:44px;min-width:44px;background:transparent;color:#fff;border:1px solid #7b8873;border-radius:2px}
+.v26-reference .v26-search-links{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px}
+.v26-reference .v26-search-links a{background:#1c241d;border:1px solid #485543;padding:9px 13px;font-size:12px;text-decoration:none;min-height:38px}
+.v26-reference .v26-search-links a[hidden]{display:none}
+.v26-reference .v26-search-links a:hover{color:var(--lime)}
+/* Hero shares the photo reference but all headings, links, and controls are real HTML. */
+.v26-reference .v26-hero{position:relative;overflow:hidden;min-height:610px;background:#080909;isolation:isolate;border-bottom:1px solid #555a52;display:flex;align-items:center;scroll-margin-top:80px}
+.v26-reference .v26-hero-photo{position:absolute;inset:0 0 0 48%;z-index:-3;overflow:hidden}
+.v26-reference .v26-hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:45% top;filter:contrast(1.11) saturate(1.05)}
+.v26-reference .v26-hero-photo::after{content:"";position:absolute;right:0;top:0;width:65%;height:175px;background:radial-gradient(ellipse 100% 100% at 100% 0%,#080909 9%,#080909e9 40%,#08090980 65%,transparent 100%);pointer-events:none}
+.v26-reference .v26-hero-vignette{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#060707 0%,#080a08 30%,#080a08ef 42%,#080a0840 67%,#09090920 100%),linear-gradient(0deg,#050606b5,transparent 34%),linear-gradient(180deg,#09090924,transparent 30%);pointer-events:none}
+.v26-reference .v26-hero-content{width:min(1350px,calc(100% - 7vw));margin:0 auto;position:relative;z-index:1;padding:60px 0 72px}
+.v26-reference .v26-hero-kicker{display:flex;align-items:center;gap:clamp(8px,1.1vw,16px);flex-wrap:wrap;font-size:clamp(10px,1vw,15px);font-weight:640;line-height:1.4;letter-spacing:.19em;color:#f0eee8;margin:0 0 28px;text-transform:uppercase}
+.v26-reference .v26-hero-kicker i{height:17px;width:2px;display:block;background:#c7ff28;flex:0 0 2px}
+.v26-reference .v26-hero h1{font:italic 850 clamp(48px,6.65vw,101px)/.95 Impact,'Arial Narrow',Arial,sans-serif;letter-spacing:-.045em;text-transform:uppercase;color:#f2f0eb;max-width:800px;white-space:normal;margin:0;text-shadow:0 3px 18px #0008}
+.v26-reference .v26-hero h1 em{font-style:italic;color:#c7ff28;text-shadow:0 2px 14px #090d05}
+.v26-reference .v26-hero-lead{max-width:42ch;font-size:clamp(16px,1.55vw,23px);color:#f2f0eb;line-height:1.4;margin:24px 0 0;text-wrap:pretty}
+.v26-reference .v26-hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin:25px 0 0;width:min(430px,100%)}
+.v26-reference .v26-hero-actions a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:57px;width:100%;padding:13px 19px;border-radius:28px;font-size:17px;line-height:1.2;font-weight:760;text-align:center;box-shadow:0 5px 16px #0009;text-decoration:none}
+.v26-reference .v26-hero-actions a>span:first-child{font-size:25px;line-height:1}
+.v26-reference .v26-hero-actions a>span:last-child{font-size:23px;line-height:1}
+.v26-reference .v26-hero-primary{background:var(--lime);color:#050604;border:1px solid var(--lime)}
+.v26-reference .v26-hero-primary:hover{background:#e1ff85}
+.v26-reference .v26-hero-secondary{background:#090a09b0;color:#f7f7ef;border:1px solid #e0e5d5}
+.v26-reference .v26-hero-secondary:hover{background:#252b25;color:var(--lime)}
+.v26-reference .v26-hero-quicklinks{display:flex;align-items:center;gap:17px;flex-wrap:wrap;margin-top:22px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.v26-reference .v26-hero-quicklinks a{color:#e0e3db;min-height:42px;display:inline-flex;align-items:center;border-bottom:1px solid #647566;text-decoration:none}
+.v26-reference .v26-hero-quicklinks a:hover{color:var(--lime);border-bottom-color:var(--lime)}
+/* Brand Vault — heavy editorial header, luminous tiled logos, meaningful filters. */
+.v26-reference .v26-vault{position:relative;padding:clamp(39px,4.8vw,78px) 0 clamp(42px,5vw,76px);background:radial-gradient(ellipse at 50% 8%,#172017 0%,#0b0e0c 46%,#070807 100%);border-block:1px solid #303931;scroll-margin-top:80px}
+.v26-reference .v26-vault:before{content:'';position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,#b6ff2d65 35%,#c7ff28 50%,#b6ff2d50 65%,transparent);pointer-events:none}
+.v26-reference .v26-shell{width:min(1330px,calc(100% - 54px));margin:0 auto}
+.v26-reference .v26-vault-intro{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 25px}
+.v26-reference .v26-vault-eyebrow{font-size:13px;letter-spacing:.31em;color:#c7ff28;font-weight:700;text-transform:uppercase;margin:0 0 11px}
+.v26-reference .v26-vault-eyebrow span{display:inline-block;vertical-align:middle;height:2px;width:39px;margin:0 6px;background:linear-gradient(90deg,#c7ff28,transparent)}
+.v26-reference .v26-vault h2{font:italic 850 clamp(45px,6.15vw,93px)/.94 Impact,'Arial Narrow',Arial,sans-serif;letter-spacing:-.042em;color:#f2f0eb;margin:0;text-transform:uppercase;text-shadow:0 1px 7px #0006}
+.v26-reference .v26-vault h2 em{font-style:italic;color:var(--lime)}
+.v26-reference .v26-vault-sub{font-size:clamp(14px,1.8vw,24px);line-height:1.4;color:#e3e9df;margin:13px 0 0}
+.v26-reference .v26-vault-emblem{font-size:12px;color:#edbe4e;letter-spacing:.15em;text-align:center;flex:0 0 auto;display:flex;align-items:center;gap:10px;flex-direction:column}
+.v26-reference .v26-vault-emblem span{font-size:38px;line-height:1}
+.v26-reference .v26-vault-emblem strong{font-size:13px;line-height:1.4;font-weight:750}
+.v26-reference .v26-filters{display:flex;gap:12px;padding:8px 1px 16px;overflow-x:auto;scrollbar-width:thin;scrollbar-color:#728e37 #1b261b;overscroll-behavior-x:contain;scroll-snap-type:x proximity}
+.v26-reference .v26-filters button{flex:1 0 auto;scroll-snap-align:start;background:linear-gradient(180deg,#242925,#121614);border:1px solid #555f58;box-shadow:inset 0 1px #ffffff16;color:#eee;font:500 clamp(12px,1.4vw,17px)/1.3 Arial,sans-serif;border-radius:100px;padding:12px 17px;min-height:48px;cursor:pointer;transition:border-color .14s,color .14s,background .14s}
+.v26-reference .v26-filters button:hover{border-color:#b7ff3a;color:#d4ff7b}
+.v26-reference .v26-filters button.is-active{border-color:#c7ff28;color:#d4ff71;box-shadow:0 0 0 1px #c7ff2890,0 0 15px #c7ff282e}
+.v26-reference .v26-results{margin:0 0 10px;color:#b8c5b6;font-size:11px;letter-spacing:.03em}
+.v26-reference .v26-brand-grid{padding:0;margin:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(11px,1.4vw,19px)}
+.v26-reference .v26-brand-card{min-width:0;position:relative;border:1px solid #666a61;border-radius:13px;background:linear-gradient(140deg,#202522,#101413 66%,#171c18);padding:3px;box-shadow:inset 0 1px #fff2,0 0 15px color-mix(in srgb,var(--brand-halo),transparent 83%);overflow:hidden;transition:transform .18s,border-color .18s}
+.v26-reference .v26-brand-card:before{content:'';position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 13px color-mix(in srgb,var(--brand-halo),transparent 70%),0 0 18px color-mix(in srgb,var(--brand-halo),transparent 80%)}
+.v26-reference .v26-brand-card:hover{transform:translateY(-2px);border-color:var(--brand-halo)}
+.v26-reference .v26-brand-card a{position:relative;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:2px;min-height:142px;padding:10px 12px;text-decoration:none;color:#fff}
+.v26-reference .v26-brand-card img{width:min(84%,310px);max-width:100%;max-height:96px;height:auto;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 5px 6px #0007);display:block}
+.v26-reference .v26-brand-label{font-size:10px;letter-spacing:.03em;font-weight:650;color:#d5e0d8;line-height:1.2;text-align:center}
+.v26-reference .v26-brand-card[hidden]{display:none!important}
+.v26-reference .v26-proof-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid #303b32;border-bottom:1px solid #303b32;margin-top:27px;padding:17px 0}
+.v26-reference .v26-proof-grid>div{display:flex;gap:15px;align-items:center;justify-content:center;padding:0 13px;border-right:1px solid #4e574e}
+.v26-reference .v26-proof-grid>div:last-child{border-right:0}
+.v26-reference .v26-proof-grid span{font-size:36px;line-height:1;color:#c7ff28}
+.v26-reference .v26-proof-grid strong{font-size:clamp(12px,1.3vw,17px);line-height:1.25;font-weight:680;color:#e8ede4}
+.v26-reference .v26-disclaimer{font-size:11px;color:#a5aea8;line-height:1.7;margin:17px 2px 0;max-width:100ch}
+.v26-reference .v26-whatsapp{display:flex;align-items:center;justify-content:center;gap:22px;width:100%;margin-top:25px;padding:17px 25px;min-height:78px;border:1px solid #d8ff7d;background:linear-gradient(180deg,#d6ff4b,#c7ff28 70%,#b5f618);box-shadow:0 8px 30px #9cf01855,inset 0 3px #ffffff74;text-align:center;color:#050704;border-radius:100px;font-size:clamp(16px,2.8vw,32px);font-weight:780;line-height:1.2;text-decoration:none}
+.v26-reference .v26-whatsapp span:first-child{font-size:clamp(25px,3.5vw,42px)}
+.v26-reference .v26-whatsapp span:last-child{font-size:clamp(25px,3.2vw,42px)}
+.v26-reference .v26-whatsapp:hover{background:#e0ff80;color:#050704;text-decoration:none}
+/* Commercial entry remains prominent immediately following the Vault; old routes/form behavior is unchanged. */
+.v26-reference #perfis.v251-commercial{padding-top:64px;background:#0b0d0c!important}
+.v26-reference .v251-commercial .v251-commercial-head h2{font-style:italic;letter-spacing:-.03em}
+.v26-reference .v251-commercial .v251-channel{border-radius:12px;background:#181c19}
+.v26-reference .v251-commercial .v251-channel:first-child{border-color:#a6e84a;box-shadow:0 0 22px #b6ff2811}
+.v26-reference .v251-commercial .v251-channel .btn{border-radius:100px}
+.v26-reference .v26-search-toggle:focus-visible,.v26-reference .v26-vault a:focus-visible,.v26-reference .v26-vault button:focus-visible,.v26-reference .v26-hero a:focus-visible{outline:3px solid #c7ff28;outline-offset:4px}
+@media(max-width:1120px){.v26-reference .head-contact{display:none}.v26-reference .main-nav{gap:8px}.v26-reference .nav-row{justify-content:space-between}}
+@media(max-width:900px){
+ .v26-reference .site-head .brand .v25-lockup{width:clamp(175px,28vw,260px)}
+ .v26-reference .main-nav{display:none}
+ .v26-reference .menu-open .main-nav,.v26-reference.menu-open .main-nav{display:flex}
+ .v26-reference .v26-hero-photo{left:38%}
+ .v26-reference .v26-brand-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .v26-reference .v26-brand-card a{min-height:121px}
+ .v26-reference .v26-brand-card img{max-height:79px}
+}
+@media(max-width:600px){
+ .v26-reference .site-head{position:sticky;top:0}
+ .v26-reference .site-head .nav-row{height:64px;min-height:64px;gap:5px;padding:0}
+ .v26-reference .site-head .brand .v25-lockup{width:clamp(162px,53vw,225px);height:auto;max-height:60px}
+ .v26-reference .v26-search-toggle{margin-left:auto;width:45px;height:44px}
+ .v26-reference .menu-toggle{width:43px;height:44px;margin-left:0}
+ .v26-reference .main-nav{top:63px}
+ .v26-reference .v26-search{top:64px}
+ .v26-reference .v26-search-inner{grid-template-columns:1fr auto;gap:8px}
+ .v26-reference .v26-search label{grid-column:1/-1}
+ .v26-reference .v26-search input{width:100%}
+ .v26-reference .v26-search-links{gap:5px}
+ .v26-reference .v26-hero{min-height:510px;align-items:flex-end}
+ .v26-reference .v26-hero-photo{inset:0 0 0 30%}
+ .v26-reference .v26-hero-photo img{object-position:15% top}
+ .v26-reference .v26-hero-photo::after{content:"";position:absolute;right:0;top:0;width:65%;height:175px;background:radial-gradient(ellipse 100% 100% at 100% 0%,#080909 9%,#080909e9 40%,#08090980 65%,transparent 100%);pointer-events:none}
+.v26-reference .v26-hero-vignette{background:linear-gradient(90deg,#050606 0%,#090a09d9 28%,#090a0994 53%,#090a0910 92%),linear-gradient(0deg,#050606f4 0%,#050606e4 25%,#0506067b 65%,transparent 96%)}
+ .v26-reference .v26-hero-content{width:calc(100% - 36px);padding:42px 0 24px}
+ .v26-reference .v26-hero-kicker{font-size:9px;gap:9px;letter-spacing:.15em;margin-bottom:18px;color:#eee}
+ .v26-reference .v26-hero-kicker i{height:14px;width:1px;flex-basis:1px}
+ .v26-reference .v26-hero h1{font-size:clamp(39px,10.4vw,61px);line-height:.91;letter-spacing:-.04em;white-space:nowrap}
+ .v26-reference .v26-hero-lead{font-size:clamp(14px,3.9vw,18px);max-width:25ch;line-height:1.35;margin-top:13px;color:#f0f0e8}
+ .v26-reference .v26-hero-actions{margin-top:16px;gap:10px;width:min(100%,354px)}
+ .v26-reference .v26-hero-actions a{min-height:49px;padding:10px 15px;font-size:clamp(13px,3.7vw,17px);gap:7px}
+ .v26-reference .v26-hero-actions a>span:first-child{font-size:22px}
+ .v26-reference .v26-hero-actions a>span:last-child{font-size:21px}
+ .v26-reference .v26-hero-quicklinks{margin-top:10px;gap:13px;font-size:10px}
+ .v26-reference .v26-hero-quicklinks a{min-height:35px}
+ .v26-reference .v26-vault{padding:35px 0 40px}
+ .v26-reference .v26-shell{width:calc(100% - 30px)}
+ .v26-reference .v26-vault-intro{gap:8px;margin-bottom:12px;align-items:center}
+ .v26-reference .v26-vault-eyebrow{font-size:9px;letter-spacing:.23em;margin-bottom:9px}
+ .v26-reference .v26-vault-eyebrow span{width:21px}
+ .v26-reference .v26-vault h2{font-size:clamp(36px,9.7vw,59px);white-space:nowrap}
+ .v26-reference .v26-vault-sub{font-size:14px;margin-top:10px}
+ .v26-reference .v26-vault-emblem{font-size:8px;letter-spacing:.1em}
+ .v26-reference .v26-vault-emblem span{font-size:27px}
+ .v26-reference .v26-vault-emblem strong{font-size:9px;line-height:1.3}
+ .v26-reference .v26-filters{gap:8px;padding-bottom:12px}
+ .v26-reference .v26-filters button{padding:10px 14px;min-height:43px;font-size:13px}
+ .v26-reference .v26-brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .v26-reference .v26-brand-card{border-radius:9px}
+ .v26-reference .v26-brand-card a{min-height:112px;padding:8px 9px}
+ .v26-reference .v26-brand-card img{width:95%;max-height:75px}
+ .v26-reference .v26-brand-label{font-size:9px}
+ .v26-reference .v26-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:0;margin-top:20px;padding:8px 0}
+ .v26-reference .v26-proof-grid>div{min-height:65px;padding:7px 9px;justify-content:flex-start;border-bottom:1px solid #333e34}
+ .v26-reference .v26-proof-grid>div:nth-child(even){border-right:0}
+ .v26-reference .v26-proof-grid>div:nth-last-child(-n+2){border-bottom:0}
+ .v26-reference .v26-proof-grid span{font-size:29px}
+ .v26-reference .v26-proof-grid strong{font-size:12px}
+ .v26-reference .v26-disclaimer{font-size:10px}
+ .v26-reference .v26-whatsapp{min-height:60px;gap:9px;padding:12px 9px;border-radius:80px;font-size:clamp(13px,3.7vw,18px);margin-top:19px}
+ .v26-reference .v26-whatsapp span:first-child{font-size:24px}
+ .v26-reference .v26-whatsapp span:last-child{font-size:23px}
+ .v26-reference .mobile-contact{display:none!important}
+}
+@media(max-width:350px){.v26-reference .v26-vault h2{font-size:34px}.v26-reference .v26-vault-emblem{display:none}.v26-reference .v26-hero h1{font-size:38px}.v26-reference .site-head .brand .v25-lockup{width:162px}}
+@media(prefers-reduced-motion:reduce){.v26-reference .v26-brand-card,.v26-reference .v26-filters button{transition:none!important;transform:none!important}}
+@media print{.v26-reference .v26-search-toggle,.v26-reference .v26-search,.v26-reference .v26-filters{display:none!important}.v26-reference .v26-brand-card[hidden]{display:block!important}.v26-reference .v26-brand-grid{grid-template-columns:repeat(3,1fr)}}
+/* QA 26.1 — maintain a visible gold directory emblem without horizontal scrolling on 360–430px phones. */
+@media(max-width:600px){
+ .v26-reference .v26-vault-intro{display:block}
+ .v26-reference .v26-vault-emblem{display:flex;flex-direction:row;align-items:center;justify-content:flex-end;gap:7px;margin-top:7px}
+ .v26-reference .v26-vault-emblem span{font-size:18px}
+ .v26-reference .v26-vault-emblem strong{font-size:9px;white-space:nowrap}
+}
+
+@media(max-width:600px){.v26-reference .v26-hero-photo::after{width:67%;height:150px;background:radial-gradient(ellipse 100% 100% at 100% 0%,#080909 8%,#080909dd 38%,#08090966 67%,transparent 100%)}}

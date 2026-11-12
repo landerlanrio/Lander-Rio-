@@ -177,3 +177,14 @@ body.flagship-v24{
  .flagship-v24:has(.lr-chat-panel:not([hidden])) .mobile-contact{visibility:hidden;pointer-events:none}
  body.flagship-v24.menu-open .lr-chat-root{visibility:hidden;pointer-events:none}
 }
+
+/* v24.3 — verified hero entry + contextual ROX, protecting mobile primary CTAs */
+.flagship-v24 .flagship-ask-rox{display:inline-flex;align-items:center;gap:12px;border:0;border-bottom:1px solid #b5b9b0;background:none;color:#e6e7e2;font-size:13px;font-weight:650;min-height:44px;padding:11px 0;margin:16px 0 0;cursor:pointer}
+.flagship-v24 .flagship-ask-rox:hover{color:var(--lime);border-color:var(--lime)}
+.flagship-v24 .flagship-ask-rox:focus-visible{outline:3px solid var(--lime);outline-offset:4px}
+@media(max-width:600px){
+ .flagship-v24 .lr-chat-root{display:none}
+ .flagship-v24 .lr-chat-root[data-past-hero="true"],
+ .flagship-v24 .lr-chat-root[data-open="true"]{display:block}
+ .flagship-v24 .flagship-ask-rox{font-size:12px;margin-top:12px}
+}

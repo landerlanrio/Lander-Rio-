@@ -90,6 +90,33 @@ class FlagshipTests(unittest.TestCase):
         self.assertIn('rel="canonical"',self.home)
         self.assertIn('name="description"',self.home)
         self.assertIn('property="og:title"',self.home)
+    def test_og_title_and_description_match_page(self):
+        title=re.search(r'<title>(.*?)</title>',self.home,re.S).group(1)
+        og_title=re.search(r'<meta[^>]+content="([^"]+)" property="og:title"',self.home).group(1)
+        description=re.search(r'<meta[^>]+content="([^"]+)" name="description"',self.home).group(1)
+        og_description=re.search(r'<meta[^>]+content="([^"]+)" property="og:description"',self.home).group(1)
+        self.assertEqual(title,og_title)
+        self.assertEqual(description,og_description)
+
+    def test_handoff_stays_visible_after_messages(self):
+        # Anchor must be a sibling AFTER the scrollable log, not inside it.
+        end_log=self.home.index('  </div>\n   <a class="lr-chat-handoff"')
+        handoff=self.home.index('data-rox-handoff',end_log)
+        form=self.home.index('<form class="lr-chat-form"',handoff)
+        self.assertLess(end_log,handoff)
+        self.assertLess(handoff,form)
+        self.assertIn('flex:0 0 auto',self.css)
+
+    def test_rox_turn_limit_halts_quick_buttons(self):
+        self.assertIn('if(turns>=MAX_TURNS)return;',self.rox)
+        self.assertIn('button.disabled=true',self.rox)
+        self.assertIn("button.setAttribute('aria-disabled','true')",self.rox)
+
+    def test_mobile_rox_docks_around_sticky_navigation(self):
+        self.assertIn(':has(.mobile-contact.visible)',self.css)
+        self.assertIn(':has(.lr-chat-panel:not([hidden])) .mobile-contact',self.css)
+        self.assertIn('body.flagship-v24.menu-open .lr-chat-root',self.css)
+
     def test_unique_identifiers(self):
         self.assertEqual(len(self.doc.ids),len(set(self.doc.ids)))
     def test_no_change_to_critical_urls(self):

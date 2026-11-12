@@ -1,0 +1,11 @@
+{
+  "overlay_version": "2026-11-12-rox-widget-v1",
+  "base_manifest": "manifest-v23-10.json",
+  "algorithm": "git-blob-sha1",
+  "rationale": "Preserve historic v23.10 SHA-256 manifest unchanged; verify only this reviewed, preview-gated ROX overlay.",
+  "files": {
+    "index.html": "d334bfa0f51b04d89545058515ebd4cdb22bda66",
+    "assets/rox-widget-v1.js": "2b56db52dfa65adaf6e5d63ee26f9d8d09bf816a",
+    "assets/rox-widget-v1.css": "770020750b2fce3cbb89142821b67edfcfbef65e"
+  }
+}

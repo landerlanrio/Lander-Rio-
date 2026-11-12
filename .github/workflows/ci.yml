@@ -31,6 +31,8 @@ jobs:
         run: node --experimental-strip-types --test prototypes/rox-ai-v2/index.test.mjs
       - name: ROX v3 agent and zero-write integration acceptance (no network)
         run: node --test prototypes/rox-ai-v2/agent-v3.test.mjs
+      - name: ROX private preview HTTP-to-handler integration (loopback only)
+        run: node --experimental-strip-types --test prototypes/rox-ai-v2/preview-private/server.test.mjs
       - name: ROX floating widget offline unit tests
         run: node --test scripts/rox-widget.test.cjs
 

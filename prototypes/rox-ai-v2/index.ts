@@ -1,4 +1,6 @@
-/* LANDER RIO — ROX AI 2.0 | STAGING ONLY | 2026-11-12
+import { agentTurnV3, ROX_AGENT_VERSION } from './agent-v3.mjs';
+
+/* LANDER RIO — ROX AI 2.0 + Agent 3.0 | STAGING ONLY | 2026-11-12
  * Explicit enablement gate: ROX_AI_ENABLED AND ROX_AI_BUDGET_APPROVED AND
  * OPENAI_API_KEY, ROX_AI_MODEL, ROX_TURNSTILE_SECRET and ROX_TURNSTILE_SITE_KEY.
  * Without all five: never call a paid model. No API secrets in browser.
@@ -6,7 +8,7 @@
  */
 declare const Deno: { env: { get(name:string):string|undefined }; serve(fn:(req:Request)=>Promise<Response>|Response):void };
 
-const VERSION='2.0.0-staging';
+const VERSION='3.0.0-isolated';
 // Configure the model explicitly only after price/capability approval.
 const FALLBACK_MODEL='';
 const MAX_BODY=18000;
@@ -124,7 +126,7 @@ async function handler(req:Request):Promise<Response>{
  const url=new URL(req.url),origin=req.headers.get('origin'),path=url.pathname;
  if(req.method==='OPTIONS')return originAllowed(origin)?new Response(null,{status:204,headers:{...corsHeaders(origin),'cache-control':'no-store'}}):json(403,{error:'origin_not_allowed'},origin);
  if(req.method==='GET'&&(path.endsWith('/health')||path.endsWith('/lander-rox-ai-v2-staging'))){
-  return json(200,{service:'ROX AI 2.0',environment:'staging',version:VERSION,ai_enabled:enabled(),requires_approval:true,mode:enabled()?'generative_with_challenge':'no_paid_calls',site_key:enabled()?safeGet('ROX_TURNSTILE_SITE_KEY'):null,commercial_handoff:'human'},origin);
+  return json(200,{service:'ROX AI 2.0 + Agent v3',agent_version:ROX_AGENT_VERSION,environment:'staging',version:VERSION,ai_enabled:enabled(),requires_approval:true,mode:enabled()?'generative_with_challenge':'no_paid_calls',site_key:enabled()?safeGet('ROX_TURNSTILE_SITE_KEY'):null,commercial_handoff:'human'},origin);
  }
  if(req.method!=='POST'||!path.endsWith('/chat'))return json(405,{error:'method_not_allowed'},origin);
  if(!originAllowed(origin))return json(403,{error:'origin_not_allowed'},origin);
@@ -138,14 +140,20 @@ async function handler(req:Request):Promise<Response>{
  if(!parsed.ok)return json(400,{error:parsed.error},origin);
  const last=parsed.messages[parsed.messages.length-1].content;
  const classification=classifyIntent(last,parsed.messages.slice(0,-1),parsed.context);
+ const agent=agentTurnV3({message:last,history:parsed.messages.slice(0,-1),segment:parsed.context.segment,intent:classification.intent});
+ // Independent, pure agent core: no upstream API, CRM write or automatic handoff.
  // No paid calls for clinical/restricted or commercial; preserve only question, never promise sale.
- if(classification.intent==='clinical')return json(200,{mode:'clinical',reply:'Sobre medicamentos e substâncias de uso controlado, posso oferecer informações educativas, mas não intermediar a comercialização ou orientar doses. Procure um profissional habilitado para orientação individual.',topic:classification.topic},origin);
- if(classification.intent==='privacy')return json(200,{mode:'privacy',reply:'Para sua segurança, evite enviar telefones, documentos, e-mails ou informações sensíveis no chat. Podemos conversar sem esses dados.',topic:'Privacidade'},origin);
- if(classification.intent==='commercial')return json(200,{mode:'handoff',reply:'Essa é uma questão comercial. Vou organizar seu pedido para nossa equipe conferir e responder com segurança. Você decide se quer abrir o WhatsApp e enviar a mensagem.',topic:classification.topic},origin);
+ if(classification.intent==='clinical'||agent.mode==='clinical')return json(200,{mode:'clinical',reply:'Sobre medicamentos e substâncias de uso controlado, posso oferecer informações educativas, mas não intermediar a comercialização ou orientar doses. Procure um profissional habilitado para orientação individual.',topic:classification.topic},origin);
+ if(classification.intent==='privacy'||agent.mode==='privacy')return json(200,{mode:'privacy',reply:'Para sua segurança, evite enviar telefones, documentos, e-mails ou informações sensíveis no chat. Podemos conversar sem esses dados.',topic:'Privacidade'},origin);
+ if(classification.intent==='commercial'||agent.mode==='handoff'){
+  const safe=agent.mode==='handoff'?agent:agentTurnV3({message:last,history:parsed.messages.slice(0,-1),segment:parsed.context.segment,intent:'commercial'});
+  return json(200,{mode:'handoff',reply:safe.reply,topic:safe.topic,qualification:safe.qualification,integrations:safe.integrations,ai_enabled:false},origin);
+ }
  // Crucial budget barrier: off means absolutely no upstream model calls.
  if(!enabled()){
   const matched=offlineReply(last);
   if(matched)return json(200,{mode:'offline',reply:matched.reply,topic:matched.topic,ai_enabled:false},origin);
+  if(agent.mode==='offline')return json(200,{mode:'offline',reply:agent.reply,topic:agent.topic,link:agent.link||null,ai_enabled:false},origin);
   return json(200,{mode:'offline',reply:'Não tenho uma resposta confiável para esse assunto sem consultar outra fonte. Posso ajudar com informações sobre a LANDER RIO, treino, dieta e encaminhamento à equipe. Quer tentar outra pergunta?',topic:'Atendimento',ai_enabled:false},origin);
  }
  const ip=req.headers.get('cf-connecting-ip')||req.headers.get('x-real-ip')||'unknown';

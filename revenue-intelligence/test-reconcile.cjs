@@ -6,3 +6,7 @@ test('valid commercial sequence counts verified sale',()=>{const proof={evidence
 test('sale without qualification rejected',()=>{const r=reconcile([ev('sale_confirmed','1',{evidence_verified:true,evidence_id:'proof',amount:99,currency:'BRL'})]);assert.equal(r.rejected_count,1);});
 test('invalid references are rejected',()=>{const r=reconcile([ev('whatsapp_open_click','1',{reference:'LR-FAKE'})]);assert.equal(r.opportunities.length,0);});
 test('does not mutate input',()=>{const x=[ev('whatsapp_open_click','1')];reconcile(x);assert.equal(x.length,1);});
+
+test('qualification without verified conversation is rejected',()=>{const r=reconcile([ev('lead_qualified','1',{evidence_verified:true,evidence_id:'proof'})]);assert.equal(r.rejected_count,1);});
+test('conversation without prior click is rejected',()=>{const r=reconcile([ev('conversation_confirmed','1',{evidence_verified:true,evidence_id:'proof'})]);assert.equal(r.rejected_count,1);});
+test('proposal cannot skip qualification',()=>{const r=reconcile([ev('whatsapp_open_click','1'),ev('proposal_created','2',{evidence_verified:true,evidence_id:'proof'})]);assert.equal(r.rejected_count,1);});

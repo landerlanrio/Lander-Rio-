@@ -97,11 +97,28 @@
   }
   log.scrollTop=log.scrollHeight;
  }
+ // Floating assistant appears after the hero on mobile; the hero has a direct entry.
+ const hero=document.querySelector('.flagship-hero');
+ if(hero && typeof IntersectionObserver!=='undefined'){
+  new IntersectionObserver(([entry])=>{
+   root.dataset.pastHero=String(!entry.isIntersecting && entry.boundingClientRect.bottom<0);
+  },{threshold:0}).observe(hero);
+ }else root.dataset.pastHero='true';
+ let returnFocus=openButton;
  function setOpen(value){
+  if(value){
+   const active=document.activeElement;
+   if(active && typeof active.focus==='function')returnFocus=active;
+  }
+  root.dataset.open=String(value);
   panel.hidden=!value;
   openButton.setAttribute('aria-expanded',String(value));
-  if(value){input.focus({preventScroll:true})}
-  else{openButton.focus({preventScroll:true})}
+  if(value)input.focus({preventScroll:true});
+  else{
+   const ask=document.querySelector('[data-rox-open]');
+   const target=(returnFocus===openButton&&root.dataset.pastHero!=='true'&&ask)?ask:returnFocus;
+   target.focus({preventScroll:true});
+  }
  }
  openButton.addEventListener('click',()=>setOpen(panel.hidden));
  closeButton.addEventListener('click',()=>setOpen(false));

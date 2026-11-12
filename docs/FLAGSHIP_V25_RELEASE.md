@@ -1,6 +1,6 @@
 # LANDER RIO — Flagship v25.0 | Implementação e homologação
 
-**Data:** 12/11/2026. **Ambiente:** GitHub branch `design/flagship-v25-approved-2026-11-12` (PR draft #5) e pacote Netlify manual separado. **Domínio de produção não alterado nesta implementação.**
+**Data:** 12/11/2026. **Ambiente:** GitHub branch `design/flagship-v25-approved-2026-11-12` (PR draft #6) e pacote Netlify manual separado. **Domínio de produção não alterado nesta implementação.**
 
 ## Origem, material e direitos
 - Referência visual: oito imagens fornecidas pelo titular e mockups criados na conversa (não copiados como interface estática).
@@ -32,11 +32,11 @@
 - O ambiente de inspeção não executou Lighthouse/Core Web Vitals nem Safari iOS/Android em hardware físico. Metas 90+/95+, LCP, CLS e INP são **não medidas**.
 - A prévia HTML de chat integra CSS, imagens e scripts em linha para funcionar sem servidor, **mas não equivale à estrutura de CSP do site real**. Para publicação usar o **ZIP do site completo**, não o HTML de prévia.
 - O usuário autorizou implementar o design, mas o conector Netlify disponível aqui fornece leitura do projeto/deploy, **sem ação de upload/deploy**; o deploy real ainda depende de um canal de publicação autorizado e de validação do artefato com o site atual.
-- ROX 2.0, HubSpot, Supabase e WhatsApp Business API permanecem isolados e exigem homologação específica. O PR #5 não ativa nenhum custo de modelo ou mensagens.
+- ROX 2.0, HubSpot, Supabase e WhatsApp Business API permanecem isolados e exigem homologação específica. O PR #6 não ativa nenhum custo de modelo ou mensagens.
 - A publicação por ZIP substituiria o artefato Netlify; por isso exige comparação de rotas e backup do deploy existente antes de promover o site. Em caso de regressão, é necessário plano de fix-forward/versionamento, sem assumir rollback automático.
 
 ## Artefatos e release
-- Fonte GitHub: PR draft #5 contra `staging`.
+- Fonte GitHub: PR draft #6 contra `staging`.
 - Pacote completo: `LANDER_RIO_FLAGSHIP_V25_NETLIFY_PRONTO.zip` (site estático completo, 81 HTML, 6 imagens novas, CSS e JS novos).
 - Prévia interativa offline: `LANDER_RIO_FLAGSHIP_V25_PREVIEW.html` (apenas homologação local).
 - Relatório técnico + `LANDER_RIO_V25_QA.json` + capturas PNG (desktop, mobile e ROX).

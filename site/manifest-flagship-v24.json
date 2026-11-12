@@ -3,8 +3,8 @@
   "base_manifest": "manifest-v23-10.json",
   "scope": "Flagship homepage override; legacy release.json deliberately unchanged",
   "files": {
-    "index.html": "7dfd2a0e99370b249625399ab33c8928c5d8a923f586fd1ee696e6b6698b495f",
-    "assets/flagship-v24.css": "f09e6b59bb6e15c6d59ad0d515656963848ca2440f7a7e2ed1125fd896d0f426",
-    "assets/rox-demo-v24.js": "a3c7179bff62407164235873513622525fe5c925327b734d7f93a37f201ee034"
+    "index.html": "aff502012555ba137379de85886a8f6f9babb830f56e37e2cf1f9da3a5d6afda",
+    "assets/flagship-v24.css": "e9d32ca25cfcf36effeb0bae1fe2273dd84452a247e04ea1f5d7b10f62a03e04",
+    "assets/rox-demo-v24.js": "72368083dd9e88420475133f96c8c9b357f467a01185f064b6e4820c6ef09b07"
   }
 }

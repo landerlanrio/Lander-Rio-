@@ -1,0 +1,224 @@
+{
+  "checks": [
+    {
+      "name": "mobile: preview disabled by default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: launcher visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: panel initially hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: panel opens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: focus on input",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: chat greeting",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "viewport": 390,
+        "panel": {
+          "x": 10,
+          "right": 380,
+          "top": 123,
+          "bottom": 683
+        }
+      }
+    },
+    {
+      "name": "mobile: panel in viewport",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "viewport": 390,
+        "panel": {
+          "x": 10,
+          "right": 380,
+          "top": 123,
+          "bottom": 683
+        }
+      }
+    },
+    {
+      "name": "mobile: brand answer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: quick buttons hidden after use",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: external price not redirected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: commercial handoff shown",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: handoff minimal and correct",
+      "passed": true,
+      "detail": "https://wa.me/5521920043538?text=Ol%C3%A1!%20Vim%20pelo%20assistente%20ROX%20no%20site%20da%20LANDER%20RIO%20e%20gostaria%20de%20falar%20com%20a%20equipe%20sobre%20atendimento%20para%20revendedores.%20Podemos%20conversar%3F"
+    },
+    {
+      "name": "mobile: medication not commercial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: PII guard and masked echo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: unsafe markup rendered as text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mobile: Escape closes panel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: preview disabled by default",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: launcher visible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: panel initially hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: panel opens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: focus on input",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: chat greeting",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: no horizontal overflow",
+      "passed": true,
+      "detail": {
+        "width": 1365,
+        "viewport": 1365,
+        "panel": {
+          "x": 959,
+          "right": 1341,
+          "top": 160,
+          "bottom": 770
+        }
+      }
+    },
+    {
+      "name": "desktop: panel in viewport",
+      "passed": true,
+      "detail": {
+        "width": 1365,
+        "viewport": 1365,
+        "panel": {
+          "x": 959,
+          "right": 1341,
+          "top": 160,
+          "bottom": 770
+        }
+      }
+    },
+    {
+      "name": "desktop: brand answer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: quick buttons hidden after use",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: external price not redirected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: commercial handoff shown",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: handoff minimal and correct",
+      "passed": true,
+      "detail": "https://wa.me/5521920043538?text=Ol%C3%A1!%20Vim%20pelo%20assistente%20ROX%20no%20site%20da%20LANDER%20RIO%20e%20gostaria%20de%20falar%20com%20a%20equipe%20sobre%20atendimento%20para%20revendedores.%20Podemos%20conversar%3F"
+    },
+    {
+      "name": "desktop: medication not commercial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: PII guard and masked echo",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: unsafe markup rendered as text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "desktop: Escape closes panel",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "zero external requests",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "zero runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "external_requests": [],
+  "page_errors": [],
+  "total": 36,
+  "passed": 36
+}

@@ -112,6 +112,14 @@ class FlagshipTests(unittest.TestCase):
         self.assertIn('button.disabled=true',self.rox)
         self.assertIn("button.setAttribute('aria-disabled','true')",self.rox)
 
+    def test_rox_first_screen_entry_and_contextual_mobile_launcher(self):
+        self.assertIn('data-rox-open aria-label="Perguntar ao ROX',self.home)
+        self.assertIn('root.dataset.pastHero',self.rox)
+        self.assertIn('root.dataset.open=String(value)',self.rox)
+        self.assertIn('returnFocus',self.rox)
+        self.assertIn('.lr-chat-root[data-past-hero="true"]',self.css)
+        self.assertIn('.lr-chat-root[data-open="true"]',self.css)
+
     def test_mobile_rox_docks_around_sticky_navigation(self):
         self.assertIn(':has(.mobile-contact.visible)',self.css)
         self.assertIn(':has(.lr-chat-panel:not([hidden])) .mobile-contact',self.css)

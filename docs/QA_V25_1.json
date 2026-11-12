@@ -38,5 +38,7 @@
     "site/assets/flagship-v25-1.css",
     "site/manifest-flagship-v25.json",
     "scripts/test_flagship.py"
-  ]
+  ],
+  "github_pr": "https://github.com/landerlanrio/Lander-Rio-/pull/7",
+  "release_target": "staging (draft PR, no deployment)"
 }

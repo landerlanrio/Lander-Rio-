@@ -1,0 +1,66 @@
+{
+  "version": "25.0",
+  "date": "2026-11-12",
+  "repository": "landerlanrio/Lander-Rio-",
+  "branch": "design/flagship-v25-approved-2026-11-12",
+  "pr": "https://github.com/landerlanrio/Lander-Rio-/pull/6",
+  "test_environment": "isolated local Chromium render of self-contained preview; NOT live Netlify deploy",
+  "browser": {
+    "engine": "Chromium",
+    "viewport_widths": [
+      320,
+      360,
+      375,
+      390,
+      430,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "passed": 9,
+    "tested": 9,
+    "horizontal_overflow_failures": 0,
+    "uncaught_js_errors": 0,
+    "hero_image_decode_failures": 0,
+    "h1_per_page": 1
+  },
+  "static_tests": {
+    "python_passed": 25,
+    "python_total": 25,
+    "node_rox_passed": 8,
+    "node_rox_total": 8
+  },
+  "original_files": {
+    "source_zip_entries": 171,
+    "original_html_pages": 81,
+    "original_entries_modified": [
+      "index.html"
+    ],
+    "other_original_entries_preserved": 170
+  },
+  "release_zip": {
+    "files": 180,
+    "html_pages": 81,
+    "sha256": "1b9cc56bb627d6beabace40ef3118292f77d23bc256518aab72d325ba9619c5b"
+  },
+  "ci": {
+    "result": "success",
+    "run": "https://github.com/landerlanrio/Lander-Rio-/actions/runs/43268217023"
+  },
+  "not_measured": [
+    "Lighthouse mobile",
+    "LCP",
+    "INP",
+    "CLS",
+    "Safari iOS physical device",
+    "Netlify production artifact equivalence",
+    "ROX AI/CRM/WhatsApp API integration"
+  ],
+  "deployment": {
+    "production_unchanged": true,
+    "site": "lander-rio-oficial",
+    "published_deploy_before": "6af28cd36c8c0ece64548aca",
+    "automatic_deploy_available": false
+  }
+}

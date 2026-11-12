@@ -11,6 +11,7 @@ function createStore(){
   if(!['visitor','verified_backend'].includes(actor))throw Error('unauthorized actor');
   if(!event||typeof event!=='object')throw Error('missing event');
   if(actor==='visitor'&&!['handoff_prepared','whatsapp_open_click'].includes(event.type))throw Error('backend verification required');
+  if(actor==='visitor'&&(event.evidence_verified===true||event.evidence_id!==undefined))throw Error('visitor cannot supply verification evidence');
   if(actor==='verified_backend'&&!event.evidence_verified)throw Error('verified evidence required');
   const fingerprint=JSON.stringify(event);
   if(keys.has(idempotency_key)){

@@ -15,14 +15,15 @@ function prepare(input,randomUUID){
  const ref=reference(randomUUID);
  return Object.freeze({reference:ref,segment:normalize(input.segment,SEGMENTS,'geral'),source:normalize(input.source,CHANNELS,'unknown'),placement:typeof input.placement==='string'&&/^[a-z0-9_-]{1,40}$/.test(input.placement)?input.placement:'unknown',created_at:new Date().toISOString()});
 }
+function validSaleAmount(value){return Number.isFinite(value)&&value>0&&value<=999999999999.99&&Number.isSafeInteger(Math.round(value*100))&&Math.round(value*100)/100===value;}
 function event(input){
  assert(input&&typeof input==='object','event required');
  assert(TYPES.includes(input.type),'unknown event');
- assert(/^LR-[0-9A-F-]{36}$/.test(input.reference||''),'invalid reference');
+ assert(/^LR-[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/.test(input.reference||''),'invalid reference');
  assert(input.consent===true,'consent required');
  const confirmed=['conversation_confirmed','lead_qualified','proposal_created','sale_confirmed','lead_lost'].includes(input.type);
- if(confirmed)assert(input.evidence_verified===true&&typeof input.evidence_id==='string'&&input.evidence_id.length>0,'verified evidence required');
- if(input.type==='sale_confirmed')assert(Number.isFinite(input.amount)&&input.amount>=0&&input.currency==='BRL','verified sale amount in BRL required');
+ if(confirmed)assert(input.evidence_verified===true&&typeof input.evidence_id==='string'&&/^[A-Za-z0-9:_-]{1,128}$/.test(input.evidence_id),'verified evidence required');
+ if(input.type==='sale_confirmed')assert(validSaleAmount(input.amount)&&input.currency==='BRL','verified sale amount in BRL required');
  const result={event_id:reference(input.randomUUID),reference:input.reference,type:input.type,stage:MAP[input.type],occurred_at:new Date().toISOString(),evidence_verified:confirmed};
  if(confirmed)result.evidence_id=input.evidence_id;
  if(input.type==='sale_confirmed'){result.amount=input.amount;result.currency='BRL';}
@@ -33,6 +34,7 @@ function transition(current,type){
  const next=MAP[type],rank={prepared:0,clicked:1,conversation_confirmed:2,qualified:3,proposal:4,won:5,lost:5};
  assert(current!=='won'&&current!=='lost','terminal stage');
  assert(rank[next]>=rank[current],'stage regression');
+ assert(!(next===current&&['conversation_confirmed','qualified','proposal'].includes(next)),'duplicate transition');
  if(next==='won')assert(current==='proposal'||current==='qualified','sale requires qualification');
  if(next==='conversation_confirmed')assert(current==='clicked','conversation requires prior click');
  if(next==='qualified')assert(current==='conversation_confirmed','qualification requires verified conversation');

@@ -31,3 +31,11 @@
 
 ## Bloqueadores reais
 Apenas GitHub possui ambiente isolado confirmado. Supabase e HubSpot conectados apontam para sistemas reais. Portanto, testes de integração de escrita e sincronização real permanecem bloqueados até haver ambiente de homologação isolado e aprovação de custo, caso aplicável.
+
+## Segurança e reconciliação após endurecimento offline
+- Não associar o identificador legado do site a UUID v4 por inferência: definir contrato novo com opt-in e transição versionada.
+- Chave de idempotência e inserção do evento precisam ser atômicas com bloqueio por oportunidade, evitando vendas duplicadas sob concorrência.
+- A prova só é validada no backend autenticado; hash SHA-256 gerado no servidor. Client-side evidence_verified não autoriza conversão.
+- Futuros testes exigidos em sandbox sem cobrança aprovada: SQL + rollback, anon/authenticated negados, backend mínimo, autenticação/rate limit e concorrência.
+- Testes Node e asserções textuais da SQL não equivalem a execução Postgres ou homologação de RLS.
+- Nenhuma publicação, mensagem, alteração de CRM ou configuração Supabase foi autorizada nesta etapa.

@@ -57,3 +57,12 @@ Status: proposta de implementação, **sem integração em produção**. Base: s
 - Total de 26 testes unitários/integração simulada. Os testes não usam dados reais nem cobram Supabase.
 - Esta simulação não equivale a um banco Postgres, RLS, webhook ou integração HubSpot real. A implantação de backend continua bloqueada sem ambiente isolado aprovado.
 - Decisão explícita: usuário não autorizou cobrança no Supabase. Não criar branch faturável nem executar SQL de escrita no projeto principal.
+
+## Fase 1.2 — Hardening offline
+- UUID v4, timestamps UTC, campos permitidos, evidências sintéticas e valores BRL passam a ter validação estrita.
+- Regressões, reabertura de estágios finais, vendas duplicadas, provas em eventos de clique e campos pessoais inesperados são rejeitados.
+- Empates de timestamp preservam ordem de entrada. No serviço real, validar ordem e concorrência em transação persistida.
+- schema.sql propõe idempotência única, origem verificada, hash SHA-256 de prova, RLS e privilégios revogados. DDL NÃO APLICADA e NÃO EXECUTADA em Postgres.
+- A referência legada do site (getContactReference) não é o UUID v4 do novo modelo. Não correlacionar por telefone, nome ou heurística sem migração e consentimento.
+- O parâmetro actor de local-store.js simula papéis, não autenticação real. Jamais confiar em alegações do navegador para vendas.
+- Gate: CI no HEAD verde e testes sintéticos. Esses testes não comprovam endpoint real, integração HubSpot, RLS real ou recebimento no WhatsApp.

@@ -25,6 +25,10 @@ jobs:
         run: python3 scripts/verify_site.py
       - name: JavaScript syntax
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
+      - name: Flagship v25 structural and semantic regression tests
+        run: python3 scripts/test_flagship.py
+      - name: ROX v25 offline behavior and safety tests
+        run: node --test scripts/rox-demo-v25.test.cjs
       - name: Read-only HTTP smoke tests
         run: python3 scripts/smoke_http.py
 

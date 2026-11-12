@@ -27,6 +27,8 @@ jobs:
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
       - name: Flagship UX and security regression gates
         run: python3 scripts/test_flagship.py
+      - name: ROX offline browser behavior (no network)
+        run: node --test scripts/rox-demo.test.cjs
       - name: Read-only HTTP smoke tests
         run: python3 scripts/smoke_http.py
 

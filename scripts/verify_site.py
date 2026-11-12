@@ -20,16 +20,39 @@ def fail(code, msg):
 def verify_manifest():
     manifest = json.loads((SITE/'manifest-v23-10.json').read_text(encoding='utf-8'))
     records = manifest.get('files', {})
+    # Append-only integrity overlay for preview-only ROX; preserve historical SHA-256 manifest.
+    overlay_path = ROOT/'docs'/'rox-widget-overlay-v1.json'
+    overlay_records = {}
+    if overlay_path.is_file():
+        overlay = json.loads(overlay_path.read_text(encoding='utf-8'))
+        allow = {'index.html', 'assets/rox-widget-v1.js', 'assets/rox-widget-v1.css'}
+        candidate = overlay.get('files', {})
+        if (overlay.get('base_manifest') != 'manifest-v23-10.json'
+                or overlay.get('algorithm') != 'git-blob-sha1'
+                or not isinstance(candidate, dict)
+                or set(candidate) != allow
+                or any(not isinstance(v, str) or not re.fullmatch(r'[0-9a-f]{40}', v) for v in candidate.values())):
+            fail('invalid-overlay', str(overlay_path.relative_to(ROOT)))
+        else:
+            overlay_records = candidate
     actual = {p.relative_to(SITE).as_posix() for p in SITE.rglob('*') if p.is_file()}
-    expected = set(records) | {'manifest-v23-10.json'}
+    expected = set(records) | set(overlay_records) | {'manifest-v23-10.json'}
     for extra in sorted(actual - expected): fail('untracked', extra)
     for missing in sorted(expected - actual): fail('missing', missing)
     for rel, recorded in records.items():
+        if rel in overlay_records: continue
         file = SITE / rel
         if not file.is_file(): continue
         observed = hashlib.sha256(file.read_bytes()).hexdigest()
         if observed.lower() != recorded.lower(): fail('hash-mismatch', rel)
-    return len(records)
+    for rel, recorded in overlay_records.items():
+        file = SITE / rel
+        if not file.is_file(): continue
+        data = file.read_bytes()
+        # Git blob hash = SHA-1("blob " + length + NUL + raw bytes).
+        observed = hashlib.sha1(b'blob ' + str(len(data)).encode('ascii') + b'\x00' + data).hexdigest()
+        if observed.lower() != recorded.lower(): fail('overlay-hash-mismatch', rel)
+    return len(records) - len(set(records) & set(overlay_records)), len(overlay_records)
 
 
 def path_exists(raw, page):
@@ -151,7 +174,7 @@ def main():
     required=['index.html','_headers','_redirects','netlify.toml','release.json','manifest-v23-10.json','robots.txt','sitemap.xml']
     for f in required:
         if not (SITE/f).is_file():fail('missing-core',f)
-    manifest_count=verify_manifest()
+    manifest_count,overlay_count=verify_manifest()
     html_count, references=verify_html()
     sitemap_count=verify_sitemap()
     css_count=verify_css()
@@ -161,7 +184,7 @@ def main():
     if release.get('version') != '23.10':fail('unexpected-version',str(release.get('version')))
     if html_count != 81:fail('unexpected-pages',str(html_count))
     print(json.dumps({'status':'PASS' if not ISSUES else 'FAIL',
-         'version':release.get('version'),'manifest_verified_sha256':manifest_count,
+         'version':release.get('version'),'manifest_verified_sha256':manifest_count,'overlay_verified_git_blob_sha1':overlay_count,
          'html_pages':html_count,'html_local_references_checked':references,
          'json_files_checked':json_count,'sitemap_urls':sitemap_count,
          'css_asset_references_checked':css_count,

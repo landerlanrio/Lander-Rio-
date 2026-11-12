@@ -77,3 +77,23 @@ A busca na agenda **primária** Google Calendar em 13/11 não retornou compromis
 - Ambiente remoto de staging sem cobrança adicional e com controle de origem/identidade/abuso; 95%+ das perguntas-teste predefinidas classificadas corretamente (métrica futura, não desempenho alegado).
 - Confirmação de conversa, oportunidade e venda exclusivamente por registros com origem verificável e consentimento.
 - Testes em dispositivos e acessibilidade executados; rollback validado; responsável aprova release.
+
+## 8. Auditoria adicional de Outlook, Meta e segurança das redes sociais
+
+As únicas três caixas Outlook atualmente expostas ao conector foram consultadas separadamente, sem classificar conteúdo de uma marca como conteúdo de outra:
+
+| Caixa Outlook | Itens na Inbox | Não lidos na Inbox | Escopo |
+|---|---:|---:|---|
+| Sillage Rio | 16 | 10 | Marca distinta; não misturar com LANDER RIO |
+| Landerlan Rio | 143 | 75 | Avisos Instagram/GitHub e operação digital |
+| DISTRILANDERRJ | 1.019 | 913 | Múltiplas notificações e conteúdo promocional misturado aos avisos |
+
+Os totais incluem apenas a pasta Inbox principal; **não representam mensagens comerciais pendentes** ou número de clientes. O histórico de oito e-mails citado anteriormente não significa oito caixas efetivamente conectadas.
+
+**Alertas sociais relevantes**: a caixa Landerlan Rio recebeu aviso de login do Instagram @lander.rio por Mobile Safari no iPhone, localizado aproximadamente em Montes Claros (MG), em 10/11, e dois pedidos de redefinição de senha em 09/11. A caixa DISTRILANDERRJ recebeu aviso de novo login no Facebook em 12/11 com localização aproximada perto de Fortaleza (CE). A leitura isolada desses avisos não comprova comprometimento. Somados ao alerta crítico Google, exigem revisão de sessões/dispositivos pelo titular e atualização de credenciais se apropriado. Nenhuma sessão foi revogada ou senha alterada.
+
+**Mídia paga**: Adspirer informa Meta Ads “Lander Rio” conectado. Isso indica OAuth ativo, **não** campanha em veiculação; quota de consultas Adspirer no mês está **15/15**, portanto não efetuar chamadas adicionais ou contratar aumento sem autorização. Google Ads, TikTok Ads e LinkedIn Ads não estavam conectados no Adspirer. Nenhuma campanha foi criada/reativada.
+
+**Editorial**: Metricool retornou **zero posts agendados** na marca LANDER RIO entre 12 e 21/11/2026, o que não prova ausência de publicações manuais ou de agendamentos feitos fora da plataforma. Os roteiros HYROX preparados não foram publicados nesta revisão.
+
+**Continuidade**: agendada revisão pontual dos alertas e status do PR #3 para 13/11 às 08h30 de Brasília, sem alterar as rotinas recorrentes de Radar, Painel Executivo e Parcerias.

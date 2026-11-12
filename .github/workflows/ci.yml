@@ -29,6 +29,8 @@ jobs:
         run: python3 scripts/test_flagship.py
       - name: ROX v25 offline behavior and safety tests
         run: node --test scripts/rox-demo-v25.test.cjs
+      - name: ROX v3 to Flagship v25.1 integration tests
+        run: node --test scripts/rox-agent-bridge.test.cjs
       - name: Read-only HTTP smoke tests
         run: python3 scripts/smoke_http.py
 

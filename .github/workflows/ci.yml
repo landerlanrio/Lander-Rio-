@@ -35,5 +35,16 @@ jobs:
         run: node --experimental-strip-types --test prototypes/rox-ai-v2/preview-private/server.test.mjs
       - name: ROX floating widget offline unit tests
         run: node --test scripts/rox-widget.test.cjs
+      - name: Package private ROX preview (source only, no deploy)
+        uses: actions/upload-artifact@v4
+        with:
+          name: rox-v3-private-preview
+          retention-days: 1
+          if-no-files-found: error
+          path: |
+            prototypes/rox-ai-v2/index.ts
+            prototypes/rox-ai-v2/agent-v3.mjs
+            prototypes/rox-ai-v2/preview-private/
+
 
 # IMPORTANT: No deploy job. Production stays on manual Netlify deploy.

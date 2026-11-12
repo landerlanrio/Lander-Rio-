@@ -21,3 +21,6 @@ Encontradas 21 ocorrências: 2 de conteúdo pouco aprofundado, 12 de meta descri
 `node scripts/test_seo_metadata.cjs` deve passar em 4/4 páginas.
 `python3 scripts/verify_site.py`, JavaScript syntax e smoke_http já integram a CI; conservar estes testes.
 Não há permissão para deploy nem merge: este PR é exclusivamente revisão.
+
+## Integridade de arquivos
+O manifesto histórico `site/manifest-v23-10.json` não foi editado. O overlay `site/manifest-openseo-20261112.json` registra exatamente os quatro arquivos alterados e seus hashes SHA-256; `scripts/verify_site.py` agora confere o overlay com lista permitida fixa antes de validar o snapshot. A primeira rodada de CI falhou somente por `hash-mismatch` nos quatro arquivos; esta correção é a remediação testável.

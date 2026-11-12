@@ -20,6 +20,9 @@ function reconcile(rows){
   if((row.stage==='won'||row.stage==='lost')&&next!==row.stage){rejected.push('terminal_transition');continue;}
   if(incoming<old&&next!=='prepared'){rejected.push('stage_regression');continue;}
   if(next==='won'&&old<STAGES.indexOf('qualified')){rejected.push('sale_without_qualification');continue;}
+  if(next==='conversation_confirmed'&&row.stage!=='clicked'){rejected.push('conversation_without_click');continue;}
+  if(next==='qualified'&&row.stage!=='conversation_confirmed'){rejected.push('qualification_without_conversation');continue;}
+  if(next==='proposal'&&row.stage!=='qualified'){rejected.push('proposal_without_qualification');continue;}
   row.stage=next;row.events++;
   if(e.type==='conversation_confirmed')row.confirmed_conversation=true;
   if(e.type==='sale_confirmed')row.amount_brl+=e.amount;

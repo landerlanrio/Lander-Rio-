@@ -25,3 +25,22 @@ Status: proposta de implementação, **sem integração em produção**. Base: s
 - `evidence_id` no módulo é dado interno; **não enviar diretamente ao analytics**. Hash de evidência apenas no backend.
 - `schema.sql` não deve ser aplicado ao banco atual sem revisão, aprovação e testes de permissão.
 - A fase 1 ainda não inclui webhook, interface, sincronização ou deploy. Nenhum evento de produção foi alterado.
+
+## Fase 1.1 — Reconciliação e validação
+- `reconcile.js` agrega eventos por referência, remove duplicados por event_id, separa clique de conversa confirmada e exige evidência para vendas.
+- `test-reconcile.cjs`: 7 testes adicionais, executados pelo quality gate com `node --test revenue-intelligence/test-*.cjs`.
+- O reconciliador é uma biblioteca isolada: não processa dados reais nem acessa banco ou WhatsApp.
+- A soma de vendas é apenas sobre eventos validados da entrada; a conciliação contábil e os estornos continuam pendentes.
+
+## Descobertas operacionais adicionais
+- Supabase já contém `public.leads`, `public.omega_events`, `public.omega_outcomes` e várias funções de WhatsApp/CRM; evitar duplicar serviços.
+- Advisor de segurança existente sinalizou 20 tabelas com RLS sem policy (INFO; pode ser intencional) e proteção contra senhas vazadas desativada (WARN). Nenhuma configuração foi alterada.
+- Edge Functions preexistentes incluem `whatsapp-webhook`, `lander-crm` e `lander-support-bridge`; não substituir sem inventário de consumidores e testes.
+- HubSpot sinaliza onboarding incompleto; nenhuma sincronização de CRM deve ser habilitada antes de confirmar permissões, mapeamento e consentimento.
+
+## Gates antes da Fase 2
+1. Verificar CI no HEAD do PR; status de commits anteriores não substitui validação do último.
+2. Confirmar origem verificável das mensagens recebidas e idempotência no backend.
+3. Validar retenção, consentimento, autenticação e segregação de dados comerciais.
+4. Revisar migração e aplicar somente em sandbox aprovado, nunca diretamente no banco atual.
+5. Preparar rollback e testes ponta a ponta sem dados de clientes.

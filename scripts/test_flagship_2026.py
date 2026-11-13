@@ -3,7 +3,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, parse_qs
-import unittest, json
+import unittest, json, hashlib
 SITE=Path(__file__).resolve().parents[1]/'site'
 class Parser(HTMLParser):
     def __init__(self): super().__init__(); self.tags=[]
@@ -43,9 +43,23 @@ class Flagship(unittest.TestCase):
         self.assertLess((SITE/'assets/flagship-hero-mobile-rc2.avif').stat().st_size,120_000)
         self.assertIn('fetchpriority="high"',self.html)
     def test_above_fold_logo_transfer_budget(self):
-        logos=[a for t,a in self.p.tags if t=='img' and '-hero-rc4.webp' in a.get('src','')]
+        logos=[a for t,a in self.p.tags if t=='img' and '-hero-rc5.webp' in a.get('src','')]
         self.assertEqual(len(logos),4)
         self.assertLessEqual(sum((SITE/a['src'].lstrip('/')).stat().st_size for a in logos),100_000)
+    def test_selected_logo_set_is_complete_and_pinned(self):
+        evidence=json.loads((SITE.parent/'docs/LOGOS_RC5_ASSETS.json').read_text())
+        expected={a['slug'] for a in evidence['assets']}
+        self.assertEqual(len(expected),14)
+        logos=[a for t,a in self.p.tags if t=='img' and '/logos/' in a.get('src','')]
+        self.assertEqual(len(logos),18)
+        for asset in evidence['assets']:
+            for output in asset['outputs']:
+                content=(SITE/output['path']).read_bytes()
+                self.assertEqual(hashlib.sha256(content).hexdigest(),output['sha256'])
+                match=[a for a in logos if a['src']=='/'+output['path']]
+                self.assertEqual(len(match),1)
+                self.assertEqual([int(match[0]['width']),int(match[0]['height'])],output['dimensions'])
+        self.assertNotIn('labs-group-rc3.webp',self.html)
     def test_brands_are_informational_and_not_checkout_links(self):
         brands=[a for t,a in self.p.tags if t=='a' and 'data-brand' in a];self.assertEqual(len(brands),18)
         self.assertTrue(all(urlsplit(a['href']).netloc=='' for a in brands))
@@ -72,7 +86,7 @@ class Flagship(unittest.TestCase):
         self.assertIn('isDemo:true',rox)
     def test_release_manifest_covers_new_assets(self):
         manifest={'files':{}}
-        for name in ('manifest-digital-flagship-2026.json','manifest-digital-flagship-2026-rc2.json','manifest-digital-flagship-2026-rc3.json','manifest-digital-flagship-2026-rc4.json'):
+        for name in ('manifest-digital-flagship-2026.json','manifest-digital-flagship-2026-rc2.json','manifest-digital-flagship-2026-rc3.json','manifest-digital-flagship-2026-rc4.json','manifest-digital-flagship-2026-rc5.json'):
             manifest['files'].update(json.loads((SITE/name).read_text())['files'])
         for f in ('index.html','assets/flagship-2026.css','assets/flagship-2026.js','assets/flagship-hero-mobile-rc2.avif','release.json'):self.assertIn(f,manifest['files'])
 if __name__=='__main__':unittest.main(verbosity=2)

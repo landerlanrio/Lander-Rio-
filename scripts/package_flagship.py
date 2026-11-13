@@ -77,7 +77,7 @@ def main():
         for file in (ROOT / 'docs/evidence' / release).rglob('*'):
             if file.is_file():
                 z.write(file, file.relative_to(ROOT / 'docs'))
-        for pattern in ('QUALITY_RC4*', 'LOGOS_RC3*', 'HERO_RC2_ASSETS.json'):
+        for pattern in ('QUALITY_' + revision + '*', 'LOGOS_' + revision + '*', 'HERO_RC2_ASSETS.json'):
             for file in (ROOT / 'docs').glob(pattern):
                 z.write(file, file.name)
         for file in out.glob('*.jpg'):

@@ -1,11 +1,12 @@
 {
-  "release": "digital-flagship-2026-rc4",
-  "version": "digital-flagship-2026-rc4",
+  "release": "digital-flagship-2026-rc5",
+  "version": "digital-flagship-2026-rc5",
   "prepared_on": "2026-11-13",
   "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
   "base_package": "lander-v23.10-seis-registros-recebimento-2026-11-10",
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
   "changes": [
+    "14 imagens mais recentes substituem os logos anteriores; Éticos, Quimfa e Indufar agora têm arquivos individuais, sem recortes; formatos WebP proporcionais e carregamento diferido na galeria.",
     "Links de 35 verbetes corrigidos para contraste e distinção visual; setas decorativas vetoriais eliminam glifos ausentes.",
     "Texto comercial maior, rótulos legíveis, foco e toque refinados; variantes proporcionais dos quatro logos da Hero reduzem seu peso de 233.070 para 61.158 bytes.",
     "12 arquivos enviados integrados como 14 marcas, preservando cores e proporções; grade Hero mobile 2×2 e galeria interativa.",
@@ -16,10 +17,10 @@
     "Eventos de Hero, perfil comercial e marcas sujeitos a consentimento, sem dados digitados.",
     "Preferência por movimento reduzido, fallback sem JavaScript e imagens AVIF/WebP."
   ],
-  "release_note": "RC4: revisão mensurável de qualidade, legibilidade e entrega de imagens. Candidata isolada, não publicada.",
+  "release_note": "RC5: 14 logos atualizadas com os últimos arquivos selecionados pelo usuário. Pacote para deploy manual; produção não alterada.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
   "status": "isolated-candidate-awaiting-homologation",
-  "manifest": "manifest-digital-flagship-2026-rc4.json",
+  "manifest": "manifest-digital-flagship-2026-rc5.json",
   "enciclopedia_release": "v23.8",
   "enciclopedia_status": "pre-publicação; revisão científica externa pendente",
   "source_head": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
@@ -30,8 +31,8 @@
     "crm_write": "mock-only-no-live-write",
     "commercial_events": "gateway-prototype-disabled"
   },
-  "visual_provenance": "Hero: duas imagens fornecidas e selecionadas pelo usuário em 13/11/2026. JPEGs originais preservados integralmente; AVIF e WebP são versões de entrega, sem retoque ou alteração facial. Logos selecionados e enviados pelo usuário, sem recriação. Ver docs/LOGOS_RC3_ASSETS.json.",
-  "source_branch": "quality/digital-flagship-2026-rc4",
+  "visual_provenance": "Hero: imagens selecionadas pelo usuário, preservadas desde RC2. Logos: 14 arquivos recebidos e selecionados em 13/11/2026, WebP proporcional, sem recriação, retoque ou remoção de fundo. Ver docs/LOGOS_RC5_ASSETS.json. A seleção não comprova vínculo oficial com fabricantes.",
+  "source_branch": "release/digital-flagship-2026-rc5",
   "recovered_base": "LANDER_RIO_TITAN_RC2_FONTE.zip",
-  "previous_candidate_commit": "54cec1876a89e0ff7ae40c9042bcfce0d851d8e6"
+  "previous_candidate_commit": "09f924aaeec31aade9b0b02292315f92eba3c6ea"
 }

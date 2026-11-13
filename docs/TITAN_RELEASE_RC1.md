@@ -2,6 +2,10 @@
 
 **TITAN 1.0.0 RC1 · 13/11/2026 UTC · candidata isolada, não publicada.**
 
+**Revisão consolidada:** [PR #11](https://github.com/landerlanrio/Lander-Rio-/pull/11), branch `integration/titan-2026-11-13`, destino `staging`, draft, sem merge. O primeiro [CI remoto](https://github.com/landerlanrio/Lander-Rio-/actions/runs/43352121637) passou. Após aviso de runtime antigo, as três Actions foram atualizadas para releases oficiais com SHA fixo e sem persistir credenciais de checkout; o gate é repetido no novo commit. A entrega inclui o recibo do CI final.
+
+Pacote estático reproduzido duas vezes com bytes idênticos: **2.444.950 bytes**, SHA-256 `252c852c586f8b95ba70eb459f907191bfedd78e1669558922a73d3baf3107ae`. Os 250 arquivos do primeiro commit remoto coincidiram com a cópia local por hash Git; o site não muda na atualização das Actions.
+
 ## A. Resultado
 
 | Sistema | Problema comprovado | Correção / trabalho aplicado | Teste | Estado real |

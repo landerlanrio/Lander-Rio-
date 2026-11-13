@@ -36,7 +36,7 @@ def main():
         (args.out / (name + '.log')).write_text(output, encoding='utf-8')
         results.append({'name': name, 'command': cmd, 'exit_code': code, 'passed': code == 0})
         print(('PASS' if code == 0 else 'FAIL') + ' ' + name, flush=True)
-    result = {'candidate': 'digital-flagship-2026-rc1', 'created_at': datetime.now(timezone.utc).isoformat(),
+    result = {'candidate': 'digital-flagship-2026-rc2', 'created_at': datetime.now(timezone.utc).isoformat(),
               'status': 'PASS' if all(r['passed'] for r in results) else 'FAIL',
               'network_scope': 'HTTP loopback and mocks; no external integration writes',
               'checks': results}

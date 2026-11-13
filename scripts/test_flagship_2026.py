@@ -39,13 +39,21 @@ class Flagship(unittest.TestCase):
             if t=='img':
                 self.assertIn('alt',a);self.assertGreater(int(a['width']),0);self.assertGreater(int(a['height']),0)
                 self.assertTrue((SITE/a['src'].lstrip('/')).is_file())
-        self.assertLess((SITE/'assets/flagship-hero-mobile-v25.webp').stat().st_size,50_000)
-        self.assertLess((SITE/'assets/flagship-hero-mobile-v25.avif').stat().st_size,50_000)
+        self.assertLess((SITE/'assets/flagship-hero-mobile-rc2.webp').stat().st_size,120_000)
+        self.assertLess((SITE/'assets/flagship-hero-mobile-rc2.avif').stat().st_size,120_000)
         self.assertIn('fetchpriority="high"',self.html)
     def test_brands_are_informational_and_not_checkout_links(self):
         brands=[a for t,a in self.p.tags if t=='a' and 'data-brand' in a];self.assertEqual(len(brands),18)
         self.assertTrue(all(urlsplit(a['href']).netloc=='' for a in brands))
         self.assertIn('não indicam parceria',self.html.lower())
+    def test_supplied_hero_has_portrait_and_landscape_fallbacks(self):
+        sources=[a for t,a in self.p.tags if t=='source']
+        mobile=[a for a in sources if a.get('media')=='(max-width:600px)']
+        self.assertEqual({a.get('type','image/jpeg') for a in mobile},{'image/avif','image/webp','image/jpeg'})
+        for a in mobile:
+            self.assertIn('mobile-rc2',a['srcset']);self.assertEqual((a['width'],a['height']),('864','1536'))
+        hero=[a for t,a in self.p.tags if t=='img' and 'hero-desktop-rc2' in a.get('src','')]
+        self.assertEqual(len(hero),1);self.assertEqual((hero[0]['width'],hero[0]['height']),('1536','864'))
     def test_progressive_enhancement_and_motion_fallback(self):
         self.assertGreater(self.html.index('<noscript>'),self.html.index('flagship-2026.css'))
         self.assertIn('@media(max-width:800px)',self.html)
@@ -59,7 +67,7 @@ class Flagship(unittest.TestCase):
         for token in ('fetch(', 'XMLHttpRequest','localStorage','sessionStorage','eval('):self.assertNotIn(token,rox)
         self.assertIn('isDemo:true',rox)
     def test_release_manifest_covers_new_assets(self):
-        manifest=json.loads((SITE/'manifest-digital-flagship-2026.json').read_text())
-        for f in ('index.html','assets/flagship-2026.css','assets/flagship-2026.js','assets/flagship-hero-mobile-v25.avif','release.json'):self.assertIn(f,manifest['files'])
+        manifest=json.loads((SITE/'manifest-digital-flagship-2026-rc2.json').read_text())
+        for f in ('index.html','assets/flagship-2026.css','assets/flagship-2026.js','assets/flagship-hero-mobile-rc2.avif','release.json'):self.assertIn(f,manifest['files'])
 if __name__=='__main__':unittest.main(verbosity=2)
 

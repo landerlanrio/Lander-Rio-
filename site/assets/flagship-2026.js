@@ -16,8 +16,8 @@
  let heroSeen=false,heroVisible=false,ticking=false;
  function measureHero(){if(heroSeen||!heroVisible)return;if(window.LanderMeasurement?.push('hero_view',{placement:'hero'}))heroSeen=true;}
  const hero=$('#inicio');
- if('IntersectionObserver' in window&&hero){new IntersectionObserver(([e])=>{heroVisible=e.isIntersecting;measureHero()},{threshold:.2}).observe(hero);window.addEventListener('lander:consent',measureHero);}
- else{heroVisible=true;measureHero();}
+ if('IntersectionObserver' in window&&hero){new IntersectionObserver(([e])=>{heroVisible=e.isIntersecting;document.body.classList.toggle('hero-in-view',heroVisible);measureHero()},{threshold:.2}).observe(hero);window.addEventListener('lander:consent',measureHero);}
+ else{heroVisible=true;document.body.classList.remove('hero-in-view');measureHero();}
  // Only animate decorative layers on capable pointer devices; touch uses the static composition.
  function updateDepth(){ticking=false;if(reduced.matches||!fine.matches||lowPower||document.hidden)return;const stage=$('.hero-stage'),r=stage.getBoundingClientRect();if(r.bottom>0)stage.style.setProperty('--hero-shift',Math.min(40,Math.max(0,-r.top*.1))+'px');}
  if(!lowPower){window.addEventListener('scroll',()=>{if(!ticking&&fine.matches&&!reduced.matches){ticking=true;requestAnimationFrame(updateDepth)}},{passive:true});

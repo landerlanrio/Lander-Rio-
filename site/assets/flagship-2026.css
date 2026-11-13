@@ -17,3 +17,21 @@
 @media(prefers-reduced-motion:reduce){.hero-line-one,.hero-line-two{transform:none!important}}
 
 @media(prefers-contrast:more){.tools .section-footnote{color:#37412c}}
+
+/* RC2: supplied portrait on phones, landscape on larger screens. No image distortion. */
+.hero-stage{background:#090909}
+@media(min-width:1001px){.hero-stage{height:clamp(440px,calc(100svh - 350px),660px);min-height:440px}}
+.hero-photo,.hero-photo img{object-position:50% 50%}
+.hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.25),transparent 65%),linear-gradient(0deg,#0a0b0b 0%,transparent 40%)}
+@media(min-width:601px) and (max-width:1000px){.hero-heading h1{font-size:7.5vw}.hero-heading{right:35%}.hero-manifesto{font-size:12px}}
+@media(max-width:600px){
+.hero-stage{height:clamp(380px,110vw,460px)}
+.hero-photo,.hero-photo img{object-position:50% 0%}
+.hero-shade{background:linear-gradient(0deg,#0a0b0b 0%,rgba(10,11,11,.88) 16%,rgba(10,11,11,.35) 35%,transparent 62%)}
+.hero-heading{bottom:40px}.hero-manifesto{display:none}
+.hero-caption,.hero-index{bottom:17px}
+}
+@media(min-width:441px) and (max-width:600px){.hero-photo,.hero-photo img{object-position:50% 25%}}
+@media(prefers-contrast:more){.hero-shade{background:linear-gradient(0deg,#000 0%,#0009 40%,#0002 70%)}}
+
+.hero-in-view .v25-rox-launcher{visibility:hidden;pointer-events:none}

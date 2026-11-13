@@ -1,0 +1,415 @@
+[
+  {
+    "viewport": 320,
+    "route": "/",
+    "bodyWidth": 320,
+    "clientWidth": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 566,
+        "width": 140
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 566,
+        "width": 140
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-mobile-rc2.avif",
+      "width": 864,
+      "height": 1536
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 668
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 668
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 668
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 668
+      }
+    ]
+  },
+  {
+    "viewport": 360,
+    "route": "/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 587,
+        "width": 156
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 587,
+        "width": 156
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-mobile-rc2.avif",
+      "width": 864,
+      "height": 1536
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 696
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 696
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 696
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 696
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "route": "/",
+    "bodyWidth": 390,
+    "clientWidth": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 620,
+        "width": 171
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 620,
+        "width": 171
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-mobile-rc2.avif",
+      "width": 864,
+      "height": 1536
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 729
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 729
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 729
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 729
+      }
+    ]
+  },
+  {
+    "viewport": 430,
+    "route": "/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 651,
+        "width": 191
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 651,
+        "width": 191
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-mobile-rc2.avif",
+      "width": 864,
+      "height": 1536
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 760
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 760
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 760
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 760
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/",
+    "bodyWidth": 768,
+    "clientWidth": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 655,
+        "width": 206
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 655,
+        "width": 206
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-desktop-rc2.avif",
+      "width": 1536,
+      "height": 864
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 781
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 781
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 781
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 781
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/",
+    "bodyWidth": 1280,
+    "clientWidth": 1280,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 680,
+        "width": 302
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 680,
+        "width": 302
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-desktop-rc2.avif",
+      "width": 1536,
+      "height": 864
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 817
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 817
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 817
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 817
+      }
+    ]
+  },
+  {
+    "viewport": 1440,
+    "route": "/",
+    "bodyWidth": 1440,
+    "clientWidth": 1440,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 680,
+        "width": 345
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 680,
+        "width": 345
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-desktop-rc2.avif",
+      "width": 1536,
+      "height": 864
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 817
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 817
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 817
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 817
+      }
+    ]
+  }
+]

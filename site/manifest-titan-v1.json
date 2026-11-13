@@ -1,12 +1,12 @@
 {
-  "version": "titan-1.0.0-rc1",
+  "version": "titan-1.0.0-rc2",
   "base_manifest": "manifest-v23-10.json",
   "upstream_commit": "2b6fa28a2785b97f883d18c2eca16157bc02f9cb",
   "scope": "Isolated integration candidate. No production deployment.",
   "files": {
     "assets/brand-vault-v26.js": "2f26915cc867c99c3d34b0b0b365aa45fe192d11bb4c64d93e9221ef69fc79b2",
     "assets/flagship-v25.css": "2c17456691a3d13d54da761c045a87d6f0fe7803407d9532a3c3dcc6f4fc5573",
-    "assets/flagship-v26-reference.css": "96c52c1fcf4fd800992588d5804e72ca2bbf6f4eeb437ef203ecf215349238c8",
+    "assets/flagship-v26-reference.css": "d346bc9a165aa7f24edd289bce17bbb4d25c548df4262543147b9c9702751012",
     "assets/measurement-v23-2.js": "0e1f24ef1bd6aa093df1afe41daf18f0df9722f6793d6f4ecf0b778462cfc434",
     "assets/rox-agent-v3-offline.js": "e7199f92405a9c69ca81099c317c20cc3e274c51668149fa70f9d1126c73886b",
     "assets/rox-demo-v25.js": "23e4bcbde55197ebf67028262941e1f36c4b9ca222167edfdfd89f2e6d771bdf",
@@ -32,9 +32,9 @@
     "enciclopedia/substancias/testosterona-undecanoato-oral/index.html": "25e90f4b9f039c67c18d69f11076a69678f0ae75b3567f4e67e4551cea22f497",
     "enciclopedia/substancias/trembolona-acetato/index.html": "1c30132174d81ffd3591271ddb6a28861e90a6c452a9885f84ab2b7a8d1a3081",
     "enciclopedia/substancias/trembolona-enantato/index.html": "3c7026fa60dbeb34d6d160163e426b8dcb58a7ff7f62d4338792e59898068764",
-    "index.html": "2d2cb597ebe0a131e0857c793dc80f26429b445068eacdd3336cbd926b8cb293",
+    "index.html": "1acc951c8456a0fae1bb28d5fa12adbb8da25f012ec8b5a4c27bbdf12419882f",
     "radar-performance/recebido/index.html": "33967a090247f942b6a9cdf7ecbda1f66a5d9d26058023820c8ffa18c43d770a",
-    "release.json": "f0435a838a523618f4f1d0f855f4e07ed43c7f809e2342dd7862b3de8c14ee6c",
+    "release.json": "6f38a38cf6fc7f07be999bdbf835cc8c6f5714ae6438da4f2425182ba2e998cf",
     "treino/index.html": "55e70502bed1a2dd7952543ffea19fa8b6c4d4aa08d1e8a546c9a7ccc9ebd7d6"
   }
 }

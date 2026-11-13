@@ -1,24 +1,24 @@
 {
-  "release": "lander-titan-1.0.0-rc1",
-  "version": "titan-1.0.0-rc1",
+  "release": "digital-flagship-2026-rc1",
+  "version": "digital-flagship-2026-rc1",
   "prepared_on": "2026-11-13",
   "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
   "base_package": "lander-v23.10-seis-registros-recebimento-2026-11-10",
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
   "changes": [
-    "Integração seletiva do Flagship v26, ROX 3, Revenue Intelligence e correções OpenSEO, mantendo 81 páginas e a enciclopédia.",
-    "ROX local com contexto comercial mínimo, reconhecimento de erros de digitação e encaminhamento manual sem envio de conversa ou dado sensível.",
-    "Transporte de IA opcional e gateway de eventos comerciais autenticados preparados e testados com mocks; não ativados.",
-    "Correções de busca, alinhamento mobile do ROX, imagem de hero reutilizada de v25, títulos, descrições e hierarquia de headings.",
-    "Manifestos SHA-256 sobrepostos e testes de regressão estritos, sem permitir assets WEBP desconhecidos."
+    "Homepage reconstruída com direção Cinematic Performance Monolith, CSS leve e enhancement progressivo.",
+    "Jornadas atacado e varejo, diretório de marcas informativo, busca local e contato contextual.",
+    "81 páginas, ferramentas, SEO, redirects e integrações existentes preservados.",
+    "Eventos de Hero, perfil comercial e marcas sujeitos a consentimento, sem dados digitados.",
+    "Preferência por movimento reduzido, fallback sem JavaScript e imagens AVIF/WebP."
   ],
-  "release_note": "Candidata isolada; não publicada. Backend, credenciais, banco, mensagens e provedores externos permanecem inalterados.",
+  "release_note": "Homepage Cinematic Performance Monolith em ambiente isolado. Comercial e marcas primeiro; ferramentas e enciclopédia preservadas depois. Não publicada.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
   "status": "isolated-candidate-awaiting-homologation",
-  "manifest": "manifest-titan-v1.json",
+  "manifest": "manifest-digital-flagship-2026.json",
   "enciclopedia_release": "v23.8",
   "enciclopedia_status": "pre-publicação; revisão científica externa pendente",
-  "source_head": "2b6fa28a2785b97f883d18c2eca16157bc02f9cb",
+  "source_head": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
   "production_deploy_at_audit": "6af28cd36c8c0ece64548aca",
   "integration_status": {
     "rox_local": "tested-in-preview",
@@ -26,5 +26,7 @@
     "crm_write": "mock-only-no-live-write",
     "commercial_events": "gateway-prototype-disabled"
   },
-  "visual_provenance": "Logotipos recuperados do pacote v26. Hero ilustrativo recuperado do v25; não é uma nova fotografia documental."
+  "visual_provenance": "Hero ilustrativa gerada anteriormente no v25. Logos recuperados, sem recriação; autorização de uso e arquivos oficiais ainda precisam de confirmação.",
+  "source_branch": "design/digital-flagship-2026-rc1",
+  "recovered_base": "LANDER_RIO_TITAN_RC2_FONTE.zip"
 }

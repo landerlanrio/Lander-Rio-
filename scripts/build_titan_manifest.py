@@ -21,7 +21,7 @@ for p in sorted(SITE.rglob('*')):
 missing = sorted(p for p in records if not (SITE/p).is_file())
 if missing: raise SystemExit('Refusing to hide deleted baseline files: '+str(missing))
 (SITE/'manifest-titan-v1.json').write_text(json.dumps({
-    'version':'titan-1.0.0-rc1', 'base_manifest':'manifest-v23-10.json',
+    'version':'titan-1.0.0-rc2', 'base_manifest':'manifest-v23-10.json',
     'upstream_commit':'2b6fa28a2785b97f883d18c2eca16157bc02f9cb',
     'scope':'Isolated integration candidate. No production deployment.',
     'files':changed}, ensure_ascii=False, indent=2)+'\n')

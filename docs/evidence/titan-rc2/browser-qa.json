@@ -1,0 +1,25 @@
+{
+  "viewportChecks": [
+    {
+      "heroLogoCount": 14,
+      "overflow": false,
+      "toolsAfterCommercial": true,
+      "width": 345
+    },
+    {
+      "heroLogoCount": 14,
+      "overflow": false,
+      "toolsAfterCommercial": true,
+      "width": 415
+    },
+    {
+      "heroLogoCount": 14,
+      "overflow": false,
+      "toolsAfterCommercial": true,
+      "width": 753
+    }
+  ],
+  "menuOpenClose": true,
+  "heroLogosLoaded": 14,
+  "source": "Chromium; iframe widths 360,390,430,768. Not a physical iPhone test."
+}

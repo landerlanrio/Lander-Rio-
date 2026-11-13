@@ -1,4 +1,21 @@
-# LANDER RIO — Site oficial (base recuperada v23.10)
+# LANDER RIO — TITAN 1.0.0 RC1
+
+**Estado atual em 13/11/2026:** candidata isolada, integrada sobre o PR #10 com componentes recuperados dos PRs #2, #5, #8 e #9. Não publicada. O dossiê [docs/TITAN_RELEASE_RC1.md](docs/TITAN_RELEASE_RC1.md) prevalece sobre os registros históricos abaixo.
+
+Validação: Python 3.12+ e Node 22+, sem chaves ou dependências NPM de produção.
+
+```bash
+python3 scripts/validate_titan.py --out ../titan-validation
+python3 scripts/package_titan.py --out ../LANDER_RIO_TITAN_RC1_SITE.zip
+```
+
+O gate não regenera manifestos. Alterações em `site/` exigem revisão e geração explícita com `scripts/build_titan_manifest.py`. IA externa, gateway comercial e SQL permanecem desativados. Nenhum workflow faz deploy.
+
+**Produção auditada:** Netlify `6af28cd36c8c0ece64548aca`, upload manual de 10/11. Comparação pública: 168 arquivos obtidos, 165 idênticos; dois formulários transformados pela Netlify e um manifesto semanticamente igual. Configurações não servidas publicamente não tiveram equivalência binária comprovada. A candidata está identificada por `site/release.json` e `manifest-titan-v1.json`.
+
+## Registro histórico da recuperação — 11/11/2026
+
+Os parágrafos a seguir descrevem o momento da importação v23.10, anterior à integração TITAN. Não descrevem o conteúdo atual de `site/` nem substituem o dossiê desta candidata.
 
 Repositório **destinado a ser privado**. Não publicar esta pasta em um repositório público.
 

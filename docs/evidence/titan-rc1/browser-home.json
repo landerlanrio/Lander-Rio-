@@ -1,0 +1,256 @@
+{
+  "at": "2026-11-13T02:16:01.420Z",
+  "candidate": "titan-1.0.0-rc1",
+  "environment": "Chromium cloud / local static preview / iframe widths, NOT Safari or physical iPhone",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "externalWrites": false,
+  "records": [
+    {
+      "name": "360 / sem overflow horizontal",
+      "passed": true,
+      "details": {
+        "scrollWidth": 345,
+        "viewport": 360
+      }
+    },
+    {
+      "name": "360 / busca fecha menu",
+      "passed": true
+    },
+    {
+      "name": "360 / busca vazia explica resultado",
+      "passed": true
+    },
+    {
+      "name": "360 / reabertura limpa busca",
+      "passed": true
+    },
+    {
+      "name": "360 / filtro de marcas",
+      "passed": true
+    },
+    {
+      "name": "360 / ROX dentro da tela",
+      "passed": true,
+      "details": {
+        "x": 12,
+        "y": 237,
+        "width": 321,
+        "height": 530
+      }
+    },
+    {
+      "name": "360 / contexto e quantidade no WhatsApp",
+      "passed": true
+    },
+    {
+      "name": "360 / pergunta clínica limpa encaminhamento",
+      "passed": true
+    },
+    {
+      "name": "360 / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "390 / sem overflow horizontal",
+      "passed": true,
+      "details": {
+        "scrollWidth": 375,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "390 / busca fecha menu",
+      "passed": true
+    },
+    {
+      "name": "390 / busca vazia explica resultado",
+      "passed": true
+    },
+    {
+      "name": "390 / reabertura limpa busca",
+      "passed": true
+    },
+    {
+      "name": "390 / filtro de marcas",
+      "passed": true
+    },
+    {
+      "name": "390 / ROX dentro da tela",
+      "passed": true,
+      "details": {
+        "x": 12,
+        "y": 237,
+        "width": 351,
+        "height": 530
+      }
+    },
+    {
+      "name": "390 / contexto e quantidade no WhatsApp",
+      "passed": true
+    },
+    {
+      "name": "390 / pergunta clínica limpa encaminhamento",
+      "passed": true
+    },
+    {
+      "name": "390 / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "430 / sem overflow horizontal",
+      "passed": true,
+      "details": {
+        "scrollWidth": 415,
+        "viewport": 430
+      }
+    },
+    {
+      "name": "430 / busca fecha menu",
+      "passed": true
+    },
+    {
+      "name": "430 / busca vazia explica resultado",
+      "passed": true
+    },
+    {
+      "name": "430 / reabertura limpa busca",
+      "passed": true
+    },
+    {
+      "name": "430 / filtro de marcas",
+      "passed": true
+    },
+    {
+      "name": "430 / ROX dentro da tela",
+      "passed": true,
+      "details": {
+        "x": 12,
+        "y": 237,
+        "width": 391,
+        "height": 530
+      }
+    },
+    {
+      "name": "430 / contexto e quantidade no WhatsApp",
+      "passed": true
+    },
+    {
+      "name": "430 / pergunta clínica limpa encaminhamento",
+      "passed": true
+    },
+    {
+      "name": "430 / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "768 / sem overflow horizontal",
+      "passed": true,
+      "details": {
+        "scrollWidth": 753,
+        "viewport": 768
+      }
+    },
+    {
+      "name": "768 / busca fecha menu",
+      "passed": true
+    },
+    {
+      "name": "768 / busca vazia explica resultado",
+      "passed": true
+    },
+    {
+      "name": "768 / reabertura limpa busca",
+      "passed": true
+    },
+    {
+      "name": "768 / filtro de marcas",
+      "passed": true
+    },
+    {
+      "name": "768 / ROX dentro da tela",
+      "passed": true,
+      "details": {
+        "x": 341.5,
+        "y": 309.5,
+        "width": 390,
+        "height": 575
+      }
+    },
+    {
+      "name": "768 / contexto e quantidade no WhatsApp",
+      "passed": true
+    },
+    {
+      "name": "768 / pergunta clínica limpa encaminhamento",
+      "passed": true
+    },
+    {
+      "name": "768 / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "1440 / sem overflow horizontal",
+      "passed": true,
+      "details": {
+        "scrollWidth": 1425,
+        "viewport": 1440
+      }
+    },
+    {
+      "name": "1440 / busca fecha menu",
+      "passed": true
+    },
+    {
+      "name": "1440 / busca vazia explica resultado",
+      "passed": true
+    },
+    {
+      "name": "1440 / reabertura limpa busca",
+      "passed": true
+    },
+    {
+      "name": "1440 / filtro de marcas",
+      "passed": true
+    },
+    {
+      "name": "1440 / ROX dentro da tela",
+      "passed": true,
+      "details": {
+        "x": 997,
+        "y": 293,
+        "width": 390,
+        "height": 575
+      }
+    },
+    {
+      "name": "1440 / contexto e quantidade no WhatsApp",
+      "passed": true
+    },
+    {
+      "name": "1440 / pergunta clínica limpa encaminhamento",
+      "passed": true
+    },
+    {
+      "name": "1440 / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Nenhuma exceção JavaScript nas interações",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "ROX gera eventos locais sem afirmar conversa ou venda",
+      "passed": true
+    }
+  ],
+  "total": 47,
+  "passed": 47,
+  "failed": 0
+}

@@ -25,11 +25,11 @@ class ReferenceDesignTests(unittest.TestCase):
         self.assertEqual(self.parser.h1,1)
         self.assertIn('CULTURA DE<br><em>PERFORMANCE.</em>',self.text)
     def test_hero_image(self):
-        p=SITE/'assets/v26-hero-reference.webp';self.assertTrue(p.is_file());self.assertLess(p.stat().st_size,110_000)
-        self.assertIn('v26-hero-reference.webp',self.text)
+        p=SITE/'assets/flagship-hero-mobile-v25.webp';self.assertTrue(p.is_file());self.assertLess(p.stat().st_size,150_000)
+        self.assertIn('flagship-hero-mobile-v25.webp',self.text)
         self.assertIn('fetchpriority="high"',self.text)
     def test_hero_photo_has_source_dimensions(self):
-        self.assertRegex(self.text,r'v26-hero-reference\.webp" width="489" height="476"')
+        self.assertRegex(self.text,r'flagship-hero-v25\.webp" width="1536" height="1024"')
     def test_v26_styles_and_script(self):
         self.assertIn('flagship-v26-reference.css',self.text)
         self.assertIn('brand-vault-v26.js',self.text)

@@ -202,7 +202,7 @@ body.flagship-v25{--ink:#090909;--paper:#f2f0eb;--lime:#c7ff28;--muted:#b8bbb5;-
  .flagship-v25 .v25-rox-launcher{min-width:52px;width:52px;height:52px;padding:4px;justify-content:center}
  .flagship-v25 .v25-rox-launcher .v25-rox-word{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
  .flagship-v25 .v25-rox-avatar{height:42px;width:42px;flex-basis:42px}
- .flagship-v25 .v25-rox-dialog{bottom:62px;height:min(530px,calc(100dvh - 158px))}
+ .flagship-v25 .v25-rox-dialog{position:fixed;left:12px;right:12px;width:auto;bottom:calc(77px + env(safe-area-inset-bottom));height:min(530px,calc(100dvh - 158px))}
 }
 @media(max-width:350px){.flagship-v25 .v25-display{font-size:10.5vw}.flagship-v25 .v25-card p{min-height:80px}.flagship-v25 .v25-cta{flex-basis:100%}}
 @media(prefers-reduced-motion:reduce){.flagship-v25 *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

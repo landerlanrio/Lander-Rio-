@@ -1,0 +1,11 @@
+{
+  "version": "23.10+openseo-20261112",
+  "base_manifest": "manifest-v23-10.json",
+  "scope": "Isolated SEO-only metadata overrides; historic baseline immutable",
+  "files": {
+    "atacado/index.html": "b8c793e46bd53504e4a5f123b36be3f8bd6031a7e8606280e0c576cf367ea23c",
+    "conteudos/como-organizar-semana-treino/index.html": "c0ad3b71334515d3eaa7a9754edd1823266b149a71e192dcb7266f8bb99a2cc2",
+    "conteudos/planejar-compras-refeicoes-semana/index.html": "67a59961750f85e0f3eeffc0abab3237de0f15668dbe7cb23f5d35531c2c0c40",
+    "treino/index.html": "aca429e1447dfe6f0d500978fcb6776b4b2a58468adf0208c816b208a9a5df57"
+  }
+}

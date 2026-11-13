@@ -25,10 +25,12 @@ jobs:
         run: python3 scripts/verify_site.py
       - name: JavaScript syntax
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
-      - name: Flagship v25 structural and semantic regression tests
+      - name: TITAN Flagship structural and semantic regression tests
         run: python3 scripts/test_flagship.py
-      - name: ROX v25 offline behavior and safety tests
-        run: node --test scripts/rox-demo-v25.test.cjs
+      - name: Binary, manifest tampering and complete-site metadata regression
+        run: python3 scripts/test_integrity.py
+      - name: ROX, transport, Revenue and integration safety tests
+        run: node --experimental-strip-types --test scripts/*.test.cjs scripts/test_seo_metadata.cjs prototypes/rox-ai-v2/*.test.mjs prototypes/rox-ai-v2/preview-private/server.test.mjs revenue-intelligence/test-*.cjs
       - name: Read-only HTTP smoke tests
         run: python3 scripts/smoke_http.py
 

@@ -18,12 +18,22 @@
  const panel=document.querySelector('#v26-search');
  const query=document.querySelector('#v26-query');
  const close=panel?.querySelector('[data-v26-search-close]');
+ const searchStatus=panel?.querySelector('[data-v26-search-status]');
+ const menu=document.querySelector('.menu-toggle');
+ const normalize=text=>String(text||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
  const links=Array.from(panel?.querySelectorAll('.v26-search-links a')||[]);
- function searchOpen(open){if(!toggle||!panel)return;panel.hidden=!open;toggle.setAttribute('aria-expanded',String(open));if(open)query?.focus();else toggle.focus()}
+ function filterSearch(){const q=normalize(query?.value);let count=0;links.forEach(a=>{a.hidden=Boolean(q&&!normalize(a.textContent).includes(q));if(!a.hidden)count++});if(searchStatus)searchStatus.textContent=!q?'':count?`${count} ${count===1?'área encontrada':'áreas encontradas'}.`:'Nenhuma área encontrada. Tente treino, dieta, marcas ou atendimento.';}
+ function searchOpen(open,restore=true){
+  if(!toggle||!panel)return;
+  if(open){document.body.classList.remove('menu-open');menu?.setAttribute('aria-expanded','false');menu?.setAttribute('aria-label','Abrir menu');document.dispatchEvent(new Event('lander:menu-change'));}
+  panel.hidden=!open;toggle.setAttribute('aria-expanded',String(open));
+  if(open)query?.focus();else{if(query)query.value='';filterSearch();if(restore)toggle.focus();}
+ }
  toggle?.addEventListener('click',()=>searchOpen(panel.hidden));
  close?.addEventListener('click',()=>searchOpen(false));
+ menu?.addEventListener('click',()=>{if(panel&&!panel.hidden)searchOpen(false,false)});
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&panel&&!panel.hidden){event.preventDefault();searchOpen(false)}});
- query?.addEventListener('input',()=>{let q=(query.value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();links.forEach(a=>{const t=(a.textContent||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();a.hidden=q&&!t.includes(q)})});
+ query?.addEventListener('input',filterSearch);
  links.forEach(a=>a.addEventListener('click',()=>{if(panel&&!panel.hidden)searchOpen(false)}));
  apply('todas');
 })();

@@ -2,7 +2,7 @@ window.LR_PUBLIC_ANALYTICS_TOKEN='phc_w67bCNxbz4BhPM23ZKmkHQbxzCYL5kiqTUTbhX2Eq3
 /* Minimal, consent-based event transport. No autocapture, session replay or advertising. */
 (()=>{'use strict';
 const KEY='lr_measurement_consent_v20',SID='lr_measurement_session_v20',ATTR='lr_attribution_v20';
-const allowed=new Set(['site_visit','cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','guide_share']);
+const allowed=new Set(['site_visit','cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','guide_share','rox_opened','rox_response']);
 const pages={'/':'home','/atacado/':'wholesale','/varejo/':'retail','/contato/':'contact','/business-desk/':'business','/entregas/':'delivery','/perguntas-frequentes/':'faq','/sobre/':'about'};
 Object.assign(pages,{'/ferramentas/':'tools','/treino/':'training','/dieta/':'nutrition','/conteudos/':'content'});
 const path=location.pathname,guideId=document.body.dataset.guide;const page=pages[path]||(/^seo-[0-9]{2}$/.test(guideId||'')?'guide':null),sensitive=!page,toolPage=['training','nutrition'].includes(page);let milestones=new Set();let consent=null,session=null,visited=false,events=[],preferenceTrigger=null;
@@ -25,9 +25,10 @@ function attribution(){
  set('sessionStorage',ATTR,JSON.stringify(a));return a;
 }
 function push(event,p={}){if(consent!=='granted'||sensitive||!allowed.has(event))return false;
- const data={page,release:'v23.2',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
- if(['hero','header','profile-card','optional-context','closing','mobile-sticky','fallback','content'].includes(p.placement))data.placement=p.placement;
+ const data={page,release:'titan-1.0.0-rc1',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
+ if(['hero','header','profile-card','optional-context','closing','mobile-sticky','fallback','content','rox'].includes(p.placement))data.placement=p.placement;
  if(['whatsapp','choose-profile','subject_changed','tool-training','tool-nutrition','tools-nav','tools-hero'].includes(p.action))data.action=p.action;
+ if(['offline','unknown','handoff','privacy','clinical'].includes(p.mode))data.rox_mode=p.mode;
  if(!toolPage)data.contact_reference=getContactReference();if(page==='guide')data.guide=guideId;const payload={api_key:window.LR_PUBLIC_ANALYTICS_TOKEN,event,properties:{distinct_id:identity(),...data,$process_person_profile:false,$geoip_disable:true,$ip:null}};
  events.push({event,...data});if(events.length>100)events.shift();window.dispatchEvent(new CustomEvent('lander:measurement',{detail:{event,...data}}));
  if(location.hostname==='landerrio.com.br'&&payload.api_key){try{fetch('https://us.i.posthog.com/i/v0/e/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'omit',referrerPolicy:'no-referrer',keepalive:true}).catch(()=>{});}catch{}}

@@ -23,7 +23,7 @@ def verify_manifest():
     manifest = json.loads((SITE/'manifest-v23-10.json').read_text(encoding='utf-8'))
     records = dict(manifest.get('files', {}))
     manifest_files = {'manifest-v23-10.json'}
-    for overlay_name in ('manifest-flagship-v25.json', 'manifest-openseo-20261112.json', 'manifest-titan-v1.json', 'manifest-digital-flagship-2026.json', 'manifest-digital-flagship-2026-rc2.json', 'manifest-digital-flagship-2026-rc3.json'):
+    for overlay_name in ('manifest-flagship-v25.json', 'manifest-openseo-20261112.json', 'manifest-titan-v1.json', 'manifest-digital-flagship-2026.json', 'manifest-digital-flagship-2026-rc2.json', 'manifest-digital-flagship-2026-rc3.json', 'manifest-digital-flagship-2026-rc4.json'):
         overlay_path = SITE/overlay_name
         if not overlay_path.is_file():
             continue
@@ -170,7 +170,7 @@ def main():
     json_count=verify_json()
     verify_credentials()
     release=json.loads((SITE/'release.json').read_text())
-    expected_version = ('digital-flagship-2026-rc3' if (SITE/'manifest-digital-flagship-2026-rc3.json').is_file() else 'digital-flagship-2026-rc2' if (SITE/'manifest-digital-flagship-2026-rc2.json').is_file() else 'digital-flagship-2026-rc1' if (SITE/'manifest-digital-flagship-2026.json').is_file() else 'titan-1.0.0-rc2' if (SITE/'manifest-titan-v1.json').is_file() else '23.10')
+    expected_version = ('digital-flagship-2026-rc4' if (SITE/'manifest-digital-flagship-2026-rc4.json').is_file() else 'digital-flagship-2026-rc3' if (SITE/'manifest-digital-flagship-2026-rc3.json').is_file() else 'digital-flagship-2026-rc2' if (SITE/'manifest-digital-flagship-2026-rc2.json').is_file() else 'digital-flagship-2026-rc1' if (SITE/'manifest-digital-flagship-2026.json').is_file() else 'titan-1.0.0-rc2' if (SITE/'manifest-titan-v1.json').is_file() else '23.10')
     if release.get('version') != expected_version:fail('unexpected-version',str(release.get('version')))
     if html_count != 81:fail('unexpected-pages',str(html_count))
     print(json.dumps({'status':'PASS' if not ISSUES else 'FAIL',

@@ -1,0 +1,39 @@
+{
+  "version": "digital-flagship-2026-rc4",
+  "validation_status": "PASS",
+  "command_groups": 34,
+  "axe": {
+    "version": "4.10.3",
+    "pages": 81,
+    "violations": 0,
+    "errors": 0,
+    "incomplete_pages": 40,
+    "certification": false
+  },
+  "integrity": {
+    "status": "PASS",
+    "version": "digital-flagship-2026-rc4",
+    "manifest_verified_sha256": 210,
+    "html_pages": 81,
+    "html_local_references_checked": 3436,
+    "json_files_checked": 18,
+    "sitemap_urls": 78,
+    "css_asset_references_checked": 5,
+    "issues": [],
+    "warnings": []
+  },
+  "contrast_fixes": {
+    "encyclopedia_return_link_before": 1.17,
+    "encyclopedia_return_link_after_calculated": 8.927,
+    "footer_word_after_calculated": 4.305
+  },
+  "deployment": "not_published",
+  "review_limitations": [
+    "Safari/iPhone físico não disponível",
+    "Sem medição de campo de LCP/INP/CLS ou Lighthouse mobile",
+    "40 páginas com verificações automáticas inconclusivas de contraste; não é certificação integral WCAG",
+    "Revisão científica externa da enciclopédia pendente",
+    "Integrações externas não submetidas a gravação real"
+  ],
+  "qa_artifacts_excluded_from_site": true
+}

@@ -25,7 +25,7 @@ function attribution(){
  set('sessionStorage',ATTR,JSON.stringify(a));return a;
 }
 function push(event,p={}){if(consent!=='granted'||sensitive||!allowed.has(event))return false;
- const data={page,release:'digital-flagship-2026-rc3',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
+ const data={page,release:'digital-flagship-2026-rc4',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
  if(['hero','header','profile-card','optional-context','closing','mobile-sticky','fallback','content','rox','brand-directory'].includes(p.placement))data.placement=p.placement;
  if(['whatsapp','choose-profile','subject_changed','tool-training','tool-nutrition','tools-nav','tools-hero'].includes(p.action))data.action=p.action;
  if(['offline','unknown','handoff','privacy','clinical'].includes(p.mode))data.rox_mode=p.mode;

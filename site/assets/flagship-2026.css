@@ -57,3 +57,65 @@
 
 .brand-mark--seal{clip-path:ellipse(48% 49% at 50% 50%)}
 .flagship-2026:not(.rox-ready) .v25-rox-launcher{visibility:hidden;pointer-events:none}
+
+/* RC4: readable copy, predictable focus and comfortable touch targets. */
+html{scroll-padding-bottom:110px}
+.hero-commercial p>span,.channel>p,.channel-points li,.process-list p,.atlas-copy>p:not(.eyebrow),.contact-panel p,.message-preview,.faq p,.tool-content>span{font-size:14px;line-height:1.6}
+.heading-grid>p>span{font-size:14px;line-height:1.6}
+.btn,.channel .btn,.contact-panel .btn,.atlas-copy .btn,.tool-content>b{font-size:14px}
+.text-link{min-height:44px;display:inline-flex;align-items:center;font-size:12px}
+.hero-cta small{font-size:11px;line-height:1.3;letter-spacing:.03em}
+.hero-brand-grid .tile-name{display:block;font-size:11px;line-height:1.2;margin-top:3px}
+.hero-brand-grid .brand-tile a{min-height:88px;padding:8px}
+.hero-brand-grid .brand-tile .brand-mark{height:54px}
+.hero-brand-grid .tile-name{color:#20272b}
+.micro-head a{min-height:36px;font-size:12px}
+.micro-head h2{font-size:10px;letter-spacing:.06em}
+.micro-head h2 span{display:none}
+.brand-disclosure,.gallery-footer p,.section-footnote,.contact-panel .fine{font-size:12px;line-height:1.6}
+.brand-disclosure{max-width:none;color:#b1b7ad}
+.brand-grid .tile-name{font-size:12px}
+.brand-search input{font-size:16px}
+.field label,.faq summary{font-size:14px}
+.privacy-inner p,.privacy-actions button{font-size:13px}
+.footer-links{font-size:13px}.footer-links a{min-height:44px;display:inline-flex;align-items:center}
+.footer-bottom{font-size:11px;line-height:1.7}
+.footer-word{color:#707968}
+.brand-tile a:focus-visible{outline:3px solid #d4fd50;outline-offset:4px}
+.channel--retail a:focus-visible,.tools a:focus-visible{outline-color:#233112}
+.channel-points li:after{content:'+';font-family:Arial,sans-serif}
+@media(max-width:800px){body.menu-open{overflow:hidden}.main-nav{overscroll-behavior:contain}}
+@media(max-width:600px){
+ .hero-stage{height:clamp(300px,82vw,340px)}
+ .hero-photo,.hero-photo img{object-position:50% 22%}
+ .hero-commercial{padding:12px 0 16px;gap:12px}
+ .hero-commercial p{display:block}
+ .hero-commercial p strong{font-size:11px;max-width:none;letter-spacing:.07em;line-height:1.4}
+ .hero-commercial p>span{display:block;font-size:14px;text-align:left;line-height:1.5;margin-top:4px}
+ .hero-cta{min-height:80px;padding:13px}
+ .hero-cta small{font-size:11px;letter-spacing:0}
+ .hero-cta strong{font-size:clamp(22px,6.2vw,27px)}
+ .hero-cta svg{width:16px;flex-shrink:0}
+ .hero-brands{padding-bottom:16px}
+ .hero-brand-grid .brand-tile a{min-height:80px;padding:5px}
+ .hero-brand-grid .brand-tile .brand-mark{height:52px}
+ .hero-brand-grid [data-brand="topharma"] .brand-mark{height:52px}
+ .hero-brand-grid .tile-name{font-size:11px}
+ .brand-disclosure{font-size:11px;line-height:1.5;max-width:none}
+ .hero-heading{bottom:30px}
+ .hero-caption,.hero-index{bottom:9px}
+ .hero-heading .eyebrow{margin-bottom:10px}
+ .channel>p,.channel-points li,.process-list p,.atlas-copy>p:not(.eyebrow),.contact-panel p,.message-preview,.faq p,.tool-content>span{font-size:14px}
+ .contact-panel .fine,.gallery-footer p,.section-footnote{font-size:12px}
+ .channel-top>.mono,.tool-top,.eyebrow,.gallery-controls>.mono,.editorial-row>.mono{font-size:10px}
+ .channel .btn,.contact-panel .btn,.atlas-copy .btn,.tool-content>b{font-size:14px}
+ .tool-content>span{color:#e3e8de}
+ .faq summary{font-size:14px;min-height:48px}
+ .footer-links{font-size:13px}
+ .privacy-inner p,.privacy-actions button{font-size:13px}
+ .privacy-actions{flex-wrap:wrap}.privacy-actions button{flex:1 1 120px}
+ .v25-rox-form input{font-size:16px}
+}
+
+/* Vector arrows avoid missing glyphs in condensed display fonts. */
+.channel-symbol svg,.contact h2>.lime svg{width:1em;height:1em;vertical-align:-.06em}

@@ -1,0 +1,2545 @@
+[
+  {
+    "path": "/404.html",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/atacado/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": [
+      {
+        "text": "Escolha o perfil e o assunto. A mensagem acompanha sua escolha até o WhatsApp.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Você não precisa informar nome, telefone ou e-mail aqui.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "A quantidade é uma estimativa e só entra na mensagem se você escolher informá-la.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "A cidade entra apenas na mensagem que você decide enviar.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "Use o WhatsApp Web no computador ou adicione o número oficial (21) 92004-3538 no aplicativo.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "Não. Os botões de WhatsApp abrem o atendimento diretamente. Personalizar a consulta é opcional. O ca",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A equipe verifica sua solicitação e confirma disponibilidade, condições aplicáveis e possibilidades ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Catálogo, tabela e orçamento, quando aplicáveis a itens permitidos, são tratados no atendimento. As ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A possibilidade de envio, o prazo e o valor são confirmados conforme o destino e a solicitação. Não ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "O WhatsApp abre com uma mensagem preparada. Você pode editá-la e decide se quer enviá-la. O site não",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Sim. O planejador de treino e a ferramenta alimentar continuam gratuitos. O cadastro libera o result",
+        "size": 14,
+        "selector": "P"
+      }
+    ]
+  },
+  {
+    "path": "/autenticidade/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/business-desk/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": [
+      {
+        "text": "Escolha o perfil e o assunto. A mensagem acompanha sua escolha até o WhatsApp.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Você não precisa informar nome, telefone ou e-mail aqui.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "A cidade entra apenas na mensagem que você decide enviar.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "Use o WhatsApp Web no computador ou adicione o número oficial (21) 92004-3538 no aplicativo.",
+        "size": 14,
+        "selector": "fine"
+      }
+    ]
+  },
+  {
+    "path": "/business-desk/recebido/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/contato/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": [
+      {
+        "text": "Escolha o perfil e o assunto. A mensagem acompanha sua escolha até o WhatsApp.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Você não precisa informar nome, telefone ou e-mail aqui.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "A cidade entra apenas na mensagem que você decide enviar.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "Use o WhatsApp Web no computador ou adicione o número oficial (21) 92004-3538 no aplicativo.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "Não. Os botões de WhatsApp abrem o atendimento diretamente. Personalizar a consulta é opcional. O ca",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A equipe verifica sua solicitação e confirma disponibilidade, condições aplicáveis e possibilidades ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Catálogo, tabela e orçamento, quando aplicáveis a itens permitidos, são tratados no atendimento. As ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A possibilidade de envio, o prazo e o valor são confirmados conforme o destino e a solicitação. Não ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "O WhatsApp abre com uma mensagem preparada. Você pode editá-la e decide se quer enviá-la. O site não",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Sim. O planejador de treino e a ferramenta alimentar continuam gratuitos. O cadastro libera o result",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Para consultar essas orientações em uma página dedicada, acesse as perguntas frequentes →",
+        "size": 12,
+        "selector": "fine"
+      }
+    ]
+  },
+  {
+    "path": "/conteudos/academia-lotada-organizar-treino/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 23,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/acompanhar-progresso-treino/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 23,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/alimento-cru-cozido-registro/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/atacado-rio-como-avaliar-fornecedor/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/como-consultar-disponibilidade-marcas/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/como-ler-ficha-treino/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 23,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/como-organizar-semana-treino/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/como-verificar-procedencia-canais-oficiais/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/diario-de-treino-como-registrar/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/planejar-compras-refeicoes-semana/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/rir-o-que-significa/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 25,
+    "texts": []
+  },
+  {
+    "path": "/dieta/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 7,
+        "targets": [
+          [
+            ".crumb"
+          ],
+          [
+            ".crumb > a[href=\"/\"]"
+          ],
+          [
+            ".hero-copy-lr > .eyebrow"
+          ],
+          [
+            "h1"
+          ],
+          [
+            "em"
+          ],
+          [
+            ".hero-copy-lr > p"
+          ],
+          [
+            ".hero-scroll"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/metodologia/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 7,
+        "targets": [
+          [
+            ".crumb"
+          ],
+          [
+            ".crumb > a[href=\"/\"]"
+          ],
+          [
+            ".crumb > a[href$=\"enciclopedia/\"]"
+          ],
+          [
+            ".wrap > .eyebrow"
+          ],
+          [
+            "h1"
+          ],
+          [
+            "em"
+          ],
+          [
+            ".wrap > p"
+          ]
+        ]
+      }
+    ],
+    "passes": 23,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/anastrozol/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/boldenona/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/clenbuterol/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/clomifeno/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/drostanolona/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/estanozolol-injetavel/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/estanozolol-oral/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/fluoximesterona/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/ghrp-6/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/hcg/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/igf-1/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/insulina/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/ipamorelina/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/letrozol/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/levotiroxina-t4/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/liotironina-t3/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/mesterolona/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/metandienona/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/metenolona-injetavel/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/nandrolona/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/oxandrolona/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/oximetolona/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/retatrutida/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/somatropina-gh/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/tamoxifeno/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/testosterona-cipionato/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/testosterona-enantato/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/testosterona-mistura-esteres/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/testosterona-propionato/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/testosterona-suspensao/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/testosterona-undecanoato-oral/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/tirzepatida/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/trembolona-acetato/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/trembolona-enantato/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/substancias/turinabol/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 5,
+        "targets": [
+          [
+            ".lr-evidence-snapshot > .eyebrow"
+          ],
+          [
+            "#em-um-minuto"
+          ],
+          [
+            ".lr-evidence-snapshot > p:nth-child(3)"
+          ],
+          [
+            ".lr-method-link"
+          ],
+          [
+            ".lr-clinical-disclosure"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/entregas/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 43,
+        "targets": [
+          [
+            "div:nth-child(1) > .kicker"
+          ],
+          [
+            "#lr-receipts-title"
+          ],
+          [
+            "em"
+          ],
+          [
+            ".lr-receipts-aside > p:nth-child(1)"
+          ],
+          [
+            ".lr-receipts-mini"
+          ],
+          [
+            ".lr-receipt-card:nth-child(1) > .lr-receipt-image-link[target=\"_blank\"][rel=\"noopener noreferrer\"] > .lr-receipt-image-note"
+          ],
+          [
+            ".lr-receipt-card:nth-child(1) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(1)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(1) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(2)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(1) > .lr-receipt-copy > h3"
+          ],
+          [
+            ".lr-receipt-card:nth-child(1) > .lr-receipt-copy > blockquote"
+          ],
+          [
+            ".lr-receipt-card:nth-child(1) > .lr-receipt-copy > .lr-receipt-context"
+          ],
+          [
+            ".lr-receipt-card:nth-child(2) > .lr-receipt-image-link[target=\"_blank\"][rel=\"noopener noreferrer\"] > .lr-receipt-image-note"
+          ],
+          [
+            ".lr-receipt-card:nth-child(2) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(1)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(2) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(2)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(2) > .lr-receipt-copy > h3"
+          ],
+          [
+            ".lr-receipt-card:nth-child(2) > .lr-receipt-copy > blockquote"
+          ],
+          [
+            ".lr-receipt-card:nth-child(2) > .lr-receipt-copy > .lr-receipt-context"
+          ],
+          [
+            ".lr-receipt-card:nth-child(3) > .lr-receipt-image-link[target=\"_blank\"][rel=\"noopener noreferrer\"] > .lr-receipt-image-note"
+          ],
+          [
+            ".lr-receipt-card:nth-child(3) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(1)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(3) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(2)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(3) > .lr-receipt-copy > h3"
+          ],
+          [
+            ".lr-receipt-quote--quiet"
+          ],
+          [
+            ".lr-receipt-card:nth-child(3) > .lr-receipt-copy > .lr-receipt-context"
+          ],
+          [
+            ".lr-receipt-card:nth-child(4) > .lr-receipt-image-link[target=\"_blank\"][rel=\"noopener noreferrer\"] > .lr-receipt-image-note"
+          ],
+          [
+            ".lr-receipt-card:nth-child(4) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(1)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(4) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(2)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(4) > .lr-receipt-copy > h3"
+          ],
+          [
+            ".lr-receipt-card:nth-child(4) > .lr-receipt-copy > blockquote"
+          ],
+          [
+            ".lr-receipt-card:nth-child(4) > .lr-receipt-copy > .lr-receipt-context"
+          ],
+          [
+            ".lr-receipt-card:nth-child(5) > .lr-receipt-image-link[target=\"_blank\"][rel=\"noopener noreferrer\"] > .lr-receipt-image-note"
+          ],
+          [
+            ".lr-receipt-card:nth-child(5) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(1)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(5) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(2)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(5) > .lr-receipt-copy > h3"
+          ],
+          [
+            ".lr-receipt-card:nth-child(5) > .lr-receipt-copy > blockquote"
+          ],
+          [
+            ".lr-receipt-card:nth-child(5) > .lr-receipt-copy > .lr-receipt-context"
+          ],
+          [
+            ".lr-receipt-card:nth-child(6) > .lr-receipt-image-link[target=\"_blank\"][rel=\"noopener noreferrer\"] > .lr-receipt-image-note"
+          ],
+          [
+            ".lr-receipt-card:nth-child(6) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(1)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(6) > .lr-receipt-copy > .lr-receipt-number > span:nth-child(2)"
+          ],
+          [
+            ".lr-receipt-card:nth-child(6) > .lr-receipt-copy > h3"
+          ],
+          [
+            ".lr-receipt-card:nth-child(6) > .lr-receipt-copy > blockquote"
+          ],
+          [
+            ".lr-receipt-card:nth-child(6) > .lr-receipt-copy > .lr-receipt-context"
+          ],
+          [
+            ".lr-receipts-disclosure > span"
+          ],
+          [
+            ".lr-receipts-disclosure > p"
+          ]
+        ]
+      }
+    ],
+    "passes": 21,
+    "texts": []
+  },
+  {
+    "path": "/ferramentas/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 21,
+    "texts": []
+  },
+  {
+    "path": "/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "digital-flagship-2026-rc4",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "aria-valid-attr-value",
+        "count": 1,
+        "targets": [
+          [
+            ".search-toggle"
+          ]
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "count": 64,
+        "targets": [
+          [
+            ".hero-location > span:nth-child(1)"
+          ],
+          [
+            ".hero-location > span:nth-child(2)"
+          ],
+          [
+            ".hero-heading > .eyebrow"
+          ],
+          [
+            ".hero-line-one"
+          ],
+          [
+            ".hero-line-two"
+          ],
+          [
+            ".hero-side"
+          ],
+          [
+            ".hero-caption"
+          ],
+          [
+            ".hero-index"
+          ],
+          [
+            ".hero-index > span"
+          ],
+          [
+            ".hero-cta--silver > span > small"
+          ],
+          [
+            ".hero-cta--silver > span > strong"
+          ],
+          [
+            ".hero-brand-grid > .brand-tile[data-brand-name=\"Landerlan\"] > a[href$=\"landerlan/\"][data-brand=\"landerlan\"] > .tile-name"
+          ],
+          [
+            ".hero-brand-grid > .brand-tile[data-brand-name=\"Topharma\"] > a[href$=\"topharma/\"][data-brand=\"topharma\"] > .tile-name"
+          ],
+          [
+            ".hero-brand-grid > .brand-tile[data-brand-name=\"Life Peptídeos\"] > a[href$=\"life-peptideos/\"][data-brand=\"life-peptideos\"] > .tile-name"
+          ],
+          [
+            ".hero-brand-grid > .brand-tile[data-brand-name=\"Oxygen KW Pharma\"] > a[href$=\"oxygen-kw-pharma/\"][data-brand=\"oxygen-kw-pharma\"] > .tile-name"
+          ],
+          [
+            ".channel--wholesale > .channel-top > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".channel--wholesale > .channel-symbol"
+          ],
+          [
+            ".channel--wholesale > h3"
+          ],
+          [
+            ".channel--retail > .channel-top > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".channel--retail > .channel-symbol"
+          ],
+          [
+            ".channel--retail > h3"
+          ],
+          [
+            ".brand-search > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Landerlan\"] > a[href$=\"landerlan/\"][data-brand=\"landerlan\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Topharma\"] > a[href$=\"topharma/\"][data-brand=\"topharma\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Topharma\"] > a[href$=\"topharma/\"][data-brand=\"topharma\"] > .tile-name"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Life Peptídeos\"] > a[href$=\"life-peptideos/\"][data-brand=\"life-peptideos\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Life Peptídeos\"] > a[href$=\"life-peptideos/\"][data-brand=\"life-peptideos\"] > .tile-name"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Oxygen KW Pharma\"] > a[href$=\"oxygen-kw-pharma/\"][data-brand=\"oxygen-kw-pharma\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Oxygen KW Pharma\"] > a[href$=\"oxygen-kw-pharma/\"][data-brand=\"oxygen-kw-pharma\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"cooper-pharma/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"cooper-pharma/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"zphc/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"zphc/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"muscle-labs-india/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"muscle-labs-india/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"synedica/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"synedica/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"eticos/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"eticos/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"indufar/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"indufar/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"geniqs-pharma/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"geniqs-pharma/\"] > .tile-name"
+          ],
+          [
+            "a[data-brand=\"alpha-x-prime\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"alpha-x-prime\"] > .tile-name"
+          ],
+          [
+            "a[data-brand=\"quimfa\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"quimfa\"] > .tile-name"
+          ],
+          [
+            "a[data-brand=\"eminence-labs\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"eminence-labs\"] > .tile-name"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-top.mono"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-top.mono > span"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > small"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > strong"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > span"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > b"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-top.mono"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-top.mono > span"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > small"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > strong"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > span"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > b"
+          ],
+          [
+            ".atlas-cover > .mono:nth-child(1)"
+          ],
+          [
+            ".atlas-cover > strong"
+          ],
+          [
+            ".atlas-bottom"
+          ]
+        ]
+      }
+    ],
+    "passes": 32,
+    "texts": [
+      {
+        "text": "Revendedores e pedidos individuais.",
+        "size": 14,
+        "selector": "SPAN"
+      },
+      {
+        "text": "PARA REVENDEDORES",
+        "size": 11,
+        "selector": "SMALL"
+      },
+      {
+        "text": "PARA VOCÊ",
+        "size": 11,
+        "selector": "SMALL"
+      },
+      {
+        "text": "Uma conversa para alinhar sua demanda, quantidades e possibilidades de reposição.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Condições por pedido",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Disponibilidade confirmada",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Contato direto com a equipe",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Conte o que procura e receba as informações aplicáveis ao seu pedido antes de decidir.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Consulta individual",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Entrega e envio sob consulta",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Suporte ao seu atendimento",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Seu perfil e o que precisa resolver. Sem cadastro obrigatório para conversar.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Possibilidades, condições e envio. Informações claras antes da sua decisão.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Um canal para dúvidas e acompanhamento do atendimento.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A Enciclopédia do Bodybuilding reúne informações sobre fisiologia, hormônios e performance: mecanism",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Escolha o perfil e o assunto. A mensagem acompanha sua escolha até o WhatsApp.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Você não precisa informar nome, telefone ou e-mail aqui.",
+        "size": 12,
+        "selector": "fine"
+      },
+      {
+        "text": "A cidade entra apenas na mensagem que você decide enviar.",
+        "size": 12,
+        "selector": "fine"
+      },
+      {
+        "text": "Use o WhatsApp Web no computador ou adicione o número oficial (21) 92004-3538 no aplicativo.",
+        "size": 12,
+        "selector": "fine"
+      },
+      {
+        "text": "Não. Os botões de WhatsApp abrem o atendimento diretamente. Personalizar a consulta é opcional. O ca",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A equipe verifica sua solicitação e confirma disponibilidade, condições aplicáveis e possibilidades ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Catálogo, tabela e orçamento, quando aplicáveis a itens permitidos, são tratados no atendimento. As ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A possibilidade de envio, o prazo e o valor são confirmados conforme o destino e a solicitação. Não ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "O WhatsApp abre com uma mensagem preparada. Você pode editá-la e decide se quer enviá-la. O site não",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Sim. O planejador de treino e a ferramenta alimentar continuam gratuitos. O cadastro libera o result",
+        "size": 14,
+        "selector": "P"
+      }
+    ]
+  },
+  {
+    "path": "/marcas/alpha-laboratory/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/marcas/cooper-pharma/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/marcas/eticos/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/marcas/geniqs-pharma/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/marcas/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/marcas/indufar/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/marcas/landerlan/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/marcas/landerlan-gold/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/marcas/life-peptideos/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/marcas/muscle-labs-india/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/marcas/oxygen-kw-pharma/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/marcas/synedica/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/marcas/topharma/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/marcas/zphc/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/perguntas-frequentes/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": [
+      {
+        "text": "Não. Os botões de WhatsApp abrem o atendimento diretamente. Personalizar a consulta é opcional. O ca",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A equipe verifica sua solicitação e confirma disponibilidade, condições aplicáveis e possibilidades ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Catálogo, tabela e orçamento, quando aplicáveis a itens permitidos, são tratados no atendimento. As ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A possibilidade de envio, o prazo e o valor são confirmados conforme o destino e a solicitação. Não ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "O WhatsApp abre com uma mensagem preparada. Você pode editá-la e decide se quer enviá-la. O site não",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Sim. O planejador de treino e a ferramenta alimentar continuam gratuitos. O cadastro libera o result",
+        "size": 14,
+        "selector": "P"
+      }
+    ]
+  },
+  {
+    "path": "/privacidade.html",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/radar-performance/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 26,
+    "texts": []
+  },
+  {
+    "path": "/radar-performance/recebido/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/sobre/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/termos.html",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/treino/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 3,
+        "targets": [
+          [
+            "figcaption"
+          ],
+          [
+            "figcaption > strong"
+          ],
+          [
+            "#next-btn > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ],
+    "passes": 30,
+    "texts": []
+  },
+  {
+    "path": "/varejo/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": [
+      {
+        "text": "Escolha o perfil e o assunto. A mensagem acompanha sua escolha até o WhatsApp.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Você não precisa informar nome, telefone ou e-mail aqui.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "A cidade entra apenas na mensagem que você decide enviar.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "Use o WhatsApp Web no computador ou adicione o número oficial (21) 92004-3538 no aplicativo.",
+        "size": 14,
+        "selector": "fine"
+      },
+      {
+        "text": "Não. Os botões de WhatsApp abrem o atendimento diretamente. Personalizar a consulta é opcional. O ca",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A equipe verifica sua solicitação e confirma disponibilidade, condições aplicáveis e possibilidades ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Catálogo, tabela e orçamento, quando aplicáveis a itens permitidos, são tratados no atendimento. As ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A possibilidade de envio, o prazo e o valor são confirmados conforme o destino e a solicitação. Não ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "O WhatsApp abre com uma mensagem preparada. Você pode editá-la e decide se quer enviá-la. O site não",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Sim. O planejador de treino e a ferramenta alimentar continuam gratuitos. O cadastro libera o result",
+        "size": 14,
+        "selector": "P"
+      }
+    ]
+  }
+]

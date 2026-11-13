@@ -1,0 +1,17 @@
+{
+  "version": "digital-flagship-2026-rc4",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/flagship-2026.css": "43a73697518cc713a961fc8c36fa8180c26b25bb43d3e0cf666a108e14ab7d00",
+    "assets/logos/landerlan-hero-rc4.webp": "20fb2937bd7b610e02721c9d1cd35dc15f5c9877348ac518541a3c323cbce03e",
+    "assets/logos/life-peptideos-hero-rc4.webp": "f8c7aae709a2013d76925fa076628d3aac060ea14beff97bbcf2b3bf5a56cfc6",
+    "assets/logos/oxygen-kw-pharma-hero-rc4.webp": "d2a2497ada2cf7288c2e236d4f4e80eeb0241a3a04e25015733aa7bfdbe65ad7",
+    "assets/logos/topharma-hero-rc4.webp": "2c6c1032f576cf2af8a52a88c0f5c28486e206f7a4d27364baea68518932ed6a",
+    "assets/measurement-v23-2.js": "21682aa581f92e4acd48086548744c9efbf62b3670e751c32ba1e305009c2aa8",
+    "enciclopedia/assets/experience-v23-8.css": "70bffb3b14de713ef83de7f2ab4899cfa0a22e82e561b563c45337a4cd7c93e0",
+    "index.html": "56e3522400e579d99fc62532103def432df291e310b6f5e8c2202b51ef50ad2d",
+    "release.json": "eda8e9055252348a126014cb869c229b6f94e0675d10ec2ecb59f396d7ae9688"
+  }
+}

@@ -1,0 +1,478 @@
+[
+  {
+    "path": "/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "digital-flagship-2026-rc3",
+    "axeVersion": "4.10.3",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".footer-word"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.48 (foreground color: #2a3322, background color: #0a0d08, font size: 41.0pt (54.6px), font weight: normal). Expected contrast ratio of 3:1",
+            "checks": [
+              {
+                "fgColor": "#2a3322",
+                "bgColor": "#0a0d08",
+                "contrastRatio": 1.48,
+                "fontSize": "41.0pt (54.6px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "aria-valid-attr-value",
+        "count": 1,
+        "targets": [
+          [
+            ".search-toggle"
+          ]
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "count": 58,
+        "targets": [
+          [
+            ".hero-location > span:nth-child(1)"
+          ],
+          [
+            ".hero-location > span:nth-child(2)"
+          ],
+          [
+            ".hero-heading > .eyebrow"
+          ],
+          [
+            ".hero-line-one"
+          ],
+          [
+            ".hero-line-two"
+          ],
+          [
+            ".hero-side"
+          ],
+          [
+            ".hero-caption"
+          ],
+          [
+            ".hero-index"
+          ],
+          [
+            ".hero-index > span"
+          ],
+          [
+            ".hero-cta--silver > span > small"
+          ],
+          [
+            ".hero-cta--silver > span > strong"
+          ],
+          [
+            ".channel--wholesale > .channel-top > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".channel--wholesale > .channel-symbol"
+          ],
+          [
+            ".channel--retail > .channel-top > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".channel--retail > .channel-symbol"
+          ],
+          [
+            ".brand-search > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Landerlan\"] > a[href$=\"landerlan/\"][data-brand=\"landerlan\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Topharma\"] > a[href$=\"topharma/\"][data-brand=\"topharma\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Topharma\"] > a[href$=\"topharma/\"][data-brand=\"topharma\"] > .tile-name"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Life Peptídeos\"] > a[href$=\"life-peptideos/\"][data-brand=\"life-peptideos\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Life Peptídeos\"] > a[href$=\"life-peptideos/\"][data-brand=\"life-peptideos\"] > .tile-name"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Oxygen KW Pharma\"] > a[href$=\"oxygen-kw-pharma/\"][data-brand=\"oxygen-kw-pharma\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Oxygen KW Pharma\"] > a[href$=\"oxygen-kw-pharma/\"][data-brand=\"oxygen-kw-pharma\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"cooper-pharma/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"cooper-pharma/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"zphc/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"zphc/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"muscle-labs-india/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"muscle-labs-india/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"synedica/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"synedica/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"eticos/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"eticos/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"indufar/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"indufar/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"geniqs-pharma/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"geniqs-pharma/\"] > .tile-name"
+          ],
+          [
+            "a[data-brand=\"alpha-x-prime\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"alpha-x-prime\"] > .tile-name"
+          ],
+          [
+            "a[data-brand=\"quimfa\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"quimfa\"] > .tile-name"
+          ],
+          [
+            "a[data-brand=\"eminence-labs\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"eminence-labs\"] > .tile-name"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-top.mono"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-top.mono > span"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > small"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > strong"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > span"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > b"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-top.mono"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-top.mono > span"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > small"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > strong"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > span"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > b"
+          ],
+          [
+            ".atlas-cover > .mono:nth-child(1)"
+          ],
+          [
+            ".atlas-cover > strong"
+          ],
+          [
+            ".atlas-bottom"
+          ]
+        ]
+      }
+    ],
+    "passes": 32,
+    "texts": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "path": "/atacado/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "path": "/varejo/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "path": "/marcas/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 19,
+    "texts": []
+  },
+  {
+    "path": "/ferramentas/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 21,
+    "texts": []
+  },
+  {
+    "path": "/treino/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 3,
+        "targets": [
+          [
+            "figcaption"
+          ],
+          [
+            "figcaption > strong"
+          ],
+          [
+            "#next-btn > span[aria-hidden=\"true\"]"
+          ]
+        ]
+      }
+    ],
+    "passes": 30,
+    "texts": []
+  },
+  {
+    "path": "/dieta/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": []
+  },
+  {
+    "path": "/enciclopedia/",
+    "viewport": [
+      390,
+      844
+    ],
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "count": 7,
+        "targets": [
+          [
+            ".crumb"
+          ],
+          [
+            ".crumb > a[href=\"/\"]"
+          ],
+          [
+            ".hero-copy-lr > .eyebrow"
+          ],
+          [
+            "h1"
+          ],
+          [
+            "em"
+          ],
+          [
+            ".hero-copy-lr > p"
+          ],
+          [
+            ".hero-scroll"
+          ]
+        ]
+      }
+    ],
+    "passes": 28,
+    "texts": []
+  },
+  {
+    "path": "/conteudos/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/contato/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 24,
+    "texts": [
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "path": "/privacidade.html",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  },
+  {
+    "path": "/termos.html",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "v23.2-ecosystem-audit-2026-11-09",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20,
+    "texts": []
+  }
+]

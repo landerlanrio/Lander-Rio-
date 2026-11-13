@@ -1,0 +1,422 @@
+[
+  {
+    "viewport": 320,
+    "route": "/",
+    "bodyWidth": 320,
+    "clientWidth": 320,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 514,
+        "width": 140
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 514,
+        "width": 140
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-mobile-rc2.avif",
+      "width": 864,
+      "height": 1536
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 632
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 632
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 719
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 719
+      }
+    ],
+    "height": 667
+  },
+  {
+    "viewport": 430,
+    "route": "/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 550,
+        "width": 191
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 550,
+        "width": 191
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-mobile-rc2.avif",
+      "width": 864,
+      "height": 1536
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 668
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 668
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 756
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 756
+      }
+    ],
+    "height": 740
+  },
+  {
+    "viewport": 768,
+    "route": "/",
+    "bodyWidth": 768,
+    "clientWidth": 768,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 655,
+        "width": 206
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 655,
+        "width": 206
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-desktop-rc2.avif",
+      "width": 1536,
+      "height": 864
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 796
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 796
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 796
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 796
+      }
+    ],
+    "height": 390
+  },
+  {
+    "viewport": 360,
+    "route": "/atacado/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 430,
+    "route": "/atacado/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 360,
+    "route": "/varejo/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 430,
+    "route": "/varejo/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 360,
+    "route": "/treino/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [
+      "Organização Mundial da Saúde"
+    ],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 430,
+    "route": "/treino/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [
+      "Organização Mundial da Saúde",
+      "American College of Sports Medicine"
+    ],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 360,
+    "route": "/dieta/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 430,
+    "route": "/dieta/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 360,
+    "route": "/enciclopedia/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [
+      "INÍCIO",
+      "Estudo original ↗"
+    ],
+    "sectionOrder": [
+      "catalogo"
+    ],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 430,
+    "route": "/enciclopedia/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [
+      "INÍCIO",
+      "Estudo original ↗",
+      "Estudo original ↗"
+    ],
+    "sectionOrder": [
+      "catalogo"
+    ],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 360,
+    "route": "/conteudos/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 430,
+    "route": "/conteudos/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 360,
+    "route": "/marcas/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  },
+  {
+    "viewport": 430,
+    "route": "/marcas/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": [],
+    "height": 844
+  }
+]

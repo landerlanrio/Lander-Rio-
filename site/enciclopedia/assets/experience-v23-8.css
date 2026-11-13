@@ -54,6 +54,12 @@
 .ency-footer .footer-links a{min-height:44px}
 .article-shell .toc a{min-height:40px}
 .lr-evidence-snapshot .lr-tool-button{background:var(--lime);border-color:var(--lime);color:#122015}
+
+/* RC4: shared fixes verified across the 35 scientific articles. */
+.breadcrumb a{text-decoration:underline;text-underline-offset:4px}
+.article-shell .line-link{color:#354916!important;text-decoration-color:currentColor;display:inline-flex;align-items:center;min-height:44px}
+.article-shell .line-link:focus-visible{outline-color:#354916}
+.crumb a,.research-grid a{display:inline-flex;align-items:center;min-height:44px}
 .lr-evidence-snapshot .lr-tool-button:hover{background:#caff80;color:#122015}
 @media(max-width:780px){.lr-method-layout{grid-template-columns:1fr;gap:16px;padding:40px 24px}.lr-method-aside{position:static}.lr-evidence-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.lr-method-layout{padding:38px 20px 62px}.lr-evidence-filter{padding:14px}.lr-evidence-filter select{width:100%}.lr-evidence-snapshot{padding:20px}.lr-result-tools{align-items:stretch}.lr-result-tools .lr-tool-button{width:100%}.lr-tool-button{min-height:46px}}

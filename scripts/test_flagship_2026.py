@@ -42,6 +42,10 @@ class Flagship(unittest.TestCase):
         self.assertLess((SITE/'assets/flagship-hero-mobile-rc2.webp').stat().st_size,120_000)
         self.assertLess((SITE/'assets/flagship-hero-mobile-rc2.avif').stat().st_size,120_000)
         self.assertIn('fetchpriority="high"',self.html)
+    def test_above_fold_logo_transfer_budget(self):
+        logos=[a for t,a in self.p.tags if t=='img' and '-hero-rc4.webp' in a.get('src','')]
+        self.assertEqual(len(logos),4)
+        self.assertLessEqual(sum((SITE/a['src'].lstrip('/')).stat().st_size for a in logos),100_000)
     def test_brands_are_informational_and_not_checkout_links(self):
         brands=[a for t,a in self.p.tags if t=='a' and 'data-brand' in a];self.assertEqual(len(brands),18)
         self.assertTrue(all(urlsplit(a['href']).netloc=='' for a in brands))
@@ -68,7 +72,7 @@ class Flagship(unittest.TestCase):
         self.assertIn('isDemo:true',rox)
     def test_release_manifest_covers_new_assets(self):
         manifest={'files':{}}
-        for name in ('manifest-digital-flagship-2026.json','manifest-digital-flagship-2026-rc2.json','manifest-digital-flagship-2026-rc3.json'):
+        for name in ('manifest-digital-flagship-2026.json','manifest-digital-flagship-2026-rc2.json','manifest-digital-flagship-2026-rc3.json','manifest-digital-flagship-2026-rc4.json'):
             manifest['files'].update(json.loads((SITE/name).read_text())['files'])
         for f in ('index.html','assets/flagship-2026.css','assets/flagship-2026.js','assets/flagship-hero-mobile-rc2.avif','release.json'):self.assertIn(f,manifest['files'])
 if __name__=='__main__':unittest.main(verbosity=2)

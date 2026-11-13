@@ -1,0 +1,360 @@
+{
+  "candidate": "digital-flagship-2026-rc2",
+  "created_at": "2026-11-13T19:21:32.205260+00:00",
+  "status": "PASS",
+  "network_scope": "HTTP loopback and mocks; no external integration writes",
+  "checks": [
+    {
+      "name": "integrity",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/verify_site.py"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "structure",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/test_flagship_2026.py"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "metadata-and-binary",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/test_integrity.py"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "node-tests",
+      "command": [
+        "node",
+        "--experimental-strip-types",
+        "--test",
+        "prototypes/rox-ai-v2/agent-v3.test.mjs",
+        "prototypes/rox-ai-v2/groq-recovered.test.mjs",
+        "prototypes/rox-ai-v2/http-guards.test.mjs",
+        "prototypes/rox-ai-v2/index.test.mjs",
+        "prototypes/rox-ai-v2/preview-private/server.test.mjs",
+        "prototypes/rox-ai-v2/titan-dialogue.test.mjs",
+        "revenue-intelligence/test-authenticated-events.cjs",
+        "revenue-intelligence/test-hardening.cjs",
+        "revenue-intelligence/test-lead-tracking.cjs",
+        "revenue-intelligence/test-local-store.cjs",
+        "revenue-intelligence/test-reconcile.cjs",
+        "scripts/measurement-flagship.test.cjs",
+        "scripts/rox-agent-bridge.test.cjs",
+        "scripts/rox-demo-v25.test.cjs",
+        "scripts/rox-transport.test.cjs",
+        "scripts/test_seo_metadata.cjs"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "http-smoke",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/smoke_http.py"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-0",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/access-v20.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-1",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/brand-strip-v20-2.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-2",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/brand-vault-v26.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-3",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/commerce-v21.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-4",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/commerce-v23-1.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-5",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/contact-help-v23.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-6",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/editorial-v22.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-7",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/flagship-2026.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-8",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/lander-training-engine-v18.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-9",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/measurement-v21.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-10",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/measurement-v23-2.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-11",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/radar-v21.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-12",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/rox-agent-v3-offline.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-13",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/rox-demo-v25.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-14",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/rox-transport-titan.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-15",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/assets/training-v21.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-16",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/analytics-v20.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-17",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/app-v21.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-18",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/config.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-19",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/foods.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-20",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/mealGenerator.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-21",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/nutritionEngine.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-22",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/safety.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-23",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/storage.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-24",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/dieta/substitutionEngine.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-25",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/enciclopedia/assets/app.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-26",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/enciclopedia/assets/catalog-data.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-27",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/enciclopedia/assets/experience-v23-8.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "syntax-28",
+      "command": [
+        "node",
+        "--check",
+        "/workspace/scratch/69bd9bf2abc0/flagship/site/enciclopedia/assets/nav-v23-4.js"
+      ],
+      "exit_code": 0,
+      "passed": true
+    }
+  ]
+}

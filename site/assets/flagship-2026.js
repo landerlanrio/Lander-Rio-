@@ -18,6 +18,10 @@
  const hero=$('#inicio');
  if('IntersectionObserver' in window&&hero){new IntersectionObserver(([e])=>{heroVisible=e.isIntersecting;document.body.classList.toggle('hero-in-view',heroVisible);measureHero()},{threshold:.2}).observe(hero);window.addEventListener('lander:consent',measureHero);}
  else{heroVisible=true;document.body.classList.remove('hero-in-view');measureHero();}
+ // Introduce the local guide only after the commercial sections and brand gallery.
+ const toolsSection=$('#ferramentas');
+ function updateGuide(){document.body.classList.toggle('rox-ready',Boolean(toolsSection&&toolsSection.getBoundingClientRect().top<window.innerHeight-80));}
+ updateGuide();window.addEventListener('scroll',updateGuide,{passive:true});window.addEventListener('resize',updateGuide,{passive:true});
  // Only animate decorative layers on capable pointer devices; touch uses the static composition.
  function updateDepth(){ticking=false;if(reduced.matches||!fine.matches||lowPower||document.hidden)return;const stage=$('.hero-stage'),r=stage.getBoundingClientRect();if(r.bottom>0)stage.style.setProperty('--hero-shift',Math.min(40,Math.max(0,-r.top*.1))+'px');}
  if(!lowPower){window.addEventListener('scroll',()=>{if(!ticking&&fine.matches&&!reduced.matches){ticking=true;requestAnimationFrame(updateDepth)}},{passive:true});

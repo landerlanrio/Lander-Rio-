@@ -1,0 +1,14 @@
+{
+  "browser": "Chromium",
+  "brand_filter": {
+    "Éticos": 1,
+    "Quimfa": 1,
+    "Indufar": 1
+  },
+  "rox_launcher_visible": {
+    "tools": true,
+    "hero_after_return": false,
+    "brands": false
+  },
+  "external_messages_sent": 0
+}

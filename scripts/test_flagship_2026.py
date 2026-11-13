@@ -67,7 +67,9 @@ class Flagship(unittest.TestCase):
         for token in ('fetch(', 'XMLHttpRequest','localStorage','sessionStorage','eval('):self.assertNotIn(token,rox)
         self.assertIn('isDemo:true',rox)
     def test_release_manifest_covers_new_assets(self):
-        manifest=json.loads((SITE/'manifest-digital-flagship-2026-rc2.json').read_text())
+        manifest={'files':{}}
+        for name in ('manifest-digital-flagship-2026.json','manifest-digital-flagship-2026-rc2.json','manifest-digital-flagship-2026-rc3.json'):
+            manifest['files'].update(json.loads((SITE/name).read_text())['files'])
         for f in ('index.html','assets/flagship-2026.css','assets/flagship-2026.js','assets/flagship-hero-mobile-rc2.avif','release.json'):self.assertIn(f,manifest['files'])
 if __name__=='__main__':unittest.main(verbosity=2)
 

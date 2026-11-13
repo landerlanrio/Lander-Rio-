@@ -1,11 +1,12 @@
 {
-  "release": "digital-flagship-2026-rc2",
-  "version": "digital-flagship-2026-rc2",
+  "release": "digital-flagship-2026-rc3",
+  "version": "digital-flagship-2026-rc3",
   "prepared_on": "2026-11-13",
   "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
   "base_package": "lander-v23.10-seis-registros-recebimento-2026-11-10",
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
   "changes": [
+    "12 arquivos enviados integrados como 14 marcas, preservando cores e proporções; grade Hero mobile 2×2 e galeria interativa.",
     "Hero mobile 864×1536 e desktop 1536×864 com picture/AVIF/WebP/JPEG e ajuste de posição dos textos.",
     "Homepage reconstruída com direção Cinematic Performance Monolith, CSS leve e enhancement progressivo.",
     "Jornadas atacado e varejo, diretório de marcas informativo, busca local e contato contextual.",
@@ -13,10 +14,10 @@
     "Eventos de Hero, perfil comercial e marcas sujeitos a consentimento, sem dados digitados.",
     "Preferência por movimento reduzido, fallback sem JavaScript e imagens AVIF/WebP."
   ],
-  "release_note": "RC2: imagens vertical e horizontal fornecidas pelo usuário aplicadas à Hero, com enquadramento responsivo. Não publicada.",
+  "release_note": "RC3: 14 marcas dos 12 arquivos enviados, apresentação em titânio e grade mobile ampliada. Não publicada.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
   "status": "isolated-candidate-awaiting-homologation",
-  "manifest": "manifest-digital-flagship-2026-rc2.json",
+  "manifest": "manifest-digital-flagship-2026-rc3.json",
   "enciclopedia_release": "v23.8",
   "enciclopedia_status": "pre-publicação; revisão científica externa pendente",
   "source_head": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
@@ -27,8 +28,8 @@
     "crm_write": "mock-only-no-live-write",
     "commercial_events": "gateway-prototype-disabled"
   },
-  "visual_provenance": "Hero: duas imagens fornecidas e selecionadas pelo usuário em 13/11/2026. JPEGs originais preservados integralmente; AVIF e WebP são versões de entrega, sem retoque ou alteração facial. Logos recuperados da base, sem recriação.",
-  "source_branch": "design/digital-flagship-2026-rc2",
+  "visual_provenance": "Hero: duas imagens fornecidas e selecionadas pelo usuário em 13/11/2026. JPEGs originais preservados integralmente; AVIF e WebP são versões de entrega, sem retoque ou alteração facial. Logos selecionados e enviados pelo usuário, sem recriação. Ver docs/LOGOS_RC3_ASSETS.json.",
+  "source_branch": "design/digital-flagship-2026-rc3",
   "recovered_base": "LANDER_RIO_TITAN_RC2_FONTE.zip",
-  "previous_candidate_commit": "a7ea9b11a9d4a8a2873d075544e725b9e3e9a817"
+  "previous_candidate_commit": "dd537229ad9453618035f05ee20492b09cd614aa"
 }

@@ -1,0 +1,46 @@
+{
+  "verifiedAt": "2026-11-14T03:03:00Z",
+  "site": "https://landerrio.com.br",
+  "sourceDeploy": "6af7bca0de8663024dbb3bdd",
+  "productionDeploy": "6af7cf076327d7fe116d1858",
+  "measurementId": "G-C3HWDYKEJK",
+  "property": "548953010",
+  "productionConfig": {
+    "enabled": true,
+    "enhancedMeasurementReviewed": true,
+    "debug": false
+  },
+  "coveredHtmlFiles": 50,
+  "filesDeleted": 0,
+  "tests": {
+    "ga4Passed": 8,
+    "failed": 0
+  },
+  "observedGA4Realtime": {
+    "activeUsers": 1,
+    "pageViews": 2,
+    "paths": {
+      "/": 1,
+      "/atacado/": 1
+    },
+    "events": [
+      "first_visit",
+      "page_view",
+      "session_start",
+      "hero_view",
+      "user_engagement"
+    ],
+    "source": "Browser visit with consent; Google Analytics realtime UI confirmed reception"
+  },
+  "preserved": {
+    "existingConsent": true,
+    "sensitivePageExclusion": true,
+    "posthog": true,
+    "siteContent": true
+  },
+  "limits": [
+    "These counts include the deliberate test visit and are not organic growth metrics.",
+    "Historical visits during the missing-tag period were not recovered.",
+    "Dashboard visual homologation remains separate; this receipt confirms production GA4 collection."
+  ]
+}

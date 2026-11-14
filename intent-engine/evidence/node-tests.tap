@@ -1,0 +1,250 @@
+TAP version 13
+# Subtest: painel privado bloqueia anônimo, header forjado, usuário errado e sessão vencida
+ok 1 - painel privado bloqueia anônimo, header forjado, usuário errado e sessão vencida
+  ---
+  duration_ms: 7.865654
+  type: 'test'
+  ...
+# Subtest: allowlist ausente bloqueia até usuário autenticado
+ok 2 - allowlist ausente bloqueia até usuário autenticado
+  ---
+  duration_ms: 1.140669
+  type: 'test'
+  ...
+# Subtest: sessão autorizada recebe painel sem token
+ok 3 - sessão autorizada recebe painel sem token
+  ---
+  duration_ms: 1.692862
+  type: 'test'
+  ...
+# Subtest: somente GET e falhas da fonte não expõem segredo
+ok 4 - somente GET e falhas da fonte não expõem segredo
+  ---
+  duration_ms: 2.183505
+  type: 'test'
+  ...
+# Subtest: snapshot GitHub usa autenticação servidor e valida dados
+ok 5 - snapshot GitHub usa autenticação servidor e valida dados
+  ---
+  duration_ms: 30.795655
+  type: 'test'
+  ...
+# Subtest: public/ não contém dados internos nem código backend
+ok 6 - public/ não contém dados internos nem código backend
+  ---
+  duration_ms: 1.774471
+  type: 'test'
+  ...
+# Subtest: painel inicial e filtragem offline
+ok 7 - painel inicial e filtragem offline
+  ---
+  duration_ms: 49.123079
+  type: 'test'
+  ...
+# Subtest: brief editorial exige revisao e nao altera producao
+ok 8 - brief editorial exige revisao e nao altera producao
+  ---
+  duration_ms: 10.455945
+  type: 'test'
+  ...
+# Subtest: filtro dados insuficientes e reset
+ok 9 - filtro dados insuficientes e reset
+  ---
+  duration_ms: 23.298994
+  type: 'test'
+  ...
+# Subtest: nega coleta sem consentimento, em preview, sem revisão ou desativada
+ok 10 - nega coleta sem consentimento, em preview, sem revisão ou desativada
+  ---
+  duration_ms: 15.555868
+  type: 'test'
+  ...
+# Subtest: aceite inicia uma page_view e ordem consent default precede config
+ok 11 - aceite inicia uma page_view e ordem consent default precede config
+  ---
+  duration_ms: 2.5239
+  type: 'test'
+  ...
+# Subtest: ponte não duplica implementação existente nem execução repetida
+ok 12 - ponte não duplica implementação existente nem execução repetida
+  ---
+  duration_ms: 4.062138
+  type: 'test'
+  ...
+# Subtest: WhatsApp não é generate_lead; dado pessoal e referência interna nunca enviados
+ok 13 - WhatsApp não é generate_lead; dado pessoal e referência interna nunca enviados
+  ---
+  duration_ms: 4.784622
+  type: 'test'
+  ...
+# Subtest: generate_lead exige upstream backend_confirmed e é deduplicado pelo marco existente
+ok 14 - generate_lead exige upstream backend_confirmed e é deduplicado pelo marco existente
+  ---
+  duration_ms: 3.953669
+  type: 'test'
+  ...
+# Subtest: revogar interrompe eventos, reconsentimento não repete conversão
+ok 15 - revogar interrompe eventos, reconsentimento não repete conversão
+  ---
+  duration_ms: 2.886225
+  type: 'test'
+  ...
+# Subtest: página sensível mantém proteção original
+ok 16 - página sensível mantém proteção original
+  ---
+  duration_ms: 2.611084
+  type: 'test'
+  ...
+# Subtest: mesmo objeto de evento não é enviado duas vezes
+ok 17 - mesmo objeto de evento não é enviado duas vezes
+  ---
+  duration_ms: 2.593335
+  type: 'test'
+  ...
+# Subtest: janela fechada usa calendário Pacific, atravessa mês/ano
+ok 18 - janela fechada usa calendário Pacific, atravessa mês/ano
+  ---
+  duration_ms: 43.029051
+  type: 'test'
+  ...
+# Subtest: snapshot real é determinístico e não mistura consultas com páginas
+ok 19 - snapshot real é determinístico e não mistura consultas com páginas
+  ---
+  duration_ms: 4.190921
+  type: 'test'
+  ...
+# Subtest: rejeita propriedade
+ok 20 - rejeita propriedade
+  ---
+  duration_ms: 2.943955
+  type: 'test'
+  ...
+# Subtest: rejeita autenticação
+ok 21 - rejeita autenticação
+  ---
+  duration_ms: 1.449669
+  type: 'test'
+  ...
+# Subtest: rejeita coleta truncada
+ok 22 - rejeita coleta truncada
+  ---
+  duration_ms: 1.465959
+  type: 'test'
+  ...
+# Subtest: rejeita query no lugar de page
+ok 23 - rejeita query no lugar de page
+  ---
+  duration_ms: 0.973893
+  type: 'test'
+  ...
+# Subtest: rejeita número negativo
+ok 24 - rejeita número negativo
+  ---
+  duration_ms: 1.080725
+  type: 'test'
+  ...
+# Subtest: rejeita CTR inválido
+ok 25 - rejeita CTR inválido
+  ---
+  duration_ms: 1.448527
+  type: 'test'
+  ...
+# Subtest: rejeita URL externa
+ok 26 - rejeita URL externa
+  ---
+  duration_ms: 1.030771
+  type: 'test'
+  ...
+# Subtest: rejeita URL com credencial
+ok 27 - rejeita URL com credencial
+  ---
+  duration_ms: 1.315514
+  type: 'test'
+  ...
+# Subtest: rejeita URL com dados pessoais
+ok 28 - rejeita URL com dados pessoais
+  ---
+  duration_ms: 1.128172
+  type: 'test'
+  ...
+# Subtest: rejeita data futura
+ok 29 - rejeita data futura
+  ---
+  duration_ms: 0.830177
+  type: 'test'
+  ...
+# Subtest: rejeita captura futura
+ok 30 - rejeita captura futura
+  ---
+  duration_ms: 0.471745
+  type: 'test'
+  ...
+# Subtest: rejeita data inexistente
+ok 31 - rejeita data inexistente
+  ---
+  duration_ms: 0.539618
+  type: 'test'
+  ...
+# Subtest: paginação completa e rejeição de duplicatas
+ok 32 - paginação completa e rejeição de duplicatas
+  ---
+  duration_ms: 1.825986
+  type: 'test'
+  ...
+# Subtest: GA4 indisponível permanece null em vez de zero
+ok 33 - GA4 indisponível permanece null em vez de zero
+  ---
+  duration_ms: 1.138274
+  type: 'test'
+  ...
+# Subtest: variantes canônicas agregam CTR e posição ponderada
+ok 34 - variantes canônicas agregam CTR e posição ponderada
+  ---
+  duration_ms: 1.551454
+  type: 'test'
+  ...
+# Subtest: normaliza rota e rejeita dominio estranho
+ok 35 - normaliza rota e rejeita dominio estranho
+  ---
+  duration_ms: 2.448761
+  type: 'test'
+  ...
+# Subtest: indice nao inventa cliques e privilegia amostra maior
+ok 36 - indice nao inventa cliques e privilegia amostra maior
+  ---
+  duration_ms: 1.227585
+  type: 'test'
+  ...
+# Subtest: brief sinaliza gate de regulacao e nao recomenda venda
+ok 37 - brief sinaliza gate de regulacao e nao recomenda venda
+  ---
+  duration_ms: 0.581086
+  type: 'test'
+  ...
+# Subtest: csv portugues e ingles
+ok 38 - csv portugues e ingles
+  ---
+  duration_ms: 1.238283
+  type: 'test'
+  ...
+# Subtest: escape HTML previne injeção de conteúdo importado
+ok 39 - escape HTML previne injeção de conteúdo importado
+  ---
+  duration_ms: 0.306484
+  type: 'test'
+  ...
+# Subtest: csv rejeita negativos, texto numérico inválido, aspas abertas e credenciais em URL
+ok 40 - csv rejeita negativos, texto numérico inválido, aspas abertas e credenciais em URL
+  ---
+  duration_ms: 0.519827
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 300.393411

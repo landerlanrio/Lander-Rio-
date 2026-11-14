@@ -1,0 +1,33 @@
+{
+  "executedAt": "2026-11-14T02:35:14.932Z",
+  "node": "v24.22.1",
+  "automated": {
+    "passed": 40,
+    "failed": 0,
+    "evidence": "node-tests.tap",
+    "type": "Node tests with VM DOM and mocked Netlify identity/GitHub response; real GSC snapshot validated"
+  },
+  "ingestion": {
+    "authenticatedRead": "passed via OpenSEO",
+    "rows": 24,
+    "from": "2026-10-14",
+    "to": "2026-11-10",
+    "idempotentRetry": "passed"
+  },
+  "ga4": {
+    "transportTests": "passed locally",
+    "propertyRead": "passed via OpenSEO",
+    "realEventDelivery": "not tested",
+    "activation": false
+  },
+  "ui": {
+    "visual": "blocked",
+    "browserSuite": "not executed: Chromium socket() Operation not permitted; cloud browser local-file URL denied",
+    "vmFunctionalTests": "passed"
+  },
+  "netlify": {
+    "remoteLogin": "not tested",
+    "deploy": "not performed"
+  },
+  "productionChanged": false
+}

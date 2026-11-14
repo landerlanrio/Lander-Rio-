@@ -1,0 +1,1008 @@
+{
+  "source": "Google Search Console via OpenSEO autenticado",
+  "periodo": [
+    "2026-10-14",
+    "2026-11-10"
+  ],
+  "geradoEm": "2026-11-14T02:29:00.424Z",
+  "interpretacao": "A pontuação é uma heurística de prioridade de revisão, não projeção de tráfego ou receita.",
+  "pages": [
+    {
+      "url": "https://landerrio.com.br/marcas/cooper-pharma/",
+      "cliques": 5,
+      "impressoes": 185,
+      "ctr": 0.02702702702702703,
+      "posicao": 9.5,
+      "nome": "Cooper Pharma",
+      "pontuacao": 90,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/cooper-pharma/",
+        "pagina": "Cooper Pharma",
+        "dados_verificados": {
+          "impressoes": 185,
+          "cliques": 5,
+          "ctr": 0.02702702702702703,
+          "posicao": 9.5,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/life-peptideos/",
+      "cliques": 13,
+      "impressoes": 146,
+      "ctr": 0.08904109589041095,
+      "posicao": 4.9,
+      "nome": "Life Peptídeos",
+      "pontuacao": 86,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/life-peptideos/",
+        "pagina": "Life Peptídeos",
+        "dados_verificados": {
+          "impressoes": 146,
+          "cliques": 13,
+          "ctr": 0.08904109589041095,
+          "posicao": 4.9,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/landerlan-gold/",
+      "cliques": 5,
+      "impressoes": 198,
+      "ctr": 0.025252525252525252,
+      "posicao": 3.3999999999999995,
+      "nome": "Landerlan Gold",
+      "pontuacao": 84,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/landerlan-gold/",
+        "pagina": "Landerlan Gold",
+        "dados_verificados": {
+          "impressoes": 198,
+          "cliques": 5,
+          "ctr": 0.025252525252525252,
+          "posicao": 3.3999999999999995,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/zphc/",
+      "cliques": 1,
+      "impressoes": 82,
+      "ctr": 0.012195121951219513,
+      "posicao": 8.2,
+      "nome": "ZPHC",
+      "pontuacao": 84,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/zphc/",
+        "pagina": "ZPHC",
+        "dados_verificados": {
+          "impressoes": 82,
+          "cliques": 1,
+          "ctr": 0.012195121951219513,
+          "posicao": 8.2,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/landerlan/",
+      "cliques": 2,
+      "impressoes": 66,
+      "ctr": 0.030303030303030304,
+      "posicao": 7.5,
+      "nome": "Landerlan",
+      "pontuacao": 84,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/landerlan/",
+        "pagina": "Landerlan",
+        "dados_verificados": {
+          "impressoes": 66,
+          "cliques": 2,
+          "ctr": 0.030303030303030304,
+          "posicao": 7.5,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/muscle-labs-india/",
+      "cliques": 7,
+      "impressoes": 154,
+      "ctr": 0.045454545454545456,
+      "posicao": 8.6,
+      "nome": "Muscle Labs India",
+      "pontuacao": 80,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/muscle-labs-india/",
+        "pagina": "Muscle Labs India",
+        "dados_verificados": {
+          "impressoes": 154,
+          "cliques": 7,
+          "ctr": 0.045454545454545456,
+          "posicao": 8.6,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/",
+      "cliques": 22,
+      "impressoes": 169,
+      "ctr": 0.1301775147928994,
+      "posicao": 8.5,
+      "nome": "Página inicial",
+      "pontuacao": 74,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/",
+        "pagina": "Página inicial",
+        "dados_verificados": {
+          "impressoes": 169,
+          "cliques": 22,
+          "ctr": 0.1301775147928994,
+          "posicao": 8.5,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/contato/",
+      "cliques": 0,
+      "impressoes": 24,
+      "ctr": 0,
+      "posicao": 8.1,
+      "nome": "Contato",
+      "pontuacao": 73,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/contato/",
+        "pagina": "Contato",
+        "dados_verificados": {
+          "impressoes": 24,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 8.1,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/indufar/",
+      "cliques": 0,
+      "impressoes": 20,
+      "ctr": 0,
+      "posicao": 7.4,
+      "nome": "Indufar",
+      "pontuacao": 73,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/indufar/",
+        "pagina": "Indufar",
+        "dados_verificados": {
+          "impressoes": 20,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 7.4,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/geniqs-pharma/",
+      "cliques": 4,
+      "impressoes": 94,
+      "ctr": 0.0425531914893617,
+      "posicao": 3,
+      "nome": "Geniqs Pharma",
+      "pontuacao": 67,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/geniqs-pharma/",
+        "pagina": "Geniqs Pharma",
+        "dados_verificados": {
+          "impressoes": 94,
+          "cliques": 4,
+          "ctr": 0.0425531914893617,
+          "posicao": 3,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/oxygen-kw-pharma/",
+      "cliques": 1,
+      "impressoes": 29,
+      "ctr": 0.034482758620689655,
+      "posicao": 14.4,
+      "nome": "Oxygen KW Pharma",
+      "pontuacao": 64,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/oxygen-kw-pharma/",
+        "pagina": "Oxygen KW Pharma",
+        "dados_verificados": {
+          "impressoes": 29,
+          "cliques": 1,
+          "ctr": 0.034482758620689655,
+          "posicao": 14.4,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/alpha-laboratory/",
+      "cliques": 0,
+      "impressoes": 20,
+      "ctr": 0,
+      "posicao": 12.5,
+      "nome": "Alpha Laboratory",
+      "pontuacao": 64,
+      "situacao": "Revisar página",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/alpha-laboratory/",
+        "pagina": "Alpha Laboratory",
+        "dados_verificados": {
+          "impressoes": 20,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 12.5,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/autenticidade/",
+      "cliques": 0,
+      "impressoes": 10,
+      "ctr": 0,
+      "posicao": 4.5,
+      "nome": "Autenticidade",
+      "pontuacao": 40,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/autenticidade/",
+        "pagina": "Autenticidade",
+        "dados_verificados": {
+          "impressoes": 10,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 4.5,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/perguntas-frequentes/",
+      "cliques": 0,
+      "impressoes": 13,
+      "ctr": 0,
+      "posicao": 6,
+      "nome": "Perguntas frequentes",
+      "pontuacao": 39,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/perguntas-frequentes/",
+        "pagina": "Perguntas frequentes",
+        "dados_verificados": {
+          "impressoes": 13,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 6,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/sobre/",
+      "cliques": 0,
+      "impressoes": 8,
+      "ctr": 0,
+      "posicao": 4.8,
+      "nome": "Sobre",
+      "pontuacao": 38,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/sobre/",
+        "pagina": "Sobre",
+        "dados_verificados": {
+          "impressoes": 8,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 4.8,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/varejo/",
+      "cliques": 0,
+      "impressoes": 9,
+      "ctr": 0,
+      "posicao": 6,
+      "nome": "Varejo",
+      "pontuacao": 37,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/varejo/",
+        "pagina": "Varejo",
+        "dados_verificados": {
+          "impressoes": 9,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 6,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/eticos/",
+      "cliques": 0,
+      "impressoes": 6,
+      "ctr": 0,
+      "posicao": 7,
+      "nome": "Eticos",
+      "pontuacao": 35,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/eticos/",
+        "pagina": "Eticos",
+        "dados_verificados": {
+          "impressoes": 6,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 7,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/entregas/",
+      "cliques": 0,
+      "impressoes": 6,
+      "ctr": 0,
+      "posicao": 8.3,
+      "nome": "Entregas",
+      "pontuacao": 34,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/entregas/",
+        "pagina": "Entregas",
+        "dados_verificados": {
+          "impressoes": 6,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 8.3,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/",
+      "cliques": 0,
+      "impressoes": 11,
+      "ctr": 0,
+      "posicao": 15,
+      "nome": "Diretório de marcas",
+      "pontuacao": 30,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/",
+        "pagina": "Diretório de marcas",
+        "dados_verificados": {
+          "impressoes": 11,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 15,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/synedica/",
+      "cliques": 0,
+      "impressoes": 9,
+      "ctr": 0,
+      "posicao": 15.899999999999999,
+      "nome": "Synedica",
+      "pontuacao": 28,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/synedica/",
+        "pagina": "Synedica",
+        "dados_verificados": {
+          "impressoes": 9,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 15.899999999999999,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/atacado/",
+      "cliques": 1,
+      "impressoes": 14,
+      "ctr": 0.07142857142857142,
+      "posicao": 16.7,
+      "nome": "Atacado",
+      "pontuacao": 24,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/atacado/",
+        "pagina": "Atacado",
+        "dados_verificados": {
+          "impressoes": 14,
+          "cliques": 1,
+          "ctr": 0.07142857142857142,
+          "posicao": 16.7,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/termos/",
+      "cliques": 0,
+      "impressoes": 4,
+      "ctr": 0,
+      "posicao": 17.8,
+      "nome": "Termos",
+      "pontuacao": 23,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/termos/",
+        "pagina": "Termos",
+        "dados_verificados": {
+          "impressoes": 4,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 17.8,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/topharma/",
+      "cliques": 0,
+      "impressoes": 1,
+      "ctr": 0,
+      "posicao": 1,
+      "nome": "Topharma",
+      "pontuacao": 22,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": true,
+      "brief": {
+        "url": "https://landerrio.com.br/marcas/topharma/",
+        "pagina": "Topharma",
+        "dados_verificados": {
+          "impressoes": 1,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 1,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Fortalecer informação institucional verificável, sem promoção, prescrição ou alegações sobre uso terapêutico.",
+        "perguntas_a_apurar": [
+          "Qual é a identificação correta e documentada da marca?",
+          "Quais fontes primárias sustentam informações institucionais?",
+          "Quais avisos de vínculo, procedência e conteúdo de saúde são necessários?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão regulatória e editorial obrigatória",
+          "Sem CTA de compra ou aconselhamento médico",
+          "Sem afirmações de autenticidade não comprovadas"
+        ],
+        "publico": false
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/privacidade/",
+      "cliques": 0,
+      "impressoes": 5,
+      "ctr": 0,
+      "posicao": 21.4,
+      "nome": "Privacidade",
+      "pontuacao": 21,
+      "situacao": "Dados insuficientes",
+      "revisao_regulatoria": false,
+      "brief": {
+        "url": "https://landerrio.com.br/privacidade/",
+        "pagina": "Privacidade",
+        "dados_verificados": {
+          "impressoes": 5,
+          "cliques": 0,
+          "ctr": 0,
+          "posicao": 21.4,
+          "consultas": []
+        },
+        "hipotese": "A consulta e a página podem apresentar lacuna de relevância, snippet ou clareza. Verificar manualmente antes de alterar.",
+        "objetivo": "Explicar o assunto com utilidade prática e encaminhamentos editoriais claros.",
+        "perguntas_a_apurar": [
+          "O que o usuário realmente busca nesta página?",
+          "Quais fontes verificáveis sustentam respostas úteis?",
+          "Qual o melhor próximo conteúdo para aprofundamento?"
+        ],
+        "tarefas": [
+          "Verificar H1, meta title, description e canonical no HTML publicado",
+          "Comparar conteúdo atual com a intenção de busca das consultas reais",
+          "Corrigir informações imprecisas e introduzir fontes verificáveis",
+          "Revisar navegação e links internos pertinentes",
+          "Testar mobile, acessibilidade e indexação antes de publicar"
+        ],
+        "gates": [
+          "Revisão editorial",
+          "Nenhuma promessa de posicionamento ou conversão"
+        ],
+        "publico": false
+      }
+    }
+  ]
+}

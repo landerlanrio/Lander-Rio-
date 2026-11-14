@@ -1,0 +1,8 @@
+[build]
+  command = "npm run ingest && npm run build && npm test"
+  publish = "public"
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+# Isolated private panel only. Never use this config as a replacement for the public site.
+# No schedule/build hook: the existing ChatGPT automation is the sole collector.

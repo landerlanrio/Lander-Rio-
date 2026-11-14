@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {rankPages,normalizeUrl,scorePage,makeBrief,escapeHtml,parseCSV,isRegulatedContext} from '../lib/intent-engine.mjs';
+test('normaliza rota e rejeita dominio estranho',()=>{assert.equal(normalizeUrl('http://www.landerrio.com.br/treino'),'https://landerrio.com.br/treino/');assert.throws(()=>normalizeUrl('https://fraude.example.com/'));});
+test('indice nao inventa cliques e privilegia amostra maior',()=>{const high={url:'https://landerrio.com.br/treino/',cliques:0,impressoes:150,posicao:8};const low={url:'https://landerrio.com.br/dieta/',cliques:0,impressoes:1,posicao:8};assert(scorePage(high)>scorePage(low));const rows=rankPages([low,high]);assert.equal(rows[0].url,high.url);assert.equal(rows[1].situacao,'Dados insuficientes');});
+test('brief sinaliza gate de regulacao e nao recomenda venda',()=>{const p={url:'https://landerrio.com.br/marcas/life-peptideos/',impressoes:155,cliques:15,ctr:.0968,posicao:4.8};const b=makeBrief(p,[{consulta:'dose de peptídeo',impressoes:4},{consulta:'life peptideos',impressoes:87}]);assert.equal(b.gates.includes('Sem CTA de compra ou aconselhamento médico'),true);assert.equal(b.dados_verificados.consultas.length,1);assert.equal(isRegulatedContext(p.url),true);});
+test('csv portugues e ingles',()=>{const pt='Página;Cliques;Impressões;CTR;Posição\nhttps://landerrio.com.br/;5;100;5,0%;8,5';const en='Page,Clicks,Impressions,CTR,Position\nhttps://landerrio.com.br/treino/,3,50,6%,4.2';assert.equal(parseCSV(pt)[0].posicao,8.5);assert.equal(parseCSV(en)[0].ctr,.06);});
+test('escape HTML previne injeção de conteúdo importado',()=>{assert.equal(escapeHtml('<script>'), '&lt;script&gt;');});
+test('csv rejeita negativos, texto numérico inválido, aspas abertas e credenciais em URL',()=>{
+ for(const row of ['https://landerrio.com.br/;-1;10;5','https://landerrio.com.br/;abc;10;5','"https://landerrio.com.br/;1;10;5','https://user:pass@landerrio.com.br/;1;10;5'])assert.throws(()=>parseCSV('Página;Cliques;Impressões;Posição\n'+row));
+});

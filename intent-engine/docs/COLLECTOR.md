@@ -1,0 +1,16 @@
+# Coletor autenticado — contrato operacional
+
+O OAuth Google permanece no OpenSEO. A aplicação nunca extrai nem replica seus tokens. A autenticação do GitHub permanece no conector. O único agendador é a automação existente **LANDER RIO | Painel Executivo**, ID `6af1270c4cc8819184a21757a455958e`. Não criar cron Netlify, GitHub Actions agendado ou outra automação.
+
+Destino privado: `landerlanrio/Lander-Rio-`, branch `feature/intent-engine-v2`, arquivo `intent-engine/data/openseo-latest.json`. Não escrever em main, staging ou branches do site. Todo commit usa `[skip ci] [skip netlify]`; nenhum merge, deploy ou chamada paga.
+
+1. Leia o HEAD da branch e o arquivo atual. Confira que o repositório permanece privado. Se já houver coleta completa para a mesma janela, capturada no mesmo dia de America/Sao_Paulo, encerre sem repetir.
+2. Calcule `closedWindow` em `lib/ingestion.mjs`: hoje em America/Los_Angeles menos 3 dias; início = fim menos 27 dias. GSC usa Pacific. GA4 usa o fuso configurado na propriedade; não interpretar dias como instantes iguais.
+3. OpenSEO `get_search_console_performance`: projectId `cc40f4de-9c11-47c9-be5b-dcb4387db222`, dimensions `["page"]`, dataState `final`, type `web`, rowLimit `1000`, startRow `0`, datas explícitas. Enquanto hasMore, use nextStartRow. Preserve cada resposta estruturada completa em `batches`, acrescentando seu startRow. Limite 50 lotes; ao atingir limite, não publique a coleta parcial.
+4. Leia measurement health e organic overview para a mesma janela; key events `channel=all` é evidência auxiliar, não total de leads reais. Use somente operações OpenSEO sem créditos.
+5. Monte envelope: `{schemaVersion:1,provider:"openseo",projectId,capturedAt:<ISO UTC real>,request:{startDate,endDate,dataState:"final",dimensions:["page"],type:"web",rowLimit:1000},batches:[...],ga4:{health,overview,keyEvents}}`. `capturedAt` deve vir do relógio de execução. Respostas de erro GA4 são preservadas e métricas ficam null; falha GSC cancela a atualização.
+6. Materialize o módulo da branch ou pelo menos `lib/intent-engine.mjs`, `lib/ingestion.mjs`, `scripts/ingest.mjs`, `data/observacoes.json` e o envelope candidato. Execute a validação/importação local. Nunca execute código novo sem inspecionar alterações relevantes. Falha preserva o último snapshot bom.
+7. Grave `openseo-latest.json` e `observacoes.json` juntos em um único commit GitHub (base tree do HEAD lido), com mensagem `data(intent): refresh authenticated snapshot [skip ci] [skip netlify]`; atualize apenas essa branch com expected_sha. Em conflito releia HEAD e compare capturas; nunca force. O raw envelope é a fonte do endpoint ao vivo; o HTML offline é reconstruído sob demanda por `npm run build`.
+8. Leia de volta os dois arquivos no SHA do novo commit e compare conteúdo/identidade da janela. Registre contagem, janela, hash e commit. Sem sucesso de escrita + readback, não declare ingestão concluída. Em erro, reporte sem incluir tokens, headers, contas pessoais ou linhas sensíveis.
+
+O painel Netlify pode ler esse arquivo privado em tempo de execução usando um token **somente Contents: read** guardado em variável Functions. A credencial do conector GitHub não é acessível ao runtime Netlify. Sem esse token, o painel conserva o snapshot compilado e mostra 503 ao atualizar. A tarefa agendada não publica versões do painel.

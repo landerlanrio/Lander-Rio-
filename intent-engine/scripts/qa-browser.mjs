@@ -9,7 +9,7 @@ try{
   const page=await browser.newPage({viewport:{width,height:900}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.route('**/*',route=>route.fulfill({status:200,contentType:'text/html',body:html}));await page.goto('http://localhost/');
   assert.equal(await page.locator('#metric-pages').textContent(),String(expectedCount));assert.equal(await page.locator('#opportunities tr').count(),expectedCount);
-  assert(await page.locator('#period').textContent().then(s=>s.includes('2026-11-10')));
+  assert(await page.locator('#period').textContent().then(s=>s.includes(JSON.parse(fs.readFileSync(new URL('data/observacoes.json',base),'utf8')).periodo_fim)));
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.locator('#search').fill('cooper');assert.equal(await page.locator('#opportunities tr').count(),1);
   await page.getByRole('button',{name:'Ver briefing'}).click();assert(await page.locator('#briefModal').isVisible());await page.keyboard.press('Escape');assert(!(await page.locator('#briefModal').isVisible()));

@@ -1,5 +1,24 @@
 /** Deterministic audit heuristic. Not search volume, revenue or projected clicks. */
 export const NORMAL_DOMAIN = 'landerrio.com.br';
+/** Reject incomplete or corrupt remote updates before replacing the last good snapshot. */
+export function validateDashboardSnapshot(next, previous = null, now = Date.now()) {
+  const invalid = () => { throw Error('Snapshot inválido ou incompleto'); };
+  if (next?.schemaVersion !== 2 || next.propriedade !== 'sc-domain:landerrio.com.br' || next.paginacao_completa !== true || next.dataState !== 'final' || !Array.isArray(next.paginas) || next.paginas.length > 50000) invalid();
+  const timestamp = Date.parse(next.captura);
+  if (typeof next.captura !== 'string' || !Number.isFinite(timestamp) || timestamp > now + 300000) invalid();
+  if (previous && Number.isFinite(Date.parse(previous.captura)) && timestamp < Date.parse(previous.captura)) throw Error('Snapshot anterior ao carregado');
+  const isDate = v => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v) && Number.isFinite(Date.parse(v)) && new Date(v).toISOString().slice(0,10) === v;
+  if (!isDate(next.periodo_inicio) || !isDate(next.periodo_fim) || next.periodo_inicio > next.periodo_fim || Date.parse(next.periodo_fim) > timestamp) invalid();
+  const seen = new Set();
+  for (const p of next.paginas) {
+    if (!p || typeof p.url !== 'string') invalid();
+    const u = new URL(p.url);normalizeUrl(p.url);
+    if(u.search || u.hash || seen.has(p.url)) invalid();seen.add(p.url);
+    for(const key of ['cliques','impressoes','ctr','posicao']) if(typeof p[key] !== 'number' || !Number.isFinite(p[key]) || p[key] < 0) invalid();
+    if(!Number.isInteger(p.cliques) || !Number.isInteger(p.impressoes) || p.cliques > p.impressoes || p.ctr > 1 || p.posicao < 1 || Math.abs(p.ctr - (p.impressoes ? p.cliques/p.impressoes : 0)) > .001) invalid();
+  }
+  return next;
+}
 const restrictedTerms = /(testosteron|trembolon|anabol|horm[oô]ni|retatrut|tirzepat|clembuterol|durateston|hcg|medicamen|prescri|dose|substancia)/i;
 export function normalizeUrl(url) {
   const u = new URL(url);

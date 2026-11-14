@@ -2,41 +2,41 @@
   "schemaVersion": 2,
   "fonte": "Google Search Console via OpenSEO autenticado",
   "propriedade": "sc-domain:landerrio.com.br",
-  "periodo_inicio": "2026-10-14",
-  "periodo_fim": "2026-11-10",
-  "captura": "2026-11-14T02:25:15.888Z",
+  "periodo_inicio": "2026-10-15",
+  "periodo_fim": "2026-11-11",
+  "captura": "2026-11-14T12:21:35.414Z",
   "dimensao": "page",
   "dataState": "final",
-  "dataHash": "2f31cdebff434c2ca4595c2d0e55e6a3cd95ca8e38c5488af229b30d59d37cbc",
+  "dataHash": "700d71e2bf22492cbc81bda53d89a636079db4c552a0090407f685032c52a4b3",
   "paginacao_completa": true,
   "nota": "Linhas retornadas pela API; consultas anonimizadas e limites do Google impedem inferir cobertura total. Não somar dimensões.",
   "paginas": [
     {
       "url": "https://landerrio.com.br/",
       "cliques": 22,
-      "impressoes": 169,
-      "ctr": 0.1301775147928994,
-      "posicao": 8.5
+      "impressoes": 160,
+      "ctr": 0.1375,
+      "posicao": 8.7
     },
     {
       "url": "https://landerrio.com.br/marcas/life-peptideos/",
       "cliques": 13,
-      "impressoes": 146,
-      "ctr": 0.08904109589041095,
+      "impressoes": 145,
+      "ctr": 0.0896551724137931,
       "posicao": 4.9
     },
     {
       "url": "https://landerrio.com.br/marcas/muscle-labs-india/",
       "cliques": 7,
-      "impressoes": 154,
-      "ctr": 0.045454545454545456,
-      "posicao": 8.6
+      "impressoes": 143,
+      "ctr": 0.04895104895104895,
+      "posicao": 8.7
     },
     {
       "url": "https://landerrio.com.br/marcas/cooper-pharma/",
       "cliques": 5,
-      "impressoes": 185,
-      "ctr": 0.02702702702702703,
+      "impressoes": 184,
+      "ctr": 0.02717391304347826,
       "posicao": 9.5
     },
     {
@@ -49,9 +49,9 @@
     {
       "url": "https://landerrio.com.br/marcas/geniqs-pharma/",
       "cliques": 4,
-      "impressoes": 94,
-      "ctr": 0.0425531914893617,
-      "posicao": 3
+      "impressoes": 88,
+      "ctr": 0.045454545454545456,
+      "posicao": 3.1
     },
     {
       "url": "https://landerrio.com.br/marcas/landerlan/",
@@ -70,15 +70,15 @@
     {
       "url": "https://landerrio.com.br/marcas/oxygen-kw-pharma/",
       "cliques": 1,
-      "impressoes": 29,
-      "ctr": 0.034482758620689655,
-      "posicao": 14.4
+      "impressoes": 28,
+      "ctr": 0.03571428571428571,
+      "posicao": 14.6
     },
     {
       "url": "https://landerrio.com.br/marcas/zphc/",
       "cliques": 1,
-      "impressoes": 82,
-      "ctr": 0.012195121951219513,
+      "impressoes": 76,
+      "ctr": 0.013157894736842105,
       "posicao": 8.2
     },
     {
@@ -105,16 +105,16 @@
     {
       "url": "https://landerrio.com.br/marcas/",
       "cliques": 0,
-      "impressoes": 11,
+      "impressoes": 9,
       "ctr": 0,
-      "posicao": 15
+      "posicao": 17.6
     },
     {
       "url": "https://landerrio.com.br/marcas/alpha-laboratory/",
       "cliques": 0,
-      "impressoes": 20,
+      "impressoes": 18,
       "ctr": 0,
-      "posicao": 12.5
+      "posicao": 13.7
     },
     {
       "url": "https://landerrio.com.br/marcas/eticos/",
@@ -126,16 +126,16 @@
     {
       "url": "https://landerrio.com.br/marcas/indufar/",
       "cliques": 0,
-      "impressoes": 20,
+      "impressoes": 18,
       "ctr": 0,
-      "posicao": 7.4
+      "posicao": 7.699999999999999
     },
     {
       "url": "https://landerrio.com.br/marcas/synedica/",
       "cliques": 0,
-      "impressoes": 9,
+      "impressoes": 7,
       "ctr": 0,
-      "posicao": 15.899999999999999
+      "posicao": 17.4
     },
     {
       "url": "https://landerrio.com.br/marcas/topharma/",
@@ -183,8 +183,8 @@
   "consultas_verificadas": {},
   "analytics": {
     "fonte": "GA4 via OpenSEO",
-    "periodo_inicio": "2026-10-14",
-    "periodo_fim": "2026-11-10",
+    "periodo_inicio": "2026-10-15",
+    "periodo_fim": "2026-11-11",
     "sessoes_organicas": 25,
     "eventos_chave": 12,
     "fuso": "America/Rio_Branco",

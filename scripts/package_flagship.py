@@ -35,7 +35,7 @@ def main():
         return cache[path]
 
     page = (SITE / 'index.html').read_text()
-    page = re.sub(r'<link rel="stylesheet" href="([^"]+)">',
+    page = re.sub(r'<link\b(?=[^>]*rel="stylesheet")(?=[^>]*href="([^"]+)")[^>]*>',
                   lambda m: '<style>' + (SITE / m[1].lstrip('/')).read_text() + '</style>', page)
     scripts = []
 
@@ -54,6 +54,9 @@ def main():
     assert count == 1, 'Portable preview must clearly disclose its scope'
     assert not re.search(r'(?:src|srcset|href)="/assets/', page)
     (out / (prefix + '_PREVIEW.html')).write_text(page)
+    if revision == 'RC6.3':
+        from package_brand_preview import build
+        build(out / (prefix + '_PREVIEW.html'))
     if args.preview_only:
         print(json.dumps({'preview': str(out / (prefix + '_PREVIEW.html'))}))
         return
@@ -77,14 +80,14 @@ def main():
         for file in (ROOT / 'docs/evidence' / release).rglob('*'):
             if file.is_file():
                 z.write(file, file.relative_to(ROOT / 'docs'))
-        for pattern in ('QUALITY_' + revision + '*', 'LOGOS_' + revision + '*', 'HERO_RC2_ASSETS.json'):
+        for pattern in ('QUALITY_' + revision + '*', 'BRAND_PROFILES_' + revision + '*', 'LOGOS_' + revision + '*', 'HERO_RC2_ASSETS.json', 'REFERENCE_RC6*', 'LOGOS_RC5*'):
             for file in (ROOT / 'docs').glob(pattern):
                 z.write(file, file.name)
         for file in out.glob('*.jpg'):
             z.write(file, file.name)
     results = {'release': release, 'site_zip_files': package_files, 'zip_crc': 'PASS', 'zip_byte_comparison': 'PASS',
                'files': [{'name': p.name, 'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
-                         for p in sorted(out.iterdir()) if p.is_file()]}
+                         for p in sorted(out.iterdir()) if p.is_file() and not p.name.endswith('_CHECKSUMS.json')]}
     (out / (prefix + '_CHECKSUMS.json')).write_text(json.dumps(results, indent=2) + '\n')
     print(json.dumps(results, indent=2))
 

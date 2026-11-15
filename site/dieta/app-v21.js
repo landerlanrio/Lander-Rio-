@@ -83,6 +83,9 @@ async function finishQuiz(){
   state.plan.profileSignature=profileSignature(state.profile);save('targets',r); save('plan',state.plan);
   track('diet_generated',{objective:state.profile.goal,meals_per_day:state.profile.mealsPerDay,diet_type:state.profile.dietType,budget_tier:state.profile.budget,...getUtm()});
   $('#previewCalories').textContent=`≈ ${Math.round(r.calories/100)*100} kcal/dia`;
+  const firstMeal=state.plan.meals[0];$('#nutrition-preview-name').textContent=`${firstMeal.title} · ${state.plan.meals.length} refeições no plano`;
+  const previewList=$('#nutrition-preview-foods');previewList.replaceChildren();
+  firstMeal.items.forEach(item=>{const li=document.createElement('li');li.textContent=FOOD_MAP[item.id].name;previewList.appendChild(li)});
   if(accessValid(state.lead))renderResults();else setView('gate');
 }
 

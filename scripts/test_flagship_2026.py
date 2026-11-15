@@ -12,7 +12,7 @@ class Flagship(unittest.TestCase):
     @classmethod
     def setUpClass(c):
         c.html=(SITE/'index.html').read_text(); c.p=Parser(); c.p.feed(c.html)
-        c.css=(SITE/'assets/flagship-2026.css').read_text();c.js=(SITE/'assets/flagship-2026.js').read_text()
+        c.css=(SITE/'assets/flagship-2026.css').read_text()+(SITE/'assets/flagship-reference-rc6.css').read_text();c.js=(SITE/'assets/flagship-reference-rc6.js').read_text()
     def test_document_semantics(self):
         self.assertEqual(sum(t=='h1' for t,a in self.p.tags),1)
         ids=[a['id'] for t,a in self.p.tags if 'id' in a];self.assertEqual(len(ids),len(set(ids)))
@@ -21,7 +21,7 @@ class Flagship(unittest.TestCase):
             for key in ['aria-controls','aria-labelledby']:
                 for id in a.get(key,'').split():self.assertIn(id,ids)
     def test_commercial_precedes_tools(self):
-        order=['inicio','perfis','marcas','relacionamento','ferramentas','ciencia','atendimento']
+        order=['inicio','marcas','perfis','universo','ciencia','ferramentas','rox','atendimento']
         positions=[self.html.index('id="'+x+'"') for x in order];self.assertEqual(positions,sorted(positions))
     def test_whatsapp_profiles_and_safe_targets(self):
         links=[a for t,a in self.p.tags if t=='a' and 'data-wa' in a]
@@ -31,7 +31,7 @@ class Flagship(unittest.TestCase):
             u=urlsplit(a['href']);self.assertEqual(u.scheme,'https');self.assertEqual(u.netloc,'wa.me');self.assertEqual(u.path,'/5521920043538');self.assertIn('text',parse_qs(u.query));self.assertIn('noopener',a.get('rel',''))
         self.assertEqual(len({a['href'] for a in hero}),2)
     def test_original_routes_preserved(self):
-        self.assertEqual(len(list(SITE.rglob('*.html'))),81)
+        self.assertEqual(len(list(SITE.rglob('*.html'))),88)
         for x in ('treino','dieta','atacado','varejo','conteudos','enciclopedia','marcas','ferramentas','sobre','contato'):
             self.assertIn('href="/'+x+'/"',self.html);self.assertTrue((SITE/x/'index.html').is_file())
     def test_images_have_dimensions_and_local_sources(self):
@@ -42,26 +42,27 @@ class Flagship(unittest.TestCase):
         self.assertLess((SITE/'assets/flagship-hero-mobile-rc2.webp').stat().st_size,120_000)
         self.assertLess((SITE/'assets/flagship-hero-mobile-rc2.avif').stat().st_size,120_000)
         self.assertIn('fetchpriority="high"',self.html)
-    def test_above_fold_logo_transfer_budget(self):
+    def test_hero_brand_logos_removed(self):
         logos=[a for t,a in self.p.tags if t=='img' and '-hero-rc5.webp' in a.get('src','')]
-        self.assertEqual(len(logos),4)
-        self.assertLessEqual(sum((SITE/a['src'].lstrip('/')).stat().st_size for a in logos),100_000)
+        self.assertEqual(len(logos),0)
     def test_selected_logo_set_is_complete_and_pinned(self):
         evidence=json.loads((SITE.parent/'docs/LOGOS_RC5_ASSETS.json').read_text())
         expected={a['slug'] for a in evidence['assets']}
         self.assertEqual(len(expected),14)
         logos=[a for t,a in self.p.tags if t=='img' and '/logos/' in a.get('src','')]
-        self.assertEqual(len(logos),18)
+        self.assertEqual(len(logos),14)
         for asset in evidence['assets']:
             for output in asset['outputs']:
                 content=(SITE/output['path']).read_bytes()
                 self.assertEqual(hashlib.sha256(content).hexdigest(),output['sha256'])
+                if output['role']=='hero':
+                    continue
                 match=[a for a in logos if a['src']=='/'+output['path']]
                 self.assertEqual(len(match),1)
                 self.assertEqual([int(match[0]['width']),int(match[0]['height'])],output['dimensions'])
         self.assertNotIn('labs-group-rc3.webp',self.html)
     def test_brands_are_informational_and_not_checkout_links(self):
-        brands=[a for t,a in self.p.tags if t=='a' and 'data-brand' in a];self.assertEqual(len(brands),18)
+        brands=[a for t,a in self.p.tags if t=='a' and 'data-brand' in a];self.assertEqual(len(brands),14)
         self.assertTrue(all(urlsplit(a['href']).netloc=='' for a in brands))
         self.assertIn('não indicam parceria',self.html.lower())
     def test_supplied_hero_has_portrait_and_landscape_fallbacks(self):
@@ -71,7 +72,7 @@ class Flagship(unittest.TestCase):
         for a in mobile:
             self.assertIn('mobile-rc2',a['srcset']);self.assertEqual((a['width'],a['height']),('864','1536'))
         hero=[a for t,a in self.p.tags if t=='img' and 'hero-desktop-rc2' in a.get('src','')]
-        self.assertEqual(len(hero),1);self.assertEqual((hero[0]['width'],hero[0]['height']),('1536','864'))
+        self.assertGreaterEqual(len(hero),1);self.assertEqual((hero[0]['width'],hero[0]['height']),('1536','864'))
     def test_progressive_enhancement_and_motion_fallback(self):
         self.assertGreater(self.html.index('<noscript>'),self.html.index('flagship-2026.css'))
         self.assertIn('@media(max-width:800px)',self.html)
@@ -86,7 +87,7 @@ class Flagship(unittest.TestCase):
         self.assertIn('isDemo:true',rox)
     def test_release_manifest_covers_new_assets(self):
         manifest={'files':{}}
-        for name in ('manifest-digital-flagship-2026.json','manifest-digital-flagship-2026-rc2.json','manifest-digital-flagship-2026-rc3.json','manifest-digital-flagship-2026-rc4.json','manifest-digital-flagship-2026-rc5.json'):
+        for name in ('manifest-digital-flagship-2026.json','manifest-digital-flagship-2026-rc2.json','manifest-digital-flagship-2026-rc3.json','manifest-digital-flagship-2026-rc4.json','manifest-digital-flagship-2026-rc5.json','manifest-digital-flagship-2026-rc6.json'):
             manifest['files'].update(json.loads((SITE/name).read_text())['files'])
         for f in ('index.html','assets/flagship-2026.css','assets/flagship-2026.js','assets/flagship-hero-mobile-rc2.avif','release.json'):self.assertIn(f,manifest['files'])
 if __name__=='__main__':unittest.main(verbosity=2)

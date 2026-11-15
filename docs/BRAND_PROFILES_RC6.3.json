@@ -1,0 +1,820 @@
+{
+  "version": "digital-flagship-2026-rc6.3",
+  "reviewed_on": "2026-11-13",
+  "scope": "Editorial excerpts; no inventory or offer",
+  "brands": [
+    {
+      "slug": "cooper-pharma",
+      "name": "Cooper Pharma",
+      "image": {
+        "src": "/assets/logos/cooper-pharma-rc5.webp",
+        "width": "720",
+        "height": "335"
+      },
+      "focus": "Indústria farmacêutica",
+      "about": "A Cooper Pharma é uma empresa farmacêutica sediada em Nova Délhi, na Índia. Seu portfólio publicado abrange diferentes áreas, incluindo cardiologia, diabetes, antibióticos e hormônios. A seleção abaixo apresenta nomes encontrados na linha hormonal do fabricante.",
+      "lines": [
+        "Hormônios",
+        "Comprimidos",
+        "Injetáveis"
+      ],
+      "products": [
+        {
+          "name": "ANAZBOL",
+          "detail": "Anastrozol · comprimidos",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "COTROPIN",
+          "detail": "Gonadotrofina coriônica humana",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "CORTIS",
+          "detail": "Hidrocortisona · injetável",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "NOLVABOLIC",
+          "detail": "Citrato de tamoxifeno · comprimidos",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "TESTOBOLIC",
+          "detail": "Undecanoato de testosterona · injetável",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "HGH — Somatropin",
+          "detail": "Somatropina",
+          "group": "Hormônios",
+          "source": 1
+        }
+      ],
+      "sources": [
+        {
+          "label": "Cooper Pharma · linha hormonal",
+          "url": "https://cooperpharma.com/products/hormones",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Cooper Pharma · apresentação institucional",
+          "url": "https://cooperpharma.com/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "zphc",
+      "name": "ZPHC",
+      "image": {
+        "src": "/assets/logos/zphc-rc5.webp",
+        "width": "720",
+        "height": "240"
+      },
+      "focus": "Identidade e portfólio",
+      "about": "O site institucional atual da ZPHC apresenta a marca no universo esportivo, com acessórios, vestuário e conteúdo de treinamento. Essa apresentação não permite confirmar o catálogo farmacêutico associado ao nome ZPHC em outros canais.",
+      "lines": [
+        "Identidade da marca"
+      ],
+      "products": [],
+      "pending": "O catálogo farmacêutico desta identidade ainda precisa de uma fonte confirmada. Nenhum produto de outro fabricante foi associado a esta logo.",
+      "sources": [
+        {
+          "label": "ZPHC · apresentação institucional atual",
+          "url": "https://zphc.com/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "ZPHC · domínios e identidade",
+          "url": "https://zphc.com/official-domains-authenticity/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "landerlan",
+      "name": "Landerlan",
+      "image": {
+        "src": "/assets/logos/landerlan-rc5.webp",
+        "width": "720",
+        "height": "378"
+      },
+      "focus": "Landerlan · Gold · Diamond",
+      "about": "Landerlan é uma das linhas apresentadas pela Landerpharma, no Paraguai. O grupo organiza seu portfólio em famílias como Landerlan, Silver, Gold e Diamond. Os nomes abaixo constam nos catálogos Gold e Diamond consultados.",
+      "lines": [
+        "Landerlan",
+        "Silver",
+        "Gold",
+        "Diamond"
+      ],
+      "products": [
+        {
+          "name": "Durateston Plus",
+          "detail": "Mistura de ésteres de testosterona",
+          "group": "Diamond",
+          "source": 1
+        },
+        {
+          "name": "Decaland Depot",
+          "detail": "Decanoato de nandrolona",
+          "group": "Diamond",
+          "source": 1
+        },
+        {
+          "name": "Testenat Depot",
+          "detail": "Enantato de testosterona",
+          "group": "Diamond",
+          "source": 1
+        },
+        {
+          "name": "Testoland Depot",
+          "detail": "Cipionato de testosterona",
+          "group": "Diamond",
+          "source": 1
+        },
+        {
+          "name": "Drostanolona propionato",
+          "detail": "Apresentação em ampolas",
+          "group": "Diamond",
+          "source": 1
+        },
+        {
+          "name": "Metenolona enantato",
+          "detail": "Apresentação em ampolas",
+          "group": "Diamond",
+          "source": 1
+        },
+        {
+          "name": "Testosterona propionato",
+          "detail": "Apresentação em frasco",
+          "group": "Gold",
+          "source": 2
+        },
+        {
+          "name": "Nandrolona fenilpropionato",
+          "detail": "Apresentação em frasco",
+          "group": "Gold",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Landerpharma · linha Diamond",
+          "url": "https://www.landerpharma.com.py/linea-diamond",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Landerpharma · linha Gold",
+          "url": "https://www.landerpharma.com.py/linea-gold",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Landerpharma · linhas e apresentação",
+          "url": "https://www.landerpharma.com.py/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "oxygen-kw-pharma",
+      "name": "Oxygen KW Pharma",
+      "image": {
+        "src": "/assets/logos/oxygen-kw-pharma-rc5.webp",
+        "width": "720",
+        "height": "241"
+      },
+      "focus": "Peptídeos e formulações",
+      "about": "Oxygen KW Pharma publica um portfólio concentrado em peptídeos e formulações hormonais. Entre as denominações apresentadas estão Retagen e Tirzegen, ao lado de compostos como GHK-Cu e BPC-157. A marca descreve apresentações líquidas e liofilizadas.",
+      "lines": [
+        "Peptídeos",
+        "Formulações"
+      ],
+      "products": [
+        {
+          "name": "Retagen",
+          "detail": "Retatrutida",
+          "group": "Peptídeos",
+          "source": 1
+        },
+        {
+          "name": "Tirzegen",
+          "detail": "Tirzepatida",
+          "group": "Peptídeos",
+          "source": 1
+        },
+        {
+          "name": "GHK-Cu",
+          "detail": "Peptídeo de cobre",
+          "group": "Peptídeos",
+          "source": 1
+        },
+        {
+          "name": "Glow",
+          "detail": "Denominação de formulação da marca",
+          "group": "Formulações",
+          "source": 1
+        },
+        {
+          "name": "BPC-157",
+          "detail": "Peptídeo listado no portfólio",
+          "group": "Peptídeos",
+          "source": 2
+        },
+        {
+          "name": "MOTS-c",
+          "detail": "Peptídeo listado no portfólio",
+          "group": "Peptídeos",
+          "source": 2
+        }
+      ],
+      "note": "A presença no catálogo do fabricante não comprova aprovação para uso humano ou autorização de venda no Brasil.",
+      "sources": [
+        {
+          "label": "Oxygen KW Pharma · apresentação e portfólio",
+          "url": "https://www.oxygenkwpharma.com/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Oxygen KW Pharma · lista de formulações",
+          "url": "https://oxygenkwpharma.com/certifications",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "alpha-x-prime",
+      "name": "Alpha X Prime",
+      "image": {
+        "src": "/assets/logos/alpha-x-prime-rc5.webp",
+        "width": "720",
+        "height": "255"
+      },
+      "focus": "Identidade da marca",
+      "about": "Alpha X Prime é a identidade identificada por esta logomarca na seleção da LANDER RIO. O nome e o símbolo são preservados exatamente como fornecidos, sem associar a marca a empresas com nomes semelhantes.",
+      "lines": [
+        "Alpha X Prime"
+      ],
+      "products": [],
+      "pending": "A apresentação institucional e os nomes dos produtos aguardam o catálogo original do fabricante. Alpha X Prime não foi confundida com Alpha Laboratory ou Alpha Pharma.",
+      "sources": []
+    },
+    {
+      "slug": "quimfa",
+      "name": "Quimfa",
+      "image": {
+        "src": "/assets/logos/quimfa-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Laboratório farmacêutico",
+      "about": "A Quimfa S.A. mantém um vade-mécum farmacêutico organizado por especialidade e ação terapêutica. A seleção consultada inclui linhas de cardiologia, clínica médica, hematologia e apresentações injetáveis.",
+      "lines": [
+        "Cardiologia",
+        "Clínica médica",
+        "Injetáveis"
+      ],
+      "products": [
+        {
+          "name": "A3",
+          "detail": "Linha de clínica médica geral",
+          "group": "Clínica médica",
+          "source": 1
+        },
+        {
+          "name": "AAS",
+          "detail": "Linha de cardiologia",
+          "group": "Cardiologia",
+          "source": 1
+        },
+        {
+          "name": "Ácido Fólico",
+          "detail": "Linha de ginecologia e pediatria",
+          "group": "Vitaminas",
+          "source": 1
+        },
+        {
+          "name": "Aerofagil",
+          "detail": "Linha de gastroenterologia",
+          "group": "Gastroenterologia",
+          "source": 1
+        },
+        {
+          "name": "Aftum",
+          "detail": "Apresentações orais e injetáveis",
+          "group": "Hematologia",
+          "source": 2
+        },
+        {
+          "name": "Lipostabil",
+          "detail": "Ácido fenofíbrico · cápsulas de liberação prolongada",
+          "group": "Cardiologia",
+          "source": 3
+        }
+      ],
+      "sources": [
+        {
+          "label": "Quimfa · vade-mécum",
+          "url": "https://www.quimfa.com.py/vademecum/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Quimfa · antifibrinolíticos",
+          "url": "https://www.quimfa.com.py/accion-terapeutica/antifibrinoliticos/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Quimfa · Lipostabil",
+          "url": "https://www.quimfa.com.py/en/product/lipostabil-135/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "eticos",
+      "name": "Éticos",
+      "image": {
+        "src": "/assets/logos/eticos-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Laboratório e portfólio farmacêutico",
+      "about": "Éticos é um laboratório paraguaio cujo catálogo reúne diferentes áreas terapêuticas, incluindo diabetes, cardiometabolismo e a linha Bioeticos. Lipoless aparece no catálogo em apresentações em vial e em caneta.",
+      "lines": [
+        "Diabetes",
+        "Cardiometabólica",
+        "Bioeticos"
+      ],
+      "products": [
+        {
+          "name": "Lipoless",
+          "detail": "Tirzepatida · vial",
+          "group": "Diabetes",
+          "source": 1
+        },
+        {
+          "name": "Lipoless MD Pen",
+          "detail": "Tirzepatida · caneta",
+          "group": "Diabetes",
+          "source": 1
+        },
+        {
+          "name": "Glimerin",
+          "detail": "Glimepirida",
+          "group": "Diabetes",
+          "source": 1
+        },
+        {
+          "name": "Glimerin MET",
+          "detail": "Glimepirida e metformina",
+          "group": "Diabetes",
+          "source": 1
+        },
+        {
+          "name": "Idacio",
+          "detail": "Adalimumabe · seringa e caneta preenchidas",
+          "group": "Bioeticos",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Éticos · catálogo de diabetes",
+          "url": "https://eticos.com.py/product_cat/diabetes?product-page=2",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Éticos · Idacio",
+          "url": "https://eticos.com.py/producto/idacio",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Éticos · institucional",
+          "url": "https://eticos.com.py/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "indufar",
+      "name": "Indufar",
+      "image": {
+        "src": "/assets/logos/indufar-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Laboratório farmacêutico paraguaio",
+      "about": "A Indufar CISA é um laboratório farmacêutico do Paraguai. Entre os produtos documentados em seus canais institucionais estão T.G., à base de tirzepatida, e Solufin, à base de semaglutida. A empresa também publica comunicados de identificação de suas apresentações.",
+      "lines": [
+        "Medicamentos",
+        "Saúde metabólica"
+      ],
+      "products": [
+        {
+          "name": "T.G.",
+          "detail": "Tirzepatida · solução injetável em vials",
+          "group": "Saúde metabólica",
+          "source": 1
+        },
+        {
+          "name": "Solufin",
+          "detail": "Semaglutida",
+          "group": "Saúde metabólica",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Indufar · apresentações de T.G.",
+          "url": "https://indufar.com.py/TG",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Indufar · publicações institucionais",
+          "url": "https://www.indufar.com.py/blog",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "life-peptideos",
+      "name": "Life Peptídeos",
+      "image": {
+        "src": "/assets/logos/life-peptideos-rc5.webp",
+        "width": "720",
+        "height": "240"
+      },
+      "focus": "Peptídeos · canetas e vials",
+      "about": "Life Peptídeos apresenta um catálogo de peptídeos e formulações em diferentes formatos. O portfólio publicado reúne nomes como Tirzepatide Pen, Retatrutide Pen e GHK-Cu Pen, além das formulações Glow e Klow.",
+      "lines": [
+        "Canetas",
+        "Peptídeos",
+        "Formulações"
+      ],
+      "products": [
+        {
+          "name": "Tirzepatide Pen",
+          "detail": "Tirzepatida · caneta",
+          "group": "Canetas",
+          "source": 1
+        },
+        {
+          "name": "Retatrutide Pen",
+          "detail": "Retatrutida · caneta",
+          "group": "Canetas",
+          "source": 1
+        },
+        {
+          "name": "GHK-Cu Pen",
+          "detail": "Peptídeo de cobre · caneta",
+          "group": "Canetas",
+          "source": 1
+        },
+        {
+          "name": "Glow Pen",
+          "detail": "Formulação identificada como Glow",
+          "group": "Formulações",
+          "source": 1
+        },
+        {
+          "name": "Klow Pen",
+          "detail": "Formulação identificada como Klow",
+          "group": "Formulações",
+          "source": 1
+        },
+        {
+          "name": "NAD+ Pen",
+          "detail": "NAD+ · caneta",
+          "group": "Canetas",
+          "source": 1
+        },
+        {
+          "name": "GH Life Pen",
+          "detail": "Denominação apresentada no catálogo",
+          "group": "Canetas",
+          "source": 1
+        }
+      ],
+      "note": "Alguns compostos citados têm caráter experimental. A listagem não constitui indicação de uso humano.",
+      "sources": [
+        {
+          "label": "Life Peptídeos · catálogo publicado",
+          "url": "https://lifepeptideos.com/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "eminence-labs",
+      "name": "Eminence Labs",
+      "image": {
+        "src": "/assets/logos/eminence-labs-rc5.webp",
+        "width": "720",
+        "height": "414"
+      },
+      "focus": "Comprimidos e injetáveis",
+      "about": "Eminence Labs organiza seu catálogo em duas famílias principais: comprimidos e injetáveis. As linhas utilizam denominações como Oxanprime, Stanoprime, Cypoprime e Decaprime. A seleção abaixo mantém a associação entre nome comercial e composição publicada.",
+      "lines": [
+        "Comprimidos",
+        "Injetáveis"
+      ],
+      "products": [
+        {
+          "name": "Oxanprime",
+          "detail": "Oxandrolona · comprimidos",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Stanoprime",
+          "detail": "Estanozolol · comprimidos",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Anastroprime",
+          "detail": "Anastrozol · comprimidos",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Tamoprime",
+          "detail": "Citrato de tamoxifeno · comprimidos",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Cypoprime",
+          "detail": "Cipionato de testosterona · injetável",
+          "group": "Injetáveis",
+          "source": 2
+        },
+        {
+          "name": "Decaprime",
+          "detail": "Decanoato de nandrolona · injetável",
+          "group": "Injetáveis",
+          "source": 2
+        },
+        {
+          "name": "Enaprime",
+          "detail": "Enantato de testosterona · injetável",
+          "group": "Injetáveis",
+          "source": 2
+        },
+        {
+          "name": "L-Prime",
+          "detail": "L-carnitina · injetável",
+          "group": "Injetáveis",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Eminence Labs · comprimidos",
+          "url": "https://www.eminencelabs.com/category/tablets/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Eminence Labs · injetáveis",
+          "url": "https://www.eminencelabs.com/category/injections/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "topharma",
+      "name": "Topharma",
+      "image": {
+        "src": "/assets/logos/topharma-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Linhas Silver e Gold",
+      "about": "Topharma apresenta seu portfólio nas linhas Silver e Gold. O catálogo reúne comprimidos e formulações injetáveis, com denominações próprias como Oxantop, Top Proviron e Top NPP.",
+      "lines": [
+        "Silver",
+        "Gold",
+        "Comprimidos",
+        "Injetáveis"
+      ],
+      "products": [
+        {
+          "name": "Oxantop",
+          "detail": "Denominação publicada no portfólio",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Top Proviron",
+          "detail": "Denominação publicada no portfólio",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Dianabol Oral",
+          "detail": "Apresentação oral",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Stanozolol Oral",
+          "detail": "Estanozolol · apresentação oral",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Top NPP",
+          "detail": "Denominação publicada no portfólio",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Enantato de metenolona",
+          "detail": "Formulação injetável",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Decanoato de nandrolona",
+          "detail": "Formulação injetável",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Propionato de testosterona",
+          "detail": "Formulação injetável",
+          "group": "Injetáveis",
+          "source": 1
+        }
+      ],
+      "sources": [
+        {
+          "label": "Topharma · portfólio Silver e Gold",
+          "url": "https://www.topharma.net/portfolio/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "muscle-labs-india",
+      "name": "Muscle Labs India",
+      "image": {
+        "src": "/assets/logos/muscle-labs-india-rc5.webp",
+        "width": "449",
+        "height": "520"
+      },
+      "focus": "Linha farmacêutica",
+      "about": "Muscle Labs India publica linhas de comprimidos, injetáveis, ampolas e peptídeos. O catálogo consultado pertence à identidade Muscle Labs India apresentada nesta página, distinta de empresas de nutrição esportiva com nomes semelhantes.",
+      "lines": [
+        "Comprimidos",
+        "Injetáveis",
+        "Ampolas",
+        "Peptídeos"
+      ],
+      "products": [
+        {
+          "name": "Trenbolone Acetate",
+          "detail": "Acetato de trembolona",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Methenolone Enanthate",
+          "detail": "Enantato de metenolona",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Dianabol",
+          "detail": "Metandrostenolona",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Somatropin",
+          "detail": "Somatropina",
+          "group": "Peptídeos",
+          "source": 1
+        }
+      ],
+      "sources": [
+        {
+          "label": "Muscle Labs India · linhas e produtos",
+          "url": "https://www.musclelabsindia.com/",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "synedica",
+      "name": "Synedica",
+      "image": {
+        "src": "/assets/logos/synedica-rc5.webp",
+        "width": "720",
+        "height": "333"
+      },
+      "focus": "Peptídeos e kits",
+      "about": "Synedica aparece em catálogos de peptídeos apresentados em kits e canetas. O catálogo de referência consultado identifica os itens como materiais para pesquisa laboratorial. Retatrutide, Tirzepatide e Semaglutide estão entre as denominações publicadas.",
+      "lines": [
+        "Peptídeos",
+        "Kits para pesquisa"
+      ],
+      "products": [
+        {
+          "name": "Retatrutide",
+          "detail": "Kit em canetas · designação do catálogo",
+          "group": "Pesquisa",
+          "source": 1
+        },
+        {
+          "name": "Tirzepatide",
+          "detail": "Kit em canetas · designação do catálogo",
+          "group": "Pesquisa",
+          "source": 1
+        },
+        {
+          "name": "Semaglutide",
+          "detail": "Kit em canetas · designação do catálogo",
+          "group": "Pesquisa",
+          "source": 1
+        },
+        {
+          "name": "BPC-157 & TB-500",
+          "detail": "Kit combinado · designação do catálogo",
+          "group": "Pesquisa",
+          "source": 1
+        },
+        {
+          "name": "Somatotropin HGH",
+          "detail": "Kit em canetas · designação do catálogo",
+          "group": "Pesquisa",
+          "source": 1
+        }
+      ],
+      "note": "Há domínios com reivindicações conflitantes sobre esta marca. A autoria do fabricante não foi confirmada de forma independente. Os nomes são atribuídos ao catálogo citado, que os identifica como destinados à pesquisa, não ao uso humano ou veterinário.",
+      "sources": [
+        {
+          "label": "Synedica.org · catálogo de kits para pesquisa",
+          "url": "https://www.synedica.org/collections/pen-kits",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Synedica.org · nota sobre identidade",
+          "url": "https://www.synedica.org/pages/about-us-new",
+          "checked": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "slug": "geniqs-pharma",
+      "name": "Geniqs Pharma",
+      "image": {
+        "src": "/assets/logos/geniqs-pharma-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Formulações hormonais",
+      "about": "Geniqs Pharma apresenta formulações hormonais nas formas de comprimidos e injetáveis. O site Geniqscare identifica produtos por nome comercial e composição e mantém uma área de autenticação por código. Progenic e Testogenic são exemplos documentados nesse catálogo.",
+      "lines": [
+        "Injetáveis",
+        "Comprimidos"
+      ],
+      "products": [
+        {
+          "name": "Progenic",
+          "detail": "Propionato de testosterona · ampolas",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Testogenic",
+          "detail": "Testosterona em suspensão · ampolas",
+          "group": "Injetáveis",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Geniqscare · Progenic",
+          "url": "https://geniqscare.com/product/progenic/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Geniqscare · Testogenic",
+          "url": "https://geniqscare.com/product/testogenic/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Geniqscare · apresentação da Geniqs Pharma",
+          "url": "https://geniqscare.com/about-us/",
+          "checked": "2026-11-13"
+        }
+      ]
+    }
+  ]
+}

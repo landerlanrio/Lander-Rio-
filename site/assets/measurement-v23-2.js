@@ -2,7 +2,7 @@ window.LR_PUBLIC_ANALYTICS_TOKEN='phc_w67bCNxbz4BhPM23ZKmkHQbxzCYL5kiqTUTbhX2Eq3
 /* Minimal, consent-based event transport. No autocapture, session replay or advertising. */
 (()=>{'use strict';
 const KEY='lr_measurement_consent_v20',SID='lr_measurement_session_v20',ATTR='lr_attribution_v20';
-const allowed=new Set(['site_visit','cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','guide_share','rox_opened','rox_response','hero_view','wholesale_selected','retail_selected','brand_interaction']);
+const allowed=new Set(['site_visit','cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','guide_share','rox_opened','rox_response','web_vital','hero_view','wholesale_selected','retail_selected','brand_interaction']);
 const pages={'/':'home','/atacado/':'wholesale','/varejo/':'retail','/contato/':'contact','/business-desk/':'business','/entregas/':'delivery','/perguntas-frequentes/':'faq','/sobre/':'about'};
 Object.assign(pages,{'/ferramentas/':'tools','/treino/':'training','/dieta/':'nutrition','/conteudos/':'content'});
 const path=location.pathname,guideId=document.body.dataset.guide;const page=pages[path]||(/^seo-[0-9]{2}$/.test(guideId||'')?'guide':null),sensitive=!page,toolPage=['training','nutrition'].includes(page);let milestones=new Set();let consent=null,session=null,visited=false,events=[],preferenceTrigger=null;
@@ -25,11 +25,13 @@ function attribution(){
  set('sessionStorage',ATTR,JSON.stringify(a));return a;
 }
 function push(event,p={}){if(consent!=='granted'||sensitive||!allowed.has(event))return false;
- const data={page,release:'digital-flagship-2026-rc5',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
+ if(event==='web_vital'&&(!['LCP','CLS','INP'].includes(p.metric)||!Number.isFinite(p.value)||p.value<0||p.value>600000||!['good','needs-improvement','poor'].includes(p.rating)))return false;
+ const data={page,release:'digital-flagship-2026-rc12',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
  if(['hero','header','profile-card','optional-context','closing','mobile-sticky','fallback','content','rox','brand-directory'].includes(p.placement))data.placement=p.placement;
  if(['whatsapp','choose-profile','subject_changed','tool-training','tool-nutrition','tools-nav','tools-hero'].includes(p.action))data.action=p.action;
  if(['offline','unknown','handoff','privacy','clinical'].includes(p.mode))data.rox_mode=p.mode;
- if(!toolPage)data.contact_reference=getContactReference();if(page==='guide')data.guide=guideId;const payload={api_key:window.LR_PUBLIC_ANALYTICS_TOKEN,event,properties:{distinct_id:identity(),...data,$process_person_profile:false,$geoip_disable:true,$ip:null}};
+ if(event==='web_vital'){data.metric=p.metric;data.value=Math.round(p.value*1000)/1000;data.rating=p.rating;data.device=window.innerWidth<=600?'mobile':window.innerWidth<=1024?'tablet':'desktop';}
+ if(!toolPage&&event!=='web_vital')data.contact_reference=getContactReference();if(page==='guide')data.guide=guideId;const payload={api_key:window.LR_PUBLIC_ANALYTICS_TOKEN,event,properties:{distinct_id:identity(),...data,$process_person_profile:false,$geoip_disable:true,$ip:null}};
  events.push({event,...data});if(events.length>100)events.shift();window.dispatchEvent(new CustomEvent('lander:measurement',{detail:{event,...data}}));
  if(location.hostname==='landerrio.com.br'&&payload.api_key){try{fetch('https://us.i.posthog.com/i/v0/e/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'omit',referrerPolicy:'no-referrer',keepalive:true}).catch(()=>{});}catch{}}
  return true;}
@@ -38,10 +40,10 @@ function visit(){if(!visited&&consent==='granted'&&!sensitive){visited=true;push
 function applyConsent(value){consent=validConsent(value);document.querySelector('#lr-privacy')?.remove();if(consent!=='granted'){session=null;events=[];visited=false;milestones.clear();remove('sessionStorage',SID);remove('sessionStorage',ATTR);}else visit();window.dispatchEvent(new CustomEvent('lander:consent',{detail:{consent}}));}
 function choose(value){const focusedInBanner=document.querySelector('#lr-privacy')?.contains(document.activeElement);set('localStorage',KEY,value);applyConsent(value);if(focusedInBanner){const target=preferenceTrigger?.isConnected?preferenceTrigger:document.querySelector('[data-privacy-open]');target?.focus({preventScroll:true});}preferenceTrigger=null;}
 window.addEventListener('storage',event=>{if(event.key===KEY||event.key===null){applyConsent(get('localStorage',KEY));if(!consent&&!sensitive)show();}});
-function show(){if(document.querySelector('#lr-privacy'))return;const box=document.createElement('aside');box.id='lr-privacy';box.className='privacy-bar';box.setAttribute('aria-label','Preferências de privacidade');box.innerHTML='<div class="wrap privacy-inner"><p><strong>Você escolhe a medição.</strong> Podemos medir visitas e cliques para melhorar o site? Não enviamos os dados dos formulários ao analytics. <a href="/privacidade">Saiba mais</a>.</p><div class="privacy-actions"><button type="button" data-choice="denied">Somente necessário</button><button type="button" data-choice="granted">Permitir medição</button></div></div>';
+function show(){if(document.querySelector('#lr-privacy'))return;const box=document.createElement('aside');box.id='lr-privacy';box.className='privacy-bar';box.setAttribute('aria-label','Preferências de privacidade');box.innerHTML='<div class="wrap privacy-inner"><p><strong>Você escolhe a medição.</strong> Podemos medir visitas, cliques e desempenho para melhorar o site? Não enviamos os dados dos formulários ao analytics. <a href="/privacidade">Saiba mais</a>.</p><div class="privacy-actions"><button type="button" data-choice="denied">Somente necessário</button><button type="button" data-choice="granted">Permitir medição</button></div></div>';
  const footer=document.querySelector('footer');(footer||document.body).insertAdjacentElement(footer?'beforebegin':'beforeend',box);box.addEventListener('click',e=>{const b=e.target.closest('[data-choice]');if(b)choose(b.dataset.choice)});}
-window.LanderMeasurement={push,getContactReference,getAttribution:()=>({...attribution()}),getSnapshot:()=>events.map(e=>({...e})),getConsent:()=>consent,showPreferences:show};
-document.addEventListener('click',e=>{const a=e.target.closest('[data-privacy-open]');if(a){e.preventDefault();preferenceTrigger=a;show();document.querySelector('#lr-privacy').scrollIntoView({behavior:'smooth',block:'center'});document.querySelector('#lr-privacy button').focus({preventScroll:true});}});
+window.LanderMeasurement={push,getContactReference,getAttribution:()=>({...attribution()}),getSnapshot:()=>events.map(e=>({...e})),getConsent:()=>consent,isEnabled:()=>consent==='granted'&&!sensitive,showPreferences:show};
+document.addEventListener('click',e=>{const a=e.target.closest('[data-privacy-open]');if(a){e.preventDefault();preferenceTrigger=a;show();document.querySelector('#lr-privacy button').focus({preventScroll:true});}});
 function milestone(event){if(!toolPage||milestones.has(event))return;if(push(event))milestones.add(event);}
 window.addEventListener('lander:utility-started',()=>milestone('utility_started'));
 window.addEventListener('lander:utility-result',()=>milestone('utility_result_displayed'));

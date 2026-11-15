@@ -1,0 +1,27 @@
+{
+  "version": "digital-flagship-2026-rc6.3",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/brand-profiles-rc6.3.css": "e56ba4b2d89dfa98ea97ac458e8b4b525c4d7ceb833f1388f9821ee7c9a8f774",
+    "index.html": "d470a7d0e5f31d7e7f6dd6759254d13f5b0486d89d565bd5da9c2efc61365b79",
+    "marcas/alpha-x-prime/index.html": "e2b6b02f447410486e97e7c14d8fe9bb494d11644bd8c4fbee15720534380391",
+    "marcas/cooper-pharma/index.html": "356fbcce5148de2757f55fdcae8ed4a20393bc0c2b15d882a1a3675fd0972297",
+    "marcas/eminence-labs/index.html": "a9213d937733c1f13c4db2923751138b2f9b565ef5797822f189189140fd8190",
+    "marcas/eticos/index.html": "c08bd8a8efea2ec4a930b6e17161fc3b57dbd8c6cbae50428a50da97e04900af",
+    "marcas/geniqs-pharma/index.html": "3d86c3e78908d93ec154b263194b48576a9043bd4f80f0abfd79ee9a7fdce2c3",
+    "marcas/index.html": "7db50a87b19fad9241a83a7f8e4fc64bbc2c0fbaf41fcdfaf2bc99b5c4069cda",
+    "marcas/indufar/index.html": "205ea838a3c698919293a2eff7330c78ffd96a5435c3abbe74392aded2864bbe",
+    "marcas/landerlan/index.html": "c66384a7b2a69fb98714b510f9db2f561264f3a5eb69d631c5203dde44557e65",
+    "marcas/life-peptideos/index.html": "222b2605277b2654dce95dfd7ce9baa077e9032e93a043187b733a5f5aed0e4d",
+    "marcas/muscle-labs-india/index.html": "7075977a1d8489ad31acfde336ea46701eb164bb74d26160b8ca0ff9f6d69fbd",
+    "marcas/oxygen-kw-pharma/index.html": "cf98e8b7ce6e3683b08ce8eca3c61bda748a0575eca494d45d148305be0ee719",
+    "marcas/quimfa/index.html": "209f9752aecf0ab13f28841f3107736eebf3a5eb54a1026e70fd6f7eef9a8517",
+    "marcas/synedica/index.html": "de151f0c0b79ec5c17bed16a341b6ce7c2cad70c465b04f8d4605c316d533afa",
+    "marcas/topharma/index.html": "f554d4cc6266dabe9167f89ce584b589ee72de358d2841fe1fba634f3fc2f4e9",
+    "marcas/zphc/index.html": "a1d45a89bf1b5bfe0b986ada61adae9a7f457cdadbaa4c1d61543416d93dbff4",
+    "release.json": "24989de060e53dad381e7467cb028c8e8958b53c73dbea38234d4a559a991958",
+    "sitemap.xml": "c261fb1caf20526b1ae5d6cfdbda51fff6728977a63695cbcb0a3e3cc7e6215a"
+  }
+}

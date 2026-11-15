@@ -1,0 +1,139 @@
+{
+  "version": "rc8",
+  "articles": [
+    {
+      "slug": "peptideos-o-que-sao",
+      "title": "Peptídeos: o que são e como ler a evidência",
+      "seo_title": "Peptídeos: o que são e como ler estudos | LANDER RIO",
+      "description": "Entenda o que são peptídeos, a diferença entre molécula e marca e como interpretar estudos. Guia educativo com IUPAC, OMS, ICH e CONSORT.",
+      "category": "Ciência da performance",
+      "intro": "Uma palavra pode reunir muitas moléculas. A pergunta certa é: o que foi realmente estudado?",
+      "body": "Peptídeos aparecem em notícias científicas, descrições de produtos e pesquisas sobre saúde. Para compreender essas informações, vale separar três perguntas: qual estrutura está sendo descrita, o que foi realmente estudado e até onde os resultados permitem concluir. A palavra, sozinha, não informa o estágio da pesquisa nem demonstra um benefício para pessoas.\n\n## O que significa peptídeo\n\nSegundo a IUPAC, peptídeos são compostos derivados da união de duas ou mais moléculas de aminoácidos por uma ligação covalente entre o carbono de um grupo carbonila e o nitrogênio de outra unidade. Em linguagem simples, aminoácidos fornecem as unidades da estrutura; as ligações peptídicas conectam essas unidades. A definição é química. Ela não estabelece que todos os compostos dessa classe tenham a mesma função, finalidade ou conjunto de evidências. [S1]\n\n## Molécula, medicamento e marca\n\nO nome da substância identifica o que está sendo investigado. A Organização Mundial da Saúde explica que as Denominações Comuns Internacionais, conhecidas pela sigla INN, identificam substâncias farmacêuticas ou ingredientes ativos e são diferentes dos nomes comerciais. Uma marca, portanto, não substitui a identificação da substância na leitura de um estudo. [S2]\n\nO produto investigado também precisa ser caracterizado. A diretriz ICH E8(R1) destaca propriedades físico-químicas, qualidade e formulação; mudanças durante o desenvolvimento precisam de informações que permitam comparar os produtos. A consequência prática para o leitor é conferir a formulação efetivamente estudada antes de atribuir seus resultados a outro produto com nome semelhante. [S3]\n\n## Da pesquisa não clínica ao estudo em pessoas\n\nEstudos não clínicos podem reunir modelos em laboratório, modelos em organismos vivos e simulações. Conforme a ICH, essas avaliações ajudam a investigar propriedades farmacológicas e toxicológicas e a planejar a pesquisa em seres humanos. Um resultado nessa etapa sustenta uma pergunta para investigação; não demonstra, por si, um benefício clínico para pessoas. Essa última distinção é uma interpretação metodológica do papel atribuído a cada etapa. [S3]\n\nNa definição da OMS para registro, um ensaio clínico atribui prospectivamente participantes humanos a intervenções e avalia seus efeitos sobre desfechos de saúde. Isso inclui desenhos diferentes, inclusive estudos sem randomização. Por isso, encontrar a expressão “ensaio clínico” ainda exige examinar como a pesquisa foi realizada. [S4]\n\n## Cinco pontos para ler o artigo\n\nO CONSORT 2025 orienta o relato transparente de ensaios randomizados. Usando essa orientação como apoio à leitura, procure: [S5]\n\n- **Participantes e comparação:** quem participou e com qual grupo a intervenção foi comparada.\n- **Pergunta e desfechos:** o que os pesquisadores pretendiam medir e quais análises estavam planejadas.\n- **Acompanhamento:** por quanto tempo houve observação e quantas pessoas chegaram à análise.\n- **Resultados e danos:** quais efeitos foram encontrados, como foram medidos e como eventos adversos foram investigados.\n- **Transparência:** onde consultar protocolo, registro, financiamento, conflitos de interesse e limitações.\n\nO CONSORT é uma orientação de relato, não um selo que certifica a qualidade de uma pesquisa. Seus autores fazem essa ressalva expressamente. Informação completa permite examinar as limitações; não as elimina. [S5]\n\n## Registro não é resultado\n\nA OMS explica que o registro torna públicas informações sobre o desenho e a condução de um ensaio e pode ser o único documento disponível antes da divulgação dos resultados. Portanto, um número de registro confirma a existência de um registro, não um benefício demonstrado. Confira o estado do estudo e procure os resultados publicados. [S4]\n\nAo compartilhar uma notícia, identifique a substância, o tipo de estudo, a população e o resultado observado. Mantenha a conclusão dentro desses limites e registre o que continua desconhecido.",
+      "sources": [
+        {
+          "id": "S1",
+          "label": "IUPAC · Gold Book: peptides",
+          "url": "https://goldbook.iupac.org/terms/view/P04479"
+        },
+        {
+          "id": "S2",
+          "label": "OMS · Guidance on INN",
+          "url": "https://www.who.int/teams/health-product-and-policy-standards/inn/guidance-on-inn"
+        },
+        {
+          "id": "S3",
+          "label": "ICH · General Considerations for Clinical Studies E8(R1), 2021",
+          "url": "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+        },
+        {
+          "id": "S4",
+          "label": "OMS · Clinical trials, perguntas e respostas",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/clinical-trials"
+        },
+        {
+          "id": "S5",
+          "label": "Hopewell et al. · CONSORT 2025, PLOS Medicine",
+          "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1004587"
+        }
+      ],
+      "related": [
+        {
+          "title": "Life Peptídeos: identidade e catálogo publicado",
+          "path": "/marcas/life-peptideos/"
+        },
+        {
+          "title": "Oxygen KW Pharma: nomes e contexto",
+          "path": "/marcas/oxygen-kw-pharma/"
+        }
+      ]
+    },
+    {
+      "slug": "como-verificar-procedencia-canais-oficiais",
+      "title": "Procedência: como conferir fontes e canais",
+      "seo_title": "Como conferir procedência e canais | LANDER RIO",
+      "description": "Nome, domínio, fonte e documentação: um roteiro para avaliar informações sobre marcas sem confundir presença online com autenticidade comprovada.",
+      "category": "Informação e confiança",
+      "intro": "Uma logo reconhecível é o começo da identificação. A verificação exige contexto.",
+      "body": "Antes de confiar em uma publicação sobre uma marca, separe a identidade visual, a empresa descrita e o produto mencionado. Nomes parecidos, páginas republicadas e imagens de embalagens podem levar a associações incorretas. Este roteiro editorial ajuda a organizar a consulta; não autentica produtos nem substitui documentação.\n\n## 1. Comece pelo nome completo\n\nAnote a grafia, a linha e o domínio que aparece como fonte. Evite combinar histórias de empresas apenas porque os nomes coincidem. Cooper Pharma, por exemplo, aparece em identidades institucionais distintas na Índia e no Marrocos. O perfil do nosso diretório explica qual domínio sustenta a apresentação publicada.\n\n## 2. Diferencie origem da informação e procedência do item\n\nUma página do fabricante pode confirmar que um nome foi incluído em seu catálogo. Isso é diferente de confirmar que uma unidade específica veio daquele fabricante. Fotos, relatos e uma publicação em rede social não fornecem, por si, toda a documentação necessária para essa conclusão.\n\nNo Universo de Marcas, “documentado” significa que indicamos a publicação à qual o nome foi atribuído. Não significa que auditamos o processo de fabricação, um lote ou a autorização de comercialização.\n\n## 3. Leia o endereço antes de confiar no código\n\nUm QR code encaminha para um endereço. Observe o domínio completo, confirme a relação dele com a identidade pesquisada e leia o que a página realmente declara. Não digite dados pessoais em uma página desconhecida apenas porque ela foi aberta a partir de uma embalagem.\n\nSe houver um procedimento de autenticidade publicado pela marca, consulte suas instruções no canal correspondente. O resultado dessa consulta deve ser interpretado dentro de seu escopo: não é uma avaliação clínica e não substitui a situação regulatória do produto.\n\n## 4. Guarde as informações que permitem conferir\n\n- Nome completo da marca e da linha.\n- Endereço da fonte e data da consulta.\n- Denominação exata do produto ou documento citado.\n- O que a fonte confirma e o que permanece sem comprovação.\n\nAo comparar duas publicações, confira se elas tratam da mesma entidade e apresentação. Uma mudança de embalagem ou de nome precisa de documentação; não deve ser presumida pela aparência.\n\n## Quando a documentação é insuficiente\n\nRegistre a lacuna. Não transforme uma dúvida em afirmação de qualidade, certificação ou vínculo oficial. Nos perfis Alpha X Prime, ZPHC e Synedica, a LANDER RIO mantém limites de identificação explícitos. É mais útil saber por que uma associação ainda não foi confirmada do que receber uma lista aparentemente completa, mas sem suporte.\n\nEste é um método de leitura de informações públicas. A avaliação de um produto para uso em saúde requer profissional habilitado e a documentação aplicável.",
+      "sources": [],
+      "related": [
+        {
+          "title": "Cooper Pharma: distinguir empresas homônimas",
+          "path": "/marcas/cooper-pharma/"
+        },
+        {
+          "title": "Universo de Marcas: fontes por identidade",
+          "path": "/marcas/"
+        }
+      ]
+    },
+    {
+      "slug": "como-consultar-disponibilidade-marcas",
+      "title": "Como preparar uma consulta de atendimento",
+      "seo_title": "Como preparar uma consulta de atendimento | LANDER RIO",
+      "description": "Organize seu perfil, objetivo e dúvidas antes do atendimento: um guia para revendedores e clientes, com limites claros entre informação e oferta.",
+      "category": "Atendimento e organização",
+      "intro": "Uma consulta objetiva começa com o contexto certo, sem expor dados desnecessários.",
+      "body": "Revendedores e visitantes individuais podem precisar de informações diferentes. Antes de iniciar um atendimento, organize o que deseja esclarecer e escolha o caminho que representa seu perfil. A página de uma marca é uma referência editorial; não confirma estoque, preço, entrega ou autorização para comercializar um produto.\n\n## Escolha seu perfil\n\nSe você busca informações sobre uma relação comercial de revenda, use o acesso de atacado. Para atendimento individual, use o acesso de varejo. Esses caminhos ajudam a equipe a compreender a finalidade da consulta; não garantem aprovação de cadastro, condições ou disponibilidade.\n\n## Diga qual informação você precisa\n\nUma mensagem útil pode começar assim: “Sou revendedor e gostaria de entender como funciona o atendimento.” Para uma dúvida individual: “Quero informações sobre o atendimento e os próximos passos.” Prefira uma pergunta específica a uma lista de dados pessoais.\n\nSe a dúvida surgiu em uma leitura, informe o título ou endereço da página. Isso ajuda a distinguir uma questão editorial sobre a marca de uma solicitação comercial sobre produtos e serviços cuja divulgação e venda sejam permitidas.\n\n## Confirme condições antes de decidir\n\nQuando houver um atendimento permitido e aplicável, peça que a equipe esclareça os pontos relevantes: identificação do responsável, documentos, condições, prazos e meios de suporte. Não deduza uma condição atual a partir de uma imagem antiga ou de uma publicação de terceiros.\n\nAs páginas da LANDER RIO não devem ser usadas como confirmação automática de estoque. Informações dinâmicas precisam ser confirmadas no atendimento adequado, e qualquer restrição legal continua aplicável.\n\n## Compartilhe apenas o necessário\n\nPara uma primeira pergunta, geralmente basta explicar seu perfil e o assunto. Não coloque documentos, receitas, dados de saúde ou informações de pagamento em campos genéricos, comentários públicos ou mensagens destinadas apenas a esclarecer a proposta do serviço.\n\nO recurso de mensagem contextual do site é opcional. Ele prepara um texto para você revisar no WhatsApp; abrir o aplicativo não significa que a mensagem foi enviada ou que uma conversa começou.\n\n## Informação de marca não é oferta\n\nO Universo de Marcas reúne identidade, terminologia e referências publicadas. Não tem carrinho, preço ou orçamento de medicamentos. Para assuntos de saúde, não solicite protocolos ou decisões clínicas ao atendimento comercial. Uma dúvida sobre tratamento deve ser levada a um profissional habilitado.",
+      "sources": [],
+      "related": [
+        {
+          "title": "Atendimento para revendedores",
+          "path": "/atacado/"
+        },
+        {
+          "title": "Atendimento individual",
+          "path": "/varejo/"
+        }
+      ]
+    },
+    {
+      "slug": "atacado-rio-como-avaliar-fornecedor",
+      "title": "Como organizar a avaliação de um fornecedor",
+      "seo_title": "Como avaliar informações de fornecedor | LANDER RIO",
+      "description": "Um roteiro documental para avaliar uma relação comercial: identidade, escopo, condições, rastreabilidade e suporte, sem promessas de disponibilidade.",
+      "category": "Atendimento e organização",
+      "intro": "Clareza documental e condições explícitas antes de qualquer decisão comercial.",
+      "body": "Avaliar um fornecedor exige mais do que comparar uma condição isolada. Primeiro, entenda quem responde pela operação, quais atividades estão dentro de seu escopo e quais documentos sustentam a relação. Este guia é um roteiro de organização; não certifica empresas e não substitui a avaliação jurídica ou regulatória pertinente.\n\n## Identidade e responsabilidade\n\nIdentifique a empresa ou pessoa responsável pelo atendimento e confira a consistência entre nome, canais e documentação apresentada. Uma marca de produto, um distribuidor e uma loja têm papéis diferentes. O uso de uma logo não comprova que existe representação oficial.\n\nQuando houver uma alegação de autorização, peça o documento correspondente e verifique seu escopo, titular e validade. Não atribua a um fornecedor a certificação de um fabricante apenas porque ele menciona a marca.\n\n## Escopo da relação\n\nDescreva quais produtos ou serviços podem fazer parte da negociação e quais requisitos se aplicam. Categorias reguladas exigem verificações próprias; a existência de um catálogo não resolve essas exigências. Mantenha fora do fluxo comercial qualquer item cuja venda ou divulgação não tenha sido confirmada como permitida.\n\n## Condições que precisam ficar claras\n\n- Quem emite os documentos e responde pelo atendimento.\n- Quais condições foram confirmadas para aquela consulta.\n- Como prazos, alterações e suporte serão comunicados.\n- Como registrar uma divergência e acompanhar sua resolução.\n\nEvite preencher lacunas com suposições. Uma condição de outro cliente, outro momento ou outra categoria não é necessariamente válida para sua operação. Confirmações devem ser específicas e compreensíveis para as duas partes.\n\n## Rastreabilidade e registros\n\nOrganize as informações necessárias para conferir a operação: identificação das partes, documentos pertinentes e versões das condições recebidas. Preserve o contexto de cada registro. Uma captura de tela recortada pode perder a data ou o alcance de uma afirmação.\n\nRastreabilidade não é uma promessa estética. Embalagem sofisticada, selo em imagem ou página com aparência profissional não substituem os documentos e verificações exigidos para o caso.\n\n## Compare o processo, além da condição\n\nObserve se a comunicação é clara, se as respostas podem ser verificadas e se existe um caminho definido para suporte. Esses elementos ajudam a organizar a decisão, mas não garantem resultado comercial. Registre o que foi confirmado, o que ainda falta e quem precisa responder.\n\nNa LANDER RIO, os acessos de revendedores e varejo distinguem o contexto do atendimento. O diretório de marcas permanece informativo e não deve ser interpretado como prova de autorização ou disponibilidade.",
+      "sources": [],
+      "related": [
+        {
+          "title": "Preparar uma consulta de atendimento",
+          "path": "/conteudos/como-consultar-disponibilidade-marcas/"
+        },
+        {
+          "title": "Procedência: fontes e canais",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ]
+    },
+    {
+      "slug": "descanso-entre-series-hipertrofia",
+      "title": "Descanso entre séries e hipertrofia",
+      "seo_title": "Descanso entre séries e hipertrofia | LANDER RIO",
+      "description": "O que uma revisão sobre intervalos sugere, onde a evidência é incerta e como registrar as pausas para conversar com seu treinador.",
+      "category": "Treinamento",
+      "intro": "O cronômetro é uma parte da ficha. Use a pausa para entender a próxima série, sem transformá-la em um número mágico.",
+      "body": "Uma pausa tem duração, contexto e uma série seguinte. Ao revisar seu treino, vale observar esses três elementos juntos. Este guia separa um resultado de pesquisa de uma proposta editorial de registro: são coisas diferentes.\n\n## O que a revisão encontrou\n\nSinger e colaboradores reuniram nove estudos em uma revisão sistemática com meta-análise bayesiana sobre descanso entre séries e hipertrofia. O conjunto sugere uma possível vantagem pequena para intervalos superiores a 60 segundos frente a pausas mais curtas, com incerteza relevante e diferenças entre os estudos. [S1]\n\nAcima de aproximadamente 90 segundos, o benefício adicional não ficou claro nessa análise. Isso não prova equivalência entre todas as durações e não estabelece um teto universal para seu treino. A conclusão deve permanecer dentro das comparações e medidas incluídas. [S1]\n\n## O número isolado conta pouco\n\nEm vez de perguntar apenas “qual é a pausa perfeita?”, leve outra pergunta ao profissional que acompanha seu treino: “o intervalo está coerente com o exercício e com o que pretendemos repetir na próxima série?”. A resposta depende da programação individual; o artigo não permite resolvê-la para cada leitor.\n\n## Uma ficha que ajuda a conversar\n\nA proposta abaixo é uma organização editorial, não um protocolo testado na revisão. Acrescente quatro campos ao seu diário, mantendo o que já foi orientado no treino:\n\n- **Exercício e carga:** anote qual movimento e qual carga foram usados.\n- **Repetições:** registre as repetições realizadas em cada série.\n- **Pausa real:** marque o intervalo efetivamente cumprido, não apenas o planejado.\n- **Observação:** descreva, em poucas palavras, alguma mudança relevante na execução.\n\nSe a ficha disser 90 segundos e a conversa no celular consumir três minutos, registre os três minutos. O objetivo é produzir um relato fiel. Não existe necessidade de compensar o atraso na série seguinte.\n\n## Como interpretar o registro\n\nUma anotação organiza a conversa; ela não demonstra que a pausa causou um resultado. Se várias coisas mudaram ao mesmo tempo — carga, ordem dos exercícios, repetições e intervalo — o registro deve mostrar essas mudanças. Evite escolher só o número que confirma a sua impressão.\n\nLeve o diário ao treinador e discuta um ajuste por vez quando isso fizer sentido na programação. Não transforme a tabela em uma competição pelo menor descanso. Dor, tontura ou mal-estar não são critérios para insistir na série.\n\n## Antes de compartilhar\n\nGuarde a distinção: a pesquisa compara resultados de grupos; o diário descreve a sua sessão. Nenhum dos dois, sozinho, entrega uma regra universal. Compartilhe a fonte e a incerteza junto com o achado, em vez de divulgar “90 segundos” como receita.\n\nPara continuar, consulte o guia de diário de treino e os critérios editoriais da LANDER RIO.",
+      "sources": [
+        {
+          "id": "S1",
+          "label": "Singer et al. (2024). Give it a rest. Frontiers in Sports and Active Living. DOI: 10.3389/fspor.2024.1429789",
+          "url": "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2024.1429789/full"
+        }
+      ],
+      "related": [
+        {
+          "title": "Como registrar seu diário de treino",
+          "path": "/conteudos/diario-de-treino-como-registrar/"
+        },
+        {
+          "title": "Organize sua semana de treino",
+          "path": "/conteudos/como-organizar-semana-treino/"
+        }
+      ],
+      "published": "2026-11-14",
+      "status": "draft-awaiting-owner-review"
+    }
+  ]
+}

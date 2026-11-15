@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "images_unchanged_from_commit": "678b26f6a6adcd5d611dffb8be3586a3051be6c9",
+  "image_assets_unchanged": 12,
+  "generated_images_used": 0,
+  "generator_idempotent": true,
+  "image_hashes": {
+    "site/assets/editorial/diamond/decaland-depot.webp": "94761f0f1105e5a5e6e8550a1e8ee177d97435a64c6b2c07fa33e3a4448e04d6",
+    "site/assets/editorial/diamond/testenat-depot.webp": "d0aae585efddfe50b7d4e18693aab9d33c7887cd5f660ad447004acb244e9c65",
+    "site/assets/editorial/diamond/decaland-depot-640.webp": "edcc83ef6763c22b4317ef17fa500a4110c164f009c17083dfe3435bfe5eb44c",
+    "site/assets/editorial/diamond/durateston-plus.webp": "5449048c083c7e121468f707d11de3c4366077ad01ddf344e32c3ed0834c0a6d",
+    "site/assets/editorial/diamond/metenolona-enantato-640.webp": "cf89756d38ba858f3af2f6bbb26a910c05059138c48b5364d34e90bea5432f4f",
+    "site/assets/editorial/diamond/testoland-depot-640.webp": "e2ea195bcb4aebf605c33a168ccd3a5508e869163d98c8916db0e45e259b83e1",
+    "site/assets/editorial/diamond/durateston-plus-640.webp": "9cff4502beaa39ddce42bacc78bed8b29d4bb461f2809e4bec8cdb5041db6f16",
+    "site/assets/editorial/diamond/drostanolona-propionato-640.webp": "c68aca312da5890897d645ac09eefe0da0d1c5e54d938452ba88f65f734a2057",
+    "site/assets/editorial/diamond/testoland-depot.webp": "8b9b387c37581aa37bc7de7fecac49a2d71ab3a39e2eceba9392cdbcb2b41a6e",
+    "site/assets/editorial/diamond/metenolona-enantato.webp": "8fb44ca3415200c175b9cb2d651788b9a4f2ac0853eec9d8649481dcb6aa89d7",
+    "site/assets/editorial/diamond/drostanolona-propionato.webp": "3f499afa2185940286d3557c6b0520750699ddcf6085dcc997189e513ee751cc",
+    "site/assets/editorial/diamond/testenat-depot-640.webp": "a4bde5b372baf587e7347d1044ba67740c88ea737c7cfd9fb1400d7ef2a14ed6"
+  },
+  "generator_output_hashes": {
+    "site/marcas/landerlan/index.html": "250bd094d59e745c6ae3bc67197894f6cbbc61f55ab48eef63f3d3217c0b4841",
+    "site/release.json": "674063780d22df15a3c5ed14efc337753b5f6619da1c66962d67ce62fdc4f86c",
+    "content/brands.json": "a8ca5858a88d01adcdb06bbbd9f21c15170e65e2d9b2b02d0780c137499773ea"
+  }
+}

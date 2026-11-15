@@ -1,0 +1,1547 @@
+{
+  "created_at": "2026-11-15T04:14:22.199853+00:00",
+  "source_commit": "d77ce080e34178f28c731f4346849f59198dbe2c",
+  "source_tree": "23a94a6986153de541ac6f8b2541936b89bb892e",
+  "files": 307,
+  "all_match_github_blob_hashes": true,
+  "zip_name": "LANDER_RIO_RC14_PUBLICACAO_d77ce080.zip",
+  "zip_bytes": 12036830,
+  "zip_sha256": "ede8d899a28ff54c061e0ed936385efff5b7b59d087f3e01493a03ee7e1292d1",
+  "manifest": [
+    {
+      "path": "404.html",
+      "bytes": 5247,
+      "sha256": "e2815d12bd3f6c6c9903f87bf3d1916f954381c515b6ae2a58d210b68473b9ba"
+    },
+    {
+      "path": "_headers",
+      "bytes": 1237,
+      "sha256": "35beca61aedcfd50fa3d35cdeaafd0cbead7fa166ce000c40c2ad66cc762d5a6"
+    },
+    {
+      "path": "_redirects",
+      "bytes": 809,
+      "sha256": "53a33f5333730632892d88a15b243f231a93481269d2fd460e4ddfe5bf876b1c"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 8208,
+      "sha256": "da4d5f81e874b38534dcd21a7e051f52602adf726b86ba8e51d7b5c3436410dd"
+    },
+    {
+      "path": "assets/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2",
+      "bytes": 29288,
+      "sha256": "9b6f5ff45b278c744b5f379a2c4ecbaf858a842b8eaf82ac8d21b699ca16c608"
+    },
+    {
+      "path": "assets/access-v20.js",
+      "bytes": 2460,
+      "sha256": "6c40888ff3beac2336c8c9ee1002eb5647433c47986a3087b1b7747a57f3b537"
+    },
+    {
+      "path": "assets/apple-touch-icon-v13-3.png",
+      "bytes": 8208,
+      "sha256": "da4d5f81e874b38534dcd21a7e051f52602adf726b86ba8e51d7b5c3436410dd"
+    },
+    {
+      "path": "assets/brand-logos-source-v20-2.jpg",
+      "bytes": 609310,
+      "sha256": "ff6812256a984c654b2afcf8fffcb84a8ac3cd26f15db8f0a5367a698f4c68fa"
+    },
+    {
+      "path": "assets/brand-profiles-rc6.3.css",
+      "bytes": 11172,
+      "sha256": "e56ba4b2d89dfa98ea97ac458e8b4b525c4d7ceb833f1388f9821ee7c9a8f774"
+    },
+    {
+      "path": "assets/brand-strip-v20-2.js",
+      "bytes": 2520,
+      "sha256": "cfcf049dd3beff2f1fc07827a8eb283a6c5a34ce4ae99ffee996e6ded938cc68"
+    },
+    {
+      "path": "assets/brand-strip-v21-1.css",
+      "bytes": 4686,
+      "sha256": "41b59bad86532e733320e4d054322a00e386f2b508676407fede641eae345988"
+    },
+    {
+      "path": "assets/brand-symbol-v20.webp",
+      "bytes": 2726,
+      "sha256": "54a7c160437ff700494d1d8359eca3d2ba7bebb19fd488e0721e880a7ea246d3"
+    },
+    {
+      "path": "assets/brand-universe-rc8.css",
+      "bytes": 21414,
+      "sha256": "2222baabfbcecd0caaffca0f122e729834aa6f561d694042d8c9ca4e2156d5d6"
+    },
+    {
+      "path": "assets/brand-universe-rc8.js",
+      "bytes": 1393,
+      "sha256": "4b09115b11571b17cd1261f12179f0446b9f1ea0c7690f9a159a1286701e9249"
+    },
+    {
+      "path": "assets/brand-vault-v26.js",
+      "bytes": 2935,
+      "sha256": "2f26915cc867c99c3d34b0b0b365aa45fe192d11bb4c64d93e9221ef69fc79b2"
+    },
+    {
+      "path": "assets/commerce-v21.css",
+      "bytes": 16124,
+      "sha256": "e1560a0afe84853a34d1714d0287421986d6fe62602b184501be49a7f39232d5"
+    },
+    {
+      "path": "assets/commerce-v21.js",
+      "bytes": 4763,
+      "sha256": "0f9e66e252b683d1be42c702db97317dcceef02304db428030f2ccedc860dae8"
+    },
+    {
+      "path": "assets/commerce-v23-1.js",
+      "bytes": 4921,
+      "sha256": "8302b9b5c73fc662c7b3ccdefb1887ba4c9189b8a82bc89e5f883361dc3b5f5b"
+    },
+    {
+      "path": "assets/contact-help-v23.js",
+      "bytes": 1613,
+      "sha256": "2c67ec11d85c69cc3c9ce063b08d4a71a7e0b90b5411e001c05c0dd2c724456a"
+    },
+    {
+      "path": "assets/diamond-editorial-rc14.css",
+      "bytes": 7347,
+      "sha256": "72bdf48324efad7f8db0b2f87dca61a4fc40f082bcd0af6cc5b7803639ef23d8"
+    },
+    {
+      "path": "assets/editorial/composicao-vidro-rc14.webp",
+      "bytes": 37266,
+      "sha256": "60883d9908f91cb174afbe28172cf4ced3a2628ab12c630a9ee0d4621fd6d20b"
+    },
+    {
+      "path": "assets/editorial/diamond/decaland-depot-640.webp",
+      "bytes": 61320,
+      "sha256": "edcc83ef6763c22b4317ef17fa500a4110c164f009c17083dfe3435bfe5eb44c"
+    },
+    {
+      "path": "assets/editorial/diamond/decaland-depot.webp",
+      "bytes": 968262,
+      "sha256": "94761f0f1105e5a5e6e8550a1e8ee177d97435a64c6b2c07fa33e3a4448e04d6"
+    },
+    {
+      "path": "assets/editorial/diamond/drostanolona-propionato-640.webp",
+      "bytes": 60322,
+      "sha256": "c68aca312da5890897d645ac09eefe0da0d1c5e54d938452ba88f65f734a2057"
+    },
+    {
+      "path": "assets/editorial/diamond/drostanolona-propionato.webp",
+      "bytes": 996988,
+      "sha256": "3f499afa2185940286d3557c6b0520750699ddcf6085dcc997189e513ee751cc"
+    },
+    {
+      "path": "assets/editorial/diamond/durateston-plus-640.webp",
+      "bytes": 70928,
+      "sha256": "9cff4502beaa39ddce42bacc78bed8b29d4bb461f2809e4bec8cdb5041db6f16"
+    },
+    {
+      "path": "assets/editorial/diamond/durateston-plus.webp",
+      "bytes": 1086590,
+      "sha256": "5449048c083c7e121468f707d11de3c4366077ad01ddf344e32c3ed0834c0a6d"
+    },
+    {
+      "path": "assets/editorial/diamond/metenolona-enantato-640.webp",
+      "bytes": 66388,
+      "sha256": "cf89756d38ba858f3af2f6bbb26a910c05059138c48b5364d34e90bea5432f4f"
+    },
+    {
+      "path": "assets/editorial/diamond/metenolona-enantato.webp",
+      "bytes": 1032508,
+      "sha256": "8fb44ca3415200c175b9cb2d651788b9a4f2ac0853eec9d8649481dcb6aa89d7"
+    },
+    {
+      "path": "assets/editorial/diamond/testenat-depot-640.webp",
+      "bytes": 67340,
+      "sha256": "a4bde5b372baf587e7347d1044ba67740c88ea737c7cfd9fb1400d7ef2a14ed6"
+    },
+    {
+      "path": "assets/editorial/diamond/testenat-depot.webp",
+      "bytes": 1059672,
+      "sha256": "d0aae585efddfe50b7d4e18693aab9d33c7887cd5f660ad447004acb244e9c65"
+    },
+    {
+      "path": "assets/editorial/diamond/testoland-depot-640.webp",
+      "bytes": 57062,
+      "sha256": "e2ea195bcb4aebf605c33a168ccd3a5508e869163d98c8916db0e45e259b83e1"
+    },
+    {
+      "path": "assets/editorial/diamond/testoland-depot.webp",
+      "bytes": 986358,
+      "sha256": "8b9b387c37581aa37bc7de7fecac49a2d71ab3a39e2eceba9392cdbcb2b41a6e"
+    },
+    {
+      "path": "assets/editorial-v22.css",
+      "bytes": 1862,
+      "sha256": "3bfa0cf7c63194cb3c6d3f59db2682841d61af914a51ed4b60ec247d30549cb6"
+    },
+    {
+      "path": "assets/editorial-v22.js",
+      "bytes": 756,
+      "sha256": "4daa12f7d4af6ef98c1725a4dfed68eaa3dd5d0a026ae0b8cd9cb40e4a8c63c4"
+    },
+    {
+      "path": "assets/encyclopedia-v23-3.css",
+      "bytes": 1967,
+      "sha256": "2a6b560d35dd894471696295f9a42b37e4352166a2f3aa9f861ddc59705ad2fc"
+    },
+    {
+      "path": "assets/experience-rc9.css",
+      "bytes": 16161,
+      "sha256": "479691085346efe0b6974c8763cb609a16da7f67062c214d2947f71d7b5365d7"
+    },
+    {
+      "path": "assets/experience-rc9.js",
+      "bytes": 662,
+      "sha256": "273765b2f8f672e0e84884d6db1f32b3f9baa207856577c9a29ffc8b014a63d8"
+    },
+    {
+      "path": "assets/experience-v23.css",
+      "bytes": 7616,
+      "sha256": "0a520816e54f668175ee7286f1ec7e68d4b2050023ea70967ef600fa25e9daac"
+    },
+    {
+      "path": "assets/favicon-v13-3.png",
+      "bytes": 56707,
+      "sha256": "ffd0028e74e540e472c486768c249e95e3e1c6949090a57d1443e15690bd9179"
+    },
+    {
+      "path": "assets/flagship-2026.css",
+      "bytes": 41630,
+      "sha256": "4a1a8e5885eeff12a25f7b8e5debe720ac44800801adba7cd93b05dbcd78a89b"
+    },
+    {
+      "path": "assets/flagship-2026.js",
+      "bytes": 5033,
+      "sha256": "8a9fd5601ab5be2160c8ea09cfb16446e467e1de6fbf992e1968c50feb7cf78d"
+    },
+    {
+      "path": "assets/flagship-hero-desktop-rc2.avif",
+      "bytes": 57059,
+      "sha256": "49dacb193e2668e1e76bdf7e33f1c85684e9e2d467ca376cd463e0050f305ef1"
+    },
+    {
+      "path": "assets/flagship-hero-desktop-rc2.jpg",
+      "bytes": 239302,
+      "sha256": "22f4f683062c413fc8019c7050ce62b204963b36a1f324ce4238f6f9b6ec947d"
+    },
+    {
+      "path": "assets/flagship-hero-desktop-rc2.webp",
+      "bytes": 89410,
+      "sha256": "a1f5cffd16262da672d19882a73b1cabb2cda50aa093cff1dec3616a18965ccd"
+    },
+    {
+      "path": "assets/flagship-hero-mobile-rc2.avif",
+      "bytes": 65922,
+      "sha256": "72c3e8e294993078910d30d0a31edf5c49a04e46ca23a2b9073cd53b9b6e875b"
+    },
+    {
+      "path": "assets/flagship-hero-mobile-rc2.jpg",
+      "bytes": 261842,
+      "sha256": "fa09fa33644f69ceebe9469e425993dc2cc1eab314da80cf525efa1746d5f4a4"
+    },
+    {
+      "path": "assets/flagship-hero-mobile-rc2.webp",
+      "bytes": 103906,
+      "sha256": "e5c749c8ad49c7ab518801e42689f93bd8710a4f2bb486e14f5a6d799fcb6bca"
+    },
+    {
+      "path": "assets/flagship-hero-mobile-v25.avif",
+      "bytes": 35813,
+      "sha256": "88db3afb0fd581a6c6e098f9859d237eec5016b6c05970a463ba79c262fac5f2"
+    },
+    {
+      "path": "assets/flagship-hero-mobile-v25.webp",
+      "bytes": 31590,
+      "sha256": "8c79607b81bf7654b9fe9001c07ba6a9a8dce0dffb831ea5feae7e72882970ef"
+    },
+    {
+      "path": "assets/flagship-hero-v25.avif",
+      "bytes": 95075,
+      "sha256": "8f92664bf8c76f20af7b1792a232b96fd09d7e3caed5df4e6ca3f7d12d445170"
+    },
+    {
+      "path": "assets/flagship-hero-v25.webp",
+      "bytes": 87048,
+      "sha256": "f3accf0f7141aceca40ca939d15af01b3a293b5f06f2a61fb658e3537e0ec1f1"
+    },
+    {
+      "path": "assets/flagship-nutrition-v25.webp",
+      "bytes": 80644,
+      "sha256": "524621159ebf47110a0b4493d9b4a369dec9b65527628d1d3bc2cf69fd3ff64e"
+    },
+    {
+      "path": "assets/flagship-quality-rc6.2.css",
+      "bytes": 111,
+      "sha256": "da28a4863a8908df3ec33d384589f48f137b53718b1f38736159174a28bdff01"
+    },
+    {
+      "path": "assets/flagship-reference-rc6.css",
+      "bytes": 33276,
+      "sha256": "dcfb80f4e1e3412e9da9547054b543684edea93b9a41df640d6a97f7f08c5b10"
+    },
+    {
+      "path": "assets/flagship-reference-rc6.js",
+      "bytes": 7257,
+      "sha256": "bcea0de5302e58d12cb4cb96807db28f8df4f99da64cff996c6e3b8f24fbeb17"
+    },
+    {
+      "path": "assets/flagship-science-v25.webp",
+      "bytes": 51856,
+      "sha256": "8d8fbc046051ac6d9fee3dc687f5aa63baee3bead4a528d971972de84fd828d6"
+    },
+    {
+      "path": "assets/flagship-v25-1.css",
+      "bytes": 12772,
+      "sha256": "8a24db459ed9b4a4d8f100de5704ab34857d786e71d38c3109088cd2116468dc"
+    },
+    {
+      "path": "assets/flagship-v25.css",
+      "bytes": 21177,
+      "sha256": "2c17456691a3d13d54da761c045a87d6f0fe7803407d9532a3c3dcc6f4fc5573"
+    },
+    {
+      "path": "assets/flagship-v26-reference.css",
+      "bytes": 21995,
+      "sha256": "d346bc9a165aa7f24edd289bce17bbb4d25c548df4262543147b9c9702751012"
+    },
+    {
+      "path": "assets/fonts-rc6/0ec6b3cca2df54f1.ttf",
+      "bytes": 88228,
+      "sha256": "0ec6b3cca2df54f108f8dc239597e0eab386343a230afad8a0f445c7d21c3e77"
+    },
+    {
+      "path": "assets/fonts-rc6/0ec6b3cca2df54f1.woff2",
+      "bytes": 32548,
+      "sha256": "66da9bb74687176bec94243ee82a180ca3795c9af964566ac7a54edccade49fc"
+    },
+    {
+      "path": "assets/fonts-rc6/2a8e7f713ee79fbc.ttf",
+      "bytes": 48200,
+      "sha256": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211"
+    },
+    {
+      "path": "assets/fonts-rc6/2a8e7f713ee79fbc.woff2",
+      "bytes": 19332,
+      "sha256": "e2711455ea52262db71d20e8e4f98095ca4c097762c91336dace576692a0074a"
+    },
+    {
+      "path": "assets/fonts-rc6/376427b5322148d8.ttf",
+      "bytes": 48308,
+      "sha256": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae"
+    },
+    {
+      "path": "assets/fonts-rc6/376427b5322148d8.woff2",
+      "bytes": 19464,
+      "sha256": "f2d2735702801f35f6371d560b2e8b1dc512c2d4baaf50767f84ef07644ac73a"
+    },
+    {
+      "path": "assets/fonts-rc6/b00c1f73ddaa9d43.ttf",
+      "bytes": 48272,
+      "sha256": "b00c1f73ddaa9d435c49b0777223823e5f4fcf6a06350d532df3d7730375dd9e"
+    },
+    {
+      "path": "assets/fonts-rc6/b00c1f73ddaa9d43.woff2",
+      "bytes": 19336,
+      "sha256": "0d4af992979dfb76ebe281b0f3863dc06aebad17a52c93719dd01076f12fb41e"
+    },
+    {
+      "path": "assets/fonts-rc6/b0ae3e89a7d3ef2b.ttf",
+      "bytes": 48280,
+      "sha256": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9"
+    },
+    {
+      "path": "assets/fonts-rc6/b0ae3e89a7d3ef2b.woff2",
+      "bytes": 19160,
+      "sha256": "909d941c3a1d48542e5ccc1e83c8001027d43b82136128f1dd23dbc8a3ec6d1c"
+    },
+    {
+      "path": "assets/fonts-rc6/b60ffb0ee2b4e09d.ttf",
+      "bytes": 123608,
+      "sha256": "b60ffb0ee2b4e09d71d67ff3ea16d6a23cf2e0cf637c5f4e36fff2e3b1465252"
+    },
+    {
+      "path": "assets/fonts-rc6/b60ffb0ee2b4e09d.woff2",
+      "bytes": 44936,
+      "sha256": "f25ac54febe36e4c9aca4dee7e716d0960f6d2ce93181d95e13900ddcc07cefa"
+    },
+    {
+      "path": "assets/fonts-rc6/b79a2ea7a38f33fd.ttf",
+      "bytes": 48280,
+      "sha256": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a"
+    },
+    {
+      "path": "assets/fonts-rc6/b79a2ea7a38f33fd.woff2",
+      "bytes": 19292,
+      "sha256": "b29c821f6f7f550cdd4dc09c20486352f0b28607bc8d20b647a7135c650a59d0"
+    },
+    {
+      "path": "assets/fonts-rc6/c97fcd822f825e9e.ttf",
+      "bytes": 44784,
+      "sha256": "c97fcd822f825e9e731867b650a39ee678b609bead29385e320171b573ec0910"
+    },
+    {
+      "path": "assets/fonts-rc6/c97fcd822f825e9e.woff2",
+      "bytes": 19064,
+      "sha256": "2fa6534dbede52279339f72a55b0c554bca4632545beb814911ffd175d469c85"
+    },
+    {
+      "path": "assets/fonts-rc6/dd60d0861a3efd54.ttf",
+      "bytes": 45308,
+      "sha256": "dd60d0861a3efd540efc3f2f85e7a7fd69a7ece7eadf44aaffa5fc5c86adda0e"
+    },
+    {
+      "path": "assets/fonts-rc6/dd60d0861a3efd54.woff2",
+      "bytes": 19280,
+      "sha256": "2673a3ef9e0e74c182b88a94284e825005c781d9c444b83c3fe78f1c44e5bf51"
+    },
+    {
+      "path": "assets/fonts-rc6/ef1515fa19156794.ttf",
+      "bytes": 111168,
+      "sha256": "ef1515fa19156794b36e5f362c677f78837c38ccdd6fa1fa76d1dd918ea7abbe"
+    },
+    {
+      "path": "assets/fonts-rc6/ef1515fa19156794.woff2",
+      "bytes": 43432,
+      "sha256": "a06ffdcfb8e55acea3a438f191e9cd06b3026c506f84b2eb1685365041a90376"
+    },
+    {
+      "path": "assets/ga4-config.js",
+      "bytes": 148,
+      "sha256": "29fb60600985b2e3bc710780df2e53a594beb7f64f4cb71e7ad1e41962113e1b"
+    },
+    {
+      "path": "assets/ga4-intent.js",
+      "bytes": 4187,
+      "sha256": "e6a1fcda87e20f9bdab05cdeb36011202737be57d59bcc80be29a2e8fe1fe165"
+    },
+    {
+      "path": "assets/home-tools-v20-5.css",
+      "bytes": 3291,
+      "sha256": "7d341482463fad7a783cf11561cf4b3d0ebb940034a7279dd54aa4c9d83cd610"
+    },
+    {
+      "path": "assets/lander-rio-lockup-v25.webp",
+      "bytes": 21148,
+      "sha256": "53b894278e25407593edd2c26d3caaeb00a56f460522dddccabe849b90d9953c"
+    },
+    {
+      "path": "assets/lander-rio-symbol-v25.webp",
+      "bytes": 9298,
+      "sha256": "fd994a097616f6d15b0ee92803ec3578941389dab48acd435df9f0306c22a193"
+    },
+    {
+      "path": "assets/lander-training-engine-v18.js",
+      "bytes": 20124,
+      "sha256": "7645369d17f754b6b83fffc5b6471e979f86c80b29b1039671766413d761ae72"
+    },
+    {
+      "path": "assets/logos/alpha-x-prime-rc3.webp",
+      "bytes": 46126,
+      "sha256": "6bfad75c5d3a265078e03fe0cd1aa44b2e4cc3b3daf7011c374433ea0b866551"
+    },
+    {
+      "path": "assets/logos/alpha-x-prime-rc5.webp",
+      "bytes": 19392,
+      "sha256": "9ff23fcfc5334a6a637357df386af734448346af36a2ae45bd4e65c63ca2e8ec"
+    },
+    {
+      "path": "assets/logos/alpha-x-prime-v23.webp",
+      "bytes": 10898,
+      "sha256": "20e350399a2be5543a6ab441f0f31831b88398b0ba75b81fa5f06d9b27b13427"
+    },
+    {
+      "path": "assets/logos/cooper-pharma-rc3.webp",
+      "bytes": 76124,
+      "sha256": "3a56034e12efa3713f32f3cc6056ad6cbca9681dc1854bb6183d65249b0c24dd"
+    },
+    {
+      "path": "assets/logos/cooper-pharma-rc5.webp",
+      "bytes": 33620,
+      "sha256": "c882013d6d9ed821f561215b822a173cb2e5f141fde66d205580f7ac877f7a4f"
+    },
+    {
+      "path": "assets/logos/cooper-pharma-v23.webp",
+      "bytes": 13636,
+      "sha256": "b135381aae9e8070feac48af31a025d2a895204c5ac288e1c822edd1ccd47265"
+    },
+    {
+      "path": "assets/logos/eminence-labs-rc3.webp",
+      "bytes": 66606,
+      "sha256": "fd5f7b815669de9154678bc4d713c42a579401ecc86a595eb493a376f4b43578"
+    },
+    {
+      "path": "assets/logos/eminence-labs-rc5.webp",
+      "bytes": 67856,
+      "sha256": "3becda4da14c7e374ee7eb86eea1aa3fa91ec68e35221d57cf6a45bd3b6ab408"
+    },
+    {
+      "path": "assets/logos/eminence-labs-v23.webp",
+      "bytes": 12682,
+      "sha256": "7db275b5d059a28f1cb6f8fd2edd2a44dda4105002814afbc54d48c69242e7d3"
+    },
+    {
+      "path": "assets/logos/eticos-rc5.webp",
+      "bytes": 29320,
+      "sha256": "011aa534f1b482e3987ba73659ddf9cdcb035636976e9007cda0256151146140"
+    },
+    {
+      "path": "assets/logos/eticos-v23.webp",
+      "bytes": 4466,
+      "sha256": "9c2274e59a88e2b34b8ae2d69d63bef219fd9955b2117dd930dfd99426a20044"
+    },
+    {
+      "path": "assets/logos/geniqs-pharma-rc3.webp",
+      "bytes": 55350,
+      "sha256": "08a8b2bb87069002c938699c4de3bf34e27c280493ece1a038d357899d09c3d2"
+    },
+    {
+      "path": "assets/logos/geniqs-pharma-rc5.webp",
+      "bytes": 26048,
+      "sha256": "b5c36c347b4fa904baed685e323e8fe439c3d92c35baff2ad0a6fe21c8c53127"
+    },
+    {
+      "path": "assets/logos/geniqs-pharma-v23.webp",
+      "bytes": 14210,
+      "sha256": "f0c33ae7b730d6bebc67aa7106a7479cf2103f1fddf47e00b0a82442d09a9c73"
+    },
+    {
+      "path": "assets/logos/indufar-rc5.webp",
+      "bytes": 22728,
+      "sha256": "cec537fc233d36207d52e69015cbef4c65ae7f4ba740f18480d77b47922cb5fe"
+    },
+    {
+      "path": "assets/logos/indufar-v23.webp",
+      "bytes": 3918,
+      "sha256": "ad178caf69d1c1d154f0609b65074d7a1a614c9122a56bed210e7b7ca30e9907"
+    },
+    {
+      "path": "assets/logos/labs-group-rc3.webp",
+      "bytes": 94582,
+      "sha256": "5094ada8ca21bed0aade7e8ecfe27af0897acf66c3dd168ccc7fc562726919e0"
+    },
+    {
+      "path": "assets/logos/landerlan-hero-rc4.webp",
+      "bytes": 9442,
+      "sha256": "20fb2937bd7b610e02721c9d1cd35dc15f5c9877348ac518541a3c323cbce03e"
+    },
+    {
+      "path": "assets/logos/landerlan-hero-rc5.webp",
+      "bytes": 12394,
+      "sha256": "548d86ccf810c459465c82708666e932da4bbb92cfdf8751c7ef2c461e11f176"
+    },
+    {
+      "path": "assets/logos/landerlan-rc3.webp",
+      "bytes": 65252,
+      "sha256": "2f85c6bfb36b77f60eb306e8066e74ffe02c57b3863bb5e3b58049462175a0f2"
+    },
+    {
+      "path": "assets/logos/landerlan-rc5.webp",
+      "bytes": 45632,
+      "sha256": "28309082b63205a2f099ce50588753640b62641821686131517403a514a189dc"
+    },
+    {
+      "path": "assets/logos/landerlan-v23.webp",
+      "bytes": 14188,
+      "sha256": "ff2c1a9dbe9e6bd36d6178bbc16c635216e6aa1aa2e887f272d38ef0de358657"
+    },
+    {
+      "path": "assets/logos/life-peptideos-hero-rc4.webp",
+      "bytes": 21642,
+      "sha256": "f8c7aae709a2013d76925fa076628d3aac060ea14beff97bbcf2b3bf5a56cfc6"
+    },
+    {
+      "path": "assets/logos/life-peptideos-hero-rc5.webp",
+      "bytes": 23668,
+      "sha256": "5d4e40cc8ed78fda1d3b102f48b2a647bea395c9908f60521eb5322247e4415f"
+    },
+    {
+      "path": "assets/logos/life-peptideos-rc3.webp",
+      "bytes": 46426,
+      "sha256": "a45b948ae1a07f3d153f00148cc93dc4d23e6844303c874ad1db0d14ff461dce"
+    },
+    {
+      "path": "assets/logos/life-peptideos-rc5.webp",
+      "bytes": 45342,
+      "sha256": "982553123a71895a56ced713bebe168b6036e4028e76383d6586f1ed0e2a59fa"
+    },
+    {
+      "path": "assets/logos/life-peptideos-v23.webp",
+      "bytes": 9248,
+      "sha256": "9398c9a9da00c5dc2d9bee532a0c7c276c17a0cbb93a7ef1ff6a764a4e03720c"
+    },
+    {
+      "path": "assets/logos/muscle-labs-india-rc3.webp",
+      "bytes": 64132,
+      "sha256": "1620c05ad4f05f7b9acfb1b767bc111f81ee0b787f4627b5eae678f0291a3bea"
+    },
+    {
+      "path": "assets/logos/muscle-labs-india-rc5.webp",
+      "bytes": 32804,
+      "sha256": "dcd639d81dae475c23ed63d6b30fd848651cff034f8fb95f60302f67d52bf2b1"
+    },
+    {
+      "path": "assets/logos/muscle-labs-india-v23.webp",
+      "bytes": 12186,
+      "sha256": "a72b2a4766c89e32e068156943ed6709b2cb53365ff493d5754b717ce60aba8e"
+    },
+    {
+      "path": "assets/logos/oxygen-kw-pharma-hero-rc4.webp",
+      "bytes": 14290,
+      "sha256": "d2a2497ada2cf7288c2e236d4f4e80eeb0241a3a04e25015733aa7bfdbe65ad7"
+    },
+    {
+      "path": "assets/logos/oxygen-kw-pharma-hero-rc5.webp",
+      "bytes": 22484,
+      "sha256": "a1d49f764cb652808c26a9cf8255341765837dea08a19e2928a623e8e171d22d"
+    },
+    {
+      "path": "assets/logos/oxygen-kw-pharma-rc3.webp",
+      "bytes": 30884,
+      "sha256": "060d7c51b1fb4de5a6794f71df980bc9d33a762be1541f9b20b01e10c31109bf"
+    },
+    {
+      "path": "assets/logos/oxygen-kw-pharma-rc5.webp",
+      "bytes": 47638,
+      "sha256": "3eba0be5e6c7c49d63e1f125f869d259493991f64511877ba6684126bd42dbdd"
+    },
+    {
+      "path": "assets/logos/oxygen-kw-pharma-v23.webp",
+      "bytes": 6660,
+      "sha256": "ef9539a863d1800261a48a1e61f3f38fe3afda0e69835e8b520a9a2e292a5e61"
+    },
+    {
+      "path": "assets/logos/quimfa-rc5.webp",
+      "bytes": 25412,
+      "sha256": "e247094fc2281239bc23d355143aebc9fed86a4d25e9eebb84108deb2fa7c8bb"
+    },
+    {
+      "path": "assets/logos/quimfa-v23.webp",
+      "bytes": 4922,
+      "sha256": "e90ef68adb8ee014019a49882f82f355f8dcc3a9c1777aa547e5dfc42d70c918"
+    },
+    {
+      "path": "assets/logos/synedica-rc3.webp",
+      "bytes": 58038,
+      "sha256": "d7f76c421983a81145ff566aeab712d2221b66369db44c59ae39b41c84365ae7"
+    },
+    {
+      "path": "assets/logos/synedica-rc5.webp",
+      "bytes": 28654,
+      "sha256": "5ecde030bcd0d4f57473f7362d36ce650702715355ad08b995fae077795cbf4b"
+    },
+    {
+      "path": "assets/logos/synedica-v23.webp",
+      "bytes": 10758,
+      "sha256": "025039271138a466ade03afe010500e534231e13a6946491caa6ad50ece6f48f"
+    },
+    {
+      "path": "assets/logos/topharma-hero-rc4.webp",
+      "bytes": 15784,
+      "sha256": "2c6c1032f576cf2af8a52a88c0f5c28486e206f7a4d27364baea68518932ed6a"
+    },
+    {
+      "path": "assets/logos/topharma-hero-rc5.webp",
+      "bytes": 8030,
+      "sha256": "4d8ad92cd928820887ac1fbf36475c41d9fee78b9e154c4653c4acb886dbb93d"
+    },
+    {
+      "path": "assets/logos/topharma-rc3.webp",
+      "bytes": 90508,
+      "sha256": "0dcbd2748a753421593701705f6ce0adfe24cf6d38b9476f8b64a04c18739022"
+    },
+    {
+      "path": "assets/logos/topharma-rc5.webp",
+      "bytes": 41884,
+      "sha256": "f1dedabd0b5261848f123fba4f9706ec823d9a1c97b41f10f7c6c1ce8d5479ed"
+    },
+    {
+      "path": "assets/logos/topharma-v23.webp",
+      "bytes": 16198,
+      "sha256": "594e6b7cad82e6945d39c8b76a1d73e1d3f3255c940224bfd81d291967bb22ad"
+    },
+    {
+      "path": "assets/logos/zphc-rc3.webp",
+      "bytes": 40416,
+      "sha256": "df14587a2084f042509806528228bc281d0fbe943eb1dd791f96a38e9aea0fc3"
+    },
+    {
+      "path": "assets/logos/zphc-rc5.webp",
+      "bytes": 19612,
+      "sha256": "ac7f6090fb701c7cb765d59b130c96166627d22931b9c55437d5556bc22fab85"
+    },
+    {
+      "path": "assets/logos/zphc-v23.webp",
+      "bytes": 9286,
+      "sha256": "1fc9b2d677e42c10dd566232165f295462a95b223d931dbafe1c55ad3a02dc99"
+    },
+    {
+      "path": "assets/measurement-v21.js",
+      "bytes": 7036,
+      "sha256": "2a798614785fcabb3fde2f796f1ebfe14f434557ccbcb4659ddf2e51918ed27f"
+    },
+    {
+      "path": "assets/measurement-v23-2.js",
+      "bytes": 7814,
+      "sha256": "25b2e6beab3b61f2a5bda2bf92d93c4c24a056785bfb926d6baf46dc6d437cdb"
+    },
+    {
+      "path": "assets/og-lander-v21.jpg",
+      "bytes": 49578,
+      "sha256": "18649b131a4b737897ac93247b16188d8d71a4ed0c92e2987a1edbd8896302d2"
+    },
+    {
+      "path": "assets/organic-resources-rc13.css",
+      "bytes": 2245,
+      "sha256": "bb6aca047867af19bfcac93cc24157c27a47ad5c2eb829cb2efda344094570a7"
+    },
+    {
+      "path": "assets/performance-rc9.js",
+      "bytes": 507,
+      "sha256": "dbec2e1c6c2c870602c84b9eafdba30d3ea649c3101db88366ea080fa2a7ae0d"
+    },
+    {
+      "path": "assets/radar-v21.js",
+      "bytes": 1453,
+      "sha256": "7a7e4e9399c62399df92b293f461e18bf559ac4621d5192e4c726b741583a7d9"
+    },
+    {
+      "path": "assets/recebimentos/foto-01.webp",
+      "bytes": 25224,
+      "sha256": "5c32643bfbc2a0f440ab1d4d744e3cc68b4a900ca3ec6f444c0b32201f51d545"
+    },
+    {
+      "path": "assets/recebimentos/foto-02.webp",
+      "bytes": 27866,
+      "sha256": "47a0e2de61a35c17687901f914dea5b576cad4a8d154c5cb79d1512610c7f42d"
+    },
+    {
+      "path": "assets/recebimentos/foto-03.webp",
+      "bytes": 18318,
+      "sha256": "562f02662f0add5a7280349661893bd138e80a0072a67889f9264db2a0584cb1"
+    },
+    {
+      "path": "assets/recebimentos/foto-04.webp",
+      "bytes": 7820,
+      "sha256": "69e1430ef8f4e5740bcf56380cce782e5a718927af0839b8bfbc94083b58fd06"
+    },
+    {
+      "path": "assets/recebimentos/foto-05.webp",
+      "bytes": 50494,
+      "sha256": "4705206f3945837d7cd78860c4a8a60d395099ef21733606bfb9803327ea2eac"
+    },
+    {
+      "path": "assets/recebimentos/foto-06.webp",
+      "bytes": 21532,
+      "sha256": "fa27e4a3490b1a0239e1bdf65be2f0ef321a10713d82c58c071ba56999899af9"
+    },
+    {
+      "path": "assets/recebimentos/registro-01.webp",
+      "bytes": 30006,
+      "sha256": "cbb2c8e58f1dc34841085732b13cdd5e5ef2486b13a56c11f966287944050cb0"
+    },
+    {
+      "path": "assets/recebimentos/registro-02.webp",
+      "bytes": 33618,
+      "sha256": "4b5e61646d5b04deb268dd446cc80a9c9892903e7888ec9cf5ef4e58bb46f428"
+    },
+    {
+      "path": "assets/recebimentos/registro-03.webp",
+      "bytes": 18340,
+      "sha256": "e691d27f8848172d993114c0e6e843dbbe2eec89f2fbfb5a2227628c8ed49d10"
+    },
+    {
+      "path": "assets/recebimentos/registro-04.webp",
+      "bytes": 19872,
+      "sha256": "aa193adf16d6e6ceacc480b192994087d48249930b7206c37a50b6eee77b0b63"
+    },
+    {
+      "path": "assets/recebimentos/registro-05.webp",
+      "bytes": 82060,
+      "sha256": "30df6d5ab5ba008d2535969344580025ed6b6a16fb5e793cab735fd269011646"
+    },
+    {
+      "path": "assets/recebimentos/registro-06.webp",
+      "bytes": 62454,
+      "sha256": "d77f72fd3bdb71668b63648ce2ce8e249ba5945c171433223859a3a76cc9b2d0"
+    },
+    {
+      "path": "assets/recebimentos-v23-9.css",
+      "bytes": 4943,
+      "sha256": "77170b37b4808878d42eb677f9a3d31a3de038a7bf26b9b5d6f7c8a3bf9c7efd"
+    },
+    {
+      "path": "assets/reference-fonts-rc6.css",
+      "bytes": 1777,
+      "sha256": "b39603ea448764a61e35c72a330349092252f116b5d0f535dfc408cb7a16ef55"
+    },
+    {
+      "path": "assets/reference-grain-rc6.svg",
+      "bytes": 247,
+      "sha256": "e32b3493d09e6380f328c4bbc791b38a408169e4157371f04e3e8f1247e1850a"
+    },
+    {
+      "path": "assets/refinement-v21.css",
+      "bytes": 13155,
+      "sha256": "b8699b031879632f2563c169624afc99423f01f833c066d9d3c8aac1cd4c785e"
+    },
+    {
+      "path": "assets/rox-agent-v3-offline.js",
+      "bytes": 11466,
+      "sha256": "e7199f92405a9c69ca81099c317c20cc3e274c51668149fa70f9d1126c73886b"
+    },
+    {
+      "path": "assets/rox-demo-v25.js",
+      "bytes": 10628,
+      "sha256": "f45eb443ccb7b142e15496b22ab43125faecc540130efae0c938f7906b8de5fa"
+    },
+    {
+      "path": "assets/rox-transport-titan.js",
+      "bytes": 1884,
+      "sha256": "365ead7d700a97abf96f0e097021c96c63f995c1da4a53f4e518cdfd2b99d92e"
+    },
+    {
+      "path": "assets/tool-fixes-v20-1.css",
+      "bytes": 1373,
+      "sha256": "52f9446887febf9f05a860422a0dc1e3cd5a7af9d59ea4d17ea676d6882028aa"
+    },
+    {
+      "path": "assets/training-1200-v20.webp",
+      "bytes": 130754,
+      "sha256": "6576653ab5ebe02f9ba8faf67b2092432c756d32b9e49916bae06023a20efdec"
+    },
+    {
+      "path": "assets/training-640-v20.webp",
+      "bytes": 35518,
+      "sha256": "63dec426f7ce66fe0856578fb2d3e57d4d908a8c0f8cee0ea8887b5d586fb147"
+    },
+    {
+      "path": "assets/training-v21.css",
+      "bytes": 31188,
+      "sha256": "edbe3888d6b2fb2791de207c1267507e60dd2cc69e9dc24056513a4994340146"
+    },
+    {
+      "path": "assets/training-v21.js",
+      "bytes": 16539,
+      "sha256": "6cbaf9bef0ebcbda25ec43fa35d0f390d7d79922c31142ecc96db11733e16691"
+    },
+    {
+      "path": "assets/v26-hero-reference.webp",
+      "bytes": 54040,
+      "sha256": "03d7d59adb4e297d34fb2f4347590180dc546ceef1c929a7fbc0230f3987ad98"
+    },
+    {
+      "path": "assets/vendor/web-vitals-5.3.0.iife.js",
+      "bytes": 5888,
+      "sha256": "bc7a1a0cc6e0eab320c0eae3064eaa4c1b4da607e8f1d896c6a59cafbeccd257"
+    },
+    {
+      "path": "assets/vendor/web-vitals-LICENSE.txt",
+      "bytes": 11342,
+      "sha256": "bfdeded4040e05da31ca9b6239dc83bd23fa26ac8db87342a7ca4363f68916ff"
+    },
+    {
+      "path": "atacado/index.html",
+      "bytes": 14449,
+      "sha256": "55a693d55efbdf4b1e1f4e48c620574a9b4633131bc41e468973ef8c3395b441"
+    },
+    {
+      "path": "autenticidade/index.html",
+      "bytes": 6248,
+      "sha256": "c219bcbe2d71939d17a838cce1695810d15eacd479992e3908666db94ae4bffe"
+    },
+    {
+      "path": "business-desk/index.html",
+      "bytes": 10446,
+      "sha256": "f9e0d2150e279c8603c7591754bf1276f9ef91d64649dfe9491da1322b306b12"
+    },
+    {
+      "path": "business-desk/recebido/index.html",
+      "bytes": 6336,
+      "sha256": "eaadb4de2fe770742349269cc22c003d25b8343e27b2cf7fa455d9a8a7f00b8e"
+    },
+    {
+      "path": "contato/index.html",
+      "bytes": 13336,
+      "sha256": "a23953ed21cfbfbb197e595238e02371191a8ac6f0c54a3965bc258af7b6a623"
+    },
+    {
+      "path": "conteudos/academia-lotada-organizar-treino/index.html",
+      "bytes": 9380,
+      "sha256": "09b8f68a28877316cfd7397cce6dbaa9c2f11e933031277ed5c84a4d21819b1f"
+    },
+    {
+      "path": "conteudos/acompanhar-progresso-treino/index.html",
+      "bytes": 9278,
+      "sha256": "ba97be316da53c16262aff42b2cb7b053a2c99c84faec5f4ce122b5c45a65ce0"
+    },
+    {
+      "path": "conteudos/alimento-cru-cozido-registro/index.html",
+      "bytes": 9454,
+      "sha256": "0787bff4c546e4eac0066800bfd5f68779042fd56db83f6ac68e21d8f0c57235"
+    },
+    {
+      "path": "conteudos/atacado-rio-como-avaliar-fornecedor/index.html",
+      "bytes": 10912,
+      "sha256": "eae923ede318116b3f945f6891574826cbafb2c5e6c242ed7805761b0d64ecd7"
+    },
+    {
+      "path": "conteudos/como-consultar-disponibilidade-marcas/index.html",
+      "bytes": 10602,
+      "sha256": "aa19734155fc6ba305585490b0ae112c1de9cc28bcaa906416bee8961852a5c7"
+    },
+    {
+      "path": "conteudos/como-ler-ficha-treino/index.html",
+      "bytes": 9606,
+      "sha256": "7fa511e59cec94e6576097e05fcb8394ac6e63aeec83f8b1fe60c96b8a31f379"
+    },
+    {
+      "path": "conteudos/como-organizar-semana-treino/index.html",
+      "bytes": 9940,
+      "sha256": "801104f179e577f55ef8de6675af6a192e6477ea1fc7082150972caecf3dce17"
+    },
+    {
+      "path": "conteudos/como-verificar-procedencia-canais-oficiais/index.html",
+      "bytes": 11160,
+      "sha256": "4405286066c0c84bae3f025111697d74ba8c5b68c90535bcfe975fa03da40adc"
+    },
+    {
+      "path": "conteudos/descanso-entre-series-hipertrofia/index.html",
+      "bytes": 11687,
+      "sha256": "04de2c1b4a522f5d467a4e50659cd5c66f00483609b74197eb8efac7af9a4d85"
+    },
+    {
+      "path": "conteudos/diario-de-treino-como-registrar/index.html",
+      "bytes": 13300,
+      "sha256": "7e948f5225a30aabfd6ef5e7dff7af5cfe4061bd740bf0f079261779efebac90"
+    },
+    {
+      "path": "conteudos/index.html",
+      "bytes": 12202,
+      "sha256": "6d7b7b6241ae0d25b63da3530237c733dedf679f312660cbcbbd4b35a287303f"
+    },
+    {
+      "path": "conteudos/peptideos-o-que-sao/index.html",
+      "bytes": 15222,
+      "sha256": "92cc3704d0f76ce2b7cd30a8f9e5d61783c815909f4ac20dd83b27c1256ed522"
+    },
+    {
+      "path": "conteudos/planejar-compras-refeicoes-semana/index.html",
+      "bytes": 12673,
+      "sha256": "6e9ab4c74b0998a4f69ae984612b0982b3bdcba81f964a9fd38de38001b8daf2"
+    },
+    {
+      "path": "conteudos/rir-o-que-significa/index.html",
+      "bytes": 9624,
+      "sha256": "ddbafd36fea18eee972ee4ea7a77ed6237a302b04844f50b6c191237c8f6e766"
+    },
+    {
+      "path": "dieta/analytics-v20.js",
+      "bytes": 198,
+      "sha256": "171f0731a4cdcec769ef2ea18ee1f98769568a8000ac509d9c86ca4542180940"
+    },
+    {
+      "path": "dieta/app-v21.js",
+      "bytes": 21182,
+      "sha256": "e502d70370351b53dfa5b235554e47735d719eaad1788095fb7a7d89c61ae71d"
+    },
+    {
+      "path": "dieta/config.js",
+      "bytes": 207,
+      "sha256": "ff3a976288794d5a64d5b932e56789d7cf437408b5c84f6aad9161e40dd17937"
+    },
+    {
+      "path": "dieta/food-data-manifest.json",
+      "bytes": 18640,
+      "sha256": "191b40bd4d19f3abec802eb8f37c01adecdddd0ea8194fadda003928090cfa65"
+    },
+    {
+      "path": "dieta/foods.js",
+      "bytes": 29621,
+      "sha256": "6a65f08b4a70ad9ad4a4dd05d7623f307620ebc59a14a9269baf5d6c6779603c"
+    },
+    {
+      "path": "dieta/index.html",
+      "bytes": 26267,
+      "sha256": "f7dad7444444e47ec814ef917ba4acb0eeb3e53382af056b2098cd0ef95059bd"
+    },
+    {
+      "path": "dieta/mealGenerator.js",
+      "bytes": 36237,
+      "sha256": "318ea08a9b0cefada82bd290e593a2436676f6456f1558c451b3bc179de0b195"
+    },
+    {
+      "path": "dieta/nutrition-v21.css",
+      "bytes": 8962,
+      "sha256": "af0325cf69d5aa6c7bef06dce56aba58c30eb8d841711428700ceafee7fb7992"
+    },
+    {
+      "path": "dieta/nutritionEngine.js",
+      "bytes": 6436,
+      "sha256": "a7453f8868187844944e0ab2b650a4ebb52d32f90cb2387914b3c66c969221dd"
+    },
+    {
+      "path": "dieta/safety.js",
+      "bytes": 2238,
+      "sha256": "573633038050f56ce5f1075eb9a9752bce4b4ee4730930935d9fe0b3c9dc80ea"
+    },
+    {
+      "path": "dieta/storage.js",
+      "bytes": 515,
+      "sha256": "b52353714f88682aa5233c8398fc2cc53753dfc9cc3ea09992eba2f4ef9945c4"
+    },
+    {
+      "path": "dieta/substitutionEngine.js",
+      "bytes": 2457,
+      "sha256": "9bf901b066d74975d0a1b06b7f57d3f60f5ef0aecb06f2f8ccc81b6fac92bb3a"
+    },
+    {
+      "path": "enciclopedia/assets/app.js",
+      "bytes": 6372,
+      "sha256": "60f460bd80da868b07faaf7558187a77183208610a901e8d0338008d5213b751"
+    },
+    {
+      "path": "enciclopedia/assets/catalog-data.js",
+      "bytes": 117758,
+      "sha256": "b4365ce297d035b225a0568184e0585507bd06fae3ac3c71a999d2ad8bd8e162"
+    },
+    {
+      "path": "enciclopedia/assets/catalogo.json",
+      "bytes": 132135,
+      "sha256": "6d498a3bdbcfdbdc14d12352fcec429d890136ad20aa8ae595a320c725500924"
+    },
+    {
+      "path": "enciclopedia/assets/experience-v23-8.css",
+      "bytes": 6465,
+      "sha256": "70bffb3b14de713ef83de7f2ab4899cfa0a22e82e561b563c45337a4cd7c93e0"
+    },
+    {
+      "path": "enciclopedia/assets/experience-v23-8.js",
+      "bytes": 2960,
+      "sha256": "bd106995a357c9c801224b23b133cc91b217467dad9215119ae396759489604a"
+    },
+    {
+      "path": "enciclopedia/assets/nav-v23-4.js",
+      "bytes": 794,
+      "sha256": "9875357967570ab18a529100387ab640a5fc7c28b51849b2cd50ddd7bf011acb"
+    },
+    {
+      "path": "enciclopedia/assets/style.css",
+      "bytes": 30034,
+      "sha256": "6bee0251ec47bf371f4da2ddda7be044acb5b0ef370d7d21a2d77d5345feb164"
+    },
+    {
+      "path": "enciclopedia/index.html",
+      "bytes": 33420,
+      "sha256": "87ee9bb2b27f4d49835300cf72112bdbbb5ccf7995b31a2483e005b1f500b262"
+    },
+    {
+      "path": "enciclopedia/metodologia/index.html",
+      "bytes": 9983,
+      "sha256": "d6f26823a24ad2be6dc3559b66ed142e3c2ca88e4ceeca18910eca686d2a9c85"
+    },
+    {
+      "path": "enciclopedia/sitemap-enciclopedia.xml",
+      "bytes": 5325,
+      "sha256": "1deea8323a7cc458f7cc039bddd25fcfbf7cf446c4b13e257b728db9978082eb"
+    },
+    {
+      "path": "enciclopedia/substancias/anastrozol/index.html",
+      "bytes": 13940,
+      "sha256": "12adb033fc9968acf7a387e3a82325d590c62a14ddf7f06cb2f3cfe942a3132c"
+    },
+    {
+      "path": "enciclopedia/substancias/boldenona/index.html",
+      "bytes": 15247,
+      "sha256": "233e9f49314293d077f25c3c7874b89b9cab9a7b300b42d45dc838499bd25e88"
+    },
+    {
+      "path": "enciclopedia/substancias/clenbuterol/index.html",
+      "bytes": 14539,
+      "sha256": "55e5572ef5a54c171680a38223be4b0f28ce3697c35dae55c8d733ca4c4bd4c2"
+    },
+    {
+      "path": "enciclopedia/substancias/clomifeno/index.html",
+      "bytes": 13553,
+      "sha256": "5b09567eac6c7f02c39c4eb2eae1e69dca235fccab2449fa96153cec62f2bbec"
+    },
+    {
+      "path": "enciclopedia/substancias/drostanolona/index.html",
+      "bytes": 15252,
+      "sha256": "2d64a51c8f885605a35ba36e749337011a69cf5beb50ee949034dd9c8f7cd502"
+    },
+    {
+      "path": "enciclopedia/substancias/estanozolol-injetavel/index.html",
+      "bytes": 15335,
+      "sha256": "53488c1b53ab90dc570994f261d605c7caaa7ab51bb95f08806d15487648ea41"
+    },
+    {
+      "path": "enciclopedia/substancias/estanozolol-oral/index.html",
+      "bytes": 15307,
+      "sha256": "c0367e75e6abfeeef66805fa5618296f73d796f8ced5e2ee540e5a1f0c08334f"
+    },
+    {
+      "path": "enciclopedia/substancias/fluoximesterona/index.html",
+      "bytes": 15223,
+      "sha256": "9a8cdd75e2b66540e426a7f397729fc75cc632f49c0e4e642d6e2b2407383f87"
+    },
+    {
+      "path": "enciclopedia/substancias/ghrp-6/index.html",
+      "bytes": 13547,
+      "sha256": "7899de33245bab65a3538a825ab0f4e97ac0bde79240b5999813f4c6d249aa78"
+    },
+    {
+      "path": "enciclopedia/substancias/hcg/index.html",
+      "bytes": 14328,
+      "sha256": "364a1a76d14f379dbcc287ca2a754ed348f43e247368854b5b2ed86692a43f4e"
+    },
+    {
+      "path": "enciclopedia/substancias/igf-1/index.html",
+      "bytes": 13532,
+      "sha256": "af7945c026a5454fc720428878d8f7f7491360e5cbf10db3df85c09a29eb3f13"
+    },
+    {
+      "path": "enciclopedia/substancias/insulina/index.html",
+      "bytes": 13985,
+      "sha256": "82ac2797df5590745d458ac579587b50740f8b734b89e2abdebfc51f9cce0ab9"
+    },
+    {
+      "path": "enciclopedia/substancias/ipamorelina/index.html",
+      "bytes": 13674,
+      "sha256": "7a7ea66cd396c03e7d952a04e7f5f43e242f413f9a355749d16309eca663b628"
+    },
+    {
+      "path": "enciclopedia/substancias/letrozol/index.html",
+      "bytes": 13319,
+      "sha256": "8dd13be75e4cdc60da9852ebfb3f82cf4ce7fcb79b3821f018df809c2444118b"
+    },
+    {
+      "path": "enciclopedia/substancias/levotiroxina-t4/index.html",
+      "bytes": 13608,
+      "sha256": "0899c863afe6e11953726f1b259956ea9d6eb14e2f0e54197ea8045a589473ee"
+    },
+    {
+      "path": "enciclopedia/substancias/liotironina-t3/index.html",
+      "bytes": 13955,
+      "sha256": "647bd4600bfe52bf3bb3b760370008c35fba32d7ff79553bae2e5291d812c71c"
+    },
+    {
+      "path": "enciclopedia/substancias/mesterolona/index.html",
+      "bytes": 15219,
+      "sha256": "5eb234f2e548119ded0e17eb75e0c4b759b20a8810f6369ad373fd8bfbc028f6"
+    },
+    {
+      "path": "enciclopedia/substancias/metandienona/index.html",
+      "bytes": 15180,
+      "sha256": "53b21d06a7adf73767b6c2d71eaf4879190037fd27a7a39bf1a5e3ca8b6c3504"
+    },
+    {
+      "path": "enciclopedia/substancias/metenolona-injetavel/index.html",
+      "bytes": 15284,
+      "sha256": "9705b87f3dd2a5b9981a531b140c6ecd1248534b89c649c751e2649955f77eec"
+    },
+    {
+      "path": "enciclopedia/substancias/nandrolona/index.html",
+      "bytes": 15287,
+      "sha256": "d23014f3ac8e8b8f7d287f5137bb3745ea97bef06d5d3bd0fa6989e5e434baeb"
+    },
+    {
+      "path": "enciclopedia/substancias/oxandrolona/index.html",
+      "bytes": 15591,
+      "sha256": "754cd00bfc5e3f71c7376574505609af94daa80cfda5ec8cb6f8c305ed6307d5"
+    },
+    {
+      "path": "enciclopedia/substancias/oximetolona/index.html",
+      "bytes": 15211,
+      "sha256": "b489d653190f54854d0c73d537f2d486927c08ea78de1298d0a0f1f6648ef005"
+    },
+    {
+      "path": "enciclopedia/substancias/retatrutida/index.html",
+      "bytes": 14287,
+      "sha256": "e54273f9b99fa083185f05c5dba9239060b888a4c2bfb54fcc72bc431234070e"
+    },
+    {
+      "path": "enciclopedia/substancias/somatropina-gh/index.html",
+      "bytes": 14233,
+      "sha256": "7a468718aaa61681201ca99d02cbb66c5f554a13207a24d77e89385f396b8ee3"
+    },
+    {
+      "path": "enciclopedia/substancias/tamoxifeno/index.html",
+      "bytes": 13791,
+      "sha256": "376e8399a63cad4c7474dcb4e920b3c7846a47a5acc0d26a3819a276b13beb36"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-cipionato/index.html",
+      "bytes": 15518,
+      "sha256": "d3cf72912a79f6a0c3b03093552aec579d4d24703416d82e4b492b47c48a7eed"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-enantato/index.html",
+      "bytes": 15497,
+      "sha256": "b6e54ac58acd0a3a2b5fdfe50b628540b2895128d2f199058c30e24e9ec45a22"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-mistura-esteres/index.html",
+      "bytes": 15421,
+      "sha256": "68a3dd41c9e69cfd02190045ea62e41d4134dde8fe69cc3eb6744c1ab2e010cf"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-propionato/index.html",
+      "bytes": 15510,
+      "sha256": "a5c3d9123c847e813ffcf00abeebb3940848a48f1500ca84fcfb850bb2468ac1"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-suspensao/index.html",
+      "bytes": 15512,
+      "sha256": "3352a71ded5eb6bee7031836bc5da0afcf316de5a3c2d25f4cb2bc097407babf"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-undecanoato-oral/index.html",
+      "bytes": 15591,
+      "sha256": "920fc859b6be351e9a5dbe079e9898d02979cf2897a7cd0e38888572a986baf0"
+    },
+    {
+      "path": "enciclopedia/substancias/tirzepatida/index.html",
+      "bytes": 13765,
+      "sha256": "f603e7cabe389d96c9a72a79680cd8a31d47fec2b13a023df841f8522d4c1c35"
+    },
+    {
+      "path": "enciclopedia/substancias/trembolona-acetato/index.html",
+      "bytes": 15322,
+      "sha256": "fb1b6bc722e86c9c20048bee50c98e83c686e121e93c3bcdd9d6f46fab90f52b"
+    },
+    {
+      "path": "enciclopedia/substancias/trembolona-enantato/index.html",
+      "bytes": 15342,
+      "sha256": "acc24c26ce8709d85f752c84fa8cf04ccd0f64ef0b4dca3b5738fc325c7d3cf9"
+    },
+    {
+      "path": "enciclopedia/substancias/turinabol/index.html",
+      "bytes": 15127,
+      "sha256": "4881ea17e97905f1a6b6e9c08e385a1260f022f6ba6aba771d65e8e91e9bd04a"
+    },
+    {
+      "path": "entregas/index.html",
+      "bytes": 13910,
+      "sha256": "d2455569d8423a8fa0ba6dc36ad0f7d87b152b846a8ab0868d63d6b66ac25c0d"
+    },
+    {
+      "path": "equipe/index.html",
+      "bytes": 5770,
+      "sha256": "4941597d1600407978a607e2ebaaf41792c7788ee41a3a4f4cd8fc94f080558e"
+    },
+    {
+      "path": "favicon.png",
+      "bytes": 56707,
+      "sha256": "ffd0028e74e540e472c486768c249e95e3e1c6949090a57d1443e15690bd9179"
+    },
+    {
+      "path": "ferramentas/index.html",
+      "bytes": 8507,
+      "sha256": "8370929f3b82582f1d91bf7aa6da5483034e16a884e2492a221694b27a10c817"
+    },
+    {
+      "path": "index.html",
+      "bytes": 37773,
+      "sha256": "2bb7d14a7c096ebe4e9a3a24b0bd6a4d0dce85d2be4bb36d993044727f6b9e72"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc10.json",
+      "bytes": 6329,
+      "sha256": "bbfad317847bfa7276bfd963d43da417cb3e35ebbbea07c49f840880b6dbcab9"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc11.json",
+      "bytes": 8298,
+      "sha256": "e515df42ce1ecd1178496b435e07f815d3801697399d0c201bd76683ec46ece8"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc12.json",
+      "bytes": 1255,
+      "sha256": "1d16206d6ebb92b8033115a88fc9f259e763d0b6768a2f5383c65718f67a0566"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc13.json",
+      "bytes": 1304,
+      "sha256": "cb2fc669b45ec4e35b755dadc050614342a11e07ddda9f1896de157715e8f1d5"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc14.json",
+      "bytes": 2241,
+      "sha256": "393abd8d22d54c5579067a564aba81e67e8a1f22553f3f5ca1b11719e0d21be7"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc2.json",
+      "bytes": 1387,
+      "sha256": "3db3c93547552156175e6aa3ae2bb3f773dac19b52d0123ee1262efedb4cd5cb"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc3.json",
+      "bytes": 2028,
+      "sha256": "55f604293bcec22ab7cfa1a58bc088bf51610c9db815594a68f4224322913e59"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc4.json",
+      "bytes": 1190,
+      "sha256": "673eca9fd1c74f89aa611399c375444397fe14e78faba599acbd5d4365544073"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc5.json",
+      "bytes": 2593,
+      "sha256": "ebb9690a7535689f6cafad7e4f332e9118888424af284d06fe09a0403fe526a2"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc6.1.json",
+      "bytes": 414,
+      "sha256": "13d2f3ef1b92705050ae3a63fadc614ff590b2f59ed6dc0179700ad20d294406"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc6.2.json",
+      "bytes": 523,
+      "sha256": "8d9f07ba50d5e25bf84afa0a9fa12cc10c5415237d43a56f066c0230f4e39224"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc6.3.json",
+      "bytes": 2164,
+      "sha256": "f80a5c44da216f4a11edc18a25ae89859190ae4d1d7d3506f0827dc4ed372982"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc6.json",
+      "bytes": 2074,
+      "sha256": "ab58aef4c60ea6122b49abfe4d309acf91390efb35ddefbc4993692dbf37d5e1"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc8.json",
+      "bytes": 8371,
+      "sha256": "f1dbc57abc4ddb27d757a9b9614a6bce4e1bf9b8d95a5d9abbdf487dfeea16ba"
+    },
+    {
+      "path": "manifest-digital-flagship-2026-rc9.json",
+      "bytes": 12340,
+      "sha256": "fd2a201aaf13725a4a970e2ba9fb4f5c576d03c14fd8aa97c3cfbcf936e1a30d"
+    },
+    {
+      "path": "manifest-digital-flagship-2026.json",
+      "bytes": 1029,
+      "sha256": "f1a2efce09087cb4a842877c9a338420b4f0c710df33c63bbfa81f9e5f7c4770"
+    },
+    {
+      "path": "manifest-flagship-v25.json",
+      "bytes": 1566,
+      "sha256": "010ed760165947de28a654c7d77ec5a77b0dd908d8a7cb146148876a15e419ec"
+    },
+    {
+      "path": "manifest-openseo-20261112.json",
+      "bytes": 624,
+      "sha256": "88e1e793fd65fe830bd27051ffc630932356606d7b638f0372b5c5bb2d86b2b8"
+    },
+    {
+      "path": "manifest-titan-v1.json",
+      "bytes": 3976,
+      "sha256": "8e645bed1d26b85e73b55f78be3631943c287a8384eb0e3470fea6dc897e42de"
+    },
+    {
+      "path": "manifest-v23-10.json",
+      "bytes": 18637,
+      "sha256": "ab746c5092e0d03f7ca661a51af3d77784a0d76d4cfd69f7ab41cc4957eb4fba"
+    },
+    {
+      "path": "manifest-v23-2.json",
+      "bytes": 10981,
+      "sha256": "83bf2679534d8d805fe27f48518b537e60ccd23cb84815512b91e63d8d829c9f"
+    },
+    {
+      "path": "manifest-v23-3.json",
+      "bytes": 16252,
+      "sha256": "ac161f9ff1b48377ab4a49ccdbb1e8eab30a274d31d83d87f33796d1224b4239"
+    },
+    {
+      "path": "manifest-v23-4.json",
+      "bytes": 16452,
+      "sha256": "d064e0a6fe164d1f736cc82d5aac8900bbc8af605e3b5b22a15fcc4324be0ed0"
+    },
+    {
+      "path": "manifest-v23-6.json",
+      "bytes": 16487,
+      "sha256": "d494a7d4f5ef5e0de961be2a41f6d84e88ebf3fcc06b405cec00025718736bbf"
+    },
+    {
+      "path": "manifest-v23-7.json",
+      "bytes": 16661,
+      "sha256": "47b60cdcab326baa984f54b11ab87db55a87fddf341a596a6d94328446edf90f"
+    },
+    {
+      "path": "manifest-v23-8.json",
+      "bytes": 17086,
+      "sha256": "be5040238236fc7f55887b25e4d414da6ade1bfcdb851c7c1d03f1ee7dde6262"
+    },
+    {
+      "path": "manifest-v23-9.json",
+      "bytes": 18156,
+      "sha256": "ca6764289e011ffe9afcaf1c72dd44586ade4fa8936725c66d8c2a7fd2580ba9"
+    },
+    {
+      "path": "marcas/alpha-laboratory/index.html",
+      "bytes": 6483,
+      "sha256": "173659df70ebc9421e4caeee658bfc83f793e9c70788cd7a965440e21a089dd3"
+    },
+    {
+      "path": "marcas/alpha-x-prime/index.html",
+      "bytes": 9773,
+      "sha256": "fce5e0d2a60b7a511d5e0d4749ed662bfd2f38f2bf29167f73d087cf3977e17a"
+    },
+    {
+      "path": "marcas/cooper-pharma/index.html",
+      "bytes": 12850,
+      "sha256": "c5b4f279fd6cc746f9539d5fc4793023351241ad12367c03bca46ba701595967"
+    },
+    {
+      "path": "marcas/eminence-labs/index.html",
+      "bytes": 12667,
+      "sha256": "984a2b879dec4085a84c1f6f95ffb16fd6c7be7f108059f203818da846843ab2"
+    },
+    {
+      "path": "marcas/eticos/index.html",
+      "bytes": 12618,
+      "sha256": "b1a2e99449cc65937833d6d2ab296793f8d92eff7ee679a92a52e908fc9a708c"
+    },
+    {
+      "path": "marcas/geniqs-pharma/index.html",
+      "bytes": 11755,
+      "sha256": "119635a57ad75d7094e616057c47f9e1956852ce1ad7bd1dacc8cb2155302b5e"
+    },
+    {
+      "path": "marcas/index.html",
+      "bytes": 22080,
+      "sha256": "381af0c8b6c267d7a5da31fa85266e746c4afec1ef63d69c65fa70c16a215a89"
+    },
+    {
+      "path": "marcas/indufar/index.html",
+      "bytes": 11510,
+      "sha256": "c5f82ebbc4602b1ec3998663a9d74f856fdedc225918d9f929cbed0445944377"
+    },
+    {
+      "path": "marcas/landerlan/index.html",
+      "bytes": 27257,
+      "sha256": "250bd094d59e745c6ae3bc67197894f6cbbc61f55ab48eef63f3d3217c0b4841"
+    },
+    {
+      "path": "marcas/landerlan-gold/index.html",
+      "bytes": 13519,
+      "sha256": "ae0888b86f4aa104c94ca0ed5ff639cd3bf5cfa4a76a601f1c9a15c1b110729c"
+    },
+    {
+      "path": "marcas/life-peptideos/index.html",
+      "bytes": 12691,
+      "sha256": "ec1b59db529e0b14472f21d65836c4d58bd632c7700065e3974e06d83bc1efca"
+    },
+    {
+      "path": "marcas/muscle-labs-india/index.html",
+      "bytes": 12368,
+      "sha256": "8e6b684672e97dedcb475537036e0e970cc72cf12cf73f0460750ffcf9bf25ca"
+    },
+    {
+      "path": "marcas/oxygen-kw-pharma/index.html",
+      "bytes": 12905,
+      "sha256": "daaa63c805035956592b7a8bb47197dac766e57b6f8b9334017bfd0f9166ef36"
+    },
+    {
+      "path": "marcas/quimfa/index.html",
+      "bytes": 13562,
+      "sha256": "99a8eefb887f28333f205fe4d3056996827bfecd2aababc7cae111b369d5385d"
+    },
+    {
+      "path": "marcas/synedica/index.html",
+      "bytes": 11475,
+      "sha256": "8c2ad7a0d227f6f18f55428c066749e3344660e077f8b86a611ca20d349ef676"
+    },
+    {
+      "path": "marcas/topharma/index.html",
+      "bytes": 13230,
+      "sha256": "603c0feab447fc7ea4c877d66d48c08e8b48a968ca7b6b100d80971c5eca4b27"
+    },
+    {
+      "path": "marcas/zphc/index.html",
+      "bytes": 10578,
+      "sha256": "b793efa39def540d40df1024ecbd750c13d423f180eadd468ba6740bf7f6a6d3"
+    },
+    {
+      "path": "netlify.toml",
+      "bytes": 174,
+      "sha256": "422c6595a2065fa03819a25d901c172207f286e8b02bb18c541ab16dd358843a"
+    },
+    {
+      "path": "perguntas-frequentes/index.html",
+      "bytes": 8396,
+      "sha256": "ec6c9baf231e65b70374ac6ef40bdca1e6ecaf9c4f026664192372858acc45b5"
+    },
+    {
+      "path": "politica-editorial/index.html",
+      "bytes": 7090,
+      "sha256": "3667b2cedccf56f16a4273d465dc62297cc1eefc6a3cdd91957d2598eec31b13"
+    },
+    {
+      "path": "privacidade.html",
+      "bytes": 8164,
+      "sha256": "48360df42a01d2baf9e9b571c930cc38f0ea1171e7a10e2f420b7cbb5fae5036"
+    },
+    {
+      "path": "radar-performance/index.html",
+      "bytes": 10316,
+      "sha256": "b6120784300644cb9a6f834536870327f85d3e71e75203fc3cf6a35491ee4cb1"
+    },
+    {
+      "path": "radar-performance/recebido/index.html",
+      "bytes": 5980,
+      "sha256": "c5649371872cee5784e49f23ded29841db0beeb1b3a8be81ddf55f8ac9403e6f"
+    },
+    {
+      "path": "recursos/diario-de-treino-lander-rio.csv",
+      "bytes": 319,
+      "sha256": "78bf5dae6b55b50444ecf1f339a0d6d8df7d906847079705da70d6aeb016ae59"
+    },
+    {
+      "path": "recursos/lista-de-compras-semanal-lander-rio.csv",
+      "bytes": 253,
+      "sha256": "48c02bd78a499767c12ca8c389bfb24afbd33a1f0f18b9fe1831774500492896"
+    },
+    {
+      "path": "release.json",
+      "bytes": 8016,
+      "sha256": "674063780d22df15a3c5ed14efc337753b5f6619da1c66962d67ce62fdc4f86c"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 143,
+      "sha256": "36133ce6a3cc5db349f460a2c31e55fb93cd3903d6b9c10cf12996639ed5ea79"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 3552,
+      "sha256": "a00d984ffb1fdfbdcf7839c3402d025226e8a5301109cdb7efea5aff2b0eab29"
+    },
+    {
+      "path": "sobre/index.html",
+      "bytes": 7272,
+      "sha256": "db526ce86d225628168867eb9a57f48247612ccbafef338c9e1eb516e7a4d18e"
+    },
+    {
+      "path": "termos.html",
+      "bytes": 6138,
+      "sha256": "5a394b17d1445fbbe67a7825f43b3b502128a9deaa50a1035e02e04a8144b533"
+    },
+    {
+      "path": "treino/index.html",
+      "bytes": 31113,
+      "sha256": "2187d5cffb7cba11025144a07b9b8fc0d47a2d4421a0c128155c901c9549965b"
+    },
+    {
+      "path": "varejo/index.html",
+      "bytes": 13489,
+      "sha256": "c39a8492ea2f090a3f4f35f86ab22faee0043ae574ee9f04dae40c6d31227f89"
+    }
+  ]
+}

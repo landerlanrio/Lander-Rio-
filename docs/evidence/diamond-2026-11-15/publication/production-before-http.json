@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://landerrio.com.br/release.json",
+    "status": 200,
+    "release": "digital-flagship-2026-rc10",
+    "sha256": "0d6ec038cd4764ed66ef62d43c3f947952419318aa4a75ea36c280d7635cd118"
+  },
+  {
+    "url": "https://landerrio.com.br/_headers",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://landerrio.com.br/assets/measurement-v23-2.js",
+    "status": 200,
+    "sha256": "0da7e6e9fa773c2dcccbfbe93236cacc435f3e6a48ed0805de2b96a757e305f8",
+    "matches_candidate": false
+  }
+]

@@ -50,7 +50,7 @@ As URLs de Testoland e Testenat têm volumes diferentes dos títulos. A redaçã
 - Rótulos dos seis arquivos de origem conferidos visualmente. Galeria revisada em 320, 390, 768 px e desktop; ampliação de Durateston também acionada manualmente.
 - Comparação dos pixels visíveis e transparência das seis ampliações: **6/6 aprovadas**. Regeneração mantém bytes de página, release e dados de marca.
 - Axe: **zero violações detectadas** nas quatro análises. Permanecem **quatro resultados incompletos de contraste, totalizando 116 nós**. A galeria usa gradiente; o cálculo independente da cor declarada dos textos contra os dois extremos confirma razão superior a 4,5:1 ([cálculo](evidence/diamond-2026-11-15/editorial-section-v3/gallery-contrast.json)). Os resultados incompletos do restante da página continuam sem certificação integral.
-- Nenhum formulário real enviado, deploy ou publicação executado. O harness e as evidências ficam fora de `site/`.
+- Nenhum formulário real enviado. A validação local antecedeu a publicação autorizada registrada abaixo. O harness e as evidências ficam fora de `site/`.
 
 [Gate técnico](evidence/diamond-2026-11-15/editorial-section-v3/validation/validation.json) · [Navegador](evidence/diamond-2026-11-15/editorial-section-v3/browser-results.json) · [Idempotência](evidence/diamond-2026-11-15/editorial-section-v3/source-preservation.json)
 
@@ -66,9 +66,11 @@ As URLs de Testoland e Testenat têm volumes diferentes dos títulos. A redaçã
 
 ## Estado de entrega e limites
 
-Revisão no mesmo PR14 e na branch `editorial/diamond-gold-2026-11-15`, sobre `seo/organic-growth-2026-11-14` / PR13. A primeira revisão está preservada no commit `fd18fad4e5829c0b79a247882ee2994c1d6ca9e1`. A produção observada é RC10, deploy `6af804d36034a689af84dddf`; esta candidata RC14 não foi publicada. Não substituir a produção diretamente pela antiga `main`.
+Revisão no mesmo PR14 e na branch `editorial/diamond-gold-2026-11-15`, sobre `seo/organic-growth-2026-11-14` / PR13. A primeira revisão está preservada no commit `fd18fad4e5829c0b79a247882ee2994c1d6ca9e1`. Após autorização explícita do usuário, os 307 arquivos de `site/` do commit `d77ce080e34178f28c731f4346849f59198dbe2c` foram publicados por um único envio no projeto existente da Netlify. O deploy `6af9342e9b6477802a23ab4a` foi confirmado como `ready` em produção em **15/11/2026 às 01:25:30 de Brasília** (04:25:30 UTC), substituindo a RC10 `6af804d36034a689af84dddf`.
 
-Pendências reais: fotografias de unidades físicas não foram fornecidas; o material disponível são os mockups oficiais. Continuam sem comprovação documental o veículo dos outros cinco produtos e a regularidade de comercialização no Brasil. Não foram realizados revisão clínica/regulatória externa, teste em Safari/iPhone físico ou medição de ganhos orgânicos. A publicação depende de autorização específica.
+[Seção publicada](https://landerrio.com.br/marcas/landerlan/#diamond-gold) · [Registro de publicação](PUBLICACAO_RC14_2026-11-15.md). A publicação manual não altera o estado de merge: PR14 continua aberto, sobre PR13. Não substituir a produção diretamente pela antiga `main`.
+
+Pendências reais: fotografias de unidades físicas não foram fornecidas; o material disponível são os mockups oficiais. Continuam sem comprovação documental o veículo dos outros cinco produtos e a regularidade de comercialização no Brasil. Não foram realizados revisão clínica/regulatória externa, teste em Safari/iPhone físico ou medição de ganhos orgânicos. A publicação foi autorizada e concluída; as limitações editoriais e de validação permanecem explicitadas.
 
 ## Reprodução
 

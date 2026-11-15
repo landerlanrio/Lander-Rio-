@@ -111,7 +111,7 @@ Volumes de marcas vêm do relatório autenticado de 13/11/2026, OpenSEO/DataForS
 
 ## D. Implementações
 
-A branch isolada é seo/organic-growth-2026-11-14. O repositório remoto tinha a versão completa até RC5; o main contém uma base antiga. A candidata RC12 preservada foi comparada ao tree remoto: todos os 360 arquivos dessa base estavam presentes, 261 idênticos e 99 modificados, além das adições posteriores. A importação mantém os bytes da RC12 e separa a evolução RC13 em outro commit. O Intent Engine do PR 12 permanece separado; não criamos um motor ou dashboard de produção duplicado.
+A branch isolada é seo/organic-growth-2026-11-14. O repositório remoto tinha a versão completa até RC5; o main contém uma base antiga. A candidata RC12 preservada foi comparada ao tree remoto: todos os 360 arquivos dessa base estavam presentes, 261 idênticos e 99 modificados, além das adições posteriores. A importação mantém os bytes do código RC12 e separa a evolução RC13 em outro commit. Cem arquivos locais históricos de evidências e pesquisa não foram duplicados no GitHub; permanecem nas entregas anteriores. Nenhum arquivo já existente na base remota foi removido. O Intent Engine do PR 12 permanece separado; não criamos um motor ou dashboard de produção duplicado.
 
 | Arquivo / página | Mudança concreta |
 |---|---|
@@ -129,7 +129,7 @@ A branch isolada é seo/organic-growth-2026-11-14. O repositório remoto tinha a
 
 Não adicionamos meta keywords, repetição forçada, novas URLs de aquisição ou alegações de revisão clínica. Imagens anteriores e alt texts foram preservados: não houve defeito de alt identificado nas páginas alteradas. URLs, formulários, regras de consentimento e exclusões editoriais existentes foram mantidos.
 
-Commit e PR: em preparação durante esta revisão; serão registrados após o aceite técnico. Os commits usam skip ci / skip netlify para evitar builds. Não houve solicitação de indexação, envio externo de mensagens, deploy ou alteração de DNS.
+[PR 13 aberto como rascunho](https://github.com/landerlanrio/Lander-Rio-/pull/13), sem merge e com estado de integração clean na conferência. Consolidação RC12: bf87e297db88e81849464995d46e592aaf592669. Implementação RC13: 73d2dc740e1f8f7e4b3c9c1b0bfb97d8fc5bcd3c. Os 292 arquivos de site/ no GitHub foram comparados por hash Git com os bytes validados, sem diferenças. Não houve execução de GitHub Actions nesta branch na conferência; a Netlify continua no deploy RC10. Uma atualização final apenas de documentação registra estes identificadores no PR. Os commits usam skip ci / skip netlify para evitar builds. Não houve solicitação de indexação, envio externo de mensagens, deploy ou alteração de DNS.
 
 ## E. Evidências e testes
 
@@ -175,4 +175,4 @@ Funil: impressão → clique → sessão → uso da ferramenta → resultado →
 5. Pesquisa: volumes/KD dos termos não comerciais, ranking atual controlado por local e inventário de backlinks indisponíveis. Não consumimos créditos adicionais para preencher lacunas.
 6. Conteúdo clínico: revisão independente especializada não comprovada. Os novos recursos organizam rotina; expansão médica depende de fontes e revisão reais.
 
-Nenhuma conversa, parceria, backlink ou crescimento foi declarado como realizado sem evidência. Próxima ação concreta: revisar a candidata no PR, aprovar uma única publicação e acompanhar a linha de base já registrada.
+Nenhuma compra, chamada paga de pesquisa ou operação de deploy foi executada. O consumo normal de tráfego das leituras HTTP não foi conciliado com os créditos da hospedagem. Nenhuma conversa, parceria, backlink ou crescimento foi declarado como realizado sem evidência. Próxima ação concreta: revisar a candidata no PR, aprovar uma única publicação e acompanhar a linha de base já registrada.

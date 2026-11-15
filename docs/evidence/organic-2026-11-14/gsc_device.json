@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "siteUrl": "sc-domain:landerrio.com.br",
+  "startDate": "2026-10-15",
+  "endDate": "2026-11-11",
+  "dimensions": [
+    "device"
+  ],
+  "rowCount": 3,
+  "rows": [
+    {
+      "keys": [
+        "MOBILE"
+      ],
+      "clicks": 48,
+      "impressions": 943,
+      "ctr": 0.0509,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "DESKTOP"
+      ],
+      "clicks": 19,
+      "impressions": 264,
+      "ctr": 0.072,
+      "position": 11.5
+    },
+    {
+      "keys": [
+        "TABLET"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7
+    }
+  ],
+  "hasMore": false,
+  "meta": {
+    "projectId": "cc40f4de-9c11-47c9-be5b-dcb4387db222",
+    "url": "https://app.openseo.so/p/cc40f4de-9c11-47c9-be5b-dcb4387db222/search-performance"
+  },
+  "resultId": "0c08de78-a31a-40cc-bfad-bff89d1c02a9"
+}

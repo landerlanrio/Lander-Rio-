@@ -41,9 +41,13 @@ async function run(){
   click('#site-menu summary');check('Menu móvel abre',$('#site-menu').open);doc.dispatchEvent(new win.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));check('Escape fecha menu e devolve foco',!$('#site-menu').open&&doc.activeElement===$('#site-menu summary'));
   click('[data-rox-launcher]');for(const [q,path] of [['Dieta','/dieta/'],['Treino','/treino/'],['sono','/conteudos/']]){fill('[data-rox-input]',q);$('[data-rox-form]').requestSubmit();await pause(30);const links=[...doc.querySelectorAll('.lr-rox-actions a')];check('ROX link '+q,links.at(-1)?.getAttribute('href')===path)}
   fill('[data-rox-input]','dose de testosterona 15mg');$('[data-rox-form]').requestSubmit();await pause(50);check('ROX: pergunta clínica sem venda',$('[data-rox-handoff]').hidden);await axe('/ ROX aberto');
+  for(const [path,name] of [['/conteudos/diario-de-treino-como-registrar/','diario-de-treino'],['/conteudos/planejar-compras-refeicoes-semana/','lista-de-compras-semanal']]){
+   await load(path,390,'granted');const a=$('a[download]');check('Download público '+name,Boolean(a)&&!a.closest('[hidden]'));const r=await fetch(a.href),content=await r.text();check('CSV válido '+name,r.ok&&content.includes(';')&&content.split('\n').length>=16&&!content.includes('<html'));
+   a.addEventListener('click',e=>e.preventDefault());a.click();const e=win.LanderMeasurement.getSnapshot().at(-1);check('Clique de recurso identificado '+name,e.event==='cta_interaction'&&e.action==='download-'+name+'-csv');
+  }
   await training();await nutrition();
  }catch(e){check('Execução completa',false,String(e.stack||e))}
- const report={release:'digital-flagship-2026-rc12',started,finished:new Date().toISOString(),engine:navigator.userAgent,scope:'Local Chromium, CSS viewport frames; simulated API responses; no production writes',status:results.every(r=>r.passed)?'PASS':'FAIL',results,measurements,axe:axeResults};
+ const report={release:'digital-flagship-2026-rc13',started,finished:new Date().toISOString(),engine:navigator.userAgent,scope:'Local Chromium, CSS viewport frames; simulated API responses; no production writes',status:results.every(r=>r.passed)?'PASS':'FAIL',results,measurements,axe:axeResults};
  await fetch('/__qa/result',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(report)});document.querySelector('#status').textContent=`${report.status} — ${results.filter(r=>r.passed).length}/${results.length} verificações. Relatório salvo.`;document.querySelector('#run').disabled=false;
 }
 document.querySelector('#run').addEventListener('click',run);

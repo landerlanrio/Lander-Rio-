@@ -1,0 +1,31 @@
+{
+  "reviewer": "Independent SEO evidence review",
+  "findings": [
+    {
+      "issue": "Release manifest, source branch and previous candidate stale",
+      "resolution": "Corrected to RC13, isolated branch and RC12 predecessor; guarded by Node test."
+    },
+    {
+      "issue": "Average position incorrectly described as first-page placement",
+      "resolution": "Reworded to historical average position8.7."
+    },
+    {
+      "issue": "Grouped keyword volumes could imply aggregate demand",
+      "resolution": "Exact measured keyword stated next to each affected estimate."
+    },
+    {
+      "issue": "New breadcrumbs and hub resource card alignment",
+      "resolution": "Placed within existing content wrapper, visually checked, browser suite rerun139/139."
+    }
+  ],
+  "independent_recalculation": "GSC/GA4 metrics and10-URL index sample confirmed",
+  "final_technical_validation": "PASS",
+  "final_browser_validation": "PASS",
+  "browser_finished": "2026-11-15T02:30:51.841Z",
+  "limits": [
+    "No causal growth result",
+    "No Google rich-results certification",
+    "No field CWV approval",
+    "No native iPhone/Safari test"
+  ]
+}

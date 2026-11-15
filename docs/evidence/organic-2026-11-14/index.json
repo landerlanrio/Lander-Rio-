@@ -1,0 +1,282 @@
+{
+  "ok": true,
+  "siteUrl": "sc-domain:landerrio.com.br",
+  "results": [
+    {
+      "url": "https://landerrio.com.br/treino/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=BAA5fOvDX1Y4d6JRU3kqcg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "O Google não reconhece o URL",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/dieta/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=j2bFO-sVw1Mv_g2_u4VznQ&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "Detectada, mas não indexada no momento",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+          "sitemap": [
+            "https://landerrio.com.br/sitemap.xml"
+          ],
+          "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/ferramentas/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=EHKBLs3t7-s2xV1IkX-F5w&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Enviada e indexada",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-11-10T10:00:56Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://landerrio.com.br/ferramentas/",
+          "userCanonical": "https://landerrio.com.br/ferramentas/",
+          "referringUrls": [
+            "https://landerrio.com.br/conteudos/diario-de-treino-como-registrar/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/conteudos/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=YkKk3iXYfGDLg3TUOC7M1A&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Enviada e indexada",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-11-10T14:38:39Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://landerrio.com.br/conteudos/",
+          "userCanonical": "https://landerrio.com.br/conteudos/",
+          "sitemap": [
+            "https://landerrio.com.br/sitemap.xml"
+          ],
+          "referringUrls": [
+            "https://landerrio.com.br/conteudos/academia-lotada-organizar-treino/"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/conteudos/diario-de-treino-como-registrar/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=hSZAGIU-y99nOK8in4g_Xg&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Enviada e indexada",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-11-10T09:26:26Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://landerrio.com.br/conteudos/diario-de-treino-como-registrar/",
+          "userCanonical": "https://landerrio.com.br/conteudos/diario-de-treino-como-registrar/",
+          "referringUrls": [
+            "https://landerrio.com.br/sitemap.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/conteudos/planejar-compras-refeicoes-semana/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=tMwN1ZPY8PHKbwSRLTeBnA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "NEUTRAL",
+          "coverageState": "Detectada, mas não indexada no momento",
+          "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+          "indexingState": "INDEXING_STATE_UNSPECIFIED",
+          "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+          "sitemap": [
+            "https://landerrio.com.br/sitemap.xml"
+          ],
+          "referringUrls": [
+            "https://landerrio.com.br/"
+          ],
+          "crawledAs": "CRAWLING_USER_AGENT_UNSPECIFIED"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/life-peptideos/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=BTJsNy1WWV8HxBaF-3M_KA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Enviada e indexada",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-10-24T06:40:48Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://landerrio.com.br/marcas/life-peptideos/",
+          "userCanonical": "https://landerrio.com.br/marcas/life-peptideos/",
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Indicadores de localização atual",
+              "items": [
+                {
+                  "name": "Item sem nome"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/cooper-pharma/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=FAIPQglGcwciLas4gRoBhA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Enviada e indexada",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-10-27T08:55:49Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://landerrio.com.br/marcas/cooper-pharma/",
+          "userCanonical": "https://landerrio.com.br/marcas/cooper-pharma/",
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Indicadores de localização atual",
+              "items": [
+                {
+                  "name": "Item sem nome"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/muscle-labs-india/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=e1AUS_LyNaRSJeu2_2Mx9w&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Enviada e indexada",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-10-11T20:19:56Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://landerrio.com.br/marcas/muscle-labs-india/",
+          "userCanonical": "https://landerrio.com.br/marcas/muscle-labs-india/",
+          "sitemap": [
+            "https://landerrio.com.br/sitemap.xml"
+          ],
+          "referringUrls": [
+            "https://landerrio.com.br/sitemap.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Indicadores de localização atual",
+              "items": [
+                {
+                  "name": "Item sem nome"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/zphc/",
+      "result": {
+        "inspectionResultLink": "https://search.google.com/search-console/inspect?resource_id=sc-domain:landerrio.com.br&id=hcu8YPOqAe1O3hcrPruDYA&utm_medium=link&utm_source=api",
+        "indexStatusResult": {
+          "verdict": "PASS",
+          "coverageState": "Enviada e indexada",
+          "robotsTxtState": "ALLOWED",
+          "indexingState": "INDEXING_ALLOWED",
+          "lastCrawlTime": "2026-10-26T11:24:25Z",
+          "pageFetchState": "SUCCESSFUL",
+          "googleCanonical": "https://landerrio.com.br/marcas/zphc/",
+          "userCanonical": "https://landerrio.com.br/marcas/zphc/",
+          "sitemap": [
+            "https://landerrio.com.br/sitemap.xml"
+          ],
+          "crawledAs": "MOBILE"
+        },
+        "mobileUsabilityResult": {
+          "verdict": "VERDICT_UNSPECIFIED"
+        },
+        "richResultsResult": {
+          "verdict": "PASS",
+          "detectedItems": [
+            {
+              "richResultType": "Indicadores de localização atual",
+              "items": [
+                {
+                  "name": "Item sem nome"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "meta": {
+    "projectId": "cc40f4de-9c11-47c9-be5b-dcb4387db222",
+    "url": "https://app.openseo.so/p/cc40f4de-9c11-47c9-be5b-dcb4387db222/settings/integrations"
+  }
+}

@@ -1,0 +1,3608 @@
+{
+  "sha": "5ea9766162787229748741af202b9459a2c89b0e",
+  "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/5ea9766162787229748741af202b9459a2c89b0e",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52fe4879482c14627732d983eaba3be47962e545",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/52fe4879482c14627732d983eaba3be47962e545"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c7003ff24d733a55ef6dbb0a899784ca224d9f3",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/5c7003ff24d733a55ef6dbb0a899784ca224d9f3"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ac1edade1c7d21712c986e0267c5b45d95ee34c",
+      "size": 1530,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1ac1edade1c7d21712c986e0267c5b45d95ee34c"
+    },
+    {
+      "path": ".github/workflows/import-backup.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "506e936ffb3050d08df46e693560a8747a8e4002",
+      "size": 571,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/506e936ffb3050d08df46e693560a8747a8e4002"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "514767d1cedb14228cba0c8fde8b3709f49d846d",
+      "size": 180,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/514767d1cedb14228cba0c8fde8b3709f49d846d"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84be0b9ded041a8e3b2686ae356c1180c4770040",
+      "size": 4612,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/84be0b9ded041a8e3b2686ae356c1180c4770040"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2a723846f703b9c0087fd7c39c0a955aa789b0f4",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/2a723846f703b9c0087fd7c39c0a955aa789b0f4"
+    },
+    {
+      "path": "docs/DIGITAL_FLAGSHIP_2026_RC1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ed4366cee5d913646fc5bd697b66b83878835e2",
+      "size": 7600,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4ed4366cee5d913646fc5bd697b66b83878835e2"
+    },
+    {
+      "path": "docs/DIGITAL_FLAGSHIP_2026_RC2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c7ca9a88b4bc2e328aeffa9ffbbe96a969435fd",
+      "size": 2210,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/2c7ca9a88b4bc2e328aeffa9ffbbe96a969435fd"
+    },
+    {
+      "path": "docs/DIGITAL_FLAGSHIP_2026_RC3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4fe73c7b5591a21fd5f97726e7cd3b36add7acb",
+      "size": 3018,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f4fe73c7b5591a21fd5f97726e7cd3b36add7acb"
+    },
+    {
+      "path": "docs/DIGITAL_FLAGSHIP_2026_RC4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5445fa809dc819a770c013795611f4ec9c339f1",
+      "size": 9276,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a5445fa809dc819a770c013795611f4ec9c339f1"
+    },
+    {
+      "path": "docs/DIGITAL_FLAGSHIP_2026_RC5.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c687269fdf9c6e7e730d35c9be9f38c312dfc76",
+      "size": 4654,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/2c687269fdf9c6e7e730d35c9be9f38c312dfc76"
+    },
+    {
+      "path": "docs/DIGITAL_FLAGSHIP_BROWSER_QA.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7501f2e79a32ae20b9dd723fe636a1e8fd1b04f4",
+      "size": 9614,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7501f2e79a32ae20b9dd723fe636a1e8fd1b04f4"
+    },
+    {
+      "path": "docs/FLAGSHIP_V25_1_COMMERCIAL_FOCUS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b47b74613fd8e0210b5f887e96057bfdf78c1d79",
+      "size": 2872,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b47b74613fd8e0210b5f887e96057bfdf78c1d79"
+    },
+    {
+      "path": "docs/FLAGSHIP_V25_RELEASE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "795da07cc50980684baa173d21df8aff8cfd7b20",
+      "size": 4919,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/795da07cc50980684baa173d21df8aff8cfd7b20"
+    },
+    {
+      "path": "docs/FLAGSHIP_V26_REFERENCE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4da4c41637dbe291740f8d2292a3de5019448f93",
+      "size": 4206,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4da4c41637dbe291740f8d2292a3de5019448f93"
+    },
+    {
+      "path": "docs/HERO_RC2_ASSETS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5944c58a7a9a9a8eff3f4fee43fff51f2e2cf463",
+      "size": 696,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5944c58a7a9a9a8eff3f4fee43fff51f2e2cf463"
+    },
+    {
+      "path": "docs/HERO_RC2_BROWSER_QA.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42dddc0f2da7fe70fd87e14477912141c2c071b8",
+      "size": 7935,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/42dddc0f2da7fe70fd87e14477912141c2c071b8"
+    },
+    {
+      "path": "docs/LOGOS_RC3_ASSETS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a96ce1a29e4cf8a39afd38e5a018794ef1485dc1",
+      "size": 6705,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a96ce1a29e4cf8a39afd38e5a018794ef1485dc1"
+    },
+    {
+      "path": "docs/LOGOS_RC3_BROWSER_QA.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b9621317889c8b51133db4356d6d2e5fe4942ec",
+      "size": 7935,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7b9621317889c8b51133db4356d6d2e5fe4942ec"
+    },
+    {
+      "path": "docs/LOGOS_RC3_INTERACTION_QA.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b21fd63beb46ae26dcf73757b4d2fb302cbde79",
+      "size": 240,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/9b21fd63beb46ae26dcf73757b4d2fb302cbde79"
+    },
+    {
+      "path": "docs/LOGOS_RC5_ASSETS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ae0cb7da21bd242bdf77f7fbcb472af5931f6e5",
+      "size": 10373,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7ae0cb7da21bd242bdf77f7fbcb472af5931f6e5"
+    },
+    {
+      "path": "docs/MIGRACAO_SEGURA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f463fa5f579e586b109068ffd477088f8f7984c",
+      "size": 3457,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0f463fa5f579e586b109068ffd477088f8f7984c"
+    },
+    {
+      "path": "docs/QA_V25_1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a0425f74c6b2d42e4ae8364861664fc05c1b24c",
+      "size": 1167,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3a0425f74c6b2d42e4ae8364861664fc05c1b24c"
+    },
+    {
+      "path": "docs/QA_V25_RESULTS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0f6c528bfe5ba482469740aa11289413ed7bf23",
+      "size": 1636,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c0f6c528bfe5ba482469740aa11289413ed7bf23"
+    },
+    {
+      "path": "docs/QA_V26.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef17a253325daabce7b41c710c63d8a5d5265c2c",
+      "size": 4194,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ef17a253325daabce7b41c710c63d8a5d5265c2c"
+    },
+    {
+      "path": "docs/QUALITY_RC4_ASSETS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0742bec9f3c61a1e0e40a355958123c3cf35579",
+      "size": 636,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b0742bec9f3c61a1e0e40a355958123c3cf35579"
+    },
+    {
+      "path": "docs/QUALITY_RC4_BUDGETS.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a32e74cd9864db5994f895e8c7a95e5a86236e0d",
+      "size": 1164,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a32e74cd9864db5994f895e8c7a95e5a86236e0d"
+    },
+    {
+      "path": "docs/QUALITY_RC4_CRITERIA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "454f41f241e0479dc1ba532be4789e838ca96c9f",
+      "size": 2424,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/454f41f241e0479dc1ba532be4789e838ca96c9f"
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "467773398bdc2c3f40565530eb7009c08fef3264",
+      "size": 919,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/467773398bdc2c3f40565530eb7009c08fef3264"
+    },
+    {
+      "path": "docs/TITAN_RC2_REVISAO_COMERCIAL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f09258b47c827653372c391aabbac680231d1dcc",
+      "size": 986,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f09258b47c827653372c391aabbac680231d1dcc"
+    },
+    {
+      "path": "docs/TITAN_RELEASE_RC1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb01bad45e198f14823ed20cfe1dff11c48bd8b4",
+      "size": 17056,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/eb01bad45e198f14823ed20cfe1dff11c48bd8b4"
+    },
+    {
+      "path": "docs/ci-workflow-template.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7687037df728fbdf50aeeea91205e16f67146c2c",
+      "size": 811,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7687037df728fbdf50aeeea91205e16f67146c2c"
+    },
+    {
+      "path": "docs/evidence",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f34b739e5152612493c483ba7c7148b0ca03b7af",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/f34b739e5152612493c483ba7c7148b0ca03b7af"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a32c7ea681e224762082d8ea941645a8d3594cfa",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/a32c7ea681e224762082d8ea941645a8d3594cfa"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc1/http-smoke.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d206545c64ff7062d25ca0e37ced16c99bc7063f",
+      "size": 1667,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d206545c64ff7062d25ca0e37ced16c99bc7063f"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc1/integrity.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e20ff135e29dc8c1c1151d925ec10c1e92f122c8",
+      "size": 282,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e20ff135e29dc8c1c1151d925ec10c1e92f122c8"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc1/metadata-and-binary.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c2cbbb7c3537e32d75a736ad0c8597d66b90655",
+      "size": 516,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1c2cbbb7c3537e32d75a736ad0c8597d66b90655"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc1/node-tests.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92b614251d7760dcba4c093d65feed3b4cad6642",
+      "size": 10392,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/92b614251d7760dcba4c093d65feed3b4cad6642"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc1/structure.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26310e340ac6f4f38b103274399ed1904c725520",
+      "size": 1179,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/26310e340ac6f4f38b103274399ed1904c725520"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc1/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1817d9f161bdb505a2fa998cad7e2549eefe2473",
+      "size": 8730,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1817d9f161bdb505a2fa998cad7e2549eefe2473"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abb8bed45bad88e1ee17eba666c885a205754f2f",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/abb8bed45bad88e1ee17eba666c885a205754f2f"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc2/http-smoke.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fd67bcea9517b07f0a605251586e2b67bea3b06",
+      "size": 1667,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/2fd67bcea9517b07f0a605251586e2b67bea3b06"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc2/integrity.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3053ad44d42739338a006ace1ad153dc5b76899f",
+      "size": 282,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3053ad44d42739338a006ace1ad153dc5b76899f"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc2/metadata-and-binary.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82481ee0cb61759e05f8e1e8d78a721048788999",
+      "size": 516,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/82481ee0cb61759e05f8e1e8d78a721048788999"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc2/node-tests.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ead6bfdb4e6e07865f78549641932223541cba87",
+      "size": 10374,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ead6bfdb4e6e07865f78549641932223541cba87"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc2/structure.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca3c0ce4b2c0fcbcd93073816aea737587c4c0c1",
+      "size": 1318,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ca3c0ce4b2c0fcbcd93073816aea737587c4c0c1"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc2/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aee6ac5736b22023d1e1f67d1e95d6a71615212",
+      "size": 8730,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6aee6ac5736b22023d1e1f67d1e95d6a71615212"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "80ea0c495fbadd7730e5725cd1d3610bd7cb5ac1",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/80ea0c495fbadd7730e5725cd1d3610bd7cb5ac1"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc3/http-smoke.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d607112646cbd882b85697da5d5efa811ffa75e",
+      "size": 1667,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0d607112646cbd882b85697da5d5efa811ffa75e"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc3/integrity.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b49c8e76bd419121fdc9683e7e4f5dcfa84224e7",
+      "size": 282,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b49c8e76bd419121fdc9683e7e4f5dcfa84224e7"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc3/metadata-and-binary.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4420023c45d52100da353c70c4ba848e7bcc7c5",
+      "size": 516,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f4420023c45d52100da353c70c4ba848e7bcc7c5"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc3/node-tests.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45612c630fdf5a3f542aaf0abfd58509cb596237",
+      "size": 10389,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/45612c630fdf5a3f542aaf0abfd58509cb596237"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc3/structure.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41a6cc378f6c6fa4d137f68a35355d3ff0943108",
+      "size": 1318,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/41a6cc378f6c6fa4d137f68a35355d3ff0943108"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc3/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1bf65994b5f7ab860b6d37be3bf1b8908bd19e0",
+      "size": 8730,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c1bf65994b5f7ab860b6d37be3bf1b8908bd19e0"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "41423f0a5f44d30133d8006759d3fe8ac3c31a49",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/41423f0a5f44d30133d8006759d3fe8ac3c31a49"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/axe-all-pages-before-fix.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca52f5c790cacb9917a62cfdf92096a26011a8ea",
+      "size": 126178,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ca52f5c790cacb9917a62cfdf92096a26011a8ea"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/axe-before.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28c716dc39bfa6f3606ef478c98cf7675bd8bf87",
+      "size": 10838,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/28c716dc39bfa6f3606ef478c98cf7675bd8bf87"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/axe-final.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16dbf74d39613015820594739b78028d89e9f675",
+      "size": 57458,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/16dbf74d39613015820594739b78028d89e9f675"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/contact-context.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f754d50dc6ec898c85d8ad10ffe972d4bf17fa2",
+      "size": 457,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7f754d50dc6ec898c85d8ad10ffe972d4bf17fa2"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/interactions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4000a37973edce0547d964c87da962826f6a0957",
+      "size": 435,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4000a37973edce0547d964c87da962826f6a0957"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/layout-encyclopedia-after.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13f527b21151702e5e059564873856a00140fc5e",
+      "size": 652,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/13f527b21151702e5e059564873856a00140fc5e"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/layout-home.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a35c64798a2c214cd784e2b29082582a2359758",
+      "size": 7935,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1a35c64798a2c214cd784e2b29082582a2359758"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/layout-secondary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8226b9c1f258f5f452bd3a3cb531ee74dbb25c6c",
+      "size": 8206,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8226b9c1f258f5f452bd3a3cb531ee74dbb25c6c"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/no-javascript.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d551a29d47ab855963c3e9ee54f37b9bb0aa5019",
+      "size": 2205,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d551a29d47ab855963c3e9ee54f37b9bb0aa5019"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/performance-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d263d6f0943315248900c5f1239d5a26a719b8e",
+      "size": 11014,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1d263d6f0943315248900c5f1239d5a26a719b8e"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/portable-preview.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3610abf8c8d835d2acdee6dc75988fbe6a6dbfcf",
+      "size": 2563,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3610abf8c8d835d2acdee6dc75988fbe6a6dbfcf"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/summary.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be4ad413b0b94c5a1e3e29d9c51c611ccf712d67",
+      "size": 1201,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/be4ad413b0b94c5a1e3e29d9c51c611ccf712d67"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/test-output.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beb8b0eed87afacba9d03e286be322c7fc1c0ebc",
+      "size": 14351,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/beb8b0eed87afacba9d03e286be322c7fc1c0ebc"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc4/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a3efb419f0b94e78a73d77e48fa95759de89fe8",
+      "size": 8730,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8a3efb419f0b94e78a73d77e48fa95759de89fe8"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ec3337cb9db095e403529332f38726ab3e5ad6b4",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/ec3337cb9db095e403529332f38726ab3e5ad6b4"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc5/axe-home.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55e6e48a4b7c89777c3d2b47da526f609a6a9446",
+      "size": 9069,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/55e6e48a4b7c89777c3d2b47da526f609a6a9446"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc5/layout.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0691826f8b16d7d957bd7c8451318ccc5441736",
+      "size": 4534,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b0691826f8b16d7d957bd7c8451318ccc5441736"
+    },
+    {
+      "path": "docs/evidence/digital-flagship-2026-rc5/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4a2eb9932524bcb9b3cd0a2558f9ccc13750130",
+      "size": 8726,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f4a2eb9932524bcb9b3cd0a2558f9ccc13750130"
+    },
+    {
+      "path": "docs/evidence/titan-rc1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5299ae31655d866d1e6fc1681f5a46d84bb2f94f",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/5299ae31655d866d1e6fc1681f5a46d84bb2f94f"
+    },
+    {
+      "path": "docs/evidence/titan-rc1/browser-home.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "610bdd706ae1658f7820d9ceae5ffd43b766975f",
+      "size": 5319,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/610bdd706ae1658f7820d9ceae5ffd43b766975f"
+    },
+    {
+      "path": "docs/evidence/titan-rc1/browser-routes-forms.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1e19bcb9c6a52ae460a1c016614c82a0f9681ff",
+      "size": 7924,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e1e19bcb9c6a52ae460a1c016614c82a0f9681ff"
+    },
+    {
+      "path": "docs/evidence/titan-rc1/production-comparison.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf8c0569e520e021f6aa9cf3ee22607c92b2534f",
+      "size": 39822,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bf8c0569e520e021f6aa9cf3ee22607c92b2534f"
+    },
+    {
+      "path": "docs/evidence/titan-rc1/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d825f68c61cdf6d051dde0aa4351572028732db",
+      "size": 8328,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5d825f68c61cdf6d051dde0aa4351572028732db"
+    },
+    {
+      "path": "docs/evidence/titan-rc2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e81010c4b82b82d8e6a34b3ec8ef97a2835d30cb",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/e81010c4b82b82d8e6a34b3ec8ef97a2835d30cb"
+    },
+    {
+      "path": "docs/evidence/titan-rc2/browser-qa.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d94a554c116880bf8ed754225879c3e43e5ad2f1",
+      "size": 522,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d94a554c116880bf8ed754225879c3e43e5ad2f1"
+    },
+    {
+      "path": "docs/evidence/titan-rc2/validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fee07a721130aa8624a36c2d63725c8d538353fb",
+      "size": 8552,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/fee07a721130aa8624a36c2d63725c8d538353fb"
+    },
+    {
+      "path": "docs/provenance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c6b1af59c451c5f170247b2d721e04cfcfa1d73",
+      "size": 834,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/9c6b1af59c451c5f170247b2d721e04cfcfa1d73"
+    },
+    {
+      "path": "docs/test-http-2026-11-11.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61bab5e0abb27d368a2e6d7f00368a0b3acd47b9",
+      "size": 1667,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/61bab5e0abb27d368a2e6d7f00368a0b3acd47b9"
+    },
+    {
+      "path": "docs/test-integrity-2026-11-11.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14d64f91fea8fcd5a32ed70e0c06737d688977f4",
+      "size": 262,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/14d64f91fea8fcd5a32ed70e0c06737d688977f4"
+    },
+    {
+      "path": "docs/test-summary-2026-11-11.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b3cae0524d6ba7c0b9759d15e91ff2d788ba80",
+      "size": 429,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c6b3cae0524d6ba7c0b9759d15e91ff2d788ba80"
+    },
+    {
+      "path": "netlify.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22b62bfffb4da45ec757e3047626a182a5cf5064",
+      "size": 371,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/22b62bfffb4da45ec757e3047626a182a5cf5064"
+    },
+    {
+      "path": "prototypes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c31447ead24ac1c95329c51159446a8f10af0ab",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/2c31447ead24ac1c95329c51159446a8f10af0ab"
+    },
+    {
+      "path": "prototypes/rox-ai-v2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "698615f74a2d27ede8dae5df7e8911f7651b0a39",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/698615f74a2d27ede8dae5df7e8911f7651b0a39"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16aef999c7a6e37a095bedfea325c605271584a0",
+      "size": 4043,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/16aef999c7a6e37a095bedfea325c605271584a0"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/agent-v3.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bd227a8c56a436ede88bd387dfb4316fb0c5d08",
+      "size": 11237,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3bd227a8c56a436ede88bd387dfb4316fb0c5d08"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/agent-v3.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7ef76e98a4d02b4aaa79bd3a1b754888b32825a",
+      "size": 5271,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a7ef76e98a4d02b4aaa79bd3a1b754888b32825a"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/groq-recovered.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b76406b9d97fb14840270e3d03cc7248b1f957b",
+      "size": 2780,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0b76406b9d97fb14840270e3d03cc7248b1f957b"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/groq-recovered.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ace6807d8e340db5acfbc232e738e50f026d80",
+      "size": 15358,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/33ace6807d8e340db5acfbc232e738e50f026d80"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/http-guards.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9d708ea6c19b1ee866522dcfaf6743d39480794",
+      "size": 1340,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e9d708ea6c19b1ee866522dcfaf6743d39480794"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/http-guards.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1269b84068e8a736477b7b99a8a586c5f8f19dd1",
+      "size": 1361,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1269b84068e8a736477b7b99a8a586c5f8f19dd1"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/index.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6d247bf6461b3df3da606deaa52785491fcc7e9",
+      "size": 10925,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b6d247bf6461b3df3da606deaa52785491fcc7e9"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8063c6856bf5973945575ac549d802e63eeb7933",
+      "size": 19851,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8063c6856bf5973945575ac549d802e63eeb7933"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/preview-private",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51904305c8bc79219d49cdcbdb44d6b1a68e2e5e",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/51904305c8bc79219d49cdcbdb44d6b1a68e2e5e"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/preview-private/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "219ea04b5fea47c474ffa4dc3c243249709326e1",
+      "size": 4541,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/219ea04b5fea47c474ffa4dc3c243249709326e1"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/preview-private/preview.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "423b369996db7ea412354c8d852a2a84bde43327",
+      "size": 8019,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/423b369996db7ea412354c8d852a2a84bde43327"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/preview-private/preview.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ba6746c76b9dfec192dc8d28cb70e0d92c5d38b",
+      "size": 6054,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1ba6746c76b9dfec192dc8d28cb70e0d92c5d38b"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/preview-private/server.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34675455a0b23e50ef13bf59ff02210bb7d32a11",
+      "size": 4470,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/34675455a0b23e50ef13bf59ff02210bb7d32a11"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/preview-private/server.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c972fad10f80889b7dad2b722cb42bb677e45f8f",
+      "size": 5108,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c972fad10f80889b7dad2b722cb42bb677e45f8f"
+    },
+    {
+      "path": "prototypes/rox-ai-v2/titan-dialogue.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e363beabc17615a40d4fb1b3a79cff8e82a7a9a3",
+      "size": 1593,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e363beabc17615a40d4fb1b3a79cff8e82a7a9a3"
+    },
+    {
+      "path": "revenue-intelligence",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07cc5c8932a66681a7c3a59980d78852ff555a04",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/07cc5c8932a66681a7c3a59980d78852ff555a04"
+    },
+    {
+      "path": "revenue-intelligence/INTEGRATION-GATES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23953587119981461e7a0efd7b3db6c22ef8ad5b",
+      "size": 3800,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/23953587119981461e7a0efd7b3db6c22ef8ad5b"
+    },
+    {
+      "path": "revenue-intelligence/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22b17515469bbf7b38a517654ded7b7b380ae21c",
+      "size": 6483,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/22b17515469bbf7b38a517654ded7b7b380ae21c"
+    },
+    {
+      "path": "revenue-intelligence/authenticated-events.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c33d8560f89d60ef4204367b195719ed60c9e95",
+      "size": 3229,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/2c33d8560f89d60ef4204367b195719ed60c9e95"
+    },
+    {
+      "path": "revenue-intelligence/lead-tracking.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed0e858051f7bead86459985c583ad489f785f9c",
+      "size": 4085,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ed0e858051f7bead86459985c583ad489f785f9c"
+    },
+    {
+      "path": "revenue-intelligence/local-store.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e40d90a52cb3a065e37ae9634c47a2eee21c686",
+      "size": 2467,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3e40d90a52cb3a065e37ae9634c47a2eee21c686"
+    },
+    {
+      "path": "revenue-intelligence/reconcile.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "523ed72b5630370a4b045d2c094d203304ea9e2d",
+      "size": 4253,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/523ed72b5630370a4b045d2c094d203304ea9e2d"
+    },
+    {
+      "path": "revenue-intelligence/schema.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36e06917aec4a953a1416f61a0ef94aea8285264",
+      "size": 3385,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/36e06917aec4a953a1416f61a0ef94aea8285264"
+    },
+    {
+      "path": "revenue-intelligence/test-authenticated-events.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29a65660c58f702859a0e61ebb2143723f843bee",
+      "size": 3104,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/29a65660c58f702859a0e61ebb2143723f843bee"
+    },
+    {
+      "path": "revenue-intelligence/test-hardening.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d309d15722c7b9bb14d21bc1535d8f86dfa24c4",
+      "size": 6627,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/9d309d15722c7b9bb14d21bc1535d8f86dfa24c4"
+    },
+    {
+      "path": "revenue-intelligence/test-lead-tracking.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5f7d5a7faaf5f77fb763d72e0f5c4993cd76043",
+      "size": 1762,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e5f7d5a7faaf5f77fb763d72e0f5c4993cd76043"
+    },
+    {
+      "path": "revenue-intelligence/test-local-store.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3f8b027eefa920660d519468f3765c3f8a9239d",
+      "size": 2378,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a3f8b027eefa920660d519468f3765c3f8a9239d"
+    },
+    {
+      "path": "revenue-intelligence/test-reconcile.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb351b5e14582da8dce95d9e4e323c64bd1a9fc",
+      "size": 2299,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/cfb351b5e14582da8dce95d9e4e323c64bd1a9fc"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9e815ef8578f8af34afabddc9dc74cba074ecda",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/c9e815ef8578f8af34afabddc9dc74cba074ecda"
+    },
+    {
+      "path": "scripts/build_digital_flagship_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d26f52cf987812b0d9bd4851275f992274c41dac",
+      "size": 1452,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d26f52cf987812b0d9bd4851275f992274c41dac"
+    },
+    {
+      "path": "scripts/build_titan_manifest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "803107be6463bbce527a497bb7916baaf3dae05c",
+      "size": 1397,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/803107be6463bbce527a497bb7916baaf3dae05c"
+    },
+    {
+      "path": "scripts/measurement-flagship.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34fec34a640ea757bd835ecbc14a79df3e0c2d9d",
+      "size": 2895,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/34fec34a640ea757bd835ecbc14a79df3e0c2d9d"
+    },
+    {
+      "path": "scripts/package_flagship.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97605d214d4355f810a67387127f82002a632542",
+      "size": 4455,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/97605d214d4355f810a67387127f82002a632542"
+    },
+    {
+      "path": "scripts/package_titan.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcbbdf6498dc8c2c72aa52ee4675076f3b9dce97",
+      "size": 1137,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bcbbdf6498dc8c2c72aa52ee4675076f3b9dce97"
+    },
+    {
+      "path": "scripts/preview_local.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "626e63712e002c9f2990b66d447af6ced86e9e38",
+      "size": 808,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/626e63712e002c9f2990b66d447af6ced86e9e38"
+    },
+    {
+      "path": "scripts/qa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "05de2e69fe6b5a2d085913712822ee2e8db0e11c",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/05de2e69fe6b5a2d085913712822ee2e8db0e11c"
+    },
+    {
+      "path": "scripts/qa/browser-harness.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77826fc14afe2c8e1a16286baf6367e0c56e5cf7",
+      "size": 11458,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/77826fc14afe2c8e1a16286baf6367e0c56e5cf7"
+    },
+    {
+      "path": "scripts/qa/rc4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1190068e1489d78f5a8c9efd961c46307c3545b7",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/1190068e1489d78f5a8c9efd961c46307c3545b7"
+    },
+    {
+      "path": "scripts/qa/rc4/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3734b87868fee02c5e3dba9926a8d3335b782419",
+      "size": 1095,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3734b87868fee02c5e3dba9926a8d3335b782419"
+    },
+    {
+      "path": "scripts/qa/rc4/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c41835805e243147125e249ac4de32cf139ef35",
+      "size": 5350,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1c41835805e243147125e249ac4de32cf139ef35"
+    },
+    {
+      "path": "scripts/qa/rc4/quality.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "510edb6c424b3f0f8c691be04426b530ac2461cf",
+      "size": 5892,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/510edb6c424b3f0f8c691be04426b530ac2461cf"
+    },
+    {
+      "path": "scripts/rox-agent-bridge.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae7e24c9a19c72e41fdc1627ea544d8a27a8af44",
+      "size": 4944,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ae7e24c9a19c72e41fdc1627ea544d8a27a8af44"
+    },
+    {
+      "path": "scripts/rox-demo-v25.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8048a913fb2d2dbc35c163c9a6930b5a31d45bc6",
+      "size": 4528,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8048a913fb2d2dbc35c163c9a6930b5a31d45bc6"
+    },
+    {
+      "path": "scripts/rox-transport.test.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe736081587221436778cc8facbfaa6a2185f9f4",
+      "size": 2100,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/fe736081587221436778cc8facbfaa6a2185f9f4"
+    },
+    {
+      "path": "scripts/smoke_http.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54009fd46af86aede727191c2105874290fdbd53",
+      "size": 1589,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/54009fd46af86aede727191c2105874290fdbd53"
+    },
+    {
+      "path": "scripts/test_flagship.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5efb70148340a15eea979bdd16797d0ee465717b",
+      "size": 208,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5efb70148340a15eea979bdd16797d0ee465717b"
+    },
+    {
+      "path": "scripts/test_flagship_2026.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c240cd6039aa7be515b3993cb7eaaa50cb329d5b",
+      "size": 6686,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c240cd6039aa7be515b3993cb7eaaa50cb329d5b"
+    },
+    {
+      "path": "scripts/test_integrity.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68a373fef902009f97ada62f63cec2c37206cd22",
+      "size": 3083,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/68a373fef902009f97ada62f63cec2c37206cd22"
+    },
+    {
+      "path": "scripts/test_seo_metadata.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c8a3b88b543ef8ab112de77383fe795ea7e9318",
+      "size": 1083,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4c8a3b88b543ef8ab112de77383fe795ea7e9318"
+    },
+    {
+      "path": "scripts/validate_titan.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73c6215fc328544bb43d07e29ad6923c49d874cd",
+      "size": 2459,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/73c6215fc328544bb43d07e29ad6923c49d874cd"
+    },
+    {
+      "path": "scripts/verify_site.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e80fa7c7ac2c60777d937d349d289174208b45d",
+      "size": 8509,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1e80fa7c7ac2c60777d937d349d289174208b45d"
+    },
+    {
+      "path": "site",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2a99242855ea6c63dc71ff68b5406ec95602ba7",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/d2a99242855ea6c63dc71ff68b5406ec95602ba7"
+    },
+    {
+      "path": "site/404.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dc77d2e7a5c6342756c2ef7f983393a5fad6559",
+      "size": 5197,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4dc77d2e7a5c6342756c2ef7f983393a5fad6559"
+    },
+    {
+      "path": "site/_headers",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "693399efa8e650d46c1ca96417ba1e2ff075ea25",
+      "size": 1031,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/693399efa8e650d46c1ca96417ba1e2ff075ea25"
+    },
+    {
+      "path": "site/_redirects",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77fffaf5a6cbdb1794846beaf2b7a3ad95f23241",
+      "size": 809,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/77fffaf5a6cbdb1794846beaf2b7a3ad95f23241"
+    },
+    {
+      "path": "site/apple-touch-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f723da49b450f2cdc0472e6cb472204013be9276",
+      "size": 8208,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f723da49b450f2cdc0472e6cb472204013be9276"
+    },
+    {
+      "path": "site/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fde39206243ddda367234e36eb0a152998d6c240",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/fde39206243ddda367234e36eb0a152998d6c240"
+    },
+    {
+      "path": "site/assets/_vinext_fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9fbdd207ee87a63b12b263ca583ec097943ce332",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/9fbdd207ee87a63b12b263ca583ec097943ce332"
+    },
+    {
+      "path": "site/assets/_vinext_fonts/geist-8ac0455e797f",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f75815ffc76824e71f808b0ab2d56f5f1e719f05",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/f75815ffc76824e71f808b0ab2d56f5f1e719f05"
+    },
+    {
+      "path": "site/assets/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f01e7630ba2f88ffa1acd90d69f67efb5bd3092",
+      "size": 29288,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8f01e7630ba2f88ffa1acd90d69f67efb5bd3092"
+    },
+    {
+      "path": "site/assets/access-v20.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "430a75f77ae1196ec71469e504f705ad1c4c0369",
+      "size": 2460,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/430a75f77ae1196ec71469e504f705ad1c4c0369"
+    },
+    {
+      "path": "site/assets/apple-touch-icon-v13-3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f723da49b450f2cdc0472e6cb472204013be9276",
+      "size": 8208,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f723da49b450f2cdc0472e6cb472204013be9276"
+    },
+    {
+      "path": "site/assets/brand-logos-source-v20-2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4c7f83b25ad9113a148b91b12b723cd1a8b5885",
+      "size": 609310,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f4c7f83b25ad9113a148b91b12b723cd1a8b5885"
+    },
+    {
+      "path": "site/assets/brand-strip-v20-2.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bb29734abe7d112af241c4c7d25dd00bb024d25",
+      "size": 2520,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/2bb29734abe7d112af241c4c7d25dd00bb024d25"
+    },
+    {
+      "path": "site/assets/brand-strip-v21-1.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb6452aff5a3b9464ec5c755cb48f39a56ebaf6c",
+      "size": 4686,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/cb6452aff5a3b9464ec5c755cb48f39a56ebaf6c"
+    },
+    {
+      "path": "site/assets/brand-symbol-v20.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d107bf9df41b37ccb591f0f0c59b080586f2fcbc",
+      "size": 2726,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d107bf9df41b37ccb591f0f0c59b080586f2fcbc"
+    },
+    {
+      "path": "site/assets/brand-vault-v26.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8564b743c307ab2a6c335d5a77a6fc1f799c4b36",
+      "size": 2935,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8564b743c307ab2a6c335d5a77a6fc1f799c4b36"
+    },
+    {
+      "path": "site/assets/commerce-v21.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95df00b9d3dcf4a5a19ccde4d813ce32f2bccfcb",
+      "size": 16124,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/95df00b9d3dcf4a5a19ccde4d813ce32f2bccfcb"
+    },
+    {
+      "path": "site/assets/commerce-v21.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0bd4f87ca3883f9258a6291b02b6f440bc465f4",
+      "size": 4763,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f0bd4f87ca3883f9258a6291b02b6f440bc465f4"
+    },
+    {
+      "path": "site/assets/commerce-v23-1.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "223985b556a0eba19c04816d3aa32827e9a64a9f",
+      "size": 4921,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/223985b556a0eba19c04816d3aa32827e9a64a9f"
+    },
+    {
+      "path": "site/assets/contact-help-v23.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ba664a3a92f4e7d874be61505517a96d6311802",
+      "size": 1613,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7ba664a3a92f4e7d874be61505517a96d6311802"
+    },
+    {
+      "path": "site/assets/editorial-v22.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05d686d3c630ee907dc1e61ef71cd974b9adadc9",
+      "size": 1862,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/05d686d3c630ee907dc1e61ef71cd974b9adadc9"
+    },
+    {
+      "path": "site/assets/editorial-v22.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a65b88d93c85bcb2093d385718156b9bda93123",
+      "size": 756,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3a65b88d93c85bcb2093d385718156b9bda93123"
+    },
+    {
+      "path": "site/assets/encyclopedia-v23-3.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e91a98d8e097a92979e8703bd6aac8569329fa3",
+      "size": 1967,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7e91a98d8e097a92979e8703bd6aac8569329fa3"
+    },
+    {
+      "path": "site/assets/experience-v23.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "356ef24e4cdc5bf7eac4fd93be0c41e595f17fe1",
+      "size": 7616,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/356ef24e4cdc5bf7eac4fd93be0c41e595f17fe1"
+    },
+    {
+      "path": "site/assets/favicon-v13-3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb026a33991f4d0de82c8d001f70001dee66f02",
+      "size": 56707,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bbb026a33991f4d0de82c8d001f70001dee66f02"
+    },
+    {
+      "path": "site/assets/flagship-2026.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7db9c0493f521ba23c65ca05c2178c5aef20a82",
+      "size": 41630,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f7db9c0493f521ba23c65ca05c2178c5aef20a82"
+    },
+    {
+      "path": "site/assets/flagship-2026.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8daffac6d0417bb8a57e0b9f23b74e6454c1979",
+      "size": 5033,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d8daffac6d0417bb8a57e0b9f23b74e6454c1979"
+    },
+    {
+      "path": "site/assets/flagship-hero-desktop-rc2.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d533934b2ec6e4be4d9c44c672b1178a4382318",
+      "size": 57059,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8d533934b2ec6e4be4d9c44c672b1178a4382318"
+    },
+    {
+      "path": "site/assets/flagship-hero-desktop-rc2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c09673d9220e7bdf0fdd4b5c2fef55441e2e23f3",
+      "size": 239302,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c09673d9220e7bdf0fdd4b5c2fef55441e2e23f3"
+    },
+    {
+      "path": "site/assets/flagship-hero-desktop-rc2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e8c75a51f8ed1d0a6888ef0d8496cac149bfb36",
+      "size": 89410,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1e8c75a51f8ed1d0a6888ef0d8496cac149bfb36"
+    },
+    {
+      "path": "site/assets/flagship-hero-mobile-rc2.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3efb7096d4e35adfa6be6dd40321f8d6327351a",
+      "size": 65922,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e3efb7096d4e35adfa6be6dd40321f8d6327351a"
+    },
+    {
+      "path": "site/assets/flagship-hero-mobile-rc2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9b3f8c10d1ea1630bc744e8eb3fcd6fae1db7da",
+      "size": 261842,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c9b3f8c10d1ea1630bc744e8eb3fcd6fae1db7da"
+    },
+    {
+      "path": "site/assets/flagship-hero-mobile-rc2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64e41718d11f87ed856f6083be873cfebc8f3aab",
+      "size": 103906,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/64e41718d11f87ed856f6083be873cfebc8f3aab"
+    },
+    {
+      "path": "site/assets/flagship-hero-mobile-v25.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb53779d0d8e85ad96091e156155c790e806307d",
+      "size": 35813,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bb53779d0d8e85ad96091e156155c790e806307d"
+    },
+    {
+      "path": "site/assets/flagship-hero-mobile-v25.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d60ad4f6281c5a5cdcf1cb72e902190b4f2847",
+      "size": 31590,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/03d60ad4f6281c5a5cdcf1cb72e902190b4f2847"
+    },
+    {
+      "path": "site/assets/flagship-hero-v25.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02f329f648dc095ecc39ddeda76b2cf16adc5101",
+      "size": 95075,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/02f329f648dc095ecc39ddeda76b2cf16adc5101"
+    },
+    {
+      "path": "site/assets/flagship-hero-v25.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfe3939dc16968fbd160e69f89cac8d53c0ecee7",
+      "size": 87048,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bfe3939dc16968fbd160e69f89cac8d53c0ecee7"
+    },
+    {
+      "path": "site/assets/flagship-nutrition-v25.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6da0e2f29e6712a60fd8f891fc6137febe6cab40",
+      "size": 80644,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6da0e2f29e6712a60fd8f891fc6137febe6cab40"
+    },
+    {
+      "path": "site/assets/flagship-science-v25.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89a6ff8a049c2afecb17b88929c85d2d64932c6d",
+      "size": 51856,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/89a6ff8a049c2afecb17b88929c85d2d64932c6d"
+    },
+    {
+      "path": "site/assets/flagship-v25-1.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d28f8e86792b231d5751982d055161f6d678cab3",
+      "size": 12772,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d28f8e86792b231d5751982d055161f6d678cab3"
+    },
+    {
+      "path": "site/assets/flagship-v25.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5ba6c345319a5fb8d1dd67a858fdbb813c2833b",
+      "size": 21177,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f5ba6c345319a5fb8d1dd67a858fdbb813c2833b"
+    },
+    {
+      "path": "site/assets/flagship-v26-reference.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4b95ff0c995897fab6fd11901f51bed9cabc843",
+      "size": 21995,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b4b95ff0c995897fab6fd11901f51bed9cabc843"
+    },
+    {
+      "path": "site/assets/home-tools-v20-5.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a75b0f9ba3cf0b92bf0d73bcf542ab0b4bece4d",
+      "size": 3291,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7a75b0f9ba3cf0b92bf0d73bcf542ab0b4bece4d"
+    },
+    {
+      "path": "site/assets/lander-rio-lockup-v25.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03527c258298aa41078342176ecf1ef05209f1ba",
+      "size": 21148,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/03527c258298aa41078342176ecf1ef05209f1ba"
+    },
+    {
+      "path": "site/assets/lander-rio-symbol-v25.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48646efc8cb1c311ad45bd1826124fe5907da0d5",
+      "size": 9298,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/48646efc8cb1c311ad45bd1826124fe5907da0d5"
+    },
+    {
+      "path": "site/assets/lander-training-engine-v18.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "684e107b60006090453b7904121e1ac45c025c87",
+      "size": 20124,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/684e107b60006090453b7904121e1ac45c025c87"
+    },
+    {
+      "path": "site/assets/logos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5467fdf74c2083ef836b9c4ae5beea60b2fb6de4",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/5467fdf74c2083ef836b9c4ae5beea60b2fb6de4"
+    },
+    {
+      "path": "site/assets/logos/alpha-x-prime-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4540db942665110a5b4c001ca9b76577fbbe20c",
+      "size": 46126,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d4540db942665110a5b4c001ca9b76577fbbe20c"
+    },
+    {
+      "path": "site/assets/logos/alpha-x-prime-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7bcf8ac3fab3711d0686d952e200c19ae8b6dfc",
+      "size": 19392,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e7bcf8ac3fab3711d0686d952e200c19ae8b6dfc"
+    },
+    {
+      "path": "site/assets/logos/alpha-x-prime-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f71ed64c7b9f6b30f32e0b7e05fbf4086943c68",
+      "size": 10898,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5f71ed64c7b9f6b30f32e0b7e05fbf4086943c68"
+    },
+    {
+      "path": "site/assets/logos/cooper-pharma-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57870c93d8beadbe05aa82abe15bf50be37359d6",
+      "size": 76124,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/57870c93d8beadbe05aa82abe15bf50be37359d6"
+    },
+    {
+      "path": "site/assets/logos/cooper-pharma-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bd9bd4acce0d56413d462a3a5804af3e559b8d8",
+      "size": 33620,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0bd9bd4acce0d56413d462a3a5804af3e559b8d8"
+    },
+    {
+      "path": "site/assets/logos/cooper-pharma-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6bb69731d2e196d56517c96f531bc546796c0ea",
+      "size": 13636,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a6bb69731d2e196d56517c96f531bc546796c0ea"
+    },
+    {
+      "path": "site/assets/logos/eminence-labs-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97272de7e3abb498209df971e78e42d6c2441519",
+      "size": 66606,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/97272de7e3abb498209df971e78e42d6c2441519"
+    },
+    {
+      "path": "site/assets/logos/eminence-labs-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a44a3deaafc3c05ecd41c59b2058b8e160cdffb8",
+      "size": 67856,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a44a3deaafc3c05ecd41c59b2058b8e160cdffb8"
+    },
+    {
+      "path": "site/assets/logos/eminence-labs-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bfe764224329e7eca3ba61ee723310b5c6747cb",
+      "size": 12682,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7bfe764224329e7eca3ba61ee723310b5c6747cb"
+    },
+    {
+      "path": "site/assets/logos/eticos-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df01ac180ceb17db358d7a15da7485bb08b6c1b8",
+      "size": 29320,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/df01ac180ceb17db358d7a15da7485bb08b6c1b8"
+    },
+    {
+      "path": "site/assets/logos/eticos-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba5402de485b6f456c1d354c883198111b33372e",
+      "size": 4466,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ba5402de485b6f456c1d354c883198111b33372e"
+    },
+    {
+      "path": "site/assets/logos/geniqs-pharma-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfc38f85c50a30b54da6413638ce34fa322e5d7e",
+      "size": 55350,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/cfc38f85c50a30b54da6413638ce34fa322e5d7e"
+    },
+    {
+      "path": "site/assets/logos/geniqs-pharma-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "696087d8a50ccf63020b9239a528d9f7bf64ce92",
+      "size": 26048,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/696087d8a50ccf63020b9239a528d9f7bf64ce92"
+    },
+    {
+      "path": "site/assets/logos/geniqs-pharma-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc6cbc598c419b95699b1cc4d8042f8d98492a0f",
+      "size": 14210,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/fc6cbc598c419b95699b1cc4d8042f8d98492a0f"
+    },
+    {
+      "path": "site/assets/logos/indufar-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e954b106b7c933d38e651e48a3c248a7c2178e8",
+      "size": 22728,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1e954b106b7c933d38e651e48a3c248a7c2178e8"
+    },
+    {
+      "path": "site/assets/logos/indufar-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acdf52495817c5d42a18f93cbe5fe57d123f28b9",
+      "size": 3918,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/acdf52495817c5d42a18f93cbe5fe57d123f28b9"
+    },
+    {
+      "path": "site/assets/logos/labs-group-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70a8860ceda35eebe08c6e895ce9e8d9655ad1d6",
+      "size": 94582,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/70a8860ceda35eebe08c6e895ce9e8d9655ad1d6"
+    },
+    {
+      "path": "site/assets/logos/landerlan-hero-rc4.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f39c8a5c8eb670ac1cd07140d24534694836b655",
+      "size": 9442,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f39c8a5c8eb670ac1cd07140d24534694836b655"
+    },
+    {
+      "path": "site/assets/logos/landerlan-hero-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8359e39e9b07d26ef98cb047a21763ce1cd13aee",
+      "size": 12394,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8359e39e9b07d26ef98cb047a21763ce1cd13aee"
+    },
+    {
+      "path": "site/assets/logos/landerlan-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92d2ba9d8dd73c4941857e5f82e09298c7cb2025",
+      "size": 65252,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/92d2ba9d8dd73c4941857e5f82e09298c7cb2025"
+    },
+    {
+      "path": "site/assets/logos/landerlan-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e7a1a0b497374acfc521de43d27df5d8f995fe3",
+      "size": 45632,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1e7a1a0b497374acfc521de43d27df5d8f995fe3"
+    },
+    {
+      "path": "site/assets/logos/landerlan-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9919a0b4d39d91805111a4030488b1e6e4c8eb09",
+      "size": 14188,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/9919a0b4d39d91805111a4030488b1e6e4c8eb09"
+    },
+    {
+      "path": "site/assets/logos/life-peptideos-hero-rc4.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bedcf781bbd0484ba882122fe00308cde110224",
+      "size": 21642,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7bedcf781bbd0484ba882122fe00308cde110224"
+    },
+    {
+      "path": "site/assets/logos/life-peptideos-hero-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e82e74a847a3502a68d180790a12fa3d4e6f46a",
+      "size": 23668,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7e82e74a847a3502a68d180790a12fa3d4e6f46a"
+    },
+    {
+      "path": "site/assets/logos/life-peptideos-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8524fe34157cf4a5b32c499d22b6ebb982b0ae80",
+      "size": 46426,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8524fe34157cf4a5b32c499d22b6ebb982b0ae80"
+    },
+    {
+      "path": "site/assets/logos/life-peptideos-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76327d8300670b180c0a94125a3c9eaf9009a1c0",
+      "size": 45342,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/76327d8300670b180c0a94125a3c9eaf9009a1c0"
+    },
+    {
+      "path": "site/assets/logos/life-peptideos-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ec1e6c7ab39e9ecf4b2392ea9c1abbed1100896",
+      "size": 9248,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5ec1e6c7ab39e9ecf4b2392ea9c1abbed1100896"
+    },
+    {
+      "path": "site/assets/logos/muscle-labs-india-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e8a5011f2ca69b30874446aa7c8574846292e03",
+      "size": 64132,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4e8a5011f2ca69b30874446aa7c8574846292e03"
+    },
+    {
+      "path": "site/assets/logos/muscle-labs-india-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0b24910cf32456efffd9fcd4189ad1fcdbddd31",
+      "size": 32804,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c0b24910cf32456efffd9fcd4189ad1fcdbddd31"
+    },
+    {
+      "path": "site/assets/logos/muscle-labs-india-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cf22da5a7ccbb117f37e21d9c6e6a10409c361f",
+      "size": 12186,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4cf22da5a7ccbb117f37e21d9c6e6a10409c361f"
+    },
+    {
+      "path": "site/assets/logos/oxygen-kw-pharma-hero-rc4.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fae94147e279f627f556393743a75a17f4f2acce",
+      "size": 14290,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/fae94147e279f627f556393743a75a17f4f2acce"
+    },
+    {
+      "path": "site/assets/logos/oxygen-kw-pharma-hero-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a52914512a1f60bfe2cf29420c0447fd2c758550",
+      "size": 22484,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a52914512a1f60bfe2cf29420c0447fd2c758550"
+    },
+    {
+      "path": "site/assets/logos/oxygen-kw-pharma-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9a3839dd6c0d9809068983548849ec939f868bd",
+      "size": 30884,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a9a3839dd6c0d9809068983548849ec939f868bd"
+    },
+    {
+      "path": "site/assets/logos/oxygen-kw-pharma-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0148a3ad233c5cd9f395cba89cdefc480b5fe0e4",
+      "size": 47638,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0148a3ad233c5cd9f395cba89cdefc480b5fe0e4"
+    },
+    {
+      "path": "site/assets/logos/oxygen-kw-pharma-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba69f9b40b3587c08852c54af1104fae8c8f484e",
+      "size": 6660,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ba69f9b40b3587c08852c54af1104fae8c8f484e"
+    },
+    {
+      "path": "site/assets/logos/quimfa-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6276453b98871486e0bc1af5ad63d65cfa4757f5",
+      "size": 25412,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6276453b98871486e0bc1af5ad63d65cfa4757f5"
+    },
+    {
+      "path": "site/assets/logos/quimfa-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0db625564cc746c6ae30de3b6fbc72c5b53fadcc",
+      "size": 4922,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0db625564cc746c6ae30de3b6fbc72c5b53fadcc"
+    },
+    {
+      "path": "site/assets/logos/synedica-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d17edeed3103256d0351aa2c9fe37a525e761c0",
+      "size": 58038,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/9d17edeed3103256d0351aa2c9fe37a525e761c0"
+    },
+    {
+      "path": "site/assets/logos/synedica-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6812f72a014109379935979b4824da7ad677c46",
+      "size": 28654,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e6812f72a014109379935979b4824da7ad677c46"
+    },
+    {
+      "path": "site/assets/logos/synedica-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd91cf50c5a367aa4a8e5b27088e78dee9bd8f47",
+      "size": 10758,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bd91cf50c5a367aa4a8e5b27088e78dee9bd8f47"
+    },
+    {
+      "path": "site/assets/logos/topharma-hero-rc4.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8892fe6c651c9e8c1c5f9197d16bef011db2f0c9",
+      "size": 15784,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8892fe6c651c9e8c1c5f9197d16bef011db2f0c9"
+    },
+    {
+      "path": "site/assets/logos/topharma-hero-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95e5acb2a1283d1549a9220c1356215f1331722a",
+      "size": 8030,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/95e5acb2a1283d1549a9220c1356215f1331722a"
+    },
+    {
+      "path": "site/assets/logos/topharma-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25091d18011f9df38938429d0086cf9914cf29a0",
+      "size": 90508,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/25091d18011f9df38938429d0086cf9914cf29a0"
+    },
+    {
+      "path": "site/assets/logos/topharma-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc05cee94f08778dd962618e6ab42b08efa4654f",
+      "size": 41884,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/cc05cee94f08778dd962618e6ab42b08efa4654f"
+    },
+    {
+      "path": "site/assets/logos/topharma-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c253045efcbd9f3d378e7475acab878094a40980",
+      "size": 16198,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c253045efcbd9f3d378e7475acab878094a40980"
+    },
+    {
+      "path": "site/assets/logos/zphc-rc3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a37cfd4df52c7c6ee09372960590966f62a496e8",
+      "size": 40416,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a37cfd4df52c7c6ee09372960590966f62a496e8"
+    },
+    {
+      "path": "site/assets/logos/zphc-rc5.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aead63076ec28c4c74fbea239d4864202192a3ea",
+      "size": 19612,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/aead63076ec28c4c74fbea239d4864202192a3ea"
+    },
+    {
+      "path": "site/assets/logos/zphc-v23.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "624c3fb20a272ca31a5897740aad2bbe2903ae87",
+      "size": 9286,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/624c3fb20a272ca31a5897740aad2bbe2903ae87"
+    },
+    {
+      "path": "site/assets/measurement-v21.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ded84b32dab49297d34aa71babf25d98b05b1d99",
+      "size": 7036,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ded84b32dab49297d34aa71babf25d98b05b1d99"
+    },
+    {
+      "path": "site/assets/measurement-v23-2.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b04000a6d5c961e00e869d9c7ac89b132904849",
+      "size": 7350,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6b04000a6d5c961e00e869d9c7ac89b132904849"
+    },
+    {
+      "path": "site/assets/og-lander-v21.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77dd4f1ffd45161be0aa98f917a7fb937c90cca0",
+      "size": 49578,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/77dd4f1ffd45161be0aa98f917a7fb937c90cca0"
+    },
+    {
+      "path": "site/assets/radar-v21.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07ab636ff8426c318d15849e8b95da548cceef79",
+      "size": 1453,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/07ab636ff8426c318d15849e8b95da548cceef79"
+    },
+    {
+      "path": "site/assets/recebimentos-v23-9.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24307599c0dc33dbfb1c36c3c05f2d338f1606f3",
+      "size": 4943,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/24307599c0dc33dbfb1c36c3c05f2d338f1606f3"
+    },
+    {
+      "path": "site/assets/recebimentos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "967621a71e4afedde05341a7f30d6e34884e77b6",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/967621a71e4afedde05341a7f30d6e34884e77b6"
+    },
+    {
+      "path": "site/assets/recebimentos/foto-01.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca3ca4eb55e9cee803bf03b0e62934d4880d4547",
+      "size": 25224,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ca3ca4eb55e9cee803bf03b0e62934d4880d4547"
+    },
+    {
+      "path": "site/assets/recebimentos/foto-02.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88e0f6e59f243480baf7eea9d69f695f5c112b46",
+      "size": 27866,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/88e0f6e59f243480baf7eea9d69f695f5c112b46"
+    },
+    {
+      "path": "site/assets/recebimentos/foto-03.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a38c4dee3bc60f02b345fa2f1238ba44123152fb",
+      "size": 18318,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a38c4dee3bc60f02b345fa2f1238ba44123152fb"
+    },
+    {
+      "path": "site/assets/recebimentos/foto-04.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "047576a56bbaf20798882c218c6693b8f1d5868e",
+      "size": 7820,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/047576a56bbaf20798882c218c6693b8f1d5868e"
+    },
+    {
+      "path": "site/assets/recebimentos/foto-05.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d5c84b50fecc196a64792a433f9d96d40e1a5a4",
+      "size": 50494,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7d5c84b50fecc196a64792a433f9d96d40e1a5a4"
+    },
+    {
+      "path": "site/assets/recebimentos/foto-06.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "921638f289f6add0cccff2c35d9471a4409a5ec8",
+      "size": 21532,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/921638f289f6add0cccff2c35d9471a4409a5ec8"
+    },
+    {
+      "path": "site/assets/recebimentos/registro-01.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09dcb1a5a6922d48aa8d1056ea250d31ac7f1bde",
+      "size": 30006,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/09dcb1a5a6922d48aa8d1056ea250d31ac7f1bde"
+    },
+    {
+      "path": "site/assets/recebimentos/registro-02.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc57459e2a70aac56a4e1dd6224e818ce65465c8",
+      "size": 33618,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/dc57459e2a70aac56a4e1dd6224e818ce65465c8"
+    },
+    {
+      "path": "site/assets/recebimentos/registro-03.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a61a461e14582c3cc890bac8f503bf671dcbb74",
+      "size": 18340,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3a61a461e14582c3cc890bac8f503bf671dcbb74"
+    },
+    {
+      "path": "site/assets/recebimentos/registro-04.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e22793b59c14bdbebebdeebd60a30edee542422b",
+      "size": 19872,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e22793b59c14bdbebebdeebd60a30edee542422b"
+    },
+    {
+      "path": "site/assets/recebimentos/registro-05.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "439044840ee1c870587343ebf32538b699c4061f",
+      "size": 82060,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/439044840ee1c870587343ebf32538b699c4061f"
+    },
+    {
+      "path": "site/assets/recebimentos/registro-06.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4a0c57baf89cb49074cffe1a80c0b599de57b0c",
+      "size": 62454,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f4a0c57baf89cb49074cffe1a80c0b599de57b0c"
+    },
+    {
+      "path": "site/assets/refinement-v21.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f81f402ea85ced48256ab9750fa89d3213cefce9",
+      "size": 13155,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f81f402ea85ced48256ab9750fa89d3213cefce9"
+    },
+    {
+      "path": "site/assets/rox-agent-v3-offline.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42133227b4a385978d13c030e0d755607adbe0d2",
+      "size": 11466,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/42133227b4a385978d13c030e0d755607adbe0d2"
+    },
+    {
+      "path": "site/assets/rox-demo-v25.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ab33545c8b31c308df8822cc337fd3050070580",
+      "size": 9391,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/9ab33545c8b31c308df8822cc337fd3050070580"
+    },
+    {
+      "path": "site/assets/rox-transport-titan.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b8cb88e270d9b98322ab167403431de09025ad3",
+      "size": 1884,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7b8cb88e270d9b98322ab167403431de09025ad3"
+    },
+    {
+      "path": "site/assets/tool-fixes-v20-1.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da2d9d1e7f01deaafdaf797563f22547ae9e465b",
+      "size": 1373,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/da2d9d1e7f01deaafdaf797563f22547ae9e465b"
+    },
+    {
+      "path": "site/assets/training-1200-v20.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a947c89842bfad1215f77a84c1fc45f883baf1e0",
+      "size": 130754,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a947c89842bfad1215f77a84c1fc45f883baf1e0"
+    },
+    {
+      "path": "site/assets/training-640-v20.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b008e0d19cbd605dad874c6000068152a2c17df4",
+      "size": 35518,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b008e0d19cbd605dad874c6000068152a2c17df4"
+    },
+    {
+      "path": "site/assets/training-v21.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6ecd35431850d28d1f89bf00d6d48fe68e01844",
+      "size": 31188,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a6ecd35431850d28d1f89bf00d6d48fe68e01844"
+    },
+    {
+      "path": "site/assets/training-v21.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77e6a03d51ea0b47c60b378745aa5d80ab6437c1",
+      "size": 16132,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/77e6a03d51ea0b47c60b378745aa5d80ab6437c1"
+    },
+    {
+      "path": "site/assets/v26-hero-reference.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "199226740d5bd63c94d3e76392f8ee1cce74aa70",
+      "size": 54040,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/199226740d5bd63c94d3e76392f8ee1cce74aa70"
+    },
+    {
+      "path": "site/atacado",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfc2c9d194b39551fa9330f88badac76a03257e8",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/bfc2c9d194b39551fa9330f88badac76a03257e8"
+    },
+    {
+      "path": "site/atacado/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b2e098ef0b15fd828deda297f46d4bb28ceec2b",
+      "size": 14419,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3b2e098ef0b15fd828deda297f46d4bb28ceec2b"
+    },
+    {
+      "path": "site/autenticidade",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8f0cd286b67525c69107166bba42bcde17e008c",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/f8f0cd286b67525c69107166bba42bcde17e008c"
+    },
+    {
+      "path": "site/autenticidade/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f5467050df8ac98fbc43aaf5f0060b8a1def2e8",
+      "size": 6198,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6f5467050df8ac98fbc43aaf5f0060b8a1def2e8"
+    },
+    {
+      "path": "site/business-desk",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7de1469bd37828125fa071087bf1b9336509df5a",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/7de1469bd37828125fa071087bf1b9336509df5a"
+    },
+    {
+      "path": "site/business-desk/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfd2d5022a9d6746f0ffefd391397ef833904dd3",
+      "size": 10396,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bfd2d5022a9d6746f0ffefd391397ef833904dd3"
+    },
+    {
+      "path": "site/business-desk/recebido",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72daffc25b621ec380841ad7680d62b9faee463a",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/72daffc25b621ec380841ad7680d62b9faee463a"
+    },
+    {
+      "path": "site/business-desk/recebido/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8345490be0d0e002e6b3ffadb6f4e832569622f9",
+      "size": 6286,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8345490be0d0e002e6b3ffadb6f4e832569622f9"
+    },
+    {
+      "path": "site/contato",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "251805b342205a78c4c544cc2818b25af6df97f7",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/251805b342205a78c4c544cc2818b25af6df97f7"
+    },
+    {
+      "path": "site/contato/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36af6a0bcee05848350c6c992b5666e7ebd0f53c",
+      "size": 13306,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/36af6a0bcee05848350c6c992b5666e7ebd0f53c"
+    },
+    {
+      "path": "site/conteudos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2531a78e3b9e02ee93f70485f2b93c419a4d323a",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/2531a78e3b9e02ee93f70485f2b93c419a4d323a"
+    },
+    {
+      "path": "site/conteudos/academia-lotada-organizar-treino",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0be9327de944c41fd945df79fde0c57aefa41e97",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/0be9327de944c41fd945df79fde0c57aefa41e97"
+    },
+    {
+      "path": "site/conteudos/academia-lotada-organizar-treino/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aee8366f34d560319d77dd1a1f82bad60b4bf458",
+      "size": 9339,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/aee8366f34d560319d77dd1a1f82bad60b4bf458"
+    },
+    {
+      "path": "site/conteudos/acompanhar-progresso-treino",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0d0b872c86863b8e55304d8d22eb98e039380c03",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/0d0b872c86863b8e55304d8d22eb98e039380c03"
+    },
+    {
+      "path": "site/conteudos/acompanhar-progresso-treino/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c02ce63e7f08750ae16a7f63812a0229d3192e1",
+      "size": 9231,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1c02ce63e7f08750ae16a7f63812a0229d3192e1"
+    },
+    {
+      "path": "site/conteudos/alimento-cru-cozido-registro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "23edbbd75af97af44174ee0bf5f6dda696417de1",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/23edbbd75af97af44174ee0bf5f6dda696417de1"
+    },
+    {
+      "path": "site/conteudos/alimento-cru-cozido-registro/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8c0d696cf99023303fd1fdc52628645ad2b1206",
+      "size": 9496,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e8c0d696cf99023303fd1fdc52628645ad2b1206"
+    },
+    {
+      "path": "site/conteudos/atacado-rio-como-avaliar-fornecedor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d147d8e20a3022e5556cecd5a0c1301ca934d83f",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/d147d8e20a3022e5556cecd5a0c1301ca934d83f"
+    },
+    {
+      "path": "site/conteudos/atacado-rio-como-avaliar-fornecedor/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8843e7240cace27bc08ff999c4440f715068f07",
+      "size": 5978,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e8843e7240cace27bc08ff999c4440f715068f07"
+    },
+    {
+      "path": "site/conteudos/como-consultar-disponibilidade-marcas",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c88a53960d3823fc71187bfb6b9276fb0827bdf",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/0c88a53960d3823fc71187bfb6b9276fb0827bdf"
+    },
+    {
+      "path": "site/conteudos/como-consultar-disponibilidade-marcas/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60fbde74c68551d2df9d3ce51cb9174f905f51f3",
+      "size": 6054,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/60fbde74c68551d2df9d3ce51cb9174f905f51f3"
+    },
+    {
+      "path": "site/conteudos/como-ler-ficha-treino",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "305f003abe8083bfda6d04ff94d2e0a48e4fe2d6",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/305f003abe8083bfda6d04ff94d2e0a48e4fe2d6"
+    },
+    {
+      "path": "site/conteudos/como-ler-ficha-treino/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0af1364a0334d585e0df044d24a9a41da2f6072a",
+      "size": 9120,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0af1364a0334d585e0df044d24a9a41da2f6072a"
+    },
+    {
+      "path": "site/conteudos/como-organizar-semana-treino",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "38d79613dcc42d0c18afaa931d70ca85c95f40c5",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/38d79613dcc42d0c18afaa931d70ca85c95f40c5"
+    },
+    {
+      "path": "site/conteudos/como-organizar-semana-treino/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d17af1b6ec20b50c517837dd889b747fe7f6f599",
+      "size": 9885,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d17af1b6ec20b50c517837dd889b747fe7f6f599"
+    },
+    {
+      "path": "site/conteudos/como-verificar-procedencia-canais-oficiais",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e03b1a2ddaa032b56bd2f1bdd50b03a31bee6b0",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/4e03b1a2ddaa032b56bd2f1bdd50b03a31bee6b0"
+    },
+    {
+      "path": "site/conteudos/como-verificar-procedencia-canais-oficiais/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "043e11001e881145790e6f1e3428535262617947",
+      "size": 6056,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/043e11001e881145790e6f1e3428535262617947"
+    },
+    {
+      "path": "site/conteudos/diario-de-treino-como-registrar",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78ce586b160835bf04956529d8dc242af7df7af7",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/78ce586b160835bf04956529d8dc242af7df7af7"
+    },
+    {
+      "path": "site/conteudos/diario-de-treino-como-registrar/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94051a8fa2509565e48c0668f913312fea5a2c1d",
+      "size": 9744,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/94051a8fa2509565e48c0668f913312fea5a2c1d"
+    },
+    {
+      "path": "site/conteudos/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa0f3555a07c8a1f28de68790c3efc83d390e795",
+      "size": 9297,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/aa0f3555a07c8a1f28de68790c3efc83d390e795"
+    },
+    {
+      "path": "site/conteudos/planejar-compras-refeicoes-semana",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7230aa917908dc39b941c23847faee5baa958c79",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/7230aa917908dc39b941c23847faee5baa958c79"
+    },
+    {
+      "path": "site/conteudos/planejar-compras-refeicoes-semana/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c3065a5f6e5be663ed9edfe851f8eb0996be616",
+      "size": 9629,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5c3065a5f6e5be663ed9edfe851f8eb0996be616"
+    },
+    {
+      "path": "site/conteudos/rir-o-que-significa",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c11accd3c64a33515f6d37a9840d00016d420b06",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/c11accd3c64a33515f6d37a9840d00016d420b06"
+    },
+    {
+      "path": "site/conteudos/rir-o-que-significa/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f5d3e6b3aacf844c109cd11d5d346cbd3b2cf8d",
+      "size": 9587,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1f5d3e6b3aacf844c109cd11d5d346cbd3b2cf8d"
+    },
+    {
+      "path": "site/dieta",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "272489b4ae0dac629e5fe82d54329449855f2d40",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/272489b4ae0dac629e5fe82d54329449855f2d40"
+    },
+    {
+      "path": "site/dieta/analytics-v20.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08e5a93e5c72e40c09ffa6fbb5ff18efa915f407",
+      "size": 198,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/08e5a93e5c72e40c09ffa6fbb5ff18efa915f407"
+    },
+    {
+      "path": "site/dieta/app-v21.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ca9536e22f8877d529208dc952a6e237b64eabe",
+      "size": 20809,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0ca9536e22f8877d529208dc952a6e237b64eabe"
+    },
+    {
+      "path": "site/dieta/config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4f5e86ebe1adf07006df59526165d31311f9045",
+      "size": 207,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a4f5e86ebe1adf07006df59526165d31311f9045"
+    },
+    {
+      "path": "site/dieta/food-data-manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17120ff859bad9a9c03757f1c10f75da53c8e014",
+      "size": 18640,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/17120ff859bad9a9c03757f1c10f75da53c8e014"
+    },
+    {
+      "path": "site/dieta/foods.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d21cd2b828ac6d1283b9e1c31ac2279c687695a",
+      "size": 29621,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5d21cd2b828ac6d1283b9e1c31ac2279c687695a"
+    },
+    {
+      "path": "site/dieta/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1008601cf6774eae6a9600ed69760df5ad77d37d",
+      "size": 24476,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1008601cf6774eae6a9600ed69760df5ad77d37d"
+    },
+    {
+      "path": "site/dieta/mealGenerator.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09d3387d8ebe063d14bad4061229322ebf47f987",
+      "size": 36237,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/09d3387d8ebe063d14bad4061229322ebf47f987"
+    },
+    {
+      "path": "site/dieta/nutrition-v21.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce5c6c20ad63886a2898223dea5f16c113485ca6",
+      "size": 8962,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ce5c6c20ad63886a2898223dea5f16c113485ca6"
+    },
+    {
+      "path": "site/dieta/nutritionEngine.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2160a48d754f07192e97f27370824d3deefdfcf4",
+      "size": 6436,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/2160a48d754f07192e97f27370824d3deefdfcf4"
+    },
+    {
+      "path": "site/dieta/safety.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3697f5eda6484d83e08cf568b25e2f62b7065ada",
+      "size": 2238,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3697f5eda6484d83e08cf568b25e2f62b7065ada"
+    },
+    {
+      "path": "site/dieta/storage.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf2d5d36965bc2a350a2e4e2bc0385ea71bd4940",
+      "size": 515,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bf2d5d36965bc2a350a2e4e2bc0385ea71bd4940"
+    },
+    {
+      "path": "site/dieta/substitutionEngine.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16874171cdff505e85e9a8e903e33a0f451c6c18",
+      "size": 2457,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/16874171cdff505e85e9a8e903e33a0f451c6c18"
+    },
+    {
+      "path": "site/enciclopedia",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e2a0d2dda707111e906f192857ee837bf2c316bf",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/e2a0d2dda707111e906f192857ee837bf2c316bf"
+    },
+    {
+      "path": "site/enciclopedia/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2421d52a2985d7e8bfef516530a673259544a6f4",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/2421d52a2985d7e8bfef516530a673259544a6f4"
+    },
+    {
+      "path": "site/enciclopedia/assets/app.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "416cb6dcb032e565a1f0273ae664b4bcb993d7a2",
+      "size": 6372,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/416cb6dcb032e565a1f0273ae664b4bcb993d7a2"
+    },
+    {
+      "path": "site/enciclopedia/assets/catalog-data.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "148b7ebb82da9b900fa25e86e8533799d1be2d36",
+      "size": 117758,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/148b7ebb82da9b900fa25e86e8533799d1be2d36"
+    },
+    {
+      "path": "site/enciclopedia/assets/catalogo.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05b2529f975aea8dcdf5b22c2859c2e1b0c9d431",
+      "size": 132135,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/05b2529f975aea8dcdf5b22c2859c2e1b0c9d431"
+    },
+    {
+      "path": "site/enciclopedia/assets/experience-v23-8.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "709d4fdc2e2004e67636e5be355f026644efae9d",
+      "size": 6465,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/709d4fdc2e2004e67636e5be355f026644efae9d"
+    },
+    {
+      "path": "site/enciclopedia/assets/experience-v23-8.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac9ae1545173d3834c1f1bb9847eee1bde8f1a3e",
+      "size": 2960,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ac9ae1545173d3834c1f1bb9847eee1bde8f1a3e"
+    },
+    {
+      "path": "site/enciclopedia/assets/nav-v23-4.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b06b0cf4e436901df3328ce23979afdf86a2057",
+      "size": 794,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6b06b0cf4e436901df3328ce23979afdf86a2057"
+    },
+    {
+      "path": "site/enciclopedia/assets/style.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "950bf3021466d40bb4cda0864e2d3171d96a21f8",
+      "size": 30034,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/950bf3021466d40bb4cda0864e2d3171d96a21f8"
+    },
+    {
+      "path": "site/enciclopedia/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "128d8471eb6f53d3570b830c4d50390eecf08d19",
+      "size": 33095,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/128d8471eb6f53d3570b830c4d50390eecf08d19"
+    },
+    {
+      "path": "site/enciclopedia/metodologia",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fdad1fd8d063983eea1f35c883948067bae98ec",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/5fdad1fd8d063983eea1f35c883948067bae98ec"
+    },
+    {
+      "path": "site/enciclopedia/metodologia/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f6e4d880080a24e04d624be550173001d982c98",
+      "size": 9658,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0f6e4d880080a24e04d624be550173001d982c98"
+    },
+    {
+      "path": "site/enciclopedia/sitemap-enciclopedia.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "105cc54602054b9b0269be8f67886341ac9a82f4",
+      "size": 5325,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/105cc54602054b9b0269be8f67886341ac9a82f4"
+    },
+    {
+      "path": "site/enciclopedia/substancias",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "440150712e70e2e1c20abe01d5f33d53a570d049",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/440150712e70e2e1c20abe01d5f33d53a570d049"
+    },
+    {
+      "path": "site/enciclopedia/substancias/anastrozol",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5c0b992a213b8532c843b9c80b5d967ed1dd1a8",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/f5c0b992a213b8532c843b9c80b5d967ed1dd1a8"
+    },
+    {
+      "path": "site/enciclopedia/substancias/anastrozol/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63a2364ae53d0c5db049258c62e9fc0d873e309d",
+      "size": 13637,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/63a2364ae53d0c5db049258c62e9fc0d873e309d"
+    },
+    {
+      "path": "site/enciclopedia/substancias/boldenona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a8cffbceaa5eb974ca48f44ed64c4465adc8962",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/5a8cffbceaa5eb974ca48f44ed64c4465adc8962"
+    },
+    {
+      "path": "site/enciclopedia/substancias/boldenona/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91f7cfab52354d03fea70b3865fbd9e186228747",
+      "size": 14944,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/91f7cfab52354d03fea70b3865fbd9e186228747"
+    },
+    {
+      "path": "site/enciclopedia/substancias/clenbuterol",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd115826a5ef7005bee3ccc0ed9a8219db7e1f1f",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/dd115826a5ef7005bee3ccc0ed9a8219db7e1f1f"
+    },
+    {
+      "path": "site/enciclopedia/substancias/clenbuterol/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f8be3a3a7b355265add7a1ffb517fdc2530db3a",
+      "size": 14236,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5f8be3a3a7b355265add7a1ffb517fdc2530db3a"
+    },
+    {
+      "path": "site/enciclopedia/substancias/clomifeno",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ad91ea536eada21df38de475e12e97305b5734b",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/9ad91ea536eada21df38de475e12e97305b5734b"
+    },
+    {
+      "path": "site/enciclopedia/substancias/clomifeno/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6812ccfac549517cfafe69d3ded189a60c71a8f9",
+      "size": 13250,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6812ccfac549517cfafe69d3ded189a60c71a8f9"
+    },
+    {
+      "path": "site/enciclopedia/substancias/drostanolona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b517be50e0aae1cb4f12f847241dcb95541a659a",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/b517be50e0aae1cb4f12f847241dcb95541a659a"
+    },
+    {
+      "path": "site/enciclopedia/substancias/drostanolona/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "933c9e7fc333fb60c7cfef40559412e6d382ecd6",
+      "size": 14949,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/933c9e7fc333fb60c7cfef40559412e6d382ecd6"
+    },
+    {
+      "path": "site/enciclopedia/substancias/estanozolol-injetavel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f8fdb59a3fb09efe836f48df38c55baa09778322",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/f8fdb59a3fb09efe836f48df38c55baa09778322"
+    },
+    {
+      "path": "site/enciclopedia/substancias/estanozolol-injetavel/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9455b30e3bd41c949a03c8532f4e8a0fab9197d1",
+      "size": 15032,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/9455b30e3bd41c949a03c8532f4e8a0fab9197d1"
+    },
+    {
+      "path": "site/enciclopedia/substancias/estanozolol-oral",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c88128d939a9a6ac3914df5ace72ceebdeee86a9",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/c88128d939a9a6ac3914df5ace72ceebdeee86a9"
+    },
+    {
+      "path": "site/enciclopedia/substancias/estanozolol-oral/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cb624736d02732c3d67db0a6374570f1f538ee1",
+      "size": 15004,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3cb624736d02732c3d67db0a6374570f1f538ee1"
+    },
+    {
+      "path": "site/enciclopedia/substancias/fluoximesterona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24a73748fed38288abf48d60588976619694c57d",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/24a73748fed38288abf48d60588976619694c57d"
+    },
+    {
+      "path": "site/enciclopedia/substancias/fluoximesterona/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22a28e1941181371aba229719fd06ebc120da642",
+      "size": 14920,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/22a28e1941181371aba229719fd06ebc120da642"
+    },
+    {
+      "path": "site/enciclopedia/substancias/ghrp-6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dba38c956f4aec8e4375c1bea05b8b4acaa0837e",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/dba38c956f4aec8e4375c1bea05b8b4acaa0837e"
+    },
+    {
+      "path": "site/enciclopedia/substancias/ghrp-6/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a1c6ab87a25879d0125d31c37e8aa55089d0f34",
+      "size": 13244,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3a1c6ab87a25879d0125d31c37e8aa55089d0f34"
+    },
+    {
+      "path": "site/enciclopedia/substancias/hcg",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c59f2f2a91ca281cd224481c4e610cc2fee08554",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/c59f2f2a91ca281cd224481c4e610cc2fee08554"
+    },
+    {
+      "path": "site/enciclopedia/substancias/hcg/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3a9ba4a22fd3bef5c93ba987a119682c3e072fc",
+      "size": 14025,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e3a9ba4a22fd3bef5c93ba987a119682c3e072fc"
+    },
+    {
+      "path": "site/enciclopedia/substancias/igf-1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ff832ec9a2e714c7168de7eabd2c391dd23724d",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/6ff832ec9a2e714c7168de7eabd2c391dd23724d"
+    },
+    {
+      "path": "site/enciclopedia/substancias/igf-1/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4027d156c7c0132e156cdaa59bec769bde6425ae",
+      "size": 13229,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4027d156c7c0132e156cdaa59bec769bde6425ae"
+    },
+    {
+      "path": "site/enciclopedia/substancias/insulina",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "91ea4d0f72add2053b919c495f6ed22917a7605c",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/91ea4d0f72add2053b919c495f6ed22917a7605c"
+    },
+    {
+      "path": "site/enciclopedia/substancias/insulina/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e99cf58f1af9a934b56938a8e80276687419b30",
+      "size": 13682,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8e99cf58f1af9a934b56938a8e80276687419b30"
+    },
+    {
+      "path": "site/enciclopedia/substancias/ipamorelina",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2be3d3ea17258196f6e43a2ec085c47b331530a",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/a2be3d3ea17258196f6e43a2ec085c47b331530a"
+    },
+    {
+      "path": "site/enciclopedia/substancias/ipamorelina/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09c8e5e7042dc3da30f869b1de9a09f6970261aa",
+      "size": 13371,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/09c8e5e7042dc3da30f869b1de9a09f6970261aa"
+    },
+    {
+      "path": "site/enciclopedia/substancias/letrozol",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d0aad8c8364444e39bb68234a8b44cc0c69aaec",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/4d0aad8c8364444e39bb68234a8b44cc0c69aaec"
+    },
+    {
+      "path": "site/enciclopedia/substancias/letrozol/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a24d902c3d0df8a218b17d740d26aa0b3336f30f",
+      "size": 13016,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a24d902c3d0df8a218b17d740d26aa0b3336f30f"
+    },
+    {
+      "path": "site/enciclopedia/substancias/levotiroxina-t4",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25c11e65a200e8db85f7e44cc2e1381e78e9bb44",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/25c11e65a200e8db85f7e44cc2e1381e78e9bb44"
+    },
+    {
+      "path": "site/enciclopedia/substancias/levotiroxina-t4/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59aea1a2feae225f2d28e87aa17f16b161ab22fb",
+      "size": 13305,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/59aea1a2feae225f2d28e87aa17f16b161ab22fb"
+    },
+    {
+      "path": "site/enciclopedia/substancias/liotironina-t3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "87717c54440471e6b210eba2f53f93d4d0d571e9",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/87717c54440471e6b210eba2f53f93d4d0d571e9"
+    },
+    {
+      "path": "site/enciclopedia/substancias/liotironina-t3/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97adb15e0c8f83f9012d933b049551b37e9e9d8e",
+      "size": 13652,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/97adb15e0c8f83f9012d933b049551b37e9e9d8e"
+    },
+    {
+      "path": "site/enciclopedia/substancias/mesterolona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9a74d3773deebcb7181e68aad13a424ad3aa573",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/a9a74d3773deebcb7181e68aad13a424ad3aa573"
+    },
+    {
+      "path": "site/enciclopedia/substancias/mesterolona/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49b1f8f2208ff702ce5b95dffcc350355c3852f2",
+      "size": 14916,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/49b1f8f2208ff702ce5b95dffcc350355c3852f2"
+    },
+    {
+      "path": "site/enciclopedia/substancias/metandienona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a662108d1c7f1b49cab4493ed8e2ce788459b499",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/a662108d1c7f1b49cab4493ed8e2ce788459b499"
+    },
+    {
+      "path": "site/enciclopedia/substancias/metandienona/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a6dba2c027150d86c33996dad73e244f4723505",
+      "size": 14877,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7a6dba2c027150d86c33996dad73e244f4723505"
+    },
+    {
+      "path": "site/enciclopedia/substancias/metenolona-injetavel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "768d4606cdeb220034a9474b9296a489812beb01",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/768d4606cdeb220034a9474b9296a489812beb01"
+    },
+    {
+      "path": "site/enciclopedia/substancias/metenolona-injetavel/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32c2eb386ebe36ff3c6597f82c819ee459ebbc62",
+      "size": 14981,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/32c2eb386ebe36ff3c6597f82c819ee459ebbc62"
+    },
+    {
+      "path": "site/enciclopedia/substancias/nandrolona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f766400bea6efd40575f428c877f165723c13ce4",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/f766400bea6efd40575f428c877f165723c13ce4"
+    },
+    {
+      "path": "site/enciclopedia/substancias/nandrolona/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59f3942cf2c700d063bd4222ce42eecc2973215c",
+      "size": 14984,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/59f3942cf2c700d063bd4222ce42eecc2973215c"
+    },
+    {
+      "path": "site/enciclopedia/substancias/oxandrolona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "395c47df33c90427f74ebcd36229e9e798265013",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/395c47df33c90427f74ebcd36229e9e798265013"
+    },
+    {
+      "path": "site/enciclopedia/substancias/oxandrolona/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e54085b3b2f1a9e60f63a4a3b1150fd85772cef8",
+      "size": 15288,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e54085b3b2f1a9e60f63a4a3b1150fd85772cef8"
+    },
+    {
+      "path": "site/enciclopedia/substancias/oximetolona",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "baa9efe1984e4e4c60043e392452c38e92b01a2d",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/baa9efe1984e4e4c60043e392452c38e92b01a2d"
+    },
+    {
+      "path": "site/enciclopedia/substancias/oximetolona/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5e37d0b021d95ac452ff2da86e61a61e21854b4",
+      "size": 14908,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f5e37d0b021d95ac452ff2da86e61a61e21854b4"
+    },
+    {
+      "path": "site/enciclopedia/substancias/retatrutida",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07abc55edec0f489f02f648bccb0633e107dd439",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/07abc55edec0f489f02f648bccb0633e107dd439"
+    },
+    {
+      "path": "site/enciclopedia/substancias/retatrutida/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe1f3ed26cc843b02d3b15a82cdc3ef9b66bf0b",
+      "size": 13984,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/dfe1f3ed26cc843b02d3b15a82cdc3ef9b66bf0b"
+    },
+    {
+      "path": "site/enciclopedia/substancias/somatropina-gh",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6654d1572458277b8d63d3b3f25d0cc0de6feaed",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/6654d1572458277b8d63d3b3f25d0cc0de6feaed"
+    },
+    {
+      "path": "site/enciclopedia/substancias/somatropina-gh/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7db13f7ebb7b0581a22d10c439e3b720728efde2",
+      "size": 13930,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7db13f7ebb7b0581a22d10c439e3b720728efde2"
+    },
+    {
+      "path": "site/enciclopedia/substancias/tamoxifeno",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5c882a251f40f3439ab0d2a56e0ba6ffd9b46ba",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/d5c882a251f40f3439ab0d2a56e0ba6ffd9b46ba"
+    },
+    {
+      "path": "site/enciclopedia/substancias/tamoxifeno/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0663f9f9a49b4d1a7cf8ab1cb1f013e119721f74",
+      "size": 13488,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0663f9f9a49b4d1a7cf8ab1cb1f013e119721f74"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-cipionato",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "355f605e0465d8f682fd077954d3b37260bcf870",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/355f605e0465d8f682fd077954d3b37260bcf870"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-cipionato/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc701db5de4b3339d5ee325e53d97bfae34e2885",
+      "size": 15215,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bc701db5de4b3339d5ee325e53d97bfae34e2885"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-enantato",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d72b485a78605020448453b0c69c4a19cb25bdc",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/6d72b485a78605020448453b0c69c4a19cb25bdc"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-enantato/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbba77119258556638b356d07bbc262fee344c38",
+      "size": 15194,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/fbba77119258556638b356d07bbc262fee344c38"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-mistura-esteres",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "362380210b0531dad8b9242d2d3f7d3e94c7e084",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/362380210b0531dad8b9242d2d3f7d3e94c7e084"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-mistura-esteres/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6e0dd531fc8e37aaccab3ded07c4c68f64c2dca",
+      "size": 15118,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c6e0dd531fc8e37aaccab3ded07c4c68f64c2dca"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-propionato",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f50b81d53ade853eb6f1367487576d68673ff711",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/f50b81d53ade853eb6f1367487576d68673ff711"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-propionato/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a719a9a8f410122a37bed92a887e61a1ace3214",
+      "size": 15207,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5a719a9a8f410122a37bed92a887e61a1ace3214"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-suspensao",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e92730de1ee80a895a103eb5c5d8cb14644599ad",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/e92730de1ee80a895a103eb5c5d8cb14644599ad"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-suspensao/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caa67faf869ed17d5402cd2ff510b64d8840aaac",
+      "size": 15209,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/caa67faf869ed17d5402cd2ff510b64d8840aaac"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-undecanoato-oral",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a73213444bb7e51663b83439a37d35b959f6608",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/1a73213444bb7e51663b83439a37d35b959f6608"
+    },
+    {
+      "path": "site/enciclopedia/substancias/testosterona-undecanoato-oral/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85a3c9eed04ea64019380afb04165b5349a6646f",
+      "size": 15288,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/85a3c9eed04ea64019380afb04165b5349a6646f"
+    },
+    {
+      "path": "site/enciclopedia/substancias/tirzepatida",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "36a7a27e26010b3b2fb8f696be2a4b69f9108027",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/36a7a27e26010b3b2fb8f696be2a4b69f9108027"
+    },
+    {
+      "path": "site/enciclopedia/substancias/tirzepatida/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eed2678a8e6f503a853210b4588e1e48923c89a0",
+      "size": 13462,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/eed2678a8e6f503a853210b4588e1e48923c89a0"
+    },
+    {
+      "path": "site/enciclopedia/substancias/trembolona-acetato",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82233f575b9c32b31f29000e2073f2861526fb86",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/82233f575b9c32b31f29000e2073f2861526fb86"
+    },
+    {
+      "path": "site/enciclopedia/substancias/trembolona-acetato/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a888fb8d5f12d7bd1484467064a948f348f6641a",
+      "size": 15019,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a888fb8d5f12d7bd1484467064a948f348f6641a"
+    },
+    {
+      "path": "site/enciclopedia/substancias/trembolona-enantato",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ae8c000eb3aff4e2ae9a517eac24b83ea2ca8fd",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/4ae8c000eb3aff4e2ae9a517eac24b83ea2ca8fd"
+    },
+    {
+      "path": "site/enciclopedia/substancias/trembolona-enantato/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f45f0e1f27bf61552c80ad5ba67078f8c0887387",
+      "size": 15039,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f45f0e1f27bf61552c80ad5ba67078f8c0887387"
+    },
+    {
+      "path": "site/enciclopedia/substancias/turinabol",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a1e2ad163ecd2a76e135ec0a390af0216fc8e6f",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/6a1e2ad163ecd2a76e135ec0a390af0216fc8e6f"
+    },
+    {
+      "path": "site/enciclopedia/substancias/turinabol/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aad2764125efd0e112f89478044db198acb58aec",
+      "size": 14824,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/aad2764125efd0e112f89478044db198acb58aec"
+    },
+    {
+      "path": "site/entregas",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7eb3041b8e34298f2a99f5f2d079a2ad8694708c",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/7eb3041b8e34298f2a99f5f2d079a2ad8694708c"
+    },
+    {
+      "path": "site/entregas/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8c9f40840ae201120b85dba76f20229bd461d62",
+      "size": 13860,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d8c9f40840ae201120b85dba76f20229bd461d62"
+    },
+    {
+      "path": "site/favicon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbb026a33991f4d0de82c8d001f70001dee66f02",
+      "size": 56707,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bbb026a33991f4d0de82c8d001f70001dee66f02"
+    },
+    {
+      "path": "site/ferramentas",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad9bcff1802f8d15305a8013f66de1f87adc2f47",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/ad9bcff1802f8d15305a8013f66de1f87adc2f47"
+    },
+    {
+      "path": "site/ferramentas/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3291565503353f8de2fcd557f93413136ae50711",
+      "size": 6888,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3291565503353f8de2fcd557f93413136ae50711"
+    },
+    {
+      "path": "site/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1176d3cbb55eeb775b9f3ff6f808f69836c014c0",
+      "size": 41549,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1176d3cbb55eeb775b9f3ff6f808f69836c014c0"
+    },
+    {
+      "path": "site/manifest-digital-flagship-2026-rc2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63de1d36fd1fa3f28fac4dd12d99f5976b79afb2",
+      "size": 1387,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/63de1d36fd1fa3f28fac4dd12d99f5976b79afb2"
+    },
+    {
+      "path": "site/manifest-digital-flagship-2026-rc3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c94db89da90abcc29e802f8173ce375c88704a0d",
+      "size": 2028,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/c94db89da90abcc29e802f8173ce375c88704a0d"
+    },
+    {
+      "path": "site/manifest-digital-flagship-2026-rc4.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15e5e8e1e224f6467a363077e27d9b2569e3e284",
+      "size": 1190,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/15e5e8e1e224f6467a363077e27d9b2569e3e284"
+    },
+    {
+      "path": "site/manifest-digital-flagship-2026-rc5.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92fcdd8099cdeca670a500e66d452c0d2dc1e597",
+      "size": 2593,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/92fcdd8099cdeca670a500e66d452c0d2dc1e597"
+    },
+    {
+      "path": "site/manifest-digital-flagship-2026.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de2b3de62304716f165c1ca2697a5ba1b06a9d36",
+      "size": 1029,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/de2b3de62304716f165c1ca2697a5ba1b06a9d36"
+    },
+    {
+      "path": "site/manifest-flagship-v25.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b32bbbad6c0d544005be6feebe455efb042c3ba",
+      "size": 1566,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4b32bbbad6c0d544005be6feebe455efb042c3ba"
+    },
+    {
+      "path": "site/manifest-openseo-20261112.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b472c34fc96768e2d1eee18bfe6e5e77e584bde0",
+      "size": 624,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b472c34fc96768e2d1eee18bfe6e5e77e584bde0"
+    },
+    {
+      "path": "site/manifest-titan-v1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58a1fe7a18baa8214c76c8cd8ac5b296a102718e",
+      "size": 3976,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/58a1fe7a18baa8214c76c8cd8ac5b296a102718e"
+    },
+    {
+      "path": "site/manifest-v23-10.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5eacaece369cd782c714a6b324fa84d2a959832",
+      "size": 18637,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/f5eacaece369cd782c714a6b324fa84d2a959832"
+    },
+    {
+      "path": "site/manifest-v23-2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8478e688d2d9e420ce2b292bbda4c58d10c3cc16",
+      "size": 10981,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8478e688d2d9e420ce2b292bbda4c58d10c3cc16"
+    },
+    {
+      "path": "site/manifest-v23-3.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bd61732f906bb1d5d975e6748a77a78f00c4ab4",
+      "size": 16252,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0bd61732f906bb1d5d975e6748a77a78f00c4ab4"
+    },
+    {
+      "path": "site/manifest-v23-4.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd46d4f521ac6133073b2f3de60db3088b46ade0",
+      "size": 16452,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/dd46d4f521ac6133073b2f3de60db3088b46ade0"
+    },
+    {
+      "path": "site/manifest-v23-6.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99338b8def39ce656f2c0e414cd019a873605195",
+      "size": 16487,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/99338b8def39ce656f2c0e414cd019a873605195"
+    },
+    {
+      "path": "site/manifest-v23-7.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f5e093b6276d80629710cdc23be8265f4b08486",
+      "size": 16661,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/0f5e093b6276d80629710cdc23be8265f4b08486"
+    },
+    {
+      "path": "site/manifest-v23-8.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d16ea26e7e488da3d1a12e797ddfb51a3cb8e08",
+      "size": 17086,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3d16ea26e7e488da3d1a12e797ddfb51a3cb8e08"
+    },
+    {
+      "path": "site/manifest-v23-9.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e76a5518a0cf4c940224b00d5e4116faa729fc8b",
+      "size": 18156,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/e76a5518a0cf4c940224b00d5e4116faa729fc8b"
+    },
+    {
+      "path": "site/marcas",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "812bf0ae76f0e04ca8a336fe22a3119c62518bc4",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/812bf0ae76f0e04ca8a336fe22a3119c62518bc4"
+    },
+    {
+      "path": "site/marcas/alpha-laboratory",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc8495a67410cd1f79c3b82d630e88490871cfba",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/fc8495a67410cd1f79c3b82d630e88490871cfba"
+    },
+    {
+      "path": "site/marcas/alpha-laboratory/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9e63e1fddd6db9bd59259a873c5ac3055549d92",
+      "size": 6431,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/b9e63e1fddd6db9bd59259a873c5ac3055549d92"
+    },
+    {
+      "path": "site/marcas/cooper-pharma",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6c50a7410c883d1da509d236e7db617b7fde7f68",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/6c50a7410c883d1da509d236e7db617b7fde7f68"
+    },
+    {
+      "path": "site/marcas/cooper-pharma/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30c55397acce6ede8fc859bcacafb2419cacb758",
+      "size": 6410,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/30c55397acce6ede8fc859bcacafb2419cacb758"
+    },
+    {
+      "path": "site/marcas/eticos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3576b5969d8d01f3b09d4f166c8086e6dfb2c1a8",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/3576b5969d8d01f3b09d4f166c8086e6dfb2c1a8"
+    },
+    {
+      "path": "site/marcas/eticos/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdaa0ebb00f3f9c7e22919de14edfb28e4ec73a0",
+      "size": 6391,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/bdaa0ebb00f3f9c7e22919de14edfb28e4ec73a0"
+    },
+    {
+      "path": "site/marcas/geniqs-pharma",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32c141e3fc334a44a4f534db76d09af8d59366b1",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/32c141e3fc334a44a4f534db76d09af8d59366b1"
+    },
+    {
+      "path": "site/marcas/geniqs-pharma/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ab3612b5bbb8242c13bf90c5d15ebd47d22a2a6",
+      "size": 6410,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7ab3612b5bbb8242c13bf90c5d15ebd47d22a2a6"
+    },
+    {
+      "path": "site/marcas/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36bffa447d44e6c7b70de9a9f76daea5c5d52bbc",
+      "size": 9511,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/36bffa447d44e6c7b70de9a9f76daea5c5d52bbc"
+    },
+    {
+      "path": "site/marcas/indufar",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "afa0ff0d9ea22db5f42080375f0a6956a5685c6f",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/afa0ff0d9ea22db5f42080375f0a6956a5685c6f"
+    },
+    {
+      "path": "site/marcas/indufar/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4839bed103dbe78bfeb2323e4fe8c319aa9d7b6e",
+      "size": 6368,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/4839bed103dbe78bfeb2323e4fe8c319aa9d7b6e"
+    },
+    {
+      "path": "site/marcas/landerlan-gold",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "852bf34daf24fb79a56d4b1adaf7cbeb301eeff4",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/852bf34daf24fb79a56d4b1adaf7cbeb301eeff4"
+    },
+    {
+      "path": "site/marcas/landerlan-gold/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1840f2a6a575f08cd1ad316c9322ff3073471780",
+      "size": 6417,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/1840f2a6a575f08cd1ad316c9322ff3073471780"
+    },
+    {
+      "path": "site/marcas/landerlan",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bea8cfec23d69747857af9438af8154f2118781f",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/bea8cfec23d69747857af9438af8154f2118781f"
+    },
+    {
+      "path": "site/marcas/landerlan/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8ced2c9017c479ffc1bc08282de2574ebf2d446",
+      "size": 6382,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d8ced2c9017c479ffc1bc08282de2574ebf2d446"
+    },
+    {
+      "path": "site/marcas/life-peptideos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "534b10cad2371a43b9293993fd50e28af90df833",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/534b10cad2371a43b9293993fd50e28af90df833"
+    },
+    {
+      "path": "site/marcas/life-peptideos/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6100f35cf9154064e1aaf4242f39616a5919dfb5",
+      "size": 6422,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6100f35cf9154064e1aaf4242f39616a5919dfb5"
+    },
+    {
+      "path": "site/marcas/muscle-labs-india",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d802f7336f6d783efeb8a85b4875ea9a94158b35",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/d802f7336f6d783efeb8a85b4875ea9a94158b35"
+    },
+    {
+      "path": "site/marcas/muscle-labs-india/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d95d1aedfb780c4a7f2179f540b5fe2bd43301d1",
+      "size": 6438,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/d95d1aedfb780c4a7f2179f540b5fe2bd43301d1"
+    },
+    {
+      "path": "site/marcas/oxygen-kw-pharma",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cfeda29adbc2be5346298cebc591d4b2ac525b3c",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/cfeda29adbc2be5346298cebc591d4b2ac525b3c"
+    },
+    {
+      "path": "site/marcas/oxygen-kw-pharma/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aa43d153c54c14ad6806e72ecbdb4e311445407",
+      "size": 6431,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/2aa43d153c54c14ad6806e72ecbdb4e311445407"
+    },
+    {
+      "path": "site/marcas/synedica",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e690d752d056eb54897e7b99aab5db151a61876f",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/e690d752d056eb54897e7b99aab5db151a61876f"
+    },
+    {
+      "path": "site/marcas/synedica/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecef246b0858bb71cdfbce31295d0521f1e2c667",
+      "size": 6375,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ecef246b0858bb71cdfbce31295d0521f1e2c667"
+    },
+    {
+      "path": "site/marcas/topharma",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "924f8e929bebd4202d2563b3324de07c7fe5daa8",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/924f8e929bebd4202d2563b3324de07c7fe5daa8"
+    },
+    {
+      "path": "site/marcas/topharma/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8211aaf742b8ab88222e8b371897bed0ee774661",
+      "size": 6375,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/8211aaf742b8ab88222e8b371897bed0ee774661"
+    },
+    {
+      "path": "site/marcas/zphc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa25b58f15339bda5725946de5474a3f68f45d80",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/fa25b58f15339bda5725946de5474a3f68f45d80"
+    },
+    {
+      "path": "site/marcas/zphc/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a862ef850d7a4b64ef5b2d244ce14766bdfa7dde",
+      "size": 6347,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a862ef850d7a4b64ef5b2d244ce14766bdfa7dde"
+    },
+    {
+      "path": "site/netlify.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4bfe46fa31691dfa7fe5bb47c447ad8409f838a",
+      "size": 174,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/a4bfe46fa31691dfa7fe5bb47c447ad8409f838a"
+    },
+    {
+      "path": "site/perguntas-frequentes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9f24d3842582005717f845d41b5e30a4a141f81",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/b9f24d3842582005717f845d41b5e30a4a141f81"
+    },
+    {
+      "path": "site/perguntas-frequentes/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a5c65203a3f4ece33f19bdfbca7de0aa666aee2",
+      "size": 8346,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/6a5c65203a3f4ece33f19bdfbca7de0aa666aee2"
+    },
+    {
+      "path": "site/privacidade.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b350b453e77bd40b7ab95ef7facf439d6de666f",
+      "size": 7598,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/7b350b453e77bd40b7ab95ef7facf439d6de666f"
+    },
+    {
+      "path": "site/radar-performance",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0124f79c99a740ce4f86d606c4ea38ad6a411256",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/0124f79c99a740ce4f86d606c4ea38ad6a411256"
+    },
+    {
+      "path": "site/radar-performance/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce88f9ff33f4e3b74c643c478217df5585e3f5b1",
+      "size": 10318,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/ce88f9ff33f4e3b74c643c478217df5585e3f5b1"
+    },
+    {
+      "path": "site/radar-performance/recebido",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5aa76b4298565d4a8766fff6742d20e61596baae",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/5aa76b4298565d4a8766fff6742d20e61596baae"
+    },
+    {
+      "path": "site/radar-performance/recebido/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50d5e4e501e3b52513b48f38b8a142e48f99c419",
+      "size": 5930,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/50d5e4e501e3b52513b48f38b8a142e48f99c419"
+    },
+    {
+      "path": "site/release.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37602207a1bcc527ca05e9ed66a38fa3712906ab",
+      "size": 2867,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/37602207a1bcc527ca05e9ed66a38fa3712906ab"
+    },
+    {
+      "path": "site/robots.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "734337431ee861a8c203d3fbf4854e0c639dcec1",
+      "size": 143,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/734337431ee861a8c203d3fbf4854e0c639dcec1"
+    },
+    {
+      "path": "site/sitemap.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bdc0066112e4a4b5b860bf06d75fc30503bd835",
+      "size": 8766,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/3bdc0066112e4a4b5b860bf06d75fc30503bd835"
+    },
+    {
+      "path": "site/sobre",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26aa48066ece33e93db0d3a168b18fb1c4a48240",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/26aa48066ece33e93db0d3a168b18fb1c4a48240"
+    },
+    {
+      "path": "site/sobre/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d0d24986854e2b98ab18c958393e9871f620959",
+      "size": 7222,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/9d0d24986854e2b98ab18c958393e9871f620959"
+    },
+    {
+      "path": "site/termos.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ec2820635dce6270fc56381314e2481aafe23a1",
+      "size": 6088,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/5ec2820635dce6270fc56381314e2481aafe23a1"
+    },
+    {
+      "path": "site/treino",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c27e6718d56fa3351e429d906cfaa556029130c7",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/c27e6718d56fa3351e429d906cfaa556029130c7"
+    },
+    {
+      "path": "site/treino/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "492d706d495029a23f5327c2b45485acfc8b1796",
+      "size": 28789,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/492d706d495029a23f5327c2b45485acfc8b1796"
+    },
+    {
+      "path": "site/varejo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "49d86f3dd80a666f73196c04f17499fb3a3135ef",
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/trees/49d86f3dd80a666f73196c04f17499fb3a3135ef"
+    },
+    {
+      "path": "site/varejo/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17fdb4baa1eaf85576e27fd1db977067ea949d8e",
+      "size": 13459,
+      "url": "https://api.github.com/repos/landerlanrio/Lander-Rio-/git/blobs/17fdb4baa1eaf85576e27fd1db977067ea949d8e"
+    }
+  ],
+  "truncated": false
+}

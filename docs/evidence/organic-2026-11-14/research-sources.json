@@ -1,0 +1,68 @@
+[
+  [
+    "Google Search Central",
+    "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "Diretriz oficial: valor próprio, confiabilidade, autoria e foco no usuário. Não promete posição.",
+    "Aplicar nos exemplos e fontes; não criar credenciais, datas ou volume artificiais."
+  ],
+  [
+    "Tim Soulo / Ahrefs",
+    "https://ahrefs.com/blog/keyword-difficulty/",
+    "Explica limites do KD, que não cobre sozinho intenção e capacidade competitiva. Método, não experimento causal para este site.",
+    "Escolher intenção e utilidade; marcar KD não disponível sem estimativa inventada."
+  ],
+  [
+    "Brian Dean / Backlinko",
+    "https://backlinko.com/skyscraper-technique?version=published",
+    "Caso publicado relata +110% de tráfego em 14 dias; experimento histórico de 2013, página atualizada em 2024, sem controle causal.",
+    "Aproveitar ativo útil e referências editoriais. Rejeitar promessas universais e conteúdo apenas mais longo."
+  ],
+  [
+    "Aleyda Solis",
+    "https://www.aleydasolis.com/en/ai-search/content-prioritization-ai-search/",
+    "Framework de agosto de 2026 considera valor de negócio, vantagem própria, esforço e capacidade de gerar visitas. Evidência direcional; não prova para Brasil/fitness.",
+    "Priorizar ferramentas que exigem uso, em vez de só respostas genéricas facilmente substituídas."
+  ],
+  [
+    "Lily Ray",
+    "https://lilyray.nyc/e-a-t-expertise-authoritativeness-trustworthiness/",
+    "Síntese e análises observacionais sobre confiança e temas de saúde. Não estabelece uma nota pública de E-E-A-T.",
+    "Autoria institucional transparente; revisão clínica independente só se realmente realizada."
+  ],
+  [
+    "Kevin Indig",
+    "https://www.growth-memo.com/p/seo-growth-loops",
+    "A introdução pública relaciona crescimento orgânico, produto e mecanismos de distribuição. Parte do texto é restrita; não alegamos ter lido o estudo completo.",
+    "Recurso → uso → retorno e possível referência editorial é hipótese de produto; não resultado medido."
+  ],
+  [
+    "Glenn Gabe",
+    "https://www.gsqi.com/marketing-blog/core-roars-back-google-may-2026-core-update-analysis/",
+    "Análise de junho de 2026 traz observações da atualização de maio. Casos correlacionais não isolam causas.",
+    "Revisar qualidade e experiência como conjunto; não diagnosticar penalização por falta de indexação."
+  ],
+  [
+    "Marie Haynes",
+    "https://www.mariehaynes.com/its-possible-your-migration-issues-may-be-due-to-site-quality/",
+    "Artigo de outubro de 2026 propõe hipótese de qualidade em migrações; a autora explicita que não está comprovada.",
+    "Não aplicar diagnóstico de migração à LANDER RIO nem trocar domínio sem evidência."
+  ],
+  [
+    "Semrush",
+    "https://www.semrush.com/blog/topic-clusters/",
+    "Modelo editorial de clusters e links internos. Material de fornecedor; não ensaio independente que determine ganho.",
+    "Uma intenção por destino útil, sem duplicar páginas para variantes de palavras."
+  ],
+  [
+    "Google: links rastreáveis",
+    "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+    "Documentação técnica sobre links HTML e âncoras descritivas.",
+    "Links reais entre hub, ferramentas e guias."
+  ],
+  [
+    "Google: políticas de spam",
+    "https://developers.google.com/search/docs/essentials/spam-policies",
+    "Regras contra manipulação de links, páginas de entrada e conteúdo escalado sem valor.",
+    "Sem compra de links, repetição artificial ou páginas por cidades sem diferencial."
+  ]
+]

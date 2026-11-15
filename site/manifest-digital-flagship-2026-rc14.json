@@ -1,0 +1,13 @@
+{
+  "version": "digital-flagship-2026-rc14",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_deploy": "6af804d36034a689af84dddf",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/diamond-editorial-rc14.css": "5da69daeeee5e87683d29e352749a3e243da1942d5573393d986ad371e93e56b",
+    "assets/editorial/composicao-vidro-rc14.webp": "60883d9908f91cb174afbe28172cf4ced3a2628ab12c630a9ee0d4621fd6d20b",
+    "assets/measurement-v23-2.js": "25b2e6beab3b61f2a5bda2bf92d93c4c24a056785bfb926d6baf46dc6d437cdb",
+    "marcas/landerlan/index.html": "440a41c54aceb8307a877239edf5c3e258a09a33a26100f7286403526f230ec5",
+    "release.json": "42cc2fbbf03a8ae8585c3f5443b5ffcf81e67442f379f941b8ca64994d9998d7"
+  }
+}

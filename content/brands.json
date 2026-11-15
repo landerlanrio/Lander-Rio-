@@ -204,37 +204,37 @@
           "name": "Durateston Plus",
           "detail": "Mistura de ésteres de testosterona",
           "group": "Diamond",
-          "source": 1
+          "source": 6
         },
         {
           "name": "Decaland Depot",
           "detail": "Decanoato de nandrolona",
           "group": "Diamond",
-          "source": 1
+          "source": 9
         },
         {
           "name": "Testenat Depot",
           "detail": "Enantato de testosterona",
           "group": "Diamond",
-          "source": 1
+          "source": 11
         },
         {
           "name": "Testoland Depot",
           "detail": "Cipionato de testosterona",
           "group": "Diamond",
-          "source": 1
+          "source": 10
         },
         {
           "name": "Drostanolona propionato",
-          "detail": "Apresentação em ampolas",
+          "detail": "Propionato de drostanolona",
           "group": "Diamond",
-          "source": 1
+          "source": 7
         },
         {
           "name": "Metenolona enantato",
-          "detail": "Apresentação em ampolas",
+          "detail": "Enantato de metenolona",
           "group": "Diamond",
-          "source": 1
+          "source": 8
         },
         {
           "name": "Testosterona propionato",
@@ -253,17 +253,17 @@
         {
           "label": "Landerpharma · linha Diamond",
           "url": "https://www.landerpharma.com.py/linea-diamond",
-          "checked": "2026-11-13"
+          "checked": "2026-11-15"
         },
         {
           "label": "Landerpharma · linha Gold",
           "url": "https://www.landerpharma.com.py/linea-gold",
-          "checked": "2026-11-13"
+          "checked": "2026-11-15"
         },
         {
           "label": "Landerpharma · linhas e apresentação",
           "url": "https://www.landerpharma.com.py/",
-          "checked": "2026-11-13"
+          "checked": "2026-11-15"
         },
         {
           "label": "Landerpharma · trajetória declarada",
@@ -274,13 +274,53 @@
           "label": "Landerpharma · perguntas frequentes",
           "url": "https://www.landerpharma.com.py/preguntas-frecuentes",
           "checked": "2026-11-13"
+        },
+        {
+          "label": "Landerpharma · Durateston Plus Diamond",
+          "url": "https://landerpharma.com.py/productos/durateston-plus-10-ampollas-x-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Drostanolona propionato Diamond",
+          "url": "https://landerpharma.com.py/productos/drostanolona-propionato-x-10-ampollas-de-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Metenolona enantato Diamond",
+          "url": "https://landerpharma.com.py/productos/metenolona-enantato-10-ampollas-x-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Decaland Depot Diamond",
+          "url": "https://landerpharma.com.py/productos/decaland-depot-10-ampollas-x-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Testoland Depot Diamond",
+          "url": "https://landerpharma.com.py/productos/testoland-depot-10-ampollas-x-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Testenat Depot Diamond",
+          "url": "https://landerpharma.com.py/productos/testenat-depot-10-ampollas-x-2-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Durateston Plus Gold",
+          "url": "https://landerpharma.com.py/productos/durateston-plus-gold-fco-amp-x-10-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "IOI Oleo · composição do MIGLYOL 840",
+          "url": "https://www.ioioleo.de/en/pharma/products-pharma/miglyol-840/",
+          "checked": "2026-11-15"
         }
       ],
       "review_status": "catalog_attributed",
       "indexable": true,
       "seo": {
-        "title": "Landerlan: marca, linhas e informações | LANDER RIO",
-        "description": "As linhas Landerlan, Silver, Gold e Diamond no portfólio Landerpharma. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "title": "Landerlan: Diamond, Gold e composição | LANDER RIO",
+        "description": "Landerlan Diamond e Gold: seis referências do catálogo, apresentações e o que as fichas declaram sobre Miglyol 840. Comparação editorial com fontes.",
         "keyword": "landerlan"
       },
       "related": [
@@ -309,19 +349,28 @@
         {
           "question": "Como consultar informações de autenticidade?",
           "answer": "A FAQ da Landerpharma descreve a consulta pelos seus canais de identificação. A conferência de um código não substitui a verificação da origem da unidade e de sua situação regulatória."
+        },
+        {
+          "question": "Qual é o óleo da linha Diamond?",
+          "answer": "A ficha pública de Durateston Plus Diamond cita Miglyol 840 e álcool benzílico. Nas páginas dos outros cinco produtos Diamond consultadas, o veículo não está identificado pelo nome. Não é possível atribuir um único óleo à linha inteira com essas fontes."
+        },
+        {
+          "question": "O óleo diferencia Diamond de Gold?",
+          "answer": "No par Durateston Plus consultado, ambas as fichas citam Miglyol 840 e álcool benzílico. A diferença documentada nos títulos é a apresentação: Diamond em 10 ampolas de 1 mL; Gold em frasco-ampola de 10 mL. As fichas não estabelecem superioridade clínica ou equivalência entre lotes."
         }
       ],
       "knowledge": [
         {
-          "title": "Gold e Diamond: o que muda no catálogo?",
-          "text": "São famílias distintas no portfólio da Landerpharma. Diamond reúne as referências em ampolas identificadas abaixo; Gold possui uma listagem própria. A nomenclatura da linha não demonstra maior eficácia ou segurança."
+          "title": "Diamond e Gold: o que muda na composição?",
+          "text": "As páginas de Durateston Plus Diamond e Gold declaram Miglyol 840 e álcool benzílico. Isso não confirma proporções idênticas nem permite generalizar para todos os produtos. Nas outras cinco fichas Diamond consultadas, o veículo não é nomeado."
         }
       ],
       "category": "laboratorios",
       "commercial_authorization": "not_verified",
       "regulatory_review": "pending_no_offers",
-      "verified_on": "2026-11-13",
-      "summary": "As linhas Landerlan, Silver, Gold e Diamond no portfólio Landerpharma."
+      "verified_on": "2026-11-15",
+      "summary": "As linhas Landerlan, Silver, Gold e Diamond no portfólio Landerpharma.",
+      "editorial_module": "diamond-gold-evidence.json"
     },
     {
       "slug": "oxygen-kw-pharma",

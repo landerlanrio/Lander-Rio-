@@ -1,14 +1,14 @@
 {
-  "release": "digital-flagship-2026-rc13",
-  "version": "digital-flagship-2026-rc13",
-  "prepared_on": "2026-11-14",
+  "release": "digital-flagship-2026-rc14",
+  "version": "digital-flagship-2026-rc14",
+  "prepared_on": "2026-11-15",
   "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
   "base_package": "LANDER_RIO_RC10_SITE_DEPLOY.zip",
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
-  "release_note": "RC13: modelos públicos de treino e compras, exemplos originais e links contextuais. Candidata de revisão; não publicada.",
+  "release_note": "RC14: seção editorial Diamond/Gold com seis referências e composição atribuída; ilustração conceitual, sem oferta. Candidata não publicada.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
   "status": "local-candidate-not-deployed",
-  "manifest": "manifest-digital-flagship-2026-rc13.json",
+  "manifest": "manifest-digital-flagship-2026-rc14.json",
   "enciclopedia_release": "v23.8",
   "enciclopedia_status": "pre-publicação; revisão científica externa pendente",
   "production_deploy_at_audit": "6af804d36034a689af84dddf",
@@ -19,10 +19,10 @@
     "commercial_events": "gateway-prototype-disabled"
   },
   "visual_provenance": "Hero: imagens selecionadas pelo usuário, preservadas desde RC2. Logos: 14 arquivos recebidos e selecionados em 13/11/2026, WebP proporcional, sem recriação, retoque ou remoção de fundo. Ver docs/LOGOS_RC5_ASSETS.json. A seleção não comprova vínculo oficial com fabricantes.",
-  "source_branch": "seo/organic-growth-2026-11-14",
+  "source_branch": "editorial/diamond-gold-2026-11-15",
   "recovered_base": "LANDER_RIO_TITAN_RC2_FONTE.zip",
-  "previous_candidate_commit": "8d88d3b",
-  "source_base_commit": "e27587eda04d3be187c3007051a3b43c9c70c26e",
+  "previous_candidate_commit": "e69940243ce4debe8cc3feec2ebbd2a656815adb",
+  "source_base_commit": "e69940243ce4debe8cc3feec2ebbd2a656815adb",
   "indexability_held_routes": [
     "/enciclopedia/substancias/anastrozol/",
     "/enciclopedia/substancias/boldenona/",
@@ -104,7 +104,7 @@
     "Espaçamento das seções e leitura ajustados sem alterar a Hero ou imagens aprovadas.",
     "Critérios, testes de navegador, manifesto aditivo e documentação atualizados."
   ],
-  "previous_candidate": "digital-flagship-2026-rc12",
+  "previous_candidate": "digital-flagship-2026-rc13",
   "publication_state": "candidate_not_published",
   "rc13_changes": [
     "Dois modelos CSV públicos sem cadastro e sem coleta de dados.",

@@ -25,6 +25,7 @@ def main():
             ('universe', [sys.executable, 'scripts/test_universe.py']),
             ('rc10', [sys.executable, 'scripts/test_rc10.py']),
             ('brand-profiles', [sys.executable, 'scripts/test_brand_profiles.py']),
+            ('diamond-editorial', [sys.executable, 'scripts/test_diamond_editorial.py']),
             ('metadata-and-binary', [sys.executable, 'scripts/test_integrity.py']),
             ('node-tests', ['node', '--experimental-strip-types', '--test', *tests]),
             ('http-smoke', [sys.executable, 'scripts/smoke_http.py'])]

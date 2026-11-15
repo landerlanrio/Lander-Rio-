@@ -1,0 +1,18 @@
+{
+  "base_commit": "e69940243ce4debe8cc3feec2ebbd2a656815adb",
+  "branch": "editorial/diamond-gold-2026-11-15",
+  "base_site_files": 292,
+  "candidate_site_files": 295,
+  "removed_files": [],
+  "changed_site_files": [
+    "site/assets/diamond-editorial-rc14.css",
+    "site/assets/editorial/composicao-vidro-rc14.webp",
+    "site/assets/measurement-v23-2.js",
+    "site/manifest-digital-flagship-2026-rc14.json",
+    "site/marcas/landerlan/index.html",
+    "site/release.json"
+  ],
+  "generator_idempotent": true,
+  "production_deploy_observed": "6af804d36034a689af84dddf",
+  "production_changes_requested": false
+}

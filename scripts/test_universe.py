@@ -74,7 +74,7 @@ class Universe(unittest.TestCase):
         brands=json.loads((R/'content/brands.json').read_text())['brands']
         self.assertEqual(len({b['slug'] for b in brands}),14)
         self.assertEqual(len({b['summary'] for b in brands}),14)
-        self.assertEqual(sum(len(b['faqs']) for b in brands),43)
+        self.assertEqual(sum(len(b['faqs']) for b in brands),45)
         for b in brands:
             if b['indexable']: self.assertTrue(b['sources'])
             self.assertGreaterEqual(len(b['knowledge']),1)

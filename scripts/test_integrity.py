@@ -33,9 +33,9 @@ class Integrity(unittest.TestCase):
                 (v.SITE/'a.js').write_bytes(b'tampered');v.ISSUES.clear();v.verify_manifest();self.assertIn(('hash-mismatch','a.js'),v.ISSUES)
                 (v.SITE/'new.webp').write_bytes(b'RIFF');v.ISSUES.clear();v.verify_manifest();self.assertIn(('untracked','new.webp'),v.ISSUES)
             finally:v.SITE=original;v.ISSUES.clear()
-    def test_all_81_pages_have_unique_metadata_and_ordered_headings(self):
+    def test_all_88_pages_have_unique_metadata_and_ordered_headings(self):
         titles=[];canonicals=[]
-        pages=sorted(v.SITE.rglob('*.html'));self.assertEqual(len(pages),81)
+        pages=sorted(v.SITE.rglob('*.html'));self.assertEqual(len(pages),88)
         for f in pages:
             with self.subTest(page=f.relative_to(v.SITE).as_posix()):
                 p=Meta();p.feed(f.read_text());self.assertTrue(0<len(p.title)<=60,p.title)

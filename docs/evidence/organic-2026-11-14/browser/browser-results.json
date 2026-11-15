@@ -1,0 +1,1025 @@
+{
+  "release": "digital-flagship-2026-rc13",
+  "started": "2026-11-15T02:30:39.578Z",
+  "finished": "2026-11-15T02:30:51.841Z",
+  "engine": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "scope": "Local Chromium, CSS viewport frames; simulated API responses; no production writes",
+  "status": "PASS",
+  "results": [
+    {
+      "name": "Imagens / @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout / @ 320",
+      "passed": true,
+      "detail": "viewport=320; overflow=-15px"
+    },
+    {
+      "name": "JS / @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /treino/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /treino/ @ 320",
+      "passed": true,
+      "detail": "viewport=320; overflow=-15px"
+    },
+    {
+      "name": "JS /treino/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /dieta/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /dieta/ @ 320",
+      "passed": true,
+      "detail": "viewport=320; overflow=-15px"
+    },
+    {
+      "name": "JS /dieta/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /ferramentas/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /ferramentas/ @ 320",
+      "passed": true,
+      "detail": "viewport=320; overflow=-15px"
+    },
+    {
+      "name": "JS /ferramentas/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/ @ 320",
+      "passed": true,
+      "detail": "viewport=320; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/diario-de-treino-como-registrar/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/diario-de-treino-como-registrar/ @ 320",
+      "passed": true,
+      "detail": "viewport=320; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/diario-de-treino-como-registrar/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/planejar-compras-refeicoes-semana/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/planejar-compras-refeicoes-semana/ @ 320",
+      "passed": true,
+      "detail": "viewport=320; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/planejar-compras-refeicoes-semana/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/como-ler-ficha-treino/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/como-ler-ficha-treino/ @ 320",
+      "passed": true,
+      "detail": "viewport=320; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/como-ler-ficha-treino/ @ 320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens / @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout / @ 390",
+      "passed": true,
+      "detail": "viewport=390; overflow=-15px"
+    },
+    {
+      "name": "JS / @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Imagens /treino/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /treino/ @ 390",
+      "passed": true,
+      "detail": "viewport=390; overflow=-15px"
+    },
+    {
+      "name": "JS /treino/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /treino/",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Imagens /dieta/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /dieta/ @ 390",
+      "passed": true,
+      "detail": "viewport=390; overflow=-15px"
+    },
+    {
+      "name": "JS /dieta/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /dieta/",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Imagens /ferramentas/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /ferramentas/ @ 390",
+      "passed": true,
+      "detail": "viewport=390; overflow=-15px"
+    },
+    {
+      "name": "JS /ferramentas/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /ferramentas/",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Imagens /conteudos/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/ @ 390",
+      "passed": true,
+      "detail": "viewport=390; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /conteudos/",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Imagens /conteudos/diario-de-treino-como-registrar/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/diario-de-treino-como-registrar/ @ 390",
+      "passed": true,
+      "detail": "viewport=390; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/diario-de-treino-como-registrar/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /conteudos/diario-de-treino-como-registrar/",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Imagens /conteudos/planejar-compras-refeicoes-semana/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/planejar-compras-refeicoes-semana/ @ 390",
+      "passed": true,
+      "detail": "viewport=390; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/planejar-compras-refeicoes-semana/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /conteudos/planejar-compras-refeicoes-semana/",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Imagens /conteudos/como-ler-ficha-treino/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/como-ler-ficha-treino/ @ 390",
+      "passed": true,
+      "detail": "viewport=390; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/como-ler-ficha-treino/ @ 390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /conteudos/como-ler-ficha-treino/",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Imagens / @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout / @ 768",
+      "passed": true,
+      "detail": "viewport=768; overflow=-15px"
+    },
+    {
+      "name": "JS / @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /treino/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /treino/ @ 768",
+      "passed": true,
+      "detail": "viewport=768; overflow=-15px"
+    },
+    {
+      "name": "JS /treino/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /dieta/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /dieta/ @ 768",
+      "passed": true,
+      "detail": "viewport=768; overflow=-15px"
+    },
+    {
+      "name": "JS /dieta/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /ferramentas/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /ferramentas/ @ 768",
+      "passed": true,
+      "detail": "viewport=768; overflow=-15px"
+    },
+    {
+      "name": "JS /ferramentas/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/ @ 768",
+      "passed": true,
+      "detail": "viewport=768; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/diario-de-treino-como-registrar/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/diario-de-treino-como-registrar/ @ 768",
+      "passed": true,
+      "detail": "viewport=768; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/diario-de-treino-como-registrar/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/planejar-compras-refeicoes-semana/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/planejar-compras-refeicoes-semana/ @ 768",
+      "passed": true,
+      "detail": "viewport=768; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/planejar-compras-refeicoes-semana/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/como-ler-ficha-treino/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/como-ler-ficha-treino/ @ 768",
+      "passed": true,
+      "detail": "viewport=768; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/como-ler-ficha-treino/ @ 768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens / @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout / @ 1440",
+      "passed": true,
+      "detail": "viewport=1440; overflow=-15px"
+    },
+    {
+      "name": "JS / @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /treino/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /treino/ @ 1440",
+      "passed": true,
+      "detail": "viewport=1440; overflow=-15px"
+    },
+    {
+      "name": "JS /treino/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /dieta/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /dieta/ @ 1440",
+      "passed": true,
+      "detail": "viewport=1440; overflow=-15px"
+    },
+    {
+      "name": "JS /dieta/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /ferramentas/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /ferramentas/ @ 1440",
+      "passed": true,
+      "detail": "viewport=1440; overflow=-15px"
+    },
+    {
+      "name": "JS /ferramentas/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/ @ 1440",
+      "passed": true,
+      "detail": "viewport=1440; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/diario-de-treino-como-registrar/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/diario-de-treino-como-registrar/ @ 1440",
+      "passed": true,
+      "detail": "viewport=1440; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/diario-de-treino-como-registrar/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/planejar-compras-refeicoes-semana/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/planejar-compras-refeicoes-semana/ @ 1440",
+      "passed": true,
+      "detail": "viewport=1440; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/planejar-compras-refeicoes-semana/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Imagens /conteudos/como-ler-ficha-treino/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Layout /conteudos/como-ler-ficha-treino/ @ 1440",
+      "passed": true,
+      "detail": "viewport=1440; overflow=-15px"
+    },
+    {
+      "name": "JS /conteudos/como-ler-ficha-treino/ @ 1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Consentimento visível na primeira tela",
+      "passed": true,
+      "detail": "{\"top\":668,\"bottom\":834,\"height\":166}"
+    },
+    {
+      "name": "Zero eventos antes de consentir",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática / consentimento",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Recusa respeitada",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Aceite registra uma visita",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Revogação interrompe medição",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Menu móvel abre",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape fecha menu e devolve foco",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ROX link Dieta",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ROX link Treino",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ROX link sono",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ROX: pergunta clínica sem venda",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática / ROX aberto",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Download público diario-de-treino",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSV válido diario-de-treino",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Clique de recurso identificado diario-de-treino",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Download público lista-de-compras-semanal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "CSV válido lista-de-compras-semanal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Clique de recurso identificado lista-de-compras-semanal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Treino: prévia antes de qualquer envio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Treino: campos inválidos não enviam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Treino: failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Treino: invalid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Treino: success",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Treino: envio mínimo e marketing opcional",
+      "passed": true,
+      "detail": "name, email, whatsapp, consent_access, consent_marketing, source_page"
+    },
+    {
+      "name": "Treino: sem erros JS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /treino/ resultado",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    },
+    {
+      "name": "Dieta: prévia antes de qualquer envio",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dieta: campos inválidos não enviam",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dieta: failure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dieta: invalid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dieta: success",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dieta: envio mínimo e marketing opcional",
+      "passed": true,
+      "detail": "name, whatsapp, email, consent_access, consent_marketing, source_page, created_at"
+    },
+    {
+      "name": "Dieta: sem erros JS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Acessibilidade automática /dieta/ resultado",
+      "passed": true,
+      "detail": "Nenhuma violação detectada"
+    }
+  ],
+  "measurements": [
+    {
+      "path": "/",
+      "width": 320,
+      "documentWidth": 305,
+      "height": 8820,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/treino/",
+      "width": 320,
+      "documentWidth": 305,
+      "height": 4934,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/dieta/",
+      "width": 320,
+      "documentWidth": 305,
+      "height": 3069,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/ferramentas/",
+      "width": 320,
+      "documentWidth": 305,
+      "height": 3119,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/",
+      "width": 320,
+      "documentWidth": 305,
+      "height": 6119,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/diario-de-treino-como-registrar/",
+      "width": 320,
+      "documentWidth": 305,
+      "height": 6856,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/planejar-compras-refeicoes-semana/",
+      "width": 320,
+      "documentWidth": 305,
+      "height": 6385,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/como-ler-ficha-treino/",
+      "width": 320,
+      "documentWidth": 305,
+      "height": 4466,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "documentWidth": 375,
+      "height": 8251,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/treino/",
+      "width": 390,
+      "documentWidth": 375,
+      "height": 4356,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/dieta/",
+      "width": 390,
+      "documentWidth": 375,
+      "height": 2788,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/ferramentas/",
+      "width": 390,
+      "documentWidth": 375,
+      "height": 2726,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/",
+      "width": 390,
+      "documentWidth": 375,
+      "height": 5616,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/diario-de-treino-como-registrar/",
+      "width": 390,
+      "documentWidth": 375,
+      "height": 5828,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/planejar-compras-refeicoes-semana/",
+      "width": 390,
+      "documentWidth": 375,
+      "height": 5441,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/como-ler-ficha-treino/",
+      "width": 390,
+      "documentWidth": 375,
+      "height": 3795,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/",
+      "width": 768,
+      "documentWidth": 753,
+      "height": 7493,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/treino/",
+      "width": 768,
+      "documentWidth": 753,
+      "height": 3537,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/dieta/",
+      "width": 768,
+      "documentWidth": 753,
+      "height": 1954,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/ferramentas/",
+      "width": 768,
+      "documentWidth": 753,
+      "height": 1941,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/",
+      "width": 768,
+      "documentWidth": 753,
+      "height": 3903,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/diario-de-treino-como-registrar/",
+      "width": 768,
+      "documentWidth": 753,
+      "height": 4250,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/planejar-compras-refeicoes-semana/",
+      "width": 768,
+      "documentWidth": 753,
+      "height": 3985,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/como-ler-ficha-treino/",
+      "width": 768,
+      "documentWidth": 753,
+      "height": 2847,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "documentWidth": 1425,
+      "height": 7266,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/treino/",
+      "width": 1440,
+      "documentWidth": 1425,
+      "height": 3252,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/dieta/",
+      "width": 1440,
+      "documentWidth": 1425,
+      "height": 1946,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/ferramentas/",
+      "width": 1440,
+      "documentWidth": 1425,
+      "height": 1954,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/",
+      "width": 1440,
+      "documentWidth": 1425,
+      "height": 3753,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/diario-de-treino-como-registrar/",
+      "width": 1440,
+      "documentWidth": 1425,
+      "height": 4287,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/planejar-compras-refeicoes-semana/",
+      "width": 1440,
+      "documentWidth": 1425,
+      "height": 4068,
+      "resourceErrors": [],
+      "brokenImages": []
+    },
+    {
+      "path": "/conteudos/como-ler-ficha-treino/",
+      "width": 1440,
+      "documentWidth": 1425,
+      "height": 2960,
+      "resourceErrors": [],
+      "brokenImages": []
+    }
+  ],
+  "axe": [
+    {
+      "path": "/",
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "path": "/treino/",
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "path": "/dieta/",
+      "violations": [],
+      "incomplete": 0
+    },
+    {
+      "path": "/ferramentas/",
+      "violations": [],
+      "incomplete": 0
+    },
+    {
+      "path": "/conteudos/",
+      "violations": [],
+      "incomplete": 0
+    },
+    {
+      "path": "/conteudos/diario-de-treino-como-registrar/",
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "path": "/conteudos/planejar-compras-refeicoes-semana/",
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "path": "/conteudos/como-ler-ficha-treino/",
+      "violations": [],
+      "incomplete": 0
+    },
+    {
+      "path": "/ consentimento",
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "path": "/ ROX aberto",
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "path": "/treino/ resultado",
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "path": "/dieta/ resultado",
+      "violations": [],
+      "incomplete": 0
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "digital-flagship-2026-rc6.2",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/flagship-quality-rc6.2.css": "da28a4863a8908df3ec33d384589f48f137b53718b1f38736159174a28bdff01",
+    "index.html": "1eb3e2af0077cbd13fb98d2cdb99f6d3358400c4f4c9e5e4ee366a266638117a",
+    "release.json": "f153b74fa5bb9f94f093e81f48282dddafc5948547c0825ef68d868f64050f80"
+  }
+}

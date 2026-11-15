@@ -1,0 +1,260 @@
+{
+  "status": "ok",
+  "source": {
+    "provider": "google_analytics",
+    "propertyId": "properties/548953010",
+    "propertyDisplayName": "Lander Rio / site "
+  },
+  "request": {
+    "requestedDateRange": {
+      "startDate": "2026-10-15",
+      "endDate": "2026-11-11"
+    },
+    "resolvedDateRange": {
+      "startDate": "2026-10-15",
+      "endDate": "2026-11-11"
+    },
+    "previousDateRange": {
+      "startDate": "2026-09-17",
+      "endDate": "2026-10-14"
+    },
+    "propertyTimeZone": "America/Rio_Branco",
+    "currencyCode": "BRL",
+    "channel": "organic_search",
+    "trend": "daily"
+  },
+  "current": {
+    "sessions": 25,
+    "activeUsers": 17,
+    "engagedSessions": 17,
+    "engagementRate": 0.68,
+    "keyEvents": 12,
+    "transactions": 0,
+    "purchaseRevenue": 0
+  },
+  "previous": {
+    "sessions": 11,
+    "activeUsers": 9,
+    "engagedSessions": 8,
+    "engagementRate": 0.7272727272727273,
+    "keyEvents": 5,
+    "transactions": 0,
+    "purchaseRevenue": 0
+  },
+  "comparison": {
+    "sessions": {
+      "current": 25,
+      "previous": 11,
+      "absoluteChange": 14,
+      "percentChange": 1.2727272727272727
+    },
+    "activeUsers": {
+      "current": 17,
+      "previous": 9,
+      "absoluteChange": 8,
+      "percentChange": 0.8888888888888888
+    },
+    "engagedSessions": {
+      "current": 17,
+      "previous": 8,
+      "absoluteChange": 9,
+      "percentChange": 1.125
+    },
+    "engagementRate": {
+      "current": 0.68,
+      "previous": 0.7272727272727273,
+      "absoluteChange": -0.047272727272727244,
+      "percentChange": -0.06499999999999996
+    },
+    "keyEvents": {
+      "current": 12,
+      "previous": 5,
+      "absoluteChange": 7,
+      "percentChange": 1.4
+    },
+    "transactions": {
+      "current": 0,
+      "previous": 0,
+      "absoluteChange": 0,
+      "percentChange": null
+    },
+    "purchaseRevenue": {
+      "current": 0,
+      "previous": 0,
+      "absoluteChange": 0,
+      "percentChange": null
+    }
+  },
+  "trend": [
+    {
+      "date": "20261019",
+      "sessions": 1,
+      "activeUsers": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "keyEvents": 1,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261020",
+      "sessions": 3,
+      "activeUsers": 2,
+      "engagedSessions": 2,
+      "engagementRate": 0.6666666666666666,
+      "keyEvents": 1,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261021",
+      "sessions": 1,
+      "activeUsers": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "keyEvents": 1,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261024",
+      "sessions": 1,
+      "activeUsers": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "keyEvents": 1,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261025",
+      "sessions": 1,
+      "activeUsers": 1,
+      "engagedSessions": 1,
+      "engagementRate": 1,
+      "keyEvents": 1,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261031",
+      "sessions": 6,
+      "activeUsers": 4,
+      "engagedSessions": 3,
+      "engagementRate": 0.5,
+      "keyEvents": 3,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261101",
+      "sessions": 2,
+      "activeUsers": 1,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "keyEvents": 0,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261102",
+      "sessions": 4,
+      "activeUsers": 3,
+      "engagedSessions": 2,
+      "engagementRate": 0.5,
+      "keyEvents": 1,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261103",
+      "sessions": 2,
+      "activeUsers": 2,
+      "engagedSessions": 2,
+      "engagementRate": 1,
+      "keyEvents": 2,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261104",
+      "sessions": 2,
+      "activeUsers": 1,
+      "engagedSessions": 1,
+      "engagementRate": 0.5,
+      "keyEvents": 0,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    },
+    {
+      "date": "20261105",
+      "sessions": 2,
+      "activeUsers": 2,
+      "engagedSessions": 2,
+      "engagementRate": 1,
+      "keyEvents": 1,
+      "transactions": 0,
+      "purchaseRevenue": 0
+    }
+  ],
+  "diagnostics": [],
+  "reportMetadata": {
+    "hasLimitedData": false,
+    "reports": [
+      {
+        "dataLossFromOtherRow": false,
+        "subjectToThresholding": false,
+        "sampling": [],
+        "restrictedMetrics": [],
+        "emptyReason": null,
+        "hasLimitedData": false
+      },
+      {
+        "dataLossFromOtherRow": false,
+        "subjectToThresholding": false,
+        "sampling": [],
+        "restrictedMetrics": [],
+        "emptyReason": null,
+        "hasLimitedData": false
+      },
+      {
+        "dataLossFromOtherRow": false,
+        "subjectToThresholding": false,
+        "sampling": [],
+        "restrictedMetrics": [],
+        "emptyReason": null,
+        "hasLimitedData": false
+      }
+    ]
+  },
+  "quota": {
+    "tokensPerDay": {
+      "consumed": 1,
+      "remaining": 199985
+    },
+    "tokensPerHour": {
+      "consumed": 1,
+      "remaining": 39999
+    },
+    "concurrentRequests": {
+      "consumed": 0,
+      "remaining": 10
+    },
+    "serverErrorsPerProjectPerHour": {
+      "consumed": 0,
+      "remaining": 10
+    },
+    "potentiallyThresholdedRequestsPerHour": {
+      "consumed": 0,
+      "remaining": 120
+    },
+    "tokensPerProjectPerHour": {
+      "consumed": 1,
+      "remaining": 13999
+    }
+  },
+  "warnings": [],
+  "meta": {
+    "projectId": "cc40f4de-9c11-47c9-be5b-dcb4387db222"
+  }
+}

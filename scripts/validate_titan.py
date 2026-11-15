@@ -22,6 +22,9 @@ def main():
     tests = sorted({str(p.relative_to(ROOT)) for pattern in patterns for p in ROOT.glob(pattern)})
     jobs = [('integrity', [sys.executable, 'scripts/verify_site.py']),
             ('structure', [sys.executable, 'scripts/test_flagship_2026.py']),
+            ('universe', [sys.executable, 'scripts/test_universe.py']),
+            ('rc10', [sys.executable, 'scripts/test_rc10.py']),
+            ('brand-profiles', [sys.executable, 'scripts/test_brand_profiles.py']),
             ('metadata-and-binary', [sys.executable, 'scripts/test_integrity.py']),
             ('node-tests', ['node', '--experimental-strip-types', '--test', *tests]),
             ('http-smoke', [sys.executable, 'scripts/smoke_http.py'])]

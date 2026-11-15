@@ -1,0 +1,25 @@
+{
+  "version": "digital-flagship-2026-rc6",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/flagship-reference-rc6.css": "dcfb80f4e1e3412e9da9547054b543684edea93b9a41df640d6a97f7f08c5b10",
+    "assets/flagship-reference-rc6.js": "bb4628d4c2439cc6d3e8f1dd863836aaee51f9ea18600059e6b06baea1a0f141",
+    "assets/fonts-rc6/0ec6b3cca2df54f1.ttf": "0ec6b3cca2df54f108f8dc239597e0eab386343a230afad8a0f445c7d21c3e77",
+    "assets/fonts-rc6/2a8e7f713ee79fbc.ttf": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211",
+    "assets/fonts-rc6/376427b5322148d8.ttf": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae",
+    "assets/fonts-rc6/b00c1f73ddaa9d43.ttf": "b00c1f73ddaa9d435c49b0777223823e5f4fcf6a06350d532df3d7730375dd9e",
+    "assets/fonts-rc6/b0ae3e89a7d3ef2b.ttf": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9",
+    "assets/fonts-rc6/b60ffb0ee2b4e09d.ttf": "b60ffb0ee2b4e09d71d67ff3ea16d6a23cf2e0cf637c5f4e36fff2e3b1465252",
+    "assets/fonts-rc6/b79a2ea7a38f33fd.ttf": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a",
+    "assets/fonts-rc6/c97fcd822f825e9e.ttf": "c97fcd822f825e9e731867b650a39ee678b609bead29385e320171b573ec0910",
+    "assets/fonts-rc6/dd60d0861a3efd54.ttf": "dd60d0861a3efd540efc3f2f85e7a7fd69a7ece7eadf44aaffa5fc5c86adda0e",
+    "assets/fonts-rc6/ef1515fa19156794.ttf": "ef1515fa19156794b36e5f362c677f78837c38ccdd6fa1fa76d1dd918ea7abbe",
+    "assets/measurement-v23-2.js": "370920acce95eb5138de6be4f7954436630d07a00865e4541dc14a4d59b2942e",
+    "assets/reference-fonts-rc6.css": "a873087d18ed95dd1e2405322b8962e9d44662b2a52370278aeda1b1449aed92",
+    "assets/reference-grain-rc6.svg": "e32b3493d09e6380f328c4bbc791b38a408169e4157371f04e3e8f1247e1850a",
+    "index.html": "c11b36239de27dba713628ede5499dadecd26f32712d8130f50134085d3f4f14",
+    "release.json": "f25fd47ad40e3af3845f5e31d2c88637945de43681fd885adf02bb86acdff055"
+  }
+}

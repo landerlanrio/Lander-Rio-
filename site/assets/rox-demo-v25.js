@@ -16,6 +16,7 @@ if(/(parcer|influenc|colaborac|divulg)/.test(x))return 'partners';
 if(/(preco|valor|estoque|orcamento|disponibil|pedido|frete|envio|pagamento|entrega)/.test(x))return 'commerce';
 if(/(ficha|treino|exercicio|musculac|academia|hipertrofia|forca)/.test(x))return 'training';
 if(/(dieta|comer|aliment|nutri|proteina|caloria|macro)/.test(x))return 'diet';
+if(/(sono|dormir|descanso|recuperacao)/.test(x))return 'recovery';
 if(/(ciencia|conteudo|enciclopedia|pesquisa|estudo|fisiologia)/.test(x))return 'science';
 if(/(privacidade|lgpd|meus dados|consentimento)/.test(x))return 'privacy';
 if(/(quem e voce|o que e rox|sua ia|robo|assistente|rox)/.test(x))return 'aboutrox';
@@ -32,6 +33,7 @@ partners:'Para propor uma parceria, apresente sua atuação e proposta pelo cana
 commerce:'Preço, estoque, condições, pagamento, prazo e envio exigem confirmação humana. Posso preparar um encaminhamento para o WhatsApp oficial, sem enviar por você.',
 training:'Você pode começar pela ferramenta gratuita de treino em /treino/. Ela organiza uma ficha educativa conforme dados informados, sem substituir orientação profissional.',
 diet:'A ferramenta de dieta está em /dieta/: estimativas de energia, refeições e organização alimentar. É educativa e não constitui prescrição individual.',
+recovery:'Explore nossos guias sobre treino, descanso e organização da rotina. São conteúdos educativos; dificuldades persistentes para dormir precisam de avaliação profissional.',
 science:'Nossos guias ficam em /conteudos/ e a enciclopédia informativa em /enciclopedia/. Eles não substituem avaliação profissional.',
 privacy:'Este ROX de demonstração não transmite nem armazena o texto digitado. Confira os termos em /privacidade para conhecer as práticas gerais do site.',
 aboutrox:'Sou a demonstração offline do ROX, guia digital da LANDER RIO. Respondo dúvidas básicas e indico caminhos. O agente de IA conectado ainda não está ativo nesta versão.',
@@ -39,7 +41,15 @@ brand:'LANDER RIO — PERFORMANCE CULTURE reúne conteúdo sobre musculação e 
 hello:'Olá! Sou o ROX. Quer saber sobre treino, dieta, ciência, varejo, revenda ou atendimento?',
 thanks:'À disposição. Quer explorar alguma ferramenta ou falar com nossa equipe?',
 unknown:'Não tenho uma resposta verificada para isso nesta demonstração. Posso ajudar com treino, dieta, conteúdos, varejo, revenda e atendimento humano.'};
-function append(text,who){const el=document.createElement('div');el.className='v25-rox-msg';el.dataset.who=who;el.textContent=text;log.appendChild(el);log.scrollTop=log.scrollHeight;}
+function append(text,who){const el=document.createElement('div');el.className='v25-rox-msg';el.dataset.who=who;el.textContent=text;log.appendChild(el);log.scrollTop=log.scrollHeight;return el;}
+// Trusted internal destinations only; user input is always rendered as plain text.
+function appendActions(message,kind,mode){
+ if(mode==='clinical'||kind==='medical')return;
+ const routes={training:[['Abrir ferramenta de treino','/treino/']],diet:[['Abrir ferramenta de dieta','/dieta/']],science:[['Explorar conteúdos','/conteudos/']],recovery:[['Explorar conteúdos de treino e recuperação','/conteudos/']],privacy:[['Ver política de privacidade','/privacidade']],brand:[['Conhecer a LANDER RIO','/sobre/']]};
+ const links=routes[mode==='privacy'?'privacy':kind];if(!links)return;
+ const nav=document.createElement('nav');nav.className='lr-rox-actions';nav.setAttribute('aria-label','Caminhos sugeridos');
+ links.forEach(([label,href])=>{const link=document.createElement('a');link.textContent=label;link.href=href;nav.appendChild(link)});message.appendChild(nav);log.scrollTop=log.scrollHeight;
+}
 function setHandoff(kind){const category={human:'atendimento humano',wholesale:'atacado e revenda',retail:'atendimento individual',partners:'parcerias',commerce:'informações comerciais'}[kind];if(!category)return;handoff.hidden=false;handoff.href='https://wa.me/'+WA+'?text='+encodeURIComponent('Olá! Vim pelo ROX no site da LANDER RIO e gostaria de orientação sobre '+category+'.');handoff.dataset.profile=kind==='wholesale'?'atacado':kind==='retail'?'varejo':'geral';}
 async function ask(raw){
  if(turns>=MAX)return;
@@ -56,9 +66,9 @@ async function ask(raw){
    catch(_err){}finally{input.disabled=false;submit.disabled=false;}
  }
  const reply=decision?.mode==='clinical'?answers.medical:
-   (decision?.mode==='unknown' && ['hello','thanks','science','privacy'].includes(kind))?answers[kind]:
+   (decision?.mode==='unknown' && ['hello','thanks','science','recovery','privacy'].includes(kind))?answers[kind]:
    (typeof decision?.reply==='string'&&decision.reply?decision.reply:answers[kind]);
- append(reply,'rox');
+ const message=append(reply,'rox');appendActions(message,kind,decision?.mode);
  handoff.hidden=true;handoff.href='';handoff.dataset.profile='geral';
  if(decision?.mode==='handoff'){
    const wa=decision.integrations?.whatsapp;

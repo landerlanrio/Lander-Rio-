@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "source": {
+    "provider": "google_analytics_admin",
+    "propertyId": "properties/548953010",
+    "propertyDisplayName": "Lander Rio / site "
+  },
+  "summary": {
+    "dataStreamCount": 1,
+    "webStreamCount": 1,
+    "keyEventCount": 2,
+    "customDimensionCount": 0,
+    "customMetricCount": 0,
+    "issueCount": 1
+  },
+  "issues": [
+    "site_search_measurement_disabled"
+  ],
+  "webStreams": [
+    {
+      "streamId": "15394318948",
+      "displayName": "Lander Rio / web",
+      "measurementId": "G-C3HWDYKEJK",
+      "defaultUri": "https://landerrio.com.br",
+      "createTime": "2026-08-06T19:57:19.587Z",
+      "updateTime": "2026-08-06T19:57:19.587Z",
+      "enhancedMeasurement": {
+        "streamEnabled": true,
+        "scrollsEnabled": false,
+        "outboundClicksEnabled": false,
+        "siteSearchEnabled": false,
+        "videoEngagementEnabled": false,
+        "fileDownloadsEnabled": false,
+        "pageChangesEnabled": false,
+        "formInteractionsEnabled": false,
+        "searchQueryParameter": "q,s,search,query,keyword",
+        "uriQueryParameter": ""
+      }
+    }
+  ],
+  "otherStreams": [],
+  "keyEvents": [
+    {
+      "eventName": "purchase",
+      "createTime": "2026-08-06T19:57:19.587976Z",
+      "countingMethod": "ONCE_PER_EVENT"
+    },
+    {
+      "eventName": "generate_lead",
+      "createTime": "2026-08-14T13:17:52.071325Z",
+      "deletable": true,
+      "custom": true,
+      "countingMethod": "ONCE_PER_SESSION"
+    }
+  ],
+  "customDefinitions": {
+    "dimensions": [],
+    "metrics": []
+  },
+  "meta": {
+    "projectId": "cc40f4de-9c11-47c9-be5b-dcb4387db222"
+  }
+}

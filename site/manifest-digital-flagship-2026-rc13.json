@@ -1,0 +1,18 @@
+{
+  "version": "digital-flagship-2026-rc13",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_deploy": "6af804d36034a689af84dddf",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/measurement-v23-2.js": "14d491daaeb01d6e413e3896d3e55c83441449233cc0edc031ea6fb256129a37",
+    "assets/organic-resources-rc13.css": "bb6aca047867af19bfcac93cc24157c27a47ad5c2eb829cb2efda344094570a7",
+    "conteudos/diario-de-treino-como-registrar/index.html": "7e948f5225a30aabfd6ef5e7dff7af5cfe4061bd740bf0f079261779efebac90",
+    "conteudos/planejar-compras-refeicoes-semana/index.html": "6e9ab4c74b0998a4f69ae984612b0982b3bdcba81f964a9fd38de38001b8daf2",
+    "dieta/index.html": "f7dad7444444e47ec814ef917ba4acb0eeb3e53382af056b2098cd0ef95059bd",
+    "ferramentas/index.html": "8370929f3b82582f1d91bf7aa6da5483034e16a884e2492a221694b27a10c817",
+    "recursos/diario-de-treino-lander-rio.csv": "78bf5dae6b55b50444ecf1f339a0d6d8df7d906847079705da70d6aeb016ae59",
+    "recursos/lista-de-compras-semanal-lander-rio.csv": "48c02bd78a499767c12ca8c389bfb24afbd33a1f0f18b9fe1831774500492896",
+    "release.json": "ee668f68ecce6fe106cab20591c45cc110b0c2b06466366114b3405b777ad7c7",
+    "treino/index.html": "2187d5cffb7cba11025144a07b9b8fc0d47a2d4421a0c128155c901c9549965b"
+  }
+}

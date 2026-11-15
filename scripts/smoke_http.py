@@ -17,6 +17,7 @@ def main():
           '/enciclopedia/','/contato/','/ferramentas/','/perguntas-frequentes/',
           '/release.json','/sitemap.xml','/robots.txt',
           '/assets/commerce-v21.js','/assets/measurement-v23-2.js']
+    urls += ['/marcas/'] + ['/marcas/'+b['slug']+'/' for b in json.loads((SITE.parent/'docs/BRAND_PROFILES_RC6.3.json').read_text())['brands']]
     checks=[]
     try:
         for path in urls:

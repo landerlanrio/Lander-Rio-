@@ -1,0 +1,14 @@
+{
+  "url": "https://lander-rio-rc63-avaliacao.igorziturjpa1992.chatgpt.site",
+  "project_id": "appgprj_6af7970e796081919b43c280a424d719",
+  "deployment_id": "appgdep_6af797b2dce48191bb3ce0b7be7dbfd5",
+  "version_id": "appgprj_6af7970e796081919b43c280a424d719~appgver_31e718bb417881918618c191bb19a7cd",
+  "source_commit": "77e35b09efad0a845066409953aa9e34c3a69442",
+  "status": "succeeded",
+  "audience": "owner-only",
+  "pages": 16,
+  "analytics": "disabled",
+  "production_domain_changed": false,
+  "browser_check": "ChatGPT login gate verified; authenticated remote navigation not tested in this browser",
+  "date": "2026-11-13"
+}

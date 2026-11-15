@@ -1,0 +1,261 @@
+{
+  "candidate": "digital-flagship-2026-rc6.3",
+  "branch": "fix/rc6-3-brand-profiles",
+  "base_commit": "0946e7edb44698cd277df725eaa287b3e9df6995",
+  "production_modified": false,
+  "brand_pages": 14,
+  "product_references": 67,
+  "brands_with_product_references": 12,
+  "unknown_catalogs": [
+    "ZPHC",
+    "Alpha X Prime"
+  ],
+  "identity_caveat": [
+    "Synedica"
+  ],
+  "browser_navigation_pass": 14,
+  "browser_layouts": 80,
+  "browser_layout_failures": 0,
+  "widths": [
+    320,
+    360,
+    390,
+    430,
+    1280
+  ],
+  "directory_rechecked_after_spacing_fix": true,
+  "canvas_colors": [
+    "rgb(255, 255, 255)"
+  ],
+  "axe_pages": 15,
+  "axe_violations": 0,
+  "axe_incomplete": [
+    {
+      "path": "/marcas/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/cooper-pharma/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/zphc/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/landerlan/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/oxygen-kw-pharma/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/alpha-x-prime/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/quimfa/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/eticos/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/indufar/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/life-peptideos/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/eminence-labs/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/topharma/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/muscle-labs-india/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/synedica/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/marcas/geniqs-pharma/",
+      "checks": [
+        {
+          "id": "color-contrast",
+          "count": 1,
+          "targets": [
+            [
+              ".ba-action > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "manual_arrow_contrast": 14.56,
+  "pipeline_groups": 36,
+  "pipeline_passed": true,
+  "node_tests_passed": 138,
+  "structural_tests_passed": 13,
+  "brand_tests_passed": 7,
+  "metadata_integrity_tests_passed": 3,
+  "http_routes_passed": 30,
+  "limits": [
+    "Chromium at controlled iframe widths; not real iOS Safari",
+    "No field Core Web Vitals or Lighthouse score claimed",
+    "Catalog excerpts are attributed, not a complete inventory or regulatory approval",
+    "Shared preview changed to another workspace after the collected QA; standalone preview retains its embedded RC6.3 documents"
+  ],
+  "portable_unit_tests_passed": 6,
+  "portable_anchor_fix_browser_retested": false,
+  "portable_anchor_fix_validation": "Actual exported router executed with DOM stubs: cancels default fragment navigation and scrolls the embedded target"
+}

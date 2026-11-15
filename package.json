@@ -1,0 +1,1 @@
+{"name":"lander-rio-rc13","private":true,"scripts":{"dev":"python3 scripts/browser_qa_server.py"}}

@@ -1,0 +1,38 @@
+{
+  "audits": [
+    {
+      "id": "0e595bb9-9f2b-4fe9-9cc3-1eb19f500cdc",
+      "startUrl": "https://landerrio.com.br/",
+      "status": "completed",
+      "pagesCrawled": 50,
+      "pagesTotal": 50,
+      "ranLighthouse": true,
+      "startedAt": "2026-11-14T05:36:43.787Z",
+      "completedAt": "2026-11-14T05:37:38.101Z"
+    },
+    {
+      "id": "a9c348f6-b0a7-4b09-a187-b85a283faf58",
+      "startUrl": "https://landerrio.com.br/",
+      "status": "completed",
+      "pagesCrawled": 10,
+      "pagesTotal": 10,
+      "ranLighthouse": true,
+      "startedAt": "2026-11-14T01:08:17.258Z",
+      "completedAt": "2026-11-14T01:08:46.706Z"
+    },
+    {
+      "id": "16041bf3-3334-439e-8406-76139a8e02cf",
+      "startUrl": "https://landerrio.com.br/",
+      "status": "completed",
+      "pagesCrawled": 50,
+      "pagesTotal": 50,
+      "ranLighthouse": false,
+      "startedAt": "2026-11-12T18:58:09.097Z",
+      "completedAt": "2026-11-12T18:59:02.370Z"
+    }
+  ],
+  "meta": {
+    "projectId": "cc40f4de-9c11-47c9-be5b-dcb4387db222",
+    "url": "https://app.openseo.so/p/cc40f4de-9c11-47c9-be5b-dcb4387db222/audit"
+  }
+}

@@ -55,20 +55,25 @@ def main():
         gallery.append(f'''<figure class="dg-package" data-diamond-image="{index}">
           <a class="dg-package-image" href="{esc(image['local_full'], quote=True)}" target="_blank" rel="noopener" aria-label="Ampliar imagem de catálogo de {esc(p['name'], quote=True)} (abre em nova aba)">
             <img src="{esc(image['local_preview'], quote=True)}" width="{image['preview_width']}" height="{image['preview_height']}" alt="Embalagem {esc(p['name'], quote=True)} Diamond, {esc(p['strength'], quote=True)} — imagem de catálogo da Landerpharma" loading="lazy" decoding="async">
-            <span class="dg-enlarge">Ampliar imagem <span aria-hidden="true">↗</span></span>
+            <span class="dg-enlarge">Ver embalagem <span aria-hidden="true">↗</span></span>
           </a>
           <figcaption><a href="#diamond-referencia-{index}">{esc(p['name'])}</a>{ref(p['source'], 'imagem de catálogo de '+p['name'])}</figcaption>
         </figure>''')
 
     feature = START + '''
 <section id="diamond-gold" class="dg-feature" aria-labelledby="diamond-gold-title">
-  <div class="dg-hero-copy"><p class="dg-kicker">LANDER RIO / LEITURA DE COMPOSIÇÃO</p>
-    <h2 id="diamond-gold-title">Diamond &amp; Gold.<span>O que muda de fato.</span></h2>
-    <p class="dg-deck">Apresentação, princípio ativo e veículo: uma leitura das fichas da Landerpharma para esclarecer as diferenças entre as linhas.</p>
-    <nav class="dg-links" aria-label="Nesta comparação"><a href="#linha-diamond">As seis referências <span aria-hidden="true">↓</span></a><a href="#oleo-composicao">Entenda o óleo <span aria-hidden="true">↓</span></a></nav>
+  <div class="dg-hero-copy">
+    <div class="dg-title-block"><p class="dg-kicker">LANDER RIO / DOSSIÊ DE COMPOSIÇÃO</p>
+      <h2 id="diamond-gold-title">Landerlan<br>Diamond.<span>Além do nome.</span></h2>
+    </div>
+    <div class="dg-intro-block"><p class="dg-index">06 REFERÊNCIAS / FONTES DO FABRICANTE</p>
+      <p class="dg-deck">Embalagens, apresentações e composição: as seis referências do catálogo Diamond, reunidas para entender a diferença em relação à linha Gold.</p>
+      <p class="dg-intro-detail">A leitura começa pelo que a ficha declara — incluindo o veículo oleoso.</p>
+      <nav class="dg-links" aria-label="Nesta comparação"><a href="#linha-diamond">As seis referências <span aria-hidden="true">↓</span></a><a href="#oleo-composicao">Diamond × Gold: o óleo <span aria-hidden="true">↓</span></a></nav>
+    </div>
   </div>
   <div id="galeria-diamond" class="dg-gallery" role="group" aria-label="As seis embalagens Diamond no catálogo da Landerpharma">''' + ''.join(gallery) + '''</div>
-  <p class="dg-art-note">Imagens originais do catálogo da Landerpharma, publicadas como mockups. Não são fotografias verificadas de unidades físicas. Rótulos preservados; toque em uma imagem para ampliar.</p>
+  <p class="dg-art-note">Imagens originais do catálogo da Landerpharma, publicadas como mockups. Embalagens montadas diretamente no layout, sem recriar rótulos por IA. Não são fotografias verificadas de unidades físicas. Toque para ampliar.</p>
 </section>
 <aside class="dg-takeaway" aria-labelledby="dg-key-finding"><strong id="dg-key-finding">O que a fonte confirma</strong><p>As fichas de <b>Durateston Plus Diamond e Gold</b> declaram <b>Miglyol 840 e álcool benzílico</b>. Nesses dois documentos, o nome do veículo não distingue as linhas. ''' + ref(6, 'Durateston Plus Diamond') + ' ' + ref(12, 'Durateston Plus Gold') + '</p></aside>\n' + END
 
@@ -130,7 +135,7 @@ def main():
     PAGE.write_text(html)
     release_path = SITE / 'release.json'
     release = json.loads(release_path.read_text())
-    release.update(release='digital-flagship-2026-rc14',version='digital-flagship-2026-rc14',revision='manufacturer-images-v2',prepared_on='2026-11-15',manifest='manifest-digital-flagship-2026-rc14.json',previous_candidate='digital-flagship-2026-rc13',previous_candidate_commit='e69940243ce4debe8cc3feec2ebbd2a656815adb',source_base_commit='e69940243ce4debe8cc3feec2ebbd2a656815adb',source_branch='editorial/diamond-gold-2026-11-15',release_note='RC14: seção editorial Diamond/Gold com seis imagens originais do catálogo do fabricante (mockups), referências e composição atribuída, sem oferta. Candidata não publicada.')
+    release.update(release='digital-flagship-2026-rc14',version='digital-flagship-2026-rc14',revision='editorial-section-v3',prepared_on='2026-11-15',manifest='manifest-digital-flagship-2026-rc14.json',previous_candidate='digital-flagship-2026-rc13',previous_candidate_commit='e69940243ce4debe8cc3feec2ebbd2a656815adb',source_base_commit='e69940243ce4debe8cc3feec2ebbd2a656815adb',source_branch='editorial/diamond-gold-2026-11-15',release_note='RC14: seção Diamond/Gold com montagem direta das seis embalagens originais, composição atribuída e comparação do veículo, sem oferta. Candidata não publicada.')
     release_path.write_text(json.dumps(release,ensure_ascii=False,indent=2)+'\n')
     print('Prepared attributed Diamond/Gold editorial module; no publication.')
 

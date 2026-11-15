@@ -1,0 +1,403 @@
+{
+  "release": "digital-flagship-2026-rc14",
+  "revision": "editorial-section-v3",
+  "started": "2026-11-15T04:00:11.799Z",
+  "finished": "2026-11-15T04:00:15.211Z",
+  "engine": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "scope": "Local Chromium; four CSS viewport frames; original manufacturer catalog images; no production writes or real API submissions",
+  "status": "PASS",
+  "results": [
+    {
+      "name": "Seis imagens oficiais carregadas @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Embalagens sem corte visual @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Seis ampliações locais funcionam @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Viewport corresponde ao teste @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Página sem overflow horizontal @320",
+      "passed": true,
+      "detail": "305/320px"
+    },
+    {
+      "name": "Seis referências visíveis @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Texto, galeria e legenda sem sobreposição @320",
+      "passed": true,
+      "detail": "615.2 <= 643.2; 1386.5 <= 1386.5"
+    },
+    {
+      "name": "Âncoras locais válidas @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uma H1 e canonical preservado @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabela contém rolagem própria @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabela alcança coluna final @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ sobre óleo abre @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Navegação para composição @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Nenhum erro JS ou recurso @320",
+      "passed": true,
+      "detail": "{\"errors\":[],\"resourceErrors\":[],\"requests\":[],\"apiMode\":\"failure\"}"
+    },
+    {
+      "name": "Nenhum formulário enviado @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Axe sem violações @320",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Seis imagens oficiais carregadas @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Embalagens sem corte visual @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Seis ampliações locais funcionam @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Viewport corresponde ao teste @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Página sem overflow horizontal @390",
+      "passed": true,
+      "detail": "375/390px"
+    },
+    {
+      "name": "Seis referências visíveis @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Texto, galeria e legenda sem sobreposição @390",
+      "passed": true,
+      "detail": "600.2 <= 628.2; 1472.5 <= 1472.5"
+    },
+    {
+      "name": "Âncoras locais válidas @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uma H1 e canonical preservado @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabela contém rolagem própria @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabela alcança coluna final @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ sobre óleo abre @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Navegação para composição @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Nenhum erro JS ou recurso @390",
+      "passed": true,
+      "detail": "{\"errors\":[],\"resourceErrors\":[],\"requests\":[],\"apiMode\":\"failure\"}"
+    },
+    {
+      "name": "Nenhum formulário enviado @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Axe sem violações @390",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Seis imagens oficiais carregadas @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Embalagens sem corte visual @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Seis ampliações locais funcionam @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Viewport corresponde ao teste @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Página sem overflow horizontal @768",
+      "passed": true,
+      "detail": "753/768px"
+    },
+    {
+      "name": "Seis referências visíveis @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Texto, galeria e legenda sem sobreposição @768",
+      "passed": true,
+      "detail": "442.2 <= 472.2; 1131.6 <= 1131.6"
+    },
+    {
+      "name": "Âncoras locais válidas @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uma H1 e canonical preservado @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabela contém rolagem própria @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabela alcança coluna final @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ sobre óleo abre @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Navegação para composição @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Nenhum erro JS ou recurso @768",
+      "passed": true,
+      "detail": "{\"errors\":[],\"resourceErrors\":[],\"requests\":[],\"apiMode\":\"failure\"}"
+    },
+    {
+      "name": "Nenhum formulário enviado @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Axe sem violações @768",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Seis imagens oficiais carregadas @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Embalagens sem corte visual @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Seis ampliações locais funcionam @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Viewport corresponde ao teste @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Página sem overflow horizontal @1440",
+      "passed": true,
+      "detail": "1425/1440px"
+    },
+    {
+      "name": "Seis referências visíveis @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Texto, galeria e legenda sem sobreposição @1440",
+      "passed": true,
+      "detail": "338.4 <= 378.4; 1400.8 <= 1400.8"
+    },
+    {
+      "name": "Âncoras locais válidas @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Uma H1 e canonical preservado @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabela contém rolagem própria @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabela alcança coluna final @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ sobre óleo abre @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Navegação para composição @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Nenhum erro JS ou recurso @1440",
+      "passed": true,
+      "detail": "{\"errors\":[],\"resourceErrors\":[],\"requests\":[],\"apiMode\":\"failure\"}"
+    },
+    {
+      "name": "Nenhum formulário enviado @1440",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Axe sem violações @1440",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "measurements": [
+    {
+      "width": 320,
+      "documentWidth": 305,
+      "heroHeight": 1520,
+      "tableWidth": 259,
+      "tableScrollWidth": 620
+    },
+    {
+      "width": 390,
+      "documentWidth": 375,
+      "heroHeight": 1585,
+      "tableWidth": 329,
+      "tableScrollWidth": 620
+    },
+    {
+      "width": 768,
+      "documentWidth": 753,
+      "heroHeight": 1183,
+      "tableWidth": 695,
+      "tableScrollWidth": 695
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1425,
+      "heroHeight": 1457,
+      "tableWidth": 1302,
+      "tableScrollWidth": 1302
+    }
+  ],
+  "axe": [
+    {
+      "width": 320,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 31
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 31
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 27
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 27
+        }
+      ]
+    }
+  ]
+}

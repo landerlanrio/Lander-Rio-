@@ -5,7 +5,7 @@
   "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
   "base_package": "LANDER_RIO_RC10_SITE_DEPLOY.zip",
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
-  "release_note": "RC14: seção editorial Diamond/Gold com seis imagens originais do catálogo do fabricante (mockups), referências e composição atribuída, sem oferta. Candidata não publicada.",
+  "release_note": "RC14: seção Diamond/Gold com montagem direta das seis embalagens originais, composição atribuída e comparação do veículo, sem oferta. Candidata não publicada.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
   "status": "local-candidate-not-deployed",
   "manifest": "manifest-digital-flagship-2026-rc14.json",
@@ -64,7 +64,7 @@
     "/marcas/synedica/",
     "/marcas/alpha-laboratory/"
   ],
-  "revision": "manufacturer-images-v2",
+  "revision": "editorial-section-v3",
   "previous_release_changes": [
     "GA4 e CSP reconciliados com os arquivos publicados em 14/11; nenhuma ativação nova.",
     "Teste da Hero utiliza fixture RC9 com hash, permitindo verificar pacotes sem histórico Git.",

@@ -1,6 +1,12 @@
-# Diamond e Gold — RC14 / imagens do fabricante
+# Diamond e Gold — RC14 / seção editorial concluída
 
 A página existente `/marcas/landerlan/` apresenta as seis embalagens do catálogo Diamond, a identificação de cada referência e uma comparação de composição limitada ao que as fontes documentam. As imagens vieram das fichas individuais da Landerpharma. O fabricante as publica como **mockups**: não são fotografias verificadas de unidades físicas. Não houve geração de embalagens por IA, alteração de rótulos, recorte de produtos ou efeitos promocionais.
+
+## Seção implementada
+
+A revisão `editorial-section-v3` monta as seis embalagens originais diretamente em HTML/CSS, sobre um fundo neutro contínuo. A abertura identifica Landerlan Diamond, apresenta o escopo documental e conduz às referências e ao comparativo do óleo. Desktop com três colunas; celular com duas. Os rótulos não são reescritos ou gerados. As duas composições experimentais por IA não foram incorporadas ao site.
+
+Os 12 arquivos de imagem (seis prévias e seis ampliações) permanecem idênticos ao commit `678b26f6a6adcd5d611dffb8be3586a3051be6c9`. [Hashes e idempotência](evidence/diamond-2026-11-15/editorial-section-v3/source-preservation.json).
 
 ## Imagens utilizadas
 
@@ -34,7 +40,7 @@ As URLs de Testoland e Testenat têm volumes diferentes dos títulos. A redaçã
 | `content/diamond-image-provenance.json` | Origem, tipo de imagem, hashes, dimensões e conversões |
 | `scripts/build_diamond_editorial.py` | Geração idempotente e associação estrita entre imagem e produto |
 | Testes editoriais e harness de navegador | Verificação de seis imagens, fontes, ampliações, links e responsividade |
-| `site/release.json` e manifesto RC14 | Revisão `manufacturer-images-v2`; hashes atualizados |
+| `site/release.json` e manifesto RC14 | Revisão `editorial-section-v3`; hashes atualizados |
 
 ## Validação desta revisão
 
@@ -43,16 +49,20 @@ As URLs de Testoland e Testenat têm volumes diferentes dos títulos. A redaçã
 - Integridade: **88 páginas**, **4.742 referências HTML locais** e **46 URLs no sitemap**, sem problemas detectados pelo verificador.
 - Rótulos dos seis arquivos de origem conferidos visualmente. Galeria revisada em 320, 390, 768 px e desktop; ampliação de Durateston também acionada manualmente.
 - Comparação dos pixels visíveis e transparência das seis ampliações: **6/6 aprovadas**. Regeneração mantém bytes de página, release e dados de marca.
-- Axe: **zero violações detectadas** nas quatro análises. Permanecem **quatro resultados incompletos de contraste, totalizando 44 nós**. Esse resultado não certifica acessibilidade integral.
+- Axe: **zero violações detectadas** nas quatro análises. Permanecem **quatro resultados incompletos de contraste, totalizando 116 nós**. A galeria usa gradiente; o cálculo independente da cor declarada dos textos contra os dois extremos confirma razão superior a 4,5:1 ([cálculo](evidence/diamond-2026-11-15/editorial-section-v3/gallery-contrast.json)). Os resultados incompletos do restante da página continuam sem certificação integral.
 - Nenhum formulário real enviado, deploy ou publicação executado. O harness e as evidências ficam fora de `site/`.
 
-[Gate técnico](evidence/diamond-2026-11-15/manufacturer-images-v2/validation/validation.json) · [Navegador](evidence/diamond-2026-11-15/manufacturer-images-v2/browser-results.json) · [Idempotência](evidence/diamond-2026-11-15/manufacturer-images-v2/generator-idempotence.json)
+[Gate técnico](evidence/diamond-2026-11-15/editorial-section-v3/validation/validation.json) · [Navegador](evidence/diamond-2026-11-15/editorial-section-v3/browser-results.json) · [Idempotência](evidence/diamond-2026-11-15/editorial-section-v3/source-preservation.json)
 
 ## Evidências visuais
 
-![Seis embalagens do fabricante](evidence/diamond-2026-11-15/manufacturer-images-v2/galeria-completa.jpg)
+![Abertura da seção no desktop](evidence/diamond-2026-11-15/editorial-section-v3/secao-desktop.jpg)
 
-![Galeria em 390 px](evidence/diamond-2026-11-15/manufacturer-images-v2/galeria-mobile.jpg)
+![Montagem das seis embalagens originais](evidence/diamond-2026-11-15/editorial-section-v3/secao-galeria.jpg)
+
+![Abertura em 390 px](evidence/diamond-2026-11-15/editorial-section-v3/secao-mobile.jpg)
+
+![Composição em 390 px](evidence/diamond-2026-11-15/editorial-section-v3/secao-comparacao-mobile.jpg)
 
 ## Estado de entrega e limites
 
@@ -62,6 +72,6 @@ Pendências reais: fotografias de unidades físicas não foram fornecidas; o mat
 
 ## Reprodução
 
-Executar `python3 scripts/build_diamond_editorial.py`, `python3 scripts/build_rc14_manifest.py` e `python3 scripts/validate_titan.py --out docs/evidence/diamond-2026-11-15/manufacturer-images-v2/validation`. As fontes e transformações de cada imagem estão na matriz de proveniência.
+Executar `python3 scripts/build_diamond_editorial.py`, `python3 scripts/build_rc14_manifest.py` e `python3 scripts/validate_titan.py --out docs/evidence/diamond-2026-11-15/editorial-section-v3/validation`. As fontes e transformações de cada imagem estão na matriz de proveniência.
 
 O servidor de QA aceita apenas loopback. Abrir `/__qa/diamond.html` para executar os testes e `/__qa/diamond-visual.html` para revisão. A ferramenta de QA não integra o pacote publicado.

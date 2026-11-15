@@ -4,7 +4,7 @@
   "upstream_deploy": "6af804d36034a689af84dddf",
   "scope": "Isolated preview candidate; no production publication",
   "files": {
-    "assets/diamond-editorial-rc14.css": "f86d1d2ca93983dc0c9ee1b8206539cec9b766452e4b8fd7dec8a85c4755a456",
+    "assets/diamond-editorial-rc14.css": "72bdf48324efad7f8db0b2f87dca61a4fc40f082bcd0af6cc5b7803639ef23d8",
     "assets/editorial/composicao-vidro-rc14.webp": "60883d9908f91cb174afbe28172cf4ced3a2628ab12c630a9ee0d4621fd6d20b",
     "assets/editorial/diamond/decaland-depot-640.webp": "edcc83ef6763c22b4317ef17fa500a4110c164f009c17083dfe3435bfe5eb44c",
     "assets/editorial/diamond/decaland-depot.webp": "94761f0f1105e5a5e6e8550a1e8ee177d97435a64c6b2c07fa33e3a4448e04d6",
@@ -19,7 +19,7 @@
     "assets/editorial/diamond/testoland-depot-640.webp": "e2ea195bcb4aebf605c33a168ccd3a5508e869163d98c8916db0e45e259b83e1",
     "assets/editorial/diamond/testoland-depot.webp": "8b9b387c37581aa37bc7de7fecac49a2d71ab3a39e2eceba9392cdbcb2b41a6e",
     "assets/measurement-v23-2.js": "25b2e6beab3b61f2a5bda2bf92d93c4c24a056785bfb926d6baf46dc6d437cdb",
-    "marcas/landerlan/index.html": "a274ab8b15b8611d8af608bf13ddee5f9a6f8f39355813e8c8dbc3ccca0a2779",
-    "release.json": "a5705dd54b5c011e96a8a515755a65e40b5277d85b1c686d9ed0cf50fa6692f9"
+    "marcas/landerlan/index.html": "250bd094d59e745c6ae3bc67197894f6cbbc61f55ab48eef63f3d3217c0b4841",
+    "release.json": "674063780d22df15a3c5ed14efc337753b5f6619da1c66962d67ce62fdc4f86c"
   }
 }

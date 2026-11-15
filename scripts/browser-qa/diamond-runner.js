@@ -45,7 +45,7 @@ async function runDiamond(){
       measurements.push({width,documentWidth:doc.documentElement.scrollWidth,heroHeight:doc.querySelector('.dg-feature').clientHeight,tableWidth:table.clientWidth,tableScrollWidth:table.scrollWidth});
     }
   }catch(error){check('Execução completa',false,String(error.stack||error));}
-  const report={release:'digital-flagship-2026-rc14',revision:'manufacturer-images-v2',started,finished:new Date().toISOString(),engine:navigator.userAgent,scope:'Local Chromium; four CSS viewport frames; original manufacturer catalog images; no production writes or real API submissions',status:results.every(r=>r.passed)?'PASS':'FAIL',results,measurements,axe:audits};
+  const report={release:'digital-flagship-2026-rc14',revision:'editorial-section-v3',started,finished:new Date().toISOString(),engine:navigator.userAgent,scope:'Local Chromium; four CSS viewport frames; original manufacturer catalog images; no production writes or real API submissions',status:results.every(r=>r.passed)?'PASS':'FAIL',results,measurements,axe:audits};
   await fetch('/__qa/result',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(report)});
   document.querySelector('#status').textContent=`${report.status} — ${results.filter(r=>r.passed).length}/${results.length} verificações. Relatório salvo.`;document.querySelector('#runDiamond').disabled=false;
 }

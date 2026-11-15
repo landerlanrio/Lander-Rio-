@@ -1,0 +1,11 @@
+{"directory": "/tmp/tmp562qy8l0", "pages": 88, "analytics": "disabled"}
+test_article_reachable_sourced_and_has_no_sales_links (__main__.RC10.test_article_reachable_sourced_and_has_no_sales_links) ... ok
+test_csp_preserves_only_captured_google_destinations (__main__.RC10.test_csp_preserves_only_captured_google_destinations) ... ok
+test_existing_google_bridge_preserved_byte_for_byte (__main__.RC10.test_existing_google_bridge_preserved_byte_for_byte) ... ok
+test_google_scripts_are_singletons_and_ordered (__main__.RC10.test_google_scripts_are_singletons_and_ordered) ... ok
+test_private_preview_strips_collection_and_stays_noindex (__main__.RC10.test_private_preview_strips_collection_and_stays_noindex) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.063s
+
+OK

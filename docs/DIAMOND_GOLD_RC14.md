@@ -1,69 +1,67 @@
-# Diamond e Gold — seção editorial RC14
+# Diamond e Gold — RC14 / imagens do fabricante
 
-A página existente `/marcas/landerlan/` recebeu uma abertura visual, seis referências documentadas e uma comparação de composição. O material é educativo: não contém oferta, preço, WhatsApp de compra, promessa clínica ou recomendação de uso. A arte é conceitual e está identificada como tal; não é fotografia da linha de medicamentos.
+A página existente `/marcas/landerlan/` apresenta as seis embalagens do catálogo Diamond, a identificação de cada referência e uma comparação de composição limitada ao que as fontes documentam. As imagens vieram das fichas individuais da Landerpharma. O fabricante as publica como **mockups**: não são fotografias verificadas de unidades físicas. Não houve geração de embalagens por IA, alteração de rótulos, recorte de produtos ou efeitos promocionais.
 
-## Resultado verificável da pesquisa
+## Imagens utilizadas
 
-A página Diamond da Landerpharma lista seis referências na consulta de 15/11/2026: Durateston Plus, Drostanolona propionato, Metenolona enantato, Decaland Depot, Testoland Depot e Testenat Depot. Cada referência agora aponta para sua ficha individual.
+Durateston Plus, Drostanolona propionato, Metenolona enantato, Decaland Depot, Testoland Depot e Testenat Depot. Cada imagem tem texto alternativo, link para ampliação local em 1278 × 1230 px, identificação e referência à ficha de origem.
 
-As fichas de Durateston Plus Diamond e Gold nomeiam os mesmos dois excipientes: Miglyol 840 e álcool benzílico. Isso não estabelece proporções idênticas, equivalência entre lotes ou superioridade clínica. O óleo não foi identificado nominalmente nas outras cinco páginas Diamond consultadas. A identidade química de Miglyol 840 foi conferida na documentação da IOI Oleo, sem transformá-la em promessa de menor dor, absorção ou segurança.
+As seis prévias WebP de 640 × 616 px somam **383.360 bytes**. Usam carregamento lazy e dimensões explícitas. As ampliações são WebP sem perdas: a transparência e os pixels renderizados sobre branco e preto são idênticos aos PNGs baixados. As prévias foram redimensionadas proporcionalmente e comprimidas em qualidade 90; não são declaradas pixel a pixel idênticas.
+
+[Proveniência, URLs originais e hashes](../content/diamond-image-provenance.json) · [Comparação de pixels](evidence/diamond-2026-11-15/manufacturer-images-v2/image-integrity.json)
+
+A arte abstrata da primeira candidata foi retirada da página. O arquivo e as evidências anteriores continuam preservados no histórico. A galeria é uma referência editorial; não contém oferta, preço, compra, WhatsApp, posologia ou promessa clínica.
+
+## Composição documentada
+
+As fichas de Durateston Plus Diamond e Gold nomeiam Miglyol 840 e álcool benzílico. Isso não estabelece proporções idênticas, equivalência entre lotes ou superioridade clínica. O veículo não foi identificado nominalmente nas outras cinco páginas Diamond consultadas. A IOI Oleo identifica Miglyol 840 como dicaprilocaprato de propilenoglicol; não foram inferidas menor dor, maior absorção ou segurança comparativa.
 
 - [Catálogo Diamond](https://landerpharma.com.py/linea-diamond)
 - [Durateston Plus Diamond](https://landerpharma.com.py/productos/durateston-plus-10-ampollas-x-1-ml)
 - [Durateston Plus Gold](https://landerpharma.com.py/productos/durateston-plus-gold-fco-amp-x-10-ml)
 - [IOI Oleo — Miglyol 840](https://www.ioioleo.de/en/pharma/products-pharma/miglyol-840/)
-- [Matriz completa, apresentações e limites](../content/diamond-gold-evidence.json)
+- [Matriz completa](../content/diamond-gold-evidence.json)
 
-As URLs de Testoland e Testenat têm volumes diferentes dos respectivos títulos. A redação segue os títulos, fórmulas e apresentações visíveis: Testoland, 2 mL; Testenat, 1 mL. As URLs originais foram preservadas e a divergência está registrada na matriz.
+As URLs de Testoland e Testenat têm volumes diferentes dos títulos. A redação e a conferência das imagens seguem títulos, fórmulas e apresentações: Testoland, 2 mL; Testenat, 1 mL. Os endereços originais foram preservados.
 
-## Alterações
+## Alterações desta revisão
 
 | Arquivo | Alteração |
 |---|---|
-| `site/marcas/landerlan/index.html` | Seção editorial, seis referências, comparação limitada a Durateston Plus, duas FAQs, fontes, metadados e data de revisão |
-| `site/assets/diamond-editorial-rc14.css` | Estilos isolados e layout responsivo, sem animação ou dependência nova |
-| `site/assets/editorial/composicao-vidro-rc14.webp` | Arte conceitual de 1672 × 941 px; 37.266 bytes; carregamento lazy e dimensões explícitas |
-| `content/brands.json` e `content/diamond-gold-evidence.json` | Fontes, estados de confirmação e apresentações atribuídas |
-| `site/assets/measurement-v23-2.js` | Somente identificador de release atualizado para RC14; comportamento de medição preservado |
-| `site/release.json` e manifesto RC14 | Candidata, ancestral RC13 e branch identificados; manifestos históricos preservados |
-| Scripts de geração, testes e QA | Preparação reproduzível, contratos editoriais e evidências de navegador |
+| `site/marcas/landerlan/index.html` | Galeria de seis imagens, ampliações, atribuição e âncoras individuais |
+| `site/assets/editorial/diamond/` | Seis prévias leves e seis ampliações sem perdas |
+| `site/assets/diamond-editorial-rc14.css` | Galeria de três colunas no desktop e duas no celular, sem cortar embalagens |
+| `content/diamond-image-provenance.json` | Origem, tipo de imagem, hashes, dimensões e conversões |
+| `scripts/build_diamond_editorial.py` | Geração idempotente e associação estrita entre imagem e produto |
+| Testes editoriais e harness de navegador | Verificação de seis imagens, fontes, ampliações, links e responsividade |
+| `site/release.json` e manifesto RC14 | Revisão `manufacturer-images-v2`; hashes atualizados |
 
-## Validação
+## Validação desta revisão
 
-- Gate final: **45/45 blocos aprovados**, incluindo **150 testes Node** e **7 testes editoriais específicos**.
-- Integridade: 88 páginas, 4.719 referências HTML locais e 46 URLs no sitemap; nenhuma URL de conteúdo criada ou removida.
-- Chromium: **56/56 verificações aprovadas**, nas larguras 320, 390, 768 e 1440 px.
-- Axe: zero violações detectadas nas quatro análises; quatro resultados incompletos de contraste, abrangendo 72 nós, exigem verificação manual específica. A revisão visual não equivale a certificação de acessibilidade.
-- Hero, referências, FAQ, links e tabela com rolagem própria conferidos. Nenhum formulário real enviado.
-- Os scripts de QA ficam fora de `site/` e não fazem parte do pacote de publicação.
+- **45/45 blocos técnicos aprovados**, incluindo **150 testes Node e 7 testes editoriais**.
+- **64/64 verificações de navegador aprovadas** em Chromium, nas larguras 320, 390, 768 e 1440 px. As seis prévias e as seis ampliações carregaram em cada largura.
+- Integridade: **88 páginas**, **4.742 referências HTML locais** e **46 URLs no sitemap**, sem problemas detectados pelo verificador.
+- Rótulos dos seis arquivos de origem conferidos visualmente. Galeria revisada em 320, 390, 768 px e desktop; ampliação de Durateston também acionada manualmente.
+- Comparação dos pixels visíveis e transparência das seis ampliações: **6/6 aprovadas**. Regeneração mantém bytes de página, release e dados de marca.
+- Axe: **zero violações detectadas** nas quatro análises. Permanecem **quatro resultados incompletos de contraste, totalizando 44 nós**. Esse resultado não certifica acessibilidade integral.
+- Nenhum formulário real enviado, deploy ou publicação executado. O harness e as evidências ficam fora de `site/`.
 
-[Gate técnico](evidence/diamond-2026-11-15/validation/validation.json) · [Navegador](evidence/diamond-2026-11-15/browser/browser-results.json)
+[Gate técnico](evidence/diamond-2026-11-15/manufacturer-images-v2/validation/validation.json) · [Navegador](evidence/diamond-2026-11-15/manufacturer-images-v2/browser-results.json) · [Idempotência](evidence/diamond-2026-11-15/manufacturer-images-v2/generator-idempotence.json)
 
-### Falhas encontradas e resolvidas
+## Evidências visuais
 
-1. O contrato antigo esperava 43 FAQs no diretório. A inclusão intencional de duas perguntas foi refletida no contrato, agora com 45, mantendo a conferência de conteúdo de todas as marcas.
-2. O identificador enviado pela medição ainda era RC13. Foi alinhado com RC14; os testes de consentimento e filtragem continuam aprovados.
-3. O primeiro teste de sobreposição considerava também o padding vazio do bloco. A inspeção visual e a medição do elemento de texto confirmaram que não havia colisão. O teste passou a comparar o último conteúdo com a legenda, preservando a verificação nas quatro larguras.
-4. A legenda da ilustração ficou mais curta e legível. Foi acrescentada uma indicação visível de rolagem da tabela em telas pequenas.
+![Seis embalagens do fabricante](evidence/diamond-2026-11-15/manufacturer-images-v2/galeria-completa.jpg)
 
-## Revisão visual
+![Galeria em 390 px](evidence/diamond-2026-11-15/manufacturer-images-v2/galeria-mobile.jpg)
 
-![Abertura desktop](evidence/diamond-2026-11-15/browser/abertura-desktop.jpg)
+## Estado de entrega e limites
 
-![Abertura em 390 px](evidence/diamond-2026-11-15/browser/abertura-mobile.jpg)
+Revisão no mesmo PR14 e na branch `editorial/diamond-gold-2026-11-15`, sobre `seo/organic-growth-2026-11-14` / PR13. A primeira revisão está preservada no commit `fd18fad4e5829c0b79a247882ee2994c1d6ca9e1`. A produção observada é RC10, deploy `6af804d36034a689af84dddf`; esta candidata RC14 não foi publicada. Não substituir a produção diretamente pela antiga `main`.
 
-![Composição em 390 px](evidence/diamond-2026-11-15/browser/composicao-mobile.jpg)
+Pendências reais: fotografias de unidades físicas não foram fornecidas; o material disponível são os mockups oficiais. Continuam sem comprovação documental o veículo dos outros cinco produtos e a regularidade de comercialização no Brasil. Não foram realizados revisão clínica/regulatória externa, teste em Safari/iPhone físico ou medição de ganhos orgânicos. A publicação depende de autorização específica.
 
-## Estado de entrega
+## Reprodução
 
-Branch isolada: `editorial/diamond-gold-2026-11-15`, baseada em `e69940243ce4debe8cc3feec2ebbd2a656815adb` (PR13). A comparação do novo PR deve usar `seo/organic-growth-2026-11-14` como base para mostrar somente esta alteração. Não substituir a produção diretamente pela antiga `main`.
+Executar `python3 scripts/build_diamond_editorial.py`, `python3 scripts/build_rc14_manifest.py` e `python3 scripts/validate_titan.py --out docs/evidence/diamond-2026-11-15/manufacturer-images-v2/validation`. As fontes e transformações de cada imagem estão na matriz de proveniência.
 
-Produção observada antes das alterações: RC10, deploy `6af804d36034a689af84dddf`. Esta é uma candidata RC14 não publicada. Commits e PR usam `[skip ci] [skip netlify]`; nenhum deploy, compra ou pedido de indexação foi solicitado.
-
-Pendências efetivas: identificação documental do óleo dos outros cinco itens; revisão clínica/regulatória externa não alegada; validação em Safari/iPhone físico e métricas reais de campo não realizadas; publicação depende de autorização específica. Não há crescimento orgânico ou conversão atribuída a esta candidata.
-
-## Reprodução local
-
-Executar `python3 scripts/build_diamond_editorial.py` sobre a candidata preservada, depois `python3 scripts/build_rc14_manifest.py` para registrar os bytes autorizados. Verificar com `python3 scripts/validate_titan.py --out docs/evidence/diamond-2026-11-15/validation`.
-
-O servidor de QA aceita apenas loopback: `python3 scripts/browser_qa_server.py --port 3014 --out docs/evidence/diamond-2026-11-15/browser`. Abrir `/__qa/diamond.html` para os testes e `/__qa/diamond-visual.html` para a revisão. Não executar o gerador histórico de marcas sobre a candidata atual; esta alteração tem seu próprio patch explícito.
+O servidor de QA aceita apenas loopback. Abrir `/__qa/diamond.html` para executar os testes e `/__qa/diamond-visual.html` para revisão. A ferramenta de QA não integra o pacote publicado.

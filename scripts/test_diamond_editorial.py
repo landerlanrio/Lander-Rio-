@@ -62,16 +62,31 @@ class Editorial(unittest.TestCase):
             for item in data.get('@graph',[]):
                 if item.get('@type')=='WebPage':self.assertEqual(item['dateModified'],'2026-11-15')
 
-    def test_neutral_illustration_and_no_commercial_handoff(self):
-        self.assertIn('Ilustração conceitual gerada por IA',PAGE)
+    def test_manufacturer_images_and_no_commercial_handoff(self):
+        self.assertIn('Imagens originais do catálogo da Landerpharma, publicadas como mockups',PAGE)
+        self.assertNotIn('composicao-vidro-rc14.webp',PAGE)
         self.assertNotIn('wa.me',PAGE)
         self.assertNotRegex(PAGE.lower(),r'comprar|peça sua|garanta já|mais seguro|sem colaterais|melhor absorção|menos dor|r\$')
-        asset=SITE/'assets/editorial/composicao-vidro-rc14.webp'
-        self.assertLess(asset.stat().st_size,120_000)
-        self.assertEqual(asset.read_bytes()[:4],b'RIFF')
-        image=next(a for t,a in Document(PAGE).tags if t=='img' and 'composicao-vidro' in a.get('src',''))
-        self.assertEqual((image['width'],image['height']),('1672','941'))
-        self.assertEqual(image.get('loading'),'lazy')
+        records=json.loads((ROOT/'content/diamond-image-provenance.json').read_text())['images']
+        images=[a for t,a in Document(PAGE).tags if t=='img' and '/editorial/diamond/' in a.get('src','')]
+        self.assertEqual(len(images),6)
+        self.assertEqual(len(records),6)
+        self.assertLess(sum(r['preview_bytes'] for r in records),450_000)
+        for record,image,product in zip(records,images,EVIDENCE['products'],strict=True):
+            self.assertEqual(record['name'],product['name'])
+            self.assertEqual(record['page_url'],product['url'])
+            self.assertEqual(record['kind'],'manufacturer_catalog_mockup')
+            self.assertIn('MOCK%20UP.png',record['image_url'])
+            self.assertEqual(image['src'],record['local_preview'])
+            self.assertIn(product['name'],image['alt'])
+            self.assertEqual((image['width'],image['height']),('640','616'))
+            self.assertEqual(image.get('loading'),'lazy')
+            self.assertIn('href="'+record['local_full']+'"',PAGE)
+            for kind in ('full','preview'):
+                asset=SITE/record['local_'+kind].lstrip('/')
+                self.assertEqual(asset.stat().st_size,record[kind+'_bytes'])
+                self.assertEqual(asset.read_bytes()[:4],b'RIFF')
+                self.assertEqual(hashlib.sha256(asset.read_bytes()).hexdigest(),record[kind+'_sha256'])
 
     def test_prior_manifest_bytes_are_preserved(self):
         original=ROOT.parent.parent/'seo-organic-work/lander-rio/site'

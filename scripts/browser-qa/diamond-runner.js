@@ -13,14 +13,19 @@ async function runDiamond(){
       const ready=new Promise(resolve=>frame.onload=resolve);frame.src='/marcas/landerlan/?qa=1#diamond-gold';document.querySelector('#stage').replaceChildren(frame);await ready;
       const win=frame.contentWindow,doc=frame.contentDocument;
       await doc.fonts.ready;doc.querySelector('#diamond-gold').scrollIntoView();
-      await until(()=>doc.querySelector('.dg-feature img').complete&&doc.querySelector('.dg-feature img').naturalWidth>0);
-      const image=doc.querySelector('.dg-feature img');
-      check(`Imagem carregada @${width}`,image.naturalWidth===1672&&image.naturalHeight===941);
+      const images=[...doc.querySelectorAll('.dg-gallery img')];
+      for(const image of images){image.scrollIntoView();await image.decode()}
+      doc.querySelector('#diamond-gold').scrollIntoView();
+      check(`Seis imagens oficiais carregadas @${width}`,images.length===6&&images.every(image=>image.naturalWidth===640&&image.naturalHeight===616&&image.alt.includes('Landerpharma')));
+      check(`Embalagens sem corte visual @${width}`,images.every(image=>win.getComputedStyle(image).objectFit==='contain'&&image.clientWidth>0));
+      const originals=[];
+      for(const link of doc.querySelectorAll('.dg-package-image')){const img=new win.Image();img.src=link.href;await img.decode();originals.push({src:img.src,width:img.naturalWidth,height:img.naturalHeight})}
+      check(`Seis ampliações locais funcionam @${width}`,originals.length===6&&new Set(originals.map(i=>i.src)).size===6&&originals.every(i=>i.width===1278&&i.height===1230));
       check(`Viewport corresponde ao teste @${width}`,win.innerWidth===width);
       check(`Página sem overflow horizontal @${width}`,doc.documentElement.scrollWidth<=win.innerWidth+1,`${doc.documentElement.scrollWidth}/${win.innerWidth}px`);
       check(`Seis referências visíveis @${width}`,doc.querySelectorAll('[data-diamond-reference]').length===6&&[...doc.querySelectorAll('[data-diamond-reference]')].every(e=>win.getComputedStyle(e).display!=='none'));
-      const copy=doc.querySelector('.dg-links').getBoundingClientRect(),note=doc.querySelector('.dg-art-note').getBoundingClientRect();
-      check(`Título e legenda sem sobreposição @${width}`,copy.bottom<=note.top,`${copy.bottom.toFixed(1)} <= ${note.top.toFixed(1)}`);
+      const copy=doc.querySelector('.dg-links').getBoundingClientRect(),gallery=doc.querySelector('.dg-gallery').getBoundingClientRect(),note=doc.querySelector('.dg-art-note').getBoundingClientRect();
+      check(`Texto, galeria e legenda sem sobreposição @${width}`,copy.bottom<=gallery.top&&gallery.bottom<=note.top,`${copy.bottom.toFixed(1)} <= ${gallery.top.toFixed(1)}; ${gallery.bottom.toFixed(1)} <= ${note.top.toFixed(1)}`);
       check(`Âncoras locais válidas @${width}`,[...doc.querySelectorAll('a[href^="#"]')].every(a=>doc.getElementById(a.hash.slice(1))));
       check(`Uma H1 e canonical preservado @${width}`,doc.querySelectorAll('h1').length===1&&doc.querySelector('link[rel=canonical]').href==='https://landerrio.com.br/marcas/landerlan/');
       const table=doc.querySelector('.dg-table-wrap');
@@ -40,7 +45,7 @@ async function runDiamond(){
       measurements.push({width,documentWidth:doc.documentElement.scrollWidth,heroHeight:doc.querySelector('.dg-feature').clientHeight,tableWidth:table.clientWidth,tableScrollWidth:table.scrollWidth});
     }
   }catch(error){check('Execução completa',false,String(error.stack||error));}
-  const report={release:'digital-flagship-2026-rc14',started,finished:new Date().toISOString(),engine:navigator.userAgent,scope:'Local Chromium; four CSS viewport frames; no production writes or real API submissions',status:results.every(r=>r.passed)?'PASS':'FAIL',results,measurements,axe:audits};
+  const report={release:'digital-flagship-2026-rc14',revision:'manufacturer-images-v2',started,finished:new Date().toISOString(),engine:navigator.userAgent,scope:'Local Chromium; four CSS viewport frames; original manufacturer catalog images; no production writes or real API submissions',status:results.every(r=>r.passed)?'PASS':'FAIL',results,measurements,axe:audits};
   await fetch('/__qa/result',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(report)});
   document.querySelector('#status').textContent=`${report.status} — ${results.filter(r=>r.passed).length}/${results.length} verificações. Relatório salvo.`;document.querySelector('#runDiamond').disabled=false;
 }

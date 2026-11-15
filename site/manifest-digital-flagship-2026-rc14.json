@@ -4,10 +4,22 @@
   "upstream_deploy": "6af804d36034a689af84dddf",
   "scope": "Isolated preview candidate; no production publication",
   "files": {
-    "assets/diamond-editorial-rc14.css": "5da69daeeee5e87683d29e352749a3e243da1942d5573393d986ad371e93e56b",
+    "assets/diamond-editorial-rc14.css": "f86d1d2ca93983dc0c9ee1b8206539cec9b766452e4b8fd7dec8a85c4755a456",
     "assets/editorial/composicao-vidro-rc14.webp": "60883d9908f91cb174afbe28172cf4ced3a2628ab12c630a9ee0d4621fd6d20b",
+    "assets/editorial/diamond/decaland-depot-640.webp": "edcc83ef6763c22b4317ef17fa500a4110c164f009c17083dfe3435bfe5eb44c",
+    "assets/editorial/diamond/decaland-depot.webp": "94761f0f1105e5a5e6e8550a1e8ee177d97435a64c6b2c07fa33e3a4448e04d6",
+    "assets/editorial/diamond/drostanolona-propionato-640.webp": "c68aca312da5890897d645ac09eefe0da0d1c5e54d938452ba88f65f734a2057",
+    "assets/editorial/diamond/drostanolona-propionato.webp": "3f499afa2185940286d3557c6b0520750699ddcf6085dcc997189e513ee751cc",
+    "assets/editorial/diamond/durateston-plus-640.webp": "9cff4502beaa39ddce42bacc78bed8b29d4bb461f2809e4bec8cdb5041db6f16",
+    "assets/editorial/diamond/durateston-plus.webp": "5449048c083c7e121468f707d11de3c4366077ad01ddf344e32c3ed0834c0a6d",
+    "assets/editorial/diamond/metenolona-enantato-640.webp": "cf89756d38ba858f3af2f6bbb26a910c05059138c48b5364d34e90bea5432f4f",
+    "assets/editorial/diamond/metenolona-enantato.webp": "8fb44ca3415200c175b9cb2d651788b9a4f2ac0853eec9d8649481dcb6aa89d7",
+    "assets/editorial/diamond/testenat-depot-640.webp": "a4bde5b372baf587e7347d1044ba67740c88ea737c7cfd9fb1400d7ef2a14ed6",
+    "assets/editorial/diamond/testenat-depot.webp": "d0aae585efddfe50b7d4e18693aab9d33c7887cd5f660ad447004acb244e9c65",
+    "assets/editorial/diamond/testoland-depot-640.webp": "e2ea195bcb4aebf605c33a168ccd3a5508e869163d98c8916db0e45e259b83e1",
+    "assets/editorial/diamond/testoland-depot.webp": "8b9b387c37581aa37bc7de7fecac49a2d71ab3a39e2eceba9392cdbcb2b41a6e",
     "assets/measurement-v23-2.js": "25b2e6beab3b61f2a5bda2bf92d93c4c24a056785bfb926d6baf46dc6d437cdb",
-    "marcas/landerlan/index.html": "440a41c54aceb8307a877239edf5c3e258a09a33a26100f7286403526f230ec5",
-    "release.json": "42cc2fbbf03a8ae8585c3f5443b5ffcf81e67442f379f941b8ca64994d9998d7"
+    "marcas/landerlan/index.html": "a274ab8b15b8611d8af608bf13ddee5f9a6f8f39355813e8c8dbc3ccca0a2779",
+    "release.json": "a5705dd54b5c011e96a8a515755a65e40b5277d85b1c686d9ed0cf50fa6692f9"
   }
 }

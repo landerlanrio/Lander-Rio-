@@ -1,0 +1,12 @@
+test_carrier_uncertainty_cannot_be_replaced_with_a_line_wide_claim (__main__.Editorial.test_carrier_uncertainty_cannot_be_replaced_with_a_line_wide_claim) ... ok
+test_comparator_is_bounded_to_durateston_plus (__main__.Editorial.test_comparator_is_bounded_to_durateston_plus) ... ok
+test_manufacturer_images_and_no_commercial_handoff (__main__.Editorial.test_manufacturer_images_and_no_commercial_handoff) ... ok
+test_page_anchors_metadata_and_schema (__main__.Editorial.test_page_anchors_metadata_and_schema) ... ok
+test_prior_manifest_bytes_are_preserved (__main__.Editorial.test_prior_manifest_bytes_are_preserved) ... ok
+test_six_references_have_individual_primary_sources (__main__.Editorial.test_six_references_have_individual_primary_sources) ... ok
+test_source_url_typoes_do_not_change_the_presentation (__main__.Editorial.test_source_url_typoes_do_not_change_the_presentation) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.015s
+
+OK

@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
 DATA = json.loads((ROOT / 'content/diamond-gold-evidence.json').read_text())
+IMAGES = json.loads((ROOT / 'content/diamond-image-provenance.json').read_text())
 PAGE = SITE / 'marcas/landerlan/index.html'
 START, END = '<!-- DIAMOND-EDITORIAL-START -->', '<!-- DIAMOND-EDITORIAL-END -->'
 
@@ -47,22 +48,34 @@ def main():
     brand['faqs'] = [f for f in brand['faqs'] if f['question'] not in {n['question'] for n in new_faqs}] + new_faqs
     brands_file.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + '\n')
 
+    gallery = []
+    for index, (p, image) in enumerate(zip(DATA['products'], IMAGES['images'], strict=True), 1):
+        if p['name'] != image['name'] or p['url'] != image['page_url']:
+            raise ValueError('Image and product evidence must match')
+        gallery.append(f'''<figure class="dg-package" data-diamond-image="{index}">
+          <a class="dg-package-image" href="{esc(image['local_full'], quote=True)}" target="_blank" rel="noopener" aria-label="Ampliar imagem de catálogo de {esc(p['name'], quote=True)} (abre em nova aba)">
+            <img src="{esc(image['local_preview'], quote=True)}" width="{image['preview_width']}" height="{image['preview_height']}" alt="Embalagem {esc(p['name'], quote=True)} Diamond, {esc(p['strength'], quote=True)} — imagem de catálogo da Landerpharma" loading="lazy" decoding="async">
+            <span class="dg-enlarge">Ampliar imagem <span aria-hidden="true">↗</span></span>
+          </a>
+          <figcaption><a href="#diamond-referencia-{index}">{esc(p['name'])}</a>{ref(p['source'], 'imagem de catálogo de '+p['name'])}</figcaption>
+        </figure>''')
+
     feature = START + '''
 <section id="diamond-gold" class="dg-feature" aria-labelledby="diamond-gold-title">
-  <figure aria-hidden="true"><img src="/assets/editorial/composicao-vidro-rc14.webp" width="1672" height="941" alt="" loading="lazy" decoding="async"></figure>
   <div class="dg-hero-copy"><p class="dg-kicker">LANDER RIO / LEITURA DE COMPOSIÇÃO</p>
     <h2 id="diamond-gold-title">Diamond &amp; Gold.<span>O que muda de fato.</span></h2>
     <p class="dg-deck">Apresentação, princípio ativo e veículo: uma leitura das fichas da Landerpharma para esclarecer as diferenças entre as linhas.</p>
     <nav class="dg-links" aria-label="Nesta comparação"><a href="#linha-diamond">As seis referências <span aria-hidden="true">↓</span></a><a href="#oleo-composicao">Entenda o óleo <span aria-hidden="true">↓</span></a></nav>
   </div>
-  <p class="dg-art-note">Ilustração conceitual gerada por IA; não representa produtos ou excipientes reais.</p>
+  <div id="galeria-diamond" class="dg-gallery" role="group" aria-label="As seis embalagens Diamond no catálogo da Landerpharma">''' + ''.join(gallery) + '''</div>
+  <p class="dg-art-note">Imagens originais do catálogo da Landerpharma, publicadas como mockups. Não são fotografias verificadas de unidades físicas. Rótulos preservados; toque em uma imagem para ampliar.</p>
 </section>
 <aside class="dg-takeaway" aria-labelledby="dg-key-finding"><strong id="dg-key-finding">O que a fonte confirma</strong><p>As fichas de <b>Durateston Plus Diamond e Gold</b> declaram <b>Miglyol 840 e álcool benzílico</b>. Nesses dois documentos, o nome do veículo não distingue as linhas. ''' + ref(6, 'Durateston Plus Diamond') + ' ' + ref(12, 'Durateston Plus Gold') + '</p></aside>\n' + END
 
     cards = []
     for index, p in enumerate(DATA['products'], 1):
         oil = 'Veículo nomeado: Miglyol 840; também consta álcool benzílico.' if p['oil'] else 'Veículo: não identificado pelo nome na página consultada.'
-        cards.append(f'<li class="dg-reference" data-diamond-reference="{index}"><div class="dg-reference-top"><span>REFERÊNCIA {index:02} / 06</span>{ref(p["source"], p["name"])}</div><h4>{esc(p["name"])}</h4><p>{esc(p["active"])}</p><p>{esc(p["strength"])} · {esc(p["presentation"])}</p><p class="dg-oil-status">{oil}</p></li>')
+        cards.append(f'<li id="diamond-referencia-{index}" class="dg-reference" data-diamond-reference="{index}"><div class="dg-reference-top"><span>REFERÊNCIA {index:02} / 06</span>{ref(p["source"], p["name"])}</div><h4>{esc(p["name"])}</h4><p>{esc(p["active"])}</p><p>{esc(p["strength"])} · {esc(p["presentation"])}</p><p class="dg-oil-status">{oil}</p></li>')
     group = '<div class="ba-product-group dg-product-group" id="linha-diamond"><h3>Diamond: seis referências documentadas.</h3><p class="dg-product-intro">Todos os seis itens listados na página Diamond na consulta de 15 nov 2026. Concentrações e apresentações identificam o catálogo; não são orientações de dose. '+ref(1, 'listagem Diamond')+'</p><ul class="dg-reference-list">'+''.join(cards)+'</ul></div>'
 
     knowledge = '''<section id="conhecimento" class="dg-oil" aria-labelledby="dg-oil-title">
@@ -117,7 +130,7 @@ def main():
     PAGE.write_text(html)
     release_path = SITE / 'release.json'
     release = json.loads(release_path.read_text())
-    release.update(release='digital-flagship-2026-rc14',version='digital-flagship-2026-rc14',prepared_on='2026-11-15',manifest='manifest-digital-flagship-2026-rc14.json',previous_candidate='digital-flagship-2026-rc13',previous_candidate_commit='e69940243ce4debe8cc3feec2ebbd2a656815adb',source_base_commit='e69940243ce4debe8cc3feec2ebbd2a656815adb',source_branch='editorial/diamond-gold-2026-11-15',release_note='RC14: seção editorial Diamond/Gold com seis referências e composição atribuída; ilustração conceitual, sem oferta. Candidata não publicada.')
+    release.update(release='digital-flagship-2026-rc14',version='digital-flagship-2026-rc14',revision='manufacturer-images-v2',prepared_on='2026-11-15',manifest='manifest-digital-flagship-2026-rc14.json',previous_candidate='digital-flagship-2026-rc13',previous_candidate_commit='e69940243ce4debe8cc3feec2ebbd2a656815adb',source_base_commit='e69940243ce4debe8cc3feec2ebbd2a656815adb',source_branch='editorial/diamond-gold-2026-11-15',release_note='RC14: seção editorial Diamond/Gold com seis imagens originais do catálogo do fabricante (mockups), referências e composição atribuída, sem oferta. Candidata não publicada.')
     release_path.write_text(json.dumps(release,ensure_ascii=False,indent=2)+'\n')
     print('Prepared attributed Diamond/Gold editorial module; no publication.')
 

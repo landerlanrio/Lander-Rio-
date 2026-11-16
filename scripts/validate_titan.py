@@ -27,6 +27,8 @@ def main():
             ('brand-profiles', [sys.executable, 'scripts/test_brand_profiles.py']),
             ('diamond-editorial', [sys.executable, 'scripts/test_diamond_editorial.py']),
             ('metadata-and-binary', [sys.executable, 'scripts/test_integrity.py']),
+            ('indexability-policy', [sys.executable, 'scripts/audit_indexability.py']),
+            ('indexability-regressions', [sys.executable, 'scripts/test_indexability.py']),
             ('node-tests', ['node', '--experimental-strip-types', '--test', *tests]),
             ('http-smoke', [sys.executable, 'scripts/smoke_http.py'])]
     jobs += [('syntax-' + str(i), ['node', '--check', str(p)]) for i, p in enumerate(sorted((ROOT/'site').rglob('*.js')))]

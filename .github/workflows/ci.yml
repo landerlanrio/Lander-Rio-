@@ -31,6 +31,10 @@ jobs:
         run: python3 scripts/test_flagship.py
       - name: Binary, manifest tampering and complete-site metadata regression
         run: python3 scripts/test_integrity.py
+      - name: Preserve reviewed indexability and prevent sitemap regressions
+        run: python3 scripts/audit_indexability.py && python3 scripts/test_indexability.py
+      - name: Editorial routes, sources and original image integrity
+        run: python3 scripts/test_universe.py && python3 scripts/test_rc10.py && python3 scripts/test_brand_profiles.py && python3 scripts/test_diamond_editorial.py
       - name: ROX, transport, Revenue and integration safety tests
         run: node --experimental-strip-types --test scripts/*.test.cjs scripts/test_seo_metadata.cjs prototypes/rox-ai-v2/*.test.mjs prototypes/rox-ai-v2/preview-private/server.test.mjs revenue-intelligence/test-*.cjs
       - name: Read-only HTTP smoke tests

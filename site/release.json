@@ -1,17 +1,17 @@
 {
-  "release": "digital-flagship-2026-rc14",
-  "version": "digital-flagship-2026-rc14",
-  "prepared_on": "2026-11-15",
+  "release": "digital-flagship-2026-rc14.1",
+  "version": "digital-flagship-2026-rc14.1",
+  "prepared_on": "2026-11-17",
   "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
   "base_package": "LANDER_RIO_RC10_SITE_DEPLOY.zip",
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
-  "release_note": "RC14: seção Diamond/Gold com montagem direta das seis embalagens originais, composição atribuída e comparação do veículo, sem oferta. Candidata não publicada.",
+  "release_note": "Candidata em rascunho. Preserva origem e meio de campanhas validadas por consentimento e distingue os dois modelos educativos no GA4.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
   "status": "local-candidate-not-deployed",
-  "manifest": "manifest-digital-flagship-2026-rc14.json",
+  "manifest": "manifest-digital-flagship-2026-rc14.1.json",
   "enciclopedia_release": "v23.8",
   "enciclopedia_status": "pre-publicação; revisão científica externa pendente",
-  "production_deploy_at_audit": "6af804d36034a689af84dddf",
+  "production_deploy_at_audit": "6af9342e9b6477802a23ab4a",
   "integration_status": {
     "rox_local": "tested-in-preview",
     "external_ai": "disabled-missing-provider-and-challenge-setup",
@@ -19,10 +19,10 @@
     "commercial_events": "gateway-prototype-disabled"
   },
   "visual_provenance": "Hero: imagens selecionadas pelo usuário, preservadas desde RC2. Logos: 14 arquivos recebidos e selecionados em 13/11/2026, WebP proporcional, sem recriação, retoque ou remoção de fundo. Ver docs/LOGOS_RC5_ASSETS.json. A seleção não comprova vínculo oficial com fabricantes.",
-  "source_branch": "editorial/diamond-gold-2026-11-15",
+  "source_branch": "audit/measurement-2026-11-17",
   "recovered_base": "LANDER_RIO_TITAN_RC2_FONTE.zip",
   "previous_candidate_commit": "e69940243ce4debe8cc3feec2ebbd2a656815adb",
-  "source_base_commit": "e69940243ce4debe8cc3feec2ebbd2a656815adb",
+  "source_base_commit": "d13b0c973ca01ddf3e02d169f2bbe9a98320419e",
   "indexability_held_routes": [
     "/enciclopedia/substancias/anastrozol/",
     "/enciclopedia/substancias/boldenona/",
@@ -64,7 +64,7 @@
     "/marcas/synedica/",
     "/marcas/alpha-laboratory/"
   ],
-  "revision": "editorial-section-v3",
+  "revision": "measurement-attribution-1",
   "previous_release_changes": [
     "GA4 e CSP reconciliados com os arquivos publicados em 14/11; nenhuma ativação nova.",
     "Teste da Hero utiliza fixture RC9 com hash, permitindo verificar pacotes sem histórico Git.",
@@ -104,7 +104,7 @@
     "Espaçamento das seções e leitura ajustados sem alterar a Hero ou imagens aprovadas.",
     "Critérios, testes de navegador, manifesto aditivo e documentação atualizados."
   ],
-  "previous_candidate": "digital-flagship-2026-rc13",
+  "previous_candidate": "digital-flagship-2026-rc14",
   "publication_state": "candidate_not_published",
   "rc13_changes": [
     "Dois modelos CSV públicos sem cadastro e sem coleta de dados.",

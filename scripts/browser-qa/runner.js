@@ -33,8 +33,15 @@ async function nutrition(){
  const body=JSON.parse(win.__qa.requests.at(-1).body);check('Dieta: envio mínimo e marketing opcional',body.consent_marketing===false&&!['weight','height','profile','plan','calories'].some(k=>k in body),Object.keys(body).join(', '));check('Dieta: sem erros JS',win.__qa.errors.length===0,win.__qa.errors.join(';'));await axe('/dieta/ resultado');
 }
 async function run(){
+ results.length=0; measurements.length=0; axeResults.length=0;
+ let release=null;
  document.querySelector('#run').disabled=true;document.querySelector('#status').textContent='Executando…';const started=new Date().toISOString();
  try{
+  const response=await fetch('/release.json',{cache:'no-store'});
+  if(!response.ok)throw Error('Release metadata unavailable');
+  const metadata=await response.json();
+  if(typeof metadata.version!=='string'||!metadata.version.trim())throw Error('Release version unavailable');
+  release=metadata.version;
   const paths=await (await fetch('/__qa/routes.json')).json();
   for(const width of [320,390,768,1440])for(const path of paths){document.querySelector('#status').textContent=`Verificando ${path} em ${width}px`;await load(path,width);layout(path,width);if(width===390)await axe(path)}
   await load('/',390,null);const box=$('#lr-privacy').getBoundingClientRect();check('Consentimento visível na primeira tela',box.top>=0&&box.bottom<=win.innerHeight&&win.getComputedStyle($('#lr-privacy')).position==='fixed',JSON.stringify({top:box.top,bottom:box.bottom,height:box.height}));check('Zero eventos antes de consentir',win.LanderMeasurement.getSnapshot().length===0);await axe('/ consentimento');click('[data-choice=denied]');check('Recusa respeitada',win.LanderMeasurement.getConsent()==='denied'&&!$('#lr-privacy'));click('[data-privacy-open]');click('[data-choice=granted]');check('Aceite registra uma visita',win.LanderMeasurement.getSnapshot().filter(e=>e.event==='site_visit').length===1);click('[data-privacy-open]');click('[data-choice=denied]');check('Revogação interrompe medição',!win.LanderMeasurement.isEnabled()&&win.LanderMeasurement.getSnapshot().length===0);
@@ -47,7 +54,7 @@ async function run(){
   }
   await training();await nutrition();
  }catch(e){check('Execução completa',false,String(e.stack||e))}
- const report={release:'digital-flagship-2026-rc13',started,finished:new Date().toISOString(),engine:navigator.userAgent,scope:'Local Chromium, CSS viewport frames; simulated API responses; no production writes',status:results.every(r=>r.passed)?'PASS':'FAIL',results,measurements,axe:axeResults};
+ const report={release,started,finished:new Date().toISOString(),engine:navigator.userAgent,scope:'Local Chromium, CSS viewport frames; simulated API responses; no production writes',status:results.every(r=>r.passed)?'PASS':'FAIL',results,measurements,axe:axeResults};
  await fetch('/__qa/result',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(report)});document.querySelector('#status').textContent=`${report.status} — ${results.filter(r=>r.passed).length}/${results.length} verificações. Relatório salvo.`;document.querySelector('#run').disabled=false;
 }
 document.querySelector('#run').addEventListener('click',run);

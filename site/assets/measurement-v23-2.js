@@ -26,7 +26,7 @@ function attribution(){
 }
 function push(event,p={}){if(consent!=='granted'||sensitive||!allowed.has(event))return false;
  if(event==='web_vital'&&(!['LCP','CLS','INP'].includes(p.metric)||!Number.isFinite(p.value)||p.value<0||p.value>600000||!['good','needs-improvement','poor'].includes(p.rating)))return false;
- const data={page,release:'digital-flagship-2026-rc14',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
+ const data={page,release:'digital-flagship-2026-rc14.1',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
  if(['hero','header','profile-card','optional-context','closing','mobile-sticky','fallback','content','rox','brand-directory'].includes(p.placement))data.placement=p.placement;
  if(['whatsapp','choose-profile','subject_changed','tool-training','tool-nutrition','tools-nav','tools-hero','download-diario-de-treino-csv','download-lista-de-compras-semanal-csv'].includes(p.action))data.action=p.action;
  if(['offline','unknown','handoff','privacy','clinical'].includes(p.mode))data.rox_mode=p.mode;

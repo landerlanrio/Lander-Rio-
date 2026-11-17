@@ -4,10 +4,18 @@ from pathlib import Path
 from build_private_review import build
 R=Path(__file__).resolve().parents[1];S=R/'site'
 class RC10(unittest.TestCase):
- def test_existing_google_bridge_preserved_byte_for_byte(self):
-  p=json.loads((R/'docs/PRODUCTION_RECONCILIATION_RC10.json').read_text())
-  for name in ['intent','config']:
-   self.assertEqual(hashlib.sha256((S/f'assets/ga4-{name}.js').read_bytes()).hexdigest(),p[f'ga4_{name}_sha256'])
+ def test_google_bridge_matches_reconciled_production_or_versioned_replacement(self):
+  production = json.loads((R/'docs/PRODUCTION_RECONCILIATION_RC10.json').read_text())
+  expected_intent = production['ga4_intent_sha256']
+  overlay_path = S/'manifest-digital-flagship-2026-rc14.1.json'
+  if overlay_path.is_file():
+   overlay = json.loads(overlay_path.read_text())
+   self.assertEqual(overlay['replaces_sha256'], {'assets/ga4-intent.js': expected_intent})
+   self.assertEqual(overlay['version'], 'digital-flagship-2026-rc14.1')
+   expected_intent = overlay['files']['assets/ga4-intent.js']
+   self.assertNotEqual(expected_intent, production['ga4_intent_sha256'])
+  self.assertEqual(hashlib.sha256((S/'assets/ga4-config.js').read_bytes()).hexdigest(), production['ga4_config_sha256'])
+  self.assertEqual(hashlib.sha256((S/'assets/ga4-intent.js').read_bytes()).hexdigest(), expected_intent)
  def test_google_scripts_are_singletons_and_ordered(self):
   tracked=[]
   for p in S.rglob('*.html'):

@@ -135,6 +135,36 @@
       "reason": "published_public_content"
     },
     {
+      "path": "enciclopedia/guias/endocrino/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/endocrino/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/guias/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/guias/nutricao/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/nutricao/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/guias/recuperacao/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/recuperacao/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/guias/treino/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/treino/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
       "path": "enciclopedia/index.html",
       "canonical": "https://landerrio.com.br/enciclopedia/",
       "indexable": true,
@@ -429,14 +459,14 @@
       "reason": "published_public_content"
     },
     {
-      "path": "marcas/landerlan/index.html",
-      "canonical": "https://landerrio.com.br/marcas/landerlan/",
+      "path": "marcas/landerlan-gold/index.html",
+      "canonical": "https://landerrio.com.br/marcas/landerlan-gold/",
       "indexable": true,
       "reason": "published_public_content"
     },
     {
-      "path": "marcas/landerlan-gold/index.html",
-      "canonical": "https://landerrio.com.br/marcas/landerlan-gold/",
+      "path": "marcas/landerlan/index.html",
+      "canonical": "https://landerrio.com.br/marcas/landerlan/",
       "indexable": true,
       "reason": "published_public_content"
     },

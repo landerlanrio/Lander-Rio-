@@ -1,0 +1,360 @@
+[
+  {
+    "slug": "treino",
+    "title": "Treino e hipertrofia",
+    "intro": "Como carga, séries, esforço e descanso mudam a interpretação da sua ficha.",
+    "entries": [
+      {
+        "slug": "volume-semanal",
+        "title": "Volume semanal e séries por músculo",
+        "question": "Minha ficha tem seis séries de rosca e seis de remada. São doze séries de bíceps?",
+        "answer": "Vale registrar os dois tipos de trabalho. Na rosca, a flexão do cotovelo é o foco. Na remada, o bíceps divide a tarefa com outros músculos. Somar as doze séries com o mesmo peso esconde essa diferença.",
+        "evidence": "Pelland e colegas reuniram 67 estudos com 2.058 participantes. O modelo que contou cada série indireta como meia série foi o que melhor descreveu os dados. Em média, volumes maiores acompanharam ganhos maiores de massa muscular, com um benefício adicional progressivamente menor.",
+        "limit": "A meia série é uma convenção estatística. A participação do músculo muda conforme o exercício e a execução. A curva média do estudo também deixa em aberto o volume que cada pessoa consegue sustentar.",
+        "practice": "No exemplo da rosca e da remada, o cálculo fracionado dá nove séries equivalentes. Guarde também os números originais, seis diretas e seis indiretas. Assim, quando o desempenho mudar, você saberá exatamente qual parte da ficha foi alterada.",
+        "source": "Pelland et al. · Sports Medicine · 2026 (publicação on-line em 2025)",
+        "url": "https://doi.org/10.1007/s40279-025-02344-w",
+        "terms": [
+          "volume",
+          "séries semanais",
+          "volume de treino",
+          "séries diretas",
+          "séries indiretas",
+          "séries fracionadas",
+          "bíceps",
+          "remada"
+        ],
+        "doi": "10.1007/s40279-025-02344-w"
+      },
+      {
+        "slug": "carga-forca-hipertrofia",
+        "title": "Carga, força e hipertrofia",
+        "question": "O treino que mais aumenta o peso no supino também é o que mais faz o peitoral crescer?",
+        "answer": "O teste de força máxima e a medida de tamanho muscular respondem a perguntas diferentes. Em séries levadas até o limite, o músculo pode crescer numa faixa ampla de cargas. Para avançar no teste de força máxima, a carga usada no treino ganha mais importância.",
+        "evidence": "Uma revisão de 28 estudos, com 747 adultos saudáveis, comparou cargas que permitiam até oito, de nove a quinze ou mais de quinze repetições até a falha voluntária. A análise não detectou diferenças claras na hipertrofia entre as faixas. Cargas moderadas e altas produziram ganhos de força maiores que as baixas.",
+        "limit": "Todas as séries incluídas chegaram à falha voluntária. Estender esse resultado a séries leves encerradas quando ainda caberiam muitas repetições seria uma extrapolação.",
+        "practice": "Escolha um marcador para cada objetivo. Se quer acompanhar o supino, registre a carga e as repetições com execução consistente. Se a pergunta é sobre crescimento muscular, interprete esse registro junto de medidas corporais padronizadas ao longo das semanas.",
+        "source": "Lopez et al. · Medicine & Science in Sports & Exercise · 2021",
+        "url": "https://doi.org/10.1249/MSS.0000000000002585",
+        "terms": [
+          "carga",
+          "força",
+          "hipertrofia",
+          "repetições",
+          "1RM",
+          "repetição máxima",
+          "supino",
+          "cargas leves"
+        ],
+        "doi": "10.1249/MSS.0000000000002585"
+      },
+      {
+        "slug": "proximidade-da-falha",
+        "title": "Falha e repetições em reserva",
+        "question": "Duas séries de dez repetições representam o mesmo esforço?",
+        "answer": "Imagine terminar a primeira série com a impressão de que ainda faria quatro repetições com a mesma técnica. Na segunda, parece caber só mais uma. O registro de repetições em reserva, ou RIR, expressa essa diferença. A estimativa seria quatro na primeira série e uma na segunda.",
+        "evidence": "Robinson e colegas estimaram o RIR dos protocolos e analisaram separadamente hipertrofia e força. Séries encerradas mais perto da falha se associaram a maior crescimento muscular. Para força, os ganhos foram semelhantes ao longo de uma faixa ampla de RIR.",
+        "limit": "Os pesquisadores reconstruíram o RIR a partir das descrições de treino. A análise foi exploratória, e o ajuste dos modelos foi modesto. Ela não determina o número ideal de repetições em reserva para cada exercício.",
+        "practice": "Anote a margem que você estima logo após a série. Compare o mesmo exercício, com a mesma amplitude e em posição parecida no treino. Fazer dez repetições com a mesma carga e perceber mais margem é uma pista de progresso que a coluna de pesos sozinha perderia.",
+        "source": "Robinson et al. · Sports Medicine · 2024",
+        "url": "https://doi.org/10.1007/s40279-024-02069-2",
+        "terms": [
+          "RIR",
+          "repetições em reserva",
+          "falha",
+          "falha muscular",
+          "esforço",
+          "proximidade da falha"
+        ],
+        "doi": "10.1007/s40279-024-02069-2"
+      },
+      {
+        "slug": "intervalos-entre-series",
+        "title": "Descanso entre séries",
+        "question": "Se as repetições despencam de uma série para outra, vale aumentar o intervalo?",
+        "answer": "Vale testar o intervalo como uma variável da ficha. Com uma pausa muito curta, você pode chegar à série seguinte ainda sem condições de repetir o esforço planejado. O efeito de mudar a pausa aparece no que você consegue fazer na série seguinte.",
+        "evidence": "Singer e colegas reuniram nove estudos. As estimativas para braços e coxas favoreceram discretamente pausas acima de 60 segundos, mas a margem de incerteza incluiu a possibilidade de pouca ou nenhuma diferença. Acima de 90 segundos, a análise não mostrou vantagem adicional clara para hipertrofia.",
+        "limit": "Os estudos usaram exercícios, participantes e medidas musculares diferentes. Os 90 segundos marcam uma comparação da revisão. O tempo necessário para recuperar o desempenho num agachamento pesado pode ser outro.",
+        "practice": "Se faz doze repetições na primeira série e sete na segunda, mantenha a carga e cronometre a pausa no próximo treino. Experimente um intervalo maior e registre quantas repetições voltam com a mesma técnica. Essa comparação ajuda a decidir se o tempo extra vale a pena.",
+        "source": "Singer et al. · Frontiers in Sports and Active Living · 2024",
+        "url": "https://doi.org/10.3389/fspor.2024.1429789",
+        "terms": [
+          "descanso",
+          "intervalo entre séries",
+          "pausa",
+          "recuperação",
+          "cronômetro",
+          "queda de repetições"
+        ],
+        "doi": "10.3389/fspor.2024.1429789"
+      }
+    ]
+  },
+  {
+    "slug": "nutricao",
+    "title": "Nutrição e composição corporal",
+    "intro": "O que balança e exames captam quando mudam a alimentação, a hidratação e o treino.",
+    "entries": [
+      {
+        "slug": "proteina-total-e-whey",
+        "title": "Proteína total e whey",
+        "question": "Se já como proteína nas refeições, o que um shake acrescenta?",
+        "answer": "Whey é a proteína do soro do leite. Sua contribuição depende do que acontece com o total do dia. Acrescentar um shake ao lanche e trocar por ele uma refeição com a mesma quantidade de proteína são duas mudanças diferentes na dieta.",
+        "evidence": "Morton e colegas reuniram 49 estudos com 1.863 adultos que fizeram musculação. Em média, os grupos que receberam proteína suplementar ganharam 0,30 kg a mais de massa livre de gordura que os controles. O intervalo de confiança de 95% foi de 0,09 a 0,52 kg. Esse valor expressa o ganho adicional médio sobre o treino realizado pelos dois grupos.",
+        "limit": "O modelo estimou que o benefício adicional se estabilizava perto de 1,6 g de proteína total por quilo ao dia. A incerteza da estimativa foi ampla. Usar esse ponto como um limite exato para cada pessoa daria ao estudo uma precisão que ele não tem.",
+        "practice": "Some as proteínas de um dia habitual, incluindo laticínios, ovos, carnes, feijões, soja e suplementos. Se o shake substitui o lanche, desconte a proteína que o lanche já fornecia. Essa diferença mostra quanto o suplemento de fato acrescentou.",
+        "source": "Morton et al. · British Journal of Sports Medicine, 2018 · Revisão sistemática e meta-análise",
+        "url": "https://bjsm.bmj.com/content/bjsports/52/6/376.full.pdf",
+        "terms": [
+          "proteína",
+          "whey protein",
+          "suplemento",
+          "massa livre de gordura",
+          "proteína por quilo",
+          "hipertrofia"
+        ],
+        "doi": "10.1136/bjsports-2017-097608"
+      },
+      {
+        "slug": "creatina-e-peso-na-balanca",
+        "title": "Creatina e peso na balança",
+        "question": "O peso subiu na primeira semana de creatina. Quanto disso é músculo?",
+        "answer": "A balança registra o peso total. Mesmo um exame que estima massa magra inclui a água presente nos tecidos. Uma mudança rápida depois de começar a creatina pode alterar ambos os números antes que seja possível atribuir a diferença ao crescimento das fibras musculares.",
+        "evidence": "Desai e colegas distribuíram 63 adultos por sorteio entre um grupo que recebeu creatina e um grupo de controle. Durante a primeira semana, antes do início do programa de musculação, a diferença média na variação de massa magra medida por DXA foi de 0,51 kg a favor da creatina. Partindo da medição feita no fim dessa semana, os dois grupos ganharam cerca de 2 kg de massa magra nas 12 semanas de treino seguintes.",
+        "limit": "O estudo não mediu o estado de hidratação e o controle não recebeu placebo. Os dados permitem localizar a mudança inicial no tempo. A quantidade exata atribuível à água ficou em aberto.",
+        "practice": "Anote a data em que começou a creatina e compare as médias de peso de várias manhãs em condições parecidas. Mantenha também o registro das cargas e repetições para acompanhar o desempenho separadamente.",
+        "source": "Desai et al. · Nutrients, 2025 · Ensaio randomizado",
+        "url": "https://doi.org/10.3390/nu17061081",
+        "terms": [
+          "creatina monohidratada",
+          "retenção de água",
+          "peso",
+          "massa magra",
+          "balança",
+          "DXA"
+        ],
+        "doi": "10.3390/nu17061081"
+      },
+      {
+        "slug": "deficit-calorico-e-ganho-de-massa",
+        "title": "Déficit calórico e ganho de massa",
+        "question": "Se consigo levantar mais peso durante o cutting, ganhei músculo?",
+        "answer": "Levantar mais peso demonstra que seu desempenho naquele exercício melhorou. Para concluir que houve hipertrofia, é preciso observar também o tamanho muscular. Durante uma fase de perda de peso, a força pode progredir mesmo quando o ganho de massa magra é pequeno.",
+        "evidence": "Murphy e Koehler compararam programas de musculação com e sem déficit energético. Na análise dos sete estudos com comparação direta, o grupo em déficit ganhou menos massa magra, em média. Na análise de força, a diferença entre os grupos foi inconclusiva. Uma análise complementar relacionou déficits maiores a ganhos menores de massa magra.",
+        "limit": "Na comparação direta havia 282 participantes, com idade média de 60 anos. Seis dos sete estudos incluíram apenas mulheres e predominavam pessoas previamente inativas. Esses dados não permitem prever o resultado de um fisiculturista experiente e já muito magro.",
+        "practice": "No diário de cutting, registre separadamente a tendência do peso, a cintura e o desempenho em um exercício com técnica e amplitude repetíveis. Se a carga subir enquanto a cintura diminui, você poderá descrever essas duas conquistas sem precisar adivinhar quantos gramas de músculo ganhou.",
+        "source": "Murphy e Koehler · Scandinavian Journal of Medicine & Science in Sports, 2022 · Meta-análise e meta-regressão",
+        "url": "https://doi.org/10.1111/sms.14075",
+        "terms": [
+          "déficit energético",
+          "déficit calórico",
+          "cutting",
+          "recomposição corporal",
+          "emagrecimento",
+          "força"
+        ],
+        "doi": "10.1111/sms.14075"
+      },
+      {
+        "slug": "glicogenio-e-leitura-do-dxa",
+        "title": "Glicogênio e leitura do DXA",
+        "question": "Dois dias com mais carboidrato podem mudar a massa magra no exame?",
+        "answer": "Podem. O músculo armazena carboidrato na forma de glicogênio, e as mudanças nesse estoque acompanham alterações na quantidade de água. O DXA estima a composição dos tecidos. A parcela chamada massa magra pode, portanto, oscilar em poucos dias.",
+        "evidence": "Bone e colegas estudaram 18 ciclistas homens. Depois de um exercício destinado a reduzir o glicogênio, os atletas passaram por condições controladas de reposição de carboidrato. Com 48 horas de reposição elevada, a estimativa de massa magra corporal subiu cerca de 2% no grupo sem creatina e 3% no grupo com creatina. Os pesquisadores acompanharam também a água corporal e usaram biópsias musculares para medir os estoques.",
+        "limit": "Esse resultado vem de atletas de endurance em um protocolo planejado para alterar o glicogênio. Ele mostra que a medida é sensível a essas condições. Os percentuais não servem para corrigir matematicamente o seu laudo.",
+        "practice": "Ao repetir o DXA, procure reproduzir horário, rotina alimentar, hidratação habitual e intervalo desde o treino. Registre se o exame anterior ocorreu depois de um treino longo e o atual depois de descanso e maior ingestão de carboidrato. Essa diferença ajuda a interpretar o laudo.",
+        "source": "Bone et al. · Medicine & Science in Sports & Exercise, 2017 · Estudo experimental com ciclistas",
+        "url": "https://acuresearchbank.acu.edu.au/download/f95c2d1078f9b014b533d643e6d00973092be804d34fed7b247b47d1694b2b19/1757232/AM_Bone_2017_Manipulation_of_muscle_creatine_and_glycogen.pdf",
+        "terms": [
+          "glicogênio",
+          "carboidrato",
+          "DXA",
+          "DEXA",
+          "composição corporal",
+          "hidratação",
+          "massa magra"
+        ],
+        "doi": "10.1249/MSS.0000000000001174"
+      }
+    ]
+  },
+  {
+    "slug": "endocrino",
+    "title": "Hormônios e evidência",
+    "intro": "Como interpretar resultados sobre GH, testosterona, tirzepatida e risco cardiovascular.",
+    "entries": [
+      {
+        "slug": "gh-massa-magra-e-forca",
+        "title": "GH, água corporal e força",
+        "question": "Se a massa magra sobe, a força sobe junto?",
+        "answer": "A água fora das células entra na conta da massa magra. Quando essa água aumenta, o exame pode registrar ganho mesmo que a pessoa continue levantando a mesma carga.",
+        "evidence": "Meinhardt e colegas sortearam 96 praticantes de esporte recreativo para diferentes grupos de um ensaio com placebo. Em oito semanas, o GH aumentou a massa magra por meio do aumento da água extracelular. A força medida no levantamento terra não mostrou melhora significativa. O resultado esportivo que mudou foi a capacidade de sprint no teste de bicicleta.",
+        "limit": "O acompanhamento foi curto. Uma mudança no teste de bicicleta tampouco informa quanto alguém conseguiria levantar ou que resultado teria após anos de treino.",
+        "practice": "Ao ler um resultado de composição corporal, procure o método e o teste de desempenho que o acompanha. “Massa magra” sozinha não permite contar quantos quilos de músculo contrátil a pessoa ganhou.",
+        "source": "Meinhardt et al. · Annals of Internal Medicine, 2010 · ensaio randomizado",
+        "url": "https://doi.org/10.7326/0003-4819-152-9-201005040-00007",
+        "terms": [
+          "GH",
+          "somatropina",
+          "hormônio do crescimento",
+          "massa magra",
+          "água extracelular",
+          "retenção hídrica",
+          "força"
+        ],
+        "doi": "10.7326/0003-4819-152-9-201005040-00007"
+      },
+      {
+        "slug": "testosterona-pos-treino",
+        "title": "O pico de testosterona depois do treino",
+        "question": "O pico hormonal de uma sessão revela quem vai ganhar mais músculo?",
+        "answer": "Uma coleta logo depois do treino descreve um momento. Em homens jovens já treinados, as respostas de testosterona no sangue tiveram pouco valor para explicar por que alguns ganharam mais músculo que outros ao longo de semanas.",
+        "evidence": "Morton e colegas reanalisaram dados de 49 homens após 12 semanas de musculação. Compararam hormônios circulantes em repouso e após exercício com as mudanças de massa magra e da área das fibras musculares. As concentrações hormonais não explicaram uma parcela relevante das diferenças de hipertrofia observadas.",
+        "limit": "A amostra era de homens jovens e saudáveis. O estudo examinou variações hormonais fisiológicas e não permite conclusões sobre deficiência hormonal, tratamento clínico ou exposição a hormônios externos.",
+        "practice": "Se uma ficha promete mais hipertrofia porque um exercício elevou a testosterona por alguns minutos, procure o passo seguinte da prova. O estudo acompanhou o tamanho muscular ao longo do tempo ou terminou na coleta de sangue?",
+        "source": "Morton et al. · Frontiers in Physiology, 2018 · análise de 12 semanas de treino",
+        "url": "https://doi.org/10.3389/fphys.2018.01373",
+        "terms": [
+          "testosterona",
+          "hormônios",
+          "testosterona endógena",
+          "pico hormonal",
+          "pós-treino",
+          "hipertrofia",
+          "fibras musculares"
+        ],
+        "doi": "10.3389/fphys.2018.01373"
+      },
+      {
+        "slug": "tirzepatida-peso-e-composicao",
+        "title": "Tirzepatida e composição do peso perdido",
+        "question": "O que significam os 25% de massa magra citados no SURMOUNT-1?",
+        "answer": "O denominador é o peso perdido. No subestudo, a gordura respondeu por cerca de três quartos da perda de peso e a massa magra por um quarto, em média, tanto com tirzepatida quanto com placebo. As quantidades totais perdidas foram diferentes.",
+        "evidence": "A análise por absorciometria de dupla energia (DXA) incluiu 160 adultos com sobrepeso ou obesidade. Em 72 semanas, o peso caiu em média 21,3% no grupo tirzepatida e 5,3% no grupo placebo. A massa magra caiu 10,9% e 2,6%, respectivamente, em relação à massa magra inicial de cada grupo.",
+        "limit": "A DXA contabiliza tecido magro que inclui água e órgãos. A medida não separa todo o músculo esquelético nem mede força. A média desse subgrupo também não prevê a composição da perda de peso em um fisiculturista.",
+        "practice": "Ao encontrar um percentual, identifique a base do cálculo. “25% do peso que se perdeu” e “25% da massa muscular que existia no início” descrevem quantidades diferentes.",
+        "source": "Look et al. · Diabetes, Obesity and Metabolism, 2025 · subestudo de composição corporal do SURMOUNT-1",
+        "url": "https://doi.org/10.1111/dom.16275",
+        "terms": [
+          "tirzepatida",
+          "GLP-1",
+          "GIP",
+          "incretinas",
+          "emagrecimento",
+          "gordura",
+          "massa magra",
+          "DXA",
+          "SURMOUNT-1"
+        ],
+        "doi": "10.1111/dom.16275"
+      },
+      {
+        "slug": "anabolizantes-e-risco-cardiovascular",
+        "title": "Anabolizantes e risco cardiovascular",
+        "question": "O que 11 anos de acompanhamento dizem sobre infarto?",
+        "answer": "Uma coorte dinamarquesa encontrou mais eventos cardiovasculares entre homens identificados pelo uso de esteroides anabolizantes. O seguimento prolongado permitiu observar diagnósticos reais, incluindo infarto e doenças do músculo cardíaco.",
+        "evidence": "Os pesquisadores cruzaram registros de 1.189 homens sancionados em academias por um programa antidoping com os de 59.450 homens da população geral pareados por idade. Em cerca de 11 anos, a razão de riscos instantâneos ajustada para infarto foi 3,00, com intervalo de confiança de 95% de 1,67 a 5,39.",
+        "limit": "A pesquisa foi observacional e incluiu homens alcançados por um programa de fiscalização. Características dos grupos e outras exposições podem influenciar o resultado. O desenho não isola o efeito de um composto nem estabelece um risco pessoal.",
+        "practice": "Leia o número junto do grupo de comparação e do período. A estimativa de 3,00 compara a ocorrência de infarto ao longo do seguimento. Para saber quantos casos houve a cada mil pessoas, seria preciso consultar as taxas absolutas.",
+        "source": "Windfeld-Mathiasen et al. · Circulation, 2025 · coorte dinamarquesa com registros nacionais",
+        "url": "https://doi.org/10.1161/CIRCULATIONAHA.124.071117",
+        "terms": [
+          "anabolizantes",
+          "esteroides anabolizantes",
+          "cardiovascular",
+          "infarto",
+          "cardiomiopatia",
+          "risco relativo",
+          "coorte",
+          "antidoping"
+        ],
+        "doi": "10.1161/CIRCULATIONAHA.124.071117"
+      }
+    ]
+  },
+  {
+    "slug": "recuperacao",
+    "title": "Recuperação e medidas",
+    "intro": "Como ler o sono, o calendário menstrual e as medidas do corpo ao longo das semanas.",
+    "entries": [
+      {
+        "slug": "musculo-inchado-ou-hipertrofia",
+        "title": "Inchaço e hipertrofia nas primeiras semanas",
+        "question": "A coxa aumentou logo nas primeiras semanas. Quanto disso já é músculo novo?",
+        "answer": "Uma medida maior registra uma mudança real de tamanho. Para descobrir o que mudou dentro do músculo, é preciso saber quando a medida foi feita e que outras medições a acompanham. O tecido também pode estar inchado na fase de adaptação a um treino novo.",
+        "evidence": "Damas e colegas acompanharam dez homens jovens sem experiência de treino por dez semanas. Na terceira semana, o ultrassom do vasto lateral já mostrava aumento de área e um sinal compatível com edema. A leitura de crescimento naquele ponto precisava levar o inchaço em conta.",
+        "limit": "O estudo acompanhou um músculo em um grupo pequeno de iniciantes. Com o ultrassom usado ali, não dá para decompor a medida de uma pessoa em porcentagens exatas de tecido novo e líquido.",
+        "practice": "Para comparar a coxa ao longo de um bloco de treino, marque a posição da fita, faça a medida em condições parecidas e anote quanto tempo passou desde o último treino de pernas. Uma série de medidas comparáveis conta mais que o maior número da semana.",
+        "source": "Damas et al. · European Journal of Applied Physiology · 2016",
+        "url": "https://doi.org/10.1007/s00421-015-3243-4",
+        "terms": [
+          "pump",
+          "edema",
+          "inchaço",
+          "ultrassom",
+          "circunferência",
+          "vasto lateral"
+        ],
+        "doi": "10.1007/s00421-015-3243-4"
+      },
+      {
+        "slug": "sono-e-recuperacao",
+        "title": "Sono e recuperação entre treinos",
+        "question": "Duas pessoas que dormem sete horas chegam igualmente recuperadas ao treino?",
+        "answer": "O registro de horas deixa de fora os despertares, a chance real de dormir e a sonolência no dia seguinte. Para quem treina cedo ou muda de horário durante a semana, esses detalhes ajudam a interpretar uma queda de desempenho.",
+        "evidence": "O consenso de Walsh e colegas reuniu estudos com atletas e discutiu como viagens, horários de treino e estresse afetam o sono. Os autores encontraram evidência mais clara para os efeitos da privação de uma noite inteira do que para uma a três noites de restrição parcial.",
+        "limit": "Trata-se de uma revisão narrativa e de um consenso. As modalidades e os métodos de avaliação variaram. O trabalho não permite calcular quantas repetições alguém perderá amanhã com base nas horas que dormiu hoje.",
+        "practice": "Durante uma semana, anote a hora de deitar e levantar, se acordou no meio da noite e como se sentiu no primeiro exercício. Procure padrões que se repetem, como treinos sistematicamente piores depois de uma sequência de noites interrompidas.",
+        "source": "Walsh et al. · British Journal of Sports Medicine · 2021",
+        "url": "https://doi.org/10.1136/bjsports-2020-102025",
+        "terms": [
+          "sono",
+          "recuperação",
+          "descanso noturno",
+          "fadiga",
+          "sonolência"
+        ],
+        "doi": "10.1136/bjsports-2020-102025"
+      },
+      {
+        "slug": "relogio-e-estagios-do-sono",
+        "title": "Relógios e estágios do sono",
+        "question": "Devo mudar o treino porque o relógio marcou pouco sono profundo?",
+        "answer": "O aparelho estima o sono a partir de sinais que seu sensor consegue captar. Antes de usar os minutos de sono profundo para mudar sua ficha, vale perguntar qual parte da noite o modelo consegue distinguir com precisão.",
+        "evidence": "Chinoy e colegas testaram sete dispositivos de consumo contra a polissonografia, em 34 adultos jovens ao longo de três noites. Os aparelhos identificaram bem muitos trechos de sono, mas tiveram mais dificuldade para reconhecer períodos acordados. A concordância variou conforme o estágio avaliado.",
+        "limit": "A avaliação vale para os modelos testados, nas condições do laboratório. Até uma atualização de algoritmo pode mudar o desempenho do mesmo relógio. O estudo tampouco mediu o resultado de adaptar a musculação à nota do aparelho.",
+        "practice": "Se você lembra de ter ficado acordado por bastante tempo e o aplicativo mostra sono contínuo, registre a divergência. Use a tendência junto dos horários, da disposição e do desempenho observado antes de atribuir a sessão ruim a um estágio específico.",
+        "source": "Chinoy et al. · Sleep · 2021",
+        "url": "https://doi.org/10.1093/sleep/zsaa291",
+        "terms": [
+          "smartwatch",
+          "relógio",
+          "wearable",
+          "sono profundo",
+          "REM",
+          "polissonografia"
+        ],
+        "doi": "10.1093/sleep/zsaa291"
+      },
+      {
+        "slug": "ciclo-menstrual-e-desempenho",
+        "title": "Ciclo menstrual e desempenho",
+        "question": "O calendário menstrual determina o melhor dia para treinar pesado?",
+        "answer": "A fase do ciclo, isoladamente, tem pouco poder para prever o rendimento de uma mulher em um treino específico. A experiência individual merece espaço no registro, especialmente quando desconfortos se repetem em condições parecidas.",
+        "evidence": "McNulty e colegas reuniram 78 estudos sobre exercício em mulheres com ciclos menstruais regulares. Na primeira comparação agrupada, com 51 estudos, a diferença média entre a fase folicular inicial e as demais foi muito pequena. Os resultados variavam bastante de estudo para estudo.",
+        "limit": "A qualidade geral da evidência foi baixa. A análise reuniu testes de força e de resistência e não responde qual arranjo produz mais hipertrofia em longo prazo. A população estudada também limita a extrapolação para outros contextos hormonais.",
+        "practice": "No diário, registre sintomas e execução junto da fase estimada, do sono e do esforço percebido. Compare o mesmo exercício ao longo de mais de um ciclo. Essa sequência é mais informativa para você do que uma previsão automática baseada apenas na data.",
+        "source": "McNulty et al. · Sports Medicine · 2020",
+        "url": "https://doi.org/10.1007/s40279-020-01319-3",
+        "terms": [
+          "ciclo menstrual",
+          "fase folicular",
+          "menstruação",
+          "mulheres",
+          "calendário"
+        ],
+        "doi": "10.1007/s40279-020-01319-3"
+      }
+    ]
+  }
+]

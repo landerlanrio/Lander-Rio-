@@ -20,7 +20,9 @@
 .lr-atlas .lr-atlas-kicker { margin: 0 0 clamp(18px, 2.7vw, 42px); color: var(--atlas-accent); display: flex; align-items: center; gap: 12px; }
 .lr-atlas-kicker > span { width: 27px; height: 2px; background: currentColor; }
 .lr-atlas #lr-atlas-title { font: 900 clamp(3.7rem, 6.75vw, 7.3rem)/.92 'Barlow Condensed', Impact, sans-serif; letter-spacing: -.035em; color: var(--atlas-paper); text-transform: uppercase; margin: 0; }
-.lr-atlas #lr-atlas-title em { display: block; margin: .13em 0 0; font: italic 500 .56em/1.08 'Playfair Display', Georgia, serif; letter-spacing: -.05em; text-transform: none; color: var(--atlas-accent); }
+.lr-atlas #lr-atlas-title em { display: block; margin: .13em 0 0; font: italic 500 .56em/1.08 Georgia, serif; letter-spacing: -.05em; text-transform: none; color: var(--atlas-accent); }
+.lr-atlas.lr-atlas-near #lr-atlas-title em { font-family: 'Playfair Display', Georgia, serif; }
+@media (scripting: none) { .lr-atlas #lr-atlas-title em { font-family: 'Playfair Display', Georgia, serif; } }
 .lr-atlas .lr-atlas-deck { font: 500 clamp(1.23rem, 1.85vw, 1.8rem)/1.28 'DM Sans', Arial, sans-serif; letter-spacing: -.03em; max-width: 28ch; margin: clamp(22px, 2.4vw, 40px) 0 12px; }
 .lr-atlas-intro, .lr-atlas-entry > p:not(.lr-atlas-overline) { color: var(--atlas-muted); font-size: 1rem; line-height: 1.58; margin: 0; max-width: 52ch; }
 .lr-atlas a { text-decoration: none; }

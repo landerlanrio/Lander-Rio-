@@ -565,6 +565,84 @@
       "canonical": "https://landerrio.com.br/varejo/",
       "indexable": true,
       "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/alavancas-no-agachamento/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/alavancas-no-agachamento/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/carboidrato-e-sessao-de-forca/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/carboidrato-e-sessao-de-forca/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/confiabilidade-do-teste-de-forca/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/confiabilidade-do-teste-de-forca/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/forca-e-longevidade/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/forca-e-longevidade/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/hipertrofia-regional/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/hipertrofia-regional/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/imc-e-composicao-corporal/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/imc-e-composicao-corporal/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/pausas-no-tempo-sentado/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/pausas-no-tempo-sentado/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/percepcao-de-recuperacao/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/percepcao-de-recuperacao/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/relogio-e-calorias/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/relogio-e-calorias/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/retorno-ao-esporte/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/retorno-ao-esporte/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/sono-em-viagem/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/sono-em-viagem/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/unidades-motoras/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/unidades-motoras/",
+      "indexable": true,
+      "reason": "published_public_content"
     }
   ]
 }

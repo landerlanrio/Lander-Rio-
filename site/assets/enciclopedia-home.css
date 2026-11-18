@@ -20,7 +20,9 @@
 .lr-atlas .lr-atlas-kicker { margin: 0 0 clamp(18px, 2.7vw, 42px); color: var(--atlas-accent); display: flex; align-items: center; gap: 12px; }
 .lr-atlas-kicker > span { width: 27px; height: 2px; background: currentColor; }
 .lr-atlas #lr-atlas-title { font: 900 clamp(3.7rem, 6.75vw, 7.3rem)/.92 'Barlow Condensed', Impact, sans-serif; letter-spacing: -.035em; color: var(--atlas-paper); text-transform: uppercase; margin: 0; }
-.lr-atlas #lr-atlas-title em { display: block; margin: .13em 0 0; font: italic 500 .56em/1.08 'Playfair Display', Georgia, serif; letter-spacing: -.05em; text-transform: none; color: var(--atlas-accent); }
+.lr-atlas #lr-atlas-title em { display: block; margin: .13em 0 0; font: italic 500 .56em/1.08 Georgia, serif; letter-spacing: -.05em; text-transform: none; color: var(--atlas-accent); }
+.lr-atlas.lr-atlas-near #lr-atlas-title em { font-family: 'Playfair Display', Georgia, serif; }
+@media (scripting: none) { .lr-atlas #lr-atlas-title em { font-family: 'Playfair Display', Georgia, serif; } }
 .lr-atlas .lr-atlas-deck { font: 500 clamp(1.23rem, 1.85vw, 1.8rem)/1.28 'DM Sans', Arial, sans-serif; letter-spacing: -.03em; max-width: 28ch; margin: clamp(22px, 2.4vw, 40px) 0 12px; }
 .lr-atlas-intro, .lr-atlas-entry > p:not(.lr-atlas-overline) { color: var(--atlas-muted); font-size: 1rem; line-height: 1.58; margin: 0; max-width: 52ch; }
 .lr-atlas a { text-decoration: none; }
@@ -64,3 +66,30 @@
 .lr-atlas-classes ul { margin: 0; padding-left: 1.25em; color: var(--atlas-muted); list-style: disc; font-size: .95rem; line-height: 1.6; }
 
 .lr-atlas .lr-guide-home-link { display:inline-flex; align-items:center; min-height:44px; margin:6px 0 0; color:var(--atlas-accent); font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+
+/* Keep the approved artwork proportional beside the primary navigation. */
+.lr-header .lr-home-lockup {
+  min-height: 44px;
+  justify-content: center;
+  gap: 5px;
+}
+.lr-home-lockup img {
+  display: block;
+  width: clamp(120px, 13vw, 156px);
+  height: auto;
+}
+.lr-header .lr-home-lockup small {
+  font-size: .625rem;
+  line-height: 1.2;
+  letter-spacing: .12em;
+}
+#manifesto { scroll-margin-top: 1rem; }
+#manifesto:focus-visible { outline: 2px solid #d0fa38; outline-offset: 4px; }
+
+.lr-atlas-reading-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 1.25rem;
+}
+.lr-atlas-reading-links .lr-guide-home-link { min-height: 44px; }

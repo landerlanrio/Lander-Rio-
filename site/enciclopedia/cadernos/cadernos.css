@@ -1,0 +1,52 @@
+:root{color-scheme:dark;background:#111412;color:#f5f4eb;--muted:#c0c8bb;--line:#475044;--accent:#d7f763;--paper:#1b201b;--content:1180px}
+*{box-sizing:border-box}
+body{margin:0;font:1rem/1.55 "Helvetica Neue",Arial,sans-serif;overflow-wrap:anywhere}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:.24em}
+a:hover{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.wrap{max-width:var(--content);margin-inline:auto;padding-inline:clamp(1.15rem,4vw,3.5rem)}
+.skip{position:absolute;top:-8rem;left:1rem;padding:.7rem 1rem;background:var(--accent);color:#111412;z-index:2}
+.skip:focus{top:.25rem;color:#111412}
+.top{border-bottom:1px solid var(--line)}
+.topinner,.foot{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.topinner{padding-block:1rem}
+.wordmark{font-size:1.7rem;font-weight:900;letter-spacing:-.08em;text-decoration:none;line-height:1}
+.wordmark span,.category{color:var(--accent)}
+.mast,.category,.crumbs,.jump,.foot{font-family:"Courier New",monospace}
+.mast,.category{font-weight:700;letter-spacing:.09em;font-size:.78rem}
+.crumbs{display:flex;align-items:center;gap:.65rem;padding-block:1.1rem;color:var(--muted);font-size:.85rem}
+.intro,.entrytitle{padding-block:clamp(2.4rem,7vw,5rem) clamp(2rem,4vw,3.75rem)}
+.intro h1,.entrytitle h1,h2,.card strong{line-height:1.06;letter-spacing:-.045em}
+h1{margin:.2em 0;font-weight:800}
+.intro h1{max-width:11ch;font-size:clamp(3.3rem,8.1vw,7rem)}
+.intro em{font-family:Georgia,serif;font-weight:400}
+.deck{font-size:clamp(1.16rem,2.2vw,1.6rem);max-width:48ch;line-height:1.48;color:#e0e5da;margin:1.15rem 0 0}
+.jump{display:flex;flex-wrap:wrap;gap:.55rem 1.25rem;border-block:1px solid var(--line);padding:1rem 0;font-size:.9rem}
+.jump a{padding:.25rem 0}
+.catalog{padding-top:clamp(2rem,4vw,3.5rem)}
+.catalog h2,.related h2{font-size:clamp(1.8rem,3.5vw,2.8rem);margin:0 0 1.3rem}
+ul{margin:0;padding:0;list-style:none}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+.card{display:flex;flex-direction:column;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:clamp(1.1rem,2.3vw,2rem);height:100%;text-decoration:none}
+.card:hover{border-color:var(--accent)}
+.card strong{font-size:clamp(1.45rem,2.5vw,2rem);margin:.65rem 0 .55rem}
+.summary{color:var(--muted);max-width:48ch}
+.arrow{align-self:flex-end;color:var(--accent);font-size:1.38rem;margin-top:auto}
+main{padding-bottom:clamp(3rem,7vw,6rem)}
+.entrytitle{border-bottom:1px solid var(--line)}
+.entrytitle h1{max-width:21ch;font-size:clamp(2.55rem,6.7vw,5.2rem)}
+.entrytitle .deck{max-width:56ch}
+.reading{width:min(100%,72ch);margin-inline:auto;font-size:1.12rem;line-height:1.7}
+.reading section,.limit{margin-top:clamp(2rem,5vw,3.25rem)}
+.reading h2{font-size:clamp(1.55rem,3vw,2rem);margin:0 0 .65rem}
+.reading p{margin:0}
+.limit{padding:1.2rem 1.5rem;background:var(--paper);border-left:3px solid var(--accent)}
+.limit h2{font-size:1.3rem}
+.sources li span{display:block;font-size:.9rem;color:var(--muted);margin:.35rem 0}
+.related{margin-top:3rem;border-top:1px solid var(--line);padding-top:1.5rem}
+.related li,.related>a{display:block;margin:.6rem 0}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+.foot{padding-block:1.5rem;flex-wrap:wrap}
+.foot strong{color:#f5f4eb}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.mast{font-size:.62rem}.reading{font-size:1.05rem}.intro h1{font-size:clamp(2.6rem,13vw,5rem)}.limit{padding:.95rem 1rem}.entrytitle h1{max-width:none}.crumbs{padding-block:.85rem}}
+@media print{html,body{color:#111;background:white}.top,.crumbs,footer,.jump,.related,.skip,.arrow{display:none}.wrap,.reading{max-width:100%;padding:0}.entrytitle,.intro{padding:0}.entrytitle h1,.intro h1{font-size:27pt}.deck,.category,.summary,.sources li span{color:#333}.limit,.card{background:white;border-color:#777}.reading section,.limit{margin-top:1rem;break-inside:avoid}.sources a{color:#111}.sources a::after{content:" (" attr(href) ")";font-size:8pt}}

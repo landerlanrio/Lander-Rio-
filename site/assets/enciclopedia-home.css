@@ -93,3 +93,9 @@
   gap: 0 1.25rem;
 }
 .lr-atlas-reading-links .lr-guide-home-link { min-height: 44px; }
+
+/* Stabilize wrapping while primary webfonts become available. */
+@media (min-width: 1024px) {
+  .flagship-2026 #lr-privacy,
+  .flagship-2026 #lr-privacy button { font-family: Arial, sans-serif; }
+}

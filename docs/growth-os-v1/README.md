@@ -43,3 +43,9 @@ python3 -m http.server 8766
 Abrir http://localhost:8766/prototypes/growth-os-v1/
 
 Bloqueios antes de promover: reconciliar ZIP do deploy real, validar iOS/desktop e consentimento, auditar função ROX implantada e segredos sem exibi-los, corrigir atribuição e timezone GA4 sob aprovação, validar políticas editoriais de indexabilidade, confirmar limites de custo e obter aprovação explícita para publicar produção.
+
+## Validação cruzada Supabase (19/11, agregados sem PII)
+
+Na janela 20/10–18/11 em horário de Brasília: 3 registros na ferramenta de treino, 0 novos registros da ferramenta de nutrição, 39 eventos OMEGA marcados `is_test=true`, 0 eventos OMEGA reais e 0 resultados confirmados em `omega_outcomes`. A tabela conectada de mensagens WhatsApp também não contém mensagens. Isso evidencia **lacuna de observabilidade**; não permite concluir que o WhatsApp não recebeu clientes. A base cumulativa inclui 2 registros de nutrição de outros períodos. A cota de IA em staging já tinha 1 reserva de US$ 0,006 antes desta revisão; a presente execução não reservou nova cota.
+
+Edge Function `lander-rox-ai-v2-staging` v13 implantada com restrição CORS aos dois domínios próprios e contingência offline. Código-fonte exato em `prototypes/growth-os-v1/rox-staging/index.ts`. Não conectar a produção até validar HTTP, Turnstile e controle de custos.

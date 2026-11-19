@@ -31,5 +31,9 @@ jobs:
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
       - name: Read-only HTTP smoke tests
         run: python3 scripts/smoke_http.py
+      - name: ROX 2.0 safety and offline routing (no network, no paid API)
+        run: node --experimental-strip-types --test prototypes/rox-ai-v2/index.test.mjs
+      - name: ROX floating widget offline unit tests
+        run: node --test scripts/rox-widget.test.cjs
 
 # IMPORTANT: No deploy job. Production stays on manual Netlify deploy.

@@ -18,10 +18,30 @@ def fail(code, msg):
 
 
 def verify_manifest():
+    # Preserve the historical v23.10 manifest. Track targeted metadata edits via
+    # a strictly scoped, SHA-256-verified additive overlay.
     manifest = json.loads((SITE/'manifest-v23-10.json').read_text(encoding='utf-8'))
-    records = manifest.get('files', {})
+    records = dict(manifest.get('files', {}))
+    manifest_files = {'manifest-v23-10.json'}
+    overlay_name = 'manifest-openseo-20261112.json'
+    overlay_path = SITE / overlay_name
+    if overlay_path.is_file():
+        overlay = json.loads(overlay_path.read_text(encoding='utf-8'))
+        if overlay.get('base_manifest') != 'manifest-v23-10.json':
+            fail('bad-overlay-base', overlay_name)
+        overlay_records = overlay.get('files', {})
+        permitted = {'atacado/index.html', 'conteudos/como-organizar-semana-treino/index.html',
+                     'conteudos/planejar-compras-refeicoes-semana/index.html', 'treino/index.html'}
+        if set(overlay_records) != permitted:
+            fail('bad-overlay-scope', overlay_name)
+        else:
+            for rel, digest in overlay_records.items():
+                if not isinstance(digest, str) or not re.fullmatch('[0-9a-f]{64}', digest):
+                    fail('bad-overlay-hash', rel)
+            records.update(overlay_records)
+        manifest_files.add(overlay_name)
     actual = {p.relative_to(SITE).as_posix() for p in SITE.rglob('*') if p.is_file()}
-    expected = set(records) | {'manifest-v23-10.json'}
+    expected = set(records) | manifest_files
     for extra in sorted(actual - expected): fail('untracked', extra)
     for missing in sorted(expected - actual): fail('missing', missing)
     for rel, recorded in records.items():

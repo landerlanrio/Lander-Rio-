@@ -174,7 +174,7 @@ def main():
     if (SITE/'manifest-digital-flagship-2026-rc14.1.json').is_file():
         expected_version = 'digital-flagship-2026-rc14.1'
     if release.get('version') != expected_version:fail('unexpected-version',str(release.get('version')))
-    if html_count != (88 if expected_version in ('digital-flagship-2026-rc10','digital-flagship-2026-rc11','digital-flagship-2026-rc12','digital-flagship-2026-rc13','digital-flagship-2026-rc14','digital-flagship-2026-rc14.1') else 87 if expected_version == 'digital-flagship-2026-rc9' else 85 if expected_version == 'digital-flagship-2026-rc8' else 84 if expected_version == 'digital-flagship-2026-rc6.3' else 81):fail('unexpected-pages',str(html_count))
+    if html_count != (106 if (SITE/'manifest-digital-flagship-2026-rc14.3.json').is_file() else 88 if expected_version in ('digital-flagship-2026-rc10','digital-flagship-2026-rc11','digital-flagship-2026-rc12','digital-flagship-2026-rc13','digital-flagship-2026-rc14','digital-flagship-2026-rc14.1') else 87 if expected_version == 'digital-flagship-2026-rc9' else 85 if expected_version == 'digital-flagship-2026-rc8' else 84 if expected_version == 'digital-flagship-2026-rc6.3' else 81):fail('unexpected-pages',str(html_count))
     print(json.dumps({'status':'PASS' if not ISSUES else 'FAIL',
          'version':release.get('version'),'manifest_verified_sha256':manifest_count,
          'html_pages':html_count,'html_local_references_checked':references,

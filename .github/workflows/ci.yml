@@ -52,7 +52,7 @@ jobs:
 
 # IMPORTANT: No deploy job. Production stays on manual Netlify deploy.
 
-package-review:
+  package-review:
     name: Build RC14.3 review archive (no deploy)
     needs: validate
     if: github.event_name == 'pull_request' && github.head_ref == 'release/flagship-mobile-qa-20261119'

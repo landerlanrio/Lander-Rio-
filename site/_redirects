@@ -1,3 +1,5 @@
+/favicon.ico /favicon.png 302
+
 /api/nutrition/lead https://artcokrtuqppgtawuczq.supabase.co/functions/v1/nutrition-entry 200!
 /api/workout/lead https://artcokrtuqppgtawuczq.supabase.co/functions/v1/workout-entry 200!
 /api/instagram/latest https://artcokrtuqppgtawuczq.supabase.co/functions/v1/instagram-latest 200!

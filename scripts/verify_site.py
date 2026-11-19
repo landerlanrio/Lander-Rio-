@@ -79,7 +79,7 @@ def srcset_urls(value):
     Follows the URL/descriptor boundary rules used for ordinary 1x/2x srcset
     candidates. The returned values are then checked by path_exists().
     """
-    whitespace = ' \\t\\n\\r\\f'
+    whitespace = chr(32) + chr(9) + chr(10) + chr(13) + chr(12)
     index, size = 0, len(value)
     while index < size:
         while index < size and value[index] in whitespace + ',':

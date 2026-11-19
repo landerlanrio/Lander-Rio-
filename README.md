@@ -1,6 +1,6 @@
 # LANDER RIO — Site oficial (base recuperada v23.10)
 
-Repositório **destinado a ser privado**. Não publicar esta pasta em um repositório público.
+Repositório atualmente **público**. Todos os branches e todo o histórico Git podem ser consultados por terceiros. Não versionar `.env` reais, segredos de integração, registros de clientes, backups de dados pessoais ou logs com autenticação. O gate `scripts/audit_public_repository.py` é preventivo; não certifica commits históricos ou binários. A produção Netlify permanece independente, sujeita a homologação e aprovação específica.
 
 ## Estado e procedência
 

@@ -1,0 +1,21 @@
+{
+  "version": "digital-flagship-2026-rc14.3-candidate",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_deploy": "6afd3619fe28100b27f41641",
+  "scope": "Integrity overlay for cumulative PRs #15–19 plus RC14.3 UX; manual production not changed",
+  "status": "review-only",
+  "files": {
+    "assets/enciclopedia-dna.webp": "784b1bc0359f5ec826b8968d5f7bc6148bf8d3b8d50f935dd08dbe1ef49dff67",
+    "assets/enciclopedia-home.css": "e1cb81a6247c6023a1a44cdfc206ab8d50eb64b1df982a400f7413ad97ae0357",
+    "assets/enciclopedia-home.js": "d9e04a7c3ec48fe78ecaf489414b84d3f843ceea444a117e21acd4ebc82d2cf3",
+    "assets/ga4-intent.js": "6d9cb461d7d2fff2f1cb8249c8dc856d50899c6000fd4bb78f943186796f13f1",
+    "assets/measurement-v23-2.js": "c611d1858864155eaf6e51af3f408646e106ddf632bde240a33f9495d38a2bc1",
+    "enciclopedia/assets/guias-editoriais.css": "18ce3871637dbbce5c86138bf8333633328312efdd3fe20000936a9335515061",
+    "enciclopedia/assets/indice-guias.js": "a2f066a60b460f801354455ab2dbc0174d23d2f61c0d1ad3a0981cee79201d6e",
+    "enciclopedia/cadernos/cadernos.css": "9ce26f7ab86b94b1e4832fd7e1db41d6763bd6c0d46bd3fc92b7af62702f3189",
+    "enciclopedia/cadernos/leitura-local.js": "8deafd1d7cfa1f019920b8c11667fabc7fb01b2d1323e167c820a97ff5893575",
+    "index.html": "d16ed6927036c618828af321516f0d826274dc3569a888b3dc24313e3d2d2f15",
+    "release.json": "47b69ffc9efb0bdeadb47d9c3d10e4dba71ebf1180a93c54f6b822c6aaf6d34b",
+    "sitemap.xml": "d1f6e72ec6c835efd7a7ab885d0f9e34e8fe7d3651be5d836235f75b586a20df"
+  }
+}

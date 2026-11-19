@@ -35,7 +35,7 @@ class Integrity(unittest.TestCase):
             finally:v.SITE=original;v.ISSUES.clear()
     def test_all_88_pages_have_unique_metadata_and_ordered_headings(self):
         titles=[];canonicals=[]
-        pages=sorted(v.SITE.rglob('*.html'));self.assertEqual(len(pages),88)
+        pages=sorted(v.SITE.rglob('*.html'));self.assertEqual(len(pages),106)
         for f in pages:
             with self.subTest(page=f.relative_to(v.SITE).as_posix()):
                 p=Meta();p.feed(f.read_text());self.assertTrue(0<len(p.title)<=60,p.title)

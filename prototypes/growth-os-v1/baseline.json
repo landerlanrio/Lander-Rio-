@@ -99,5 +99,21 @@
     "productionTouched": false,
     "apiModelCalled": false,
     "operationalStatus": "read-only baseline"
+  },
+  "backend": {
+    "source": "Supabase project artcokrtuqppgtawuczq; read-only SQL aggregate",
+    "period": "2026-10-20/2026-11-18 America/Sao_Paulo",
+    "workoutRegistrations": 3,
+    "nutritionRegistrations": 0,
+    "omegaTestEvents": 39,
+    "omegaProductionEvents": 0,
+    "verifiedCommercialOutcomes": 0,
+    "waMessagesInConnectedTable": 0,
+    "measurementNotes": [
+      "Omega test events excluded from business KPIs",
+      "No verified outcomes in integrated system does not establish that no real WhatsApp conversations occurred",
+      "GA4 generate_lead cannot be equated to commercial leads",
+      "All counts taken as aggregates only; no identities or message bodies fetched"
+    ]
   }
 }

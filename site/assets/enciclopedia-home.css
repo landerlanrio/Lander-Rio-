@@ -99,3 +99,31 @@
   .flagship-2026 #lr-privacy,
   .flagship-2026 #lr-privacy button { font-family: Arial, sans-serif; }
 }
+
+/* LANDER RIO RC14.3 — legible, equal-priority commercial paths. No new font or JS request. */
+.flagship-2026 .lfx-hero-actions .hero-cta {
+  min-height: 58px!important;
+  font-size: clamp(12px, 1.08vw, 14px)!important;
+  line-height: 1.35;
+  letter-spacing: .025em;
+  white-space: normal;
+}
+.flagship-2026 .lfx-hero-actions .hero-cta svg { flex-shrink: 0; }
+.flagship-2026 .lr-hero-handoff {
+  max-width: 52ch;
+  margin: 14px 0 0;
+  color: #d5e1d2;
+  font: 500 12px/1.55 'DM Sans', Arial, sans-serif;
+}
+@media (max-width: 600px) {
+  .flagship-2026 .lfx-hero-actions { width: 100%; gap: 10px; }
+  .flagship-2026 .lfx-hero-actions .hero-cta {
+    min-height: 56px!important;
+    font-size: 13px!important;
+    padding-inline: 15px!important;
+  }
+  .flagship-2026 .lr-hero-handoff { margin-top: 12px; }
+}
+@media (max-width: 360px) {
+  .flagship-2026 .lfx-hero-actions .hero-cta { font-size: 12px!important; }
+}

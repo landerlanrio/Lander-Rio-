@@ -6,7 +6,8 @@ import verify_site as v
 
 CHECKS = {
     "manifest": lambda: v.verify_manifest(),
-    "references": lambda: (v.verify_html(), v.verify_css()),
+    "html": lambda: v.verify_html(),
+    "css": lambda: v.verify_css(),
     "metadata": lambda: (v.verify_sitemap(), v.verify_json()),
     "security": lambda: v.verify_credentials(),
 }

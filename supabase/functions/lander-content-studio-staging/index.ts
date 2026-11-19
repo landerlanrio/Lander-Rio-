@@ -9,10 +9,15 @@ type Format = 'reel' | 'carousel' | 'article';
 type Audience = 'fitness' | 'revendedores' | 'geral';
 type Input = { format: Format; topic: string; audience: Audience; source_facts: string[] };
 
-const VERSION = '1.0.0-staging';
+const VERSION = '1.1.0-staging';
 const MAX_BODY_BYTES = 8500;
 const MAX_OUTPUT_TOKENS = 1800;
 const TIMEOUT_MS = 25000;
+// Conservative upper bound in micro-USD, not an accurate billing report.
+const RESERVATION_MICRO_USD: Record<string, number> = {
+  'gpt-6-luna': 6000, 'gpt-6.1-terra': 30000,
+  'gpt-6.2-sol': 65000, 'gpt-6.2-astra': 195000,
+};
 const MODEL_PRICING: Record<string, { input: number; output: number }> = {
   'gpt-6-luna': { input: 0.10, output: 0.50 },
   'gpt-6.1-terra': { input: 1.00, output: 5.00 },
@@ -58,6 +63,7 @@ export function enabled(): boolean {
   return env('LANDER_STUDIO_ENABLED') === 'true'
     && env('LANDER_STUDIO_BUDGET_APPROVED') === 'true'
     && !!env('OPENAI_API_KEY') && !!env('LANDER_STUDIO_INTERNAL_TOKEN')
+    && !!env('SUPABASE_URL') && !!env('SUPABASE_SERVICE_ROLE_KEY')
     && !!selectedModel();
 }
 
@@ -72,6 +78,27 @@ export function estimatedCostUsd(model: string, inputTokens: number, outputToken
   const price = MODEL_PRICING[model];
   if (!price || !Number.isFinite(inputTokens) || !Number.isFinite(outputTokens)) return null;
   return Number(((inputTokens * price.input + outputTokens * price.output) / 1_000_000).toFixed(6));
+}
+
+/** Server-side atomic reservation. Database quota is US$ 1 across staging,
+ * lifetime. No browser access to the service-role credential. */
+export async function reserveStagingCredits(model: string): Promise<boolean> {
+  const amount = RESERVATION_MICRO_USD[model] ?? 0;
+  const secret = env('SUPABASE_SERVICE_ROLE_KEY');
+  const base = env('SUPABASE_URL');
+  if (!amount || !secret || !/^https:\/\/[^/]+$/.test(base)) return false;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 4500);
+  try {
+    const response = await fetch(`${base}/rest/v1/rpc/lander_ai_reserve_staging`, {
+      method: 'POST',
+      headers: { 'apikey': secret, 'authorization': `Bearer ${secret}`, 'content-type': 'application/json' },
+      body: JSON.stringify({ p_service: 'content-studio-staging', p_reserved_micro_usd: amount }),
+      signal: controller.signal,
+    });
+    return response.ok && (await response.json()) === true;
+  } catch { return false; }
+  finally { clearTimeout(timer); }
 }
 
 function instructions(input: Input): string {
@@ -131,7 +158,7 @@ function parsedOutput(raw: unknown): unknown | null {
 export async function handler(req: Request): Promise<Response> {
   const pathname = new URL(req.url).pathname;
   if (req.method === 'GET' && pathname.endsWith('/health')) {
-    return json(200, { service: 'LANDER Content Studio', version: VERSION, environment: 'staging', ready: enabled(), paid_calls_allowed: enabled(), human_review_required: true });
+    return json(200, { service: 'LANDER Content Studio', version: VERSION, environment: 'staging', ready: enabled(), paid_calls_allowed: enabled(), human_review_required: true, lifetime_staging_budget_usd: 1, quota: 'durable_fail_closed' });
   }
   if (req.method !== 'POST' || !pathname.endsWith('/generate')) return json(405, { error: 'method_not_allowed' });
   // All staging traffic also requires a valid Supabase JWT, enforced at the gateway (verify_jwt=true).
@@ -159,6 +186,7 @@ export async function handler(req: Request): Promise<Response> {
     store: false,
     text: { format: { type: 'json_schema', name: 'lander_editorial_draft', strict: true, schema: SCHEMA } },
   };
+  if (!await reserveStagingCredits(model)) return json(429, { error: 'hard_credit_guard_blocked', message: 'Staging lifetime credit quota reached or database guard unavailable.' });
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
   try {

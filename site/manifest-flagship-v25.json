@@ -1,0 +1,16 @@
+{
+  "version": "25.0",
+  "base_manifest": "manifest-v23-10.json",
+  "scope": "Flagship v25 official design override, preserve historical 23.10 baseline",
+  "files": {
+    "index.html": "fac728ed7409a5af9be3a069b5a7c099f886d6dd9bcb93dc66f22fd0ea09fcab",
+    "assets/flagship-v25.css": "7d23303e10b8e219b041ed34abfd42f761e261a0eac6209a80b968d5f9943830",
+    "assets/rox-demo-v25.js": "fd6f4e7d544ef2471005e019a41fd291123d4d92400199278316653793ccb921",
+    "assets/flagship-hero-v25.webp": "f3accf0f7141aceca40ca939d15af01b3a293b5f06f2a61fb658e3537e0ec1f1",
+    "assets/flagship-hero-mobile-v25.webp": "8c79607b81bf7654b9fe9001c07ba6a9a8dce0dffb831ea5feae7e72882970ef",
+    "assets/flagship-nutrition-v25.webp": "524621159ebf47110a0b4493d9b4a369dec9b65527628d1d3bc2cf69fd3ff64e",
+    "assets/flagship-science-v25.webp": "8d8fbc046051ac6d9fee3dc687f5aa63baee3bead4a528d971972de84fd828d6",
+    "assets/lander-rio-lockup-v25.webp": "53b894278e25407593edd2c26d3caaeb00a56f460522dddccabe849b90d9953c",
+    "assets/lander-rio-symbol-v25.webp": "fd994a097616f6d15b0ee92803ec3578941389dab48acd435df9f0306c22a193"
+  }
+}

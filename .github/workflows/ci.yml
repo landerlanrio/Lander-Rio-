@@ -25,8 +25,10 @@ jobs:
           node-version: '22'
       - name: Check SHA-256 manifest integrity
         run: python3 scripts/release_gate.py manifest
-      - name: Check local references (HTML, CSS)
-        run: python3 scripts/release_gate.py references
+      - name: Check HTML local references
+        run: python3 scripts/release_gate.py html
+      - name: Check CSS local references
+        run: python3 scripts/release_gate.py css
       - name: Check sitemap and JSON format
         run: python3 scripts/release_gate.py metadata
       - name: Check credentials and exposed secrets

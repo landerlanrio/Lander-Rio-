@@ -31,5 +31,24 @@ jobs:
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
       - name: Read-only HTTP smoke tests
         run: python3 scripts/smoke_http.py
+      - name: ROX 2.0 safety and offline routing (no network, no paid API)
+        run: node --experimental-strip-types --test prototypes/rox-ai-v2/index.test.mjs
+      - name: ROX v3 agent and zero-write integration acceptance (no network)
+        run: node --test prototypes/rox-ai-v2/agent-v3.test.mjs
+      - name: ROX private preview HTTP-to-handler integration (loopback only)
+        run: node --experimental-strip-types --test prototypes/rox-ai-v2/preview-private/server.test.mjs
+      - name: ROX floating widget offline unit tests
+        run: node --test scripts/rox-widget.test.cjs
+      - name: Package private ROX preview (source only, no deploy)
+        uses: actions/upload-artifact@v4
+        with:
+          name: rox-v3-private-preview
+          retention-days: 1
+          if-no-files-found: error
+          path: |
+            prototypes/rox-ai-v2/index.ts
+            prototypes/rox-ai-v2/agent-v3.mjs
+            prototypes/rox-ai-v2/preview-private/
+
 
 # IMPORTANT: No deploy job. Production stays on manual Netlify deploy.

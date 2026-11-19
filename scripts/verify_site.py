@@ -73,6 +73,35 @@ def path_exists(raw, page):
     return (norm.rstrip('/') in aliases and (SITE/aliases[norm.rstrip('/')]).is_file())
 
 
+def srcset_urls(value):
+    """Parse srcset URLs without splitting the comma *inside* a data: URL.
+
+    Follows the URL/descriptor boundary rules used for ordinary 1x/2x srcset
+    candidates. The returned values are then checked by path_exists().
+    """
+    whitespace = ' \\t\\n\\r\\f'
+    index, size = 0, len(value)
+    while index < size:
+        while index < size and value[index] in whitespace + ',':
+            index += 1
+        if index == size:
+            break
+        start = index
+        while index < size and value[index] not in whitespace:
+            index += 1
+        url = value[start:index]
+        if url.endswith(','):
+            url = url.rstrip(',')
+        else:
+            # Skip optional width/density descriptors up to the next delimiter.
+            while index < size and value[index] != ',':
+                index += 1
+            if index < size:
+                index += 1
+        if url:
+            yield url
+
+
 class LocalRefs(HTMLParser):
     def __init__(self,page):
         super().__init__(convert_charrefs=True); self.page=page; self.count=0
@@ -86,9 +115,8 @@ class LocalRefs(HTMLParser):
                 fail('missing-reference', f'{self.page}: {key}={raw[:160]}')
         for key in ('srcset',):
             if a.get(key):
-                for item in a[key].split(','):
-                    url=item.strip().split(' ',1)[0]
-                    if url and not path_exists(url,self.page):
+                for url in srcset_urls(a[key]):
+                    if not path_exists(url, self.page):
                         fail('missing-srcset', f'{self.page}: {url[:160]}')
 
 

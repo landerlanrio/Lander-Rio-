@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-14T02:35:14.932Z",
+  "source": {
+    "name": "LANDER_INTENT_ENGINE_MVP_2026-11-13.zip",
+    "sha256": "dc752eb6b0410fc146d19e1bb9a6b3c594f6f37b551d14ec857c86735c2aeed6",
+    "libraryVersion": 0
+  },
+  "rc9": {
+    "name": "LANDER_RIO_RC9_FONTE.zip",
+    "sha256": "ac17927847df805e70e27be0d012a3d7503f89365018b447459878e7a1e040d1",
+    "libraryVersion": 1
+  },
+  "github": {
+    "repo": "landerlanrio/Lander-Rio-",
+    "visibility": "private",
+    "base": "main",
+    "commit": "b4ef73f1b9e78681972029eaccc5d352ee39adcb",
+    "integrationBranchChecked": "integration/titan-2026-11-13",
+    "intentBranchPreviouslyExists": false
+  },
+  "netlify": {
+    "site": "lander-rio-oficial",
+    "siteId": "1632727b-a57d-4edb-85f7-9fc99bc98842",
+    "deploy": "6af7bca0de8663024dbb3bdd",
+    "state": "ready",
+    "commitRef": null,
+    "context": "production",
+    "functions": [],
+    "schedules": [],
+    "envMetadataCount": 0,
+    "productionModified": false
+  },
+  "openseo": {
+    "projectId": "cc40f4de-9c11-47c9-be5b-dcb4387db222",
+    "gscProperty": "sc-domain:landerrio.com.br",
+    "requiresReconnect": false,
+    "gaProperty": "properties/548953010",
+    "gaMeasurement": "G-C3HWDYKEJK",
+    "gaTimezone": "America/Rio_Branco"
+  },
+  "automations": {
+    "inspected": 25,
+    "reuse": "6af1270c4cc8819184a21757a455958e",
+    "newSchedulesCreated": 0
+  }
+}

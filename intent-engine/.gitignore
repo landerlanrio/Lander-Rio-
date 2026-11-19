@@ -1,0 +1,7 @@
+.netlify/
+.env
+.env.*
+!.env.example
+node_modules/
+evidence/*.png
+data/*.tmp

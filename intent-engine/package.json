@@ -1,0 +1,1 @@
+{"name":"lander-intent-engine","version":"0.2.0","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"ingest":"node scripts/ingest.mjs","build":"node scripts/build-preview.mjs && node scripts/build-private.mjs","test":"node --test test/*.test.mjs","start":"node scripts/serve-local.mjs"}}

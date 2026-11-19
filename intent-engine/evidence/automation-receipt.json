@@ -1,0 +1,14 @@
+{
+  "id": "6af1270c4cc8819184a21757a455958e",
+  "title": "LANDER RIO | Painel Executivo",
+  "enabled": true,
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/Sao_Paulo:20261109T084500\nRRULE:FREQ=DAILY\nEND:VEVENT",
+  "timingMode": "flexible_schedule",
+  "timezone": "America/Sao_Paulo",
+  "nextRun": "2026-11-14T08:45:00-03:00",
+  "updatedAt": "2026-11-14T02:36:34.337016+00:00",
+  "preservedExistingPrompt": true,
+  "newSchedulesCreated": 0,
+  "firstScheduledRunObserved": false,
+  "initialManualReadbackCommit": "4bfdc7e74a98f4674e125ff5afa7d45e650a8bbc"
+}

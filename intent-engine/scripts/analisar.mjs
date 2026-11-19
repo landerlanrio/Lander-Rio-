@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {rankPages,makeBrief,parseCSV} from '../lib/intent-engine.mjs';
+const file=process.argv[2] || new URL('../data/observacoes.json',import.meta.url).pathname;
+let source;
+if (file.toLowerCase().endsWith('.csv')) source={paginas:parseCSV(fs.readFileSync(file,'utf8')),consultas_verificadas:{},fonte:'CSV do usuário'};
+else source=JSON.parse(fs.readFileSync(file,'utf8'));
+const ranked=rankPages(source.paginas);
+const result={source:source.fonte,periodo:[source.periodo_inicio,source.periodo_fim],geradoEm:new Date().toISOString(),interpretacao:'A pontuação é uma heurística de prioridade de revisão, não projeção de tráfego ou receita.',pages:ranked.map(p=>({...p,brief:makeBrief(p,source.consultas_verificadas?.[p.url]||[])}))};
+const dest=new URL('../data/resultado-mvp.json',import.meta.url).pathname;
+fs.writeFileSync(dest,JSON.stringify(result,null,2));
+console.log(`OK: ${ranked.length} páginas analisadas. ${ranked.filter(x=>x.impressoes>=20).length} com pelo menos 20 impressões. Resultado: ${dest}`);
+console.table(ranked.slice(0,8).map(x=>({pagina:x.nome,imp:x.impressoes,cliques:x.cliques,pos:x.posicao,indice:x.pontuacao,situacao:x.situacao})));

@@ -1,0 +1,17 @@
+{
+  "version": "25.1",
+  "base_manifest": "manifest-v23-10.json",
+  "scope": "Flagship v25.1: brands + wholesale/retail layout; original v25 assets and base unchanged",
+  "files": {
+    "index.html": "a359965cc65ae71fd3adbfac81a478f6963cfd25a9847bc9f69df9f3888af7a7",
+    "assets/flagship-v25.css": "7d23303e10b8e219b041ed34abfd42f761e261a0eac6209a80b968d5f9943830",
+    "assets/rox-demo-v25.js": "fd6f4e7d544ef2471005e019a41fd291123d4d92400199278316653793ccb921",
+    "assets/flagship-hero-v25.webp": "f3accf0f7141aceca40ca939d15af01b3a293b5f06f2a61fb658e3537e0ec1f1",
+    "assets/flagship-hero-mobile-v25.webp": "8c79607b81bf7654b9fe9001c07ba6a9a8dce0dffb831ea5feae7e72882970ef",
+    "assets/flagship-nutrition-v25.webp": "524621159ebf47110a0b4493d9b4a369dec9b65527628d1d3bc2cf69fd3ff64e",
+    "assets/flagship-science-v25.webp": "8d8fbc046051ac6d9fee3dc687f5aa63baee3bead4a528d971972de84fd828d6",
+    "assets/lander-rio-lockup-v25.webp": "53b894278e25407593edd2c26d3caaeb00a56f460522dddccabe849b90d9953c",
+    "assets/lander-rio-symbol-v25.webp": "fd994a097616f6d15b0ee92803ec3578941389dab48acd435df9f0306c22a193",
+    "assets/flagship-v25-1.css": "8a24db459ed9b4a4d8f100de5704ab34857d786e71d38c3109088cd2116468dc"
+  }
+}

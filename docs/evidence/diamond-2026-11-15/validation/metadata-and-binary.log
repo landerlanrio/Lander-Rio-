@@ -1,0 +1,8 @@
+test_all_88_pages_have_unique_metadata_and_ordered_headings (__main__.Integrity.test_all_88_pages_have_unique_metadata_and_ordered_headings) ... ok
+test_binary_webp_does_not_enter_text_secret_scanner (__main__.Integrity.test_binary_webp_does_not_enter_text_secret_scanner) ... ok
+test_overlay_checks_bytes_and_does_not_bless_tampering (__main__.Integrity.test_overlay_checks_bytes_and_does_not_bless_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.143s
+
+OK

@@ -1,0 +1,648 @@
+{
+  "origin": "https://landerrio.com.br",
+  "baseline_commit": "572dbe3e93cfbcd8ce6872c8465e6d360e69b02a",
+  "reviewed_on": "2026-11-16",
+  "policy_note": "Explicit baseline of RC14. Indexable means technical eligibility, not Google indexing. Preserve held routes in docs/INDEXABILITY_RC8.json. Changes require editorial review, never automatic regeneration.",
+  "pages": [
+    {
+      "path": "404.html",
+      "canonical": "https://landerrio.com.br/404",
+      "indexable": false,
+      "reason": "utility_or_error_page",
+      "http_statuses": [
+        200,
+        404
+      ]
+    },
+    {
+      "path": "atacado/index.html",
+      "canonical": "https://landerrio.com.br/atacado/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "autenticidade/index.html",
+      "canonical": "https://landerrio.com.br/autenticidade/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "business-desk/index.html",
+      "canonical": "https://landerrio.com.br/business-desk/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "business-desk/recebido/index.html",
+      "canonical": "https://landerrio.com.br/business-desk/recebido/",
+      "indexable": false,
+      "reason": "utility_or_error_page"
+    },
+    {
+      "path": "contato/index.html",
+      "canonical": "https://landerrio.com.br/contato/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/academia-lotada-organizar-treino/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/academia-lotada-organizar-treino/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/acompanhar-progresso-treino/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/acompanhar-progresso-treino/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/alimento-cru-cozido-registro/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/alimento-cru-cozido-registro/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/atacado-rio-como-avaliar-fornecedor/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/atacado-rio-como-avaliar-fornecedor/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/como-consultar-disponibilidade-marcas/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/como-consultar-disponibilidade-marcas/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/como-ler-ficha-treino/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/como-ler-ficha-treino/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/como-organizar-semana-treino/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/como-organizar-semana-treino/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/como-verificar-procedencia-canais-oficiais/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/como-verificar-procedencia-canais-oficiais/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/descanso-entre-series-hipertrofia/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/descanso-entre-series-hipertrofia/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/diario-de-treino-como-registrar/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/diario-de-treino-como-registrar/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/peptideos-o-que-sao/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/peptideos-o-que-sao/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/planejar-compras-refeicoes-semana/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/planejar-compras-refeicoes-semana/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "conteudos/rir-o-que-significa/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/rir-o-que-significa/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "dieta/index.html",
+      "canonical": "https://landerrio.com.br/dieta/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/guias/endocrino/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/endocrino/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/guias/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/guias/nutricao/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/nutricao/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/guias/recuperacao/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/recuperacao/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/guias/treino/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/guias/treino/",
+      "indexable": false,
+      "reason": "editorial_review_pending"
+    },
+    {
+      "path": "enciclopedia/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/metodologia/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/metodologia/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/substancias/anastrozol/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/anastrozol/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/boldenona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/boldenona/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/clenbuterol/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/clenbuterol/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/clomifeno/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/clomifeno/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/drostanolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/drostanolona/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/estanozolol-injetavel/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/estanozolol-injetavel/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/estanozolol-oral/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/estanozolol-oral/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/fluoximesterona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/fluoximesterona/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/ghrp-6/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/ghrp-6/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/hcg/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/hcg/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/igf-1/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/igf-1/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/insulina/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/insulina/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/ipamorelina/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/ipamorelina/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/letrozol/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/letrozol/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/levotiroxina-t4/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/levotiroxina-t4/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/liotironina-t3/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/liotironina-t3/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/mesterolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/mesterolona/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/metandienona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/metandienona/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/metenolona-injetavel/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/metenolona-injetavel/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/nandrolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/nandrolona/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/oxandrolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/oxandrolona/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/oximetolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/oximetolona/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/retatrutida/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/retatrutida/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/somatropina-gh/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/somatropina-gh/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/tamoxifeno/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/tamoxifeno/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-cipionato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-cipionato/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-enantato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-enantato/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-mistura-esteres/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-mistura-esteres/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-propionato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-propionato/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-suspensao/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-suspensao/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-undecanoato-oral/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-undecanoato-oral/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/tirzepatida/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/tirzepatida/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/trembolona-acetato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/trembolona-acetato/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/trembolona-enantato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/trembolona-enantato/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "enciclopedia/substancias/turinabol/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/turinabol/",
+      "indexable": false,
+      "reason": "specialist_review_pending"
+    },
+    {
+      "path": "entregas/index.html",
+      "canonical": "https://landerrio.com.br/entregas/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "equipe/index.html",
+      "canonical": "https://landerrio.com.br/equipe/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "ferramentas/index.html",
+      "canonical": "https://landerrio.com.br/ferramentas/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "index.html",
+      "canonical": "https://landerrio.com.br/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/alpha-laboratory/index.html",
+      "canonical": "https://landerrio.com.br/marcas/alpha-laboratory/",
+      "indexable": false,
+      "reason": "brand_identity_review_pending"
+    },
+    {
+      "path": "marcas/alpha-x-prime/index.html",
+      "canonical": "https://landerrio.com.br/marcas/alpha-x-prime/",
+      "indexable": false,
+      "reason": "brand_identity_review_pending"
+    },
+    {
+      "path": "marcas/cooper-pharma/index.html",
+      "canonical": "https://landerrio.com.br/marcas/cooper-pharma/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/eminence-labs/index.html",
+      "canonical": "https://landerrio.com.br/marcas/eminence-labs/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/eticos/index.html",
+      "canonical": "https://landerrio.com.br/marcas/eticos/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/geniqs-pharma/index.html",
+      "canonical": "https://landerrio.com.br/marcas/geniqs-pharma/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/index.html",
+      "canonical": "https://landerrio.com.br/marcas/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/indufar/index.html",
+      "canonical": "https://landerrio.com.br/marcas/indufar/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/landerlan-gold/index.html",
+      "canonical": "https://landerrio.com.br/marcas/landerlan-gold/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/landerlan/index.html",
+      "canonical": "https://landerrio.com.br/marcas/landerlan/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/life-peptideos/index.html",
+      "canonical": "https://landerrio.com.br/marcas/life-peptideos/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/muscle-labs-india/index.html",
+      "canonical": "https://landerrio.com.br/marcas/muscle-labs-india/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/oxygen-kw-pharma/index.html",
+      "canonical": "https://landerrio.com.br/marcas/oxygen-kw-pharma/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/quimfa/index.html",
+      "canonical": "https://landerrio.com.br/marcas/quimfa/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/synedica/index.html",
+      "canonical": "https://landerrio.com.br/marcas/synedica/",
+      "indexable": false,
+      "reason": "brand_identity_review_pending"
+    },
+    {
+      "path": "marcas/topharma/index.html",
+      "canonical": "https://landerrio.com.br/marcas/topharma/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "marcas/zphc/index.html",
+      "canonical": "https://landerrio.com.br/marcas/zphc/",
+      "indexable": false,
+      "reason": "brand_identity_review_pending"
+    },
+    {
+      "path": "perguntas-frequentes/index.html",
+      "canonical": "https://landerrio.com.br/perguntas-frequentes/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "politica-editorial/index.html",
+      "canonical": "https://landerrio.com.br/politica-editorial/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "privacidade.html",
+      "canonical": "https://landerrio.com.br/privacidade",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "radar-performance/index.html",
+      "canonical": "https://landerrio.com.br/radar-performance/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "radar-performance/recebido/index.html",
+      "canonical": "https://landerrio.com.br/radar-performance/recebido/",
+      "indexable": false,
+      "reason": "utility_or_error_page"
+    },
+    {
+      "path": "sobre/index.html",
+      "canonical": "https://landerrio.com.br/sobre/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "termos.html",
+      "canonical": "https://landerrio.com.br/termos",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "treino/index.html",
+      "canonical": "https://landerrio.com.br/treino/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "varejo/index.html",
+      "canonical": "https://landerrio.com.br/varejo/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/alavancas-no-agachamento/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/alavancas-no-agachamento/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/carboidrato-e-sessao-de-forca/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/carboidrato-e-sessao-de-forca/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/confiabilidade-do-teste-de-forca/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/confiabilidade-do-teste-de-forca/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/forca-e-longevidade/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/forca-e-longevidade/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/hipertrofia-regional/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/hipertrofia-regional/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/imc-e-composicao-corporal/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/imc-e-composicao-corporal/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/pausas-no-tempo-sentado/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/pausas-no-tempo-sentado/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/percepcao-de-recuperacao/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/percepcao-de-recuperacao/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/relogio-e-calorias/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/relogio-e-calorias/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/retorno-ao-esporte/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/retorno-ao-esporte/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/sono-em-viagem/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/sono-em-viagem/",
+      "indexable": true,
+      "reason": "published_public_content"
+    },
+    {
+      "path": "enciclopedia/cadernos/unidades-motoras/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/cadernos/unidades-motoras/",
+      "indexable": true,
+      "reason": "published_public_content"
+    }
+  ]
+}

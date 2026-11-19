@@ -1,0 +1,36 @@
+{
+  "initial_code_files": [
+    "index.html",
+    "assets/flagship-2026.css",
+    "assets/measurement-v23-2.js",
+    "assets/commerce-v21.js",
+    "assets/contact-help-v23.js",
+    "assets/rox-agent-v3-offline.js",
+    "assets/rox-transport-titan.js",
+    "assets/rox-demo-v25.js",
+    "assets/flagship-2026.js"
+  ],
+  "initial_code_gzip_bytes": 36752,
+  "original_photographs": [
+    {
+      "source": "51E2DFFC-C60D-4D2C-A7D8-F5911A9D5654.jpeg",
+      "site_asset": "flagship-hero-mobile-rc2.jpg",
+      "sha256": "fa09fa33644f69ceebe9469e425993dc2cc1eab314da80cf525efa1746d5f4a4",
+      "byte_identical": true
+    },
+    {
+      "source": "826B78DF-903B-4103-ACA8-07EC36A6B353.jpeg",
+      "site_asset": "flagship-hero-desktop-rc2.jpg",
+      "sha256": "22f4f683062c413fc8019c7050ce62b204963b36a1f324ce4238f6f9b6ec947d",
+      "byte_identical": true
+    }
+  ],
+  "hero_delivery_bytes": {
+    "flagship-hero-mobile-rc2.avif": 65922,
+    "flagship-hero-mobile-rc2.webp": 103906,
+    "flagship-hero-desktop-rc2.jpg": 239302,
+    "flagship-hero-desktop-rc2.webp": 89410,
+    "flagship-hero-mobile-rc2.jpg": 261842,
+    "flagship-hero-desktop-rc2.avif": 57059
+  }
+}

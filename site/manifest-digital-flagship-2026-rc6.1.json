@@ -1,0 +1,10 @@
+{
+  "version": "digital-flagship-2026-rc6.1",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "index.html": "a7b5e12700702f4d2eed7758296f1b24a82556fcddae633de80b00ea25be1d2c",
+    "release.json": "7b965ff13fcf6d7b14305c832a43d35a136277a36976cc914ea4a5089b48fba2"
+  }
+}

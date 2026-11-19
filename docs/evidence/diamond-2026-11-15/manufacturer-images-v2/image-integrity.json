@@ -1,0 +1,104 @@
+{
+  "checked_on": "2026-11-15",
+  "status": "PASS",
+  "image_count": 6,
+  "preview_total_bytes": 383360,
+  "checks": [
+    {
+      "product": "Durateston Plus",
+      "original_sha256": "fa185bbd15d6687aa58bffce92c41cee8267fb2aed67d3dc0d5638284b3b8696",
+      "full_sha256": "5449048c083c7e121468f707d11de3c4366077ad01ddf344e32c3ed0834c0a6d",
+      "original_size": [
+        1278,
+        1230
+      ],
+      "full_size": [
+        1278,
+        1230
+      ],
+      "alpha_identical": true,
+      "rendered_pixels_identical_on_white_and_black": true,
+      "preview_bytes": 70928
+    },
+    {
+      "product": "Drostanolona propionato",
+      "original_sha256": "965b4172a00fee391d5e9b992eda658f5b4d1a7c259dbfed7dce31c8f40e2279",
+      "full_sha256": "3f499afa2185940286d3557c6b0520750699ddcf6085dcc997189e513ee751cc",
+      "original_size": [
+        1278,
+        1230
+      ],
+      "full_size": [
+        1278,
+        1230
+      ],
+      "alpha_identical": true,
+      "rendered_pixels_identical_on_white_and_black": true,
+      "preview_bytes": 60322
+    },
+    {
+      "product": "Metenolona enantato",
+      "original_sha256": "c5502d05f8061be26c7dd3913b263e3928df2cedbd6d9d4fb34ec388c83f653e",
+      "full_sha256": "8fb44ca3415200c175b9cb2d651788b9a4f2ac0853eec9d8649481dcb6aa89d7",
+      "original_size": [
+        1278,
+        1230
+      ],
+      "full_size": [
+        1278,
+        1230
+      ],
+      "alpha_identical": true,
+      "rendered_pixels_identical_on_white_and_black": true,
+      "preview_bytes": 66388
+    },
+    {
+      "product": "Decaland Depot",
+      "original_sha256": "18a352f44309f31fd02118c55025ce93a5b364c4c1ed548e3b8974d7992bc95f",
+      "full_sha256": "94761f0f1105e5a5e6e8550a1e8ee177d97435a64c6b2c07fa33e3a4448e04d6",
+      "original_size": [
+        1278,
+        1230
+      ],
+      "full_size": [
+        1278,
+        1230
+      ],
+      "alpha_identical": true,
+      "rendered_pixels_identical_on_white_and_black": true,
+      "preview_bytes": 61320
+    },
+    {
+      "product": "Testoland Depot",
+      "original_sha256": "dc1ee698a43cb9af59d0e3d8c32d31913f6945318e818722bebf6611730014c9",
+      "full_sha256": "8b9b387c37581aa37bc7de7fecac49a2d71ab3a39e2eceba9392cdbcb2b41a6e",
+      "original_size": [
+        1278,
+        1230
+      ],
+      "full_size": [
+        1278,
+        1230
+      ],
+      "alpha_identical": true,
+      "rendered_pixels_identical_on_white_and_black": true,
+      "preview_bytes": 57062
+    },
+    {
+      "product": "Testenat Depot",
+      "original_sha256": "0ec3f94d7a0be22eb3f55afbe5bea4cb542a63e8818c47fb81d3312495a796d5",
+      "full_sha256": "d0aae585efddfe50b7d4e18693aab9d33c7887cd5f660ad447004acb244e9c65",
+      "original_size": [
+        1278,
+        1230
+      ],
+      "full_size": [
+        1278,
+        1230
+      ],
+      "alpha_identical": true,
+      "rendered_pixels_identical_on_white_and_black": true,
+      "preview_bytes": 67340
+    }
+  ]
+}

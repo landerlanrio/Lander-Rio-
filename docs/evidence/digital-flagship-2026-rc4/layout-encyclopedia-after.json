@@ -1,0 +1,36 @@
+[
+  {
+    "viewport": 360,
+    "route": "/enciclopedia/",
+    "bodyWidth": 360,
+    "clientWidth": 360,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "catalogo"
+    ],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": []
+  },
+  {
+    "viewport": 430,
+    "route": "/enciclopedia/",
+    "bodyWidth": 430,
+    "clientWidth": 430,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "catalogo"
+    ],
+    "heroActions": [],
+    "heroImage": {},
+    "logos": []
+  }
+]

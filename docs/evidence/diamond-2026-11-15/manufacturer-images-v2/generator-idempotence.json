@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "same_bytes_on_rebuild": true,
+  "files": {
+    "site/marcas/landerlan/index.html": "a274ab8b15b8611d8af608bf13ddee5f9a6f8f39355813e8c8dbc3ccca0a2779",
+    "site/release.json": "a5705dd54b5c011e96a8a515755a65e40b5277d85b1c686d9ed0cf50fa6692f9",
+    "content/brands.json": "a8ca5858a88d01adcdb06bbbd9f21c15170e65e2d9b2b02d0780c137499773ea"
+  }
+}

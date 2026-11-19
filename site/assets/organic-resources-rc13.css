@@ -1,0 +1,13 @@
+/* Public resources: scoped, no dependencies or tracking. */
+.lr-resource{margin:2rem 0;padding:clamp(1.1rem,3vw,2rem);border:1px solid #3e4241;border-radius:16px;background:#151716;color:#f1f0e8;max-width:100%;min-width:0}
+.lr-resource h2,.lr-resource h3{color:#f1f0e8;letter-spacing:-.025em;line-height:1.18;overflow-wrap:anywhere}
+.lr-resource h2{font-size:clamp(1.55rem,3vw,2.15rem);margin:0 0 1rem}.lr-resource h3{font-size:1.3rem;margin:0 0 .8rem}
+.lr-resource p,.lr-resource li{color:#d3d5ce;line-height:1.65}.lr-resource small{display:block;color:#c5c8bf;line-height:1.6;margin-top:.8rem}
+.lr-resource a{color:#d7f97b;text-decoration:underline;text-underline-offset:.2em}.lr-resource a:hover{color:#fff}
+.lr-resource a:focus-visible,.lr-resource-table:focus-visible{outline:3px solid #d7f97b;outline-offset:4px}
+.lr-resource .lr-download{display:inline-flex;align-items:center;justify-content:center;min-height:48px;max-width:100%;padding:.75rem 1.1rem;margin:.5rem 0;background:#d7f97b;color:#161811;font-weight:700;border-radius:8px;text-decoration:none;line-height:1.4;overflow-wrap:anywhere}
+.lr-resource .lr-download:hover{background:#e3ffa3;color:#161811}.lr-resource-table{max-width:100%;overflow-x:auto;margin:1rem 0;border:1px solid #4a4e48;border-radius:8px}
+.lr-resource table{border-collapse:collapse;width:100%;font-size:.92rem;text-align:left}.lr-resource caption{text-align:left;padding:.8rem;color:#d3d5ce}.lr-resource th,.lr-resource td{padding:.75rem;border-bottom:1px solid #3e4241;vertical-align:top;min-width:6rem}.lr-resource th{color:#f1f0e8;background:#242823;font-weight:700}.lr-resource td{color:#d3d5ce}.lr-resource tr:last-child td{border-bottom:0}
+.lr-resource-grid{margin-top:1.25rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}.lr-resource-grid>div{min-width:0}.lr-resource-list{padding-left:1.25rem}
+.lr-breadcrumbs{display:flex;flex-wrap:wrap;gap:.4rem .65rem;max-width:100%;font-size:.8rem;line-height:1.6;margin:1.25rem 0;color:#b9bdb4}.lr-breadcrumbs a{color:inherit;text-decoration:underline;text-underline-offset:.2em}
+@media(max-width:620px){.lr-resource-grid{grid-template-columns:1fr}.lr-resource th,.lr-resource td{padding:.65rem}.lr-resource .lr-download{width:100%}}

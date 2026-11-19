@@ -1,0 +1,19 @@
+﻿ordem,tema,palavra_chave,prioridade_editorial,volume_mensal_estimado_BR,KD_estimado,GSC_cliques_consulta_exata,GSC_impressoes_consulta_exata,evidencia_volume,decisao
+1,Life Peptídeos,life peptideos,Alta,,,9,82,Indisponível,Tráfego já observado; ampliar respostas e distinguir catálogo de evidência.
+2,Geniqs Pharma,geniqs pharma,Alta,,,3,59,Indisponível,Tráfego existente e intenção de identidade; preservar URL e fontes.
+3,Landerlan,landerlan,Alta,40500,0,0,5,OpenSEO consulta RC8,Maior estimativa medida; fonte de fabricante e cluster Gold/Diamond.
+4,Landerlan Gold,landerlan gold,Alta,4400,0,0,1,OpenSEO consulta RC8,Ampliar URL existente e esclarecer classificação de linhas.
+5,Cooper Pharma,cooper pharma,Alta,4400,8,2,80,OpenSEO consulta RC8,Impressões existentes; desambiguar empresa indiana e marroquina.
+6,Landerlan Diamond,landerlan diamond,Alta,480,0,0,1,OpenSEO consulta RC8,Seção na página principal; pico recente não prova tendência sustentada.
+7,Muscle Labs India,muscle labs india,Média,320,3,1,12,OpenSEO consulta RC8,Demanda de nicho e cliques observados.
+8,Peptídeos: guia educativo,peptídeos o que são,Média,590,0,,,OpenSEO consulta RC8,Intenção informativa; artigo com fontes primárias e limites.
+9,Topharma,topharma,Média,260,,,,OpenSEO relatório 13/11 reutilizado,Diferenciar linhas Gold/Silver e homônimos.
+10,Oxygen KW Pharma,oxygen kw pharma,Média,590,,0,3,OpenSEO relatório 13/11 reutilizado,Nome preciso reduz ambiguidade.
+11,Éticos,eticos laboratorio,Média,1600,,,,OpenSEO relatório 13/11 reutilizado,Evitar termo genérico éticos.
+12,Indufar,indufar cisa,Média,1600,,,,OpenSEO relatório 13/11 reutilizado,Identidade e fonte institucional.
+13,Eminence Labs,eminence labs,Média,880,,,,OpenSEO relatório 13/11 reutilizado,"Ampliar fonte e contexto, sem alegações clínicas."
+14,Quimfa,quimfa sa,Média,480,,,,OpenSEO relatório 13/11 reutilizado,Termo institucional específico.
+15,ZPHC,zphc,Revisão,8100,,,,OpenSEO relatório 13/11 reutilizado,Documentação insuficiente; não priorizar volume sobre identidade.
+16,Synedica,synedica,Revisão,9900,,,,OpenSEO relatório 13/11 reutilizado,Associação de catálogo não confirmada; manter noindex.
+17,Alpha X Prime,alpha x prime,Revisão,30,,,,OpenSEO relatório 13/11 reutilizado,Não confundir com Alpha Laboratory ou Alpha X genérico.
+18,Sono e hipertrofia,sono hipertrofia,Posterior,20,48,,,OpenSEO consulta RC8,Conteúdo futuro; esforço maior e menor estimativa medida.

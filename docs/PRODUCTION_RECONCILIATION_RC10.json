@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-11-14T05:44:54.229361+00:00",
+  "netlify_deploy": "6af7cf076327d7fe116d1858",
+  "approved_home_sha256": "a9392ff31ec63f2542ab431af452ee36c796699c78dd2716fd889847bcd50618",
+  "captured_html_count": 87,
+  "restored_ga4_pages": 50,
+  "source_of_ga4": "Existing deployed files, unchanged bytes",
+  "ga4_intent_sha256": "e6a1fcda87e20f9bdab05cdeb36011202737be57d59bcc80be29a2e8fe1fe165",
+  "ga4_config_sha256": "29fb60600985b2e3bc710780df2e53a594beb7f64f4cb71e7ad1e41962113e1b",
+  "csp": "default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://region1.google-analytics.com; font-src 'self'; connect-src 'self' https://us.i.posthog.com https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self' https://wa.me; upgrade-insecure-requests",
+  "production_changed": false
+}

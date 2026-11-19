@@ -1,0 +1,390 @@
+{
+  "conditions": "Chromium desktop, iframe 390×844, cache aquecido, sem limitação de CPU/rede. O harness oculta a scrollbar após load. Não equivale a Core Web Vitals de campo.",
+  "excluded": "Uma leitura de CLS 1,008 durante alternância do sandbox sem JS foi descartada: mudança provocada pelo harness. Medições abaixo usam navegações novas e independentes.",
+  "runs": [
+    {
+      "lcp_ms": 136,
+      "cls": 0.007957027193735713,
+      "entries": [
+        {
+          "at": 135.59999999962747,
+          "value": 0.007957027193735713,
+          "sources": [
+            {
+              "node": "hero-brands shell",
+              "previous": {
+                "x": 20,
+                "y": 551.96875,
+                "width": 335,
+                "height": 269.375,
+                "top": 551.96875,
+                "right": 355,
+                "bottom": 821.34375,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 546.1875,
+                "width": 350,
+                "height": 269.375,
+                "top": 546.1875,
+                "right": 370,
+                "bottom": 815.5625,
+                "left": 20
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 145.5,
+                "y": 565.1875,
+                "width": 244.5,
+                "height": 170.1875,
+                "top": 565.1875,
+                "right": 390,
+                "bottom": 735.375,
+                "left": 145.5
+              },
+              "current": {
+                "x": 153.5,
+                "y": 559.1875,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 559.1875,
+                "right": 390,
+                "bottom": 729.375,
+                "left": 153.5
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 145.5,
+                "y": 652.375,
+                "width": 244.5,
+                "height": 170.1875,
+                "top": 652.375,
+                "right": 390,
+                "bottom": 822.5625,
+                "left": 145.5
+              },
+              "current": {
+                "x": 153.5,
+                "y": 646.375,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 646.375,
+                "right": 390,
+                "bottom": 816.5625,
+                "left": 153.5
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 0,
+                "y": 565.1875,
+                "width": 229,
+                "height": 170.1875,
+                "top": 565.1875,
+                "right": 229,
+                "bottom": 735.375,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 559.1875,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 559.1875,
+                "right": 236.5,
+                "bottom": 729.375,
+                "left": 0
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 0,
+                "y": 652.375,
+                "width": 229,
+                "height": 170.1875,
+                "top": 652.375,
+                "right": 229,
+                "bottom": 822.5625,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 646.375,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 646.375,
+                "right": 236.5,
+                "bottom": 816.5625,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "scope": "Chromium local iframe; no network/CPU throttling; not field CWV"
+    },
+    {
+      "lcp_ms": 160,
+      "cls": 0.007957027193735713,
+      "entries": [
+        {
+          "at": 168.19999999925494,
+          "value": 0.007957027193735713,
+          "sources": [
+            {
+              "node": "hero-brands shell",
+              "previous": {
+                "x": 20,
+                "y": 551.96875,
+                "width": 335,
+                "height": 269.375,
+                "top": 551.96875,
+                "right": 355,
+                "bottom": 821.34375,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 546.1875,
+                "width": 350,
+                "height": 269.375,
+                "top": 546.1875,
+                "right": 370,
+                "bottom": 815.5625,
+                "left": 20
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 145.5,
+                "y": 565.1875,
+                "width": 244.5,
+                "height": 170.1875,
+                "top": 565.1875,
+                "right": 390,
+                "bottom": 735.375,
+                "left": 145.5
+              },
+              "current": {
+                "x": 153.5,
+                "y": 559.1875,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 559.1875,
+                "right": 390,
+                "bottom": 729.375,
+                "left": 153.5
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 145.5,
+                "y": 652.375,
+                "width": 244.5,
+                "height": 170.1875,
+                "top": 652.375,
+                "right": 390,
+                "bottom": 822.5625,
+                "left": 145.5
+              },
+              "current": {
+                "x": 153.5,
+                "y": 646.375,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 646.375,
+                "right": 390,
+                "bottom": 816.5625,
+                "left": 153.5
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 0,
+                "y": 565.1875,
+                "width": 229,
+                "height": 170.1875,
+                "top": 565.1875,
+                "right": 229,
+                "bottom": 735.375,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 559.1875,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 559.1875,
+                "right": 236.5,
+                "bottom": 729.375,
+                "left": 0
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 0,
+                "y": 652.375,
+                "width": 229,
+                "height": 170.1875,
+                "top": 652.375,
+                "right": 229,
+                "bottom": 822.5625,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 646.375,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 646.375,
+                "right": 236.5,
+                "bottom": 816.5625,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "scope": "Chromium local iframe; no network/CPU throttling; not field CWV"
+    },
+    {
+      "lcp_ms": 188,
+      "cls": 0.007957027193735713,
+      "entries": [
+        {
+          "at": 189.5,
+          "value": 0.007957027193735713,
+          "sources": [
+            {
+              "node": "hero-brands shell",
+              "previous": {
+                "x": 20,
+                "y": 551.96875,
+                "width": 335,
+                "height": 269.375,
+                "top": 551.96875,
+                "right": 355,
+                "bottom": 821.34375,
+                "left": 20
+              },
+              "current": {
+                "x": 20,
+                "y": 546.1875,
+                "width": 350,
+                "height": 269.375,
+                "top": 546.1875,
+                "right": 370,
+                "bottom": 815.5625,
+                "left": 20
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 145.5,
+                "y": 565.1875,
+                "width": 244.5,
+                "height": 170.1875,
+                "top": 565.1875,
+                "right": 390,
+                "bottom": 735.375,
+                "left": 145.5
+              },
+              "current": {
+                "x": 153.5,
+                "y": 559.1875,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 559.1875,
+                "right": 390,
+                "bottom": 729.375,
+                "left": 153.5
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 145.5,
+                "y": 652.375,
+                "width": 244.5,
+                "height": 170.1875,
+                "top": 652.375,
+                "right": 390,
+                "bottom": 822.5625,
+                "left": 145.5
+              },
+              "current": {
+                "x": 153.5,
+                "y": 646.375,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 646.375,
+                "right": 390,
+                "bottom": 816.5625,
+                "left": 153.5
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 0,
+                "y": 565.1875,
+                "width": 229,
+                "height": 170.1875,
+                "top": 565.1875,
+                "right": 229,
+                "bottom": 735.375,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 559.1875,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 559.1875,
+                "right": 236.5,
+                "bottom": 729.375,
+                "left": 0
+              }
+            },
+            {
+              "node": "A",
+              "previous": {
+                "x": 0,
+                "y": 652.375,
+                "width": 229,
+                "height": 170.1875,
+                "top": 652.375,
+                "right": 229,
+                "bottom": 822.5625,
+                "left": 0
+              },
+              "current": {
+                "x": 0,
+                "y": 646.375,
+                "width": 236.5,
+                "height": 170.1875,
+                "top": 646.375,
+                "right": 236.5,
+                "bottom": 816.5625,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "scope": "Chromium local iframe; no network/CPU throttling; not field CWV"
+    }
+  ]
+}

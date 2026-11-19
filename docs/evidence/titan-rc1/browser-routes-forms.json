@@ -1,0 +1,413 @@
+{
+  "at": "2026-11-13T02:03:54.393Z",
+  "candidate": "titan-1.0.0-rc1",
+  "environment": "Chromium cloud local preview, ALL registration requests mocked in memory",
+  "externalWrites": false,
+  "realRegistrations": 0,
+  "records": [
+    {
+      "name": "/atacado/ / 360 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 345
+      }
+    },
+    {
+      "name": "/atacado/ / 390 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 375
+      }
+    },
+    {
+      "name": "/atacado/ / 430 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 415
+      }
+    },
+    {
+      "name": "/atacado/ / 768 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 753
+      }
+    },
+    {
+      "name": "/atacado/ / 1440 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 1425
+      }
+    },
+    {
+      "name": "/atacado/ / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Atacado / quantidade preservada",
+      "passed": true
+    },
+    {
+      "name": "Atacado / WhatsApp web e app usam mesmo contexto",
+      "passed": true
+    },
+    {
+      "name": "/varejo/ / 360 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 345
+      }
+    },
+    {
+      "name": "/varejo/ / 390 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 375
+      }
+    },
+    {
+      "name": "/varejo/ / 430 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 415
+      }
+    },
+    {
+      "name": "/varejo/ / 768 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 753
+      }
+    },
+    {
+      "name": "/varejo/ / 1440 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 1425
+      }
+    },
+    {
+      "name": "/varejo/ / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "/contato/ / 360 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 345
+      }
+    },
+    {
+      "name": "/contato/ / 390 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 375
+      }
+    },
+    {
+      "name": "/contato/ / 430 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 415
+      }
+    },
+    {
+      "name": "/contato/ / 768 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 753
+      }
+    },
+    {
+      "name": "/contato/ / 1440 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 1425
+      }
+    },
+    {
+      "name": "/contato/ / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "/ferramentas/ / 360 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 345
+      }
+    },
+    {
+      "name": "/ferramentas/ / 390 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 375
+      }
+    },
+    {
+      "name": "/ferramentas/ / 430 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 415
+      }
+    },
+    {
+      "name": "/ferramentas/ / 768 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 753
+      }
+    },
+    {
+      "name": "/ferramentas/ / 1440 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 1425
+      }
+    },
+    {
+      "name": "/ferramentas/ / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "/treino/ / 360 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 345
+      }
+    },
+    {
+      "name": "/treino/ / 390 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 375
+      }
+    },
+    {
+      "name": "/treino/ / 430 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 415
+      }
+    },
+    {
+      "name": "/treino/ / 768 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 753
+      }
+    },
+    {
+      "name": "/treino/ / 1440 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 1425
+      }
+    },
+    {
+      "name": "/treino/ / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "/dieta/ / 360 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 345
+      }
+    },
+    {
+      "name": "/dieta/ / 390 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 375
+      }
+    },
+    {
+      "name": "/dieta/ / 430 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 415
+      }
+    },
+    {
+      "name": "/dieta/ / 768 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 753
+      }
+    },
+    {
+      "name": "/dieta/ / 1440 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 1425
+      }
+    },
+    {
+      "name": "/dieta/ / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "/conteudos/ / 360 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 345
+      }
+    },
+    {
+      "name": "/conteudos/ / 390 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 375
+      }
+    },
+    {
+      "name": "/conteudos/ / 430 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 415
+      }
+    },
+    {
+      "name": "/conteudos/ / 768 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 753
+      }
+    },
+    {
+      "name": "/conteudos/ / 1440 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 1425
+      }
+    },
+    {
+      "name": "/conteudos/ / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "/marcas/ / 360 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 345
+      }
+    },
+    {
+      "name": "/marcas/ / 390 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 375
+      }
+    },
+    {
+      "name": "/marcas/ / 430 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 415
+      }
+    },
+    {
+      "name": "/marcas/ / 768 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 753
+      }
+    },
+    {
+      "name": "/marcas/ / 1440 sem overflow",
+      "passed": true,
+      "details": {
+        "width": 1425
+      }
+    },
+    {
+      "name": "/marcas/ / axe WCAG A AA",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "training / resultado exige cadastro",
+      "passed": true
+    },
+    {
+      "name": "training / failure",
+      "passed": true
+    },
+    {
+      "name": "training / invalid",
+      "passed": true
+    },
+    {
+      "name": "training / success",
+      "passed": true
+    },
+    {
+      "name": "training / somente endpoint local interceptado",
+      "passed": true,
+      "details": [
+        {
+          "url": "/api/workout/lead",
+          "method": "POST"
+        },
+        {
+          "url": "/api/workout/lead",
+          "method": "POST"
+        },
+        {
+          "url": "/api/workout/lead",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "name": "nutrition / resultado exige cadastro",
+      "passed": true
+    },
+    {
+      "name": "nutrition / failure",
+      "passed": true
+    },
+    {
+      "name": "nutrition / invalid",
+      "passed": true
+    },
+    {
+      "name": "nutrition / success",
+      "passed": true
+    },
+    {
+      "name": "nutrition / somente endpoint local interceptado",
+      "passed": true,
+      "details": [
+        {
+          "url": "/api/nutrition/lead",
+          "method": "POST"
+        },
+        {
+          "url": "/api/nutrition/lead",
+          "method": "POST"
+        },
+        {
+          "url": "/api/nutrition/lead",
+          "method": "POST"
+        }
+      ]
+    },
+    {
+      "name": "Páginas internas / sem exceções de execução",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "total": 61,
+  "passed": 61,
+  "failed": 0
+}

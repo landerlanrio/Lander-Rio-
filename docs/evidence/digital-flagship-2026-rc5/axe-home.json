@@ -1,0 +1,319 @@
+[
+  {
+    "path": "/",
+    "viewport": [
+      390,
+      844
+    ],
+    "release": "digital-flagship-2026-rc5",
+    "axeVersion": "4.10.3",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "aria-prohibited-attr",
+        "count": 1,
+        "targets": [
+          [
+            ".mobile-contact"
+          ]
+        ]
+      },
+      {
+        "id": "aria-valid-attr-value",
+        "count": 1,
+        "targets": [
+          [
+            ".search-toggle"
+          ]
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "count": 51,
+        "targets": [
+          [
+            ".hero-location > span:nth-child(1)"
+          ],
+          [
+            ".hero-location > span:nth-child(2)"
+          ],
+          [
+            ".hero-heading > .eyebrow"
+          ],
+          [
+            ".hero-line-one"
+          ],
+          [
+            ".hero-line-two"
+          ],
+          [
+            ".hero-side"
+          ],
+          [
+            ".hero-caption"
+          ],
+          [
+            ".hero-index"
+          ],
+          [
+            ".hero-index > span"
+          ],
+          [
+            ".hero-cta--silver > span > small"
+          ],
+          [
+            ".hero-cta--silver > span > strong"
+          ],
+          [
+            ".hero-brand-grid > .brand-tile[data-brand-name=\"Landerlan\"] > a[href$=\"landerlan/\"][data-brand=\"landerlan\"] > .tile-name"
+          ],
+          [
+            ".hero-brand-grid > .brand-tile[data-brand-name=\"Topharma\"] > a[href$=\"topharma/\"][data-brand=\"topharma\"] > .tile-name"
+          ],
+          [
+            ".channel--wholesale > .channel-top > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".channel--wholesale > .channel-symbol"
+          ],
+          [
+            ".channel--wholesale > h3"
+          ],
+          [
+            ".channel--retail > .channel-top > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".channel--retail > .channel-symbol"
+          ],
+          [
+            ".channel--retail > h3"
+          ],
+          [
+            ".brand-search > span[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Landerlan\"] > a[href$=\"landerlan/\"][data-brand=\"landerlan\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Topharma\"] > a[href$=\"topharma/\"][data-brand=\"topharma\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Life Peptídeos\"] > a[href$=\"life-peptideos/\"][data-brand=\"life-peptideos\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            ".brand-grid > .brand-tile[data-brand-name=\"Oxygen KW Pharma\"] > a[href$=\"oxygen-kw-pharma/\"][data-brand=\"oxygen-kw-pharma\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"cooper-pharma/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"zphc/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"zphc/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"muscle-labs-india/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"synedica/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"eticos/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"eticos/\"] > .tile-name"
+          ],
+          [
+            "a[href$=\"indufar/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[href$=\"geniqs-pharma/\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"alpha-x-prime\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"quimfa\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-brand=\"eminence-labs\"] > .tile-number[aria-hidden=\"true\"]"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-top.mono"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-top.mono > span"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > small"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > strong"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > span"
+          ],
+          [
+            "a[data-cta=\"tool-training\"] > .tool-content > b"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-top.mono"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-top.mono > span"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > small"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > strong"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > span"
+          ],
+          [
+            ".tool-feature--nutrition > .tool-content > b"
+          ],
+          [
+            ".atlas-cover > .mono:nth-child(1)"
+          ],
+          [
+            ".atlas-cover > strong"
+          ],
+          [
+            ".atlas-bottom"
+          ]
+        ]
+      }
+    ],
+    "passes": 31,
+    "texts": [
+      {
+        "text": "Revendedores e pedidos individuais.",
+        "size": 14,
+        "selector": "SPAN"
+      },
+      {
+        "text": "PARA REVENDEDORES",
+        "size": 11,
+        "selector": "SMALL"
+      },
+      {
+        "text": "PARA VOCÊ",
+        "size": 11,
+        "selector": "SMALL"
+      },
+      {
+        "text": "Uma conversa para alinhar sua demanda, quantidades e possibilidades de reposição.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Condições por pedido",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Disponibilidade confirmada",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Contato direto com a equipe",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Conte o que procura e receba as informações aplicáveis ao seu pedido antes de decidir.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Consulta individual",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Entrega e envio sob consulta",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Suporte ao seu atendimento",
+        "size": 14,
+        "selector": "LI"
+      },
+      {
+        "text": "Seu perfil e o que precisa resolver. Sem cadastro obrigatório para conversar.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Possibilidades, condições e envio. Informações claras antes da sua decisão.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Um canal para dúvidas e acompanhamento do atendimento.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A Enciclopédia do Bodybuilding reúne informações sobre fisiologia, hormônios e performance: mecanism",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Escolha o perfil e o assunto. A mensagem acompanha sua escolha até o WhatsApp.",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Você não precisa informar nome, telefone ou e-mail aqui.",
+        "size": 12,
+        "selector": "fine"
+      },
+      {
+        "text": "A cidade entra apenas na mensagem que você decide enviar.",
+        "size": 12,
+        "selector": "fine"
+      },
+      {
+        "text": "Use o WhatsApp Web no computador ou adicione o número oficial (21) 92004-3538 no aplicativo.",
+        "size": 12,
+        "selector": "fine"
+      },
+      {
+        "text": "Não. Os botões de WhatsApp abrem o atendimento diretamente. Personalizar a consulta é opcional. O ca",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A equipe verifica sua solicitação e confirma disponibilidade, condições aplicáveis e possibilidades ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Catálogo, tabela e orçamento, quando aplicáveis a itens permitidos, são tratados no atendimento. As ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "A possibilidade de envio, o prazo e o valor são confirmados conforme o destino e a solicitação. Não ",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "O WhatsApp abre com uma mensagem preparada. Você pode editá-la e decide se quer enviá-la. O site não",
+        "size": 14,
+        "selector": "P"
+      },
+      {
+        "text": "Sim. O planejador de treino e a ferramenta alimentar continuam gratuitos. O cadastro libera o result",
+        "size": 14,
+        "selector": "P"
+      }
+    ]
+  }
+]

@@ -1,0 +1,270 @@
+{
+  "ok": true,
+  "siteUrl": "sc-domain:landerrio.com.br",
+  "startDate": "2026-10-15",
+  "endDate": "2026-11-11",
+  "dimensions": [
+    "date"
+  ],
+  "rowCount": 28,
+  "rows": [
+    {
+      "keys": [
+        "2026-10-15"
+      ],
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "keys": [
+        "2026-10-16"
+      ],
+      "clicks": 1,
+      "impressions": 29,
+      "ctr": 0.0345,
+      "position": 12.2
+    },
+    {
+      "keys": [
+        "2026-10-17"
+      ],
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 16.7
+    },
+    {
+      "keys": [
+        "2026-10-18"
+      ],
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 17.7
+    },
+    {
+      "keys": [
+        "2026-10-19"
+      ],
+      "clicks": 2,
+      "impressions": 51,
+      "ctr": 0.0392,
+      "position": 12.3
+    },
+    {
+      "keys": [
+        "2026-10-20"
+      ],
+      "clicks": 2,
+      "impressions": 40,
+      "ctr": 0.05,
+      "position": 9.1
+    },
+    {
+      "keys": [
+        "2026-10-21"
+      ],
+      "clicks": 3,
+      "impressions": 29,
+      "ctr": 0.1034,
+      "position": 8.9
+    },
+    {
+      "keys": [
+        "2026-10-22"
+      ],
+      "clicks": 1,
+      "impressions": 61,
+      "ctr": 0.0164,
+      "position": 8.1
+    },
+    {
+      "keys": [
+        "2026-10-23"
+      ],
+      "clicks": 0,
+      "impressions": 28,
+      "ctr": 0,
+      "position": 9.6
+    },
+    {
+      "keys": [
+        "2026-10-24"
+      ],
+      "clicks": 2,
+      "impressions": 25,
+      "ctr": 0.08,
+      "position": 10.4
+    },
+    {
+      "keys": [
+        "2026-10-25"
+      ],
+      "clicks": 1,
+      "impressions": 16,
+      "ctr": 0.0625,
+      "position": 9.3
+    },
+    {
+      "keys": [
+        "2026-10-26"
+      ],
+      "clicks": 2,
+      "impressions": 36,
+      "ctr": 0.0556,
+      "position": 6.3
+    },
+    {
+      "keys": [
+        "2026-10-27"
+      ],
+      "clicks": 0,
+      "impressions": 34,
+      "ctr": 0,
+      "position": 6.7
+    },
+    {
+      "keys": [
+        "2026-10-28"
+      ],
+      "clicks": 1,
+      "impressions": 25,
+      "ctr": 0.04,
+      "position": 7.6
+    },
+    {
+      "keys": [
+        "2026-10-29"
+      ],
+      "clicks": 2,
+      "impressions": 35,
+      "ctr": 0.0571,
+      "position": 8.5
+    },
+    {
+      "keys": [
+        "2026-10-30"
+      ],
+      "clicks": 2,
+      "impressions": 38,
+      "ctr": 0.0526,
+      "position": 4.9
+    },
+    {
+      "keys": [
+        "2026-10-31"
+      ],
+      "clicks": 5,
+      "impressions": 37,
+      "ctr": 0.1351,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "2026-11-01"
+      ],
+      "clicks": 2,
+      "impressions": 28,
+      "ctr": 0.0714,
+      "position": 7.5
+    },
+    {
+      "keys": [
+        "2026-11-02"
+      ],
+      "clicks": 4,
+      "impressions": 36,
+      "ctr": 0.1111,
+      "position": 5.1
+    },
+    {
+      "keys": [
+        "2026-11-03"
+      ],
+      "clicks": 5,
+      "impressions": 66,
+      "ctr": 0.0758,
+      "position": 5.2
+    },
+    {
+      "keys": [
+        "2026-11-04"
+      ],
+      "clicks": 6,
+      "impressions": 57,
+      "ctr": 0.1053,
+      "position": 6.1
+    },
+    {
+      "keys": [
+        "2026-11-05"
+      ],
+      "clicks": 8,
+      "impressions": 55,
+      "ctr": 0.1455,
+      "position": 5.5
+    },
+    {
+      "keys": [
+        "2026-11-06"
+      ],
+      "clicks": 2,
+      "impressions": 99,
+      "ctr": 0.0202,
+      "position": 4.5
+    },
+    {
+      "keys": [
+        "2026-11-07"
+      ],
+      "clicks": 1,
+      "impressions": 58,
+      "ctr": 0.0172,
+      "position": 7.7
+    },
+    {
+      "keys": [
+        "2026-11-08"
+      ],
+      "clicks": 5,
+      "impressions": 35,
+      "ctr": 0.1429,
+      "position": 6.5
+    },
+    {
+      "keys": [
+        "2026-11-09"
+      ],
+      "clicks": 1,
+      "impressions": 82,
+      "ctr": 0.0122,
+      "position": 5.9
+    },
+    {
+      "keys": [
+        "2026-11-10"
+      ],
+      "clicks": 2,
+      "impressions": 72,
+      "ctr": 0.0278,
+      "position": 5.6
+    },
+    {
+      "keys": [
+        "2026-11-11"
+      ],
+      "clicks": 7,
+      "impressions": 62,
+      "ctr": 0.1129,
+      "position": 7
+    }
+  ],
+  "hasMore": false,
+  "meta": {
+    "projectId": "cc40f4de-9c11-47c9-be5b-dcb4387db222",
+    "url": "https://app.openseo.so/p/cc40f4de-9c11-47c9-be5b-dcb4387db222/search-performance"
+  },
+  "resultId": "b64ae941-f23e-4333-a0a5-76599d612a6f"
+}

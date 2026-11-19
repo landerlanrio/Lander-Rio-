@@ -1,0 +1,12 @@
+test_approved_hero_photo_title_and_destinations_are_preserved (__main__.Universe.test_approved_hero_photo_title_and_destinations_are_preserved) ... ok
+test_brands_are_unique_specific_and_sourced (__main__.Universe.test_brands_are_unique_specific_and_sourced) ... ok
+test_directory_without_javascript_has_all_destinations (__main__.Universe.test_directory_without_javascript_has_all_destinations) ... ok
+test_indexable_sitemap_matches_robots_and_canonical (__main__.Universe.test_indexable_sitemap_matches_robots_and_canonical) ... ok
+test_local_links_and_fragments_across_all_pages (__main__.Universe.test_local_links_and_fragments_across_all_pages) ... ok
+test_preview_harness_is_not_in_release (__main__.Universe.test_preview_harness_is_not_in_release) ... ok
+test_structured_data_is_consistent_with_page (__main__.Universe.test_structured_data_is_consistent_with_page) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.552s
+
+OK

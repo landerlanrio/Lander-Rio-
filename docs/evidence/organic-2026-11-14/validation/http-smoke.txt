@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "route_count": 30,
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 37773,
+      "passed": true
+    },
+    {
+      "path": "/atacado/",
+      "status": 200,
+      "bytes": 14449,
+      "passed": true
+    },
+    {
+      "path": "/varejo/",
+      "status": 200,
+      "bytes": 13489,
+      "passed": true
+    },
+    {
+      "path": "/treino/",
+      "status": 200,
+      "bytes": 31113,
+      "passed": true
+    },
+    {
+      "path": "/dieta/",
+      "status": 200,
+      "bytes": 26267,
+      "passed": true
+    },
+    {
+      "path": "/entregas/",
+      "status": 200,
+      "bytes": 13910,
+      "passed": true
+    },
+    {
+      "path": "/enciclopedia/",
+      "status": 200,
+      "bytes": 33420,
+      "passed": true
+    },
+    {
+      "path": "/contato/",
+      "status": 200,
+      "bytes": 13336,
+      "passed": true
+    },
+    {
+      "path": "/ferramentas/",
+      "status": 200,
+      "bytes": 8507,
+      "passed": true
+    },
+    {
+      "path": "/perguntas-frequentes/",
+      "status": 200,
+      "bytes": 8396,
+      "passed": true
+    },
+    {
+      "path": "/release.json",
+      "status": 200,
+      "bytes": 7929,
+      "passed": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 3552,
+      "passed": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 143,
+      "passed": true
+    },
+    {
+      "path": "/assets/commerce-v21.js",
+      "status": 200,
+      "bytes": 4763,
+      "passed": true
+    },
+    {
+      "path": "/assets/measurement-v23-2.js",
+      "status": 200,
+      "bytes": 7814,
+      "passed": true
+    },
+    {
+      "path": "/marcas/",
+      "status": 200,
+      "bytes": 22080,
+      "passed": true
+    },
+    {
+      "path": "/marcas/cooper-pharma/",
+      "status": 200,
+      "bytes": 12850,
+      "passed": true
+    },
+    {
+      "path": "/marcas/zphc/",
+      "status": 200,
+      "bytes": 10578,
+      "passed": true
+    },
+    {
+      "path": "/marcas/landerlan/",
+      "status": 200,
+      "bytes": 14654,
+      "passed": true
+    },
+    {
+      "path": "/marcas/oxygen-kw-pharma/",
+      "status": 200,
+      "bytes": 12905,
+      "passed": true
+    },
+    {
+      "path": "/marcas/alpha-x-prime/",
+      "status": 200,
+      "bytes": 9773,
+      "passed": true
+    },
+    {
+      "path": "/marcas/quimfa/",
+      "status": 200,
+      "bytes": 13562,
+      "passed": true
+    },
+    {
+      "path": "/marcas/eticos/",
+      "status": 200,
+      "bytes": 12618,
+      "passed": true
+    },
+    {
+      "path": "/marcas/indufar/",
+      "status": 200,
+      "bytes": 11510,
+      "passed": true
+    },
+    {
+      "path": "/marcas/life-peptideos/",
+      "status": 200,
+      "bytes": 12691,
+      "passed": true
+    },
+    {
+      "path": "/marcas/eminence-labs/",
+      "status": 200,
+      "bytes": 12667,
+      "passed": true
+    },
+    {
+      "path": "/marcas/topharma/",
+      "status": 200,
+      "bytes": 13230,
+      "passed": true
+    },
+    {
+      "path": "/marcas/muscle-labs-india/",
+      "status": 200,
+      "bytes": 12368,
+      "passed": true
+    },
+    {
+      "path": "/marcas/synedica/",
+      "status": 200,
+      "bytes": 11475,
+      "passed": true
+    },
+    {
+      "path": "/marcas/geniqs-pharma/",
+      "status": 200,
+      "bytes": 11755,
+      "passed": true
+    }
+  ]
+}

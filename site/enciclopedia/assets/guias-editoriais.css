@@ -1,0 +1,68 @@
+.guide-book, .guide-book * , .guide-book *::before, .guide-book *::after { box-sizing: border-box; }
+.guide-book { --ink:#151a14; --paper:#f3f1e9; --accent:#d8f76b; --muted:#485345; margin:0; font:400 1rem/1.62 'DM Sans',Arial,sans-serif; color:var(--ink); background:var(--paper); }
+.guide-book a { color:inherit; text-underline-offset:4px; }
+.guide-book a:hover { text-decoration:underline; }
+.guide-book :focus-visible { outline:3px solid #526b00; outline-offset:3px; }
+.guide-book :is(header,footer) :focus-visible { outline-color:var(--accent); }
+.guide-book [hidden] { display:none !important; }
+.book-header,.book-foot { color:var(--paper); background:var(--ink); }
+.book-header > div,.book-foot > div,.book-wrap { max-width:1250px; margin:auto; padding-inline:clamp(18px,5.3vw,78px); }
+.book-header > div,.book-foot > div,.book-header nav,.book-end { display:flex; align-items:center; flex-wrap:wrap; gap:12px 22px; }
+.book-header > div { justify-content:space-between; min-height:64px; }
+.book-header a,.book-foot a,.book-end a { display:inline-flex; align-items:center; min-height:44px; }
+.book-brand { font:900 1.65rem/1 'Barlow Condensed',Impact,sans-serif; text-decoration:none; }
+.book-brand span { color:var(--accent); } .book-header nav { gap:8px; font-size:.9rem; }
+.book-skip { position:absolute; top:4px; left:4px; transform:translateY(-180%); z-index:2; background:var(--paper); padding:10px; }
+.book-skip:focus { transform:none; }
+.book-hero { padding-block:clamp(38px,6vw,84px) clamp(28px,4vw,56px); border-bottom:1px solid #717c69; }
+.book-eyebrow { margin:0 0 14px; color:#465636; font:500 .74rem/1.5 'DM Mono',monospace; letter-spacing:.065em; text-transform:uppercase; }
+.book-hero h1 { margin:0; font:900 clamp(3.1rem,7.4vw,6.7rem)/.98 'Barlow Condensed',Impact,sans-serif; letter-spacing:-.035em; overflow-wrap:break-word; }
+.book-hero h1 em { font:italic 500 .84em/1 'Playfair Display',Georgia,serif; color:#465636; }
+.book-lead { max-width:56ch; margin:18px 0 0; font-size:clamp(1.1rem,2vw,1.4rem); line-height:1.45; }
+.book-jumps { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+.book-jumps a,.book-end a { display:inline-flex; align-items:center; min-height:44px; padding:8px 15px; border:1px solid #7f8a76; border-radius:3px; font-weight:700; text-decoration:none; }
+.book-jumps a:last-child { background:var(--accent); border-color:#829644; }
+.book-block { padding-block:clamp(30px,4.5vw,64px); border-bottom:1px solid #a0a996; }
+.book-block h2,.book-article h2 { font:500 clamp(1.8rem,3.5vw,3.1rem)/1.14 'Playfair Display',Georgia,serif; letter-spacing:-.045em; margin:0 0 16px; }
+.book-block>p { color:var(--muted); max-width:60ch; }
+.book-topics,.book-directory,.book-contents ul,.book-questions ul { padding:0; margin:0; list-style:none; }
+.book-topics,.book-directory { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 clamp(20px,4vw,52px); }
+.book-topics li,.book-directory li,.book-questions details { border-bottom:1px solid #bcc3b4; }
+.book-topics a { display:block; text-decoration:none; padding:16px 0 20px; }
+.book-topics strong { display:block; font-size:1.34rem; line-height:1.25; }
+.book-topics span { display:block; margin-top:5px; color:var(--muted); max-width:48ch; }
+.book-questions summary { padding:14px 0; cursor:pointer; font-weight:700; }
+.book-questions li { margin-left:18px; }
+.book-questions li a,.book-contents a,.book-directory a { display:inline-flex; align-items:center; min-height:44px; }
+.book-search { max-width:640px; }
+.book-search label { display:block; font-weight:700; margin-bottom:6px; }
+.book-search > div { display:flex; gap:8px; }
+.book-search input,.book-search button { min-height:46px; border:1px solid #74836b; border-radius:3px; font:inherit; color:var(--ink); }
+.book-search input { min-width:0; flex:1; padding:8px 10px; background:#fff; }
+.book-search button { cursor:pointer; padding:8px 14px; background:var(--accent); }
+.book-directory li { display:flex; align-items:center; justify-content:space-between; gap:9px; }
+.book-directory a { padding:7px 0; line-height:1.35; }
+.book-directory li span { font:500 .68rem/1.3 'DM Mono',monospace; color:var(--muted); }
+.book-chapter { display:grid; grid-template-columns:minmax(180px,1fr) minmax(0,2.8fr); gap:clamp(28px,6vw,90px); }
+.book-contents { align-self:start; padding:32px 0; }
+.book-contents h2,.book-article h3 { margin:0 0 4px; font:700 1.02rem/1.4 'DM Sans',Arial,sans-serif; }
+.book-contents li { border-bottom:1px solid #c1c8b8; }
+.book-contents a { padding:7px 0; line-height:1.35; }
+.book-article { padding:clamp(30px,4.5vw,60px) 0; border-bottom:1px solid #99a490; max-width:72ch; }
+.book-article h2 { font-size:clamp(1.7rem,3.4vw,2.8rem); }
+.book-article p { margin:0 0 19px; }
+.book-article .book-answer { font-size:1.13rem; line-height:1.52; }
+.book-application { border-left:3px solid #6f813b; padding:10px 15px; background:#e6eadb; margin-bottom:18px; }
+.book-application p,.book-article .book-reference { margin:0; }
+.book-reference { font-size:.87rem; color:#41503d; overflow-wrap:anywhere; }
+.book-reference span { font-family:'DM Mono',monospace; font-size:.8rem; }
+.book-end { padding-block:28px 52px; }
+.book-foot > div { padding-block:16px; justify-content:space-between; }
+.book-related { margin-top:12px!important; }
+@media(max-width:710px){.book-chapter,.book-directory,.book-topics{grid-template-columns:1fr}.book-chapter{gap:0}.book-contents{border-bottom:1px solid #99a490}.book-topics a{padding:12px 0}.book-header nav{font-size:.82rem}.book-header>div{gap:0 10px}}
+/* Entry points on the established home and encyclopedia layouts. */
+.lr-guide-invite { margin:1.5rem 0; padding:18px clamp(14px,3vw,32px); border:1px solid #536343; background:#172014; color:#f4f3e9; }
+.lr-guide-invite h2,.lr-guide-invite h3 { margin:0 0 8px; font:700 clamp(1.3rem,2vw,1.7rem)/1.2 'DM Sans',Arial,sans-serif; }
+.lr-guide-invite p { margin:0 0 4px; color:#d5daca; line-height:1.5; }
+.lr-guide-invite a,.lr-atlas .lr-guide-home-link { display:inline-flex; align-items:center; min-height:44px; color:#dbff5a; text-decoration:underline; text-underline-offset:4px; font-weight:700; }
+.lr-atlas .lr-guide-home-link { margin:8px 0 0; }

@@ -1,0 +1,56 @@
+{
+  "id": "6af9342e9b6477802a23ab4a",
+  "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
+  "name": "lander-rio-oficial",
+  "state": "ready",
+  "context": "production",
+  "title": "Build from drop deployment",
+  "created_at": "2026-11-15T04:25:18.806Z",
+  "updated_at": "2026-11-15T04:25:33.459Z",
+  "published_at": "2026-11-15T04:25:30.255Z",
+  "deploy_time": 10,
+  "build_id": "6af9342e9b6477802a23ab48",
+  "url": "https://landerrio.com.br",
+  "ssl_url": "https://landerrio.com.br",
+  "deploy_ssl_url": "https://6af9342e9b6477802a23ab4a--lander-rio-oficial.netlify.app",
+  "admin_url": "https://app.netlify.com/projects/lander-rio-oficial",
+  "error_message": null,
+  "required": [],
+  "required_functions": [],
+  "available_functions": [],
+  "summary": {
+    "status": "ready",
+    "messages": [
+      {
+        "type": "info",
+        "title": "95 new files uploaded",
+        "description": "68 generated pages and 27 assets changed.",
+        "details": "New pages include:\n- index.html\n- treino/index.html\n- politica-editorial/index.html\n- marcas/index.html\n- ferramentas/index.html\n- equipe/index.html\n- conteudos/index.html\n- enciclopedia/index.html\n- dieta/index.html\n- conteudos/planejar-compras-refeicoes-semana/index.html\n"
+      },
+      {
+        "type": "info",
+        "title": "21 redirect rules processed",
+        "description": "All redirect rules deployed without errors.",
+        "details": ""
+      },
+      {
+        "type": "info",
+        "title": "7 header rules processed",
+        "description": "All header rules deployed without errors.",
+        "details": ""
+      },
+      {
+        "type": "info",
+        "title": "No functions deployed",
+        "description": "This deploy did not include any functions. [Learn more about Netlify Functions](https://docs.netlify.com/functions/overview/)",
+        "details": null
+      },
+      {
+        "type": "info",
+        "title": "No edge functions deployed",
+        "description": "This deploy did not include any edge functions. [Learn more about Edge Functions](https://docs.netlify.com/edge-functions/overview/)",
+        "details": null
+      }
+    ]
+  }
+}

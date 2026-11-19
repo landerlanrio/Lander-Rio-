@@ -23,6 +23,15 @@ class Integrity(unittest.TestCase):
             try:
                 v.SITE=Path(d);(v.SITE/'photo.webp').write_bytes(b'RIFF\xff\xfeWEBP\x80');v.ISSUES.clear();v.verify_credentials();self.assertEqual(v.ISSUES,[])
             finally:v.SITE=original
+    def test_srcset_data_url_with_one_or_multiple_candidates(self):
+        only = list(v.srcset_urls('data:image/webp;base64,UklGRiwHAAABAA=='))
+        self.assertEqual(only, ['data:image/webp;base64,UklGRiwHAAABAA=='])
+        mixed = list(v.srcset_urls('data:image/webp;base64,AAAA 1x, /assets/known.webp 2x'))
+        self.assertEqual(mixed, ['data:image/webp;base64,AAAA', '/assets/known.webp'])
+        ordinary = list(v.srcset_urls('/a.webp 1x, /b.webp 2x'))
+        self.assertEqual(ordinary, ['/a.webp', '/b.webp'])
+        self.assertEqual(list(v.srcset_urls(' /a.webp, /b.webp ')), ['/a.webp', '/b.webp'])
+
     def test_overlay_checks_bytes_and_does_not_bless_tampering(self):
         original=v.SITE
         with tempfile.TemporaryDirectory() as d:

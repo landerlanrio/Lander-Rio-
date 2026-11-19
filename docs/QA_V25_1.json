@@ -1,0 +1,44 @@
+{
+  "version": "25.1",
+  "date": "2026-11-12",
+  "base": "Flagship v25 (PR #6, branch staging-based)",
+  "scope": "homepage-only design improvement",
+  "viewport_widths": [
+    320,
+    375,
+    390,
+    430,
+    768,
+    1024,
+    1440
+  ],
+  "results": {
+    "viewport_count": 7,
+    "no_horizontal_overflow": true,
+    "no_javascript_errors": true,
+    "no_commercial_card_overlap": true,
+    "brand_card_count": 14,
+    "hero_commercial_shortcut_count": 3,
+    "python_static_tests_passed": 28,
+    "rox_node_tests_passed": 8,
+    "carrousel_click_moves_mobile_desktop": true,
+    "distinct_wa_cta_profiles": true
+  },
+  "unverified": [
+    "physical Safari iOS",
+    "live preview deployment",
+    "Lighthouse/Core Web Vitals",
+    "production Netlify equivalence",
+    "CRM or WhatsApp conversation outcomes"
+  ],
+  "unchanged_legacy_pages": 80,
+  "production_changed": false,
+  "changed_files": [
+    "site/index.html",
+    "site/assets/flagship-v25-1.css",
+    "site/manifest-flagship-v25.json",
+    "scripts/test_flagship.py"
+  ],
+  "github_pr": "https://github.com/landerlanrio/Lander-Rio-/pull/7",
+  "release_target": "staging (draft PR, no deployment)"
+}

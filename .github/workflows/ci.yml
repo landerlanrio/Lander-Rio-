@@ -14,11 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.12'
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: '22'
       - name: Public repository secret and sensitive path guard
@@ -29,6 +31,12 @@ jobs:
         run: python3 scripts/verify_site.py
       - name: JavaScript syntax
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
+      - name: TITAN Flagship structural and semantic regression tests
+        run: python3 scripts/test_flagship.py
+      - name: Binary, manifest tampering and complete-site metadata regression
+        run: python3 scripts/test_integrity.py
+      - name: ROX, transport, Revenue and integration safety tests
+        run: node --experimental-strip-types --test scripts/*.test.cjs scripts/test_seo_metadata.cjs prototypes/rox-ai-v2/*.test.mjs prototypes/rox-ai-v2/preview-private/server.test.mjs revenue-intelligence/test-*.cjs
       - name: Read-only HTTP smoke tests
         run: python3 scripts/smoke_http.py
 

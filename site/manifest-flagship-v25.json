@@ -1,0 +1,20 @@
+{
+  "version": "26.0",
+  "base_manifest": "manifest-v23-10.json",
+  "scope": "Homepage reference-faithful mobile-first hero, editorial brand vault, filters and search; other 80 pages unchanged",
+  "files": {
+    "index.html": "feb69b7ead72a5901b14c0a405a1d68d1bb7f548ebae8dad17ffc3f0959ca0f6",
+    "assets/flagship-v25.css": "7d23303e10b8e219b041ed34abfd42f761e261a0eac6209a80b968d5f9943830",
+    "assets/rox-demo-v25.js": "fd6f4e7d544ef2471005e019a41fd291123d4d92400199278316653793ccb921",
+    "assets/flagship-hero-v25.webp": "f3accf0f7141aceca40ca939d15af01b3a293b5f06f2a61fb658e3537e0ec1f1",
+    "assets/flagship-hero-mobile-v25.webp": "8c79607b81bf7654b9fe9001c07ba6a9a8dce0dffb831ea5feae7e72882970ef",
+    "assets/flagship-nutrition-v25.webp": "524621159ebf47110a0b4493d9b4a369dec9b65527628d1d3bc2cf69fd3ff64e",
+    "assets/flagship-science-v25.webp": "8d8fbc046051ac6d9fee3dc687f5aa63baee3bead4a528d971972de84fd828d6",
+    "assets/lander-rio-lockup-v25.webp": "53b894278e25407593edd2c26d3caaeb00a56f460522dddccabe849b90d9953c",
+    "assets/lander-rio-symbol-v25.webp": "fd994a097616f6d15b0ee92803ec3578941389dab48acd435df9f0306c22a193",
+    "assets/flagship-v25-1.css": "8a24db459ed9b4a4d8f100de5704ab34857d786e71d38c3109088cd2116468dc",
+    "assets/v26-hero-reference.webp": "03d7d59adb4e297d34fb2f4347590180dc546ceef1c929a7fbc0230f3987ad98",
+    "assets/flagship-v26-reference.css": "46196e3d8b29fc3c9f18939a67fe426e90a66667e4fa05dbda311bb638f3cd9a",
+    "assets/brand-vault-v26.js": "d689223a6d16dcbfcdc144dc57a4d98d4dc2846e6793662ae12b3433b4b92543"
+  }
+}

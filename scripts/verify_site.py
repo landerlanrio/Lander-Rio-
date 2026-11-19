@@ -18,10 +18,22 @@ def fail(code, msg):
 
 
 def verify_manifest():
+    # Historic manifest stays immutable; every approved redesign byte is tracked
+    # in an additive overlay rather than weakening the original integrity check.
     manifest = json.loads((SITE/'manifest-v23-10.json').read_text(encoding='utf-8'))
-    records = manifest.get('files', {})
+    records = dict(manifest.get('files', {}))
+    manifest_files = {'manifest-v23-10.json'}
+    for overlay_name in ('manifest-flagship-v25.json', 'manifest-openseo-20261112.json', 'manifest-titan-v1.json'):
+        overlay_path = SITE/overlay_name
+        if not overlay_path.is_file():
+            continue
+        overlay = json.loads(overlay_path.read_text(encoding='utf-8'))
+        if overlay.get('base_manifest') != 'manifest-v23-10.json':
+            fail('bad-overlay-base', overlay_name)
+        records.update(overlay.get('files', {}))
+        manifest_files.add(overlay_name)
     actual = {p.relative_to(SITE).as_posix() for p in SITE.rglob('*') if p.is_file()}
-    expected = set(records) | {'manifest-v23-10.json'}
+    expected = set(records) | manifest_files
     for extra in sorted(actual - expected): fail('untracked', extra)
     for missing in sorted(expected - actual): fail('missing', missing)
     for rel, recorded in records.items():
@@ -158,7 +170,8 @@ def main():
     json_count=verify_json()
     verify_credentials()
     release=json.loads((SITE/'release.json').read_text())
-    if release.get('version') != '23.10':fail('unexpected-version',str(release.get('version')))
+    expected_version = 'titan-1.0.0-rc1' if (SITE/'manifest-titan-v1.json').is_file() else '23.10'
+    if release.get('version') != expected_version:fail('unexpected-version',str(release.get('version')))
     if html_count != 81:fail('unexpected-pages',str(html_count))
     print(json.dumps({'status':'PASS' if not ISSUES else 'FAIL',
          'version':release.get('version'),'manifest_verified_sha256':manifest_count,

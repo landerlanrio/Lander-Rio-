@@ -31,7 +31,7 @@ class Flagship(unittest.TestCase):
             u=urlsplit(a['href']);self.assertEqual(u.scheme,'https');self.assertEqual(u.netloc,'wa.me');self.assertEqual(u.path,'/5521920043538');self.assertIn('text',parse_qs(u.query));self.assertIn('noopener',a.get('rel',''))
         self.assertEqual(len({a['href'] for a in hero}),2)
     def test_original_routes_preserved(self):
-        self.assertEqual(len(list(SITE.rglob('*.html'))),88)
+        self.assertEqual(len(list(SITE.rglob('*.html'))),106)
         for x in ('treino','dieta','atacado','varejo','conteudos','enciclopedia','marcas','ferramentas','sobre','contato'):
             self.assertIn('href="/'+x+'/"',self.html);self.assertTrue((SITE/x/'index.html').is_file())
     def test_images_have_dimensions_and_local_sources(self):

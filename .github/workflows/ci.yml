@@ -23,7 +23,15 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: '22'
-      - name: Check manifest, JSON and paths
+      - name: Check SHA-256 manifest integrity
+        run: python3 scripts/release_gate.py manifest
+      - name: Check local references (HTML, CSS)
+        run: python3 scripts/release_gate.py references
+      - name: Check sitemap and JSON format
+        run: python3 scripts/release_gate.py metadata
+      - name: Check credentials and exposed secrets
+        run: python3 scripts/release_gate.py security
+      - name: Check release metadata and full site integrity
         run: python3 scripts/verify_site.py
       - name: JavaScript syntax
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check

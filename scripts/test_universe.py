@@ -28,7 +28,8 @@ class Universe(unittest.TestCase):
     def test_indexable_sitemap_matches_robots_and_canonical(self):
         ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
         urls=[e.text for e in ET.parse(S/'sitemap.xml').findall('.//s:loc',ns)]
-        self.assertEqual(len(urls),46); self.assertEqual(len(urls),len(set(urls)))
+        expected_count = 59 if (S/'manifest-digital-flagship-2026-rc14.3.json').exists() else 46
+        self.assertEqual(len(urls), expected_count); self.assertEqual(len(urls),len(set(urls)))
         for url in urls:
             p=S/urlsplit(url).path.lstrip('/')
             p=(p/'index.html') if p.is_dir() else p if p.exists() else p.with_suffix('.html')

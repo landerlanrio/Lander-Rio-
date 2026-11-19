@@ -1,0 +1,11 @@
+{
+  "version": "24.1",
+  "base_manifest": "manifest-v23-10.json",
+  "scope": "Flagship homepage override; legacy release.json deliberately unchanged",
+  "files": {
+    "index.html": "aff502012555ba137379de85886a8f6f9babb830f56e37e2cf1f9da3a5d6afda",
+    "assets/flagship-v24.css": "e9d32ca25cfcf36effeb0bae1fe2273dd84452a247e04ea1f5d7b10f62a03e04",
+    "assets/rox-demo-v24.js": "72368083dd9e88420475133f96c8c9b357f467a01185f064b6e4820c6ef09b07",
+    "assets/lander-official-lockup-v25.webp": "c8fb6500ec24b6cb5cf2c3cb876940d5ef61408f243866aa4ddeb99e8a2eb0fa"
+  }
+}

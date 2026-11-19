@@ -1,91 +1,84 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 let upstreamCalls = 0;
-let exposedHandler;
-let settings = new Map();
-globalThis.Deno = {
-  env: { get(name) { return settings.get(name); } },
-  serve(fn) { exposedHandler = fn; },
-};
-globalThis.fetch = async () => { upstreamCalls++; throw new Error('Unexpected paid provider call'); };
-const module = await import('../supabase/functions/lander-content-studio-staging/index.ts');
-const { validateInput, isSafeEditorialTopic, selectedModel, enabled, tokenMatches, estimatedCostUsd } = module;
-const safe = { format: 'reel', topic: 'Biomecânica para hipertrofia dos ombros', audience: 'fitness', source_facts: [] };
+let reserveCalls = 0;
+let handler;
+let vars = new Map();
+let reserveOk = true;
+const fakeSecret='dev-not-real';
+globalThis.Deno = { env: { get(name) { return vars.get(name); } }, serve(fn) { handler = fn; } };
+const data={format:'reel',topic:'Técnica de agachamento sem sobrecarregar os joelhos',audience:'fitness',source_facts:[]};
+const setValid = () => vars = new Map([
+  ['LANDER_STUDIO_ENABLED','true'], ['LANDER_STUDIO_BUDGET_APPROVED','true'],
+  ['OPENAI_API_KEY','fake-openai-key'], ['LANDER_STUDIO_INTERNAL_TOKEN',fakeSecret],
+  ['LANDER_STUDIO_MODEL','gpt-6.2-sol'], ['SUPABASE_URL','https://testing.supabase.co'],
+  ['SUPABASE_SERVICE_ROLE_KEY','fake-database-secret'],
+]);
+const mock = () => { upstreamCalls=0; reserveCalls=0;globalThis.fetch = async (url,opts) => {
+  if (String(url).endsWith('/rpc/lander_ai_reserve_staging')) {
+    reserveCalls++;
+    const body=JSON.parse(opts.body);
+    assert.equal(body.p_service,'content-studio-staging');
+    assert.equal(body.p_reserved_micro_usd,65000);
+    assert.equal(opts.headers.apikey,'fake-database-secret');
+    return new Response(JSON.stringify(reserveOk), {status:200,headers:{'content-type':'application/json'}});
+  }
+  assert.equal(url,'https://api.openai.com/v1/responses');
+  upstreamCalls++;
+  const outbound=JSON.parse(opts.body);
+  assert.equal(outbound.model,'gpt-6.2-sol');
+  assert.equal(outbound.store,false);
+  assert.equal(outbound.reasoning.effort,'low');
+  assert.equal(outbound.max_output_tokens,1800);
+  return new Response(JSON.stringify({usage:{input_tokens:1000,output_tokens:500},output:[{type:'message',content:[{type:'output_text',text:JSON.stringify({title:'Roteiro',hook:'Gancho',script:'Texto',shots:[],caption:'Legenda',cta:'Leia mais',hashtags:[],claims_to_verify:[]})}]}]}),{status:200});
+};};
+mock();
+const m=await import('../supabase/functions/lander-content-studio-staging/index.ts');
+const req=(token=fakeSecret)=>new Request('https://testing.supabase.co/functions/v1/lander-content-studio-staging/generate',{method:'POST',headers:{'content-type':'application/json','x-lander-internal-token':token},body:JSON.stringify(data)});
 
-test('input parser accepts safe, structured drafts', () => {
-  assert.equal(validateInput(safe).ok, true);
-  assert.equal(validateInput({ ...safe, format: 'other' }).ok, false);
-  assert.equal(validateInput({ ...safe, source_facts: Array(7).fill('abc') }).ok, false);
+test('valid topic and schema',()=>{
+  assert.equal(m.validateInput(data).ok,true);
+  assert.equal(m.validateInput({...data,format:'fake'}).ok,false);
+  assert.equal(m.validateInput({...data,source_facts:Array(7).fill('abc')}).ok,false);
+  assert.equal(m.isSafeEditorialTopic('Vender tirzepatida'),false);
+  assert.equal(m.isSafeEditorialTopic('fale com x@y.com'),false);
 });
-test('rejects private contact info and restricted drug marketing topics', () => {
-  assert.equal(isSafeEditorialTopic('Venda de tirzepatida 15mg'), false);
-  assert.equal(isSafeEditorialTopic('fale com x@y.com'), false);
-  assert.equal(isSafeEditorialTopic('Melhorar a execução do agachamento'), true);
+test('denies missing budget gates, key, model, internal token, or database secret',()=>{
+  vars.clear();assert.equal(m.enabled(),false);
+  setValid();assert.equal(m.enabled(),true);
+  for(const k of ['LANDER_STUDIO_BUDGET_APPROVED','OPENAI_API_KEY','LANDER_STUDIO_MODEL','LANDER_STUDIO_INTERNAL_TOKEN','SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY']){
+    const v=vars.get(k);vars.delete(k);assert.equal(m.enabled(),false,k);vars.set(k,v);
+  }
+  vars.clear();
 });
-test('gate defaults to disabled and missing model rejected', () => {
-  assert.equal(selectedModel(), null);
-  assert.equal(enabled(), false);
+test('disabled endpoint cannot spend credits',async()=>{
+  vars.clear();mock();const r=await handler(req());assert.equal(r.status,503);assert.equal(upstreamCalls,0);assert.equal(reserveCalls,0);
 });
-test('gate stays disabled until all settings exist', () => {
-  settings = new Map([['LANDER_STUDIO_ENABLED','true'],['OPENAI_API_KEY','fake'],['LANDER_STUDIO_INTERNAL_TOKEN','dev-secret'],['LANDER_STUDIO_MODEL','gpt-6.2-sol']]);
-  assert.equal(enabled(), false);
-  settings.set('LANDER_STUDIO_BUDGET_APPROVED','true');
-  assert.equal(enabled(), true);
-  settings.set('LANDER_STUDIO_MODEL','made-up');
-  assert.equal(enabled(), false);
-  settings.clear();
+test('health discloses no secrets and reports hard quota',async()=>{
+  vars.clear();const r=await handler(new Request('https://testing.supabase.co/functions/v1/lander-content-studio-staging/health'));
+  assert.equal(r.status,200);const o=await r.json();assert.equal(o.ready,false);assert.equal(o.lifetime_staging_budget_usd,1);
+  assert.equal(JSON.stringify(o).includes('fake'),false);
 });
-test('internal secret matching', () => {
-  assert.equal(tokenMatches('abc','abc'), true);
-  assert.equal(tokenMatches('abc','abd'), false);
-  assert.equal(tokenMatches('',''), false);
+test('internal token blocks before reservation',async()=>{
+  setValid();mock();const r=await handler(req('wrong'));assert.equal(r.status,403);assert.equal(upstreamCalls,0);assert.equal(reserveCalls,0);vars.clear();
 });
-test('token cost calculation is arithmetically correct', () => {
-  assert.equal(estimatedCostUsd('gpt-6.2-sol',1000,500),0.007);
-  assert.equal(estimatedCostUsd('invalid',1000,500),null);
+test('quota denies paid model even when all keys present',async()=>{
+  setValid();mock();reserveOk=false;const r=await handler(req());assert.equal(r.status,429);assert.equal(reserveCalls,1);assert.equal(upstreamCalls,0);reserveOk=true;vars.clear();
 });
-test('POST with default-disabled gates never calls paid provider', async () => {
-  settings.clear();
-  const req = new Request('https://example.test/functions/v1/lander-content-studio-staging/generate', { method: 'POST', headers:{'content-type':'application/json'}, body:JSON.stringify(safe) });
-  const r = await exposedHandler(req);
-  assert.equal(r.status,503);
-  assert.equal(upstreamCalls,0);
+test('database outage fails closed (no paid requests)',async()=>{
+  setValid();mock();globalThis.fetch=async()=>{throw Error('no connection')};
+  const r=await handler(req());assert.equal(r.status,429);assert.equal(upstreamCalls,0);vars.clear();mock();
 });
-test('health reflects disabled state without exposing secrets', async () => {
-  settings.clear();
-  const res = await exposedHandler(new Request('https://example.test/functions/v1/lander-content-studio-staging/health'));
-  const body = await res.json();
-  assert.equal(body.ready,false);
-  assert.equal(body.paid_calls_allowed,false);
-  assert.equal(JSON.stringify(body).includes('fake'),false);
+test('only reserved calls reach the provider, responses are drafts',async()=>{
+  setValid();mock();const r=await handler(req());const o=await r.json();assert.equal(r.status,200);assert.equal(o.published,false);assert.equal(o.stage,'editorial_review_required');assert.equal(o.usage.estimated_standard_model_cost_usd,0.007);
+  assert.equal(upstreamCalls,1);assert.equal(reserveCalls,1);vars.clear();
 });
-
-
-test('enabled gate rejects unauthorized internal token before provider call', async () => {
-  settings = new Map([['LANDER_STUDIO_ENABLED','true'],['LANDER_STUDIO_BUDGET_APPROVED','true'], ['OPENAI_API_KEY','test-not-real'],['LANDER_STUDIO_INTERNAL_TOKEN','test-secret'],['LANDER_STUDIO_MODEL','gpt-6.2-sol']]);
-  const r = await exposedHandler(new Request('https://example.test/functions/v1/lander-content-studio-staging/generate', { method: 'POST', headers: { 'content-type':'application/json', 'x-lander-internal-token':'wrong' }, body: JSON.stringify(safe) }));
-  assert.equal(r.status,403);
-  assert.equal(upstreamCalls,0);
-  settings.clear();
+test('fixed prices correspond to approved model and model allowlist',()=>{
+  assert.equal(m.estimatedCostUsd('gpt-6.2-sol',1000,500),.007);
+  assert.equal(m.estimatedCostUsd('no-model',1000,500),null);
+  vars.set('LANDER_STUDIO_MODEL','some-random-model');assert.equal(m.selectedModel(),null);vars.clear();
 });
-
-test('successful provider response is structured, unposted and metered', async () => {
-  settings = new Map([['LANDER_STUDIO_ENABLED','true'],['LANDER_STUDIO_BUDGET_APPROVED','true'],['OPENAI_API_KEY','test-not-real'],['LANDER_STUDIO_INTERNAL_TOKEN','test-secret'],['LANDER_STUDIO_MODEL','gpt-6.2-sol']]);
-  globalThis.fetch = async (_, opts) => {
-    upstreamCalls++;
-    const outbound = JSON.parse(opts.body);
-    assert.equal(outbound.model,'gpt-6.2-sol');
-    assert.equal(outbound.store,false);
-    assert.equal(outbound.reasoning.effort,'low');
-    assert.equal(outbound.text.format.type,'json_schema');
-    return new Response(JSON.stringify({ usage:{input_tokens:1000, output_tokens:500}, output:[{type:'message',content:[{type:'output_text',text:JSON.stringify({title:'Um treino melhor',hook:'Uma pergunta',script:'Script',shots:[],caption:'Texto',cta:'Veja mais',hashtags:[],claims_to_verify:[]})}]}] }), { status: 200 });
-  };
-  const r = await exposedHandler(new Request('https://example.test/functions/v1/lander-content-studio-staging/generate', { method:'POST',headers:{'content-type':'application/json','x-lander-internal-token':'test-secret'},body:JSON.stringify(safe) }));
-  const out = await r.json();
-  assert.equal(r.status,200);
-  assert.equal(out.published,false);
-  assert.equal(out.stage,'editorial_review_required');
-  assert.equal(out.usage.estimated_standard_model_cost_usd,0.007);
-  assert.equal(upstreamCalls,1);
-  settings.clear();
+test('rejects malformed JSON and oversized or private content before reserving',async()=>{
+  setValid();mock();const r=await handler(new Request('https://testing.supabase.co/functions/v1/lander-content-studio-staging/generate',{method:'POST',headers:{'content-type':'application/json','x-lander-internal-token':fakeSecret},body:JSON.stringify({...data,topic:'vender HGH'})}));
+  assert.equal(r.status,422);assert.equal(upstreamCalls,0);assert.equal(reserveCalls,0);vars.clear();
 });

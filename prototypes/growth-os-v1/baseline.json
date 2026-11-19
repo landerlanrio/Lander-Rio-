@@ -1,0 +1,103 @@
+{
+  "title": "LANDER RIO — GROWTH OS 1.0 | staging baseline",
+  "generatedOn": "2026-11-19",
+  "period": {
+    "ga4": "2026-10-20/2026-11-18",
+    "gsc": "2026-10-20/2026-11-16"
+  },
+  "provenance": {
+    "ga4": "OpenSEO connected GA4, property 548953010",
+    "gsc": "OpenSEO connected GSC, sc-domain:landerrio.com.br",
+    "audit": "OpenSEO crawl 0e595bb9-9f2b-4fe9-9cc3-1eb19f500cdc, completed 2026-11-14"
+  },
+  "ga4": {
+    "sessions": 81,
+    "generateLeadEvents": 31,
+    "generateLeadUsers": 29,
+    "trackedTransactions": 0,
+    "purchaseRevenueBRL": 0,
+    "note": "GA4 events do not verify WhatsApp conversations or commercial qualified leads. GA4 timezone America/Rio_Branco."
+  },
+  "channels": [
+    {
+      "name": "Organic Search",
+      "sessions": 24
+    },
+    {
+      "name": "Direct",
+      "sessions": 19
+    },
+    {
+      "name": "Referral",
+      "sessions": 19
+    },
+    {
+      "name": "Organic Social",
+      "sessions": 13
+    },
+    {
+      "name": "AI Assistant",
+      "sessions": 6
+    }
+  ],
+  "gscPages": [
+    {
+      "url": "https://landerrio.com.br/",
+      "clicks": 27,
+      "impressions": 172,
+      "position": 7.2
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/life-peptideos/",
+      "clicks": 17,
+      "impressions": 181,
+      "position": 4.8
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/landerlan/",
+      "clicks": 8,
+      "impressions": 206,
+      "position": 8.7
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/cooper-pharma/",
+      "clicks": 7,
+      "impressions": 172,
+      "position": 9
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/geniqs-pharma/",
+      "clicks": 7,
+      "impressions": 131,
+      "position": 3
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/landerlan-gold/",
+      "clicks": 6,
+      "impressions": 257,
+      "position": 5
+    },
+    {
+      "url": "https://landerrio.com.br/marcas/muscle-labs-india/",
+      "clicks": 6,
+      "impressions": 151,
+      "position": 8.1
+    }
+  ],
+  "audit": {
+    "pagesCrawled": 50,
+    "urlsNotCrawled": 33,
+    "issues": {
+      "critical": 0,
+      "warnings": 1,
+      "info": 5
+    },
+    "lighthouseValidScores": false
+  },
+  "releaseControl": {
+    "officialNetlifyDeploy": "6afe96a8a12db106eae1b9cd",
+    "productionTouched": false,
+    "apiModelCalled": false,
+    "operationalStatus": "read-only baseline"
+  }
+}

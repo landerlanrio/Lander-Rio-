@@ -1,6 +1,8 @@
 # LANDER RIO — PERFORMANCE CULTURE
 
-Repositório **privado** de versionamento do site oficial `https://landerrio.com.br`.
+Repositório **público** de versionamento do site oficial `https://landerrio.com.br`.
+
+**Atenção:** a visibilidade pública alcança as branches e o histórico Git. Este repositório não é uma fonte autoritativa de dados comerciais, conversas ou credenciais. A publicação do site continua sujeita a conferência do ZIP efetivamente implantado no Netlify e aprovação específica de produção.
 
 ## Estado da migração
 
@@ -16,7 +18,7 @@ A conta GitHub foi autorizada. O pacote de recuperação **v23.10** está prepar
 
 ## Segurança operacional
 
-1. Manter este repositório **Private**.
+1. Manter **segredos, tokens, credenciais, arquivos `.env` reais, dados pessoais e bases de clientes fora de todos os branches, commits e artefatos públicos**.
 2. Importar a cópia validada em `staging`, conservando o histórico no branch de recuperação.
 3. Executar os testes automatizados antes de qualquer merge em `main`.
 4. Não ativar deploy automático na Netlify em produção sem homologação, aprovação e plano de rollback.

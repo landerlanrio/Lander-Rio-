@@ -1,7 +1,13 @@
 import { createCaptureHandler } from '../../commercial-capture/core.mjs';
+import { createEdgeBridge } from '../../commercial-capture/edge-bridge.mjs';
 import { createSupabaseStore } from '../../commercial-capture/supabase-store.mjs';
 export default async request=>{
  try{
+  const edgeEndpoint=Netlify.env.get('COMMERCIAL_EDGE_ENDPOINT'),edgeKey=Netlify.env.get('COMMERCIAL_EDGE_ANON_KEY');
+  if(edgeEndpoint||edgeKey){
+   if(Netlify.env.get('COMMERCIAL_SUPABASE_URL')||Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY'))throw Error('ambiguous_capture_configuration');
+   return await createEdgeBridge({endpoint:edgeEndpoint,key:edgeKey,origin:Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN')})(request);
+  }
   const store=createSupabaseStore({url:Netlify.env.get('COMMERCIAL_SUPABASE_URL'),key:Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY')});
   const origin=Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN');
   let allowedOrigins;

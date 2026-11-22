@@ -20,6 +20,8 @@ create table if not exists public.commercial_requests (
 );
 alter table public.commercial_requests enable row level security;
 revoke all on public.commercial_requests from public,anon,authenticated;
+-- Supabase may grant ALL to service_role through default privileges. Reset explicitly.
+revoke all on public.commercial_requests from service_role;
 grant select,insert,update on public.commercial_requests to service_role;
 create index if not exists commercial_requests_pending on public.commercial_requests(created_at) where crm_status='pending';
 create or replace function public.capture_commercial_request(p_record jsonb) returns jsonb

@@ -14,7 +14,7 @@ files={};replaces={}
 for path in sorted(SITE.rglob('*')):
  if not path.is_file():continue
  rel=path.relative_to(SITE).as_posix()
- if path.name.startswith('manifest-') or rel==TARGET:continue
+ if (path.name.startswith('manifest-') and rel!='manifest-digital-flagship-2026-rc14.2.json') or rel==TARGET:continue
  if path.is_symlink():raise SystemExit('Symlink forbidden: '+rel)
  original=subprocess.run(['git','show',BASE_REF+':site/'+rel],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
  current=path.read_bytes()

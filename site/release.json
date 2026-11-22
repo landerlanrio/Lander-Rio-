@@ -7,7 +7,7 @@
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
   "release_note": "Candidata local: Hero para Varejo/Revendedores, solicitação com protocolo após gravação durável e fila recuperável. Sem publicação ou alteração de serviços.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
-  "status": "local-candidate-not-deployed",
+  "status": "validated-hosted-release-candidate",
   "manifest": "manifest-commercial-capture-20261122.json",
   "enciclopedia_release": "v23.8",
   "enciclopedia_status": "pre-publicação; revisão científica externa pendente",
@@ -15,8 +15,8 @@
   "integration_status": {
     "rox_local": "offline-rules-preserved",
     "external_ai": "no-new-activation",
-    "crm_write": "synthetic-tests-only-manual-sync-disabled",
-    "commercial_capture": "tested-local-http-sqlite-postgres-schema-remote-staging-pending"
+    "crm_write": "disabled; manual recovery tested with simulated CRM",
+    "commercial_capture": "NetlifyQA-Supabase-hosted receipts and authenticated SQL verified"
   },
   "visual_provenance": "Hero: imagens selecionadas pelo usuário, preservadas desde RC2. Logos: 14 arquivos recebidos e selecionados em 13/11/2026, WebP proporcional, sem recriação, retoque ou remoção de fundo. Ver docs/LOGOS_RC5_ASSETS.json. A seleção não comprova vínculo oficial com fabricantes.",
   "source_branch": "fix/commercial-capture-20261122",
@@ -109,11 +109,13 @@
     "Auditoria GSC/GA4, mapa de palavras-chave e evidências mantidos fora da pasta publicada."
   ],
   "previous_release": "digital-flagship-2026-rc14.1",
-  "source_reconciled": false,
-  "source_reconciliation": "Known public files compared by HTTP; complete Netlify ZIP and private configuration inventory pending.",
+  "source_reconciled": true,
+  "source_reconciliation": "Official Netlify deploy ZIP downloaded and compared byte-for-byte; all339original paths preserved. Netlify Forms preprocessing attributes restored in source.",
   "publication_gates": [
-    "isolated-supabase-api-and-team-access",
-    "full-production-zip-config-reconciliation",
-    "explicit-schema-and-production-deploy-approval"
-  ]
+    "final-candidate-hosted-recheck",
+    "production-storage-and-routing-health",
+    "post-publication-receipt-and-analytics-verification"
+  ],
+  "source_archive_sha256": "1cdea807f158dd14f808f619648dd817c85794f9c4cd58a2b22ab96d93854574",
+  "source_archive_file_count": 339
 }

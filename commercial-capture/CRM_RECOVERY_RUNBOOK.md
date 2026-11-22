@@ -37,6 +37,8 @@ Se o processo parar, o prazo permite recuperar a reserva. Não mudar os campos d
 
 ## 3. Reutilizar ou criar um único contato
 
+Antes de usar o CRM real, conferir capacidade, permissões e workflows existentes no portal correto. Criar ou atualizar um contato pode inscrevê-lo em automações já configuradas fora deste código. Se essa inscrição puder gerar saída não autorizada ou não puder ser verificada, manter a solicitação pendente; não executar o upsert como teste. Este guia não autoriza ativar ou modificar workflows.
+
 O adapter preparado usa `POST /crm/v3/objects/contacts/batch/upsert`, com `idProperty: email`, o mesmo e-mail normalizado como `id` e apenas `properties: {email}`. Ele não usa um `POST` de criação cego a cada tentativa e não sobrescreve o nome já curado no CRM.
 
 Antes de uma ação humana, conferir o e-mail no CRM. Um contato existente é reutilizado pelo seu ID. Identidade ambígua, e-mails alternativos ou múltiplos resultados exigem resolver a identificação antes de criar: a solicitação permanece pendente. Quando um contato não existe e o upsert retorna um ID, esse ID é a evidência a associar.

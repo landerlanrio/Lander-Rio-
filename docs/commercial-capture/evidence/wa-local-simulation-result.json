@@ -1,0 +1,16 @@
+{
+  "version": "2.1.1-analysis.2",
+  "environment": "local pure engine copied from deployed Edge Function",
+  "id": "LR-QA-20261122-WA-001",
+  "checks": 8,
+  "classification": "wholesale",
+  "contacts": 1,
+  "conversations": 1,
+  "inboundMessages": 1,
+  "control": "human",
+  "owner": "business_app",
+  "drafts": 0,
+  "jobs": 0,
+  "externalRequests": 0,
+  "result": "passed"
+}

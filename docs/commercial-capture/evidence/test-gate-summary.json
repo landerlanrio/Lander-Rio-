@@ -1,0 +1,92 @@
+[
+  {
+    "check": "manifest",
+    "code": 0,
+    "seconds": 0.08
+  },
+  {
+    "check": "html",
+    "code": 0,
+    "seconds": 0.32
+  },
+  {
+    "check": "css",
+    "code": 0,
+    "seconds": 0.04
+  },
+  {
+    "check": "metadata",
+    "code": 0,
+    "seconds": 0.05
+  },
+  {
+    "check": "security",
+    "code": 0,
+    "seconds": 0.09
+  },
+  {
+    "check": "verify",
+    "code": 0,
+    "seconds": 0.4
+  },
+  {
+    "check": "syntax",
+    "code": 0,
+    "seconds": 1.51
+  },
+  {
+    "check": "flagship",
+    "code": 0,
+    "seconds": 0.1
+  },
+  {
+    "check": "integrity",
+    "code": 0,
+    "seconds": 0.25
+  },
+  {
+    "check": "indexability-audit",
+    "code": 0,
+    "seconds": 0.29
+  },
+  {
+    "check": "indexability",
+    "code": 0,
+    "seconds": 0.13
+  },
+  {
+    "check": "universe",
+    "code": 0,
+    "seconds": 0.63
+  },
+  {
+    "check": "rc10",
+    "code": 0,
+    "seconds": 0.23
+  },
+  {
+    "check": "brands",
+    "code": 0,
+    "seconds": 0.12
+  },
+  {
+    "check": "diamond",
+    "code": 0,
+    "seconds": 0.11
+  },
+  {
+    "check": "node",
+    "code": 0,
+    "seconds": 1.09
+  },
+  {
+    "check": "http",
+    "code": 0,
+    "seconds": 0.64
+  },
+  {
+    "check": "package-tests",
+    "code": 0,
+    "seconds": 0.1
+  }
+]

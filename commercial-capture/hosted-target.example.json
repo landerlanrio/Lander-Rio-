@@ -1,0 +1,12 @@
+{
+  "qa_origin": "https://lander-rio-commercial-hml-20261122.netlify.app",
+  "netlify_site_id": "3075d60e-df1e-4664-b5c5-9fbd3a189dc3",
+  "netlify_deploy_id": null,
+  "supabase_project_id": "riplqdzgwlggvhbznovm",
+  "upstream_capture_url": null,
+  "capture_path": "/api/commercial/lead",
+  "health_path": "/api/commercial/health",
+  "source_commit": null,
+  "configuration_verified_at": null,
+  "confirmed_isolated_environment": false
+}

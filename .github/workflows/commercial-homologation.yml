@@ -2,7 +2,7 @@ name: Commercial capture - isolated homologation
 
 on:
   pull_request:
-    branches: [release/flagship-mobile-qa-20261119]
+    branches: [main, release/flagship-mobile-qa-20261119]
     types: [opened, synchronize, reopened, ready_for_review]
   workflow_dispatch:
 

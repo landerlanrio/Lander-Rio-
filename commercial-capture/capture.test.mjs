@@ -67,6 +67,9 @@ test('actual Netlify function fails closed without env and calls configured RPC 
   globalThis.Netlify={env:{get:key=>({COMMERCIAL_SUPABASE_URL:'https://synthetic.supabase.co',COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY:'synthetic-server-only-secret'})[key]}};
   let hit=0;globalThis.fetch=async(url,opts)=>{assert.equal(url,'https://synthetic.supabase.co/rest/v1/rpc/capture_commercial_request');assert.equal(opts.headers.apikey,'synthetic-server-only-secret');hit++;return Response.json({saved:true,receipt:'LR-'+randomUUID().replaceAll('-','').toUpperCase(),duplicate:false,crm_status:'pending'});};
   const response=await handler(request(data()));assert.equal(response.status,201);assert.equal(hit,1);assert.doesNotMatch(await response.text(),/secret|supabase/);
+  globalThis.Netlify={env:{get:key=>({COMMERCIAL_SUPABASE_URL:'https://synthetic.supabase.co',COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY:'synthetic-server-only-secret',COMMERCIAL_ALLOWED_ORIGIN:'https://isolated.example.test'})[key]}};
+  const stagingRequest=new Request('https://isolated.example.test/api/commercial/lead',{method:'POST',headers:{origin:'https://isolated.example.test','content-type':'application/json'},body:JSON.stringify(data())});
+  assert.equal((await handler(stagingRequest)).status,201);assert.equal((await handler(request(data()))).status,403);
   assert.equal(config.path,'/api/commercial/lead');assert.equal(config.rateLimit.windowLimit,10);
  }finally{globalThis.Netlify=oldNetlify;globalThis.fetch=oldFetch;}
 });

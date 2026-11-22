@@ -8,7 +8,7 @@ The current production Varejo/Atacado pages open WhatsApp only. Tool-registratio
 
 First submission returns 201, same request and content returns 200 with `duplicate:true`, changed content for same ID returns 409. Confirmation is issued only after the RPC transaction/SQLite transaction commits. Storage error/timeout returns 503. CRM is outside this transaction: accepted requests remain `pending`, so the browser does not claim CRM success. No scheduler, outbound messages, or CRM writes run on capture.
 
-Netlify function reads `COMMERCIAL_SUPABASE_URL` and `COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY` from runtime environment, never browser code. Preview must point at an isolated database with the reviewed schema, not the production project. Without settings, it fails closed with 503. Node 24 runtime supported; no external package dependencies.
+Netlify function reads `COMMERCIAL_SUPABASE_URL` and `COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY` from runtime environment, never browser code. Preview must point at an isolated database with the reviewed schema, not the production project. Without settings, it fails closed with 503. An isolated preview must set `COMMERCIAL_ALLOWED_ORIGIN` to its exact HTTPS origin (no path or trailing slash); if set, only that origin is accepted. Defaults accept only the two official production origins. Configure preview environment scopes separately and confirm the database URL/project identity and credentials belong to staging before opening the preview. Node 24 runtime supported; no external package dependencies.
 
 ## Local QA (synthetic data only)
 

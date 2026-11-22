@@ -5,7 +5,7 @@ from io import BytesIO
 import argparse, hashlib, json, re, subprocess, tarfile
 from urllib.parse import urlsplit
 
-BASE='8d0abe8'
+BASE='bf22cf4575929530359cce74fefd7669a5794c65'
 SITE_ID='3075d60e-df1e-4664-b5c5-9fbd3a189dc3'
 ORIGIN='https://lander-rio-commercial-hml-20261122.netlify.app'
 EDGE='https://riplqdzgwlggvhbznovm.supabase.co/functions/v1/commercial-capture-hml'
@@ -13,7 +13,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def sha(data):return hashlib.sha256(data).hexdigest()
 def main():
- p=argparse.ArgumentParser();p.add_argument('--out',type=Path,default=Path('/workspace/lander-hosted-qa'));p.add_argument('--source-commit',default=BASE);args=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--out',type=Path,default=Path('/workspace/lander-hosted-qa-v2'));p.add_argument('--source-commit',default=BASE);args=p.parse_args()
  out=args.out.resolve()
  if out.exists() and any(out.iterdir()):raise SystemExit('Refusing a nonempty output directory: '+str(out))
  if out==ROOT or ROOT.is_relative_to(out):raise SystemExit('Output must be independent of the source repository')
@@ -55,11 +55,21 @@ def main():
  lead.write_text('''import {createEdgeBridge} from '../../commercial-capture/edge-bridge.mjs';
 export default async request=>{
  try{
-  if(Netlify.env.get('COMMERCIAL_SUPABASE_URL')||Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY'))throw Error('direct_rpc_disabled_in_qa');
-  return await createEdgeBridge({endpoint:Netlify.env.get('COMMERCIAL_EDGE_ENDPOINT'),key:Netlify.env.get('COMMERCIAL_EDGE_ANON_KEY'),origin:Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN')})(request);
+  if(Netlify.env.get('COMMERCIAL_EDGE_ENVIRONMENT')!=='isolated-staging'||Netlify.env.get('COMMERCIAL_SUPABASE_URL')||Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY')||Netlify.env.get('COMMERCIAL_DIRECT_FIXTURE'))throw Error('isolated_qa_configuration_required');
+  return await createEdgeBridge({endpoint:Netlify.env.get('COMMERCIAL_EDGE_ENDPOINT'),key:Netlify.env.get('COMMERCIAL_EDGE_ANON_KEY'),origin:Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN'),environment:'isolated-staging'})(request);
  }catch{return Response.json({ok:false,error:'temporarily_unavailable'},{status:503,headers:{'cache-control':'no-store','x-robots-tag':'noindex, nofollow, noarchive'}});}
 };
 export const config={path:'/api/commercial/lead',method:['POST'],rateLimit:{action:'rate_limit',aggregateBy:['domain','ip'],windowSize:60,windowLimit:10}};
+''')
+ health=out/'netlify/functions/commercial-health.mjs'
+ health.write_text('''import {createEdgeHealth} from '../../commercial-capture/edge-bridge.mjs';
+export default async request=>{
+ try{
+  if(Netlify.env.get('COMMERCIAL_EDGE_ENVIRONMENT')!=='isolated-staging'||Netlify.env.get('COMMERCIAL_SUPABASE_URL')||Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY')||Netlify.env.get('COMMERCIAL_DIRECT_FIXTURE'))throw Error('isolated_qa_configuration_required');
+  return await createEdgeHealth({endpoint:Netlify.env.get('COMMERCIAL_EDGE_ENDPOINT'),key:Netlify.env.get('COMMERCIAL_EDGE_ANON_KEY'),origin:Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN'),environment:'isolated-staging'})(request);
+ }catch{return Response.json({ok:false,error:'temporarily_unavailable'},{status:503,headers:{'cache-control':'no-store','x-robots-tag':'noindex, nofollow, noarchive'}});}
+};
+export const config={path:'/api/commercial/health',method:['GET']};
 ''')
  deny='''// QA only. No outbound calls, credentials, form writes or production forwarding.
 export default async ()=>Response.json({ok:false,error:'disabled_in_isolated_qa'},{status:503,headers:{'cache-control':'no-store','content-type':'application/json; charset=utf-8','x-robots-tag':'noindex, nofollow, noarchive'}});
@@ -76,7 +86,7 @@ export default async ()=>Response.json({ok:false,error:'disabled_in_isolated_qa'
   if path.suffix in ('.js','.html','.css','.json','.xml','.txt'):
    urls.update(re.findall(r'https?://[^\s\"\'<>`)}\\]+',path.read_text(errors='ignore')))
  hosts=sorted({urlsplit(url).hostname for url in urls if urlsplit(url).hostname})
- report={'source_commit':commit,'qa_site_id':SITE_ID,'qa_origin':ORIGIN,'published':False,'source_file_count':len(before),'qa_file_count':len(after),'html_ui_unchanged':html_unchanged,'changed_or_added':changed,'runtime_destinations':{'POST /api/commercial/lead':EDGE,'GET /api/commercial/health':EDGE+'/health','all_other_api_routes':'503 without network','POST legacy_forms':'503 without network','browser_connect_src':'self only','analytics':'production-hostname guards + QA CSP block external transport','user_initiated_external_navigation':'Approved external anchors preserved; tests must block WhatsApp/Instagram navigation and never send messages'},'required_runtime_env_names':['COMMERCIAL_ALLOWED_ORIGIN','COMMERCIAL_EDGE_ENDPOINT','COMMERCIAL_EDGE_ANON_KEY'],'forbidden_runtime_env_names':['COMMERCIAL_SUPABASE_URL','COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY'],'static_source_reference_hosts':hosts,'release_limits':['Tree is prepared but not deployed','QA changes intentionally do not match source production manifests','Source HTML/canonicals remain unchanged; noindex is enforced by headers and robots','Hosted route precedence and headers require read-only checks after QA deploy','Configure only isolated QA site runtime variables; no production credentials are accepted']}
+ report={'source_commit':commit,'qa_site_id':SITE_ID,'qa_origin':ORIGIN,'qa_generation':'v2','qa_environment_enforced':'isolated-staging','published':False,'source_file_count':len(before),'qa_file_count':len(after),'html_ui_unchanged':html_unchanged,'changed_or_added':changed,'runtime_destinations':{'POST /api/commercial/lead':EDGE,'GET /api/commercial/health':EDGE+'/health','all_other_api_routes':'503 without network','POST legacy_forms':'503 without network','browser_connect_src':'self only','analytics':'production-hostname guards + QA CSP block external transport','user_initiated_external_navigation':'Approved external anchors preserved; tests must block WhatsApp/Instagram navigation and never send messages'},'required_runtime_env_names':['COMMERCIAL_ALLOWED_ORIGIN','COMMERCIAL_EDGE_ENDPOINT','COMMERCIAL_EDGE_ANON_KEY','COMMERCIAL_EDGE_ENVIRONMENT'],'required_runtime_nonsecret_values':{'COMMERCIAL_ALLOWED_ORIGIN':ORIGIN,'COMMERCIAL_EDGE_ENDPOINT':EDGE,'COMMERCIAL_EDGE_ENVIRONMENT':'isolated-staging'},'forbidden_runtime_env_names':['COMMERCIAL_SUPABASE_URL','COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY','COMMERCIAL_DIRECT_FIXTURE'],'static_source_reference_hosts':hosts,'release_limits':['Tree is prepared but not deployed','QA changes intentionally do not match source production manifests','Source HTML/canonicals remain unchanged; noindex is enforced by headers and robots','Hosted route precedence and headers require read-only checks after QA deploy','Configure only isolated QA site runtime variables; no production credentials are accepted']}
  (out/'QA_PREPARATION_REPORT.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  (out/'QA_SOURCE_MANIFEST.json').write_text(json.dumps({'source_commit':commit,'files':before},indent=2)+'\n')
  (out/'QA_TREE_MANIFEST.json').write_text(json.dumps({'source_commit':commit,'files':after},indent=2)+'\n')

@@ -27,7 +27,7 @@ SQLite foi reaberto nos testes para comprovar persistência além da instância 
 
 ## Verificação e commit
 
-Código da candidata: `0ca2dff8ad357c77c18af60851a01c0d5fc32501`, branch local `fix/commercial-capture-20261122`; sem push/merge/deploy. Suite Node final com Postgres local: **175/175 PASS, zero skips**. Gate completo anterior: 18/18 categorias; Python 55 aprovados e um skip histórico coberto pela verificação de hashes. Comando de build do Netlify executado localmente (`verify_site.py && smoke_http.py`): PASS, 30 rotas de smoke. Empacotamento da função por Netlify zip-it-and-ship-it também passou. Manifesto verificou 314 arquivos, 106 páginas, 59 URLs, sem erros/avisos. Os testes de navegador comprovam a jornada, além do build.
+Código da candidata: `9640b462249d190ed9632bf6a65f63add2aebfa8`, branch local `fix/commercial-capture-20261122`; sem push/merge/deploy. Suite Node final com Postgres local: **176/176 PASS, zero skips**. Gate completo anterior: 18/18 categorias; Python 55 aprovados e um skip histórico coberto pela verificação de hashes. Comando de build do Netlify executado localmente (`verify_site.py && smoke_http.py`): PASS, 30 rotas de smoke. Empacotamento da função por Netlify zip-it-and-ship-it também passou. Manifesto verificou 314 arquivos, 106 páginas, 59 URLs, sem erros/avisos. Os testes de navegador comprovam a jornada, além do build.
 
 ## Resultado — o que mudou
 

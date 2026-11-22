@@ -26,4 +26,4 @@ O snapshot HTTP recuperado não equivale ao ZIP completo original do Netlify. Co
 
 ## Verificação final no commit de código
 
-Após configuração explícita do container PostgreSQL local sintético, a suíte Node completa passou **175/175 sem skips**. Registro: `evidence/final-node-tests.log`. O build local passou novamente: 314 hashes,106HTML,59URLs,zero avisos e30 rotas smoke. Não houve execução remota ou deploy.
+Após configuração explícita do container PostgreSQL local sintético, a suíte Node completa passou **176/176 sem skips**. Registro: `evidence/final-node-tests.log`. O build local passou novamente: 314 hashes,106HTML,59URLs,zero avisos e30 rotas smoke. Não houve execução remota ou deploy.

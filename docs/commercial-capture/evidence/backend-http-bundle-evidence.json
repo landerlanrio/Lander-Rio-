@@ -2,8 +2,8 @@
   "environment": "Isolated local Docker PostgreSQL17 + PostgREST13.0.4; synthetic-only; no hosted traffic",
   "netlifyBundler": "@netlify/zip-it-and-ship-it16.6.0 esbuild",
   "httpCalls": 3,
-  "request_id": "6c00c9c0-fd9d-4fd2-9ac8-0f7608a0353e",
-  "receipt": "LR-6C00C9C0FD9D4FD29AC80F7608A0353E",
+  "request_id": "12a53642-b021-4d49-8d36-09b8602cd4c8",
+  "receipt": "LR-12A53642B0214D498D3609B8602CD4C8",
   "expected": {
     "first": 201,
     "retry": 200,
@@ -18,7 +18,7 @@
     "anonymousRead": 401,
     "rows": 1,
     "record": {
-      "receipt": "LR-6C00C9C0FD9D4FD29AC80F7608A0353E",
+      "receipt": "LR-12A53642B0214D498D3609B8602CD4C8",
       "profile": "atacado",
       "intent": "envio",
       "origin": {

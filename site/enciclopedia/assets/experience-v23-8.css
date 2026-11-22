@@ -1,0 +1,66 @@
+
+/* LANDER RIO v23.8 — Evidence lab / accessible interactive components */
+#catalogo .research-clarity-note{color:#435343!important} 
+.lr-evidence-filter{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;margin:16px 0 20px;padding:16px 18px;border:1px solid #444e40;border-radius:12px;background:#161c17}
+.lr-evidence-filter label{font-size:12px;color:#ecf2e8;font-weight:700}
+.lr-evidence-filter select{min-height:44px;max-width:100%;width:270px;flex:1 1 220px;background:#242c23;color:#edf4e5;border-color:#55644e;font-size:13px}
+.lr-method-link{display:inline-flex;align-items:center;min-height:44px;color:var(--lime);font-weight:730;font-size:12px;text-underline-offset:4px}
+.lr-clear-search{position:absolute;right:10px;top:50%;transform:translateY(-50%);border:1px solid #53644b;background:#273026;color:#eaf1df;padding:8px 10px;border-radius:7px;font-weight:700;font-size:11px}
+.lr-clear-search[hidden]{display:none}
+.lr-search-wrap{position:relative;min-width:0}
+.lr-search-wrap .search{height:100%;min-height:55px}
+.lr-search-wrap .search input{padding-right:92px}
+.lr-evidence-tag{display:inline-flex;align-items:center;max-width:100%;margin:13px 0 8px;padding:5px 9px;background:#283327;border:1px solid #56664e;border-radius:7px;color:#d1e1c5;font-size:10px;font-weight:730;letter-spacing:.025em;line-height:1.35}
+.lr-evidence-tag[data-origin="forum"]{color:#f7dbc0;border-color:#806b49;background:#2b261b}
+.lr-evidence-tag[data-origin="lacuna"]{color:#d4d9d1;border-color:#59615d;background:#29302b}
+.lr-evidence-tag[data-origin="pesquisa"]{color:#d9ebfa;border-color:#466674;background:#202e36}
+.lr-result-tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}
+.lr-tool-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;gap:8px;padding:10px 14px;border:1px solid #6b8062;border-radius:9px;background:#202b21;color:#edf7e6;font-size:12px;font-weight:730;line-height:1.3}
+.lr-tool-button:hover{border-color:var(--lime);color:var(--lime)}
+.lr-result-tools .resultbar{margin:0}
+.lr-share-status{display:block;color:#b9dbaa;font-size:12px;margin-top:10px;min-height:1em}
+.lr-compare-actions{display:flex;justify-content:flex-end;margin-bottom:15px}
+.lr-evidence-snapshot{padding:26px;margin:0 0 34px;border:1px solid #3f5542;background:linear-gradient(125deg,#1a271b,#121a15);border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.lr-evidence-snapshot h2{font-size:clamp(22px,2.5vw,31px)!important;margin:9px 0 12px!important;color:#f5f9ed}
+.lr-evidence-snapshot > p{color:#d3ddcc;font-size:15px;line-height:1.7;margin-bottom:18px}
+.lr-evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lr-evidence-grid>div{padding:14px 15px;border:1px solid #3b4b3d;border-radius:9px;background:#141c15;min-width:0}
+.lr-evidence-grid dt{font-size:10px;line-height:1.4;color:#b6c6ae;font-weight:820;letter-spacing:.08em;text-transform:uppercase;margin-bottom:7px}
+.lr-evidence-grid dd{font-size:13px;line-height:1.5;color:#f0f6e9;font-weight:670;margin:0;overflow-wrap:anywhere}
+.lr-evidence-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 22px;margin-top:18px}
+.lr-evidence-actions .lr-method-link{font-size:13px}
+.lr-clinical-disclosure{margin-top:13px!important;font-size:12px!important;color:#b8c8b0!important;line-height:1.65!important}
+.lr-progress{position:fixed;left:0;top:0;width:0;height:3px;z-index:80;background:var(--lime);pointer-events:none;transition:width .06s linear}
+.lr-checklist{margin:20px 0;padding:0;list-style:none;display:grid;gap:11px}
+.lr-checklist li{border:1px solid #384a39;background:#182019;border-radius:10px;padding:14px 16px;line-height:1.65;color:#e0e9db;font-size:13px}
+.lr-method-hero{padding:55px 0 40px;background:radial-gradient(circle at 95% 5%,#243924,#101410 70%);border-bottom:1px solid #334034}
+.lr-method-hero h1{font-size:clamp(37px,5.1vw,68px);letter-spacing:-.05em;line-height:1.05;margin:18px 0 16px}
+.lr-method-hero p{max-width:760px;color:#c4cfbf;font-size:16px;line-height:1.72}
+.lr-method-layout{display:grid;grid-template-columns:1fr 320px;gap:44px;padding:50px 28px 70px}
+.lr-method-content h2{font-size:27px;letter-spacing:-.035em;margin:32px 0 12px;color:#f3f7ee}
+.lr-method-content h2:first-child{margin-top:0}
+.lr-method-content p{font-size:15px;line-height:1.8;color:#ccd7c6}
+.lr-method-content .lr-method-list{display:grid;grid-template-columns:1fr;gap:10px;margin:18px 0 28px}
+.lr-method-item{border:1px solid #364536;padding:17px 20px;border-radius:11px;background:#182019}
+.lr-method-item b{color:var(--lime);font-size:14px}
+.lr-method-item p{margin:8px 0 0;font-size:13px}
+.lr-method-aside{align-self:start;position:sticky;top:115px;border:1px solid #455444;background:#171e18;padding:25px;border-radius:13px}
+.lr-method-aside h2{font-size:21px;color:#ecf5e6;margin:0 0 10px}
+.lr-method-aside p{font-size:13px;color:#b8c6b0;line-height:1.7}
+.lr-method-aside .lr-method-link{margin-top:15px}
+.lr-method-note{background:#1c261d;border-left:3px solid var(--lime);padding:18px 20px;font-size:13px;line-height:1.7;color:#dbe7d1}
+/* Raised hit areas; smooth scroll adjustment for sticky navigation. */
+.card .comparebutton{min-height:44px;min-width:87px}
+.ency-footer .footer-links a{min-height:44px}
+.article-shell .toc a{min-height:40px}
+.lr-evidence-snapshot .lr-tool-button{background:var(--lime);border-color:var(--lime);color:#122015}
+
+/* RC4: shared fixes verified across the 35 scientific articles. */
+.breadcrumb a{text-decoration:underline;text-underline-offset:4px}
+.article-shell .line-link{color:#354916!important;text-decoration-color:currentColor;display:inline-flex;align-items:center;min-height:44px}
+.article-shell .line-link:focus-visible{outline-color:#354916}
+.crumb a,.research-grid a{display:inline-flex;align-items:center;min-height:44px}
+.lr-evidence-snapshot .lr-tool-button:hover{background:#caff80;color:#122015}
+@media(max-width:780px){.lr-method-layout{grid-template-columns:1fr;gap:16px;padding:40px 24px}.lr-method-aside{position:static}.lr-evidence-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.lr-method-layout{padding:38px 20px 62px}.lr-evidence-filter{padding:14px}.lr-evidence-filter select{width:100%}.lr-evidence-snapshot{padding:20px}.lr-result-tools{align-items:stretch}.lr-result-tools .lr-tool-button{width:100%}.lr-tool-button{min-height:46px}}
+@media(prefers-reduced-motion:reduce){.lr-progress{transition:none}}

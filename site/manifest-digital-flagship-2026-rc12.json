@@ -1,0 +1,18 @@
+{
+  "version": "digital-flagship-2026-rc12",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_deploy": "6af804d36034a689af84dddf",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/measurement-v23-2.js": "0e6a1f7f061ac2439fd9320cb50875ceefa4eed0de0b78b8a69ae0e2632f10fc",
+    "conteudos/como-ler-ficha-treino/index.html": "7fa511e59cec94e6576097e05fcb8394ac6e63aeec83f8b1fe60c96b8a31f379",
+    "conteudos/diario-de-treino-como-registrar/index.html": "ae48d0350375a4f005946143b5402b912b8ee727a9df67edd4ec0350f0c08388",
+    "conteudos/index.html": "6d7b7b6241ae0d25b63da3530237c733dedf679f312660cbcbbd4b35a287303f",
+    "conteudos/planejar-compras-refeicoes-semana/index.html": "d14fbfe373a5433b318f644aeb3d9fc7f90561d8e6ae6a171c8214703d0f2236",
+    "dieta/index.html": "5a4dc74568aa9865457dad4b0144532544a81f49a3553978f5548a1fa8bbff31",
+    "ferramentas/index.html": "9ce2c87f3ca2d6cd6134bac0612b88952f4936b99af7cad72b2b6762de869278",
+    "index.html": "2bb7d14a7c096ebe4e9a3a24b0bd6a4d0dce85d2be4bb36d993044727f6b9e72",
+    "release.json": "a334df28372bd3c4f672f25918bcf7f4c57624b16f91e4a3b59c20ee0f594aa6",
+    "treino/index.html": "77309cd4df99b20f56abf0c378086589f53f99d2f4434db42fb480760111c509"
+  }
+}

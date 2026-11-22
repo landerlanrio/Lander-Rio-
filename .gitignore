@@ -1,0 +1,18 @@
+# Local-only / private settings
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+node_modules/
+.netlify/
+coverage/
+*.zip
+*.bundle

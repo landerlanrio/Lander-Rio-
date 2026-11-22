@@ -1,0 +1,19 @@
+{
+  "version": "digital-flagship-2026-rc2",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/flagship-2026.css": "6b2f0b0bdba791add9d7a202a638b77f2e43d30f4977696eecf5a5e7bcaa4eca",
+    "assets/flagship-2026.js": "eb0da207d3c873c30e7cf0472aefea2af3c74bfb0bffe4314c1dfc09fedf2be7",
+    "assets/flagship-hero-desktop-rc2.avif": "49dacb193e2668e1e76bdf7e33f1c85684e9e2d467ca376cd463e0050f305ef1",
+    "assets/flagship-hero-desktop-rc2.jpg": "22f4f683062c413fc8019c7050ce62b204963b36a1f324ce4238f6f9b6ec947d",
+    "assets/flagship-hero-desktop-rc2.webp": "a1f5cffd16262da672d19882a73b1cabb2cda50aa093cff1dec3616a18965ccd",
+    "assets/flagship-hero-mobile-rc2.avif": "72c3e8e294993078910d30d0a31edf5c49a04e46ca23a2b9073cd53b9b6e875b",
+    "assets/flagship-hero-mobile-rc2.jpg": "fa09fa33644f69ceebe9469e425993dc2cc1eab314da80cf525efa1746d5f4a4",
+    "assets/flagship-hero-mobile-rc2.webp": "e5c749c8ad49c7ab518801e42689f93bd8710a4f2bb486e14f5a6d799fcb6bca",
+    "assets/measurement-v23-2.js": "ebfe572216048947249a898ab63e28f7e160639508fbc913ca704c44d46af293",
+    "index.html": "94194bdc79b88a5135c5c677481de94d1aeeafaae4caddc29fb6998c48b50fb6",
+    "release.json": "65fbdc50ca5d2ccf25cd8be50957076bd25679858f626769d72e037c1fc58402"
+  }
+}

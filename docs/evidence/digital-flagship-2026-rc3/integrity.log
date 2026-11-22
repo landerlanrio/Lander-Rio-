@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "version": "digital-flagship-2026-rc3",
+  "manifest_verified_sha256": 206,
+  "html_pages": 81,
+  "html_local_references_checked": 3436,
+  "json_files_checked": 17,
+  "sitemap_urls": 78,
+  "css_asset_references_checked": 5,
+  "issues": [],
+  "warnings": []
+}

@@ -1,0 +1,23 @@
+{
+  "tag": "qa-reload-1795365721437",
+  "environment": "loopback SQLite",
+  "originalReceipt": "LR-C88336E32061410394C61378B1D31E9A",
+  "conflict": {
+    "http": 409,
+    "status": "Os dados diferem do envio anterior desta aba. Repita os dados originais para recuperar o protocolo ou fale com a equipe. Nenhum novo registro foi criado.",
+    "emailEditable": true,
+    "count": 1
+  },
+  "recovery": {
+    "http": 200,
+    "response": {
+      "ok": true,
+      "saved": true,
+      "receipt": "LR-C88336E32061410394C61378B1D31E9A",
+      "duplicate": true,
+      "crm_status": "pending"
+    },
+    "count": 1
+  },
+  "pass": true
+}

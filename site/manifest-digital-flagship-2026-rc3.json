@@ -1,0 +1,25 @@
+{
+  "version": "digital-flagship-2026-rc3",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/flagship-2026.css": "2869f99b4b89246cf8d563ccabf021e6e2cc15c569ef3e96ec8881fa628185fe",
+    "assets/flagship-2026.js": "8a9fd5601ab5be2160c8ea09cfb16446e467e1de6fbf992e1968c50feb7cf78d",
+    "assets/logos/alpha-x-prime-rc3.webp": "6bfad75c5d3a265078e03fe0cd1aa44b2e4cc3b3daf7011c374433ea0b866551",
+    "assets/logos/cooper-pharma-rc3.webp": "3a56034e12efa3713f32f3cc6056ad6cbca9681dc1854bb6183d65249b0c24dd",
+    "assets/logos/eminence-labs-rc3.webp": "fd5f7b815669de9154678bc4d713c42a579401ecc86a595eb493a376f4b43578",
+    "assets/logos/geniqs-pharma-rc3.webp": "08a8b2bb87069002c938699c4de3bf34e27c280493ece1a038d357899d09c3d2",
+    "assets/logos/labs-group-rc3.webp": "5094ada8ca21bed0aade7e8ecfe27af0897acf66c3dd168ccc7fc562726919e0",
+    "assets/logos/landerlan-rc3.webp": "2f85c6bfb36b77f60eb306e8066e74ffe02c57b3863bb5e3b58049462175a0f2",
+    "assets/logos/life-peptideos-rc3.webp": "a45b948ae1a07f3d153f00148cc93dc4d23e6844303c874ad1db0d14ff461dce",
+    "assets/logos/muscle-labs-india-rc3.webp": "1620c05ad4f05f7b9acfb1b767bc111f81ee0b787f4627b5eae678f0291a3bea",
+    "assets/logos/oxygen-kw-pharma-rc3.webp": "060d7c51b1fb4de5a6794f71df980bc9d33a762be1541f9b20b01e10c31109bf",
+    "assets/logos/synedica-rc3.webp": "d7f76c421983a81145ff566aeab712d2221b66369db44c59ae39b41c84365ae7",
+    "assets/logos/topharma-rc3.webp": "0dcbd2748a753421593701705f6ce0adfe24cf6d38b9476f8b64a04c18739022",
+    "assets/logos/zphc-rc3.webp": "df14587a2084f042509806528228bc281d0fbe943eb1dd791f96a38e9aea0fc3",
+    "assets/measurement-v23-2.js": "99a54418a9360c08a43f1795f12d17383d5a0cc9578977c354d38d3fcc8a4e56",
+    "index.html": "0944507ca1c3fa40b8f04b54073b91aeae89c510d7e8b587db398f89b325cb0b",
+    "release.json": "76702c8ee79af4ba4c0b96d50dcae5a0858240296a138f54d24518d7aa98fad3"
+  }
+}

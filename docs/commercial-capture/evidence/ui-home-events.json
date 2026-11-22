@@ -1,0 +1,166 @@
+[
+  {
+    "profile": "varejo",
+    "url": "http://127.0.0.1:3100/varejo/",
+    "events": [
+      {
+        "event": "site_visit",
+        "page": "home",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "contact_reference": "LR-99B57D6744BB"
+      },
+      {
+        "event": "hero_view",
+        "page": "home",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "placement": "hero",
+        "contact_reference": "LR-99B57D6744BB"
+      },
+      {
+        "event": "retail_selected",
+        "page": "home",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "profile": "varejo",
+        "placement": "hero",
+        "contact_reference": "LR-99B57D6744BB"
+      },
+      {
+        "event": "web_vital",
+        "page": "home",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "metric": "LCP",
+        "value": 520,
+        "rating": "good",
+        "device": "mobile"
+      },
+      {
+        "event": "site_visit",
+        "page": "retail",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "contact_reference": "LR-99B57D6744BB"
+      },
+      {
+        "event": "web_vital",
+        "page": "retail",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "metric": "CLS",
+        "value": 0.001,
+        "rating": "good",
+        "device": "mobile"
+      },
+      {
+        "event": "web_vital",
+        "page": "retail",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "metric": "LCP",
+        "value": 144,
+        "rating": "good",
+        "device": "mobile"
+      }
+    ],
+    "pass": true
+  },
+  {
+    "profile": "atacado",
+    "url": "http://127.0.0.1:3100/atacado/",
+    "events": [
+      {
+        "event": "site_visit",
+        "page": "home",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "contact_reference": "LR-D09FA9987253"
+      },
+      {
+        "event": "hero_view",
+        "page": "home",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "placement": "hero",
+        "contact_reference": "LR-D09FA9987253"
+      },
+      {
+        "event": "wholesale_selected",
+        "page": "home",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "profile": "atacado",
+        "placement": "hero",
+        "contact_reference": "LR-D09FA9987253"
+      },
+      {
+        "event": "web_vital",
+        "page": "home",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "metric": "LCP",
+        "value": 288,
+        "rating": "good",
+        "device": "mobile"
+      },
+      {
+        "event": "site_visit",
+        "page": "wholesale",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "contact_reference": "LR-D09FA9987253"
+      },
+      {
+        "event": "web_vital",
+        "page": "wholesale",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "metric": "CLS",
+        "value": 0.001,
+        "rating": "good",
+        "device": "mobile"
+      },
+      {
+        "event": "web_vital",
+        "page": "wholesale",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "metric": "LCP",
+        "value": 112,
+        "rating": "good",
+        "device": "mobile"
+      }
+    ],
+    "pass": true
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "version": "23.10",
+  "manifest_verified_sha256": 170,
+  "html_pages": 81,
+  "html_local_references_checked": 3415,
+  "json_files_checked": 11,
+  "sitemap_urls": 78,
+  "css_asset_references_checked": 4,
+  "issues": [],
+  "warnings": []
+}

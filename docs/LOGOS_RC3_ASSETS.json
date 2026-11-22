@@ -1,0 +1,215 @@
+{
+  "selection": "12 files supplied by user on 2026-11-13; 14 marks",
+  "treatment": "Proportional web delivery encoding only; source colors and lettering preserved. Original white background retained on Landerlan. Three composite marks displayed through SVG viewports. No AI recreation.",
+  "viewports": {
+    "quimfa": "268 22 474 490",
+    "eticos": "22 493 446 477",
+    "indufar": "535 493 445 477"
+  },
+  "assets": [
+    {
+      "brand": "landerlan",
+      "source": "F4BD7224-0028-4A13-8ABA-03853B3D8390.jpeg",
+      "source_sha256": "8cdd475b21f7de5df2f9e3da8b1f810e8dd929cda4f2ea69a1010127f1b9b665",
+      "source_dimensions": [
+        1536,
+        807
+      ],
+      "source_mode": "RGB",
+      "output": "assets/logos/landerlan-rc3.webp",
+      "output_dimensions": [
+        720,
+        378
+      ],
+      "output_bytes": 65252,
+      "output_sha256": "2f85c6bfb36b77f60eb306e8066e74ffe02c57b3863bb5e3b58049462175a0f2"
+    },
+    {
+      "brand": "topharma",
+      "source": "41F692B0-DBEE-468D-8860-87654D973197.png",
+      "source_sha256": "aa39a1d77df2dbc94ea6945ade5e17a91ec18ffc36ecf87543fe457381352fd6",
+      "source_dimensions": [
+        1027,
+        906
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/topharma-rc3.webp",
+      "output_dimensions": [
+        589,
+        520
+      ],
+      "output_bytes": 90508,
+      "output_sha256": "0dcbd2748a753421593701705f6ce0adfe24cf6d38b9476f8b64a04c18739022"
+    },
+    {
+      "brand": "life-peptideos",
+      "source": "FC70A758-B22B-40D6-BA85-D505E343DD71.png",
+      "source_sha256": "727974c223e81374c5476f12d3f15ec0ca44f6d82991a664952232937693a2c4",
+      "source_dimensions": [
+        1635,
+        384
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/life-peptideos-rc3.webp",
+      "output_dimensions": [
+        720,
+        169
+      ],
+      "output_bytes": 46426,
+      "output_sha256": "a45b948ae1a07f3d153f00148cc93dc4d23e6844303c874ad1db0d14ff461dce"
+    },
+    {
+      "brand": "oxygen-kw-pharma",
+      "source": "AB87FCD1-4029-462C-B08E-F5F136914233.png",
+      "source_sha256": "550e61927c5ecd42f7d298a386b7561d1987a99fcebcca7a6ccd856897202857",
+      "source_dimensions": [
+        1723,
+        209
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/oxygen-kw-pharma-rc3.webp",
+      "output_dimensions": [
+        720,
+        87
+      ],
+      "output_bytes": 30884,
+      "output_sha256": "060d7c51b1fb4de5a6794f71df980bc9d33a762be1541f9b20b01e10c31109bf"
+    },
+    {
+      "brand": "cooper-pharma",
+      "source": "B713E614-C90F-4CA6-AD22-38C7B2C93FC7.png",
+      "source_sha256": "8ac47ae2d2d548e1b7550fd85b87252223e0a25cb6e4f892d53cf9dbd3c9c362",
+      "source_dimensions": [
+        1304,
+        606
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/cooper-pharma-rc3.webp",
+      "output_dimensions": [
+        720,
+        335
+      ],
+      "output_bytes": 76124,
+      "output_sha256": "3a56034e12efa3713f32f3cc6056ad6cbca9681dc1854bb6183d65249b0c24dd"
+    },
+    {
+      "brand": "zphc",
+      "source": "861081D8-BC2D-42ED-B3F1-AB6839996805.png",
+      "source_sha256": "e2a3dec73e3b0491481a92792d38b8ff0640743b12d2bca898f6fb83330fb9c1",
+      "source_dimensions": [
+        1366,
+        419
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/zphc-rc3.webp",
+      "output_dimensions": [
+        720,
+        221
+      ],
+      "output_bytes": 40416,
+      "output_sha256": "df14587a2084f042509806528228bc281d0fbe943eb1dd791f96a38e9aea0fc3"
+    },
+    {
+      "brand": "muscle-labs-india",
+      "source": "6EEB0612-470F-4F4A-B545-DE99BDE051B5.png",
+      "source_sha256": "78d0daafe341b8045bfca0e90c867cd4a02a6dbac62f0f46988eac50214748e9",
+      "source_dimensions": [
+        996,
+        1152
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/muscle-labs-india-rc3.webp",
+      "output_dimensions": [
+        450,
+        520
+      ],
+      "output_bytes": 64132,
+      "output_sha256": "1620c05ad4f05f7b9acfb1b767bc111f81ee0b787f4627b5eae678f0291a3bea"
+    },
+    {
+      "brand": "synedica",
+      "source": "88C8F810-903E-4262-81DF-8E10BE76DEDF.png",
+      "source_sha256": "a74c565713bda988c37701b501aef3a0c94a37d2e4d43f061ab094dedcd18d7c",
+      "source_dimensions": [
+        1379,
+        638
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/synedica-rc3.webp",
+      "output_dimensions": [
+        720,
+        333
+      ],
+      "output_bytes": 58038,
+      "output_sha256": "d7f76c421983a81145ff566aeab712d2221b66369db44c59ae39b41c84365ae7"
+    },
+    {
+      "brand": "labs-group",
+      "source": "5D630687-CF35-462E-9314-FCF399212FC8.png",
+      "source_sha256": "e25604f69be3eb1c9829fb0df9d51912bd7664e7cf3ca921ed65733f3cba54c2",
+      "source_dimensions": [
+        1002,
+        992
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/labs-group-rc3.webp",
+      "output_dimensions": [
+        1002,
+        992
+      ],
+      "output_bytes": 94582,
+      "output_sha256": "5094ada8ca21bed0aade7e8ecfe27af0897acf66c3dd168ccc7fc562726919e0"
+    },
+    {
+      "brand": "geniqs-pharma",
+      "source": "48B1ECD6-65D5-40F1-A09C-ABFE6B122586.png",
+      "source_sha256": "79c95f482f82a7b37584b8a312369ecdcd3798b40508b5c50b866f41374eefb4",
+      "source_dimensions": [
+        1211,
+        1127
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/geniqs-pharma-rc3.webp",
+      "output_dimensions": [
+        559,
+        520
+      ],
+      "output_bytes": 55350,
+      "output_sha256": "08a8b2bb87069002c938699c4de3bf34e27c280493ece1a038d357899d09c3d2"
+    },
+    {
+      "brand": "alpha-x-prime",
+      "source": "3709CCAD-721E-42B1-A450-8597184A488D.png",
+      "source_sha256": "f410d58d4af2a3b9e8fa46c69eb83d4c892e3f0def56b9e5f96351a08b2c2eb8",
+      "source_dimensions": [
+        1529,
+        543
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/alpha-x-prime-rc3.webp",
+      "output_dimensions": [
+        720,
+        256
+      ],
+      "output_bytes": 46126,
+      "output_sha256": "6bfad75c5d3a265078e03fe0cd1aa44b2e4cc3b3daf7011c374433ea0b866551"
+    },
+    {
+      "brand": "eminence-labs",
+      "source": "94E49899-AF15-4FC9-8830-B9E030179B51.png",
+      "source_sha256": "2670a34fd0c84a3d09fa2d47ab613170919382757ef80d2216d48feae5c63a08",
+      "source_dimensions": [
+        1254,
+        722
+      ],
+      "source_mode": "RGBA",
+      "output": "assets/logos/eminence-labs-rc3.webp",
+      "output_dimensions": [
+        720,
+        415
+      ],
+      "output_bytes": 66606,
+      "output_sha256": "fd5f7b815669de9154678bc4d713c42a579401ecc86a595eb493a376f4b43578"
+    }
+  ]
+}

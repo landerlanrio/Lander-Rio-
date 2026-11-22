@@ -1,0 +1,18 @@
+{
+  "scope": "Calculated WCAG contrast for declared gallery text color against both endpoints of the monotone CSS background gradient. No raster image is behind the captions. This is not a full accessibility certification.",
+  "status": "PASS",
+  "checks": [
+    {
+      "foreground": "#e2ead8",
+      "background": "#282b28",
+      "contrast_ratio": 11.59,
+      "aa_normal_text": true
+    },
+    {
+      "foreground": "#e2ead8",
+      "background": "#20231f",
+      "contrast_ratio": 12.86,
+      "aa_normal_text": true
+    }
+  ]
+}

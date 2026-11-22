@@ -1,0 +1,303 @@
+## integrity
+
+{
+  "status": "PASS",
+  "version": "digital-flagship-2026-rc4",
+  "manifest_verified_sha256": 210,
+  "html_pages": 81,
+  "html_local_references_checked": 3436,
+  "json_files_checked": 18,
+  "sitemap_urls": 78,
+  "css_asset_references_checked": 5,
+  "issues": [],
+  "warnings": []
+}
+
+
+## structure
+
+test_above_fold_logo_transfer_budget (__main__.Flagship.test_above_fold_logo_transfer_budget) ... ok
+test_brands_are_informational_and_not_checkout_links (__main__.Flagship.test_brands_are_informational_and_not_checkout_links) ... ok
+test_commercial_precedes_tools (__main__.Flagship.test_commercial_precedes_tools) ... ok
+test_document_semantics (__main__.Flagship.test_document_semantics) ... ok
+test_images_have_dimensions_and_local_sources (__main__.Flagship.test_images_have_dimensions_and_local_sources) ... ok
+test_original_routes_preserved (__main__.Flagship.test_original_routes_preserved) ... ok
+test_progressive_enhancement_and_motion_fallback (__main__.Flagship.test_progressive_enhancement_and_motion_fallback) ... ok
+test_release_manifest_covers_new_assets (__main__.Flagship.test_release_manifest_covers_new_assets) ... ok
+test_rox_external_transport_stays_disabled (__main__.Flagship.test_rox_external_transport_stays_disabled) ... ok
+test_search_is_local_and_does_not_persist_input (__main__.Flagship.test_search_is_local_and_does_not_persist_input) ... ok
+test_supplied_hero_has_portrait_and_landscape_fallbacks (__main__.Flagship.test_supplied_hero_has_portrait_and_landscape_fallbacks) ... ok
+test_whatsapp_profiles_and_safe_targets (__main__.Flagship.test_whatsapp_profiles_and_safe_targets) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.014s
+
+OK
+
+
+## metadata-and-binary
+
+test_all_81_pages_have_unique_metadata_and_ordered_headings (__main__.Integrity.test_all_81_pages_have_unique_metadata_and_ordered_headings) ... ok
+test_binary_webp_does_not_enter_text_secret_scanner (__main__.Integrity.test_binary_webp_does_not_enter_text_secret_scanner) ... ok
+test_overlay_checks_bytes_and_does_not_bless_tampering (__main__.Integrity.test_overlay_checks_bytes_and_does_not_bless_tampering) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.130s
+
+OK
+
+
+## node-tests
+
+✔ version stays explicitly isolated (2.226069ms)
+✔ b2b and b2c are separated (6.651264ms)
+✔ new revendedor gets a human-focused qualification question (0.622535ms)
+✔ a follow-up preserves explicit user intent without storing a session (0.669269ms)
+✔ untrusted assistant history cannot impersonate a user preference (0.390158ms)
+✔ human support and order follow-up have distinct topics (0.35412ms)
+✔ health and regulated medication requests never receive sales handoff (0.997843ms)
+✔ private contact and financial details are not echoed or forwarded (0.600316ms)
+✔ unrelated price inquiry is not classified as LANDER lead (2.602924ms)
+✔ verified answers include only allowlisted on-site paths (0.833263ms)
+✔ ROX identifies itself as virtual, not a human (0.34513ms)
+✔ draft is allowlisted and excludes raw transcript, customer details and false confirmation (0.521085ms)
+✔ draft builder only accepts whitelisted segment and topic (0.340539ms)
+✔ all modes stay free of outbound requests or writes (0.482184ms)
+✔ script instructions cannot compel a sale, price or tool call (14.758669ms)
+✔ recovered backend rejects arbitrary hosted playground origins (1.926975ms)
+✔ disabled provider returns useful offline answers and never calls upstream (30.19857ms)
+✔ all free-account and challenge gates are required (2.318216ms)
+✔ mock provider quota fails over without paid retry or invented billing assertion (5.778263ms)
+✔ mock provider cannot return clinical doses or unsafe links (3.762093ms)
+✔ body limit counts UTF-8 bytes, not characters or declared length (11.606658ms)
+✔ chunked body is cancelled before accumulating beyond budget (2.287421ms)
+✔ rate limiter is bounded even while all buckets are live; expiry recovers (0.793324ms)
+✔ module registers an isolated server handler (2.159478ms)
+✔ only exact first-party HTTPS origins allowed (0.53391ms)
+✔ commercial classifications do not confuse generic consumer questions (9.303261ms)
+✔ commercial context follows an explicit prior inquiry (5.099194ms)
+✔ regulated medication references route to clinical, never sales (0.434173ms)
+✔ common fitness, free tools, brand, and greeting questions have offline responses (2.08371ms)
+✔ message validation limits history, empty message, client fields and PII in history (0.499625ms)
+✔ origin OPTIONS and CORS enforce isolation (15.722837ms)
+✔ POST rejects unknown origins before handling body (6.698591ms)
+✔ basic greeting works without AI credentials and without external calls (17.429906ms)
+✔ free training instructions and diet instructions work without model calls (8.836132ms)
+✔ unknown general question gets honest fallback, not fake answer, no network (1.471022ms)
+✔ commercial handoff never sends WhatsApp or claims the conversation happened (2.242448ms)
+✔ clinical questions do not quote prices or forward medicine purchases (0.854475ms)
+✔ messages containing personal email return privacy warning without external calls (0.784459ms)
+✔ malformed and excessive POST body are rejected before model calls (0.770422ms)
+✔ health explicitly reports no paid model until all six gates are configured (2.195855ms)
+✔ generative request blocked by missing challenge even with fictional credentials (0.741464ms)
+✔ untrusted reply payload cannot inject malformed JSON as a successful answer (0.212949ms)
+✔ assistant system policy remains explicit about non-human status and restricted substances (0.159578ms)
+✔ v3 backend exposes allowlisted dry-run contracts but performs zero integrations (0.839611ms)
+✔ v3 backend qualifies catalog follow-up using only ephemeral prior user text (0.812274ms)
+✔ v3 backend distinguishes retail and general audience (3.96508ms)
+✔ v3 backend adds a natural virtual-assistant response without a model (0.726917ms)
+✔ v3 health and privacy safeguards block restricted handoffs and identifiers (1.132867ms)
+✔ private preview only serves local static files with strict CSP (90.598466ms)
+✔ health proves ROX 3.0 offline and no paid activation (159.661264ms)
+✔ hello is answered by real backend over HTTP (51.071251ms)
+✔ wholesale handoff includes no actual writes, sends or conversations (18.316011ms)
+✔ two-turn conversation preserves segment and improves qualification (9.163499ms)
+✔ retail and consumer electronics are not mixed (17.182358ms)
+✔ medical and PII requests must never have commercial CTA (12.25086ms)
+✔ bad content-type and oversize request fail closed (8.455676ms)
+✔ frontend has textContent rendering, no browser persistence or real WhatsApp link (5.273825ms)
+✔ frontend and server never point to nonlocal paid model endpoints (2.575163ms)
+✔ informal Portuguese, typo and quantity qualify without promises (5.882133ms)
+✔ safe allowlisted context retains segment, topic and quantity across turns (1.58277ms)
+✔ basic arithmetic is bounded and never evaluates code (47.031673ms)
+✔ simple general information and greetings do not become sales leads (0.264545ms)
+✔ draft never trusts an arbitrary raw quantity or topic (0.216734ms)
+✔ unconfigured endpoint performs no writes (13.215265ms)
+✔ forged authentication, stale requests and browser access are rejected (22.368504ms)
+✔ client evidence claim alone never confirms a conversation (2.683221ms)
+✔ verified synthetic outcome is idempotent under concurrent retries (5.713869ms)
+✔ unexpected PII fields and signature tampering do not mutate the store (16.244407ms)
+✔ later handoff cannot regress a click (6.276311ms)
+✔ repeated handoff without click is rejected (0.319436ms)
+✔ timestamp ties preserve input sequence rather than lexical IDs (0.509731ms)
+✔ distinct events cannot record a sale twice after terminal win (5.261653ms)
+✔ lost opportunity cannot be modified after terminal state (0.355052ms)
+✔ unexpected personal fields are rejected (0.240209ms)
+✔ forged stage is rejected (0.378601ms)
+✔ invalid timestamps and unexpected amount fields fail closed (0.321235ms)
+✔ unverified events cannot carry proof identifiers (0.227504ms)
+✔ invalid event cannot reserve ID and poison valid event (0.551551ms)
+✔ repeated real click is not a confirmed conversation (0.445357ms)
+✔ sale amount must be positive with two decimals and SQL-safe precision (1.210503ms)
+✔ strict reference and evidence IDs prevent unsafe event fields (0.434427ms)
+✔ terminal and duplicate stage transitions are not possible (2.358022ms)
+✔ visitor cannot supply fake backend verification in local store (0.573707ms)
+✔ local store rejects a second verified sale (0.790345ms)
+✔ proposed SQL isolates access and records idempotency (1.011905ms)
+✔ UTC timestamps with or without millisecond fractions sort chronologically (0.275622ms)
+✔ secure references are unique and valid (2.809803ms)
+✔ rejects missing consent (0.864646ms)
+✔ sanitizes untrusted segment and source (0.991355ms)
+✔ no evidence cannot confirm a conversation (0.525997ms)
+✔ sale requires verified evidence and BRL (0.409867ms)
+✔ sale with evidence is structured (0.305128ms)
+✔ rejects stage regression and post-sale mutation (0.282345ms)
+✔ valid progression (0.230602ms)
+✔ local-only store persists synthetic event in memory (2.418115ms)
+✔ retry is idempotent (0.498111ms)
+✔ idempotency conflict rejected (0.70502ms)
+✔ unverified visitor cannot claim conversion (1.15482ms)
+✔ anonymous actor rejected (0.836879ms)
+✔ rejected event does not mutate store (0.413286ms)
+✔ verified conversion requires sequence (0.684476ms)
+✔ duplicate event id rejected across different keys (0.372279ms)
+✔ deduplicates event ids (3.36077ms)
+✔ click is not a confirmed conversation (0.537884ms)
+✔ unverified outcome is rejected (0.358219ms)
+✔ valid commercial sequence counts verified sale (1.010415ms)
+✔ sale without qualification rejected (0.613689ms)
+✔ invalid references are rejected (0.534262ms)
+✔ does not mutate input (0.361455ms)
+✔ qualification without verified conversation is rejected (0.44178ms)
+✔ conversation without prior click is rejected (0.514398ms)
+✔ proposal cannot skip qualification (0.625447ms)
+✔ denied consent blocks all new events and network writes (5.98497ms)
+✔ preview logs allowed interactions locally without contacting PostHog (2.395313ms)
+✔ event payload drops free text, email, brand and arbitrary values (2.04138ms)
+✔ unknown conversions are rejected and revocation stops future events (1.612923ms)
+✔ encyclopedia remains excluded from telemetry even after consent (1.774928ms)
+✔ browser engine is derived exactly from offline v3 source (2.201752ms)
+✔ homepage loads the safe agent before ROX UI (0.338723ms)
+✔ wholesale and follow-up preserve only the segment in ephemeral context (13.233484ms)
+✔ clinical request clears any earlier sales handoff (4.742376ms)
+✔ privacy blocks handoff and never copies raw input into a commercial draft (3.223661ms)
+✔ unrelated iPhone question is not a LANDER commerce lead (4.303993ms)
+✔ training answers stay educational (2.603286ms)
+✔ free fallback still works if optional engine is unavailable (1.630845ms)
+✔ ROX is explicitly offline (5.407534ms)
+✔ intents route reliably for major journeys (3.051636ms)
+✔ opening and escape restore focus (4.734093ms)
+✔ text input is safe plain text, not HTML (2.917655ms)
+✔ commercial handoff requires explicit visitor click (2.18668ms)
+✔ medical question is safely redirected, not converted to a sale (1.625153ms)
+✔ 24 turn cap stops all input paths (2.80297ms)
+✔ no API calls or storage (2.53039ms)
+✔ transport is unconfigured and silent by default (5.229552ms)
+✔ cross-origin endpoints and missing explicit consent cannot transmit text (2.649986ms)
+✔ authorized mock request validates response and strips remote sales handoff (4.203554ms)
+✔ provider failure returns control to the local fallback (3.035513ms)
+PASS site/treino/index.html title= 57 description= 135
+PASS site/conteudos/como-organizar-semana-treino/index.html title= 48 description= 113
+PASS site/conteudos/planejar-compras-refeicoes-semana/index.html title= 50 description= 112
+PASS site/atacado/index.html title= 38 description= 140
+SEO metadata QA: 4/4 pages validated.
+✔ scripts/test_seo_metadata.cjs (174.458748ms)
+ℹ tests 138
+ℹ suites 0
+ℹ pass 138
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 702.180838
+
+
+## http-smoke
+
+{
+  "status": "PASS",
+  "route_count": 15,
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 41475,
+      "passed": true
+    },
+    {
+      "path": "/atacado/",
+      "status": 200,
+      "bytes": 14419,
+      "passed": true
+    },
+    {
+      "path": "/varejo/",
+      "status": 200,
+      "bytes": 13459,
+      "passed": true
+    },
+    {
+      "path": "/treino/",
+      "status": 200,
+      "bytes": 28789,
+      "passed": true
+    },
+    {
+      "path": "/dieta/",
+      "status": 200,
+      "bytes": 24476,
+      "passed": true
+    },
+    {
+      "path": "/entregas/",
+      "status": 200,
+      "bytes": 13860,
+      "passed": true
+    },
+    {
+      "path": "/enciclopedia/",
+      "status": 200,
+      "bytes": 33095,
+      "passed": true
+    },
+    {
+      "path": "/contato/",
+      "status": 200,
+      "bytes": 13306,
+      "passed": true
+    },
+    {
+      "path": "/ferramentas/",
+      "status": 200,
+      "bytes": 6888,
+      "passed": true
+    },
+    {
+      "path": "/perguntas-frequentes/",
+      "status": 200,
+      "bytes": 8346,
+      "passed": true
+    },
+    {
+      "path": "/release.json",
+      "status": 200,
+      "bytes": 2645,
+      "passed": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "bytes": 8766,
+      "passed": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "bytes": 143,
+      "passed": true
+    },
+    {
+      "path": "/assets/commerce-v21.js",
+      "status": 200,
+      "bytes": 4763,
+      "passed": true
+    },
+    {
+      "path": "/assets/measurement-v23-2.js",
+      "status": 200,
+      "bytes": 7350,
+      "passed": true
+    }
+  ]
+}
+

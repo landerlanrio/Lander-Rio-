@@ -1,0 +1,141 @@
+{
+  "status": "ok",
+  "source": {
+    "provider": "google_analytics",
+    "propertyId": "properties/548953010",
+    "propertyDisplayName": "Lander Rio / site "
+  },
+  "request": {
+    "requestedDateRange": {
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-13"
+    },
+    "resolvedDateRange": {
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-13"
+    },
+    "previousDateRange": {
+      "startDate": "2026-10-29",
+      "endDate": "2026-11-05"
+    },
+    "propertyTimeZone": "America/Rio_Branco",
+    "currencyCode": "BRL",
+    "channel": "organic_search",
+    "trend": "daily"
+  },
+  "current": null,
+  "previous": {
+    "sessions": 18,
+    "activeUsers": 11,
+    "engagedSessions": 11,
+    "engagementRate": 0.6111111111111112,
+    "keyEvents": 7,
+    "transactions": 0,
+    "purchaseRevenue": 0
+  },
+  "comparison": {
+    "sessions": {
+      "current": null,
+      "previous": 18,
+      "absoluteChange": null,
+      "percentChange": null
+    },
+    "activeUsers": {
+      "current": null,
+      "previous": 11,
+      "absoluteChange": null,
+      "percentChange": null
+    },
+    "engagedSessions": {
+      "current": null,
+      "previous": 11,
+      "absoluteChange": null,
+      "percentChange": null
+    },
+    "engagementRate": {
+      "current": null,
+      "previous": 0.6111111111111112,
+      "absoluteChange": null,
+      "percentChange": null
+    },
+    "keyEvents": {
+      "current": null,
+      "previous": 7,
+      "absoluteChange": null,
+      "percentChange": null
+    },
+    "transactions": {
+      "current": null,
+      "previous": 0,
+      "absoluteChange": null,
+      "percentChange": null
+    },
+    "purchaseRevenue": {
+      "current": null,
+      "previous": 0,
+      "absoluteChange": null,
+      "percentChange": null
+    }
+  },
+  "trend": [],
+  "diagnostics": [],
+  "reportMetadata": {
+    "hasLimitedData": false,
+    "reports": [
+      {
+        "dataLossFromOtherRow": false,
+        "subjectToThresholding": false,
+        "sampling": [],
+        "restrictedMetrics": [],
+        "emptyReason": null,
+        "hasLimitedData": false
+      },
+      {
+        "dataLossFromOtherRow": false,
+        "subjectToThresholding": false,
+        "sampling": [],
+        "restrictedMetrics": [],
+        "emptyReason": null,
+        "hasLimitedData": false
+      },
+      {
+        "dataLossFromOtherRow": false,
+        "subjectToThresholding": false,
+        "sampling": [],
+        "restrictedMetrics": [],
+        "emptyReason": null,
+        "hasLimitedData": false
+      }
+    ]
+  },
+  "quota": {
+    "tokensPerDay": {
+      "consumed": 1,
+      "remaining": 199883
+    },
+    "tokensPerHour": {
+      "consumed": 1,
+      "remaining": 39897
+    },
+    "concurrentRequests": {
+      "consumed": 0,
+      "remaining": 10
+    },
+    "serverErrorsPerProjectPerHour": {
+      "consumed": 0,
+      "remaining": 10
+    },
+    "potentiallyThresholdedRequestsPerHour": {
+      "consumed": 0,
+      "remaining": 120
+    },
+    "tokensPerProjectPerHour": {
+      "consumed": 1,
+      "remaining": 13897
+    }
+  },
+  "warnings": [],
+  "meta": {
+    "projectId": "cc40f4de-9c11-47c9-be5b-dcb4387db222"
+  }
+}

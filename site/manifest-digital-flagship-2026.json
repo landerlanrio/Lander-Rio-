@@ -1,0 +1,16 @@
+{
+  "version": "digital-flagship-2026-rc1",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/commerce-v21.js": "0f9e66e252b683d1be42c702db97317dcceef02304db428030f2ccedc860dae8",
+    "assets/flagship-2026.css": "af00a0c82824f95ec619181a3533be4579659e86b7d3a2f28fa76e48aac774f0",
+    "assets/flagship-2026.js": "f72619a3cc402272dbf14ec8bd68cbf622fda6bc8331887a671aa72c0a3b67b6",
+    "assets/flagship-hero-mobile-v25.avif": "88db3afb0fd581a6c6e098f9859d237eec5016b6c05970a463ba79c262fac5f2",
+    "assets/flagship-hero-v25.avif": "8f92664bf8c76f20af7b1792a232b96fd09d7e3caed5df4e6ca3f7d12d445170",
+    "assets/measurement-v23-2.js": "760811f6eefab51a2f6643b4cce650569a53df283139b91710648de8d7ab7b5d",
+    "index.html": "0217a19a5db8ffeb5d4473bd4549d369254f4bf56bf798483842e64f09630512",
+    "release.json": "788b89ff56cd5e8419ea0f555bfc998ef4a7dc9ceda6e29ff6c5a3615e77a292"
+  }
+}

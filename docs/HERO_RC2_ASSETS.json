@@ -1,0 +1,22 @@
+{
+  "mobile": {
+    "source_filename": "51E2DFFC-C60D-4D2C-A7D8-F5911A9D5654.jpeg",
+    "dimensions": [
+      864,
+      1536
+    ],
+    "sha256": "fa09fa33644f69ceebe9469e425993dc2cc1eab314da80cf525efa1746d5f4a4",
+    "jpeg_matches_upload_exactly": true,
+    "edits": "None. AVIF/WebP format encoding only; CSS handles proportional framing."
+  },
+  "desktop": {
+    "source_filename": "826B78DF-903B-4103-ACA8-07EC36A6B353.jpeg",
+    "dimensions": [
+      1536,
+      864
+    ],
+    "sha256": "22f4f683062c413fc8019c7050ce62b204963b36a1f324ce4238f6f9b6ec947d",
+    "jpeg_matches_upload_exactly": true,
+    "edits": "None. AVIF/WebP format encoding only; CSS handles proportional framing."
+  }
+}

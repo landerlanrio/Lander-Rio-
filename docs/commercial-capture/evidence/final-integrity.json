@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "version": "commercial-capture-20261122",
+  "manifest_verified_sha256": 314,
+  "html_pages": 106,
+  "html_local_references_checked": 5105,
+  "json_files_checked": 33,
+  "sitemap_urls": 59,
+  "css_asset_references_checked": 19,
+  "issues": [],
+  "warnings": []
+}

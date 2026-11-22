@@ -1,0 +1,1439 @@
+{
+  "version": "digital-flagship-2026-rc8",
+  "reviewed_on": "2026-11-13",
+  "scope": "Editorial excerpts; no inventory or offer",
+  "brands": [
+    {
+      "slug": "cooper-pharma",
+      "name": "Cooper Pharma",
+      "image": {
+        "src": "/assets/logos/cooper-pharma-rc5.webp",
+        "width": "720",
+        "height": "335"
+      },
+      "focus": "Indústria farmacêutica",
+      "about": "Este perfil se refere à Cooper Pharma apresentada em cooperpharma.com, com endereços institucionais em Delhi e Dehradun, na Índia. Seu portfólio inclui diferentes áreas, como cardiologia, diabetes e hormônios. Não deve ser confundida com a Cooper Pharma marroquina, de outro domínio e trajetória.",
+      "lines": [
+        "Hormônios",
+        "Comprimidos",
+        "Injetáveis"
+      ],
+      "products": [
+        {
+          "name": "ANAZBOL",
+          "detail": "Anastrozol · comprimidos",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "COTROPIN",
+          "detail": "Gonadotrofina coriônica humana",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "CORTIS",
+          "detail": "Hidrocortisona · injetável",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "NOLVABOLIC",
+          "detail": "Citrato de tamoxifeno · comprimidos",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "TESTOBOLIC",
+          "detail": "Undecanoato de testosterona · injetável",
+          "group": "Hormônios",
+          "source": 1
+        },
+        {
+          "name": "HGH — Somatropin",
+          "detail": "Somatropina",
+          "group": "Hormônios",
+          "source": 1
+        }
+      ],
+      "sources": [
+        {
+          "label": "Cooper Pharma · linha hormonal",
+          "url": "https://cooperpharma.com/products/hormones",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Cooper Pharma · apresentação institucional",
+          "url": "https://cooperpharma.com/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Cooper Pharma Índia · contatos",
+          "url": "https://cooperpharma.com/contact-us",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Cooper Pharma Marrocos · identidade distinta",
+          "url": "https://cooperpharma.ma/language/en/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Cooper Pharma: marca, linhas e informações | LANDER RIO",
+        "description": "A Cooper Pharma da Índia e a distinção entre empresas homônimas. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "cooper pharma"
+      },
+      "related": [
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Qual Cooper Pharma é descrita nesta página?",
+          "answer": "A identidade do domínio cooperpharma.com, cujos contatos institucionais indicam endereços na Índia."
+        },
+        {
+          "question": "Por que a busca por Cooper Pharma também mostra Marrocos?",
+          "answer": "Há uma empresa de mesmo nome que se apresenta como marroquina em cooperpharma.ma. Esta página mantém as duas identidades separadas."
+        },
+        {
+          "question": "A Cooper Pharma publica apenas hormônios?",
+          "answer": "Não. O site indiano apresenta diferentes categorias farmacêuticas. A seleção abaixo é um recorte da categoria hormonal, não uma descrição de todo o fabricante."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Índia e Marrocos: perfis distintos",
+          "text": "A Cooper descrita aqui utiliza cooperpharma.com. O domínio cooperpharma.ma identifica uma empresa que se apresenta como marroquina. Informações sobre fundação, parcerias ou produtos de uma não devem ser automaticamente atribuídas à outra."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "A Cooper Pharma da Índia e a distinção entre empresas homônimas."
+    },
+    {
+      "slug": "zphc",
+      "name": "ZPHC",
+      "image": {
+        "src": "/assets/logos/zphc-rc5.webp",
+        "width": "720",
+        "height": "240"
+      },
+      "focus": "Identidade e portfólio",
+      "about": "O site institucional atual da ZPHC apresenta a marca no universo esportivo, com acessórios, vestuário e conteúdo de treinamento. Essa apresentação não permite confirmar o catálogo farmacêutico associado ao nome ZPHC em outros canais.",
+      "lines": [
+        "Identidade da marca"
+      ],
+      "products": [],
+      "pending": "O catálogo farmacêutico desta identidade ainda precisa de uma fonte confirmada. Nenhum produto de outro fabricante foi associado a esta logo.",
+      "sources": [
+        {
+          "label": "ZPHC · apresentação institucional atual",
+          "url": "https://zphc.com/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "ZPHC · domínios e identidade",
+          "url": "https://zphc.com/official-domains-authenticity/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "identity_or_catalog_pending",
+      "indexable": false,
+      "seo": {
+        "title": "ZPHC: marca, linhas e informações | LANDER RIO",
+        "description": "Domínios, identidade e limites da documentação disponível sobre ZPHC. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "zphc"
+      },
+      "related": [
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Qual é o site da ZPHC consultado aqui?",
+          "answer": "Foram consultados zphc.com e sua página sobre domínios e autenticidade. As fontes estão relacionadas abaixo."
+        },
+        {
+          "question": "Por que esta página não lista produtos farmacêuticos ZPHC?",
+          "answer": "A documentação consultada não permitiu confirmar a associação do catálogo farmacêutico à identidade apresentada. A lista permanece pendente em vez de misturar fabricantes."
+        },
+        {
+          "question": "ZPHC ou Landerlan: qual é melhor?",
+          "answer": "Não há comparação clínica ou auditoria de fabricação verificada neste perfil que permita essa conclusão. Os perfis descrevem documentação, sem recomendar uma marca."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Separar identidades antes de comparar produtos",
+          "text": "O site institucional atual e os catálogos atribuídos à ZPHC em outros canais não fornecem uma associação suficientemente clara para este perfil listar medicamentos. O diretório preserva o nome e registra essa lacuna."
+        }
+      ],
+      "category": "verificacao",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Domínios, identidade e limites da documentação disponível sobre ZPHC."
+    },
+    {
+      "slug": "landerlan",
+      "name": "Landerlan",
+      "image": {
+        "src": "/assets/logos/landerlan-rc5.webp",
+        "width": "720",
+        "height": "378"
+      },
+      "focus": "Landerlan · Gold · Diamond",
+      "about": "Landerlan é uma das linhas apresentadas pela Landerpharma, no Paraguai. O grupo organiza seu portfólio em famílias como Landerlan, Silver, Gold e Diamond. Os nomes abaixo constam nos catálogos Gold e Diamond consultados.",
+      "lines": [
+        "Landerlan",
+        "Silver",
+        "Gold",
+        "Diamond"
+      ],
+      "products": [
+        {
+          "name": "Durateston Plus",
+          "detail": "Mistura de ésteres de testosterona",
+          "group": "Diamond",
+          "source": 6
+        },
+        {
+          "name": "Decaland Depot",
+          "detail": "Decanoato de nandrolona",
+          "group": "Diamond",
+          "source": 9
+        },
+        {
+          "name": "Testenat Depot",
+          "detail": "Enantato de testosterona",
+          "group": "Diamond",
+          "source": 11
+        },
+        {
+          "name": "Testoland Depot",
+          "detail": "Cipionato de testosterona",
+          "group": "Diamond",
+          "source": 10
+        },
+        {
+          "name": "Drostanolona propionato",
+          "detail": "Propionato de drostanolona",
+          "group": "Diamond",
+          "source": 7
+        },
+        {
+          "name": "Metenolona enantato",
+          "detail": "Enantato de metenolona",
+          "group": "Diamond",
+          "source": 8
+        },
+        {
+          "name": "Testosterona propionato",
+          "detail": "Apresentação em frasco",
+          "group": "Gold",
+          "source": 2
+        },
+        {
+          "name": "Nandrolona fenilpropionato",
+          "detail": "Apresentação em frasco",
+          "group": "Gold",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Landerpharma · linha Diamond",
+          "url": "https://www.landerpharma.com.py/linea-diamond",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · linha Gold",
+          "url": "https://www.landerpharma.com.py/linea-gold",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · linhas e apresentação",
+          "url": "https://www.landerpharma.com.py/",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · trajetória declarada",
+          "url": "https://www.landerpharma.com.py/nosotros",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Landerpharma · perguntas frequentes",
+          "url": "https://www.landerpharma.com.py/preguntas-frecuentes",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Landerpharma · Durateston Plus Diamond",
+          "url": "https://landerpharma.com.py/productos/durateston-plus-10-ampollas-x-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Drostanolona propionato Diamond",
+          "url": "https://landerpharma.com.py/productos/drostanolona-propionato-x-10-ampollas-de-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Metenolona enantato Diamond",
+          "url": "https://landerpharma.com.py/productos/metenolona-enantato-10-ampollas-x-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Decaland Depot Diamond",
+          "url": "https://landerpharma.com.py/productos/decaland-depot-10-ampollas-x-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Testoland Depot Diamond",
+          "url": "https://landerpharma.com.py/productos/testoland-depot-10-ampollas-x-1-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Testenat Depot Diamond",
+          "url": "https://landerpharma.com.py/productos/testenat-depot-10-ampollas-x-2-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "Landerpharma · Durateston Plus Gold",
+          "url": "https://landerpharma.com.py/productos/durateston-plus-gold-fco-amp-x-10-ml",
+          "checked": "2026-11-15"
+        },
+        {
+          "label": "IOI Oleo · composição do MIGLYOL 840",
+          "url": "https://www.ioioleo.de/en/pharma/products-pharma/miglyol-840/",
+          "checked": "2026-11-15"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Landerlan: Diamond, Gold e composição | LANDER RIO",
+        "description": "Landerlan Diamond e Gold: seis referências do catálogo, apresentações e o que as fichas declaram sobre Miglyol 840. Comparação editorial com fontes.",
+        "keyword": "landerlan"
+      },
+      "related": [
+        {
+          "title": "Landerlan Gold: linha e nomenclatura",
+          "path": "/marcas/landerlan-gold/"
+        },
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Landerlan e Landerpharma têm relação?",
+          "answer": "O site Landerpharma apresenta Landerlan entre suas linhas. O relato institucional identifica a empresa no Paraguai; esta página atribui as informações a essa fonte."
+        },
+        {
+          "question": "Quais linhas aparecem no site da Landerpharma?",
+          "answer": "A navegação institucional inclui Landerlan, Silver, Gold e Diamond. A seleção abaixo destaca referências de Gold e Diamond e não pretende reproduzir todo o portfólio."
+        },
+        {
+          "question": "O que é a linha Landerlan Diamond?",
+          "answer": "É uma linha com página própria no catálogo Landerpharma. A listagem consultada apresenta seis referências em ampolas. A apresentação, isoladamente, não comprova autenticidade nem superioridade clínica."
+        },
+        {
+          "question": "Como consultar informações de autenticidade?",
+          "answer": "A FAQ da Landerpharma descreve a consulta pelos seus canais de identificação. A conferência de um código não substitui a verificação da origem da unidade e de sua situação regulatória."
+        },
+        {
+          "question": "Qual é o óleo da linha Diamond?",
+          "answer": "A ficha pública de Durateston Plus Diamond cita Miglyol 840 e álcool benzílico. Nas páginas dos outros cinco produtos Diamond consultadas, o veículo não está identificado pelo nome. Não é possível atribuir um único óleo à linha inteira com essas fontes."
+        },
+        {
+          "question": "O óleo diferencia Diamond de Gold?",
+          "answer": "No par Durateston Plus consultado, ambas as fichas citam Miglyol 840 e álcool benzílico. A diferença documentada nos títulos é a apresentação: Diamond em 10 ampolas de 1 mL; Gold em frasco-ampola de 10 mL. As fichas não estabelecem superioridade clínica ou equivalência entre lotes."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Diamond e Gold: o que muda na composição?",
+          "text": "As páginas de Durateston Plus Diamond e Gold declaram Miglyol 840 e álcool benzílico. Isso não confirma proporções idênticas nem permite generalizar para todos os produtos. Nas outras cinco fichas Diamond consultadas, o veículo não é nomeado."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-15",
+      "summary": "As linhas Landerlan, Silver, Gold e Diamond no portfólio Landerpharma.",
+      "editorial_module": "diamond-gold-evidence.json"
+    },
+    {
+      "slug": "oxygen-kw-pharma",
+      "name": "Oxygen KW Pharma",
+      "image": {
+        "src": "/assets/logos/oxygen-kw-pharma-rc5.webp",
+        "width": "720",
+        "height": "241"
+      },
+      "focus": "Peptídeos e formulações",
+      "about": "Oxygen KW Pharma publica um portfólio concentrado em peptídeos e formulações hormonais. Entre as denominações apresentadas estão Retagen e Tirzegen, ao lado de compostos como GHK-Cu e BPC-157. A marca descreve apresentações líquidas e liofilizadas.",
+      "lines": [
+        "Peptídeos",
+        "Formulações"
+      ],
+      "products": [
+        {
+          "name": "Retagen",
+          "detail": "Retatrutida",
+          "group": "Peptídeos",
+          "source": 1
+        },
+        {
+          "name": "Tirzegen",
+          "detail": "Tirzepatida",
+          "group": "Peptídeos",
+          "source": 1
+        },
+        {
+          "name": "GHK-Cu",
+          "detail": "Peptídeo de cobre",
+          "group": "Peptídeos",
+          "source": 1
+        },
+        {
+          "name": "Glow",
+          "detail": "Denominação de formulação da marca",
+          "group": "Formulações",
+          "source": 1
+        },
+        {
+          "name": "BPC-157",
+          "detail": "Peptídeo listado no portfólio",
+          "group": "Peptídeos",
+          "source": 2
+        },
+        {
+          "name": "MOTS-c",
+          "detail": "Peptídeo listado no portfólio",
+          "group": "Peptídeos",
+          "source": 2
+        }
+      ],
+      "note": "A presença no catálogo do fabricante não comprova aprovação para uso humano ou autorização de venda no Brasil.",
+      "sources": [
+        {
+          "label": "Oxygen KW Pharma · apresentação e portfólio",
+          "url": "https://www.oxygenkwpharma.com/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Oxygen KW Pharma · lista de formulações",
+          "url": "https://oxygenkwpharma.com/certifications",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Oxygen KW Pharma: marca, linhas e informações | LANDER RIO",
+        "description": "Retagen, Tirzegen e outras denominações do portfólio Oxygen KW Pharma. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "oxygen kw pharma"
+      },
+      "related": [
+        {
+          "title": "Peptídeos: o que são e como ler a evidência",
+          "path": "/conteudos/peptideos-o-que-sao/"
+        },
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Oxygen Pharma e Oxygen KW Pharma identificam sempre a mesma empresa?",
+          "answer": "O nome abreviado pode ser ambíguo. Este perfil utiliza Oxygen KW Pharma e o domínio oxygenkwpharma.com como referência."
+        },
+        {
+          "question": "O que são Retagen e Tirzegen no catálogo consultado?",
+          "answer": "São denominações que a fonte associa, respectivamente, a retatrutida e tirzepatida. A informação é uma atribuição de catálogo, sem recomendação clínica."
+        },
+        {
+          "question": "Um catálogo de peptídeos comprova aprovação para uso humano?",
+          "answer": "Não. Estar listado em um site não comprova registro, segurança clínica ou autorização de comercialização. A avaliação precisa considerar cada substância e apresentação."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Nome comercial e composição publicada",
+          "text": "O catálogo associa Retagen a retatrutida e Tirzegen a tirzepatida. Essa identificação organiza a leitura da fonte; não demonstra equivalência com medicamentos registrados, autorização para uso ou qualidade de uma unidade."
+        }
+      ],
+      "category": "peptideos",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Retagen, Tirzegen e outras denominações do portfólio Oxygen KW Pharma."
+    },
+    {
+      "slug": "alpha-x-prime",
+      "name": "Alpha X Prime",
+      "image": {
+        "src": "/assets/logos/alpha-x-prime-rc5.webp",
+        "width": "720",
+        "height": "255"
+      },
+      "focus": "Identidade da marca",
+      "about": "Alpha X Prime é a identidade identificada por esta logomarca na seleção da LANDER RIO. O nome e o símbolo são preservados exatamente como fornecidos, sem associar a marca a empresas com nomes semelhantes.",
+      "lines": [
+        "Alpha X Prime"
+      ],
+      "products": [],
+      "pending": "A apresentação institucional e os nomes dos produtos aguardam o catálogo original do fabricante. Alpha X Prime não foi confundida com Alpha Laboratory ou Alpha Pharma.",
+      "sources": [],
+      "review_status": "identity_or_catalog_pending",
+      "indexable": false,
+      "seo": {
+        "title": "Alpha X Prime: marca, linhas e informações | LANDER RIO",
+        "description": "Identidade visual preservada; apresentação e catálogo aguardam documentação. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "alpha x prime"
+      },
+      "related": [
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Alpha X Prime é a mesma marca que Alpha Laboratory?",
+          "answer": "Essa associação não foi comprovada. O diretório mantém a identidade Alpha X Prime separada e não transfere catálogos entre nomes semelhantes."
+        },
+        {
+          "question": "Por que não há produtos Alpha X Prime nesta página?",
+          "answer": "Ainda falta uma fonte primária suficiente para confirmar a identidade do fabricante e a associação dos produtos. A ausência da lista não significa ausência de produtos no mercado."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Alpha X Prime não é uma equivalência de nomes",
+          "text": "O nome e o logotipo fornecidos identificam este perfil. Não há evidência suficiente para tratá-lo como Alpha Laboratory ou Alpha Pharma; as páginas dessas identidades não são fundidas."
+        }
+      ],
+      "category": "verificacao",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Identidade visual preservada; apresentação e catálogo aguardam documentação."
+    },
+    {
+      "slug": "quimfa",
+      "name": "Quimfa",
+      "image": {
+        "src": "/assets/logos/quimfa-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Laboratório farmacêutico",
+      "about": "A Quimfa S.A. mantém um vade-mécum farmacêutico organizado por especialidade e ação terapêutica. A seleção consultada inclui linhas de cardiologia, clínica médica, hematologia e apresentações injetáveis.",
+      "lines": [
+        "Cardiologia",
+        "Clínica médica",
+        "Injetáveis"
+      ],
+      "products": [
+        {
+          "name": "A3",
+          "detail": "Linha de clínica médica geral",
+          "group": "Clínica médica",
+          "source": 1
+        },
+        {
+          "name": "AAS",
+          "detail": "Linha de cardiologia",
+          "group": "Cardiologia",
+          "source": 1
+        },
+        {
+          "name": "Ácido Fólico",
+          "detail": "Linha de ginecologia e pediatria",
+          "group": "Vitaminas",
+          "source": 1
+        },
+        {
+          "name": "Aerofagil",
+          "detail": "Linha de gastroenterologia",
+          "group": "Gastroenterologia",
+          "source": 1
+        },
+        {
+          "name": "Aftum",
+          "detail": "Apresentações orais e injetáveis",
+          "group": "Hematologia",
+          "source": 2
+        },
+        {
+          "name": "Lipostabil",
+          "detail": "Ácido fenofíbrico · cápsulas de liberação prolongada",
+          "group": "Cardiologia",
+          "source": 3
+        }
+      ],
+      "sources": [
+        {
+          "label": "Quimfa · vade-mécum",
+          "url": "https://www.quimfa.com.py/vademecum/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Quimfa · antifibrinolíticos",
+          "url": "https://www.quimfa.com.py/accion-terapeutica/antifibrinoliticos/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Quimfa · Lipostabil",
+          "url": "https://www.quimfa.com.py/en/product/lipostabil-135/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Quimfa: marca, linhas e informações | LANDER RIO",
+        "description": "O vade-mécum da Quimfa organizado por especialidade e ação terapêutica. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "quimfa"
+      },
+      "related": [
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Como o catálogo da Quimfa está organizado?",
+          "answer": "O vade-mécum consultado permite navegar por especialidade e ação terapêutica, além das páginas individuais de produtos."
+        },
+        {
+          "question": "Quimfa e Indufar são tratadas como uma única marca?",
+          "answer": "Não. O diretório mantém perfis e fontes separados. Proximidade geográfica ou presença na mesma galeria não demonstra identidade societária."
+        },
+        {
+          "question": "Quais exemplos foram consultados?",
+          "answer": "A3, AAS, Ácido Fólico, Aerofagil, Aftum e Lipostabil estão entre as referências documentadas nas fontes relacionadas nesta página."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "O que um vade-mécum reúne?",
+          "text": "É um repertório de informações de produtos. No site Quimfa, a navegação pode ser feita por áreas e ações terapêuticas. A inclusão nessa lista não substitui a leitura da documentação própria de cada medicamento."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "O vade-mécum da Quimfa organizado por especialidade e ação terapêutica."
+    },
+    {
+      "slug": "eticos",
+      "name": "Éticos",
+      "image": {
+        "src": "/assets/logos/eticos-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Laboratório e portfólio farmacêutico",
+      "about": "Éticos é um laboratório paraguaio cujo catálogo reúne diferentes áreas terapêuticas, incluindo diabetes, cardiometabolismo e a linha Bioeticos. Lipoless aparece no catálogo em apresentações em vial e em caneta.",
+      "lines": [
+        "Diabetes",
+        "Cardiometabólica",
+        "Bioeticos"
+      ],
+      "products": [
+        {
+          "name": "Lipoless",
+          "detail": "Tirzepatida · vial",
+          "group": "Diabetes",
+          "source": 1
+        },
+        {
+          "name": "Lipoless MD Pen",
+          "detail": "Tirzepatida · caneta",
+          "group": "Diabetes",
+          "source": 1
+        },
+        {
+          "name": "Glimerin",
+          "detail": "Glimepirida",
+          "group": "Diabetes",
+          "source": 1
+        },
+        {
+          "name": "Glimerin MET",
+          "detail": "Glimepirida e metformina",
+          "group": "Diabetes",
+          "source": 1
+        },
+        {
+          "name": "Idacio",
+          "detail": "Adalimumabe · seringa e caneta preenchidas",
+          "group": "Bioeticos",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Éticos · catálogo de diabetes",
+          "url": "https://eticos.com.py/product_cat/diabetes?product-page=2",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Éticos · Idacio",
+          "url": "https://eticos.com.py/producto/idacio",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Éticos · institucional",
+          "url": "https://eticos.com.py/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Éticos: marca, linhas e informações | LANDER RIO",
+        "description": "Éticos, diabetes e Bioeticos: referências do catálogo paraguaio. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "éticos"
+      },
+      "related": [
+        {
+          "title": "Peptídeos: o que são e como ler a evidência",
+          "path": "/conteudos/peptideos-o-que-sao/"
+        },
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "O termo Éticos sempre se refere a este laboratório?",
+          "answer": "Não. Éticos também é uma palavra de uso geral. Este perfil se refere ao laboratório e ao catálogo publicados em eticos.com.py."
+        },
+        {
+          "question": "Lipoless aparece em quais formatos na fonte?",
+          "answer": "O catálogo consultado apresenta Lipoless em vial e Lipoless MD Pen em caneta. A comparação aqui é de identificação, sem instrução de uso ou venda."
+        },
+        {
+          "question": "O que foi consultado da linha Bioeticos?",
+          "answer": "A página de Idacio é a referência selecionada. A lista deste perfil não pretende reproduzir toda a linha."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Bioeticos é uma linha do catálogo",
+          "text": "O site Éticos apresenta a área Bioeticos, além de outras categorias. A nomenclatura de uma linha não substitui a identificação do fabricante e da documentação de cada apresentação."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Éticos, diabetes e Bioeticos: referências do catálogo paraguaio."
+    },
+    {
+      "slug": "indufar",
+      "name": "Indufar",
+      "image": {
+        "src": "/assets/logos/indufar-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Laboratório farmacêutico paraguaio",
+      "about": "A Indufar CISA é um laboratório farmacêutico do Paraguai. Entre os produtos documentados em seus canais institucionais estão T.G., à base de tirzepatida, e Solufin, à base de semaglutida. A empresa também publica comunicados de identificação de suas apresentações.",
+      "lines": [
+        "Medicamentos",
+        "Saúde metabólica"
+      ],
+      "products": [
+        {
+          "name": "T.G.",
+          "detail": "Tirzepatida · solução injetável em vials",
+          "group": "Saúde metabólica",
+          "source": 1
+        },
+        {
+          "name": "Solufin",
+          "detail": "Semaglutida",
+          "group": "Saúde metabólica",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Indufar · apresentações de T.G.",
+          "url": "https://indufar.com.py/TG",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Indufar · publicações institucionais",
+          "url": "https://www.indufar.com.py/blog",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Indufar: marca, linhas e informações | LANDER RIO",
+        "description": "Indufar CISA e os comunicados institucionais sobre suas apresentações. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "indufar"
+      },
+      "related": [
+        {
+          "title": "Peptídeos: o que são e como ler a evidência",
+          "path": "/conteudos/peptideos-o-que-sao/"
+        },
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "O que significa Indufar CISA neste perfil?",
+          "answer": "É a identificação usada pelo laboratório paraguaio em seus canais institucionais, que são as fontes deste perfil."
+        },
+        {
+          "question": "Quais referências da Indufar foram documentadas?",
+          "answer": "As fontes selecionadas citam T.G., associado a tirzepatida, e Solufin, associado a semaglutida. São exemplos, não um inventário completo."
+        },
+        {
+          "question": "Onde consultar mudanças de apresentação?",
+          "answer": "O perfil aponta a página institucional de T.G. e a área de publicações da Indufar. Deve-se conferir a data e a identificação exata do comunicado."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Um comunicado também é uma fonte",
+          "text": "Além de catálogos, fabricantes publicam avisos sobre identificação e apresentações. Para T.G. e Solufin, o perfil aponta as publicações da Indufar; essas referências não autenticam uma unidade específica."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Indufar CISA e os comunicados institucionais sobre suas apresentações."
+    },
+    {
+      "slug": "life-peptideos",
+      "name": "Life Peptídeos",
+      "image": {
+        "src": "/assets/logos/life-peptideos-rc5.webp",
+        "width": "720",
+        "height": "240"
+      },
+      "focus": "Peptídeos · canetas e vials",
+      "about": "Life Peptídeos apresenta um catálogo de peptídeos e formulações em diferentes formatos. O portfólio publicado reúne nomes como Tirzepatide Pen, Retatrutide Pen e GHK-Cu Pen, além das formulações Glow e Klow.",
+      "lines": [
+        "Canetas",
+        "Peptídeos",
+        "Formulações"
+      ],
+      "products": [
+        {
+          "name": "Tirzepatide Pen",
+          "detail": "Tirzepatida · caneta",
+          "group": "Canetas",
+          "source": 1
+        },
+        {
+          "name": "Retatrutide Pen",
+          "detail": "Retatrutida · caneta",
+          "group": "Canetas",
+          "source": 1
+        },
+        {
+          "name": "GHK-Cu Pen",
+          "detail": "Peptídeo de cobre · caneta",
+          "group": "Canetas",
+          "source": 1
+        },
+        {
+          "name": "Glow Pen",
+          "detail": "Formulação identificada como Glow",
+          "group": "Formulações",
+          "source": 1
+        },
+        {
+          "name": "Klow Pen",
+          "detail": "Formulação identificada como Klow",
+          "group": "Formulações",
+          "source": 1
+        },
+        {
+          "name": "NAD+ Pen",
+          "detail": "NAD+ · caneta",
+          "group": "Canetas",
+          "source": 1
+        },
+        {
+          "name": "GH Life Pen",
+          "detail": "Denominação apresentada no catálogo",
+          "group": "Canetas",
+          "source": 1
+        }
+      ],
+      "note": "Alguns compostos citados têm caráter experimental. A listagem não constitui indicação de uso humano.",
+      "sources": [
+        {
+          "label": "Life Peptídeos · catálogo publicado",
+          "url": "https://lifepeptideos.com/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Life Peptídeos: marca, linhas e informações | LANDER RIO",
+        "description": "Nomenclatura e formatos apresentados no catálogo Life Peptídeos. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "life peptídeos"
+      },
+      "related": [
+        {
+          "title": "Peptídeos: o que são e como ler a evidência",
+          "path": "/conteudos/peptideos-o-que-sao/"
+        },
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Quais nomes aparecem no catálogo Life Peptídeos?",
+          "answer": "A página consultada apresenta Tirzepatide Pen, Retatrutide Pen, GHK-Cu Pen, Glow Pen, Klow Pen, NAD+ Pen e GH Life Pen. A listagem editorial é parcial e não informa estoque."
+        },
+        {
+          "question": "Pen e vial significam a mesma coisa?",
+          "answer": "Não. São termos usados para apresentações diferentes: caneta e frasco. Eles descrevem o recipiente ou dispositivo, não a evidência clínica da substância."
+        },
+        {
+          "question": "Life Peptídeos é confiável?",
+          "answer": "O catálogo consultado permite identificar o que o site declara. Ele não é uma auditoria independente de fabricação, autenticidade de unidades, eficácia ou registro. Esta página não atribui um selo de qualidade à marca."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Molécula, formulação e apresentação",
+          "text": "Tirzepatide e GHK-Cu são denominações relacionadas à composição. Pen descreve um formato de apresentação; Glow e Klow são nomes de formulações. Esses termos não são intercambiáveis nem comprovam autorização para uso humano."
+        }
+      ],
+      "category": "peptideos",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Nomenclatura e formatos apresentados no catálogo Life Peptídeos."
+    },
+    {
+      "slug": "eminence-labs",
+      "name": "Eminence Labs",
+      "image": {
+        "src": "/assets/logos/eminence-labs-rc5.webp",
+        "width": "720",
+        "height": "414"
+      },
+      "focus": "Comprimidos e injetáveis",
+      "about": "Eminence Labs organiza seu catálogo em duas famílias principais: comprimidos e injetáveis. As linhas utilizam denominações como Oxanprime, Stanoprime, Cypoprime e Decaprime. A seleção abaixo mantém a associação entre nome comercial e composição publicada.",
+      "lines": [
+        "Comprimidos",
+        "Injetáveis"
+      ],
+      "products": [
+        {
+          "name": "Oxanprime",
+          "detail": "Oxandrolona · comprimidos",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Stanoprime",
+          "detail": "Estanozolol · comprimidos",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Anastroprime",
+          "detail": "Anastrozol · comprimidos",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Tamoprime",
+          "detail": "Citrato de tamoxifeno · comprimidos",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Cypoprime",
+          "detail": "Cipionato de testosterona · injetável",
+          "group": "Injetáveis",
+          "source": 2
+        },
+        {
+          "name": "Decaprime",
+          "detail": "Decanoato de nandrolona · injetável",
+          "group": "Injetáveis",
+          "source": 2
+        },
+        {
+          "name": "Enaprime",
+          "detail": "Enantato de testosterona · injetável",
+          "group": "Injetáveis",
+          "source": 2
+        },
+        {
+          "name": "L-Prime",
+          "detail": "L-carnitina · injetável",
+          "group": "Injetáveis",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Eminence Labs · comprimidos",
+          "url": "https://www.eminencelabs.com/category/tablets/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Eminence Labs · injetáveis",
+          "url": "https://www.eminencelabs.com/category/injections/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Eminence Labs: marca, linhas e informações | LANDER RIO",
+        "description": "Comprimidos e injetáveis: como a Eminence Labs organiza seus nomes. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "eminence labs"
+      },
+      "related": [
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Quais linhas a Eminence Labs publica?",
+          "answer": "O catálogo consultado utiliza as categorias tablets, para comprimidos, e injections, para injetáveis."
+        },
+        {
+          "question": "Oxanprime e Stanoprime são o mesmo produto?",
+          "answer": "Não no catálogo citado. A marca associa Oxanprime a oxandrolona e Stanoprime a estanozolol. Esta distinção identifica a publicação, sem orientar uso ou comparação clínica."
+        },
+        {
+          "question": "Esta página apresenta todo o catálogo Eminence?",
+          "answer": "Não. Ela reúne uma seleção de oito referências com links para as categorias de origem. Não representa estoque nem disponibilidade comercial."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Famílias de nomes não são equivalência",
+          "text": "Oxanprime, Stanoprime e Cypoprime pertencem à nomenclatura publicada pela marca. A terminação parecida não significa a mesma composição, finalidade ou possibilidade de substituição."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Comprimidos e injetáveis: como a Eminence Labs organiza seus nomes."
+    },
+    {
+      "slug": "topharma",
+      "name": "Topharma",
+      "image": {
+        "src": "/assets/logos/topharma-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Linhas Silver e Gold",
+      "about": "Topharma apresenta seu portfólio nas linhas Silver e Gold. O catálogo reúne comprimidos e formulações injetáveis, com denominações próprias como Oxantop, Top Proviron e Top NPP.",
+      "lines": [
+        "Silver",
+        "Gold",
+        "Comprimidos",
+        "Injetáveis"
+      ],
+      "products": [
+        {
+          "name": "Oxantop",
+          "detail": "Denominação publicada no portfólio",
+          "group": "Silver",
+          "source": 1
+        },
+        {
+          "name": "Top Proviron",
+          "detail": "Denominação publicada no portfólio",
+          "group": "Silver",
+          "source": 1
+        },
+        {
+          "name": "Dianabol Oral",
+          "detail": "Apresentação oral",
+          "group": "Silver",
+          "source": 1
+        },
+        {
+          "name": "Stanozolol Oral",
+          "detail": "Estanozolol · apresentação oral",
+          "group": "Silver",
+          "source": 1
+        },
+        {
+          "name": "Top NPP",
+          "detail": "Denominação publicada no portfólio",
+          "group": "Silver",
+          "source": 1
+        },
+        {
+          "name": "Enantato de metenolona",
+          "detail": "Formulação injetável",
+          "group": "Gold",
+          "source": 2
+        },
+        {
+          "name": "Decanoato de nandrolona",
+          "detail": "Formulação injetável",
+          "group": "Gold",
+          "source": 2
+        },
+        {
+          "name": "Propionato de testosterona",
+          "detail": "Formulação injetável",
+          "group": "Gold",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Topharma · portfólio Silver e Gold",
+          "url": "https://www.topharma.net/portfolio/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Topharma · Top Gold Series",
+          "url": "https://www.topharma.net/linha-gold/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Topharma · Silver",
+          "url": "https://www.topharma.net/linha-silver/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Topharma: marca, linhas e informações | LANDER RIO",
+        "description": "Silver e Top Gold Series: organização do portfólio publicado pela Topharma. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "topharma"
+      },
+      "related": [
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Topharma Gold e Top Gold Series são a mesma linha aqui?",
+          "answer": "Sim. Neste perfil, Topharma Gold identifica a linha apresentada como Top Gold Series no site topharma.net."
+        },
+        {
+          "question": "Oxantop e Top NPP pertencem a qual linha?",
+          "answer": "O portfólio consultado classifica Oxantop e Top NPP como Silver. A associação foi mantida conforme a fonte, sem deduzir a linha pela embalagem."
+        },
+        {
+          "question": "Topharma é a mesma empresa que T Pharma Gold do México?",
+          "answer": "A pesquisa encontrou nomes parecidos em domínios diferentes. Não há comprovação suficiente para unir seus perfis, catálogos ou histórias."
+        },
+        {
+          "question": "Qual é a origem industrial da Topharma?",
+          "answer": "Não confirmamos razão social industrial, local de fabricação ou certificações com documentação independente. Esses dados não são afirmados neste perfil."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Topharma Gold e Top Gold Series",
+          "text": "Top Gold Series é a nomenclatura usada pelo site Topharma para a linha Gold. A Silver possui outra página e classificação. O nome Gold não é uma conclusão editorial sobre qualidade ou superioridade."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Silver e Top Gold Series: organização do portfólio publicado pela Topharma."
+    },
+    {
+      "slug": "muscle-labs-india",
+      "name": "Muscle Labs India",
+      "image": {
+        "src": "/assets/logos/muscle-labs-india-rc5.webp",
+        "width": "449",
+        "height": "520"
+      },
+      "focus": "Linha farmacêutica",
+      "about": "Muscle Labs India publica linhas de comprimidos, injetáveis, ampolas e peptídeos. O catálogo consultado pertence à identidade Muscle Labs India apresentada nesta página, distinta de empresas de nutrição esportiva com nomes semelhantes.",
+      "lines": [
+        "Comprimidos",
+        "Injetáveis",
+        "Ampolas",
+        "Peptídeos"
+      ],
+      "products": [
+        {
+          "name": "Trenbolone Acetate",
+          "detail": "Acetato de trembolona",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Methenolone Enanthate",
+          "detail": "Enantato de metenolona",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Dianabol",
+          "detail": "Metandrostenolona",
+          "group": "Comprimidos",
+          "source": 1
+        },
+        {
+          "name": "Somatropin",
+          "detail": "Somatropina",
+          "group": "Peptídeos",
+          "source": 1
+        }
+      ],
+      "sources": [
+        {
+          "label": "Muscle Labs India · linhas e produtos",
+          "url": "https://www.musclelabsindia.com/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Muscle Labs India: marca, linhas e informações | LANDER RIO",
+        "description": "Linhas e identidade Muscle Labs India, sem confundir marcas de nome semelhante. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "muscle labs india"
+      },
+      "related": [
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        },
+        {
+          "title": "Peptídeos: o que são e como ler a evidência",
+          "path": "/conteudos/peptideos-o-que-sao/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Muscle Labs India e Muscle Labs são sempre a mesma marca?",
+          "answer": "Não é possível concluir isso apenas pelo nome abreviado. Este perfil se refere ao catálogo publicado em musclelabsindia.com."
+        },
+        {
+          "question": "Quais categorias a Muscle Labs India publica?",
+          "answer": "O site consultado organiza referências em comprimidos, injetáveis, ampolas e peptídeos. A seleção desta página reúne apenas alguns nomes documentados."
+        },
+        {
+          "question": "A palavra India comprova a origem de fabricação de um produto?",
+          "answer": "O nome da marca não comprova, sozinho, a origem de uma unidade. Essa verificação exige identificação do fabricante, documentação e rastreabilidade; não foi feita para lotes específicos neste perfil."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Nome completo, identidade mais precisa",
+          "text": "Muscle Labs India é a identificação deste perfil. Usar apenas Muscle Labs pode trazer resultados de outras empresas. O domínio e o nome completo ajudam a reconhecer qual catálogo está sendo consultado."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Linhas e identidade Muscle Labs India, sem confundir marcas de nome semelhante."
+    },
+    {
+      "slug": "synedica",
+      "name": "Synedica",
+      "image": {
+        "src": "/assets/logos/synedica-rc5.webp",
+        "width": "720",
+        "height": "333"
+      },
+      "focus": "Peptídeos e kits",
+      "about": "Synedica aparece em páginas e catálogos com reivindicações conflitantes de identidade. A pesquisa consultou publicações em synedica.org, mas não confirmou de forma independente a titularidade do fabricante nem sua relação com todos os produtos associados ao nome. Este perfil registra os limites da verificação.",
+      "lines": [
+        "Peptídeos",
+        "Kits para pesquisa"
+      ],
+      "products": [],
+      "note": "Há domínios com reivindicações conflitantes sobre esta marca. A autoria do fabricante não foi confirmada de forma independente. Os nomes são atribuídos ao catálogo citado, que os identifica como destinados à pesquisa, não ao uso humano ou veterinário.",
+      "sources": [
+        {
+          "label": "Synedica.org · catálogo de kits para pesquisa",
+          "url": "https://www.synedica.org/collections/pen-kits",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Synedica.org · nota sobre identidade",
+          "url": "https://www.synedica.org/pages/about-us-new",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "identity_or_catalog_pending",
+      "indexable": false,
+      "seo": {
+        "title": "Synedica: marca, linhas e informações | LANDER RIO",
+        "description": "Nome, domínios e pontos ainda não confirmados sobre a identidade Synedica. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "synedica"
+      },
+      "related": [
+        {
+          "title": "Peptídeos: o que são e como ler a evidência",
+          "path": "/conteudos/peptideos-o-que-sao/"
+        },
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Onde fica o laboratório Synedica?",
+          "answer": "A pesquisa não confirmou de modo independente um endereço industrial vinculado a toda a identidade apresentada. Nenhum país ou sede é afirmado neste perfil."
+        },
+        {
+          "question": "Como verificar um QR code Synedica?",
+          "answer": "Não foi validado um canal universal de autenticação. Antes de confiar no resultado, é necessário confirmar quem controla o domínio e a qual fabricante ele pertence."
+        },
+        {
+          "question": "Por que os produtos Synedica não estão listados?",
+          "answer": "As divergências sobre identidade impedem apresentar a associação como verificada. O perfil permanece disponível para explicar a lacuna, sem catálogo ou oferta."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "QR code não encerra a verificação",
+          "text": "Uma página acessada por QR code precisa ser avaliada em conjunto com domínio, titularidade e documentação. Não confirmamos um sistema de autenticação universal da Synedica nem a autenticidade de unidades específicas."
+        }
+      ],
+      "category": "verificacao",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Nome, domínios e pontos ainda não confirmados sobre a identidade Synedica.",
+      "pending": "A associação entre fabricante, domínios e catálogo permanece pendente. A seleção de produtos foi suspensa neste perfil para não apresentar como confirmada uma relação ainda incerta."
+    },
+    {
+      "slug": "geniqs-pharma",
+      "name": "Geniqs Pharma",
+      "image": {
+        "src": "/assets/logos/geniqs-pharma-rc5.webp",
+        "width": "520",
+        "height": "520"
+      },
+      "focus": "Formulações hormonais",
+      "about": "Geniqs Pharma apresenta formulações hormonais nas formas de comprimidos e injetáveis. O site Geniqscare identifica produtos por nome comercial e composição e mantém uma área de autenticação por código. Progenic e Testogenic são exemplos documentados nesse catálogo.",
+      "lines": [
+        "Injetáveis",
+        "Comprimidos"
+      ],
+      "products": [
+        {
+          "name": "Progenic",
+          "detail": "Propionato de testosterona · ampolas",
+          "group": "Injetáveis",
+          "source": 1
+        },
+        {
+          "name": "Testogenic",
+          "detail": "Testosterona em suspensão · ampolas",
+          "group": "Injetáveis",
+          "source": 2
+        }
+      ],
+      "sources": [
+        {
+          "label": "Geniqscare · Progenic",
+          "url": "https://geniqscare.com/product/progenic/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Geniqscare · Testogenic",
+          "url": "https://geniqscare.com/product/testogenic/",
+          "checked": "2026-11-13"
+        },
+        {
+          "label": "Geniqscare · apresentação da Geniqs Pharma",
+          "url": "https://geniqscare.com/about-us/",
+          "checked": "2026-11-13"
+        }
+      ],
+      "review_status": "catalog_attributed",
+      "indexable": true,
+      "seo": {
+        "title": "Geniqs Pharma: marca, linhas e informações | LANDER RIO",
+        "description": "Geniqs Pharma, seu domínio de referência e nomes publicados no catálogo. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "keyword": "geniqs pharma"
+      },
+      "related": [
+        {
+          "title": "Procedência: quais informações conferir",
+          "path": "/conteudos/como-verificar-procedencia-canais-oficiais/"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Qual site foi usado para identificar a Geniqs Pharma?",
+          "answer": "O perfil utiliza Geniqscare e suas páginas de apresentação, Progenic e Testogenic, relacionadas na seção de fontes."
+        },
+        {
+          "question": "Quais produtos foram documentados neste perfil?",
+          "answer": "Progenic e Testogenic constam nas páginas citadas. A seleção preserva os nomes e as composições publicadas, sem afirmar que corresponde a todo o catálogo."
+        },
+        {
+          "question": "Geniqs Pharma é boa ou tem qualidade comprovada?",
+          "answer": "As fontes consultadas são publicações da própria marca. Não verificamos independentemente certificados, lotes ou resultados clínicos; por isso não fazemos uma avaliação de qualidade ou recomendação de uso."
+        }
+      ],
+      "knowledge": [
+        {
+          "title": "Uma letra pode indicar outra empresa",
+          "text": "Este perfil usa o domínio Geniqscare, que se apresenta como Geniqs Pharma. A grafia Geniq, sem o s final, aparece em outra identidade nos resultados de busca; não unificamos suas histórias ou produtos."
+        }
+      ],
+      "category": "laboratorios",
+      "commercial_authorization": "not_verified",
+      "regulatory_review": "pending_no_offers",
+      "verified_on": "2026-11-13",
+      "summary": "Geniqs Pharma, seu domínio de referência e nomes publicados no catálogo."
+    }
+  ],
+  "editorial_policy": {
+    "author": "Redação LANDER RIO",
+    "clinical_review": "not_claimed",
+    "affiliation": "independent",
+    "catalog_scope": "partial_attributed_no_offers"
+  }
+}

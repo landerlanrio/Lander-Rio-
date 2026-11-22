@@ -1,0 +1,15 @@
+test_brands_are_informational_and_not_checkout_links (__main__.Flagship.test_brands_are_informational_and_not_checkout_links) ... ok
+test_commercial_precedes_tools (__main__.Flagship.test_commercial_precedes_tools) ... ok
+test_document_semantics (__main__.Flagship.test_document_semantics) ... ok
+test_images_have_dimensions_and_local_sources (__main__.Flagship.test_images_have_dimensions_and_local_sources) ... ok
+test_original_routes_preserved (__main__.Flagship.test_original_routes_preserved) ... ok
+test_progressive_enhancement_and_motion_fallback (__main__.Flagship.test_progressive_enhancement_and_motion_fallback) ... ok
+test_release_manifest_covers_new_assets (__main__.Flagship.test_release_manifest_covers_new_assets) ... ok
+test_rox_external_transport_stays_disabled (__main__.Flagship.test_rox_external_transport_stays_disabled) ... ok
+test_search_is_local_and_does_not_persist_input (__main__.Flagship.test_search_is_local_and_does_not_persist_input) ... ok
+test_whatsapp_profiles_and_safe_targets (__main__.Flagship.test_whatsapp_profiles_and_safe_targets) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.013s
+
+OK

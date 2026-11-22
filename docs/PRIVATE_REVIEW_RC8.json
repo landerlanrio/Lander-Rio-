@@ -1,0 +1,19 @@
+{
+  "id": "appgdep_6af7a51cf2288191884b6ac26bf3dd0c",
+  "project_id": "appgprj_6af7970e796081919b43c280a424d719",
+  "title": "LANDER RIO — Avaliação privada RC6.3",
+  "version_id": "appgprj_6af7970e796081919b43c280a424d719~appgver_8c24c3d0298881918e2058db5882d90e",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://lander-rio-rc63-avaliacao.igorziturjpa1992.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "release---6af797b2dce48191bb3ce0b7be7dbfd5",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-11-14T00:02:53.088915+00:00",
+  "source_commit": "291ef113fd9a3b5b47aa4c159e80109a91d78941",
+  "audience": "owner-only",
+  "browser_check": "Login gate verified; authenticated hosting not exercised. Local Chromium validated.",
+  "production_domain_changed": false
+}

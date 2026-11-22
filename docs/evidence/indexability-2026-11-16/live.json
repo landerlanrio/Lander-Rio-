@@ -1,0 +1,805 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-11-16T23:21:00.488413+00:00",
+  "mode": "live_http",
+  "baseline_commit": "572dbe3e93cfbcd8ce6872c8465e6d360e69b02a",
+  "pages_checked": 88,
+  "expected_indexable": 46,
+  "expected_noindex": 42,
+  "errors": [],
+  "pages": [
+    {
+      "path": "404.html",
+      "canonical": "https://landerrio.com.br/404",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "atacado/index.html",
+      "canonical": "https://landerrio.com.br/atacado/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "autenticidade/index.html",
+      "canonical": "https://landerrio.com.br/autenticidade/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "business-desk/index.html",
+      "canonical": "https://landerrio.com.br/business-desk/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "business-desk/recebido/index.html",
+      "canonical": "https://landerrio.com.br/business-desk/recebido/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "contato/index.html",
+      "canonical": "https://landerrio.com.br/contato/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/academia-lotada-organizar-treino/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/academia-lotada-organizar-treino/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/acompanhar-progresso-treino/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/acompanhar-progresso-treino/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/alimento-cru-cozido-registro/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/alimento-cru-cozido-registro/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/atacado-rio-como-avaliar-fornecedor/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/atacado-rio-como-avaliar-fornecedor/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/como-consultar-disponibilidade-marcas/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/como-consultar-disponibilidade-marcas/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/como-ler-ficha-treino/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/como-ler-ficha-treino/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/como-organizar-semana-treino/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/como-organizar-semana-treino/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/como-verificar-procedencia-canais-oficiais/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/como-verificar-procedencia-canais-oficiais/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/descanso-entre-series-hipertrofia/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/descanso-entre-series-hipertrofia/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/diario-de-treino-como-registrar/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/diario-de-treino-como-registrar/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/peptideos-o-que-sao/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/peptideos-o-que-sao/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/planejar-compras-refeicoes-semana/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/planejar-compras-refeicoes-semana/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "conteudos/rir-o-que-significa/index.html",
+      "canonical": "https://landerrio.com.br/conteudos/rir-o-que-significa/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "dieta/index.html",
+      "canonical": "https://landerrio.com.br/dieta/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/metodologia/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/metodologia/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/anastrozol/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/anastrozol/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/boldenona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/boldenona/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/clenbuterol/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/clenbuterol/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/clomifeno/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/clomifeno/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/drostanolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/drostanolona/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/estanozolol-injetavel/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/estanozolol-injetavel/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/estanozolol-oral/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/estanozolol-oral/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/fluoximesterona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/fluoximesterona/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/ghrp-6/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/ghrp-6/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/hcg/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/hcg/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/igf-1/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/igf-1/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/insulina/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/insulina/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/ipamorelina/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/ipamorelina/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/letrozol/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/letrozol/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/levotiroxina-t4/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/levotiroxina-t4/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/liotironina-t3/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/liotironina-t3/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/mesterolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/mesterolona/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/metandienona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/metandienona/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/metenolona-injetavel/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/metenolona-injetavel/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/nandrolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/nandrolona/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/oxandrolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/oxandrolona/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/oximetolona/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/oximetolona/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/retatrutida/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/retatrutida/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/somatropina-gh/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/somatropina-gh/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/tamoxifeno/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/tamoxifeno/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-cipionato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-cipionato/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-enantato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-enantato/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-mistura-esteres/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-mistura-esteres/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-propionato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-propionato/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-suspensao/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-suspensao/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-undecanoato-oral/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/testosterona-undecanoato-oral/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/tirzepatida/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/tirzepatida/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/trembolona-acetato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/trembolona-acetato/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/trembolona-enantato/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/trembolona-enantato/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "enciclopedia/substancias/turinabol/index.html",
+      "canonical": "https://landerrio.com.br/enciclopedia/substancias/turinabol/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "entregas/index.html",
+      "canonical": "https://landerrio.com.br/entregas/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "equipe/index.html",
+      "canonical": "https://landerrio.com.br/equipe/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "ferramentas/index.html",
+      "canonical": "https://landerrio.com.br/ferramentas/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "index.html",
+      "canonical": "https://landerrio.com.br/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/alpha-laboratory/index.html",
+      "canonical": "https://landerrio.com.br/marcas/alpha-laboratory/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/alpha-x-prime/index.html",
+      "canonical": "https://landerrio.com.br/marcas/alpha-x-prime/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/cooper-pharma/index.html",
+      "canonical": "https://landerrio.com.br/marcas/cooper-pharma/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/eminence-labs/index.html",
+      "canonical": "https://landerrio.com.br/marcas/eminence-labs/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/eticos/index.html",
+      "canonical": "https://landerrio.com.br/marcas/eticos/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/geniqs-pharma/index.html",
+      "canonical": "https://landerrio.com.br/marcas/geniqs-pharma/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/index.html",
+      "canonical": "https://landerrio.com.br/marcas/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/indufar/index.html",
+      "canonical": "https://landerrio.com.br/marcas/indufar/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/landerlan/index.html",
+      "canonical": "https://landerrio.com.br/marcas/landerlan/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/landerlan-gold/index.html",
+      "canonical": "https://landerrio.com.br/marcas/landerlan-gold/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/life-peptideos/index.html",
+      "canonical": "https://landerrio.com.br/marcas/life-peptideos/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/muscle-labs-india/index.html",
+      "canonical": "https://landerrio.com.br/marcas/muscle-labs-india/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/oxygen-kw-pharma/index.html",
+      "canonical": "https://landerrio.com.br/marcas/oxygen-kw-pharma/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/quimfa/index.html",
+      "canonical": "https://landerrio.com.br/marcas/quimfa/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/synedica/index.html",
+      "canonical": "https://landerrio.com.br/marcas/synedica/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/topharma/index.html",
+      "canonical": "https://landerrio.com.br/marcas/topharma/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "marcas/zphc/index.html",
+      "canonical": "https://landerrio.com.br/marcas/zphc/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "perguntas-frequentes/index.html",
+      "canonical": "https://landerrio.com.br/perguntas-frequentes/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "politica-editorial/index.html",
+      "canonical": "https://landerrio.com.br/politica-editorial/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "privacidade.html",
+      "canonical": "https://landerrio.com.br/privacidade",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "radar-performance/index.html",
+      "canonical": "https://landerrio.com.br/radar-performance/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "radar-performance/recebido/index.html",
+      "canonical": "https://landerrio.com.br/radar-performance/recebido/",
+      "status": 200,
+      "expected_indexable": false,
+      "noindex": true,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "sobre/index.html",
+      "canonical": "https://landerrio.com.br/sobre/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "termos.html",
+      "canonical": "https://landerrio.com.br/termos",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "treino/index.html",
+      "canonical": "https://landerrio.com.br/treino/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    },
+    {
+      "path": "varejo/index.html",
+      "canonical": "https://landerrio.com.br/varejo/",
+      "status": 200,
+      "expected_indexable": true,
+      "noindex": false,
+      "crawlable": true,
+      "errors": []
+    }
+  ],
+  "limits": "Technical directive check only. Does not prove search-engine indexing, crawl-history deltas, traffic or conversion."
+}

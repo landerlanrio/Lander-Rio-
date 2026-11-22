@@ -1,0 +1,30 @@
+{
+  "before_hero_logo_bytes": 233070,
+  "after_hero_logo_bytes": 61158,
+  "assets": [
+    {
+      "file": "site/assets/logos/landerlan-hero-rc4.webp",
+      "bytes": 9442,
+      "width": 305,
+      "height": 160
+    },
+    {
+      "file": "site/assets/logos/topharma-hero-rc4.webp",
+      "bytes": 15784,
+      "width": 181,
+      "height": 160
+    },
+    {
+      "file": "site/assets/logos/life-peptideos-hero-rc4.webp",
+      "bytes": 21642,
+      "width": 440,
+      "height": 103
+    },
+    {
+      "file": "site/assets/logos/oxygen-kw-pharma-hero-rc4.webp",
+      "bytes": 14290,
+      "width": 440,
+      "height": 53
+    }
+  ]
+}

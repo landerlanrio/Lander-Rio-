@@ -1,0 +1,1230 @@
+{
+  "production_deploy": "6af28cd36c8c0ece64548aca",
+  "at": "2026-11-13",
+  "read_only": true,
+  "files": [
+    {
+      "path": "404.html",
+      "status": 200,
+      "sha256": "d45cf9bdd8bff3ebc08f771e0dd8495d015f64e450ccb3a2d604ac4f54594236",
+      "matches_historic_manifest": true,
+      "bytes": 5197
+    },
+    {
+      "path": "_headers",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "_redirects",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "status": 200,
+      "sha256": "da4d5f81e874b38534dcd21a7e051f52602adf726b86ba8e51d7b5c3436410dd",
+      "matches_historic_manifest": true,
+      "bytes": 8208
+    },
+    {
+      "path": "assets/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2",
+      "status": 200,
+      "sha256": "9b6f5ff45b278c744b5f379a2c4ecbaf858a842b8eaf82ac8d21b699ca16c608",
+      "matches_historic_manifest": true,
+      "bytes": 29288
+    },
+    {
+      "path": "assets/access-v20.js",
+      "status": 200,
+      "sha256": "6c40888ff3beac2336c8c9ee1002eb5647433c47986a3087b1b7747a57f3b537",
+      "matches_historic_manifest": true,
+      "bytes": 2460
+    },
+    {
+      "path": "assets/apple-touch-icon-v13-3.png",
+      "status": 200,
+      "sha256": "da4d5f81e874b38534dcd21a7e051f52602adf726b86ba8e51d7b5c3436410dd",
+      "matches_historic_manifest": true,
+      "bytes": 8208
+    },
+    {
+      "path": "assets/brand-logos-source-v20-2.jpg",
+      "status": 200,
+      "sha256": "ff6812256a984c654b2afcf8fffcb84a8ac3cd26f15db8f0a5367a698f4c68fa",
+      "matches_historic_manifest": true,
+      "bytes": 609310
+    },
+    {
+      "path": "assets/brand-strip-v20-2.js",
+      "status": 200,
+      "sha256": "cfcf049dd3beff2f1fc07827a8eb283a6c5a34ce4ae99ffee996e6ded938cc68",
+      "matches_historic_manifest": true,
+      "bytes": 2520
+    },
+    {
+      "path": "assets/brand-strip-v21-1.css",
+      "status": 200,
+      "sha256": "41b59bad86532e733320e4d054322a00e386f2b508676407fede641eae345988",
+      "matches_historic_manifest": true,
+      "bytes": 4686
+    },
+    {
+      "path": "assets/brand-symbol-v20.webp",
+      "status": 200,
+      "sha256": "54a7c160437ff700494d1d8359eca3d2ba7bebb19fd488e0721e880a7ea246d3",
+      "matches_historic_manifest": true,
+      "bytes": 2726
+    },
+    {
+      "path": "assets/commerce-v21.css",
+      "status": 200,
+      "sha256": "e1560a0afe84853a34d1714d0287421986d6fe62602b184501be49a7f39232d5",
+      "matches_historic_manifest": true,
+      "bytes": 16124
+    },
+    {
+      "path": "assets/commerce-v21.js",
+      "status": 200,
+      "sha256": "14533ae37d878122ddf7fda3c98d25e53e25eb3eb0cf1d86f208e4b2ecada8ab",
+      "matches_historic_manifest": true,
+      "bytes": 4716
+    },
+    {
+      "path": "assets/commerce-v23-1.js",
+      "status": 200,
+      "sha256": "8302b9b5c73fc662c7b3ccdefb1887ba4c9189b8a82bc89e5f883361dc3b5f5b",
+      "matches_historic_manifest": true,
+      "bytes": 4921
+    },
+    {
+      "path": "assets/contact-help-v23.js",
+      "status": 200,
+      "sha256": "2c67ec11d85c69cc3c9ce063b08d4a71a7e0b90b5411e001c05c0dd2c724456a",
+      "matches_historic_manifest": true,
+      "bytes": 1613
+    },
+    {
+      "path": "assets/editorial-v22.css",
+      "status": 200,
+      "sha256": "3bfa0cf7c63194cb3c6d3f59db2682841d61af914a51ed4b60ec247d30549cb6",
+      "matches_historic_manifest": true,
+      "bytes": 1862
+    },
+    {
+      "path": "assets/editorial-v22.js",
+      "status": 200,
+      "sha256": "4daa12f7d4af6ef98c1725a4dfed68eaa3dd5d0a026ae0b8cd9cb40e4a8c63c4",
+      "matches_historic_manifest": true,
+      "bytes": 756
+    },
+    {
+      "path": "assets/encyclopedia-v23-3.css",
+      "status": 200,
+      "sha256": "2a6b560d35dd894471696295f9a42b37e4352166a2f3aa9f861ddc59705ad2fc",
+      "matches_historic_manifest": true,
+      "bytes": 1967
+    },
+    {
+      "path": "assets/experience-v23.css",
+      "status": 200,
+      "sha256": "0a520816e54f668175ee7286f1ec7e68d4b2050023ea70967ef600fa25e9daac",
+      "matches_historic_manifest": true,
+      "bytes": 7616
+    },
+    {
+      "path": "assets/favicon-v13-3.png",
+      "status": 200,
+      "sha256": "ffd0028e74e540e472c486768c249e95e3e1c6949090a57d1443e15690bd9179",
+      "matches_historic_manifest": true,
+      "bytes": 56707
+    },
+    {
+      "path": "assets/home-tools-v20-5.css",
+      "status": 200,
+      "sha256": "7d341482463fad7a783cf11561cf4b3d0ebb940034a7279dd54aa4c9d83cd610",
+      "matches_historic_manifest": true,
+      "bytes": 3291
+    },
+    {
+      "path": "assets/lander-training-engine-v18.js",
+      "status": 200,
+      "sha256": "7645369d17f754b6b83fffc5b6471e979f86c80b29b1039671766413d761ae72",
+      "matches_historic_manifest": true,
+      "bytes": 20124
+    },
+    {
+      "path": "assets/logos/alpha-x-prime-v23.webp",
+      "status": 200,
+      "sha256": "20e350399a2be5543a6ab441f0f31831b88398b0ba75b81fa5f06d9b27b13427",
+      "matches_historic_manifest": true,
+      "bytes": 10898
+    },
+    {
+      "path": "assets/logos/cooper-pharma-v23.webp",
+      "status": 200,
+      "sha256": "b135381aae9e8070feac48af31a025d2a895204c5ac288e1c822edd1ccd47265",
+      "matches_historic_manifest": true,
+      "bytes": 13636
+    },
+    {
+      "path": "assets/logos/eminence-labs-v23.webp",
+      "status": 200,
+      "sha256": "7db275b5d059a28f1cb6f8fd2edd2a44dda4105002814afbc54d48c69242e7d3",
+      "matches_historic_manifest": true,
+      "bytes": 12682
+    },
+    {
+      "path": "assets/logos/eticos-v23.webp",
+      "status": 200,
+      "sha256": "9c2274e59a88e2b34b8ae2d69d63bef219fd9955b2117dd930dfd99426a20044",
+      "matches_historic_manifest": true,
+      "bytes": 4466
+    },
+    {
+      "path": "assets/logos/geniqs-pharma-v23.webp",
+      "status": 200,
+      "sha256": "f0c33ae7b730d6bebc67aa7106a7479cf2103f1fddf47e00b0a82442d09a9c73",
+      "matches_historic_manifest": true,
+      "bytes": 14210
+    },
+    {
+      "path": "assets/logos/indufar-v23.webp",
+      "status": 200,
+      "sha256": "ad178caf69d1c1d154f0609b65074d7a1a614c9122a56bed210e7b7ca30e9907",
+      "matches_historic_manifest": true,
+      "bytes": 3918
+    },
+    {
+      "path": "assets/logos/landerlan-v23.webp",
+      "status": 200,
+      "sha256": "ff2c1a9dbe9e6bd36d6178bbc16c635216e6aa1aa2e887f272d38ef0de358657",
+      "matches_historic_manifest": true,
+      "bytes": 14188
+    },
+    {
+      "path": "assets/logos/life-peptideos-v23.webp",
+      "status": 200,
+      "sha256": "9398c9a9da00c5dc2d9bee532a0c7c276c17a0cbb93a7ef1ff6a764a4e03720c",
+      "matches_historic_manifest": true,
+      "bytes": 9248
+    },
+    {
+      "path": "assets/logos/muscle-labs-india-v23.webp",
+      "status": 200,
+      "sha256": "a72b2a4766c89e32e068156943ed6709b2cb53365ff493d5754b717ce60aba8e",
+      "matches_historic_manifest": true,
+      "bytes": 12186
+    },
+    {
+      "path": "assets/logos/oxygen-kw-pharma-v23.webp",
+      "status": 200,
+      "sha256": "ef9539a863d1800261a48a1e61f3f38fe3afda0e69835e8b520a9a2e292a5e61",
+      "matches_historic_manifest": true,
+      "bytes": 6660
+    },
+    {
+      "path": "assets/logos/quimfa-v23.webp",
+      "status": 200,
+      "sha256": "e90ef68adb8ee014019a49882f82f355f8dcc3a9c1777aa547e5dfc42d70c918",
+      "matches_historic_manifest": true,
+      "bytes": 4922
+    },
+    {
+      "path": "assets/logos/synedica-v23.webp",
+      "status": 200,
+      "sha256": "025039271138a466ade03afe010500e534231e13a6946491caa6ad50ece6f48f",
+      "matches_historic_manifest": true,
+      "bytes": 10758
+    },
+    {
+      "path": "assets/logos/topharma-v23.webp",
+      "status": 200,
+      "sha256": "594e6b7cad82e6945d39c8b76a1d73e1d3f3255c940224bfd81d291967bb22ad",
+      "matches_historic_manifest": true,
+      "bytes": 16198
+    },
+    {
+      "path": "assets/logos/zphc-v23.webp",
+      "status": 200,
+      "sha256": "1fc9b2d677e42c10dd566232165f295462a95b223d931dbafe1c55ad3a02dc99",
+      "matches_historic_manifest": true,
+      "bytes": 9286
+    },
+    {
+      "path": "assets/measurement-v21.js",
+      "status": 200,
+      "sha256": "2a798614785fcabb3fde2f796f1ebfe14f434557ccbcb4659ddf2e51918ed27f",
+      "matches_historic_manifest": true,
+      "bytes": 7036
+    },
+    {
+      "path": "assets/measurement-v23-2.js",
+      "status": 200,
+      "sha256": "3c74cd919df2c312d06100815579b587be921463ee33fb680ecca7fd317f0c71",
+      "matches_historic_manifest": true,
+      "bytes": 7036
+    },
+    {
+      "path": "assets/og-lander-v21.jpg",
+      "status": 200,
+      "sha256": "18649b131a4b737897ac93247b16188d8d71a4ed0c92e2987a1edbd8896302d2",
+      "matches_historic_manifest": true,
+      "bytes": 49578
+    },
+    {
+      "path": "assets/radar-v21.js",
+      "status": 200,
+      "sha256": "7a7e4e9399c62399df92b293f461e18bf559ac4621d5192e4c726b741583a7d9",
+      "matches_historic_manifest": true,
+      "bytes": 1453
+    },
+    {
+      "path": "assets/recebimentos/foto-01.webp",
+      "status": 200,
+      "sha256": "5c32643bfbc2a0f440ab1d4d744e3cc68b4a900ca3ec6f444c0b32201f51d545",
+      "matches_historic_manifest": true,
+      "bytes": 25224
+    },
+    {
+      "path": "assets/recebimentos/foto-02.webp",
+      "status": 200,
+      "sha256": "47a0e2de61a35c17687901f914dea5b576cad4a8d154c5cb79d1512610c7f42d",
+      "matches_historic_manifest": true,
+      "bytes": 27866
+    },
+    {
+      "path": "assets/recebimentos/foto-03.webp",
+      "status": 200,
+      "sha256": "562f02662f0add5a7280349661893bd138e80a0072a67889f9264db2a0584cb1",
+      "matches_historic_manifest": true,
+      "bytes": 18318
+    },
+    {
+      "path": "assets/recebimentos/foto-04.webp",
+      "status": 200,
+      "sha256": "69e1430ef8f4e5740bcf56380cce782e5a718927af0839b8bfbc94083b58fd06",
+      "matches_historic_manifest": true,
+      "bytes": 7820
+    },
+    {
+      "path": "assets/recebimentos/foto-05.webp",
+      "status": 200,
+      "sha256": "4705206f3945837d7cd78860c4a8a60d395099ef21733606bfb9803327ea2eac",
+      "matches_historic_manifest": true,
+      "bytes": 50494
+    },
+    {
+      "path": "assets/recebimentos/foto-06.webp",
+      "status": 200,
+      "sha256": "fa27e4a3490b1a0239e1bdf65be2f0ef321a10713d82c58c071ba56999899af9",
+      "matches_historic_manifest": true,
+      "bytes": 21532
+    },
+    {
+      "path": "assets/recebimentos/registro-01.webp",
+      "status": 200,
+      "sha256": "cbb2c8e58f1dc34841085732b13cdd5e5ef2486b13a56c11f966287944050cb0",
+      "matches_historic_manifest": true,
+      "bytes": 30006
+    },
+    {
+      "path": "assets/recebimentos/registro-02.webp",
+      "status": 200,
+      "sha256": "4b5e61646d5b04deb268dd446cc80a9c9892903e7888ec9cf5ef4e58bb46f428",
+      "matches_historic_manifest": true,
+      "bytes": 33618
+    },
+    {
+      "path": "assets/recebimentos/registro-03.webp",
+      "status": 200,
+      "sha256": "e691d27f8848172d993114c0e6e843dbbe2eec89f2fbfb5a2227628c8ed49d10",
+      "matches_historic_manifest": true,
+      "bytes": 18340
+    },
+    {
+      "path": "assets/recebimentos/registro-04.webp",
+      "status": 200,
+      "sha256": "aa193adf16d6e6ceacc480b192994087d48249930b7206c37a50b6eee77b0b63",
+      "matches_historic_manifest": true,
+      "bytes": 19872
+    },
+    {
+      "path": "assets/recebimentos/registro-05.webp",
+      "status": 200,
+      "sha256": "30df6d5ab5ba008d2535969344580025ed6b6a16fb5e793cab735fd269011646",
+      "matches_historic_manifest": true,
+      "bytes": 82060
+    },
+    {
+      "path": "assets/recebimentos/registro-06.webp",
+      "status": 200,
+      "sha256": "d77f72fd3bdb71668b63648ce2ce8e249ba5945c171433223859a3a76cc9b2d0",
+      "matches_historic_manifest": true,
+      "bytes": 62454
+    },
+    {
+      "path": "assets/recebimentos-v23-9.css",
+      "status": 200,
+      "sha256": "77170b37b4808878d42eb677f9a3d31a3de038a7bf26b9b5d6f7c8a3bf9c7efd",
+      "matches_historic_manifest": true,
+      "bytes": 4943
+    },
+    {
+      "path": "assets/refinement-v21.css",
+      "status": 200,
+      "sha256": "b8699b031879632f2563c169624afc99423f01f833c066d9d3c8aac1cd4c785e",
+      "matches_historic_manifest": true,
+      "bytes": 13155
+    },
+    {
+      "path": "assets/tool-fixes-v20-1.css",
+      "status": 200,
+      "sha256": "52f9446887febf9f05a860422a0dc1e3cd5a7af9d59ea4d17ea676d6882028aa",
+      "matches_historic_manifest": true,
+      "bytes": 1373
+    },
+    {
+      "path": "assets/training-1200-v20.webp",
+      "status": 200,
+      "sha256": "6576653ab5ebe02f9ba8faf67b2092432c756d32b9e49916bae06023a20efdec",
+      "matches_historic_manifest": true,
+      "bytes": 130754
+    },
+    {
+      "path": "assets/training-640-v20.webp",
+      "status": 200,
+      "sha256": "63dec426f7ce66fe0856578fb2d3e57d4d908a8c0f8cee0ea8887b5d586fb147",
+      "matches_historic_manifest": true,
+      "bytes": 35518
+    },
+    {
+      "path": "assets/training-v21.css",
+      "status": 200,
+      "sha256": "edbe3888d6b2fb2791de207c1267507e60dd2cc69e9dc24056513a4994340146",
+      "matches_historic_manifest": true,
+      "bytes": 31188
+    },
+    {
+      "path": "assets/training-v21.js",
+      "status": 200,
+      "sha256": "732991fe3838d8e46b48732956ee10fd97cb909b7cc7bb50efedc630d676326a",
+      "matches_historic_manifest": true,
+      "bytes": 16132
+    },
+    {
+      "path": "atacado/index.html",
+      "status": 200,
+      "sha256": "6ad8d6d5c1d4ea483ce749d116b2be26ef5da2a53420de5130988798c2f0c8cb",
+      "matches_historic_manifest": true,
+      "bytes": 14535
+    },
+    {
+      "path": "autenticidade/index.html",
+      "status": 200,
+      "sha256": "79f4e7d8f60574624a555c3241a755d02f5f11fafd3cacc084e00bff8ef6b0bb",
+      "matches_historic_manifest": true,
+      "bytes": 6198
+    },
+    {
+      "path": "business-desk/index.html",
+      "status": 200,
+      "sha256": "32f65147053f9631c509a69d6190467251af8bc4470b14e1b5a378bef799f1d9",
+      "matches_historic_manifest": true,
+      "bytes": 10396
+    },
+    {
+      "path": "business-desk/recebido/index.html",
+      "status": 200,
+      "sha256": "7d10ee8b9f9d45be64a20ce45ff8d47204d0242524087edd7c82c59fe81ab4ab",
+      "matches_historic_manifest": true,
+      "bytes": 6286
+    },
+    {
+      "path": "contato/index.html",
+      "status": 200,
+      "sha256": "f32fb7ea3428803e421bddc2a5ec2bf4b4de4ce03eee0cbb5213a167695d3da5",
+      "matches_historic_manifest": true,
+      "bytes": 13306
+    },
+    {
+      "path": "conteudos/academia-lotada-organizar-treino/index.html",
+      "status": 200,
+      "sha256": "a757edfe620a429d7928a2eae93d36a8858e8ea0adaf7be7b5846859866cbcfd",
+      "matches_historic_manifest": true,
+      "bytes": 9356
+    },
+    {
+      "path": "conteudos/acompanhar-progresso-treino/index.html",
+      "status": 200,
+      "sha256": "78bf3ebe5108f6254080475d925a54052c2203b19f2e88744f8c81587db6f05e",
+      "matches_historic_manifest": true,
+      "bytes": 9244
+    },
+    {
+      "path": "conteudos/alimento-cru-cozido-registro/index.html",
+      "status": 200,
+      "sha256": "649caefe1f6aa1f02cf4df1eab95578ee56db3df4d85d51995e8fc8df17a085d",
+      "matches_historic_manifest": true,
+      "bytes": 9512
+    },
+    {
+      "path": "conteudos/atacado-rio-como-avaliar-fornecedor/index.html",
+      "status": 200,
+      "sha256": "9e9cd77313f02bdf5251067978cf1a6d3681e383fc99888b972bef4788f95819",
+      "matches_historic_manifest": true,
+      "bytes": 5978
+    },
+    {
+      "path": "conteudos/como-consultar-disponibilidade-marcas/index.html",
+      "status": 200,
+      "sha256": "e30fd7ed70ddc8c3988af720245c223f7dab2c23d1fc4270cbcfc94fe98bcee6",
+      "matches_historic_manifest": true,
+      "bytes": 6054
+    },
+    {
+      "path": "conteudos/como-ler-ficha-treino/index.html",
+      "status": 200,
+      "sha256": "06983ce9adb3054d217163bdb1be7e67b1a29e17f29f2f4f472c256646f034ca",
+      "matches_historic_manifest": true,
+      "bytes": 9145
+    },
+    {
+      "path": "conteudos/como-organizar-semana-treino/index.html",
+      "status": 200,
+      "sha256": "6fdd690317700110a616fc74c5da4d1e2837bdc16dfb6d43837f62aa51d668d4",
+      "matches_historic_manifest": true,
+      "bytes": 9907
+    },
+    {
+      "path": "conteudos/como-verificar-procedencia-canais-oficiais/index.html",
+      "status": 200,
+      "sha256": "9abcb7b9c255dad2080b2807b005ab424f690b3bd169c15551e180fc9b3d0385",
+      "matches_historic_manifest": true,
+      "bytes": 6056
+    },
+    {
+      "path": "conteudos/diario-de-treino-como-registrar/index.html",
+      "status": 200,
+      "sha256": "421eb49bad2128c3db5d1d81a963fe0b6718c373c6bd5af3f0616abc73de99cc",
+      "matches_historic_manifest": true,
+      "bytes": 9744
+    },
+    {
+      "path": "conteudos/index.html",
+      "status": 200,
+      "sha256": "abb6d28bfe2f84cfc52d3f5acad36badd780195aeb9915b2dc0e93893074fd98",
+      "matches_historic_manifest": true,
+      "bytes": 9297
+    },
+    {
+      "path": "conteudos/planejar-compras-refeicoes-semana/index.html",
+      "status": 200,
+      "sha256": "99b54b2851776356cf73a305ac7a522096f899794c8f871168d91005b8aa6d3c",
+      "matches_historic_manifest": true,
+      "bytes": 9648
+    },
+    {
+      "path": "conteudos/rir-o-que-significa/index.html",
+      "status": 200,
+      "sha256": "45722d241a80f31595c26e61a011dcdcc0f2101945c22c013149346e55ffc553",
+      "matches_historic_manifest": true,
+      "bytes": 9599
+    },
+    {
+      "path": "dieta/analytics-v20.js",
+      "status": 200,
+      "sha256": "171f0731a4cdcec769ef2ea18ee1f98769568a8000ac509d9c86ca4542180940",
+      "matches_historic_manifest": true,
+      "bytes": 198
+    },
+    {
+      "path": "dieta/app-v21.js",
+      "status": 200,
+      "sha256": "cbccabfa36ffb44977a8752b7f62cb846a9fb04aa16965f585412e0e2faa983b",
+      "matches_historic_manifest": true,
+      "bytes": 20809
+    },
+    {
+      "path": "dieta/config.js",
+      "status": 200,
+      "sha256": "ff3a976288794d5a64d5b932e56789d7cf437408b5c84f6aad9161e40dd17937",
+      "matches_historic_manifest": true,
+      "bytes": 207
+    },
+    {
+      "path": "dieta/food-data-manifest.json",
+      "status": 200,
+      "sha256": "191b40bd4d19f3abec802eb8f37c01adecdddd0ea8194fadda003928090cfa65",
+      "matches_historic_manifest": true,
+      "bytes": 18640
+    },
+    {
+      "path": "dieta/foods.js",
+      "status": 200,
+      "sha256": "6a65f08b4a70ad9ad4a4dd05d7623f307620ebc59a14a9269baf5d6c6779603c",
+      "matches_historic_manifest": true,
+      "bytes": 29621
+    },
+    {
+      "path": "dieta/index.html",
+      "status": 200,
+      "sha256": "7291340443d47711b9fa2616fa8378fbdd080c6af95b238a2d0ee4a138f4a754",
+      "matches_historic_manifest": true,
+      "bytes": 24476
+    },
+    {
+      "path": "dieta/mealGenerator.js",
+      "status": 200,
+      "sha256": "318ea08a9b0cefada82bd290e593a2436676f6456f1558c451b3bc179de0b195",
+      "matches_historic_manifest": true,
+      "bytes": 36237
+    },
+    {
+      "path": "dieta/nutrition-v21.css",
+      "status": 200,
+      "sha256": "af0325cf69d5aa6c7bef06dce56aba58c30eb8d841711428700ceafee7fb7992",
+      "matches_historic_manifest": true,
+      "bytes": 8962
+    },
+    {
+      "path": "dieta/nutritionEngine.js",
+      "status": 200,
+      "sha256": "a7453f8868187844944e0ab2b650a4ebb52d32f90cb2387914b3c66c969221dd",
+      "matches_historic_manifest": true,
+      "bytes": 6436
+    },
+    {
+      "path": "dieta/safety.js",
+      "status": 200,
+      "sha256": "573633038050f56ce5f1075eb9a9752bce4b4ee4730930935d9fe0b3c9dc80ea",
+      "matches_historic_manifest": true,
+      "bytes": 2238
+    },
+    {
+      "path": "dieta/storage.js",
+      "status": 200,
+      "sha256": "b52353714f88682aa5233c8398fc2cc53753dfc9cc3ea09992eba2f4ef9945c4",
+      "matches_historic_manifest": true,
+      "bytes": 515
+    },
+    {
+      "path": "dieta/substitutionEngine.js",
+      "status": 200,
+      "sha256": "9bf901b066d74975d0a1b06b7f57d3f60f5ef0aecb06f2f8ccc81b6fac92bb3a",
+      "matches_historic_manifest": true,
+      "bytes": 2457
+    },
+    {
+      "path": "enciclopedia/assets/app.js",
+      "status": 200,
+      "sha256": "60f460bd80da868b07faaf7558187a77183208610a901e8d0338008d5213b751",
+      "matches_historic_manifest": true,
+      "bytes": 6372
+    },
+    {
+      "path": "enciclopedia/assets/catalog-data.js",
+      "status": 200,
+      "sha256": "b4365ce297d035b225a0568184e0585507bd06fae3ac3c71a999d2ad8bd8e162",
+      "matches_historic_manifest": true,
+      "bytes": 117758
+    },
+    {
+      "path": "enciclopedia/assets/catalogo.json",
+      "status": 200,
+      "sha256": "6d498a3bdbcfdbdc14d12352fcec429d890136ad20aa8ae595a320c725500924",
+      "matches_historic_manifest": true,
+      "bytes": 132135
+    },
+    {
+      "path": "enciclopedia/assets/experience-v23-8.css",
+      "status": 200,
+      "sha256": "380feb4edde08cbbc8321ae75a9a765b1eb3424b668c09bde200780279023a98",
+      "matches_historic_manifest": true,
+      "bytes": 6043
+    },
+    {
+      "path": "enciclopedia/assets/experience-v23-8.js",
+      "status": 200,
+      "sha256": "bd106995a357c9c801224b23b133cc91b217467dad9215119ae396759489604a",
+      "matches_historic_manifest": true,
+      "bytes": 2960
+    },
+    {
+      "path": "enciclopedia/assets/nav-v23-4.js",
+      "status": 200,
+      "sha256": "9875357967570ab18a529100387ab640a5fc7c28b51849b2cd50ddd7bf011acb",
+      "matches_historic_manifest": true,
+      "bytes": 794
+    },
+    {
+      "path": "enciclopedia/assets/style.css",
+      "status": 200,
+      "sha256": "6bee0251ec47bf371f4da2ddda7be044acb5b0ef370d7d21a2d77d5345feb164",
+      "matches_historic_manifest": true,
+      "bytes": 30034
+    },
+    {
+      "path": "enciclopedia/index.html",
+      "status": 200,
+      "sha256": "e0a7ea29e3cd6a2b4e2268faae78a2b1926abd0b4cd1a251fcbc4100799278d8",
+      "matches_historic_manifest": true,
+      "bytes": 33095
+    },
+    {
+      "path": "enciclopedia/metodologia/index.html",
+      "status": 200,
+      "sha256": "bdd54cf94cc3b5ef7554a5056a02aa00cd0908dd7cfba751894496137281f135",
+      "matches_historic_manifest": true,
+      "bytes": 9658
+    },
+    {
+      "path": "enciclopedia/sitemap-enciclopedia.xml",
+      "status": 200,
+      "sha256": "1deea8323a7cc458f7cc039bddd25fcfbf7cf446c4b13e257b728db9978082eb",
+      "matches_historic_manifest": true,
+      "bytes": 5325
+    },
+    {
+      "path": "enciclopedia/substancias/anastrozol/index.html",
+      "status": 200,
+      "sha256": "79e0defe3636e6726c20908d102692501a0e17ccd5189852f6bf1cfa23f361ac",
+      "matches_historic_manifest": true,
+      "bytes": 13637
+    },
+    {
+      "path": "enciclopedia/substancias/boldenona/index.html",
+      "status": 200,
+      "sha256": "a389be4a22eb1144ce3fcd40d92489e23e763859f439f2a38eea5644963f440f",
+      "matches_historic_manifest": true,
+      "bytes": 14944
+    },
+    {
+      "path": "enciclopedia/substancias/clenbuterol/index.html",
+      "status": 200,
+      "sha256": "c7659940405faa339a5d62fe437638f6c69044c46acb61225f566a5502465de0",
+      "matches_historic_manifest": true,
+      "bytes": 14236
+    },
+    {
+      "path": "enciclopedia/substancias/clomifeno/index.html",
+      "status": 200,
+      "sha256": "16a8c2b95a7b79e7b0c9fbfc25f792fe69d5af694dffd72dd0960393d45c350d",
+      "matches_historic_manifest": true,
+      "bytes": 13250
+    },
+    {
+      "path": "enciclopedia/substancias/drostanolona/index.html",
+      "status": 200,
+      "sha256": "352f2ffd59363f0abcae4ca2a8c0670579d06f58c97a95820faf4bb05355a910",
+      "matches_historic_manifest": true,
+      "bytes": 14949
+    },
+    {
+      "path": "enciclopedia/substancias/estanozolol-injetavel/index.html",
+      "status": 200,
+      "sha256": "87bc96e59383480750bbc70f328e93ea0c131f6e3cd5f79052636f4195b564eb",
+      "matches_historic_manifest": true,
+      "bytes": 15158
+    },
+    {
+      "path": "enciclopedia/substancias/estanozolol-oral/index.html",
+      "status": 200,
+      "sha256": "b208e07e43a08017f32f6126d1b653ace9e2aac842362f95fa08a2a52e77f5db",
+      "matches_historic_manifest": true,
+      "bytes": 15004
+    },
+    {
+      "path": "enciclopedia/substancias/fluoximesterona/index.html",
+      "status": 200,
+      "sha256": "e216b73a3caa1f0299fa3e3efa66e2304b58c2db67960561edcc3014c0b4bbd5",
+      "matches_historic_manifest": true,
+      "bytes": 14920
+    },
+    {
+      "path": "enciclopedia/substancias/ghrp-6/index.html",
+      "status": 200,
+      "sha256": "be1aba4c7addc1a4a28dd6c615fd5259d710fc9c06fc9e82ec748ee3a8902aba",
+      "matches_historic_manifest": true,
+      "bytes": 13244
+    },
+    {
+      "path": "enciclopedia/substancias/hcg/index.html",
+      "status": 200,
+      "sha256": "1bce7341a6e4532c3e1f7677c2e7076c5386e845960d992b5a2d0cd8bc28c140",
+      "matches_historic_manifest": true,
+      "bytes": 14025
+    },
+    {
+      "path": "enciclopedia/substancias/igf-1/index.html",
+      "status": 200,
+      "sha256": "c842b1b365d32a74ad518be91fe39cf1e32829739f20b52ab4ba87f5d7a2eb9e",
+      "matches_historic_manifest": true,
+      "bytes": 13355
+    },
+    {
+      "path": "enciclopedia/substancias/insulina/index.html",
+      "status": 200,
+      "sha256": "caed341480a41f8674fe88325a8f49c349f551752b9efe59e1df311ea26b8542",
+      "matches_historic_manifest": true,
+      "bytes": 13682
+    },
+    {
+      "path": "enciclopedia/substancias/ipamorelina/index.html",
+      "status": 200,
+      "sha256": "01e74d3c0ec6781c7c8acac502c30c551e96f2c4489bba58dfb7992cd6ff3ba0",
+      "matches_historic_manifest": true,
+      "bytes": 13371
+    },
+    {
+      "path": "enciclopedia/substancias/letrozol/index.html",
+      "status": 200,
+      "sha256": "ec9614481193188754804d2a9d393ecc2ef84daa09ffca90a5bbfb7620d214a6",
+      "matches_historic_manifest": true,
+      "bytes": 13016
+    },
+    {
+      "path": "enciclopedia/substancias/levotiroxina-t4/index.html",
+      "status": 200,
+      "sha256": "27251ea29b5c3bbd409003cf25579411c9ad71c29fe558acf6d3a1d3866d5034",
+      "matches_historic_manifest": true,
+      "bytes": 13305
+    },
+    {
+      "path": "enciclopedia/substancias/liotironina-t3/index.html",
+      "status": 200,
+      "sha256": "9c72a5090f2e79711554a1a90588c9db0c18467ef2fad35563a7ac97f5f8d8e9",
+      "matches_historic_manifest": true,
+      "bytes": 13652
+    },
+    {
+      "path": "enciclopedia/substancias/mesterolona/index.html",
+      "status": 200,
+      "sha256": "68562f6b0440f8e77ee1663f2eb46af10e0de7c10884b1c030a171401fcf6d9e",
+      "matches_historic_manifest": true,
+      "bytes": 14916
+    },
+    {
+      "path": "enciclopedia/substancias/metandienona/index.html",
+      "status": 200,
+      "sha256": "0afe8fb1e0e3d7ff81846cc79cae9266e93010156aa425f24687be62f88f67d0",
+      "matches_historic_manifest": true,
+      "bytes": 14877
+    },
+    {
+      "path": "enciclopedia/substancias/metenolona-injetavel/index.html",
+      "status": 200,
+      "sha256": "4fc97338e82cedab178e9226d771f252eebc65084819e3855f136a8883aaf2ab",
+      "matches_historic_manifest": true,
+      "bytes": 15107
+    },
+    {
+      "path": "enciclopedia/substancias/nandrolona/index.html",
+      "status": 200,
+      "sha256": "d83251ca71cb5ee7291459751ab6ae0b574a2b5ee3ffdb3f8a29f4d352ab55c7",
+      "matches_historic_manifest": true,
+      "bytes": 14984
+    },
+    {
+      "path": "enciclopedia/substancias/oxandrolona/index.html",
+      "status": 200,
+      "sha256": "0126a2e88435e83df0ff8dfa83db08bc03cec8e890222431d42feb9e0bd6bf0a",
+      "matches_historic_manifest": true,
+      "bytes": 15288
+    },
+    {
+      "path": "enciclopedia/substancias/oximetolona/index.html",
+      "status": 200,
+      "sha256": "667eef563f0045fbc22c069b24cc9e88eedb93f9ca1e528133c63589a0582be6",
+      "matches_historic_manifest": true,
+      "bytes": 14908
+    },
+    {
+      "path": "enciclopedia/substancias/retatrutida/index.html",
+      "status": 200,
+      "sha256": "5fa24b78284dda8f7e14d9872cf6731485d4710fc326187df06abfa306e8cbf7",
+      "matches_historic_manifest": true,
+      "bytes": 13984
+    },
+    {
+      "path": "enciclopedia/substancias/somatropina-gh/index.html",
+      "status": 200,
+      "sha256": "def2f13e77be0cd88459528c3876034b429f23299b2f5050320bb26b8dd45738",
+      "matches_historic_manifest": true,
+      "bytes": 14092
+    },
+    {
+      "path": "enciclopedia/substancias/tamoxifeno/index.html",
+      "status": 200,
+      "sha256": "7c13063bb22abbb04538d1d5a588d39bd15bc7f7df016ef5d48c177bf115be8b",
+      "matches_historic_manifest": true,
+      "bytes": 13488
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-cipionato/index.html",
+      "status": 200,
+      "sha256": "b9cc93bacabb940d310571b50cd96d374766c58d24516fd5b5f1b73e7ab8504c",
+      "matches_historic_manifest": true,
+      "bytes": 15341
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-enantato/index.html",
+      "status": 200,
+      "sha256": "f9d800e32e3c81998852dfab28f5e3ccd04259806382784d6a538682b9ecce42",
+      "matches_historic_manifest": true,
+      "bytes": 15320
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-mistura-esteres/index.html",
+      "status": 200,
+      "sha256": "75a927f1bd041b88d62da77261ccb40a53b2f456085c08c373d1b3dee0729975",
+      "matches_historic_manifest": true,
+      "bytes": 15282
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-propionato/index.html",
+      "status": 200,
+      "sha256": "09616fe1a80bc662635b96290ab7403b435c1cde86c2ff58a28a2e1ea865fa74",
+      "matches_historic_manifest": true,
+      "bytes": 15333
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-suspensao/index.html",
+      "status": 200,
+      "sha256": "d886df20dcb947281187bcbc9aebb64cc1950985d426b68939eda3a340c05716",
+      "matches_historic_manifest": true,
+      "bytes": 15335
+    },
+    {
+      "path": "enciclopedia/substancias/testosterona-undecanoato-oral/index.html",
+      "status": 200,
+      "sha256": "63f1e767943786a8baea48621b85c49438f18f184652dd2fa3f3915170046e72",
+      "matches_historic_manifest": true,
+      "bytes": 15414
+    },
+    {
+      "path": "enciclopedia/substancias/tirzepatida/index.html",
+      "status": 200,
+      "sha256": "e8b6436d94b76877770b6efd7832ff4813e1b7cadc8b218ef83c6d6daddcc1bd",
+      "matches_historic_manifest": true,
+      "bytes": 13462
+    },
+    {
+      "path": "enciclopedia/substancias/trembolona-acetato/index.html",
+      "status": 200,
+      "sha256": "9a4271398901a0fb6f2e61526c2b0ba4a910cd8230dd299e0eef90ee1e88a81a",
+      "matches_historic_manifest": true,
+      "bytes": 15145
+    },
+    {
+      "path": "enciclopedia/substancias/trembolona-enantato/index.html",
+      "status": 200,
+      "sha256": "ff504fe9491527aeae94ee29f15d2305ba1fe1fd90f2a71871938676b09c94d5",
+      "matches_historic_manifest": true,
+      "bytes": 15165
+    },
+    {
+      "path": "enciclopedia/substancias/turinabol/index.html",
+      "status": 200,
+      "sha256": "76d53868460e4af208dacc4b1c20ea21152a55abbfbf2becac2ba4774b903bf5",
+      "matches_historic_manifest": true,
+      "bytes": 14824
+    },
+    {
+      "path": "entregas/index.html",
+      "status": 200,
+      "sha256": "14a5164d07ca85b599e133b944ee008ee91f12885223398552f457c3b398634e",
+      "matches_historic_manifest": true,
+      "bytes": 13860
+    },
+    {
+      "path": "favicon.png",
+      "status": 200,
+      "sha256": "ffd0028e74e540e472c486768c249e95e3e1c6949090a57d1443e15690bd9179",
+      "matches_historic_manifest": true,
+      "bytes": 56707
+    },
+    {
+      "path": "ferramentas/index.html",
+      "status": 200,
+      "sha256": "04ef8188adc592a8fd5e4c1649106fe5c431321edfb8178ada43248447f91673",
+      "matches_historic_manifest": true,
+      "bytes": 6888
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "91a97f819d7738cf1a1fce162588f201f4afd54d1907ff8fd77f6a0f2657af4d",
+      "matches_historic_manifest": true,
+      "bytes": 32113
+    },
+    {
+      "path": "manifest-v23-2.json",
+      "status": 200,
+      "sha256": "83bf2679534d8d805fe27f48518b537e60ccd23cb84815512b91e63d8d829c9f",
+      "matches_historic_manifest": true,
+      "bytes": 10981
+    },
+    {
+      "path": "manifest-v23-3.json",
+      "status": 200,
+      "sha256": "ac161f9ff1b48377ab4a49ccdbb1e8eab30a274d31d83d87f33796d1224b4239",
+      "matches_historic_manifest": true,
+      "bytes": 16252
+    },
+    {
+      "path": "manifest-v23-4.json",
+      "status": 200,
+      "sha256": "d064e0a6fe164d1f736cc82d5aac8900bbc8af605e3b5b22a15fcc4324be0ed0",
+      "matches_historic_manifest": true,
+      "bytes": 16452
+    },
+    {
+      "path": "manifest-v23-6.json",
+      "status": 200,
+      "sha256": "d494a7d4f5ef5e0de961be2a41f6d84e88ebf3fcc06b405cec00025718736bbf",
+      "matches_historic_manifest": true,
+      "bytes": 16487
+    },
+    {
+      "path": "manifest-v23-7.json",
+      "status": 200,
+      "sha256": "47b60cdcab326baa984f54b11ab87db55a87fddf341a596a6d94328446edf90f",
+      "matches_historic_manifest": true,
+      "bytes": 16661
+    },
+    {
+      "path": "manifest-v23-8.json",
+      "status": 200,
+      "sha256": "be5040238236fc7f55887b25e4d414da6ade1bfcdb851c7c1d03f1ee7dde6262",
+      "matches_historic_manifest": true,
+      "bytes": 17086
+    },
+    {
+      "path": "manifest-v23-9.json",
+      "status": 200,
+      "sha256": "ca6764289e011ffe9afcaf1c72dd44586ade4fa8936725c66d8c2a7fd2580ba9",
+      "matches_historic_manifest": true,
+      "bytes": 18156
+    },
+    {
+      "path": "marcas/alpha-laboratory/index.html",
+      "status": 200,
+      "sha256": "76840e8bbbd8900bfb8433054388845a1edf03397c06e205aec7fda69f0af605",
+      "matches_historic_manifest": true,
+      "bytes": 6431
+    },
+    {
+      "path": "marcas/cooper-pharma/index.html",
+      "status": 200,
+      "sha256": "7d56b3564ffdab7466b415c4875c2dc22767025fa7b75270829dd1bb2b28dc07",
+      "matches_historic_manifest": true,
+      "bytes": 6410
+    },
+    {
+      "path": "marcas/eticos/index.html",
+      "status": 200,
+      "sha256": "a44d58cdfa911f71855f91503f71d7340465413f70ed736bca13b4c65bab11c3",
+      "matches_historic_manifest": true,
+      "bytes": 6391
+    },
+    {
+      "path": "marcas/geniqs-pharma/index.html",
+      "status": 200,
+      "sha256": "6e8e61a5ddeff3040aca748c411e2d453a1e5a30abed4512f622dd75f5692727",
+      "matches_historic_manifest": true,
+      "bytes": 6410
+    },
+    {
+      "path": "marcas/index.html",
+      "status": 200,
+      "sha256": "cd15cec633899f80ccf440334105b256a59ea44c3dd7ce692efc80266f27c443",
+      "matches_historic_manifest": true,
+      "bytes": 9511
+    },
+    {
+      "path": "marcas/indufar/index.html",
+      "status": 200,
+      "sha256": "972dcf277dc6f44fedaac76642abbcb1d0e97c12954b2a8da3303f40cb2a8f96",
+      "matches_historic_manifest": true,
+      "bytes": 6368
+    },
+    {
+      "path": "marcas/landerlan/index.html",
+      "status": 200,
+      "sha256": "06352c18a693ee718ca07d9f0a0b79f0fa130a1f4dbe89f60bdd8ec144f3010b",
+      "matches_historic_manifest": true,
+      "bytes": 6382
+    },
+    {
+      "path": "marcas/landerlan-gold/index.html",
+      "status": 200,
+      "sha256": "e548ae040290f30d8afb68b9e11e326c0c0041a829b00f1d86beb7d06d4ae783",
+      "matches_historic_manifest": true,
+      "bytes": 6417
+    },
+    {
+      "path": "marcas/life-peptideos/index.html",
+      "status": 200,
+      "sha256": "517178f43966babbcc9d2b80526554d777e6cd3c2b2d30e32a1b7b5d481527aa",
+      "matches_historic_manifest": true,
+      "bytes": 6422
+    },
+    {
+      "path": "marcas/muscle-labs-india/index.html",
+      "status": 200,
+      "sha256": "6bc00a210bc8ffd0c917ec7b385e9ebf9017a347f1c796de088b66e173e96b03",
+      "matches_historic_manifest": true,
+      "bytes": 6438
+    },
+    {
+      "path": "marcas/oxygen-kw-pharma/index.html",
+      "status": 200,
+      "sha256": "275c159618e334d9710516d29ee248376679a9e116dc693168f734df6149afba",
+      "matches_historic_manifest": true,
+      "bytes": 6431
+    },
+    {
+      "path": "marcas/synedica/index.html",
+      "status": 200,
+      "sha256": "9bd9b2fd6080c699d1d6b174b933c9e505ae0c392ba66faa37f28e69b0a7bc96",
+      "matches_historic_manifest": true,
+      "bytes": 6375
+    },
+    {
+      "path": "marcas/topharma/index.html",
+      "status": 200,
+      "sha256": "5fadcbe02a5910fff8c47e9d89e0760bdde8d916a854c31ebce031203c8dfe0a",
+      "matches_historic_manifest": true,
+      "bytes": 6375
+    },
+    {
+      "path": "marcas/zphc/index.html",
+      "status": 200,
+      "sha256": "2242b265c0337117a46fcc0ffc459130da198aee9ea6335e7a7f0a8a85704707",
+      "matches_historic_manifest": true,
+      "bytes": 6347
+    },
+    {
+      "path": "netlify.toml",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "perguntas-frequentes/index.html",
+      "status": 200,
+      "sha256": "bab26a594472eae856cc43de9e556858fd120c2953ddfad3c7f3c4a93bf818eb",
+      "matches_historic_manifest": true,
+      "bytes": 8346
+    },
+    {
+      "path": "privacidade.html",
+      "status": 200,
+      "sha256": "f46f994da3c818aa21e8725c6f2e941bac35dea8e56921ae0dcba1c495e59e0b",
+      "matches_historic_manifest": true,
+      "bytes": 7598
+    },
+    {
+      "path": "radar-performance/index.html",
+      "status": 200,
+      "sha256": "c74c7094fa2b679606f3966b33b174ecc898076d5042cd1e8721a347767e10fb",
+      "matches_historic_manifest": false,
+      "bytes": 10266
+    },
+    {
+      "path": "radar-performance/recebido/index.html",
+      "status": 200,
+      "sha256": "358eed0c613e83bd081c6377a24012b66ce2d5d8e96ae04a1eea0680ee026b1f",
+      "matches_historic_manifest": true,
+      "bytes": 6092
+    },
+    {
+      "path": "release.json",
+      "status": 200,
+      "sha256": "ccc2f2135aa63b3e74f574fb3bdff66de7cf895ee872172cbc4b124718038bf9",
+      "matches_historic_manifest": true,
+      "bytes": 5673
+    },
+    {
+      "path": "robots.txt",
+      "status": 200,
+      "sha256": "36133ce6a3cc5db349f460a2c31e55fb93cd3903d6b9c10cf12996639ed5ea79",
+      "matches_historic_manifest": true,
+      "bytes": 143
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "sha256": "41ef9c3145a1fa6db4a94e43c21682aad86adff35fda7e31f2915619b027906f",
+      "matches_historic_manifest": true,
+      "bytes": 8766
+    },
+    {
+      "path": "sobre/index.html",
+      "status": 200,
+      "sha256": "eb72961cf9ac5b3e3cc125bc17d49c49fc3b1e164994236d183065316c7ff0b9",
+      "matches_historic_manifest": true,
+      "bytes": 7222
+    },
+    {
+      "path": "termos.html",
+      "status": 200,
+      "sha256": "7d76e344d375b49a584792a8dee471a2f319c2797c21e6fe67cf8b69fa75b53d",
+      "matches_historic_manifest": true,
+      "bytes": 6088
+    },
+    {
+      "path": "treino/index.html",
+      "status": 200,
+      "sha256": "169447049a18f8b20bc3bc4874f1d0e168b62ea33d93ff52cc9341deda4ef284",
+      "matches_historic_manifest": false,
+      "bytes": 28849
+    },
+    {
+      "path": "varejo/index.html",
+      "status": 200,
+      "sha256": "5280e60f2d86865821ab024069da02bf44194dc9bbcbdf695bd9fbda6f9c5b98",
+      "matches_historic_manifest": true,
+      "bytes": 13459
+    },
+    {
+      "path": "manifest-v23-10.json",
+      "status": 200,
+      "sha256": "ab746c5092e0d03f7ca661a51af3d77784a0d76d4cfd69f7ab41cc4957eb4fba",
+      "matches_historic_manifest": false,
+      "bytes": 18637
+    }
+  ],
+  "fetched": 168,
+  "matched": 165,
+  "errors": [
+    {
+      "path": "_headers",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "_redirects",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "netlify.toml",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "differences": [
+    "radar-performance/index.html",
+    "treino/index.html",
+    "manifest-v23-10.json"
+  ],
+  "interpretation": {
+    "identical_content": 165,
+    "netlify_form_transformations": [
+      "treino/index.html",
+      "radar-performance/index.html"
+    ],
+    "manifest_semantically_identical": true,
+    "config_not_public_by_design": [
+      "_headers",
+      "_redirects",
+      "netlify.toml"
+    ],
+    "mutation": "none"
+  }
+}

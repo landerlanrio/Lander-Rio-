@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0c0f0c">
+  <title>ROX 3.0 — Homologação privada | LANDER RIO</title>
+  <link rel="stylesheet" href="/preview.css">
+  <script src="/preview.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="wordmark">LANDER <span>RIO</span><small>PERFORMANCE CULTURE</small></div>
+      <span class="isolation-tag"><span class="isolation-dot"></span>HOMOLOGAÇÃO PRIVADA</span>
+    </header>
+    <main class="hero">
+      <p class="eyebrow">LANDER RIO / DIGITAL EXPERIENCE / LAB 003</p>
+      <h1>PERFORMANCE<br><em>É CULTURA.</em></h1>
+      <p class="hero-description">Treine com intenção. Conheça as ferramentas de treino e alimentação. Converse com o ROX e descubra como chegar ao atendimento certo.</p>
+      <div class="hero-actions">
+        <button type="button" id="hero-open" class="primary-action">Conversar com ROX <span aria-hidden="true">↗</span></button>
+        <span class="hero-note">Prévia isolada — nenhum contato real é enviado</span>
+      </div>
+      <div class="hero-bottom">
+        <div><strong>01 /</strong><span>ATENDIMENTO CONTEXTUAL</span></div>
+        <div><strong>02 /</strong><span>RESPOSTAS EDUCATIVAS</span></div>
+        <div><strong>03 /</strong><span>ENCAMINHAMENTO SIMULADO</span></div>
+      </div>
+    </main>
+    <footer class="site-footer"><span>RIO DE JANEIRO — BRASIL</span><span>ROX 3.0 / PREVIEW LOCAL / SEM PUBLICAÇÃO</span></footer>
+  </div>
+
+  <div id="rox-root">
+    <button type="button" id="rox-launcher" class="rox-launcher" aria-controls="rox-panel" aria-expanded="false" aria-haspopup="dialog" aria-label="Abrir conversa com ROX">
+      <span class="rox-icon" aria-hidden="true">R</span><span class="launcher-text">Conversar com ROX</span><span class="launcher-arrow" aria-hidden="true">↗</span>
+    </button>
+    <section id="rox-panel" class="rox-panel" role="dialog" aria-label="Conversa de teste com ROX" aria-modal="false" hidden>
+      <header class="rox-head">
+        <span class="rox-avatar" aria-hidden="true">R</span>
+        <div class="rox-head-title"><strong>ROX <span class="status-dot" aria-hidden="true"></span></strong><small>Assistente virtual • LANDER RIO</small></div>
+        <button type="button" id="rox-close" class="rox-close" aria-label="Fechar chat">×</button>
+      </header>
+      <div class="rox-notice"><span class="notice-label">MODO TESTE</span> <span id="rox-connection">Conectando ao motor local...</span><span class="notice-detail">Sem IA paga, WhatsApp ou CRM. Não envie dados pessoais.</span></div>
+      <div id="rox-log" class="rox-log" role="log" aria-live="polite" aria-relevant="additions text" aria-label="Mensagens da conversa"></div>
+      <div id="rox-quick" class="rox-quick" aria-label="Sugestões de perguntas">
+        <button type="button" data-ask="Quero revender no atacado">Sou revendedor</button>
+        <button type="button" data-ask="Como funciona o treino gratuito?">Treino gratuito</button>
+        <button type="button" data-ask="Quero comprar no varejo">Varejo</button>
+        <button type="button" data-ask="Como falar com a equipe?">Falar com a equipe</button>
+      </div>
+      <section id="rox-handoff" class="rox-handoff" aria-label="Prévia de encaminhamento" hidden>
+        <div class="handoff-top"><span class="handoff-title">Encaminhamento de teste</span><span class="fake-label">NÃO ENVIADO</span></div>
+        <p id="rox-qualification" class="qualification"></p>
+        <p id="rox-draft" class="draft"></p>
+        <p class="handoff-caption">O envio só poderá ser oferecido numa etapa futura, após validação e autorização.</p>
+      </section>
+      <form id="rox-form" class="rox-form" autocomplete="off">
+        <label for="rox-message" class="sr-only">Digite sua mensagem para o ROX</label>
+        <textarea id="rox-message" placeholder="Pergunte algo ao ROX..." rows="1" maxlength="600" aria-describedby="rox-hint" required></textarea>
+        <button id="rox-send" type="submit" aria-label="Enviar pergunta ao motor de teste">↗</button>
+      </form>
+      <div class="rox-bottom"><small id="rox-hint">Enter para enviar • Shift+Enter para pular linha</small><button type="button" id="rox-clear">Limpar conversa</button></div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "version": "digital-flagship-2026-rc14.1",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_deploy": "6af9342e9b6477802a23ab4a",
+  "scope": "Candidata isolada para revisão de mensuração",
+  "files": {
+    "assets/ga4-intent.js": "6d9cb461d7d2fff2f1cb8249c8dc856d50899c6000fd4bb78f943186796f13f1",
+    "assets/measurement-v23-2.js": "c611d1858864155eaf6e51af3f408646e106ddf632bde240a33f9495d38a2bc1",
+    "release.json": "47b69ffc9efb0bdeadb47d9c3d10e4dba71ebf1180a93c54f6b822c6aaf6d34b"
+  },
+  "replaces_sha256": {
+    "assets/ga4-intent.js": "e6a1fcda87e20f9bdab05cdeb36011202737be57d59bcc80be29a2e8fe1fe165"
+  }
+}

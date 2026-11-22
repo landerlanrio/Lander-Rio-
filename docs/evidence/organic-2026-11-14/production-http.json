@@ -1,0 +1,2255 @@
+{
+  "captured_at_utc": "2026-11-15T02:11:23Z",
+  "rows": [
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/robots.txt",
+      "content_type": "text/plain; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "36133ce6a3cc5db349f460a2c31e55fb93cd3903d6b9c10cf12996639ed5ea79",
+      "bytes": 143,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/sitemap.xml",
+      "content_type": "application/xml",
+      "x_robots_tag": null,
+      "sha256": "a00d984ffb1fdfbdcf7839c3402d025226e8a5301109cdb7efea5aff2b0eab29",
+      "bytes": 3552,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/release.json",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/release.json",
+      "content_type": "application/json",
+      "x_robots_tag": null,
+      "sha256": "0d6ec038cd4764ed66ef62d43c3f947952419318aa4a75ea36c280d7635cd118",
+      "bytes": 6482,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/assets/ga4-config.js",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/assets/ga4-config.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "29fb60600985b2e3bc710780df2e53a594beb7f64f4cb71e7ad1e41962113e1b",
+      "bytes": 148,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/assets/ga4-intent.js",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/assets/ga4-intent.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "e6a1fcda87e20f9bdab05cdeb36011202737be57d59bcc80be29a2e8fe1fe165",
+      "bytes": 4187,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/termos.html",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/termos.html",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "5a394b17d1445fbbe67a7825f43b3b502128a9deaa50a1035e02e04a8144b533",
+      "bytes": 6138,
+      "title": [
+        "Termos de uso | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/termos"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Condições de uso dos conteúdos, canais e ferramentas educativas da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/404.html",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/404.html",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "e2815d12bd3f6c6c9903f87bf3d1916f954381c515b6ae2a58d210b68473b9ba",
+      "bytes": 5247,
+      "title": [
+        "Página não encontrada | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/404"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Encontre os caminhos de atendimento e ferramentas da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "0ecfbfbbd66fd2d5cd7a9e4b524363d85904b4d972e390439f116f322946fcd1",
+      "bytes": 37430,
+      "title": [
+        "LANDER RIO | Atacado, Varejo e Performance Culture"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Conheça a LANDER RIO: atendimento de atacado e varejo, diretório de marcas, conteúdo e ferramentas gratuitas de treino e dieta."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/privacidade.html",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/privacidade.html",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "48360df42a01d2baf9e9b571c930cc38f0ea1171e7a10e2f420b7cbb5fae5036",
+      "bytes": 8164,
+      "title": [
+        "Privacidade | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/privacidade"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Saiba quais dados são utilizados no atendimento, nas ferramentas e na medição opcional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/perguntas-frequentes/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/perguntas-frequentes/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "ec6c9baf231e65b70374ac6ef40bdca1e6ecaf9c4f026664192372858acc45b5",
+      "bytes": 8396,
+      "title": [
+        "Dúvidas sobre atendimento | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/perguntas-frequentes/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Tire dúvidas sobre atendimento da LANDER RIO, WhatsApp oficial, revenda, varejo, ferramentas gratuitas e confirmação das condições antes do pedido."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/dieta/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/dieta/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "9a9fb28a425f5f891de57e0f5909e1607893c636f6b4f92236d0d4737dcb5bd1",
+      "bytes": 24526,
+      "title": [
+        "Dieta Grátis Personalizada | LANDER RIO Nutrition"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/dieta/"
+      ],
+      "robots": [
+        "index, follow, max-snippet:-1, max-image-preview:large"
+      ],
+      "description": [
+        "Monte gratuitamente um plano alimentar inteligente com calorias, macros, refeições brasileiras, substituições, lista de compras e acompanhamento semanal."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/sobre/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/sobre/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "db526ce86d225628168867eb9a57f48247612ccbafef338c9e1eb516e7a4d18e",
+      "bytes": 7272,
+      "title": [
+        "Sobre a LANDER RIO | Performance Culture"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/sobre/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "LANDER RIO — Performance Culture. Atendimento no atacado e varejo, conteúdos e ferramentas educativas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/business-desk/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/business-desk/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "f9e0d2150e279c8603c7591754bf1276f9ef91d64649dfe9491da1322b306b12",
+      "bytes": 10446,
+      "title": [
+        "Atendimento para negócios | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/business-desk/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Fale com o atendimento B2B da LANDER RIO sem cadastro obrigatório. Informe o assunto da consulta e conheça o próximo passo para sua revenda no WhatsApp."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/conteudos/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "bcfe166c1dc8b639f12c4e4613c1f8be79215ee2bcc7fc3b0996427c4364adfd",
+      "bytes": 11605,
+      "title": [
+        "Conhecimento: treino, marcas e ciência | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Guias de treino e alimentação, leitura de evidências e informações sobre marcas. Explore o conhecimento editorial da LANDER RIO por assunto."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/politica-editorial/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/politica-editorial/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "2d8326aea269d9475a750bcb6fd0788e02835e6045d6fe85b654fd2982729aba",
+      "bytes": 6972,
+      "title": [
+        "Política editorial e correções | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/politica-editorial/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Como a LANDER RIO seleciona fontes, distingue catálogo de evidência clínica, identifica revisões e recebe pedidos de correção."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/atacado/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/atacado/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "55a693d55efbdf4b1e1f4e48c620574a9b4633131bc41e468973ef8c3395b441",
+      "bytes": 14449,
+      "title": [
+        "LANDER RIO | Atacado para revendedores"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/atacado/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Atendimento para revendedores LANDER RIO. Informe sua necessidade e consulte disponibilidade e condições com a equipe, conforme cada pedido."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/enciclopedia/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "15c52e8a1902b61931de9faacb48e3ac10bdb70abc41fca016d2d1f37a4a8cdc",
+      "bytes": 33302,
+      "title": [
+        "Enciclopédia do Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/"
+      ],
+      "robots": [
+        "index,follow,max-image-preview:large"
+      ],
+      "description": [
+        "Esteroides, hormônios, peptídeos e substâncias associadas à musculação. Efeitos, mecanismos, dosagens publicadas e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/contato/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/contato/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "a23953ed21cfbfbb197e595238e02371191a8ac6f0c54a3965bc258af7b6a623",
+      "bytes": 13336,
+      "title": [
+        "Contato oficial e WhatsApp | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/contato/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Entre em contato com a LANDER RIO pelos canais oficiais. Atendimento para varejo e revendedores, informações sobre solicitações, entregas e suporte."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/autenticidade/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/autenticidade/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "c219bcbe2d71939d17a838cce1695810d15eacd479992e3908666db94ae4bffe",
+      "bytes": 6248,
+      "title": [
+        "Canais e verificação | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/autenticidade/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Confira os canais oficiais da LANDER RIO, orientações sobre procedência e os limites da verificação visual de embalagens antes de solicitar atendimento."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/treino/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/treino/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "c58c3ce75de2305e8b1f90a632888e574ec4567c0adaa371e564b03f90de6513",
+      "bytes": 28784,
+      "title": [
+        "Treino grátis: monte sua ficha de musculação | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/treino/"
+      ],
+      "robots": [
+        "index,follow,max-image-preview:large"
+      ],
+      "description": [
+        "Monte uma ficha de musculação com exercícios, séries, repetições, descanso e cardio. Acesso gratuito mediante identificação de contato."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/ferramentas/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/ferramentas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "9a88ab1a10745b392023d23b26e70d809f414f6bb26a3dd41cb2cc29707835a9",
+      "bytes": 6918,
+      "title": [
+        "Ferramentas gratuitas de treino e alimentação | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/ferramentas/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Explore as ferramentas educativas gratuitas da LANDER RIO. Cadastre-se para acessar sua ficha de treino ou estrutura alimentar."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/varejo/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/varejo/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "c39a8492ea2f090a3f4f35f86ab22faee0043ae574ee9f04dae40c6d31227f89",
+      "bytes": 13489,
+      "title": [
+        "LANDER RIO | Atendimento no varejo"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/varejo/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Para pedidos individuais: fale com a equipe, confirme disponibilidade e esclareça as condições de entrega ou envio antes de decidir."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/radar-performance/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/radar-performance/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "b6120784300644cb9a6f834536870327f85d3e71e75203fc3cf6a35491ee4cb1",
+      "bytes": 10316,
+      "title": [
+        "Radar Performance: ciência do treino sem ruído | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/radar-performance/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Informação de qualidade sobre falha muscular, RIR, volume e progressão de carga. Leituras críticas e ferramentas gratuitas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/equipe/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/equipe/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "262f346a5203c0d95863cab3dbd581d403459f36dcf36968870bef558470a495",
+      "bytes": 5652,
+      "title": [
+        "Equipe e responsabilidade | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/equipe/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Conheça a responsabilidade institucional e editorial da LANDER RIO, os limites da revisão e o canal de correções."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "ea63c1de96baca4d1c25356b29320cb295b02d945f2d9bedcd03a768616041d1",
+      "bytes": 21962,
+      "title": [
+        "Universo de Marcas: linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Explore 14 marcas, suas identidades e linhas documentadas. Perfis independentes, fontes, perguntas frequentes e conhecimento sobre performance."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/entregas/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/entregas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "d2455569d8423a8fa0ba6dc36ad0f7d87b152b846a8ab0868d63d6b66ac25c0d",
+      "bytes": 13910,
+      "title": [
+        "Entregas e relatos de recebimento | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/entregas/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Entenda as condições de entrega e veja registros anonimizados de recebimento e mensagens compartilhadas por clientes da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/business-desk/recebido/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/business-desk/recebido/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "eaadb4de2fe770742349269cc22c003d25b8343e27b2cf7fa455d9a8a7f00b8e",
+      "bytes": 6336,
+      "title": [
+        "Acompanhar solicitação | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/business-desk/recebido/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Acompanhe uma solicitação já realizada com a equipe da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/conteudos/como-consultar-disponibilidade-marcas/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/como-consultar-disponibilidade-marcas/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "fadffb48be10d3f18017f4fc8828b9675460d472f9453edd878db4af6e9c0045",
+      "bytes": 10484,
+      "title": [
+        "Como preparar uma consulta de atendimento | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/como-consultar-disponibilidade-marcas/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Organize seu perfil, objetivo e dúvidas antes do atendimento: um guia para revendedores e clientes, com limites claros entre informação e oferta."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/conteudos/atacado-rio-como-avaliar-fornecedor/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/atacado-rio-como-avaliar-fornecedor/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "694fa3773bb8208e42c7f201351d74ef4a86cb49108de525be2637d70973286a",
+      "bytes": 10794,
+      "title": [
+        "Como avaliar informações de fornecedor | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/atacado-rio-como-avaliar-fornecedor/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Um roteiro documental para avaliar uma relação comercial: identidade, escopo, condições, rastreabilidade e suporte, sem promessas de disponibilidade."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/conteudos/peptideos-o-que-sao/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/peptideos-o-que-sao/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "36b5f90a5c38f4fd6fad1bf15256ffdb22bb90242a9f227789dd6bffd3c076c8",
+      "bytes": 15104,
+      "title": [
+        "Peptídeos: o que são e como ler estudos | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/peptideos-o-que-sao/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Entenda o que são peptídeos, a diferença entre molécula e marca e como interpretar estudos. Guia educativo com IUPAC, OMS, ICH e CONSORT."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/conteudos/descanso-entre-series-hipertrofia/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/descanso-entre-series-hipertrofia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "48e2e2de251efd3bfff26fba67be63b390765b4eeb6047a7cf3a95a19605f451",
+      "bytes": 11569,
+      "title": [
+        "Descanso entre séries e hipertrofia | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/descanso-entre-series-hipertrofia/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "O que uma revisão sobre intervalos sugere, onde a evidência é incerta e como registrar as pausas para conversar com seu treinador."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/conteudos/como-organizar-semana-treino/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/como-organizar-semana-treino/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "801104f179e577f55ef8de6675af6a192e6477ea1fc7082150972caecf3dce17",
+      "bytes": 9940,
+      "title": [
+        "Como organizar sua semana de treino | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/como-organizar-semana-treino/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Um roteiro para organizar dias disponíveis, prioridades e registro do treino sem depender de uma semana perfeita."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/conteudos/planejar-compras-refeicoes-semana/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/planejar-compras-refeicoes-semana/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "bbcba5c418ddd283ca1eb3f6eb0bcff33c28a7f4b8b4822cf295ca228c657e8f",
+      "bytes": 9574,
+      "title": [
+        "Planeje compras e refeições da semana | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/planejar-compras-refeicoes-semana/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Comece pela agenda, confira a despensa e monte uma lista útil antes de calcular uma semana ideal de alimentação."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/conteudos/alimento-cru-cozido-registro/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/alimento-cru-cozido-registro/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "0787bff4c546e4eac0066800bfd5f68779042fd56db83f6ac68e21d8f0c57235",
+      "bytes": 9454,
+      "title": [
+        "Alimento cru ou cozido: como registrar | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/alimento-cru-cozido-registro/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Confira o estado de preparo e a unidade antes de comparar porções em tabelas e planejadores alimentares."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/conteudos/rir-o-que-significa/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/rir-o-que-significa/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "ddbafd36fea18eee972ee4ea7a77ed6237a302b04844f50b6c191237c8f6e766",
+      "bytes": 9624,
+      "title": [
+        "RIR: repetições em reserva no treino | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/rir-o-que-significa/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Entenda repetições em reserva, a diferença entre estimativa e precisão e por que RIR não deve ser usado para ignorar dor."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/conteudos/acompanhar-progresso-treino/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/acompanhar-progresso-treino/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "ba97be316da53c16262aff42b2cb7b053a2c99c84faec5f4ce122b5c45a65ce0",
+      "bytes": 9278,
+      "title": [
+        "Como acompanhar seu progresso no treino | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/acompanhar-progresso-treino/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Saiba como acompanhar sua evolução na musculação com registros de execução, frequência e desempenho para revisar o treino com mais clareza."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/conteudos/como-ler-ficha-treino/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/como-ler-ficha-treino/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "bed74d1b2f7444ab8f25622a02f505631ba9ef60eb6eabd3d8e30a721814006c",
+      "bytes": 9151,
+      "title": [
+        "Como ler sua ficha de treino | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/como-ler-ficha-treino/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Entenda os campos da ficha e prepare as perguntas certas sobre exercícios, séries, repetições e descanso."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/conteudos/academia-lotada-organizar-treino/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/academia-lotada-organizar-treino/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "09b8f68a28877316cfd7397cce6dbaa9c2f11e933031277ed5c84a4d21819b1f",
+      "bytes": 9380,
+      "title": [
+        "Academia lotada: plano B para o treino | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/academia-lotada-organizar-treino/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Organize alternativas com seu treinador e registre as mudanças sem transformar a sessão em escolhas aleatórias."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/conteudos/como-verificar-procedencia-canais-oficiais/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/como-verificar-procedencia-canais-oficiais/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "658f9d76c22e0d64d2b8c6f2c32d3ed5ebd29d6dda7140472bc82c885b5239d7",
+      "bytes": 11042,
+      "title": [
+        "Como conferir procedência e canais | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/como-verificar-procedencia-canais-oficiais/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Nome, domínio, fonte e documentação: um roteiro para avaliar informações sobre marcas sem confundir presença online com autenticidade comprovada."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/conteudos/diario-de-treino-como-registrar/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/conteudos/diario-de-treino-como-registrar/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "8f852d3b3c285eac548c483979979b0d0fabf2467436979bb6a3a2ddb1a004c9",
+      "bytes": 9794,
+      "title": [
+        "Diário de treino: o que anotar além da carga | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/conteudos/diario-de-treino-como-registrar/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Registre exercício, equipamento, regulagem, repetições e esforço para comparar sessões com mais contexto."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/metodologia/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/metodologia/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "c561836ac4b59f901094a4456e4879a9be0ed70bbcc86fe36ca17a854623ce20",
+      "bytes": 9865,
+      "title": [
+        "Como avaliamos as evidências | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/metodologia/"
+      ],
+      "robots": [
+        "index,follow,max-image-preview:large"
+      ],
+      "description": [
+        "Conheça os critérios editoriais da enciclopédia LANDER RIO: revisão de práticas, pesquisas, fóruns, limitações por sexo e atualização das fontes."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/fluoximesterona/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/fluoximesterona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "f3450d31a95c840a78e1365964748b635cc3dfe035136a8a5dd658ffc10aa913",
+      "bytes": 15105,
+      "title": [
+        "Fluoximesterona no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/fluoximesterona/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Fluoximesterona: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/tamoxifeno/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/tamoxifeno/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "4931096202b1f722f5b08fa4c2b0a312eea979d8e0033724f49a009b92d20b67",
+      "bytes": 13673,
+      "title": [
+        "Tamoxifeno no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/tamoxifeno/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Tamoxifeno: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/metenolona-injetavel/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/metenolona-injetavel/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "b31c3b43e790621205b8f6fcc88a6c43325b5d7c5b30e914fc8cb36985544bb4",
+      "bytes": 15166,
+      "title": [
+        "Metenolona — injetável no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/metenolona-injetavel/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Metenolona — injetável: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/boldenona/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/boldenona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "1065242ca729839136b978ca7886be96cfbe5f2b82735777f73c7f31b451626d",
+      "bytes": 15129,
+      "title": [
+        "Boldenona no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/boldenona/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Boldenona: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/drostanolona/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/drostanolona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "07a0db4656bc2ecdbc14e26152744a3f8aaec028854441e9551ad0ce77d42ff6",
+      "bytes": 15134,
+      "title": [
+        "Drostanolona no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/drostanolona/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Drostanolona: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/oximetolona/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/oximetolona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "8220cb7ef70080d0dfdd86efee33ce1c3e9d6a030bc88f4a263026b67613b24b",
+      "bytes": 15093,
+      "title": [
+        "Oximetolona no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/oximetolona/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Oximetolona: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/testosterona-mistura-esteres/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/testosterona-mistura-esteres/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "db67fc871f7c44bd1a23d1a693b042349313283488e27fead204865c27517e7a",
+      "bytes": 15303,
+      "title": [
+        "Testosterona: mistura de ésteres | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/testosterona-mistura-esteres/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Testosterona — mistura de ésteres: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/clomifeno/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/clomifeno/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "7c23b7c0b6e0a2cb71d7d44cd01705ea3b2045d164da2102624c40de89774aab",
+      "bytes": 13435,
+      "title": [
+        "Clomifeno no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/clomifeno/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Clomifeno: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/trembolona-enantato/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/trembolona-enantato/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "aa8991ca88a5ad48e62a74d953db4d60b9bd722153c0c49a328da77cc1fd4cfb",
+      "bytes": 15224,
+      "title": [
+        "Trembolona — enantato no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/trembolona-enantato/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Trembolona — enantato: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/igf-1/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/igf-1/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "0eab2ba2824ed103d7b1ebc8a1b1ca90dda158ba598523237fa9cd5981a3619f",
+      "bytes": 13414,
+      "title": [
+        "IGF-1 (mecasermina) no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/igf-1/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "IGF-1 (mecasermina): informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/insulina/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/insulina/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "0b8dbde4275c71deccf49a9fed5bc86492dd806d7d2bd22aa712d0a13e7797ed",
+      "bytes": 13867,
+      "title": [
+        "Insulina no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/insulina/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Insulina: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/oxandrolona/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/oxandrolona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "053493d2d61ca54a7104c036492bfc5b29485240f0bfd0c6367a6904b7aa5144",
+      "bytes": 15473,
+      "title": [
+        "Oxandrolona no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/oxandrolona/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Oxandrolona: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/clenbuterol/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/clenbuterol/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "2be3e27df20b0dc68343699b365c2d425b0ae3d02bc5a9de6cd47424d7523952",
+      "bytes": 14421,
+      "title": [
+        "Clenbuterol no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/clenbuterol/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Clenbuterol: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/anastrozol/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/anastrozol/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "4374561217c8743c03e92a11f449929953852462a815728d5c97ba703351bd65",
+      "bytes": 13822,
+      "title": [
+        "Anastrozol no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/anastrozol/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Anastrozol: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/testosterona-cipionato/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/testosterona-cipionato/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "142de2f4f62aab74c1ba083f24aa02be1023c4c9e737994c2a39cc7eb0ea51af",
+      "bytes": 15400,
+      "title": [
+        "Testosterona — cipionato no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/testosterona-cipionato/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Testosterona — cipionato: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/estanozolol-injetavel/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/estanozolol-injetavel/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "ebcd4dd374e353ab92851df79c284425534aa01447c94e6f9b75d1a38eb7cba5",
+      "bytes": 15217,
+      "title": [
+        "Estanozolol — injetável no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/estanozolol-injetavel/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Estanozolol — injetável: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/testosterona-propionato/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/testosterona-propionato/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "689ab0e3f2b6d56c8b46335da0f6478a6a3c2338eacbc1a2483d0a7f6778aa2a",
+      "bytes": 15392,
+      "title": [
+        "Testosterona — propionato no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/testosterona-propionato/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Testosterona — propionato: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/testosterona-enantato/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/testosterona-enantato/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "907e19f9787c6454acef1a501e8ed95802814340a45157dd7d3de45c974d40ed",
+      "bytes": 15379,
+      "title": [
+        "Testosterona — enantato no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/testosterona-enantato/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Testosterona — enantato: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/ghrp-6/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/ghrp-6/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "36aa21b92f4567571d5571fde58c4d91cac684dd1ad3d690cdaec9eca0aea38a",
+      "bytes": 13429,
+      "title": [
+        "GHRP-6 no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/ghrp-6/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "GHRP-6: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/metandienona/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/metandienona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "9177d575bae68ba15a4e93a507738811f81a3cbea7969bdcafd428065998e39f",
+      "bytes": 15062,
+      "title": [
+        "Metandienona no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/metandienona/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Metandienona: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/letrozol/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/letrozol/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "415c76cae294a18164abdb4cf6d4b8bd8ca265482053b60a432fd6ce8c2bc9d4",
+      "bytes": 13201,
+      "title": [
+        "Letrozol no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/letrozol/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Letrozol: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/liotironina-t3/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/liotironina-t3/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "f6339a9b3991c47bfb534a14146305c051b3f4b7686884a9775560b6e34c7107",
+      "bytes": 13837,
+      "title": [
+        "Liotironina (T3) no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/liotironina-t3/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Liotironina (T3): mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/levotiroxina-t4/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/levotiroxina-t4/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "a0b3c910f98b22e83fd873861c4d8353a0084c35ea4538be198da5c219b5e9f5",
+      "bytes": 13490,
+      "title": [
+        "Levotiroxina (T4) no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/levotiroxina-t4/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Levotiroxina (T4): mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/tirzepatida/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/tirzepatida/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "9c26b57b7472fea5c03e91bc7e189762df96348a174d346a5a60b47358170217",
+      "bytes": 13647,
+      "title": [
+        "Tirzepatida no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/tirzepatida/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Tirzepatida: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/trembolona-acetato/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/trembolona-acetato/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "f4ca0d87089e4828d1350b47c8127440e7ebd08ad532cc6e66fd377b8d2d8f20",
+      "bytes": 15204,
+      "title": [
+        "Trembolona — acetato no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/trembolona-acetato/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Trembolona — acetato: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/estanozolol-oral/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/estanozolol-oral/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "9aba742aafc1e6b2c8ee934d5db2ee7e4a6e32cc5230a09b76837836a2bb7c74",
+      "bytes": 15189,
+      "title": [
+        "Estanozolol — oral no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/estanozolol-oral/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Estanozolol — oral: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/somatropina-gh/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/somatropina-gh/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "398a95fd732a139eabdc50c591cd3d9eb2f9da0e7971dd550ad5bbd329171ce6",
+      "bytes": 14115,
+      "title": [
+        "Somatropina (GH): mecanismo e riscos | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/somatropina-gh/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Hormônio do crescimento (somatropina): informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/mesterolona/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/mesterolona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "763ea3f5d888168d280edd32a14b2bc35e70c19d4ed906c1916241184fab0b35",
+      "bytes": 15101,
+      "title": [
+        "Mesterolona no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/mesterolona/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Mesterolona: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/nandrolona/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/nandrolona/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "3f4b1bd8127dc64a7fcbba8eb61acee273fb4d8756ef472d98d9df8f43c8d554",
+      "bytes": 15169,
+      "title": [
+        "Nandrolona no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/nandrolona/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Nandrolona: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/hcg/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/hcg/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "c8ea1177591272c9d9914108d5108207387eedc6556a5972d2d9a7c38cda9d9c",
+      "bytes": 14210,
+      "title": [
+        "hCG no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/hcg/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "hCG: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/turinabol/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/turinabol/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "33d25c378ba50d8c9a4108fbb23bfeaede7d38df57247eef4a71cd175aa0864a",
+      "bytes": 15009,
+      "title": [
+        "Turinabol no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/turinabol/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Turinabol: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/ipamorelina/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/ipamorelina/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "663932e434a709f19aa67965cca199695ff3767792fb6111a26b928c854fdeeb",
+      "bytes": 13556,
+      "title": [
+        "Ipamorelina no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/ipamorelina/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Ipamorelina: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/testosterona-suspensao/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/testosterona-suspensao/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "40633f9c73977be8f2e7da7e6f0c4c63577d6df1760f4ab79906e92182071912",
+      "bytes": 15394,
+      "title": [
+        "Testosterona — suspensão no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/testosterona-suspensao/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Testosterona — suspensão: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/retatrutida/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/retatrutida/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "a5e0c0b1fe7a96783a17e0ec4e971e1c50da6c4acca3ed231540c06dc8ee7c54",
+      "bytes": 14169,
+      "title": [
+        "Retatrutida no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/retatrutida/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Retatrutida: mecanismo de ação, efeitos na musculação, doses publicadas para homens e dados femininos, farmacologia e riscos com referências científicas."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/enciclopedia/substancias/testosterona-undecanoato-oral/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/enciclopedia/substancias/testosterona-undecanoato-oral/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "aa487ea72479883ccc0e4728e789181461de1784e51f215068dd0b2a0a55e4ce",
+      "bytes": 15473,
+      "title": [
+        "Testosterona — undecanoato oral no Bodybuilding | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/enciclopedia/substancias/testosterona-undecanoato-oral/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Testosterona — undecanoato oral: informações educativas sobre mecanismo, evidências e riscos. Não substitui avaliação profissional."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/radar-performance/recebido/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/radar-performance/recebido/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "c5649371872cee5784e49f23ded29841db0beeb1b3a8be81ddf55f8ac9403e6f",
+      "bytes": 5980,
+      "title": [
+        "Interesse registrado | LANDER RIO Radar"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/radar-performance/recebido/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Solicitação recebida para avaliação editorial. O envio periódico ainda não está ativo; você poderá pedir a interrupção a qualquer momento."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/marcas/eminence-labs/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/eminence-labs/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "fcbae33ea77ad9ca40deeba389bc43c21d8f529f63f7cd9317a273ba954b1ad1",
+      "bytes": 12549,
+      "title": [
+        "Eminence Labs: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/eminence-labs/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Comprimidos e injetáveis: como a Eminence Labs organiza seus nomes. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/geniqs-pharma/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/geniqs-pharma/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "7f18e0d4b850d3591d737909d7ce59ce7eeebf84d5d0ca657bfd683688cb27cf",
+      "bytes": 11637,
+      "title": [
+        "Geniqs Pharma: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/geniqs-pharma/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Geniqs Pharma, seu domínio de referência e nomes publicados no catálogo. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/life-peptideos/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/life-peptideos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "6a80964ee70d3b86575400b59116493c7b86bc00a0265694babbe14f43431e70",
+      "bytes": 12573,
+      "title": [
+        "Life Peptídeos: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/life-peptideos/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Nomenclatura e formatos apresentados no catálogo Life Peptídeos. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/landerlan-gold/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/landerlan-gold/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "8d3b3f769ec12fd8a3c3e1003d7f2664239ce5f83f5158e9aa42a834e31dada6",
+      "bytes": 13401,
+      "title": [
+        "Landerlan Gold: linha, catálogo e dúvidas | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/landerlan-gold/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Entenda Landerlan Gold, sua relação com a Landerpharma e a classificação Gold versus Diamond. Referências de catálogo e dúvidas com fontes."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/cooper-pharma/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/cooper-pharma/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "5f9c8842924c20d0d811565f71ec6079c29d25466f2c756ad8375ef60951799b",
+      "bytes": 12732,
+      "title": [
+        "Cooper Pharma: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/cooper-pharma/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "A Cooper Pharma da Índia e a distinção entre empresas homônimas. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/indufar/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/indufar/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "02263e1642daa21c2f2aaca820622933841f14fabb9a0222386ace65397b5434",
+      "bytes": 11392,
+      "title": [
+        "Indufar: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/indufar/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Indufar CISA e os comunicados institucionais sobre suas apresentações. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/topharma/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/topharma/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "9630aa00f449312e6e9ab627cb9fffe624e518bec6563ea58590166e547ce0fd",
+      "bytes": 13112,
+      "title": [
+        "Topharma: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/topharma/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Silver e Top Gold Series: organização do portfólio publicado pela Topharma. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/alpha-laboratory/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/alpha-laboratory/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "173659df70ebc9421e4caeee658bfc83f793e9c70788cd7a965440e21a089dd3",
+      "bytes": 6483,
+      "title": [
+        "Alpha Laboratory | Referência informativa — LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/alpha-laboratory/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Página informativa sobre Alpha Laboratory. Orientações de verificação, sem oferta, preço, disponibilidade ou chamada de compra."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": true
+    },
+    {
+      "path": "/marcas/synedica/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/synedica/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "31c03591bcf95d2eb2141d705e1f2d071884645f10a98f1256fa153a1f2fae11",
+      "bytes": 11357,
+      "title": [
+        "Synedica: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/synedica/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Nome, domínios e pontos ainda não confirmados sobre a identidade Synedica. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/zphc/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/zphc/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "43b115941a48b70b7360d8cced2bab6964c602647228afecb301a63bcf17c72a",
+      "bytes": 10460,
+      "title": [
+        "ZPHC: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/zphc/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Domínios, identidade e limites da documentação disponível sobre ZPHC. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/alpha-x-prime/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/alpha-x-prime/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "d86362dbe52b53483ae4d021d981e58665eb9fe400b10fde13f3569137fd6e73",
+      "bytes": 9655,
+      "title": [
+        "Alpha X Prime: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/alpha-x-prime/"
+      ],
+      "robots": [
+        "noindex,follow"
+      ],
+      "description": [
+        "Identidade visual preservada; apresentação e catálogo aguardam documentação. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/quimfa/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/quimfa/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "77b2fb2ebf2daf84d807dafe903ad7897815bf2dcd481d3d2926ddd82b61dbde",
+      "bytes": 13444,
+      "title": [
+        "Quimfa: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/quimfa/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "O vade-mécum da Quimfa organizado por especialidade e ação terapêutica. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/eticos/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/eticos/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "54cb80c9ec0c517ad8437849070c14cc3f6ba9371a6ccb89d63947319d0a209a",
+      "bytes": 12500,
+      "title": [
+        "Éticos: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/eticos/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Éticos, diabetes e Bioeticos: referências do catálogo paraguaio. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/muscle-labs-india/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/muscle-labs-india/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "c5c5dbb111014fec4c706d5c1efebe8051b80302e7d691fd893e69ca550492c0",
+      "bytes": 12250,
+      "title": [
+        "Muscle Labs India: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/muscle-labs-india/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Linhas e identidade Muscle Labs India, sem confundir marcas de nome semelhante. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/landerlan/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/landerlan/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "8f8a237e2be64638a953ad1cef37939ee2bfd0c9be3701029f14253a42fc9e11",
+      "bytes": 14536,
+      "title": [
+        "Landerlan: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/landerlan/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "As linhas Landerlan, Silver, Gold e Diamond no portfólio Landerpharma. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    },
+    {
+      "path": "/marcas/oxygen-kw-pharma/",
+      "status": 200,
+      "final_url": "https://landerrio.com.br/marcas/oxygen-kw-pharma/",
+      "content_type": "text/html; charset=UTF-8",
+      "x_robots_tag": null,
+      "sha256": "3ed28be2e273c839029d2976630851542a7495785b2c7405aa0ed67d58fdb3a6",
+      "bytes": 12787,
+      "title": [
+        "Oxygen KW Pharma: marca, linhas e informações | LANDER RIO"
+      ],
+      "h1_count": 1,
+      "canonical": [
+        "https://landerrio.com.br/marcas/oxygen-kw-pharma/"
+      ],
+      "robots": [
+        "index,follow"
+      ],
+      "description": [
+        "Retagen, Tirzegen e outras denominações do portfólio Oxygen KW Pharma. Fontes, dúvidas e contexto editorial independente da LANDER RIO."
+      ],
+      "images_missing_alt": 0,
+      "jsonld_valid": true,
+      "identical_to_rc12": false
+    }
+  ]
+}

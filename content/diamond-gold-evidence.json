@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-11-15",
+  "scope": "Editorial comparison of public catalog entries; no independent clinical, regulatory or batch validation.",
+  "listing_url": "https://landerpharma.com.py/linea-diamond",
+  "listing_count": 6,
+  "products": [
+    {"name":"Durateston Plus","active":"Mistura de ésteres de testosterona","strength":"250 mg/mL","presentation":"10 ampolas de 1 mL","source":6,"url":"https://landerpharma.com.py/productos/durateston-plus-10-ampollas-x-1-ml","oil_status":"named_in_public_page","oil":"Miglyol 840","other_named_excipient":"Álcool benzílico","source_excerpt":"Lista de excipientes: miglyol 840, alcohol bencílico."},
+    {"name":"Drostanolona propionato","active":"Propionato de drostanolona","strength":"100 mg/mL","presentation":"10 ampolas de 1 mL","source":7,"url":"https://landerpharma.com.py/productos/drostanolona-propionato-x-10-ampollas-de-1-ml","oil_status":"not_named_in_public_page","oil":null},
+    {"name":"Metenolona enantato","active":"Enantato de metenolona","strength":"100 mg/mL","presentation":"10 ampolas de 1 mL","source":8,"url":"https://landerpharma.com.py/productos/metenolona-enantato-10-ampollas-x-1-ml","oil_status":"not_named_in_public_page","oil":null},
+    {"name":"Decaland Depot","active":"Decanoato de nandrolona","strength":"200 mg/mL","presentation":"10 ampolas de 1 mL","source":9,"url":"https://landerpharma.com.py/productos/decaland-depot-10-ampollas-x-1-ml","oil_status":"not_named_in_public_page","oil":null},
+    {"name":"Testoland Depot","active":"Cipionato de testosterona","strength":"200 mg/2 mL","presentation":"10 ampolas de 2 mL","source":10,"url":"https://landerpharma.com.py/productos/testoland-depot-10-ampollas-x-1-ml","oil_status":"not_named_in_public_page","oil":null,"note":"The URL says 1 mL; the page title and presentation say 2 mL. Editorial copy follows the title and formula, and preserves the source URL."},
+    {"name":"Testenat Depot","active":"Enantato de testosterona","strength":"250 mg/mL","presentation":"10 ampolas de 1 mL","source":11,"url":"https://landerpharma.com.py/productos/testenat-depot-10-ampollas-x-2-ml","oil_status":"not_named_in_public_page","oil":null,"note":"The URL says 2 mL; the page title and presentation say 1 mL. Editorial copy follows the title and formula, and preserves the source URL."}
+  ],
+  "gold_comparator": {
+    "name":"Durateston Plus Gold","presentation":"Frasco-ampola de 10 mL","strength":"250 mg/mL","source":12,
+    "url":"https://landerpharma.com.py/productos/durateston-plus-gold-fco-amp-x-10-ml",
+    "oil":"Miglyol 840","other_named_excipient":"Álcool benzílico",
+    "source_excerpt":"Lista de excipientes: miglyol 840, alcohol bencílico.",
+    "limits":"The names of the two excipients are shared; concentrations/proportions, batch equivalence and comparative clinical outcomes are not established by these pages. Not a comparison of every Gold product."
+  },
+  "excipient_reference": {
+    "source":13,"publisher":"IOI Oleo","name":"MIGLYOL 840",
+    "url":"https://www.ioioleo.de/en/pharma/products-pharma/miglyol-840/",
+    "chemical_name":"Propylene Glycol Dicaprylocaprate",
+    "portuguese_name":"Dicaprilocaprato de propilenoglicol",
+    "category":"Éster C8/C10; líquido oleoso",
+    "not_inferred":["óleo de coco puro","MCT como sinônimo químico","maior segurança","menos dor","absorção mais rápida","melhor resultado","ausência de alergia"]
+  }
+}

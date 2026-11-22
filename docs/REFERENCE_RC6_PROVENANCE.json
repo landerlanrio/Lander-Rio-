@@ -1,0 +1,15 @@
+{
+  "reference": "https://designs.magicpath.ai/v1/happily-sun-7479?utm_source=chatgpt.com",
+  "css_source": "https://designs.magicpath.ai/v1/happily-sun-7479/assets/index-CnEiMRAZ.css",
+  "css_sha256": "dac4ef114a64f594782bcc1d507e216bd8384a1d832e6f18478cd3bd8f0a1788",
+  "rendered_html_sha256": "d7a55a1ec878de961286d1eb98e10bceef4aa5f3c46951f7c7b8a11dbe64ae95",
+  "method": "Ported rendered semantic DOM and original CSS into the existing static site, with native accessible behavior. No React runtime or MagicPath tracking included.",
+  "intentional_adaptations": [
+    "User-selected portrait/landscape Hero photos",
+    "ATACADO and VAREJO links with existing number/messages",
+    "Four supplied logos retained in compact Hero band",
+    "All 14 RC5 logo files retained including their original white canvases",
+    "Real editorial/tool destinations and verified offline ROX instead of placeholders",
+    "Preserved SEO, optional WhatsApp composer, search and footer navigation"
+  ]
+}

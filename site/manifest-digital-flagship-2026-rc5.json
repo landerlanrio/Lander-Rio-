@@ -1,0 +1,30 @@
+{
+  "version": "digital-flagship-2026-rc5",
+  "base_manifest": "manifest-v23-10.json",
+  "upstream_commit": "8b5a77458fb12b1f3c0e0b83207885d500dbf51e",
+  "scope": "Isolated preview candidate; no production publication",
+  "files": {
+    "assets/flagship-2026.css": "4a1a8e5885eeff12a25f7b8e5debe720ac44800801adba7cd93b05dbcd78a89b",
+    "assets/logos/alpha-x-prime-rc5.webp": "9ff23fcfc5334a6a637357df386af734448346af36a2ae45bd4e65c63ca2e8ec",
+    "assets/logos/cooper-pharma-rc5.webp": "c882013d6d9ed821f561215b822a173cb2e5f141fde66d205580f7ac877f7a4f",
+    "assets/logos/eminence-labs-rc5.webp": "3becda4da14c7e374ee7eb86eea1aa3fa91ec68e35221d57cf6a45bd3b6ab408",
+    "assets/logos/eticos-rc5.webp": "011aa534f1b482e3987ba73659ddf9cdcb035636976e9007cda0256151146140",
+    "assets/logos/geniqs-pharma-rc5.webp": "b5c36c347b4fa904baed685e323e8fe439c3d92c35baff2ad0a6fe21c8c53127",
+    "assets/logos/indufar-rc5.webp": "cec537fc233d36207d52e69015cbef4c65ae7f4ba740f18480d77b47922cb5fe",
+    "assets/logos/landerlan-hero-rc5.webp": "548d86ccf810c459465c82708666e932da4bbb92cfdf8751c7ef2c461e11f176",
+    "assets/logos/landerlan-rc5.webp": "28309082b63205a2f099ce50588753640b62641821686131517403a514a189dc",
+    "assets/logos/life-peptideos-hero-rc5.webp": "5d4e40cc8ed78fda1d3b102f48b2a647bea395c9908f60521eb5322247e4415f",
+    "assets/logos/life-peptideos-rc5.webp": "982553123a71895a56ced713bebe168b6036e4028e76383d6586f1ed0e2a59fa",
+    "assets/logos/muscle-labs-india-rc5.webp": "dcd639d81dae475c23ed63d6b30fd848651cff034f8fb95f60302f67d52bf2b1",
+    "assets/logos/oxygen-kw-pharma-hero-rc5.webp": "a1d49f764cb652808c26a9cf8255341765837dea08a19e2928a623e8e171d22d",
+    "assets/logos/oxygen-kw-pharma-rc5.webp": "3eba0be5e6c7c49d63e1f125f869d259493991f64511877ba6684126bd42dbdd",
+    "assets/logos/quimfa-rc5.webp": "e247094fc2281239bc23d355143aebc9fed86a4d25e9eebb84108deb2fa7c8bb",
+    "assets/logos/synedica-rc5.webp": "5ecde030bcd0d4f57473f7362d36ce650702715355ad08b995fae077795cbf4b",
+    "assets/logos/topharma-hero-rc5.webp": "4d8ad92cd928820887ac1fbf36475c41d9fee78b9e154c4653c4acb886dbb93d",
+    "assets/logos/topharma-rc5.webp": "f1dedabd0b5261848f123fba4f9706ec823d9a1c97b41f10f7c6c1ce8d5479ed",
+    "assets/logos/zphc-rc5.webp": "ac7f6090fb701c7cb765d59b130c96166627d22931b9c55437d5556bc22fab85",
+    "assets/measurement-v23-2.js": "7f4522451ee2062faecfb0f0acee15434d4bd512e8e4e7947757ca314d51c54b",
+    "index.html": "bc350c87380f67615f8c0130a5a1acfaed5d933fea6c53c88f4e24fea9b6e937",
+    "release.json": "a20ed6befe6803095a1de389983d45d4a44ad8797f74449984286440a10c7986"
+  }
+}

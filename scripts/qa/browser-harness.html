@@ -1,0 +1,81 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TITAN · Homologação local</title>
+<style>body{margin:0;background:#191b1e;color:#f4f5ee;font:14px system-ui}header{padding:12px 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}button,select,a{padding:10px;background:#dbff64;color:#111;border:0;border-radius:4px;cursor:pointer}pre{white-space:pre-wrap;max-height:240px;overflow:auto;margin:0;padding:15px;color:#c9d4df}iframe{display:block;border:0;margin:0 auto;background:#080a08}#stage{overflow:auto}label{display:flex;align-items:center;gap:8px}</style>
+<header><strong>TITAN · PREVIEW LOCAL</strong><label>Largura <select id="width"><option>360</option><option selected>390</option><option>430</option><option>768</option><option>1440</option></select></label><button id="run">Executar testes de interface</button><button id="routes">Testar páginas e formulários simulados</button><button id="hide-report">Mostrar/ocultar relatório</button><a id="download" hidden>Baixar evidências JSON</a><span id="status" role="status">Dados fictícios. Nenhuma gravação externa.</span></header>
+<pre id="report" hidden></pre><div id="stage"><iframe id="site" title="Candidata LANDER RIO" src="/" width="390" height="844"></iframe></div>
+<script>
+const frame=document.querySelector('#site'),width=document.querySelector('#width'),status=document.querySelector('#status'),report=document.querySelector('#report');
+document.querySelector('#hide-report').onclick=()=>report.hidden=!report.hidden;
+width.onchange=()=>{frame.width=width.value;frame.height=Number(width.value)>=768?'980':'844'};
+const pause=()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+const records=[],errors=[];let axeLoaded=false;
+frame.addEventListener('load',()=>{frame.contentWindow.addEventListener('error',e=>errors.push({message:e.message}));frame.contentWindow.addEventListener('unhandledrejection',e=>errors.push({message:String(e.reason)}));});
+function check(name,pass,details){records.push({name,passed:Boolean(pass),details});if(!pass)console.error('TITAN QA:',name,details)}
+document.querySelector('#run').onclick=async()=>{
+ records.length=0;errors.length=0;document.querySelector('#run').disabled=true;report.hidden=false;
+ try{
+  const w=frame.contentWindow,d=w.document;
+  const consent=d.querySelector('[data-choice="granted"]');if(consent)consent.click();
+  if(!axeLoaded){await new Promise((resolve,reject)=>{const s=d.createElement('script');s.src='/axe.min.js';s.onload=resolve;s.onerror=reject;d.head.append(s)});axeLoaded=true;}
+  for(const size of [360,390,430,768,1440]){
+   status.textContent='Testando '+size+' px…';frame.width=String(size);frame.height=size>=768?'980':'844';w.scrollTo(0,0);await pause();
+   check(size+' / sem overflow horizontal',d.documentElement.scrollWidth<=size,{scrollWidth:d.documentElement.scrollWidth,viewport:size});
+   const menu=d.querySelector('.menu-toggle'),search=d.querySelector('.v26-search-toggle'),panel=d.querySelector('#v26-search'),q=d.querySelector('#v26-query');
+   menu.click();search.click();await pause();check(size+' / busca fecha menu',!d.body.classList.contains('menu-open')&&!panel.hidden);
+   q.value='zzzz-sem-resultados';q.dispatchEvent(new Event('input',{bubbles:true}));check(size+' / busca vazia explica resultado',d.querySelector('[data-v26-search-status]').textContent.includes('Nenhuma'));
+   d.querySelector('[data-v26-search-close]').click();search.click();check(size+' / reabertura limpa busca',q.value===''&&d.querySelectorAll('.v26-search-links a:not([hidden])').length===7);d.querySelector('[data-v26-search-close]').click();
+   const pept=d.querySelector('[data-v26-filter="peptideos"]');pept.click();check(size+' / filtro de marcas',Array.from(d.querySelectorAll('.v26-brand-card:not([hidden])')).every(c=>c.dataset.category==='peptideos')&&d.querySelectorAll('.v26-brand-card:not([hidden])').length>0);d.querySelector('[data-v26-filter="todas"]').click();
+   const launch=d.querySelector('[data-rox-launcher]');launch.click();await pause();const rect=d.querySelector('[data-rox-dialog]').getBoundingClientRect();check(size+' / ROX dentro da tela',rect.left>=0&&rect.right<=size&&rect.top>=0&&rect.bottom<=Number(frame.height),{x:rect.x,y:rect.y,width:rect.width,height:rect.height});
+   const ask=text=>{d.querySelector('[data-rox-input]').value=text;d.querySelector('[data-rox-form]').dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}))};
+   ask('qro atacdo 20 unidades');ask('quero catálogo');let a=d.querySelector('[data-rox-handoff]');check(size+' / contexto e quantidade no WhatsApp',!a.hidden&&a.dataset.profile==='atacado'&&decodeURIComponent(a.href).includes('20 unidades')&&decodeURIComponent(a.href).includes('catálogo'));
+   ask('Ozempic dose');check(size+' / pergunta clínica limpa encaminhamento',a.hidden&&a.getAttribute('href')==='');
+   d.querySelector('[data-rox-close]').click();w.scrollTo(0,0);
+   const axe=await w.axe.run(d,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});check(size+' / axe WCAG A AA',axe.violations.length===0,axe.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})));
+  }
+  check('Nenhuma exceção JavaScript nas interações',errors.length===0,errors);
+  check('ROX gera eventos locais sem afirmar conversa ou venda',w.LanderMeasurement.getSnapshot().some(e=>e.event==='rox_opened')&&!w.LanderMeasurement.getSnapshot().some(e=>['conversation_confirmed','lead_qualified','sale_confirmed'].includes(e.event)));
+  const result={at:new Date().toISOString(),candidate:'titan-1.0.0-rc1',environment:'Chromium cloud / local static preview / iframe widths, NOT Safari or physical iPhone',userAgent:w.navigator.userAgent,externalWrites:false,records,total:records.length,passed:records.filter(x=>x.passed).length,failed:records.filter(x=>!x.passed).length};
+  report.textContent=JSON.stringify(result,null,2);status.textContent=result.passed+'/'+result.total+' verificações aprovadas';const a=document.querySelector('#download');a.href=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'}));a.download='TITAN_BROWSER_QA.json';a.hidden=false;
+ }catch(error){status.textContent='Falha no teste';report.textContent=String(error.stack||error)}finally{document.querySelector('#run').disabled=false;frame.width=width.value;frame.height='844';frame.contentWindow.scrollTo(0,0);}
+};
+
+document.querySelector('#routes').onclick=async()=>{
+ const button=document.querySelector('#routes');button.disabled=true;records.length=0;errors.length=0;report.hidden=false;
+ const navigate=url=>new Promise(resolve=>{frame.onload=()=>{frame.contentWindow.addEventListener('error',e=>errors.push(e.message));resolve()};frame.src=url});
+ const wait=async predicate=>{for(let n=0;n<150;n++){if(predicate())return;await new Promise(r=>setTimeout(r,20))}throw Error('Test condition timeout')};
+ try{
+  for(const route of ['/atacado/','/varejo/','/contato/','/ferramentas/','/treino/','/dieta/','/conteudos/','/marcas/']){
+   status.textContent='Verificando '+route;await navigate(route);const w=frame.contentWindow,d=w.document;
+   for(const size of [360,390,430,768,1440]){frame.width=String(size);await pause();check(route+' / '+size+' sem overflow',d.documentElement.scrollWidth<=size,{width:d.documentElement.scrollWidth});}
+   frame.width='390';await pause();
+   await new Promise((resolve,reject)=>{const s=d.createElement('script');s.src='/axe.min.js';s.onload=resolve;s.onerror=reject;d.head.append(s)});
+   const axe=await w.axe.run(d,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});check(route+' / axe WCAG A AA',!axe.violations.length,axe.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})));
+   if(route==='/atacado/'){
+    const volume=d.querySelector('#reseller-volume-select');volume.selectedIndex=1;volume.dispatchEvent(new w.Event('change',{bubbles:true}));const a=d.querySelector('[data-dynamic-wa]');check('Atacado / quantidade preservada',decodeURIComponent(a.href).includes(volume.value)&&decodeURIComponent(a.href).includes('revenda'));check('Atacado / WhatsApp web e app usam mesmo contexto',d.querySelector('[data-wa-web]')?.href.includes('web.whatsapp.com'));
+   }
+  }
+  for(const type of ['training','nutrition']){
+   await navigate(type==='training'?'/treino/':'/dieta/');const w=frame.contentWindow,d=w.document;
+   let mode='failure',calls=[];
+   w.fetch=async(url,opts)=>{calls.push({url,method:opts?.method});return new w.Response(JSON.stringify(mode==='invalid'?{ok:true}:mode==='success'?{ok:true,id:'00000000-0000-4000-8000-000000000001'}:{error:'simulated_failure'}),{status:mode==='failure'?503:200,headers:{'content-type':'application/json'}})};
+   // These keys belong only to this throwaway local preview, never production.
+   if(type==='training')w.localStorage.removeItem('lander-training-access-v19');
+   const submit=form=>form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));
+   if(type==='training'){
+    for(const [name,value] of Object.entries({idade:30,peso:75,altura:175}))d.querySelector('[name="'+name+'"]').value=value;
+    for(let n=0;n<3;n++)d.querySelector('#next-btn').click();submit(d.querySelector('#training-form'));
+   }else{d.querySelector('#demoBtn').click();for(let n=0;n<8;n++)d.querySelector('#nextBtn').click();}
+   await pause();const form=d.querySelector(type==='training'?'#training-lead-form':'#leadForm'),gate=d.querySelector(type==='training'?'#lead-gate':'[data-view="gate"]'),error=d.querySelector(type==='training'?'#lead-feedback':'#gateError');
+   check(type+' / resultado exige cadastro',!gate.hidden);
+   for(const [name,value] of Object.entries({name:'Teste Sintético TITAN',email:'titan@example.test',whatsapp:'21999999999'}))form.elements[name].value=value;
+   form.elements.consent_access.checked=true;form.elements.consent_marketing.checked=false;
+   for(const next of ['failure','invalid','success']){
+    mode=next;submit(form);await wait(()=>!form.querySelector('button[type="submit"]').disabled);
+    check(type+' / '+mode,mode==='success'?gate.hidden:!gate.hidden&&!error.hidden);
+   }
+   check(type+' / somente endpoint local interceptado',calls.length===3&&calls.every(c=>c.url==='/api/'+(type==='training'?'workout':'nutrition')+'/lead'&&c.method==='POST'),calls);
+  }
+  check('Páginas internas / sem exceções de execução',!errors.length,errors);
+  const result={at:new Date().toISOString(),candidate:'titan-1.0.0-rc1',environment:'Chromium cloud local preview, ALL registration requests mocked in memory',externalWrites:false,realRegistrations:0,records,total:records.length,passed:records.filter(x=>x.passed).length,failed:records.filter(x=>!x.passed).length};report.textContent=JSON.stringify(result,null,2);status.textContent=result.passed+'/'+result.total+' verificações de páginas aprovadas';const a=document.querySelector('#download');a.href=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'}));a.download='TITAN_ROUTES_FORMS_QA.json';a.hidden=false;
+ }catch(e){status.textContent='Falha no teste';report.textContent=JSON.stringify({error:String(e.stack||e),records},null,2)}finally{button.disabled=false;await navigate('/');axeLoaded=false;frame.width=width.value;}
+};
+</script></html>

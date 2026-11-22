@@ -1,0 +1,86 @@
+{
+  "environment": "loopback; GA4/PostHog network not attempted on localhost",
+  "home": [
+    {
+      "event": "site_visit",
+      "page": "home",
+      "release": "digital-flagship-2026-rc14.2",
+      "source": "instagram",
+      "medium": "social",
+      "campaign": "lr-261122",
+      "contact_reference": "LR-CF58D1D83106"
+    },
+    {
+      "event": "hero_view",
+      "page": "home",
+      "release": "digital-flagship-2026-rc14.2",
+      "source": "instagram",
+      "medium": "social",
+      "campaign": "lr-261122",
+      "placement": "hero",
+      "contact_reference": "LR-CF58D1D83106"
+    }
+  ],
+  "before": [
+    {
+      "event": "site_visit",
+      "page": "retail",
+      "release": "digital-flagship-2026-rc14.2",
+      "source": "instagram",
+      "medium": "social",
+      "campaign": "lr-261122",
+      "contact_reference": "LR-CF58D1D83106"
+    }
+  ],
+  "failed": {
+    "events": [
+      {
+        "event": "site_visit",
+        "page": "retail",
+        "release": "digital-flagship-2026-rc14.2",
+        "source": "instagram",
+        "medium": "social",
+        "campaign": "lr-261122",
+        "contact_reference": "LR-CF58D1D83106"
+      }
+    ],
+    "fieldsetDisabled": true,
+    "inputDisabled": true
+  },
+  "forgedResult": false,
+  "after": [
+    {
+      "event": "site_visit",
+      "page": "retail",
+      "release": "digital-flagship-2026-rc14.2",
+      "source": "instagram",
+      "medium": "social",
+      "campaign": "lr-261122",
+      "contact_reference": "LR-CF58D1D83106"
+    },
+    {
+      "event": "commercial_request_saved",
+      "page": "retail",
+      "release": "digital-flagship-2026-rc14.2",
+      "source": "instagram",
+      "medium": "social",
+      "campaign": "lr-261122",
+      "profile": "varejo",
+      "contact_reference": "LR-CF58D1D83106"
+    }
+  ],
+  "eventKeys": [
+    [
+      "event",
+      "page",
+      "release",
+      "source",
+      "medium",
+      "campaign",
+      "profile",
+      "contact_reference"
+    ]
+  ],
+  "pass": true,
+  "panelReceived": "not validated"
+}

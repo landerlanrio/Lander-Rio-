@@ -1,0 +1,1811 @@
+{
+  "updated": "2026-11-09",
+  "items": [
+    {
+      "name": "Testosterona — enantato",
+      "slug": "testosterona-enantato",
+      "aliases": [
+        "Enantato",
+        "Testo E",
+        "testosterone enanthate"
+      ],
+      "category": "Testosteronas",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado na fonte: semanal",
+      "mechanism": "A testosterona liga-se ao receptor androgênico e modula transcrição gênica, síntese proteica e adaptação muscular. Também pode ser convertida em estradiol pela aromatase e em DHT pela 5α-redutase.",
+      "effects": "Tem evidência experimental direta de efeito dose-dependente sobre massa livre de gordura e parâmetros de força em homens; isso não estabelece segurança para doses suprafisiológicas.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Pode elevar hematócrito e estimular efeitos estrogênicos, incluindo ginecomastia e retenção hídrica.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "O éster enantato retarda a liberação após aplicação. A meia-vida aparente varia com veículo, via e pessoa.",
+      "clinical": "Reposição hormonal somente quando indicada e individualizada. Doses usadas por atletas não equivalem a terapia de reposição.",
+      "maleUse": "200–600 mg/semana",
+      "femaleUse": null,
+      "level": "direta para testosterona; limitada por éster",
+      "references": [
+        "acc",
+        "test",
+        "haar",
+        "bio"
+      ],
+      "summary": "Andrógeno de referência. Síntese proteica, força, aromatização e riscos hematológicos.",
+      "detail": "As faixas do quadro são exposições relatadas em usuários recreativos. O estudo de dose-resposta experimental usou enantato de testosterona em ambiente controlado, sem validar automedicação.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "200–600 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Testosterona — cipionato",
+      "slug": "testosterona-cipionato",
+      "aliases": [
+        "Cipionato",
+        "Deposteron",
+        "testosterone cypionate"
+      ],
+      "category": "Testosteronas",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado na fonte: semanal",
+      "mechanism": "A testosterona liga-se ao receptor androgênico e modula transcrição gênica, síntese proteica e adaptação muscular. Também pode ser convertida em estradiol pela aromatase e em DHT pela 5α-redutase.",
+      "effects": "Tem evidência experimental direta de efeito dose-dependente sobre massa livre de gordura e parâmetros de força em homens; isso não estabelece segurança para doses suprafisiológicas.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Pode elevar hematócrito e estimular efeitos estrogênicos, incluindo ginecomastia e retenção hídrica.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "O éster cipionato prolonga a liberação; não confundir miligramas do éster com a mesma massa de testosterona livre.",
+      "clinical": "Reposição hormonal somente quando indicada e individualizada. Doses usadas por atletas não equivalem a terapia de reposição.",
+      "maleUse": "200–600 mg/semana",
+      "femaleUse": null,
+      "level": "direta para testosterona; limitada por éster",
+      "references": [
+        "acc",
+        "test",
+        "haar",
+        "bio"
+      ],
+      "summary": "Andrógeno de referência. Síntese proteica, força, aromatização e riscos hematológicos.",
+      "detail": "As faixas do quadro são exposições relatadas em usuários recreativos. O estudo de dose-resposta experimental usou enantato de testosterona em ambiente controlado, sem validar automedicação.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "200–600 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Testosterona — propionato",
+      "slug": "testosterona-propionato",
+      "aliases": [
+        "Propionato",
+        "Testo P",
+        "testosterone propionate"
+      ],
+      "category": "Testosteronas",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado na fonte: semanal",
+      "mechanism": "A testosterona liga-se ao receptor androgênico e modula transcrição gênica, síntese proteica e adaptação muscular. Também pode ser convertida em estradiol pela aromatase e em DHT pela 5α-redutase.",
+      "effects": "Tem evidência experimental direta de efeito dose-dependente sobre massa livre de gordura e parâmetros de força em homens; isso não estabelece segurança para doses suprafisiológicas.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Pode elevar hematócrito e estimular efeitos estrogênicos, incluindo ginecomastia e retenção hídrica.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Éster mais curto que enantato e cipionato; flutuações farmacocinéticas variam com apresentação.",
+      "clinical": "Reposição hormonal somente quando indicada e individualizada. Doses usadas por atletas não equivalem a terapia de reposição.",
+      "maleUse": "150–300 mg/semana",
+      "femaleUse": null,
+      "level": "direta para testosterona; limitada por éster",
+      "references": [
+        "acc",
+        "test",
+        "haar",
+        "bio"
+      ],
+      "summary": "Andrógeno de referência. Síntese proteica, força, aromatização e riscos hematológicos.",
+      "detail": "As faixas do quadro são exposições relatadas em usuários recreativos. O estudo de dose-resposta experimental usou enantato de testosterona em ambiente controlado, sem validar automedicação.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "150–300 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Testosterona — suspensão",
+      "slug": "testosterona-suspensao",
+      "aliases": [
+        "Suspensão de testosterona",
+        "testosterone suspension"
+      ],
+      "category": "Testosteronas",
+      "form": "Injetável sem éster",
+      "route": "Injetável; intervalo relatado na fonte: semanal",
+      "mechanism": "A testosterona liga-se ao receptor androgênico e modula transcrição gênica, síntese proteica e adaptação muscular. Também pode ser convertida em estradiol pela aromatase e em DHT pela 5α-redutase.",
+      "effects": "Tem evidência experimental direta de efeito dose-dependente sobre massa livre de gordura e parâmetros de força em homens; isso não estabelece segurança para doses suprafisiológicas.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Pode elevar hematócrito e estimular efeitos estrogênicos, incluindo ginecomastia e retenção hídrica.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Formulação sem éster; perfil de absorção depende da suspensão e da apresentação.",
+      "clinical": "Reposição hormonal somente quando indicada e individualizada. Doses usadas por atletas não equivalem a terapia de reposição.",
+      "maleUse": "150–700 mg/semana",
+      "femaleUse": null,
+      "level": "direta para testosterona; limitada por éster",
+      "references": [
+        "acc",
+        "test",
+        "haar",
+        "bio"
+      ],
+      "summary": "Andrógeno de referência. Síntese proteica, força, aromatização e riscos hematológicos.",
+      "detail": "As faixas do quadro são exposições relatadas em usuários recreativos. O estudo de dose-resposta experimental usou enantato de testosterona em ambiente controlado, sem validar automedicação.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "150–700 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Testosterona — undecanoato oral",
+      "slug": "testosterona-undecanoato-oral",
+      "aliases": [
+        "Undecanoato oral",
+        "testosterone undecanoate"
+      ],
+      "category": "Testosteronas",
+      "form": "Oral",
+      "route": "Oral; intervalo relatado na fonte: diário",
+      "mechanism": "A testosterona liga-se ao receptor androgênico e modula transcrição gênica, síntese proteica e adaptação muscular. Também pode ser convertida em estradiol pela aromatase e em DHT pela 5α-redutase.",
+      "effects": "Tem evidência experimental direta de efeito dose-dependente sobre massa livre de gordura e parâmetros de força em homens; isso não estabelece segurança para doses suprafisiológicas.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Pode elevar hematócrito e estimular efeitos estrogênicos, incluindo ginecomastia e retenção hídrica.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "A formulação oral é absorvida por via linfática em graus variáveis e não pode ser equiparada ao undecanoato intramuscular.",
+      "clinical": "Reposição hormonal somente quando indicada e individualizada. Doses usadas por atletas não equivalem a terapia de reposição.",
+      "maleUse": "80–160 mg/dia",
+      "femaleUse": null,
+      "level": "direta para testosterona; limitada por éster",
+      "references": [
+        "acc",
+        "test",
+        "haar",
+        "bio"
+      ],
+      "summary": "Andrógeno de referência. Síntese proteica, força, aromatização e riscos hematológicos.",
+      "detail": "As faixas do quadro são exposições relatadas em usuários recreativos. O estudo de dose-resposta experimental usou enantato de testosterona em ambiente controlado, sem validar automedicação.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "80–160 mg/dia",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Testosterona — mistura de ésteres",
+      "slug": "testosterona-mistura-esteres",
+      "aliases": [
+        "Durateston",
+        "Sustanon",
+        "blend de testosterona"
+      ],
+      "category": "Testosteronas",
+      "form": "Injetável, mistura de ésteres",
+      "route": "Injetável",
+      "mechanism": "A testosterona liga-se ao receptor androgênico e modula transcrição gênica, síntese proteica e adaptação muscular. Também pode ser convertida em estradiol pela aromatase e em DHT pela 5α-redutase.",
+      "effects": "Tem evidência experimental direta de efeito dose-dependente sobre massa livre de gordura e parâmetros de força em homens; isso não estabelece segurança para doses suprafisiológicas.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Pode elevar hematócrito e estimular efeitos estrogênicos, incluindo ginecomastia e retenção hídrica.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Mistura farmacocinéticas distintas de ésteres. A composição e concentração da apresentação precisam ser confirmadas; não se pode transplantar faixas de enantato para a mistura.",
+      "clinical": "Pode haver apresentações terapêuticas conforme produto e mercado; dose depende de prescrição.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "limitada para a mistura",
+      "references": [
+        "survey500",
+        "sport_user_survey",
+        "test",
+        "haar",
+        "bio"
+      ],
+      "summary": "Múltiplos ésteres; efeitos androgênicos semelhantes e liberação farmacocinética composta.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Posologia de bula · homens",
+        "value": "250 mg por aplicação, geralmente a cada 3 semanas",
+        "context": "Sustanon 250: 1 mL contém 250 mg de ésteres (176 mg de testosterona-base). Referência de reposição no hipogonadismo masculino; a composição não permite transferir diretamente as doses de enantato.",
+        "sex": "Homens: indicação de reposição quando há diagnóstico. Mulheres: não foi identificada dose validada para hipertrofia; formulações e objetivos clínicos diferentes não são intercambiáveis.",
+        "sourceKeys": [
+          "sustanon_smpc"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Força e hipertrofia",
+      "sportEvidence": "O artigo apresenta um único exemplo de combinação que incluía Sustanon. Esse valor não foi estimado como dose média ou segura para misturas de ésteres.",
+      "sportDose": "750 mg/semana em UM exemplo histórico",
+      "sportCaveat": "Não extrapolar de um esquema ilustrativo com várias substâncias para uma indicação de hipertrofia. O produto e as proporções dos ésteres podem variar.",
+      "sportSourceUrl": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "sportSourceName": "Parkinson & Evans, 2006 — Tabela 10 (um exemplo de polifarmácia)",
+      "sportType": "exemplo",
+      "sportDoseKind": "exemplo",
+      "sportDoseEvidence": "Exemplo de uso combinado, não faixa da mistura",
+      "sportNotes": "A Tabela 10 não constitui ensaio de dose-resposta e inclui associações; não foi possível calcular uma faixa individual de Sustanon.",
+      "sportSex": "Fonte predominantemente masculina; nenhuma dose para bodybuilding feminino foi validada.",
+      "evidenceOriginLabel": "Caso individual",
+      "evidenceGroup": "pesquisa"
+    },
+    {
+      "name": "Nandrolona",
+      "slug": "nandrolona",
+      "aliases": [
+        "Deca",
+        "Decaland",
+        "Durabolin",
+        "nandrolone"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado: semanal",
+      "mechanism": "Derivado de 19-nortestosterona; atua no receptor androgênico e pode ter atividade progestagênica. Sua supressão gonadotrófica pode ser relevante.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Alterações sexuais e reprodutivas, possível atividade progestagênica e efeitos cardiovasculares.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "A meia-vida e liberação variam conforme o éster (decanoato, fenilpropionato etc.); a tabela da fonte não especifica éster.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "200–400 mg/semana",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "200–400 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Trembolona — acetato",
+      "slug": "trembolona-acetato",
+      "aliases": [
+        "Tren A",
+        "Trenbolone acetate"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado: semanal",
+      "mechanism": "Andrógeno sintético 19-nor de elevada potência receptor-androgênica em modelos; não dispõe de base adequada de segurança clínica para fins de hipertrofia em humanos.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Insônia, alterações de humor, pressão arterial e riscos cardiovasculares merecem atenção; não há dose segura estabelecida.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Éster acetato, de liberação relativamente mais curta; dados humanos controlados de segurança são extremamente limitados.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "150–300 mg/semana",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "150–300 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Trembolona — enantato",
+      "slug": "trembolona-enantato",
+      "aliases": [
+        "Tren E",
+        "Trenbolone enanthate"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado: semanal",
+      "mechanism": "Andrógeno sintético 19-nor de elevada potência receptor-androgênica em modelos; não dispõe de base adequada de segurança clínica para fins de hipertrofia em humanos.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Potenciais efeitos cardiovasculares e neuropsiquiátricos; ausência de indicação clínica humana para performance.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Éster enantato com liberação prolongada em relação ao acetato; não há parâmetros farmacocinéticos clínicos sólidos para uso esportivo.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "200–300 mg/semana",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "200–300 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Boldenona",
+      "slug": "boldenona",
+      "aliases": [
+        "Equipoise",
+        "Undecilenato de boldenona",
+        "boldenone"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado: semanal",
+      "mechanism": "Andrógeno derivado de testosterona, com afinidade pelo receptor androgênico; a evidência controlada em bodybuilders é escassa.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Eritrocitose e efeitos cardiovasculares, além da supressão hormonal.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "O undecilenato é um éster de ação prolongada. Usos veterinários não fornecem garantia de qualidade, segurança ou posologia humana.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "200–400 mg/semana",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "200–400 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Drostanolona",
+      "slug": "drostanolona",
+      "aliases": [
+        "Masteron",
+        "Drostanolone",
+        "Drost"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado: semanal",
+      "mechanism": "Derivado de di-hidrotestosterona (DHT), com ação no receptor androgênico. Não sofre aromatização direta em estradiol.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. A ausência de aromatização não elimina risco cardiovascular, capilar ou reprodutivo.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Os ésteres propionato e enantato têm perfis de liberação diferentes; o quadro publicado não diferencia os dois.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "300–450 mg/semana",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "300–450 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Metenolona — injetável",
+      "slug": "metenolona-injetavel",
+      "aliases": [
+        "Primobolan",
+        "Primobolan depot",
+        "Methenolone"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado: semanal",
+      "mechanism": "Derivado de di-hidrotestosterona (DHT), com ação no receptor androgênico. Não sofre aromatização direta em estradiol.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Risco de virilização em mulheres mesmo quando o composto é descrito informalmente como “leve”.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "O enantato de metenolona apresenta liberação mais lenta; não confundir com apresentações orais.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "200–400 mg/semana",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "200–400 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Estanozolol — oral",
+      "slug": "estanozolol-oral",
+      "aliases": [
+        "Stano",
+        "Winstrol oral",
+        "Stanozolol"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Oral",
+      "route": "Oral; intervalo relatado: diário",
+      "mechanism": "Derivado de di-hidrotestosterona (DHT), com ação no receptor androgênico. Não sofre aromatização direta em estradiol.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Risco hepático e queda de HDL podem ser marcantes; a forma oral não é inofensiva.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "É um esteroide 17α-alquilado; metabolização hepática e perfil lipídico merecem atenção.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "20–50 mg/dia",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "20–50 mg/dia",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Estanozolol — injetável",
+      "slug": "estanozolol-injetavel",
+      "aliases": [
+        "Stano injetável",
+        "Winstrol depot"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Injetável",
+      "route": "Injetável; intervalo relatado: semanal",
+      "mechanism": "Derivado de di-hidrotestosterona (DHT), com ação no receptor androgênico. Não sofre aromatização direta em estradiol.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Dislipidemia, hepatotoxicidade possível e virilização. Não pressupor que injetável “protege o fígado”.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Formulação injetável em suspensão; não equivale à exposição oral. Estanozolol mantém perfil de riscos independentemente da via.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "150–700 mg/semana",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "150–700 mg/semana",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Oxandrolona",
+      "slug": "oxandrolona",
+      "aliases": [
+        "Anavar",
+        "Oxa",
+        "Oxandrolone"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Oral",
+      "route": "Oral; intervalo relatado: diário",
+      "mechanism": "Derivado de di-hidrotestosterona (DHT), com ação no receptor androgênico. Não sofre aromatização direta em estradiol.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Alterações hepáticas e lipídicas; virilização possível em mulheres.",
+      "women": "Exposição documentada em UM prontuário feminino: 10 mg/dia (estudo finlandês de 2023). É uma observação isolada, não uma faixa recomendada. Outros estudos descrevem uso frequente sem validar dose segura.",
+      "pharmacology": "Esteroide oral 17α-alquilado; não aromatiza diretamente. O perfil de “leve” difundido em academias não é uma categoria clínica de segurança.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "20–40 mg/dia",
+      "femaleUse": "10 mg/dia — relatado em um único prontuário (Finlândia, 2023); amostra insuficiente para faixa de uso ou recomendação.",
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "finn",
+        "women2026",
+        "women",
+        "bio"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "Homens: quadro de exposições relatadas em usuários recreativos. Mulheres: apenas o exemplo de 10 mg/dia registrado em um prontuário; não generalizar para atletas femininas.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "20–40 mg/dia",
+      "sportCaveat": "Um registro clínico de doping documentou oxandrolona 10 mg/dia em uma mulher. É um único caso observado, não evidência de dose segura ou indicada para atletas femininas.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportFemaleSingle": "10 mg/dia em 1 prontuário feminino (Finlândia, 2023). Dados insuficientes para recomendação.",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Metandienona",
+      "slug": "metandienona",
+      "aliases": [
+        "Dianabol",
+        "Dbol",
+        "Methandrostenolone"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Oral",
+      "route": "Oral; intervalo relatado: diário",
+      "mechanism": "Derivado 17α-alquilado com ação androgênica/anabólica; pode gerar metabólitos estrogênicos.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Risco hepático, dislipidemia e retenção hídrica.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Absorção oral e metabolismo hepático; a retenção de água confunde mudanças visuais com hipertrofia real.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "20–40 mg/dia",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "20–40 mg/dia",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Oximetolona",
+      "slug": "oximetolona",
+      "aliases": [
+        "Hemogenin",
+        "Anadrol",
+        "Oxymetholone"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Oral",
+      "route": "Oral; intervalo relatado: diário",
+      "mechanism": "Anabolizante oral 17α-alquilado de ação complexa; não é necessário aromatizar para produzir retenção hídrica.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Hepatotoxicidade, pressão arterial e alterações hematológicas/lipídicas.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Metabolismo hepático e interações; não se deve extrapolar segurança de terapias para contextos esportivos.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "50–100 mg/dia",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "50–100 mg/dia",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Turinabol",
+      "slug": "turinabol",
+      "aliases": [
+        "Oral Turinabol",
+        "Clorodehidrometiltestosterona"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Oral",
+      "route": "Oral; intervalo relatado: diário",
+      "mechanism": "Esteroide oral derivado da testosterona, com ação androgênica e estrutura modificada.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Dano hepático e dislipidemia são preocupações reais.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Composto oral 17α-alquilado; há pouca evidência clínica de segurança para bodybuilding.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "20–80 mg/dia",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "20–80 mg/dia",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Fluoximesterona",
+      "slug": "fluoximesterona",
+      "aliases": [
+        "Halotestin",
+        "Fluoxymesterone"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Oral",
+      "route": "Oral; intervalo relatado: diário",
+      "mechanism": "Andrógeno sintético oral com ação no receptor androgênico; sem comprovação de benefício líquido no fisiculturismo.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Potencial hepatotoxicidade e efeitos adversos cardiovasculares/psiquiátricos.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "17α-alquilado e metabolismo hepático; não equivaler à testosterona.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "20–40 mg/dia",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "20–40 mg/dia",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Mesterolona",
+      "slug": "mesterolona",
+      "aliases": [
+        "Proviron",
+        "Mesterolone"
+      ],
+      "category": "Esteroides anabolizantes",
+      "form": "Oral",
+      "route": "Oral; intervalo relatado: diário",
+      "mechanism": "Derivado androgênico de DHT, com efeito anabólico muscular limitado em comparação com EAA clássicos.",
+      "effects": "Aumento buscado de massa magra, força e recuperação. A magnitude depende da substância, da exposição, do treino e da alimentação; relatos de academia não equivalem a ensaios clínicos.",
+      "risks": "Supressão do eixo hormonal; infertilidade ou alteração menstrual; dislipidemia, hipertensão e alterações cardiovasculares; acne, queda de cabelo e mudanças de humor. O risco varia com dose, duração, associações e predisposição individual. Supressão hormonal e efeitos androgênicos; não demonstrado como estratégia confiável de “proteção” em ciclos.",
+      "women": "Em mulheres, mesmo exposições relativamente menores podem provocar engrossamento permanente da voz, aumento de pelos, alopecia androgenética, clitoromegalia, irregularidade menstrual e impacto na fertilidade. Não é possível definir uma dose livre desses riscos.",
+      "pharmacology": "Oral, com características farmacológicas distintas dos esteroides 17α-alquilados mais conhecidos.",
+      "clinical": "A existência de uso médico histórico ou em outros países não legitima utilização estética. A indicação varia por país e apresentação.",
+      "maleUse": "50–100 mg/dia",
+      "femaleUse": null,
+      "level": "revisão de práticas; sem dose clinicamente validada",
+      "references": [
+        "acc",
+        "haar",
+        "bio",
+        "women2026"
+      ],
+      "summary": "Farmacologia e efeitos buscados no esporte, com distinção entre prática observada e segurança.",
+      "detail": "O intervalo numérico descreve práticas publicadas para usuários recreativos; não constitui prescrição, faixa segura nem demonstração de superioridade.",
+      "sportContext": "Performance, hipertrofia e composição corporal — informações em uso esportivo descrito na literatura; nunca prescrição.",
+      "sportGoal": "Hipertrofia, força ou composição corporal (objetivos de usuários relatados, não benefícios garantidos)",
+      "sportEvidence": "Faixa relatada na síntese de uso entre atletas recreativos; a publicação não individualiza doses por sexo nem comprova segurança ou superioridade de determinado intervalo.",
+      "sportDose": "50–100 mg/dia",
+      "sportCaveat": "Faixa observada, não recomendação. A maioria dos dados é masculina e não permite estabelecer dose segura para mulheres.",
+      "sportSourceUrl": "https://www.acc.org/Latest-in-Cardiology/Articles/2024/04/01/16/10/The-Experts-Approach-to-Managing-CV-Risk-Among-Athletes-Using-Anabolic-Androgenic-Steroids",
+      "sportSourceName": "ACC — exposições relatadas em atletas recreativos",
+      "sportType": "observacional",
+      "sportDoseKind": "revisao-atletas",
+      "sportDoseEvidence": "Faixa de uso relatada para atletas recreativos em análise de cardiologia esportiva",
+      "sportSex": "Intervalo não estratificado por sexo; não é recomendação para homens nem mulheres.",
+      "evidenceOriginLabel": "Revisão de práticas",
+      "evidenceGroup": "revisao"
+    },
+    {
+      "name": "Hormônio do crescimento (somatropina)",
+      "slug": "somatropina-gh",
+      "aliases": [
+        "GH",
+        "HGH",
+        "Growth hormone"
+      ],
+      "category": "Hormônios e peptídeos",
+      "form": "Injetável",
+      "route": "Subcutânea em contextos médicos",
+      "mechanism": "Age por receptor de GH e induz IGF-1; influencia crescimento tecidual, lipólise e metabolismo de glicose. Alterações em massa livre de gordura não significam necessariamente ganho proporcional de força.",
+      "effects": "Usado em contextos de composição corporal. Em adultos saudáveis treinando, os dados não sustentam apresentar melhora de performance como equivalente a mudanças de composição.",
+      "risks": "Edema, artralgia, resistência à insulina, alterações glicêmicas e efeitos de exposição crônica. Uso sem indicação pode agravar doenças não diagnosticadas.",
+      "women": "Não há dose validada de GH para bodybuilding em mulheres; riscos metabólicos também existem.",
+      "pharmacology": "Hormônio peptídico com resposta variável de IGF-1; meia-vida plasmática não equivale à duração do efeito fisiológico.",
+      "clinical": "Reposição em deficiência de GH e outras condições específicas, sempre conforme diagnóstico.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "heterogênea para performance",
+      "references": [
+        "ghactive2005",
+        "survey500",
+        "sport_gh_trial",
+        "bio"
+      ],
+      "summary": "GH e IGF-1: composição corporal não é sinônimo automático de hipertrofia funcional.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Reposição hormonal em adultos",
+        "value": "0,15–0,30 mg/dia (faixa inicial)",
+        "context": "Dose inicial sem correção pelo peso para adultos com deficiência de GH diagnosticada. Ajustes são individualizados e baseados em efeitos adversos e IGF-1.",
+        "sex": "Homens e mulheres: a bula não define dose de bodybuilding por sexo; doses de manutenção podem variar. Mulheres usando estrogênio oral podem apresentar necessidades de reposição distintas.",
+        "sourceKeys": [
+          "genotropin_pfizer"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Composição corporal e sprint",
+      "sportEvidence": "128/500 entrevistados declararam uso de GH, com extremos de 2–32 UI/dia. Relatos de 2004, sem verificação das ampolas ou eficácia para hipertrofia. Em ensaio com 30 adultos ativos (15 homens e 15 mulheres), parte do aumento da massa livre de gordura foi água extracelular.",
+      "sportDose": "2–32 UI/dia relatadas (2006)",
+      "sportCaveat": "Extremos autorrelatados não definem dose ideal. Estudo com homens e mulheres ativos não comprova ganho proporcional de tecido muscular nem segurança.",
+      "sportSourceUrl": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "sportSourceName": "Parkinson & Evans — 500 usuários, Tabela 8 (2006)",
+      "sportType": "autorrelato",
+      "sportDoseKind": "autorrelato",
+      "sportDoseEvidence": "Faixa histórica relatada em usuários de AAS",
+      "sportNotes": "Pesquisa histórica baseada em autorrelato; considerar o estudo controlado de Ehrnborg et al. 2005 como evidência experimental complementar.",
+      "sportSex": "Pesquisa com 98,8% de homens; não existe faixa específica segura para mulheres.",
+      "evidenceOriginLabel": "Pesquisa com usuários",
+      "evidenceGroup": "pesquisa"
+    },
+    {
+      "name": "IGF-1 (mecasermina)",
+      "slug": "igf-1",
+      "aliases": [
+        "IGF1",
+        "Mecasermina",
+        "Insulin-like growth factor 1"
+      ],
+      "category": "Hormônios e peptídeos",
+      "form": "Injetável",
+      "route": "Via específica de produtos médicos",
+      "mechanism": "Peptídeo de sinalização celular que ativa o receptor de IGF-1 e participa de crescimento, metabolismo e sobrevivência celular.",
+      "effects": "O papel fisiológico do IGF-1 não comprova eficácia e segurança de autoadministração para hipertrofia.",
+      "risks": "Hipoglicemia, efeitos proliferativos em tecidos e outras complicações conforme contexto.",
+      "women": "Não existem doses validadas para bodybuilding feminino.",
+      "pharmacology": "A circulação do IGF-1 é modulada por proteínas ligadoras; apresentação e dose médica exigem acompanhamento.",
+      "clinical": "Indicações clínicas muito específicas, distintas de hipertrofia estética.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "insuficiente para performance",
+      "references": [
+        "survey500",
+        "sport_athlete_bmj",
+        "bio"
+      ],
+      "summary": "Via IGF-1: relevância fisiológica alta, evidência esportiva aplicável baixa.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Posologia pediátrica · outra indicação",
+        "value": "0,04–0,08 mg/kg por dose, 2 vezes/dia; máximo 0,12 mg/kg por dose",
+        "context": "Mecasermina (Increlex) em crianças com deficiência primária grave de IGF-1. Não é um estudo em homens ou mulheres adultos nem demonstra benefício de hipertrofia esportiva.",
+        "sex": "Homens adultos e mulheres adultas: sem posologia validada para bodybuilding. A faixa exibida é exclusivamente pediátrica e não deve ser convertida para atletas.",
+        "sourceKeys": [
+          "increlex_smpc"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Anabolismo celular",
+      "sportEvidence": "48/500 pessoas informaram uso de IGF-1 nessa pesquisa, que reuniu praticantes recreativos e não verificou a identidade dos produtos. A ação do IGF-1 sobre receptores não comprova hipertrofia adicional nem estabelece segurança.",
+      "sportDose": "20–120 µg/dia relatados (2006)",
+      "sportCaveat": "Há risco de hipoglicemia. Dados de IGF-1 não devem ser aplicados automaticamente a análogos como IGF-1 LR3.",
+      "sportSourceUrl": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "sportSourceName": "Parkinson & Evans — 500 usuários, Tabela 8 (2006)",
+      "sportType": "autorrelato",
+      "sportDoseKind": "autorrelato",
+      "sportDoseEvidence": "Faixa histórica informada por usuários recreativos",
+      "sportSex": "A amostra era 98,8% masculina; não há dose específica de bodybuilding para mulheres.",
+      "evidenceOriginLabel": "Pesquisa com usuários",
+      "evidenceGroup": "pesquisa"
+    },
+    {
+      "name": "Insulina",
+      "slug": "insulina",
+      "aliases": [
+        "Insulina rápida",
+        "Insulin",
+        "Humalog",
+        "Novorapid"
+      ],
+      "category": "Hormônios e peptídeos",
+      "form": "Injetável",
+      "route": "Subcutânea/ outras modalidades sob tratamento médico",
+      "mechanism": "A insulina facilita captação de glicose e regula metabolismo proteico e energético, além de atuar sobre lipólise.",
+      "effects": "O uso para “anabolismo” fora de contexto clínico não tem relação benefício-risco aceitável demonstrada.",
+      "risks": "Hipoglicemia grave, convulsões, coma e morte podem ocorrer rapidamente em pessoas sem indicação, inclusive atletas.",
+      "women": "Não existe dose de insulina recomendada para bodybuilding feminino ou masculino.",
+      "pharmacology": "Perfis ultrarrápidos, rápidos, intermediários e basais são muito diferentes; unidades de insulina não são intercambiáveis com mg.",
+      "clinical": "Indispensável em diversas situações de diabetes e outras indicações médicas; nunca extrapolar doses clínicas para fisiculturismo.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem segurança para performance",
+      "references": [
+        "survey500",
+        "sport_athlete_bmj",
+        "bio"
+      ],
+      "summary": "Importante fisiologicamente, mas uso não médico traz risco imediato de hipoglicemia grave.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Concentração farmacêutica · NÃO é dose",
+        "value": "U-100 = 100 unidades/mL; U-200 = 200 unidades/mL",
+        "context": "Esses números indicam concentração de apresentações de insulina lispro; não determinam quantas unidades alguém deve usar. A prescrição no diabetes depende de glicemia, alimentação, sensibilidade e condições individuais.",
+        "sex": "Homens e mulheres: nenhuma dose universal de insulina para bodybuilding pode ser estabelecida. Usar mesmo pequenas doses sem indicação pode causar hipoglicemia grave e morte.",
+        "sourceKeys": [
+          "humalog_pi"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Metabolismo energético",
+      "sportEvidence": "125/500 (25%) relataram uso de insulina como auxiliar anabólico na amostra histórica, porém o levantamento não verifica segurança nem eficácia de qualquer dose. Unidades não podem ser separadas de tipo de insulina, glicemia e contexto clínico.",
+      "sportDose": "Sem dose segura para bodybuilding",
+      "sportCaveat": "Em pessoas sem indicação, a insulina pode provocar hipoglicemia grave, convulsões, coma e morte. A ficha não oferece dosagem de aplicação esportiva.",
+      "sportSourceUrl": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "sportSourceName": "Parkinson & Evans — 500 usuários, Tabela 8 (2006)",
+      "sportType": "nao-estabelecida",
+      "sportDoseKind": "nao-estabelecida",
+      "sportDoseEvidence": "Uso documentado, mas sem posologia segura",
+      "sportSex": "Não existe dose de bodybuilding segura estabelecida para homens ou mulheres.",
+      "evidenceOriginLabel": "Sem dose esportiva estabelecida",
+      "evidenceGroup": "lacuna"
+    },
+    {
+      "name": "hCG",
+      "slug": "hcg",
+      "aliases": [
+        "Gonadotrofina coriônica",
+        "Human chorionic gonadotropin"
+      ],
+      "category": "Hormônios e peptídeos",
+      "form": "Injetável",
+      "route": "Conforme indicação médica",
+      "mechanism": "Mimetiza atividade de LH em receptores testiculares, estimulando produção de testosterona em situações apropriadas.",
+      "effects": "Não promove hipertrofia diretamente como um anabolizante. É discutido no contexto de supressão hormonal, mas isso não valida automedicação ou protocolos de “pós-ciclo”.",
+      "risks": "Alterações hormonais, ginecomastia, efeitos reprodutivos e mascaramento de disfunções exigem avaliação médica.",
+      "women": "Na fisiologia feminina, o hCG tem indicações reprodutivas específicas; não há dose para bodybuilding.",
+      "pharmacology": "Glicoproteína hormonal; atividade biológica não deve ser comparada em mg à de anabolizantes.",
+      "clinical": "Usado em indicações de fertilidade e endocrinologia sob prescrição.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem dados para bodybuilding",
+      "references": [
+        "survey500",
+        "acc",
+        "haar",
+        "women2026"
+      ],
+      "summary": "Hormônio gonadotrófico relacionado a testosterona e fertilidade, não um construtor muscular direto.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Ensaios de fisiologia reprodutiva e fertilidade",
+        "value": "Homens: 125, 250 ou 500 UI em dias alternados (ensaio); mulheres: 5.000–10.000 UI em indução de ovulação",
+        "context": "Homens: ensaio por 3 semanas, com supressão gonadotrófica induzida e testosterona associada. Mulheres: indução de ovulação em tratamento de fertilidade. São populações e finalidades completamente diferentes.",
+        "sex": "Os dois conjuntos de números NÃO são doses de fisiculturismo masculino ou feminino nem posologia de terapia pós-ciclo (TPC).",
+        "sourceKeys": [
+          "hcg_coviello",
+          "hcg_pregnyl"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Eixo hormonal e fertilidade",
+      "sportEvidence": "195/500 respondentes relataram hCG, com valores muito heterogêneos por administração, em contexto de manejo informal de efeitos dos anabolizantes — não de ganho muscular diretamente.",
+      "sportDose": "100–5.000 UI por dose, autorrelato (2006)",
+      "sportCaveat": "Intervalo demasiado amplo para funcionar como posologia; não há comprovação de hipertrofia direta ou de recuperação garantida de fertilidade.",
+      "sportSourceUrl": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "sportSourceName": "Parkinson & Evans — 500 usuários, Tabela 8 (2006)",
+      "sportType": "autorrelato",
+      "sportDoseKind": "autorrelato",
+      "sportDoseEvidence": "Faixa de relato em usuários de anabolizantes",
+      "sportSex": "Dados predominantes de homens; não existe recomendação esportiva para mulheres.",
+      "evidenceOriginLabel": "Pesquisa com usuários",
+      "evidenceGroup": "pesquisa"
+    },
+    {
+      "name": "Liotironina (T3)",
+      "slug": "liotironina-t3",
+      "aliases": [
+        "T3",
+        "Triiodotironina",
+        "Cytomel"
+      ],
+      "category": "Moduladores e auxiliares",
+      "form": "Oral",
+      "route": "Oral em tratamento médico",
+      "mechanism": "Hormônio tireoidiano ativo que aumenta atividade metabólica e regula numerosos tecidos, inclusive coração e músculo.",
+      "effects": "A aceleração metabólica pode envolver perda de massa magra; não é um método seletivo para perder apenas gordura.",
+      "risks": "Taquiarritmias, perda óssea, ansiedade, hipertermia e perda muscular por excesso de hormônio.",
+      "women": "Não existe dose segura de “cutting” para mulheres; os riscos cardíacos e ósseos não desaparecem em doses menores.",
+      "pharmacology": "Duração de ação e supressão do eixo tireoidiano variam com estado clínico e interações.",
+      "clinical": "Indicada em situações tireoidianas selecionadas, não para emagrecimento de pessoas eutireoidianas.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem dose para fisiculturismo",
+      "references": [
+        "survey500",
+        "sport_athlete_bmj",
+        "bio"
+      ],
+      "summary": "T3 e metabolismo: efeito catabólico pode atingir massa muscular e sistema cardiovascular.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Posologia em hipotireoidismo · adultos",
+        "value": "25 µg/dia (início usual); 25–75 µg/dia (manutenção)",
+        "context": "CYTOMEL em hipotireoidismo sob acompanhamento. Esta é reposição para diagnóstico específico; hormônio tireoidiano não deve ser usado para perda de peso em pessoa sem hipotireoidismo.",
+        "sex": "Homens e mulheres: individualização clínica conforme doença, laboratório, idade e comorbidades; não há dose segura validada para cutting.",
+        "sourceKeys": [
+          "cytomel_pfizer"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Definição e metabolismo",
+      "sportEvidence": "O artigo agrupou os relatos sob “Thyroid (T3/T4)” (228/500 usuários). Não separou quais doses pertenciam à liotironina e quais à levotiroxina; portanto, não existe uma dose específica confiável de T3 nesse levantamento.",
+      "sportDose": "10–300 µg/dia, T3 + T4 agrupados",
+      "sportCaveat": "O intervalo combinado NÃO é uma faixa de dose de T3 e não deve ser usado para orientar cutting. Excesso de hormônios tireoidianos pode provocar arritmia e catabolismo muscular.",
+      "sportSourceUrl": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "sportSourceName": "Parkinson & Evans — 500 usuários, Tabela 8 (2006)",
+      "sportType": "agrupada",
+      "sportDoseKind": "agrupada",
+      "sportDoseEvidence": "Faixa NÃO específica de T3",
+      "sportSex": "Não houve estratificação por sexo ou por formulação; nenhuma faixa feminina pode ser deduzida.",
+      "evidenceOriginLabel": "Dado agrupado",
+      "evidenceGroup": "pesquisa"
+    },
+    {
+      "name": "Levotiroxina (T4)",
+      "slug": "levotiroxina-t4",
+      "aliases": [
+        "T4",
+        "Tiroxina",
+        "Levothyroxine"
+      ],
+      "category": "Moduladores e auxiliares",
+      "form": "Oral",
+      "route": "Oral em tratamento médico",
+      "mechanism": "Pró-hormônio tireoidiano convertido a T3 em tecidos. Modula taxa metabólica e função sistêmica.",
+      "effects": "Não há justificativa baseada em evidência para uso em eutireoidismo com objetivo de definição muscular.",
+      "risks": "Excesso pode desencadear arritmias, perda óssea, perda muscular e alterações de humor.",
+      "women": "Não existe dose de bodybuilding estabelecida.",
+      "pharmacology": "Meia-vida relativamente longa e ajustes clínicos feitos com parâmetros laboratoriais.",
+      "clinical": "Tratamento de hipotireoidismo e situações selecionadas.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem dose para fisiculturismo",
+      "references": [
+        "survey500",
+        "sport_athlete_bmj",
+        "bio"
+      ],
+      "summary": "T4 não é suplemento de definição muscular.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Reposição em hipotireoidismo · adultos",
+        "value": "≈1,6 µg/kg/dia (estimativa de reposição completa)",
+        "context": "Referência inicial para adultos selecionados com hipotireoidismo; muitas pessoas exigem início menor. Ajuste depende do TSH e da situação clínica.",
+        "sex": "Homens e mulheres: doses dependem da indicação e de fatores individuais; a referência acima não deve ser usada para emagrecimento ou preparação de competição.",
+        "sourceKeys": [
+          "synthroid_abbvie"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Composição corporal",
+      "sportEvidence": "O levantamento histórico agrupou T3 e T4 (228/500 respondentes) e não permite atribuir doses à levotiroxina isolada. Apresentar a faixa como “dose de T4 no bodybuilding” seria erro científico.",
+      "sportDose": "10–300 µg/dia, T3 + T4 agrupados",
+      "sportCaveat": "Não serve para protocolo de definição. Quantidades de T3 e T4 não são clinicamente intercambiáveis; podem afetar ritmo cardíaco, ossos e massa magra.",
+      "sportSourceUrl": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "sportSourceName": "Parkinson & Evans — 500 usuários, Tabela 8 (2006)",
+      "sportType": "agrupada",
+      "sportDoseKind": "agrupada",
+      "sportDoseEvidence": "Faixa NÃO específica de T4",
+      "sportSex": "Não foram apresentadas doses separadas para mulheres.",
+      "evidenceOriginLabel": "Dado agrupado",
+      "evidenceGroup": "pesquisa"
+    },
+    {
+      "name": "Clenbuterol",
+      "slug": "clenbuterol",
+      "aliases": [
+        "Clembuterol",
+        "Clen",
+        "Clenbuterol"
+      ],
+      "category": "Moduladores e auxiliares",
+      "form": "Oral (mercados variáveis)",
+      "route": "Não há regime seguro para bodybuilding",
+      "mechanism": "Agonista β2-adrenérgico, não é hormônio esteroide; efeitos simpaticomiméticos podem alterar gasto energético e frequência cardíaca.",
+      "effects": "É divulgado como termogênico, mas o uso fora de indicações aprovadas não tem segurança demonstrada para perda de gordura.",
+      "risks": "Taquicardia, arritmias, hipocalemia, tremor, ansiedade e eventos cardiovasculares potencialmente graves.",
+      "women": "Não existe dose de “cutting” segura ou recomendada para mulheres ou homens.",
+      "pharmacology": "A duração do efeito e a variabilidade individual aumentam o risco de acúmulo e interações.",
+      "clinical": "Situação regulatória e indicações variam entre países; não equivale a um suplemento esportivo.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem protocolo validado",
+      "references": [
+        "survey500",
+        "sport_athlete_bmj",
+        "women2026",
+        "qual",
+        "bio",
+        "clen_cardiology"
+      ],
+      "summary": "Agonista beta-2 e não hormônio: risco cardíaco é central no perfil.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Literatura clínica histórica · doença respiratória",
+        "value": "20 ou 40 µg, 2 vezes/dia (2 semanas, estudo histórico)",
+        "context": "Doses terapêuticas históricas em obstrução reversível das vias aéreas, descritas em síntese clínica; não constituem estudo de segurança para cutting. Eventos graves, inclusive arritmias e lesão cardíaca, foram documentados no uso esportivo. As doses foram estudadas em pacientes, não em atletas.",
+        "sex": "Homens e mulheres: não há dose segura ou recomendada para fins estéticos. Quantidade relatada em estudo respiratório não define dose de bodybuilding.",
+        "sourceKeys": [
+          "clen_jaffe",
+          "clen_cardiology"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Definição e termogênese",
+      "sportEvidence": "292/500 participantes relataram uso visando perda de gordura; os extremos autorrelatados foram 20–200 µg/dia, sem confirmação laboratorial, verificação de efeitos ou avaliação de segurança.",
+      "sportDose": "20–200 µg/dia relatados (2006)",
+      "sportCaveat": "Mesmo valores dentro de relatos podem desencadear taquicardia, arritmias e alterações eletrolíticas. Não existe dose recomendada para definição em pessoas saudáveis.",
+      "sportSourceUrl": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "sportSourceName": "Parkinson & Evans — 500 usuários, Tabela 8 (2006)",
+      "sportType": "autorrelato",
+      "sportDoseKind": "autorrelato",
+      "sportDoseEvidence": "Faixa histórica de autorrelato, não ensaio",
+      "sportSex": "A amostra era predominantemente masculina; não oferece faixa feminina segura.",
+      "evidenceOriginLabel": "Pesquisa com usuários",
+      "evidenceGroup": "pesquisa"
+    },
+    {
+      "name": "Anastrozol",
+      "slug": "anastrozol",
+      "aliases": [
+        "Arimidex",
+        "Inibidor de aromatase"
+      ],
+      "category": "Moduladores e auxiliares",
+      "form": "Oral",
+      "route": "Uso médico oral, conforme indicação",
+      "mechanism": "Inibe aromatase, reduzindo a conversão de andrógenos em estrogênios.",
+      "effects": "Não é anabolizante. Uso informal para controlar estradiol durante exposições androgênicas não equivale a benefício demonstrado.",
+      "risks": "Estradiol excessivamente baixo afeta ossos, articulações, libido e lipídios; interação com terapias exige avaliação.",
+      "women": "O manejo hormonal em mulheres é muito diferente; não há dose de bodybuilding validada.",
+      "pharmacology": "A supressão da aromatase persiste além da concentração plasmática imediata.",
+      "clinical": "Oncologia e outras indicações selecionadas.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem recomendação no esporte",
+      "references": [
+        "forum2022",
+        "acc",
+        "haar",
+        "bio"
+      ],
+      "summary": "Redução de aromatização não significa proteção cardiovascular nem ausência de efeitos adversos.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Posologia oncológica · mulheres pós-menopausa",
+        "value": "1 mg/dia",
+        "context": "Tratamento de câncer de mama hormônio-sensível em mulheres após menopausa. Não é dose para controle de estradiol durante ciclos de andrógenos.",
+        "sex": "Homens: ausência de recomendação de dose para bodybuilding. Mulheres: a dose exibida é oncológica e não deve ser transferida para atletas.",
+        "sourceKeys": [
+          "anastrozol_smpc"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Aromatização de andrógenos",
+      "sportEvidence": "Em análise de 1.792 publicações (2013–2019), a média informada de anastrozol foi 0,4 mg/dia. Não é ensaio clínico; doses vieram de mensagens de fórum, com forte viés e 157 reações adversas relatadas no conjunto.",
+      "sportDose": "0,4 mg/dia — média de posts (2022)",
+      "sportCaveat": "Média de fórum não é objetivo terapêutico nem prevenção de ginecomastia. Redução exagerada de estradiol pode prejudicar saúde óssea, sexual e metabólica.",
+      "sportSourceUrl": "https://www.sciencedirect.com/science/article/pii/S0040595722000646",
+      "sportSourceName": "Rochoy et al. — análise de fórum de musculação (2022)",
+      "sportType": "forum",
+      "sportDoseKind": "forum",
+      "sportDoseEvidence": "Média de relatos masculinos de fórum",
+      "sportSex": "Fonte exclusivamente masculina; nenhuma recomendação de bodybuilding feminino pode ser inferida.",
+      "evidenceOriginLabel": "Relatos de fórum",
+      "evidenceGroup": "forum"
+    },
+    {
+      "name": "Letrozol",
+      "slug": "letrozol",
+      "aliases": [
+        "Femara",
+        "Letrozole"
+      ],
+      "category": "Moduladores e auxiliares",
+      "form": "Oral",
+      "route": "Uso médico oral, conforme indicação",
+      "mechanism": "Inibidor de aromatase que reduz produção de estrogênios.",
+      "effects": "Não constrói músculo; seu uso para manipulação de estradiol no bodybuilding carece de validação.",
+      "risks": "Pode provocar hipoestrogenismo excessivo e consequências ósseas, metabólicas, articulares e reprodutivas.",
+      "women": "Não há dose esportiva segura, especialmente sem avaliação do eixo reprodutivo.",
+      "pharmacology": "A potência de supressão não torna o efeito benéfico quando não há indicação.",
+      "clinical": "Uso clínico em situações específicas.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem recomendação no esporte",
+      "references": [
+        "forum2022",
+        "acc",
+        "bio"
+      ],
+      "summary": "Alteração hormonal potente não é sinônimo de otimização de performance.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Posologia oncológica · mulheres pós-menopausa",
+        "value": "2,5 mg/dia",
+        "context": "Tratamento de câncer de mama hormônio-sensível em mulheres após menopausa; inibição intensa da aromatase com risco de alterações ósseas e metabólicas.",
+        "sex": "Homens: sem dose validada de bodybuilding. Mulheres: posologia oncológica não é esquema para atletas.",
+        "sourceKeys": [
+          "letrozol_smpc"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Aromatização de andrógenos",
+      "sportEvidence": "Análise observacional de postagens: média citada para letrozol de 2 mg/dia, sem dose-resposta de ganho muscular nem monitorização farmacológica padronizada.",
+      "sportDose": "2 mg/dia — média de posts (2022)",
+      "sportCaveat": "Supressão profunda de estrogênio pode aumentar riscos ósseos e metabólicos. Média de usuários não equivale a dose recomendada.",
+      "sportSourceUrl": "https://www.sciencedirect.com/science/article/pii/S0040595722000646",
+      "sportSourceName": "Rochoy et al. — análise de fórum de musculação (2022)",
+      "sportType": "forum",
+      "sportDoseKind": "forum",
+      "sportDoseEvidence": "Média de relatos masculinos de fórum",
+      "sportSex": "Nenhum dado individual para mulheres foi validado.",
+      "evidenceOriginLabel": "Relatos de fórum",
+      "evidenceGroup": "forum"
+    },
+    {
+      "name": "Tamoxifeno",
+      "slug": "tamoxifeno",
+      "aliases": [
+        "Nolvadex",
+        "SERM"
+      ],
+      "category": "Moduladores e auxiliares",
+      "form": "Oral",
+      "route": "Uso médico oral, conforme indicação",
+      "mechanism": "Modulador seletivo do receptor de estrogênio; atua de forma diferente conforme o tecido.",
+      "effects": "Não é anabolizante. É mencionado no contexto de sintomas mamários e recuperação hormonal, sem protocolo universal comprovado de pós-ciclo.",
+      "risks": "Tromboembolismo, alterações visuais e interações; o efeito hormonal sistêmico exige avaliação clínica.",
+      "women": "Uso médico pode ter indicações particulares; não há dose para bodybuilding.",
+      "pharmacology": "Metabólitos ativos com persistência; função varia conforme tecido.",
+      "clinical": "Oncologia e outras indicações selecionadas.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem protocolo esportivo validado",
+      "references": [
+        "forum2022",
+        "acc",
+        "haar",
+        "bio"
+      ],
+      "summary": "SERM: bloqueio de receptor em certos tecidos, não controle universal de estrogênio.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Posologia oncológica · adultos",
+        "value": "20 mg/dia",
+        "context": "Dose usual para câncer de mama e contextos clínicos selecionados. Não é um estudo de terapia pós-ciclo de anabolizantes, nem comprova recuperação hormonal após doping.",
+        "sex": "Homens e mulheres: a escolha em oncologia depende do quadro clínico; não existe dose validada para “TPC” geral na musculação.",
+        "sourceKeys": [
+          "tamoxifen_smpc"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Sinalização estrogênica",
+      "sportEvidence": "Nos relatos do fórum de musculação analisados, a média de tamoxifeno foi 22 mg/dia, usado em discussões sobre efeitos relacionados a anabolizantes; isso não mede eficácia nem segurança.",
+      "sportDose": "22 mg/dia — média de posts (2022)",
+      "sportCaveat": "Não é substância para hipertrofia e pode apresentar riscos trombóticos e interações. A média observada não é recomendação.",
+      "sportSourceUrl": "https://www.sciencedirect.com/science/article/pii/S0040595722000646",
+      "sportSourceName": "Rochoy et al. — análise de fórum de musculação (2022)",
+      "sportType": "forum",
+      "sportDoseKind": "forum",
+      "sportDoseEvidence": "Média de relatos masculinos em fórum",
+      "sportSex": "Pesquisa feita apenas com homens; sem posologia esportiva feminina.",
+      "evidenceOriginLabel": "Relatos de fórum",
+      "evidenceGroup": "forum"
+    },
+    {
+      "name": "Clomifeno",
+      "slug": "clomifeno",
+      "aliases": [
+        "Clomid",
+        "Clomiphene"
+      ],
+      "category": "Moduladores e auxiliares",
+      "form": "Oral",
+      "route": "Uso médico oral, conforme indicação",
+      "mechanism": "SERM que modula feedback estrogênico e pode aumentar gonadotrofinas em contextos específicos.",
+      "effects": "É discutido para eixo hormonal após EAA, mas não existe receita universal de “TPC” segura e comprovada.",
+      "risks": "Alterações visuais, humor, efeitos hormonais e necessidade de investigação da causa do hipogonadismo.",
+      "women": "Indicações reprodutivas específicas não se confundem com uso para fisiculturismo.",
+      "pharmacology": "Resposta depende de integridade do eixo e outros fatores clínicos.",
+      "clinical": "Indicações relacionadas a fertilidade e endocrinologia conforme avaliação.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "sem protocolo esportivo validado",
+      "references": [
+        "forum2022",
+        "acc",
+        "haar"
+      ],
+      "summary": "SERM associado a gonadotrofinas; não substitui diagnóstico de supressão hormonal.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Posologia em infertilidade · mulheres",
+        "value": "50 mg/dia por 5 dias (indução da ovulação)",
+        "context": "Regime clínico de tratamento de infertilidade anovulatória em contexto controlado, não evidência de restauração do eixo hormonal após ciclos de anabolizantes.",
+        "sex": "Homens: não equivale a recomendação para TPC ou hipogonadismo autodiagnosticado. Mulheres: a indicação descrita é infertilidade, não bodybuilding.",
+        "sourceKeys": [
+          "clomifeno_smpc"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Eixo hormonal",
+      "sportEvidence": "Análise de 1.792 postagens em fórum (2013–2019) identificou média de 69 mg/dia em relatos sobre recuperação do eixo após anabolizantes. Isso não equivale a ensaio de tratamento ou dose de hipertrofia.",
+      "sportDose": "69 mg/dia — média de posts (2022)",
+      "sportCaveat": "Automedicação após uso de AAS pode mascarar alterações hormonais e não garante restauração do eixo. Média não define dose segura.",
+      "sportSourceUrl": "https://www.sciencedirect.com/science/article/pii/S0040595722000646",
+      "sportSourceName": "Rochoy et al. — análise de fórum de musculação (2022)",
+      "sportType": "forum",
+      "sportDoseKind": "forum",
+      "sportDoseEvidence": "Média de relatos masculinos em fórum",
+      "sportSex": "Não há resultados aplicáveis a mulheres praticantes de musculação.",
+      "evidenceOriginLabel": "Relatos de fórum",
+      "evidenceGroup": "forum"
+    },
+    {
+      "name": "Tirzepatida",
+      "slug": "tirzepatida",
+      "aliases": [
+        "Tirze",
+        "GIP/GLP-1",
+        "Mounjaro"
+      ],
+      "category": "Metabólicos",
+      "form": "Injetável em ensaios clínicos",
+      "route": "Subcutânea em contexto clínico",
+      "mechanism": "Agonista dos receptores GIP e GLP-1, influenciando saciedade, glicemia e gasto/consumo energético de forma indireta.",
+      "effects": "Em pessoas com obesidade houve perda de peso e gordura; uma parcela da redução de peso pode envolver massa magra. Não é agente anabólico.",
+      "risks": "Náuseas, vômitos, desidratação e questões gastrointestinais, além de contraindicações e precauções específicas.",
+      "women": "O ensaio incluiu homens e mulheres, mas não foi desenhado para prescrever “cutting” para atletas por sexo.",
+      "pharmacology": "Peptídeo de ação prolongada; contexto de ensaio clínico não equivale à autoadministração no esporte.",
+      "clinical": "Tratamento de condições metabólicas específicas conforme indicação e mercado.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "ensaio robusto em obesidade; não em atletas",
+      "references": [
+        "glp2025",
+        "sport_women_2026",
+        "tirze"
+      ],
+      "summary": "Agonista GIP/GLP-1: evidência em obesidade, não para hipertrofia nem prescrição de cutting.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Ensaio clínico de obesidade · adultos",
+        "value": "5, 10 ou 15 mg/semana (grupos do SURMOUNT-1)",
+        "context": "Ensaio de 72 semanas com escalonamento previsto no estudo. Não mede eficácia de hipertrofia, nem determina protocolo para cutting em pessoas já magras.",
+        "sex": "Homens e mulheres participaram do estudo, mas os grupos não estabelecem doses de bodybuilding específicas por sexo.",
+        "sourceKeys": [
+          "tirze_nejm"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Redução de peso e preservação muscular",
+      "sportEvidence": "Pesquisa qualitativa examinou 12.392 postagens em 160 discussões sobre GLP-1 em comunidades de bodybuilding, identificando uso experimental e combinações, mas sem estabelecer faixa de dose confiável específica para fisiculturistas.",
+      "sportDose": "Dose específica no bodybuilding: não estabelecida",
+      "sportCaveat": "Dados de pessoas em tratamento de obesidade não podem ser rotulados como dose de cutting em atletas. A avaliação de composição corporal deve considerar perda de massa magra.",
+      "sportSourceUrl": "https://www.sciencedirect.com/science/article/pii/S0955395925001549",
+      "sportSourceName": "Turnock et al. — comunidades de bodybuilding e GLP-1 (2025)",
+      "sportType": "nao-estabelecida",
+      "sportDoseKind": "nao-estabelecida",
+      "sportDoseEvidence": "Pesquisa qualitativa; dose não quantificada",
+      "sportSex": "Nenhuma faixa específica de dose esportiva foi validada para homens ou mulheres.",
+      "evidenceOriginLabel": "Sem dose esportiva estabelecida",
+      "evidenceGroup": "lacuna"
+    },
+    {
+      "name": "Retatrutida",
+      "slug": "retatrutida",
+      "aliases": [
+        "Retatrutide",
+        "Reta",
+        "LY3437943"
+      ],
+      "category": "Metabólicos",
+      "form": "Injetável em ensaios clínicos",
+      "route": "Subcutânea nos ensaios",
+      "mechanism": "Agonista triplo dos receptores GIP, GLP-1 e glucagon; investigações clínicas medem perda de peso e respostas metabólicas.",
+      "effects": "Em pesquisa com pessoas com obesidade foram observadas reduções relevantes de peso. Não há demonstração de segurança/eficácia para uso de atletas com finalidade estética.",
+      "risks": "Efeitos gastrointestinais e aumentos de frequência cardíaca observados em ensaios, entre outras incertezas de segurança de longo prazo.",
+      "women": "O estudo em obesidade incluiu ambos os sexos; seus esquemas não são recomendações para fisiculturistas.",
+      "pharmacology": "Peptídeo de longa ação avaliado em ensaios clínicos; situação regulatória deve ser conferida antes de qualquer afirmação de disponibilidade.",
+      "clinical": "Em investigação clínica conforme o contexto; não confundir amostras vendidas como produtos de qualidade comprovada.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "ensaio fase 3 em obesidade; não no bodybuilding",
+      "references": [
+        "reta2026",
+        "sport_women_2026",
+        "reta",
+        "reta2"
+      ],
+      "summary": "Agonista triplo: separar estudos clínicos para obesidade de alegações sobre definição atlética.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Ensaios fase 2 e fase 3 de obesidade",
+        "value": "4, 9 ou 12 mg/semana (fase 3, 80 semanas)",
+        "context": "TRIUMPH-1 (2026): adultos com obesidade; fase 2 (2023) testou também grupos de 1, 4, 8 e 12 mg/semana. Trata-se de fármaco investigacional, e esses números não são instruções para uso fora de pesquisa.",
+        "sex": "Homens e mulheres foram estudados, porém não há dose específica validada para bodybuilding ou preparação de competição.",
+        "sourceKeys": [
+          "reta_nejm3",
+          "reta_nejm2"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Redução de gordura corporal",
+      "sportEvidence": "Análise qualitativa de 1.774 postagens sobre retatrutida e 12.392 postagens de fóruns de bodybuilding documentou crenças e práticas experimentais, mas não estabelece dose individual segura ou eficaz para atletas.",
+      "sportDose": "Dose específica no bodybuilding: não estabelecida",
+      "sportCaveat": "Quantidades de ensaios com obesidade não são referência para hipertrofia ou preparação esportiva e não devem ser extrapoladas.",
+      "sportSourceUrl": "https://www.tandfonline.com/doi/full/10.1080/16066359.2026.2671771",
+      "sportSourceName": "Turnock et al. — retatrutida em comunidades de treino (2026)",
+      "sportType": "nao-estabelecida",
+      "sportDoseKind": "nao-estabelecida",
+      "sportDoseEvidence": "Netnografia; dose não validada",
+      "sportSex": "Sem evidências de faixa de bodybuilding para qualquer sexo.",
+      "evidenceOriginLabel": "Sem dose esportiva estabelecida",
+      "evidenceGroup": "lacuna"
+    },
+    {
+      "name": "Ipamorelina",
+      "slug": "ipamorelina",
+      "aliases": [
+        "Ipamorelin",
+        "Secretagogo de GH"
+      ],
+      "category": "Hormônios e peptídeos",
+      "form": "Peptídeo de pesquisa",
+      "route": "Sem rota esportiva validada",
+      "mechanism": "Agonista da via de grelina/GHS-R, associado a sinalização de liberação de GH em investigação.",
+      "effects": "Evidência humana insuficiente para afirmar aumento clinicamente relevante de hipertrofia no bodybuilding.",
+      "risks": "Riscos metabólicos, qualidade do produto e falta de estudos robustos de longo prazo.",
+      "women": "Não existe dose validada para homens ou mulheres para hipertrofia.",
+      "pharmacology": "Peptídeo; resultados laboratoriais não substituem farmacocinética humana de produtos comerciais.",
+      "clinical": "Não possui regime estabelecido de tratamento estético ou esportivo.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "insuficiente",
+      "references": [
+        "peptide2026",
+        "sport_women_2026",
+        "bio"
+      ],
+      "summary": "Secretagogo de GH com evidência esportiva humana limitada.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Experimento hospitalar · íleo pós-operatório",
+        "value": "0,03 mg/kg por infusão intravenosa, 2 vezes/dia",
+        "context": "Ensaio fase 2 por até 7 dias após cirurgia intestinal, com objetivo de avaliar motilidade do trato gastrointestinal, não ganho de músculo. A análise primária não encontrou diferença estatisticamente significativa.",
+        "sex": "Homens e mulheres: nenhum esquema de dose para hipertrofia está validado; infusão hospitalar não pode ser extrapolada para uso estético ou esportivo.",
+        "sourceKeys": [
+          "ipamo_springer"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Secreção de GH",
+      "sportEvidence": "Uma revisão acadêmica registrou 200–300 µg por aplicação em fóruns/portais de performance. Os números vieram de fontes comerciais e relatos online, não de ensaios que comprovem ganho de massa muscular ou segurança em bodybuilders.",
+      "sportDose": "200–300 µg por aplicação — fóruns (2026)",
+      "sportCaveat": "Esses números têm confiabilidade baixa e não devem ser tratados como posologia de hipertrofia; produtos de procedência incerta podem conter substâncias diferentes.",
+      "sportSourceUrl": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1822475/full",
+      "sportSourceName": "Dominikowski et al. — Frontiers in Endocrinology, Tabela 2 (2026)",
+      "sportType": "forum-baixa",
+      "sportDoseKind": "forum-baixa",
+      "sportDoseEvidence": "Relatos online citados em revisão; sem validação",
+      "sportSex": "Relatos não oferecem estratificação por sexo; dose segura feminina não estabelecida.",
+      "evidenceOriginLabel": "Fórum • baixa confiabilidade",
+      "evidenceGroup": "forum"
+    },
+    {
+      "name": "GHRP-6",
+      "slug": "ghrp-6",
+      "aliases": [
+        "Growth hormone releasing peptide 6",
+        "GHRP6"
+      ],
+      "category": "Hormônios e peptídeos",
+      "form": "Peptídeo de pesquisa",
+      "route": "Sem rota esportiva validada",
+      "mechanism": "Agonista da via de secretagogos de GH e receptores relacionados à grelina.",
+      "effects": "Alterações agudas de secreção hormonal não comprovam hipertrofia funcional sustentável.",
+      "risks": "Incertezas sobre qualidade, efeitos endócrinos e segurança de uso crônico.",
+      "women": "Não existem doses de bodybuilding respaldadas para qualquer sexo.",
+      "pharmacology": "Informações de peptídeos experimentais não se traduzem automaticamente em formulações comercializadas.",
+      "clinical": "Sem indicação estabelecida para hipertrofia estética.",
+      "maleUse": null,
+      "femaleUse": null,
+      "level": "insuficiente",
+      "references": [
+        "peptide2026",
+        "sport_women_2026",
+        "bio"
+      ],
+      "summary": "Peptídeo secretagogo: potencial fisiológico não é eficácia demonstrada.",
+      "detail": "As doses usadas em academias não devem ser confundidas com tratamentos clinicamente validados.",
+      "doseEvidence": {
+        "type": "Teste hormonal agudo · pesquisa",
+        "value": "1 µg/kg, dose intravenosa única (teste de estímulo)",
+        "context": "Estudo em 21 adultos com deficiência de GH que investigou resposta ao GHRH associado a GHRP-6. Não avaliou crescimento muscular ou uso crônico.",
+        "sex": "A amostra incluiu 13 homens e 8 mulheres, mas não define posologia de bodybuilding para qualquer sexo.",
+        "sourceKeys": [
+          "ghrp6_oup"
+        ]
+      },
+      "sportContext": "Musculação, força, estética e preparação de bodybuilding: relatos históricos, pesquisas em atletas ou evidência insuficiente.",
+      "sportGoal": "Secreção de GH",
+      "sportEvidence": "Uma revisão de 2026 compilou relatos de fóruns citando 100–300 µg por administração, baseados em fontes secundárias não acadêmicas. Não existem ensaios adequados que validem esses protocolos para hipertrofia.",
+      "sportDose": "100–300 µg por aplicação — fóruns (2026)",
+      "sportCaveat": "Resposta aguda de GH não demonstra hipertrofia. Pode alterar apetite, prolactina e cortisol; autenticidade e dose real de produtos online são incertas.",
+      "sportSourceUrl": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1822475/full",
+      "sportSourceName": "Dominikowski et al. — Frontiers in Endocrinology, Tabela 2 (2026)",
+      "sportType": "forum-baixa",
+      "sportDoseKind": "forum-baixa",
+      "sportDoseEvidence": "Relatos online citados em revisão; sem validação",
+      "sportSex": "Nenhuma dose confiável específica para mulheres foi documentada.",
+      "evidenceOriginLabel": "Fórum • baixa confiabilidade",
+      "evidenceGroup": "forum"
+    }
+  ],
+  "sources": {
+    "acc": {
+      "name": "American College of Cardiology — Common Doses for AAS (2024)",
+      "url": "https://www.acc.org/latest-in-cardiology/articles/2024/04/01/16/10/the-experts-approach-to-managing-cv-risk-among-athletes-using-anabolic-androgenic-steroids",
+      "scope": "Revisão profissional: exposições comuns descritas em atletas recreativos; não são doses recomendadas."
+    },
+    "test": {
+      "name": "Bhasin et al. — Testosterone dose-response in healthy young men (2001)",
+      "url": "https://journals.physiology.org/doi/full/10.1152/ajpendo.2001.281.6.E1172",
+      "scope": "Experimento controlado de 20 semanas, com supressão endógena e cinco grupos; não é um protocolo de bodybuilding."
+    },
+    "haar": {
+      "name": "Smit et al. — HAARLEM: função testicular após uso de andrógenos (2021)",
+      "url": "https://academic.oup.com/humrep/article/36/4/880/6129954",
+      "scope": "Coorte de 100 homens: medianas e faixas de uso combinado; não atribuir a uma substância isolada."
+    },
+    "women": {
+      "name": "Scarth et al. — Mulheres praticantes de musculação e EAA (2025)",
+      "url": "https://link.springer.com/article/10.1186/s12905-025-03711-5",
+      "scope": "Amostra pequena de 16 usuárias; mediana semanal agregada envolvendo múltiplas substâncias; não é dose por composto."
+    },
+    "finn": {
+      "name": "Observações de doping feminino — prontuários na Finlândia (2023)",
+      "url": "https://link.springer.com/article/10.1186/s12905-023-02399-9",
+      "scope": "Estudo retrospectivo: pouquíssimos prontuários com doses individuais; exemplos isolados não generalizáveis."
+    },
+    "women2026": {
+      "name": "Androgen Use Among Female Amateur Athletes (2026)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/sms.70207",
+      "scope": "Coorte de 41 mulheres; predominância de oxandrolona, sem faixa de dose individual no resumo."
+    },
+    "qual": {
+      "name": "Piatkowski et al. — Experiências femininas com EAA (2023)",
+      "url": "https://link.springer.com/article/10.1186/s12954-023-00786-x",
+      "scope": "Pesquisa qualitativa; não sustenta posologia recomendada."
+    },
+    "bio": {
+      "name": "Revisão sistemática — parâmetros bioquímicos em bodybuilders (2024)",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2211266924000124",
+      "scope": "Síntese de riscos e lacunas de evidência em uso suprafisiológico."
+    },
+    "tirze": {
+      "name": "Jastreboff et al. — SURMOUNT-1: tirzepatida em obesidade (2022)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2206038",
+      "scope": "Ensaios de obesidade, não estudo de dosagem para atletas."
+    },
+    "reta": {
+      "name": "Jastreboff et al. — TRIUMPH-1: retatrutida em obesidade (2026)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2604169",
+      "scope": "Ensaio fase 3 em pessoas com obesidade; não demonstra dose adequada ao bodybuilding."
+    },
+    "reta2": {
+      "name": "Jastreboff et al. — Retatrutida fase 2 (2023)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+      "scope": "Ensaio fase 2 em obesidade; não protocolo de cutting."
+    },
+    "sustanon_smpc": {
+      "name": "Sustanon 250 — SmPC revisado em 2026 (Aspen / emc)",
+      "url": "https://www.medicines.org.uk/emc/medicine/28840/spc",
+      "scope": "Hipogonadismo masculino: apresentação específica de 250 mg/mL, geralmente 1 mL por 3 semanas. Não equivale a esquema de doping."
+    },
+    "genotropin_pfizer": {
+      "name": "GENOTROPIN — Pfizer, doses para deficiência de GH em adultos",
+      "url": "https://www.pfizermedical.com/genotropin/dosage-admin",
+      "scope": "Uso supervisionado em deficiência de GH no adulto; dose ajustada a IGF-1 e quadro clínico."
+    },
+    "increlex_smpc": {
+      "name": "INCRELEX (mecasermina) — SmPC, Ipsen / emc",
+      "url": "https://www.medicines.org.uk/emc/product/101145/smpc",
+      "scope": "Uso pediátrico em deficiência primária grave de IGF-1, não bodybuilding em adultos."
+    },
+    "humalog_pi": {
+      "name": "HUMALOG (insulina lispro) — informações de dose do fabricante",
+      "url": "https://pi.lilly.com/us/humalog-pen-pi.pdf",
+      "scope": "Concentrações U-100/U-200; doses devem ser individualizadas por glicemia e indicação. Concentração não é dose."
+    },
+    "hcg_coviello": {
+      "name": "Coviello et al. (2005) — hCG e testosterona intratesticular em homens",
+      "url": "https://academic.oup.com/jcem/article-abstract/90/5/2595/2836735",
+      "scope": "Estudo experimental em 29 homens com supressão induzida; não é validação de TPC ou protocolo esportivo."
+    },
+    "hcg_pregnyl": {
+      "name": "Pregnyl — informação para prescritores em indução de ovulação",
+      "url": "https://imedi.co.uk/pregnyl-5000-iu-powder-for-solution-for-injection",
+      "scope": "Dose para indução de ovulação associada a tratamento de fertilidade, não performance."
+    },
+    "cytomel_pfizer": {
+      "name": "CYTOMEL (liotironina) — Pfizer, hipotireoidismo adulto",
+      "url": "https://labeling.pfizer.com/ShowLabeling.aspx?id=703",
+      "scope": "Posologia clínica de hipotireoidismo; alerta explícito contra uso para emagrecer."
+    },
+    "synthroid_abbvie": {
+      "name": "SYNTHROID — AbbVie, reposição em hipotireoidismo",
+      "url": "https://www.synthroidpro.com/dosing",
+      "scope": "Referência de dose de reposição inicial em adultos, individualizada por TSH e quadro clínico."
+    },
+    "clen_jaffe": {
+      "name": "Síntese de literatura clínica sobre clenbuterol — RELIS/DRUGLINE",
+      "url": "https://svelic.se/utredning/?id=19-9859",
+      "scope": "Síntese técnica de doses terapêuticas históricas para obstrução respiratória. Não validadas em bodybuilding."
+    },
+    "clen_cardiology": {
+      "name": "EAPC / European Journal of Preventive Cardiology (2022) — riscos do clenbuterol no esporte",
+      "url": "https://academic.oup.com/eurjpc/article/29/3/559/6515474",
+      "scope": "Revisão cardiológica sobre exposição relacionada a doping e efeitos adversos graves."
+    },
+    "anastrozol_smpc": {
+      "name": "Anastrozol — SmPC, Sandoz / emc (2026)",
+      "url": "https://www.medicines.org.uk/emc/product/10245/smpc",
+      "scope": "Uso de 1 mg/dia em câncer de mama em mulheres na pós-menopausa; não recomendações para atletas."
+    },
+    "letrozol_smpc": {
+      "name": "Femara (letrozol) — SmPC, Novartis / emc",
+      "url": "https://www.medicines.org.uk/emc/product/1029/smpc",
+      "scope": "Uso clínico de 2,5 mg/dia em câncer de mama após menopausa; não bodybuilding."
+    },
+    "tamoxifen_smpc": {
+      "name": "Tamoxifeno — SmPC / emc (2026)",
+      "url": "https://www.medicines.org.uk/emc/medicine/30769",
+      "scope": "Uso de 20 mg/dia em tratamento e prevenção selecionada de câncer de mama; não uso de TPC comprovado."
+    },
+    "clomifeno_smpc": {
+      "name": "Clomifeno — SmPC / emc, indução da ovulação",
+      "url": "https://www.medicines.org.uk/emc/product/15080/smpc",
+      "scope": "50 mg/dia por cinco dias em contexto de infertilidade anovulatória; não protocolo para recuperação pós-ciclo."
+    },
+    "tirze_nejm": {
+      "name": "SURMOUNT-1 — tirzepatida em obesidade (NEJM, 2022)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2206038",
+      "scope": "Ensaio de 72 semanas em pessoas com obesidade; desfecho peso, não hipertrofia ou preparação para palco."
+    },
+    "reta_nejm3": {
+      "name": "TRIUMPH-1 — retatrutida em obesidade (NEJM, 2026)",
+      "url": "https://www.nejm.org/doi/10.1056/NEJMoa2604169",
+      "scope": "Fase 3 em obesidade durante 80 semanas, não protocolo esportivo; fármaco investigacional."
+    },
+    "reta_nejm2": {
+      "name": "Retatrutida fase 2 (NEJM, 2023)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972",
+      "scope": "Faixas de dose de estudos em adultos com obesidade; não uso para cutting em atletas."
+    },
+    "ipamo_springer": {
+      "name": "Beck et al. (2014) — ipamorelina em íleo pós-operatório",
+      "url": "https://link.springer.com/article/10.1007/s00384-014-2030-8",
+      "scope": "Ensaio fase 2 após cirurgia intestinal; infusão IV hospitalar, sem eficácia esportiva demonstrada."
+    },
+    "ghrp6_oup": {
+      "name": "Dieguez et al. (1995) — GHRH + GHRP-6 como teste de estímulo",
+      "url": "https://academic.oup.com/ejendo/article-abstract/132/6/712/6754476",
+      "scope": "Teste único de estímulo hormonal em adultos com deficiência de GH, não esquema crônico."
+    },
+    "sport_athlete_bmj": {
+      "url": "https://bmjopensem.bmj.com/content/6/1/e000708",
+      "name": "Steele et al. (2020) — estudo com 984 praticantes de treino e bodybuilding",
+      "scope": "Dados de prevalência de uso, não de dose."
+    },
+    "sport_user_survey": {
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/1557988320966536",
+      "name": "Survey de 2.385 homens usuários de AAS",
+      "scope": "Dose total de testosterona autorrelatada, não faixa específica de éster combinado."
+    },
+    "sport_gh_trial": {
+      "url": "https://www.acponline.org/acp-newsroom/hgh-significantly-increases-sprint-capacity-in-healthyrecreational-athletes",
+      "name": "GH e desempenho em 96 atletas recreativos saudáveis — Annals/ACP",
+      "scope": "Ensaio experimental, não protocolo de treino."
+    },
+    "sport_women_2026": {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/sms.70207",
+      "name": "Verdegaal et al. (2026) — mulheres praticantes de bodybuilding",
+      "scope": "Coorte feminina; não fornece dose recomendada."
+    },
+    "survey500": {
+      "name": "Parkinson & Evans (2006) — questionário com 500 usuários de AAS",
+      "url": "https://paulogentil.com/pdf/Anabolic%20Androgenic%20Steroids%20-%20A%20Survey%20of%20500%20Users.pdf",
+      "scope": "Dados observacionais de 2004, majoritariamente homens; T3 e T4 são agregados, nenhum dado estabelece dose segura."
+    },
+    "forum2022": {
+      "name": "Rochoy et al. (2022) — análise de 1.792 publicações em fórum de musculação",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0040595722000646",
+      "scope": "Médias de doses citadas por usuários homens; não são dados clínicos validados."
+    },
+    "peptide2026": {
+      "name": "Dominikowski et al. (2026) — revisão de peptídeos GH–IGF-1",
+      "url": "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2026.1822475/full",
+      "scope": "Números de fóruns e portais comerciais; evidência muito fraca para bodybuilding."
+    },
+    "glp2025": {
+      "name": "Turnock et al. (2025) — GLP-1 em comunidades de bodybuilding",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0955395925001549",
+      "scope": "Pesquisa qualitativa, sem dose esportiva validada."
+    },
+    "reta2026": {
+      "name": "Turnock et al. (2026) — GLP-1 e retatrutida em comunidades de musculação",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/16066359.2026.2671771",
+      "scope": "Análise qualitativa, sem dose específica esportiva validada."
+    },
+    "ghactive2005": {
+      "name": "Ehrnborg et al. (2005) — GH em 30 adultos fisicamente ativos",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2265.2005.02240.x",
+      "scope": "Ensaio com mulheres e homens ativos, efeito em água extracelular, não dose recomendada para bodybuilding."
+    }
+  },
+  "editorialVersion": "23.8 — Centro de evidências, metodologia transparente e experiência aprimorada",
+  "reviewStatus": "Revisão editorial e técnica interna; não é recomendação nem foi aprovado por revisor clínico independente."
+}

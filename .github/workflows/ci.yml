@@ -1,0 +1,79 @@
+name: LANDER RIO - quality gate
+on:
+  pull_request:
+    branches: [main, staging]
+  push:
+    branches: [main, staging]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+      - name: Check SHA-256 manifest integrity
+        run: python3 scripts/release_gate.py manifest
+      - name: Check HTML local references
+        run: python3 scripts/release_gate.py html
+      - name: Check CSS local references
+        run: python3 scripts/release_gate.py css
+      - name: Check sitemap and JSON format
+        run: python3 scripts/release_gate.py metadata
+      - name: Check credentials and exposed secrets
+        run: python3 scripts/release_gate.py security
+      - name: Check release metadata and full site integrity
+        run: python3 scripts/verify_site.py
+      - name: JavaScript syntax
+        run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
+      - name: TITAN Flagship structural and semantic regression tests
+        run: python3 scripts/test_flagship.py
+      - name: Binary, manifest tampering and complete-site metadata regression
+        run: python3 scripts/test_integrity.py
+      - name: Preserve reviewed indexability and prevent sitemap regressions
+        run: python3 scripts/audit_indexability.py && python3 scripts/test_indexability.py
+      - name: Editorial routes, sources and original image integrity
+        run: python3 scripts/test_universe.py && python3 scripts/test_rc10.py && python3 scripts/test_brand_profiles.py && python3 scripts/test_diamond_editorial.py
+      - name: ROX, transport, Revenue and integration safety tests
+        run: node --experimental-strip-types --test scripts/*.test.cjs scripts/test_seo_metadata.cjs prototypes/rox-ai-v2/*.test.mjs prototypes/rox-ai-v2/preview-private/server.test.mjs revenue-intelligence/test-*.cjs commercial-capture/*.test.mjs
+      - name: Read-only HTTP smoke tests
+        run: python3 scripts/smoke_http.py
+
+# IMPORTANT: No deploy job. Production stays on manual Netlify deploy.
+
+  package-review:
+    name: Build RC14.3 review archive (no deploy)
+    needs: validate
+    if: github.event_name == 'pull_request' && github.head_ref == 'release/flagship-mobile-qa-20261119'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Test safe packaging and no-loss comparison logic
+        run: python3 -m unittest discover -s scripts -p 'test_build_rc14_review.py' -v
+      - name: Build deterministic review ZIP and SHA-256 evidence
+        run: python3 scripts/build_rc14_review.py --site site --out dist/rc14-review
+      - name: Upload review archive (never publish)
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: LANDER_RIO_RC14_3_REVIEW_NOT_FOR_PRODUCTION
+          path: dist/rc14-review/
+          retention-days: 14
+          if-no-files-found: error
+

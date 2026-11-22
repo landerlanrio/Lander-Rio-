@@ -1,0 +1,12 @@
+test_all_original_routes_still_exist (__main__.Brands.test_all_original_routes_still_exist) ... ok
+test_every_gallery_card_reaches_its_own_brand (__main__.Brands.test_every_gallery_card_reaches_its_own_brand) ... ok
+test_logo_binary_provenance_is_unchanged (__main__.Brands.test_logo_binary_provenance_is_unchanged) ... ok
+test_new_routes_are_in_sitemap (__main__.Brands.test_new_routes_are_in_sitemap) ... ok
+test_product_references_have_an_attributed_source (__main__.Brands.test_product_references_have_an_attributed_source) ... ok
+test_profiles_match_their_brand_and_own_logo (__main__.Brands.test_profiles_match_their_brand_and_own_logo) ... ok
+test_unknown_catalogs_are_explicit_and_not_conflated (__main__.Brands.test_unknown_catalogs_are_explicit_and_not_conflated) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.031s
+
+OK

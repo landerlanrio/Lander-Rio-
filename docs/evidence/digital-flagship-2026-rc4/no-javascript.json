@@ -1,0 +1,101 @@
+{
+  "sandbox": "allow-same-origin",
+  "nav": [
+    {
+      "text": "Atacado / Varejo",
+      "visible": true
+    },
+    {
+      "text": "Marcas",
+      "visible": true
+    },
+    {
+      "text": "Treino & dieta",
+      "visible": true
+    },
+    {
+      "text": "Enciclopédia",
+      "visible": true
+    },
+    {
+      "text": "Editorial",
+      "visible": true
+    },
+    {
+      "text": "Atendimento",
+      "visible": true
+    }
+  ],
+  "actions": [
+    {
+      "href": "https://wa.me/5521920043538?text=Ol%C3%A1%21%20Sou%20revendedor%20e%20quero%20consultar%20as%20condi%C3%A7%C3%B5es%20de%20atacado%20da%20LANDER%20RIO.%20Podem%20me%20informar%20disponibilidade%2C%20quantidades%20e%20envio%3F",
+      "text": "PARA REVENDEDORESATACADO",
+      "visible": true
+    },
+    {
+      "href": "https://wa.me/5521920043538?text=Ol%C3%A1%21%20Quero%20consultar%20o%20atendimento%20no%20varejo%20da%20LANDER%20RIO.%20Podem%20me%20informar%20disponibilidade%20e%20envio%3F",
+      "text": "PARA VOCÊVAREJO",
+      "visible": true
+    }
+  ],
+  "searchVisible": false,
+  "layout": {
+    "viewport": 390,
+    "route": "/",
+    "bodyWidth": 390,
+    "clientWidth": 390,
+    "overflow": false,
+    "h1": 1,
+    "brokenImages": [],
+    "missingImageSizes": [],
+    "tinyTargets": [],
+    "sectionOrder": [
+      "inicio",
+      "perfis",
+      "marcas",
+      "relacionamento",
+      "ferramentas",
+      "ciencia",
+      "atendimento"
+    ],
+    "heroActions": [
+      {
+        "text": "PARA REVENDEDORESATACADO",
+        "bottom": 661,
+        "width": 171
+      },
+      {
+        "text": "PARA VOCÊVAREJO",
+        "bottom": 661,
+        "width": 171
+      }
+    ],
+    "heroImage": {
+      "src": "http://127.0.0.1:4173/assets/flagship-hero-mobile-rc2.avif",
+      "width": 864,
+      "height": 1536
+    },
+    "logos": [
+      {
+        "alt": "Landerlan",
+        "loaded": true,
+        "bottom": 779
+      },
+      {
+        "alt": "Topharma",
+        "loaded": true,
+        "bottom": 779
+      },
+      {
+        "alt": "Life Peptídeos",
+        "loaded": true,
+        "bottom": 866
+      },
+      {
+        "alt": "Oxygen KW Pharma",
+        "loaded": true,
+        "bottom": 866
+      }
+    ]
+  }
+}

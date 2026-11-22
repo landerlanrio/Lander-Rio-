@@ -1,0 +1,1 @@
+Initial gate: 43/45 blocks passed. Two failures: FAQ total expected43 but now45 (two documented questions added); measurement release stillRC13 while release.json isRC14. Corrected explicit FAQ contract and measurement release identifier; no measurement behavior changed.

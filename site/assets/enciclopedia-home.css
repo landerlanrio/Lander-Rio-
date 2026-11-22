@@ -1,0 +1,129 @@
+.lr-atlas {
+  --atlas-paper: #f2f0e8;
+  --atlas-ink: #10130f;
+  --atlas-muted: #b6bbaf;
+  --atlas-accent: #dbff5a;
+  background: var(--atlas-ink);
+  color: var(--atlas-paper);
+  font-family: 'DM Sans', Arial, sans-serif;
+  text-align: left;
+  isolation: isolate;
+}
+.lr-atlas *, .lr-atlas *::before, .lr-atlas *::after { box-sizing: border-box; }
+.lr-atlas [hidden] { display: none !important; }
+.lr-atlas-shell { max-width: 1540px; margin: auto; padding: clamp(48px, 6.5vw, 100px) clamp(18px, 5.3vw, 86px); }
+.lr-atlas-cover { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(24px, 4.2vw, 76px); }
+.lr-atlas-copy, .lr-atlas-entry { min-width: 0; }
+.lr-atlas-kicker, .lr-atlas-overline, .lr-atlas-figure figcaption, .lr-atlas-motion {
+  font: 500 .72rem/1.4 'DM Mono', monospace; letter-spacing: .075em; text-transform: uppercase;
+}
+.lr-atlas .lr-atlas-kicker { margin: 0 0 clamp(18px, 2.7vw, 42px); color: var(--atlas-accent); display: flex; align-items: center; gap: 12px; }
+.lr-atlas-kicker > span { width: 27px; height: 2px; background: currentColor; }
+.lr-atlas #lr-atlas-title { font: 900 clamp(3.7rem, 6.75vw, 7.3rem)/.92 'Barlow Condensed', Impact, sans-serif; letter-spacing: -.035em; color: var(--atlas-paper); text-transform: uppercase; margin: 0; }
+.lr-atlas #lr-atlas-title em { display: block; margin: .13em 0 0; font: italic 500 .56em/1.08 Georgia, serif; letter-spacing: -.05em; text-transform: none; color: var(--atlas-accent); }
+.lr-atlas.lr-atlas-near #lr-atlas-title em { font-family: 'Playfair Display', Georgia, serif; }
+@media (scripting: none) { .lr-atlas #lr-atlas-title em { font-family: 'Playfair Display', Georgia, serif; } }
+.lr-atlas .lr-atlas-deck { font: 500 clamp(1.23rem, 1.85vw, 1.8rem)/1.28 'DM Sans', Arial, sans-serif; letter-spacing: -.03em; max-width: 28ch; margin: clamp(22px, 2.4vw, 40px) 0 12px; }
+.lr-atlas-intro, .lr-atlas-entry > p:not(.lr-atlas-overline) { color: var(--atlas-muted); font-size: 1rem; line-height: 1.58; margin: 0; max-width: 52ch; }
+.lr-atlas a { text-decoration: none; }
+.lr-atlas .lr-atlas-cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 22px; padding: 13px 18px; margin: 24px 0 0; min-height: 48px; font-weight: 700; line-height: 1.32; color: #11170c; background: var(--atlas-accent); border-radius: 2px; }
+.lr-atlas-arrow { position: relative; width: 15px; height: 15px; flex: none; }
+.lr-atlas-arrow::before { content: ""; position: absolute; inset: 1px 1px auto auto; width: 11px; height: 11px; border-top: 2px solid; border-right: 2px solid; }
+.lr-atlas-arrow::after { content: ""; position: absolute; width: 16px; height: 2px; background: currentColor; right: 2px; top: 2px; transform: rotate(-45deg); transform-origin: right center; }
+.lr-atlas .lr-atlas-cta:hover { background: #efffb0; }
+.lr-atlas a:focus-visible, .lr-atlas button:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+.lr-atlas-figure {
+  position: relative; margin: 0; width: 100%; aspect-ratio: 1.06; overflow: hidden; border: 1px solid #49523b;
+  background-color: #151b15;
+  background-image: radial-gradient(ellipse at 71% 26%, #9ab65b18 0%, transparent 50%), radial-gradient(ellipse at 35% 64%, #81973118 0%, transparent 49%), linear-gradient(#a6bf6d0b 1px, transparent 1px), linear-gradient(90deg, #a6bf6d0b 1px, transparent 1px);
+  background-size: auto, auto, 9.1% 9.1%, 9.1% 9.1%;
+}
+.lr-atlas-figure figcaption { position: absolute; z-index: 2; left: 16px; top: 14px; color: #c6cdbd; background: #151b15e8; padding: 2px 4px; pointer-events: none; }
+.lr-atlas-figure figcaption > span { color: var(--atlas-accent); padding-right: 8px; }
+.lr-atlas-model, .lr-atlas-model img, .lr-atlas-model canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.lr-atlas-model img { object-fit: contain; }
+.lr-atlas-model canvas { touch-action: pan-y; }
+.lr-atlas .lr-atlas-motion { position: absolute; z-index: 2; bottom: 10px; right: 10px; display: flex; justify-content: center; align-items: center; gap: 9px; min-height: 44px; min-width: 44px; padding: 8px 12px; color: var(--atlas-paper); border: 1px solid #5d6854; background: #131911f2; border-radius: 2px; font-size: .65rem; cursor: pointer; }
+.lr-atlas-motion span:first-child { width: 9px; height: 11px; border-left: 3px solid var(--atlas-accent); border-right: 3px solid var(--atlas-accent); }
+.lr-atlas-motion[data-paused] span:first-child { width: 0; border: 6px solid transparent; border-right: 0; border-left: 9px solid var(--atlas-accent); }
+.lr-atlas-reading { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(20px, 3.2vw, 52px); margin-top: clamp(36px, 4.5vw, 74px); }
+.lr-atlas-entry { padding-top: 16px; border-top: 1px solid #515a48; }
+.lr-atlas .lr-atlas-overline { color: var(--atlas-accent); margin: 0 0 10px; font-size: .67rem; }
+.lr-atlas-entry h3 { margin: 0 0 10px; color: var(--atlas-paper); font: 500 clamp(1.42rem, 1.8vw, 2rem)/1.16 'Playfair Display', Georgia, serif; letter-spacing: -.038em; text-transform: none; }
+.lr-atlas-entry a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 3px; font-size: .9rem; font-weight: 700; color: var(--atlas-paper); text-decoration: underline; text-decoration-color: #758564; text-underline-offset: 4px; }
+.lr-atlas-entry a:hover { color: var(--atlas-accent); }
+@media (max-width: 780px) {
+  .lr-atlas-cover { grid-template-columns: 1fr; }
+  .lr-atlas-reading { grid-template-columns: 1fr; }
+  .lr-atlas-figure { max-width: 570px; aspect-ratio: 1.18; }
+  .lr-atlas #lr-atlas-title { font-size: clamp(3.15rem, 12.5vw, 5rem); }
+  .lr-atlas-entry h3 { font-size: 1.55rem; }
+}
+
+.lr-atlas-classes summary { display: list-item; width: fit-content; max-width: 100%; padding: 12px 0; min-height: 44px; font: 700 .9rem/1.45 'DM Sans',Arial,sans-serif; cursor: pointer; }
+.lr-atlas-classes summary::marker { color: var(--atlas-accent); }
+.lr-atlas-classes summary:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.lr-atlas-classes ul { margin: 0; padding-left: 1.25em; color: var(--atlas-muted); list-style: disc; font-size: .95rem; line-height: 1.6; }
+
+.lr-atlas .lr-guide-home-link { display:inline-flex; align-items:center; min-height:44px; margin:6px 0 0; color:var(--atlas-accent); font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+
+/* Keep the approved artwork proportional beside the primary navigation. */
+.lr-header .lr-home-lockup {
+  min-height: 44px;
+  justify-content: center;
+  gap: 5px;
+}
+.lr-home-lockup img {
+  display: block;
+  width: clamp(120px, 13vw, 156px);
+  height: auto;
+}
+.lr-header .lr-home-lockup small {
+  font-size: .625rem;
+  line-height: 1.2;
+  letter-spacing: .12em;
+}
+#manifesto { scroll-margin-top: 1rem; }
+#manifesto:focus-visible { outline: 2px solid #d0fa38; outline-offset: 4px; }
+
+.lr-atlas-reading-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 1.25rem;
+}
+.lr-atlas-reading-links .lr-guide-home-link { min-height: 44px; }
+
+/* Stabilize wrapping while primary webfonts become available. */
+@media (min-width: 1024px) {
+  .flagship-2026 #lr-privacy,
+  .flagship-2026 #lr-privacy button { font-family: Arial, sans-serif; }
+}
+
+/* LANDER RIO RC14.3 — legible, equal-priority commercial paths. No new font or JS request. */
+.flagship-2026 .lfx-hero-actions .hero-cta {
+  min-height: 58px!important;
+  font-size: clamp(12px, 1.08vw, 14px)!important;
+  line-height: 1.35;
+  letter-spacing: .025em;
+  white-space: normal;
+}
+.flagship-2026 .lfx-hero-actions .hero-cta svg { flex-shrink: 0; }
+.flagship-2026 .lr-hero-handoff {
+  max-width: 52ch;
+  margin: 14px 0 0;
+  color: #d5e1d2;
+  font: 500 12px/1.55 'DM Sans', Arial, sans-serif;
+}
+@media (max-width: 600px) {
+  .flagship-2026 .lfx-hero-actions { width: 100%; gap: 10px; }
+  .flagship-2026 .lfx-hero-actions .hero-cta {
+    min-height: 56px!important;
+    font-size: 13px!important;
+    padding-inline: 15px!important;
+  }
+  .flagship-2026 .lr-hero-handoff { margin-top: 12px; }
+}
+@media (max-width: 360px) {
+  .flagship-2026 .lfx-hero-actions .hero-cta { font-size: 12px!important; }
+}

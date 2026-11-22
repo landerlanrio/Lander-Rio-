@@ -4,8 +4,11 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from urllib.parse import urlsplit
 from urllib.robotparser import RobotFileParser
-from audit_indexability import inspect, netlify_headers, audit
+from audit_indexability import (
+    ROOT, Page, inspect, netlify_headers, header_directives, sitemap_urls, audit,
+)
 
 
 class Indexability(unittest.TestCase):
@@ -63,6 +66,26 @@ class Indexability(unittest.TestCase):
             result = audit(site, {'origin': 'https://landerrio.com.br', 'baseline_commit': 'fixture', 'pages': [self.row]})
             self.assertEqual(result['status'], 'FAIL')
             self.assertEqual(len(result['errors']), 2)
+
+    def test_auxiliary_sitemaps_exclude_noindex_pages(self):
+        site = ROOT / 'site'
+        policy = json.loads((ROOT / 'content/indexability-policy.json').read_text())
+        pages = {row['canonical']: row for row in policy['pages']}
+        headers = (site / '_headers').read_text()
+        auxiliary = sorted(path for path in site.rglob('*sitemap*.xml')
+                           if path != site / 'sitemap.xml')
+        self.assertTrue(auxiliary, 'Expected at least one auxiliary sitemap to check')
+        for path in auxiliary:
+            for url in sitemap_urls(path.read_text()):
+                with self.subTest(sitemap=path.relative_to(site).as_posix(), url=url):
+                    self.assertIn(url, pages, 'Auxiliary sitemap URL must be in the reviewed inventory')
+                    row = pages[url]
+                    self.assertTrue(row['indexable'], 'Auxiliary sitemap includes a held/noindex page')
+                    page = Page((site / row['path']).read_text())
+                    route = urlsplit(url).path
+                    directives = set(page.directives + header_directives(netlify_headers(headers, route)))
+                    self.assertFalse(directives & {'noindex', 'none'},
+                                     'Auxiliary sitemap includes a page with a noindex directive')
 
 
 if __name__ == '__main__':

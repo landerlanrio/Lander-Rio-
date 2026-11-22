@@ -1,0 +1,104 @@
+name: Commercial capture - isolated homologation
+
+on:
+  pull_request:
+    branches: [main, release/flagship-mobile-qa-20261119]
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+# Public-repository CI only. No hosted credentials, deployments, messages or paid APIs.
+permissions:
+  contents: read
+
+concurrency:
+  group: commercial-homologation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  isolated-commercial-review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      CI: 'true'
+    steps:
+      - name: Check out candidate without retained credentials
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Use Node 24
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+      - name: Use Python 3.12
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Install locked review tools outside the repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          task_tools="$RUNNER_TEMP/lander-commercial-tools"
+          mkdir -p "$task_tools"
+          cp scripts/commercial-homologation-tools/package.json scripts/commercial-homologation-tools/package-lock.json "$task_tools/"
+          npm ci --prefix "$task_tools" --no-audit --no-fund
+          printf 'NODE_PATH=%s/node_modules\n' "$task_tools" >> "$GITHUB_ENV"
+          node "$task_tools/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Verify site integrity and existing contracts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/verify_site.py
+          python3 scripts/test_flagship.py
+          python3 scripts/test_integrity.py
+          python3 scripts/audit_indexability.py
+          python3 scripts/test_indexability.py
+          python3 scripts/test_universe.py
+          python3 scripts/test_rc10.py
+          python3 scripts/test_brand_profiles.py
+          python3 scripts/test_diamond_editorial.py
+          python3 -m unittest discover -s scripts -p 'test_build_rc14_review.py' -v
+          find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
+          node --experimental-strip-types --test scripts/*.test.cjs scripts/test_seo_metadata.cjs prototypes/rox-ai-v2/*.test.mjs prototypes/rox-ai-v2/preview-private/server.test.mjs revenue-intelligence/test-*.cjs
+          python3 scripts/smoke_http.py
+      - name: Start loopback PostgreSQL, PostgREST and packaged function
+        shell: bash
+        run: |
+          set -euo pipefail
+          node commercial-capture/remote-fixture.mjs start --out "$RUNNER_TEMP/lander-remote" --site site
+      - name: Test durable storage and actual bundled HTTP handler
+        shell: bash
+        run: |
+          set -euo pipefail
+          node commercial-capture/remote-fixture.mjs test --out "$RUNNER_TEMP/lander-remote"
+      - name: Test both commercial journeys in the mobile browser
+        env:
+          LR_QA_BASE_URL: http://127.0.0.1:3100
+          LR_QA_OUTPUT: ${{ runner.temp }}/lander-remote/browser
+          LR_QA_EXPECT_BACKEND: packaged_postgrest
+        shell: bash
+        run: |
+          set -euo pipefail
+          node commercial-capture/browser-qa.cjs
+      - name: Stop only this isolated fixture
+        if: always()
+        shell: bash
+        run: |
+          node commercial-capture/remote-fixture.mjs stop --out "$RUNNER_TEMP/lander-remote"
+      - name: Upload synthetic browser review evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: lander-commercial-browser-${{ github.run_id }}
+          path: ${{ runner.temp }}/lander-remote/browser/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Upload curated backend proof
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: lander-commercial-backend-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/lander-remote/evidence.json
+            ${{ runner.temp }}/lander-remote/tests.tap
+          if-no-files-found: warn
+          retention-days: 14

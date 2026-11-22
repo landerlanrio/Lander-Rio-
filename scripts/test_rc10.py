@@ -14,6 +14,12 @@ class RC10(unittest.TestCase):
    self.assertEqual(overlay['version'], 'digital-flagship-2026-rc14.1')
    expected_intent = overlay['files']['assets/ga4-intent.js']
    self.assertNotEqual(expected_intent, production['ga4_intent_sha256'])
+  commercial = S/'manifest-commercial-capture-20261122.json'
+  if commercial.is_file():
+   replacement = json.loads(commercial.read_text())
+   self.assertEqual(replacement['replaces_sha256']['assets/ga4-intent.js'], expected_intent)
+   self.assertEqual(replacement['version'], 'commercial-capture-20261122')
+   expected_intent = replacement['files']['assets/ga4-intent.js']
   self.assertEqual(hashlib.sha256((S/'assets/ga4-config.js').read_bytes()).hexdigest(), production['ga4_config_sha256'])
   self.assertEqual(hashlib.sha256((S/'assets/ga4-intent.js').read_bytes()).hexdigest(), expected_intent)
  def test_google_scripts_are_singletons_and_ordered(self):

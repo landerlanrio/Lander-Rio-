@@ -26,7 +26,10 @@ class Flagship(unittest.TestCase):
     def test_whatsapp_profiles_and_safe_targets(self):
         links=[a for t,a in self.p.tags if t=='a' and 'data-wa' in a]
         self.assertGreaterEqual(len(links),3)
-        hero=[a for a in links if a.get('data-placement')=='hero'];self.assertEqual({a.get('data-profile') for a in hero},{'atacado','varejo'})
+        hero=[a for t,a in self.p.tags if t=='a' and a.get('data-placement')=='hero']
+        self.assertEqual({a.get('data-profile'):a.get('href') for a in hero},{'atacado':'/atacado/','varejo':'/varejo/'})
+        self.assertEqual(len(hero),2)
+        self.assertTrue(all('data-wa' not in a and 'target' not in a for a in hero))
         for a in links:
             u=urlsplit(a['href']);self.assertEqual(u.scheme,'https');self.assertEqual(u.netloc,'wa.me');self.assertEqual(u.path,'/5521920043538');self.assertIn('text',parse_qs(u.query));self.assertIn('noopener',a.get('rel',''))
         self.assertEqual(len({a['href'] for a in hero}),2)

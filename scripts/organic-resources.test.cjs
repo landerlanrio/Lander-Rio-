@@ -6,4 +6,18 @@ test('public CSV templates are UTF-8, rectangular, blank and free of spreadsheet
 test('download links resolve locally and do not depend on JavaScript or a lead form',()=>{for(const route of routes.slice(3)){const s=fs.readFileSync(path.join(root,route,'index.html'),'utf8');const links=[...s.matchAll(/<a[^>]+href="(\/recursos\/[^\"]+)"[^>]*download[^>]*>/g)];assert.equal(links.length,1);assert.ok(fs.existsSync(path.join(root,links[0][1])));assert.ok(s.includes('sem cadastro'));assert.ok(s.includes('Exemplo fictício'));assert.ok(s.includes('role="region" tabindex="0"'));}});
 test('updated article metadata names real resources and records the actual edit date',()=>{for(const route of routes.slice(3)){const s=fs.readFileSync(path.join(root,route,'index.html'),'utf8');const article=[...s.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map(m=>JSON.parse(m[1])).find(x=>x['@type']==='Article');assert.equal(article.dateModified,'2026-11-14');assert.ok(article.description.includes('CSV sem cadastro'));assert.ok(s.includes('Atualização editorial · 14/11/2026'));assert.equal(article.author['@type'],'Organization');}});
 
-test('release manifest and ancestry identify the reviewed candidate',()=>{const r=JSON.parse(fs.readFileSync(path.join(root,'release.json')));assert.equal(r.version,'digital-flagship-2026-rc14.1');assert.equal(r.manifest,'manifest-digital-flagship-2026-rc14.1.json');assert.equal(r.previous_candidate,'digital-flagship-2026-rc14');assert.equal(r.source_branch,'audit/measurement-2026-11-17');assert.equal(JSON.parse(fs.readFileSync(path.join(root,r.manifest))).version,r.version)});
+test('release manifest and ancestry identify the reviewed candidate',()=>{
+ const r=JSON.parse(fs.readFileSync(path.join(root,'release.json')));
+ assert.equal(r.version,'commercial-capture-20261122');
+ assert.equal(r.release,r.version);
+ assert.equal(r.manifest,'manifest-commercial-capture-20261122.json');
+ assert.equal(r.status,'validated-hosted-release-candidate');
+ assert.equal(r.source_reconciled,true);
+ assert.equal(r.source_archive_file_count,339);
+ assert.equal(r.source_archive_sha256,'1cdea807f158dd14f808f619648dd817c85794f9c4cd58a2b22ab96d93854574');
+ assert.equal(r.production_deploy_at_audit,'6afe96a8a12db106eae1b9cd');
+ assert.equal(r.source_base_commit,'79cb510247b594d22c46005e9d9d22afc126197b');
+ const manifest=JSON.parse(fs.readFileSync(path.join(root,r.manifest)));
+ assert.equal(manifest.version,r.version);
+ assert.equal(manifest.source_base_commit,r.source_base_commit);
+});

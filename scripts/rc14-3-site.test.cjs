@@ -16,7 +16,9 @@ test('the hero has legible, differentiated commercial paths and an honest handof
   assert.equal((hero.match(/class="[^"]*hero-cta/g) || []).length, 2);
   assert.match(hero, /data-profile="atacado"/);
   assert.match(hero, /data-profile="varejo"/);
-  assert.match(hero, /data-wa=""/);
+  assert.match(hero, /href="\/atacado\/"/);
+  assert.match(hero, /href="\/varejo\/"/);
+  assert.doesNotMatch(hero, /data-wa|wa\.me|target="_blank"/);
   assert.match(css, /LANDER RIO RC14\.3/);
   assert.match(css, /font-size:\s*13px!important/);
   assert.match(css, /min-height:\s*56px!important/);

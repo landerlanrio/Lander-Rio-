@@ -3,7 +3,7 @@
  if(window.LanderGA4)return;
  const config=window.LanderGA4Config||{}, id='G-C3HWDYKEJK';
  let initialized=false,granted=false,pageSent=false;const seen=new WeakSet();
- const names=new Set(['cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','guide_share','rox_opened','hero_view','wholesale_selected','retail_selected']);
+ const names=new Set(['cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','commercial_request_saved','guide_share','rox_opened','hero_view','wholesale_selected','retail_selected']);
  const pages=new Set(['home','wholesale','retail','contact','business','delivery','faq','about','tools','training','nutrition','content','guide']);
  const values={profile:['geral','atacado','varejo','suporte'],placement:['hero','header','profile-card','optional-context','closing','mobile-sticky','fallback','content','rox','brand-directory'],action:['whatsapp','choose-profile','subject_changed','tool-training','tool-nutrition','tools-nav','tools-hero','download-diario-de-treino-csv','download-lista-de-compras-semanal-csv']};
  function permitted(){return config.enabled===true&&config.enhancedMeasurementReviewed===true&&location.hostname==='landerrio.com.br'&&window.LanderMeasurement?.isEnabled()===true;}

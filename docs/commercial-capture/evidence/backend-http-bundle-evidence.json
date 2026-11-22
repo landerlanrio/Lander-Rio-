@@ -1,0 +1,37 @@
+{
+  "environment": "Isolated local Docker PostgreSQL17 + PostgREST13.0.4; synthetic-only; no hosted traffic",
+  "netlifyBundler": "@netlify/zip-it-and-ship-it16.6.0 esbuild",
+  "httpCalls": 3,
+  "request_id": "12a53642-b021-4d49-8d36-09b8602cd4c8",
+  "receipt": "LR-12A53642B0214D498D3609B8602CD4C8",
+  "expected": {
+    "first": 201,
+    "retry": 200,
+    "conflict": 409,
+    "anonymousRead": 401,
+    "rows": 1
+  },
+  "observed": {
+    "first": 201,
+    "retry": 200,
+    "conflict": 409,
+    "anonymousRead": 401,
+    "rows": 1,
+    "record": {
+      "receipt": "LR-12A53642B0214D498D3609B8602CD4C8",
+      "profile": "atacado",
+      "intent": "envio",
+      "origin": {
+        "page_path": "/atacado/",
+        "entry_path": "/",
+        "utm_source": "instagram"
+      },
+      "crm_status": "pending"
+    }
+  },
+  "limits": [
+    "Hosted Supabase gateway/config/credentials not exercised",
+    "Netlify edge rate limiting not exercised locally",
+    "HubSpot reconciliation tested with local fake CRM only"
+  ]
+}

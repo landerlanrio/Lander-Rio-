@@ -161,7 +161,13 @@ async function submitLead(e){
   const company=String(fd.get('company')||'').trim();
   const error=$('#gateError'), submit=form.querySelector('button[type="submit"]');
   if(submit.disabled)return;
-  error.hidden=true; error.textContent='';form.querySelectorAll('[aria-invalid]').forEach(el=>el.removeAttribute('aria-invalid'));const gateError=(message,name)=>{error.textContent=message;error.hidden=false;const el=form.elements[name];if(el){el.setAttribute('aria-invalid','true');el.setAttribute('aria-describedby','gateError');el.focus()}};
+  error.hidden=true;
+  error.textContent='';
+  form.querySelectorAll('[aria-invalid]').forEach(el=>{
+    el.removeAttribute('aria-invalid');
+    el.removeAttribute('aria-describedby');
+  });
+  const gateError=(message,name)=>{error.textContent=message;error.hidden=false;const el=form.elements[name];if(el){el.setAttribute('aria-invalid','true');el.setAttribute('aria-describedby','gateError');el.focus()}};
   if(name.length<2||name.length>100){gateError('Informe seu nome (2 a 100 caracteres).','name');return;}
   if(!/^(?:55)?[1-9][0-9](?:[2-9][0-9]{7}|9[0-9]{8})$/.test(whatsapp.replace(/\D/g,''))){gateError('Informe um WhatsApp válido com DDD.','whatsapp');return;}
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||email.length>160){gateError('Informe um e-mail válido.','email');return;}

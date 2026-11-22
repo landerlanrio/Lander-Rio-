@@ -86,6 +86,8 @@
 #lr-privacy :focus-visible{outline:3px solid #d0fa38;outline-offset:3px}
 body:has(#lr-privacy) .v25-rox-root,body:has(#lr-privacy) .mobile-contact{visibility:hidden;pointer-events:none}
 html:has(#lr-privacy){scroll-padding-bottom:260px}
+.flagship-2026:has(#lr-privacy) .lfx-hero-content{padding-bottom:clamp(110px,20svh,185px)}
+.flagship-2026:has(#lr-privacy) .lfx-hero-actions{margin-top:16px}
 .lr-rox-actions{display:grid;gap:8px;margin-top:14px}
 .lr-rox-actions a{display:flex;align-items:center;min-height:44px;padding:10px 12px;border:1px solid #a7b992;color:#e8f7d9!important;background:#243420;font-size:14px;font-weight:600;line-height:1.5;text-decoration:underline;text-underline-offset:3px}
 .lr-rox-actions a:focus-visible{outline:3px solid #d0fa38;outline-offset:3px}
@@ -119,4 +121,11 @@ footer nav a{min-height:44px;display:inline-flex;align-items:center;line-height:
  .lfx-brands h2{font-size:clamp(52px,13vw,80px)}
  .lfx-conclusion h2{margin-top:40px}.ba-showcase{max-height:280px}
 }
+@media(max-width:600px){
+ .flagship-2026:has(#lr-privacy) .lfx-hero-content{padding-top:clamp(32px,calc(100svh - 735px),110px);padding-bottom:200px}
+}
 @media print{#lr-privacy,.lr-access-note{display:none!important}}
+
+/* Commercial identity: keep RIO visible in Performance Lime on internal wordmarks. */
+.lr-wordmark small{color:#d0fa38}
+.lr-home-lockup small{color:inherit}

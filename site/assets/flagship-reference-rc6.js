@@ -6,13 +6,23 @@
  const lowPower=navigator.connection?.saveData||['slow-2g','2g'].includes(navigator.connection?.effectiveType)||(navigator.hardwareConcurrency&&navigator.hardwareConcurrency<4);
  if(lowPower)document.documentElement.classList.add('low-motion');
  const menu=$('#site-menu'),summary=menu?.querySelector('summary');
- document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!e.defaultPrevented&&menu?.open){menu.open=false;summary.focus();}});
- document.addEventListener('click',e=>{if(menu?.open&&(!menu.contains(e.target)||e.target.closest('a')))menu.open=false;});
  const dialog=$('#search-dialog'),open=$('.search-toggle'),query=$('#site-query');
  const filterSearch=()=>{const q=normalize(query.value);let count=0;$$('.search-links a').forEach(a=>{a.hidden=!normalize(a.textContent).includes(q);if(!a.hidden)count++;});$('.search-status').textContent=count?`${count} caminho${count===1?'':'s'} encontrado${count===1?'':'s'}.`:'Nenhum resultado. Tente outra palavra.';};
- open?.addEventListener('click',()=>{dialog.showModal();query.focus();filterSearch();});
+ open?.addEventListener('click',()=>{
+  menu.open=false;
+  dialog.showModal();
+  query.focus();
+  filterSearch();
+ });
  $('[data-search-close]')?.addEventListener('click',()=>dialog.close());
- dialog?.addEventListener('close',()=>open.focus());query?.addEventListener('input',filterSearch);
+ dialog?.addEventListener('keydown',event=>{
+  if(event.key==='Escape'){
+   event.preventDefault();
+   dialog.close();
+  }
+ });
+ dialog?.addEventListener('close',()=>summary.focus());
+ query?.addEventListener('input',filterSearch);
  dialog?.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 
  const track=$('#brand-track'),progress=$('.lfx-brands-progress-track'),label=$('.lfx-brands-navigation>span');

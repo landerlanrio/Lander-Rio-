@@ -1,0 +1,17 @@
+{
+  "scope": {
+    "html_files": 106,
+    "jsonld_blocks": 129,
+    "searched": "All HTML source: metadata identity fields, JSON-LD Person nodes, email references, formatted CPF, explicitly marked phone references. No identity values reproduced."
+  },
+  "counts": {
+    "input_email_placeholder": 1
+  },
+  "findings": [
+    {
+      "path": "dieta/index.html",
+      "class": "input_email_placeholder"
+    }
+  ],
+  "conclusion": "No personal identity exposure detected by these patterns. The only non-official email is an input placeholder in dieta/index.html; no value retained."
+}

@@ -1,0 +1,373 @@
+{
+  "run": "lrui-1795365614627",
+  "environment": "loopback SQLite, all external hosts aborted",
+  "results": [
+    {
+      "case": "normal",
+      "width": 360,
+      "profile": "varejo",
+      "email": "lrui-1795365614627-360-varejo@example.test",
+      "http": 201,
+      "response": {
+        "ok": true,
+        "saved": true,
+        "receipt": "LR-5AB81D37F85D4964A158998B9C1BF9B7",
+        "duplicate": false,
+        "crm_status": "pending"
+      },
+      "status": "Solicitação recebida e salva. Protocolo LR-5AB81D37F85D4964A158998B9C1BF9B7. A equipe poderá localizar seu interesse e responder pelo e-mail informado.",
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "5ab81d37-f85d-4964-a158-998b9c1bf9b7",
+          "fingerprint": "8b3db318f20df766cb6bfcd8a14c179585649cf84b253c341de9f72530e7db8c",
+          "receipt": "LR-5AB81D37F85D4964A158998B9C1BF9B7",
+          "created_at": "2026-11-22 16:40:17",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "varejo",
+          "intent": "envio",
+          "name": "Pessoa Fictícia lrui-1795365614627-360-varejo",
+          "email": "lrui-1795365614627-360-varejo@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/varejo/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ],
+      "overflow": false,
+      "external": [],
+      "errors": []
+    },
+    {
+      "case": "normal",
+      "width": 360,
+      "profile": "atacado",
+      "email": "lrui-1795365614627-360-atacado@example.test",
+      "http": 201,
+      "response": {
+        "ok": true,
+        "saved": true,
+        "receipt": "LR-83556F8225A7488886246675CFDF8BC5",
+        "duplicate": false,
+        "crm_status": "pending"
+      },
+      "status": "Solicitação recebida e salva. Protocolo LR-83556F8225A7488886246675CFDF8BC5. A equipe poderá localizar seu interesse e responder pelo e-mail informado.",
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "83556f82-25a7-4888-8624-6675cfdf8bc5",
+          "fingerprint": "96e217e869c42527e91c548aec7669700cd414362bc30a722909a77d036842e7",
+          "receipt": "LR-83556F8225A7488886246675CFDF8BC5",
+          "created_at": "2026-11-22 16:40:19",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "atacado",
+          "intent": "orcamento",
+          "name": "Pessoa Fictícia lrui-1795365614627-360-atacado",
+          "email": "lrui-1795365614627-360-atacado@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/atacado/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ],
+      "overflow": false,
+      "external": [],
+      "errors": []
+    },
+    {
+      "case": "normal",
+      "width": 390,
+      "profile": "varejo",
+      "email": "lrui-1795365614627-390-varejo@example.test",
+      "http": 201,
+      "response": {
+        "ok": true,
+        "saved": true,
+        "receipt": "LR-356C1F721A364F978758969EB6FB6D0D",
+        "duplicate": false,
+        "crm_status": "pending"
+      },
+      "status": "Solicitação recebida e salva. Protocolo LR-356C1F721A364F978758969EB6FB6D0D. A equipe poderá localizar seu interesse e responder pelo e-mail informado.",
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "356c1f72-1a36-4f97-8758-969eb6fb6d0d",
+          "fingerprint": "1febc274245573d78c758c2b36636df0549b09c05b66eab7eb3d4191c1316bee",
+          "receipt": "LR-356C1F721A364F978758969EB6FB6D0D",
+          "created_at": "2026-11-22 16:40:21",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "varejo",
+          "intent": "envio",
+          "name": "Pessoa Fictícia lrui-1795365614627-390-varejo",
+          "email": "lrui-1795365614627-390-varejo@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/varejo/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ],
+      "overflow": false,
+      "external": [],
+      "errors": []
+    },
+    {
+      "case": "normal",
+      "width": 390,
+      "profile": "atacado",
+      "email": "lrui-1795365614627-390-atacado@example.test",
+      "http": 201,
+      "response": {
+        "ok": true,
+        "saved": true,
+        "receipt": "LR-764A5C3DCF114D1F8F63B9EE7367CBD3",
+        "duplicate": false,
+        "crm_status": "pending"
+      },
+      "status": "Solicitação recebida e salva. Protocolo LR-764A5C3DCF114D1F8F63B9EE7367CBD3. A equipe poderá localizar seu interesse e responder pelo e-mail informado.",
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "764a5c3d-cf11-4d1f-8f63-b9ee7367cbd3",
+          "fingerprint": "2ae0145ca8ae6c1e1e6c149ceeb6e32512beb40eafede2a27608077529eda309",
+          "receipt": "LR-764A5C3DCF114D1F8F63B9EE7367CBD3",
+          "created_at": "2026-11-22 16:40:23",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "atacado",
+          "intent": "orcamento",
+          "name": "Pessoa Fictícia lrui-1795365614627-390-atacado",
+          "email": "lrui-1795365614627-390-atacado@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/atacado/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ],
+      "overflow": false,
+      "external": [],
+      "errors": []
+    },
+    {
+      "case": "normal",
+      "width": 1440,
+      "profile": "varejo",
+      "email": "lrui-1795365614627-1440-varejo@example.test",
+      "http": 201,
+      "response": {
+        "ok": true,
+        "saved": true,
+        "receipt": "LR-9062F78D24EE404C81C44EAAA5D5067C",
+        "duplicate": false,
+        "crm_status": "pending"
+      },
+      "status": "Solicitação recebida e salva. Protocolo LR-9062F78D24EE404C81C44EAAA5D5067C. A equipe poderá localizar seu interesse e responder pelo e-mail informado.",
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "9062f78d-24ee-404c-81c4-4eaaa5d5067c",
+          "fingerprint": "17de0ca48f72b929797c2b9651893cf35979b4256070f47710f32a38b7e71904",
+          "receipt": "LR-9062F78D24EE404C81C44EAAA5D5067C",
+          "created_at": "2026-11-22 16:40:27",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "varejo",
+          "intent": "envio",
+          "name": "Pessoa Fictícia lrui-1795365614627-1440-varejo",
+          "email": "lrui-1795365614627-1440-varejo@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/varejo/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ],
+      "overflow": false,
+      "external": [],
+      "errors": []
+    },
+    {
+      "case": "normal",
+      "width": 1440,
+      "profile": "atacado",
+      "email": "lrui-1795365614627-1440-atacado@example.test",
+      "http": 201,
+      "response": {
+        "ok": true,
+        "saved": true,
+        "receipt": "LR-09702A5E95864CF8B46792CA432F27D0",
+        "duplicate": false,
+        "crm_status": "pending"
+      },
+      "status": "Solicitação recebida e salva. Protocolo LR-09702A5E95864CF8B46792CA432F27D0. A equipe poderá localizar seu interesse e responder pelo e-mail informado.",
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "09702a5e-9586-4cf8-b467-92ca432f27d0",
+          "fingerprint": "00ec0e05e92abeafa0f02e52484f8c93a86649cbcb0a1671d3749ec180a50216",
+          "receipt": "LR-09702A5E95864CF8B46792CA432F27D0",
+          "created_at": "2026-11-22 16:40:30",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "atacado",
+          "intent": "orcamento",
+          "name": "Pessoa Fictícia lrui-1795365614627-1440-atacado",
+          "email": "lrui-1795365614627-1440-atacado@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/atacado/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ],
+      "overflow": false,
+      "external": [],
+      "errors": []
+    },
+    {
+      "case": "double-click",
+      "posts": 1,
+      "early": {
+        "status": "Salvando sua solicitação… Aguarde o protocolo.",
+        "count": 0
+      },
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "5003f058-7df3-4c8b-807a-750e8500e969",
+          "fingerprint": "5cba76582ad26cff0dd027b6bd722e00944467bb666e8d1963c45ae5e0992212",
+          "receipt": "LR-5003F0587DF34C8B807A750E8500E969",
+          "created_at": "2026-11-22 16:40:33",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "varejo",
+          "intent": "envio",
+          "name": "Pessoa Fictícia lrui-1795365614627-double",
+          "email": "lrui-1795365614627-double@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/varejo/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ]
+    },
+    {
+      "case": "saved-response-lost-retry",
+      "first": {
+        "status": "Ainda não foi possível confirmar o recebimento. Tente novamente: repetiremos a mesma solicitação para evitar duplicidade. Seus dados permanecem nesta tela.",
+        "count": 1,
+        "fieldDisabled": false
+      },
+      "posts": 2,
+      "samePayload": true,
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "42eab6ba-5965-4133-8f68-228ee911a474",
+          "fingerprint": "89e52af724f0edb415ccd751a2dc4d12b557660095d3c49293d8be1f34156aa4",
+          "receipt": "LR-42EAB6BA596541338F68228EE911A474",
+          "created_at": "2026-11-22 16:40:36",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "atacado",
+          "intent": "orcamento",
+          "name": "Pessoa Fictícia lrui-1795365614627-timeout",
+          "email": "lrui-1795365614627-timeout@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/atacado/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ]
+    },
+    {
+      "case": "storage-down-recovered",
+      "failed": {
+        "status": "Ainda não foi possível confirmar o recebimento. Tente novamente: repetiremos a mesma solicitação para evitar duplicidade. Seus dados permanecem nesta tela.",
+        "count": 0
+      },
+      "count": 1,
+      "rows": [
+        {
+          "request_id": "a664e8d3-c186-4f98-95f8-f1a5afeaff3f",
+          "fingerprint": "8055cbcee5396212edffff1da0d4bf39526a1d57a8967712a0edbc9a6aaaf7f3",
+          "receipt": "LR-A664E8D3C1864F9895F8F1A5AFEAFF3F",
+          "created_at": "2026-11-22 16:40:51",
+          "crm_status": "pending",
+          "crm_contact_id": null,
+          "claim_token": null,
+          "claim_until": null,
+          "last_error": null,
+          "profile": "varejo",
+          "intent": "envio",
+          "name": "Pessoa Fictícia lrui-1795365614627-storage-down",
+          "email": "lrui-1795365614627-storage-down@example.test",
+          "origin": {
+            "entry_path": "/",
+            "page_path": "/varejo/",
+            "utm_source": "instagram",
+            "utm_medium": "social",
+            "utm_campaign": "lr-261122"
+          },
+          "privacy_ack": true
+        }
+      ]
+    }
+  ]
+}

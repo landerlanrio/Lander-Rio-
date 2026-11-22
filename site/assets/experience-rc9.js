@@ -2,7 +2,7 @@
 (()=>{'use strict';
  const menu=document.querySelector('#site-menu');
  if(menu){
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.open){menu.open=false;menu.querySelector('summary').focus();}});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.open&&!document.querySelector('dialog[open]')){menu.open=false;menu.querySelector('summary').focus();}});
   document.addEventListener('click',event=>{if(menu.open&&(!menu.contains(event.target)||event.target.closest('a')))menu.open=false;});
  }
  const path=location.pathname.replace(/\/$/,'')||'/';

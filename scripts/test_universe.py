@@ -65,7 +65,10 @@ class Universe(unittest.TestCase):
         old,new=extract(before),extract(after)
         for pattern in [r'<picture.*?</picture>',r'<h1.*?</h1>']:
             self.assertEqual(re.search(pattern,old,re.S)[0],re.search(pattern,new,re.S)[0])
-        self.assertEqual(re.findall(r'data-wa="[^"]*"',old),re.findall(r'data-wa="[^"]*"',new))
+        hero_links=[a for t,a in Doc(new).tags if t=='a' and a.get('data-placement')=='hero']
+        self.assertEqual({a.get('data-profile'):a.get('href') for a in hero_links},{'atacado':'/atacado/','varejo':'/varejo/'})
+        self.assertEqual(len(hero_links),2)
+        self.assertTrue(all('data-wa' not in a and 'target' not in a for a in hero_links))
     def test_directory_without_javascript_has_all_destinations(self):
         text=(S/'marcas/index.html').read_text(); tags=Doc(text).tags
         cards=[a for t,a in tags if t=='a' and 'data-brand' in a]

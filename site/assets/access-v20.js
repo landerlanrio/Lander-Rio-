@@ -17,12 +17,12 @@ function getAttribution(){
  const q=new URLSearchParams(location.search),granted=consentGranted();
  // Explicit campaign parameters form one set; never fill gaps from an older campaign.
  const explicit=fields.some(field=>q.has('utm_'+field));let raw={};
- if(!granted)clearAttribution();
+ if(!granted){clearAttribution();return {}}
  if(explicit)fields.forEach(field=>{raw[field]=q.get('utm_'+field)});
- else if(granted){try{raw=JSON.parse(window.sessionStorage.getItem(ATTR)||'{}')}catch{}}
+ else{try{raw=JSON.parse(window.sessionStorage.getItem(ATTR)||'{}')}catch{}}
  const a=sanitizeAttribution(raw);
- // Direct URL context remains available for registration; persistence is opt-in only.
- if(explicit&&granted){try{window.sessionStorage.setItem(ATTR,JSON.stringify(a))}catch{}}
+ // Carry permitted campaign context to registration only after opt-in.
+ if(explicit){try{window.sessionStorage.setItem(ATTR,JSON.stringify(a))}catch{}}
  return Object.fromEntries(Object.entries(a).map(([field,value])=>['utm_'+field,value]));
 }
 // Clear this tab's attribution when consent is revoked from another tab.

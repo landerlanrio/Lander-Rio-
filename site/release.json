@@ -1,28 +1,28 @@
 {
-  "release": "digital-flagship-2026-rc14.1",
-  "version": "digital-flagship-2026-rc14.1",
-  "prepared_on": "2026-11-17",
+  "release": "commercial-capture-20261122",
+  "version": "commercial-capture-20261122",
+  "prepared_on": "2026-11-22",
   "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
   "base_package": "LANDER_RIO_RC10_SITE_DEPLOY.zip",
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
-  "release_note": "Candidata em rascunho. Preserva origem e meio de campanhas validadas por consentimento e distingue os dois modelos educativos no GA4.",
+  "release_note": "Candidata local: Hero para Varejo/Revendedores, solicitação com protocolo após gravação durável e fila recuperável. Sem publicação ou alteração de serviços.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
   "status": "local-candidate-not-deployed",
-  "manifest": "manifest-digital-flagship-2026-rc14.1.json",
+  "manifest": "manifest-commercial-capture-20261122.json",
   "enciclopedia_release": "v23.8",
   "enciclopedia_status": "pre-publicação; revisão científica externa pendente",
-  "production_deploy_at_audit": "6af9342e9b6477802a23ab4a",
+  "production_deploy_at_audit": "6afe96a8a12db106eae1b9cd",
   "integration_status": {
-    "rox_local": "tested-in-preview",
-    "external_ai": "disabled-missing-provider-and-challenge-setup",
-    "crm_write": "mock-only-no-live-write",
-    "commercial_events": "gateway-prototype-disabled"
+    "rox_local": "offline-rules-preserved",
+    "external_ai": "no-new-activation",
+    "crm_write": "synthetic-tests-only-manual-sync-disabled",
+    "commercial_capture": "tested-local-http-sqlite-postgres-schema-remote-staging-pending"
   },
   "visual_provenance": "Hero: imagens selecionadas pelo usuário, preservadas desde RC2. Logos: 14 arquivos recebidos e selecionados em 13/11/2026, WebP proporcional, sem recriação, retoque ou remoção de fundo. Ver docs/LOGOS_RC5_ASSETS.json. A seleção não comprova vínculo oficial com fabricantes.",
-  "source_branch": "audit/measurement-2026-11-17",
+  "source_branch": "fix/commercial-capture-20261122",
   "recovered_base": "LANDER_RIO_TITAN_RC2_FONTE.zip",
   "previous_candidate_commit": "e69940243ce4debe8cc3feec2ebbd2a656815adb",
-  "source_base_commit": "d13b0c973ca01ddf3e02d169f2bbe9a98320419e",
+  "source_base_commit": "79cb510247b594d22c46005e9d9d22afc126197b",
   "indexability_held_routes": [
     "/enciclopedia/substancias/anastrozol/",
     "/enciclopedia/substancias/boldenona/",
@@ -93,16 +93,12 @@
     "Preferência por movimento reduzido, fallback sem JavaScript e imagens AVIF/WebP."
   ],
   "changes": [
-    "Palavras-chave aplicadas em oito páginas: títulos, descrições, H1/H2, texto visível e rótulos de links.",
-    "Open Graph, Twitter Cards e dados estruturados alinhados ao conteúdo visível.",
-    "URLs, canonical, robots, imagens, CSS, formulários, mecanismos de cálculo e analytics preservados.",
-    "Identificador da versão nos eventos locais atualizado para RC12; regras de coleta e ponte GA4 preservadas.",
-    "Consentimento visível na primeira tela, escolhas equivalentes e reabertura sem salto ao rodapé.",
-    "ROX com atalhos internos seguros para treino, dieta, conteúdos e privacidade.",
-    "Treino e dieta mostram prévias locais úteis antes do cadastro; contrato de três campos e recibo do backend preservados.",
-    "Menu com terminologia consistente; Instagram presente nos rodapés.",
-    "Espaçamento das seções e leitura ajustados sem alterar a Hero ou imagens aprovadas.",
-    "Critérios, testes de navegador, manifesto aditivo e documentação atualizados."
+    "CTAs Hero encaminham para Varejo e Revendedores.",
+    "Formulários comerciais com confirmação apenas após recibo do armazenamento.",
+    "Chave de idempotência preservada para clique duplo e repetição após timeout.",
+    "Origem e intenção recuperáveis; CRM fora da transação de recebimento.",
+    "Evento commercial_request_saved separado de WhatsApp e cadastros de ferramentas.",
+    "Bytes públicos de produção preservados quando recuperáveis; configurações completas ainda pendentes."
   ],
   "previous_candidate": "digital-flagship-2026-rc14",
   "publication_state": "candidate_not_published",
@@ -111,5 +107,13 @@
     "Cinco páginas existentes aprimoradas; URLs e formulários preservados.",
     "Metadados, breadcrumbs visíveis e JSON-LD alinhados ao conteúdo.",
     "Auditoria GSC/GA4, mapa de palavras-chave e evidências mantidos fora da pasta publicada."
+  ],
+  "previous_release": "digital-flagship-2026-rc14.1",
+  "source_reconciled": false,
+  "source_reconciliation": "Known public files compared by HTTP; complete Netlify ZIP and private configuration inventory pending.",
+  "publication_gates": [
+    "isolated-supabase-api-and-team-access",
+    "full-production-zip-config-reconciliation",
+    "explicit-schema-and-production-deploy-approval"
   ]
 }

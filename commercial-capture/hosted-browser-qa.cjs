@@ -30,8 +30,16 @@ assert(!upstream.username&&!upstream.password&&!upstream.search&&!upstream.hash,
 assert.equal(target.health_path,'/api/commercial/health');
 const out=path.resolve(process.env.LR_HOSTED_QA_OUTPUT||'/tmp/lander-hosted-qa');
 fs.mkdirSync(out,{recursive:true});
+let networkProxy;
+if(process.env.LR_QA_USE_ENV_PROXY==='1') {
+  const proxy=new URL(process.env.HTTPS_PROXY||process.env.HTTP_PROXY||'');
+  assert(['http:','https:'].includes(proxy.protocol),'Environment proxy must use HTTP(S)');
+  networkProxy={server:proxy.origin};
+  if(proxy.username)networkProxy.username=decodeURIComponent(proxy.username);
+  if(proxy.password)networkProxy.password=decodeURIComponent(proxy.password);
+}
 const run='lr-hosted-'+randomUUID().slice(0,8);
-const results=[],expectedRows=[],blockedExternal=[];
+const results=[],expectedRows=[],submittedAttempts=[],blockedExternal=[];
 let browser,activePage,browserVersion,health=null;
 function persist(extra={}) {
   fs.writeFileSync(path.join(out,'hosted-browser-results.json'),JSON.stringify({
@@ -39,18 +47,19 @@ function persist(extra={}) {
     target:{qa_origin:QA_ORIGIN,netlify_site_id:QA_SITE,netlify_deploy_id:target.netlify_deploy_id,
       supabase_project_id:STAGING_PROJECT,upstream_capture_url:upstream.href,source_commit:target.source_commit,
       configuration_verified_at:target.configuration_verified_at},
-    browserVersion,nodeVersion:process.version,playwrightVersion:require('playwright/package.json').version,
-    health,results,expectedRows,blockedExternal,
+    browserVersion,nodeVersion:process.version,playwrightVersion:require('playwright/package.json').version,environmentProxyUsed:Boolean(networkProxy),
+    health,results,expectedRows,submittedAttempts,blockedExternal,
     authenticatedDatabaseVerification:'pending separate operator SQL; an HTTP receipt alone is not proof of storage',
     liveCrmMessagesAnalyticsValidated:false,...extra
   },null,2)+'\n');
-  if(expectedRows.length) {
-    const ids=expectedRows.map(row=>"'"+row.request_id+"'::uuid").join(',');
+  if(submittedAttempts.length) {
+    const ids=[...new Set(submittedAttempts.map(row=>row.request_id))].map(id=>"'"+id+"'::uuid").join(',');
     fs.writeFileSync(path.join(out,'operator-verification.sql'),
       '-- Run only in authenticated SQL for project '+STAGING_PROJECT+'. Synthetic request IDs only.\n'+
       'select request_id,receipt,profile,intent,origin,crm_status,created_at\n'+
       'from public.commercial_requests\nwhere request_id in ('+ids+')\norder by request_id;\n'+
-      '-- Expected: '+expectedRows.length+' rows, each UUID exactly once, crm_status=pending.\n');
+      '-- Confirmed receipts: '+expectedRows.length+'. Each stored UUID must appear once, crm_status=pending.\n'+
+      '-- Submitted IDs include uncertain replies so the operator can recover a request even after a browser/API failure.\n');
   }
 }
 async function runCase(name,fn) {
@@ -58,7 +67,7 @@ async function runCase(name,fn) {
   catch(error){results.push({case:name,frontendPass:false,error:error.message});persist();throw error;}
 }
 async function context(width=390) {
-  const instance=await browser.newContext({viewport:{width,height:900},isMobile:width<500,hasTouch:width<500});
+  const instance=await browser.newContext({viewport:{width,height:900},isMobile:width<500,hasTouch:width<500,...(networkProxy?{proxy:networkProxy}:{})});
   const external=[],errors=[],posts=[],violations=[];
   await instance.route('**/*',async route=>{
     const req=route.request(),url=new URL(req.url());
@@ -71,6 +80,8 @@ async function context(width=390) {
         assert.match(payload.email||'',new RegExp('^'+run+'-[a-z0-9-]+@example\\.test$'),'Only this run synthetic emails are allowed');
         assert.match(payload.request_id||'',/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
         posts.push(payload);
+        submittedAttempts.push({request_id:payload.request_id,email:payload.email,profile:payload.profile,intent:payload.intent,origin:payload.origin});
+        persist();
       } catch(error) {violations.push(error.message);return route.abort();}
     }
     return route.continue();

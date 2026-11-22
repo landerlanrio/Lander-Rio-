@@ -11,7 +11,10 @@ test('release manifest and ancestry identify the reviewed candidate',()=>{
  assert.equal(r.version,'commercial-capture-20261122');
  assert.equal(r.release,r.version);
  assert.equal(r.manifest,'manifest-commercial-capture-20261122.json');
- assert.equal(r.status,'local-candidate-not-deployed');
+ assert.equal(r.status,'validated-hosted-release-candidate');
+ assert.equal(r.source_reconciled,true);
+ assert.equal(r.source_archive_file_count,339);
+ assert.equal(r.source_archive_sha256,'1cdea807f158dd14f808f619648dd817c85794f9c4cd58a2b22ab96d93854574');
  assert.equal(r.production_deploy_at_audit,'6afe96a8a12db106eae1b9cd');
  assert.equal(r.source_base_commit,'79cb510247b594d22c46005e9d9d22afc126197b');
  const manifest=JSON.parse(fs.readFileSync(path.join(root,r.manifest)));

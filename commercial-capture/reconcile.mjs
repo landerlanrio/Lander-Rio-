@@ -15,7 +15,7 @@ export async function reconcileOne({store,crm}){
 export function createHubSpotCRM({token,fetchImpl=fetch}){
  if(!token)throw Error('crm_not_configured');
  return {async upsertContact({email,name}){
-  const r=await fetchImpl('https://api.hubapi.com/crm/v3/objects/contacts/batch/upsert',{method:'POST',headers:{Authorization:'Bearer '+token,'content-type':'application/json'},body:JSON.stringify({inputs:[{idProperty:'email',id:email,properties:{email,...(name?{firstname:name}:{})}}]}),signal:AbortSignal.timeout(8000)});
+  const r=await fetchImpl('https://api.hubapi.com/crm/v3/objects/contacts/batch/upsert',{method:'POST',headers:{Authorization:'Bearer '+token,'content-type':'application/json'},body:JSON.stringify({inputs:[{idProperty:'email',id:email,properties:{email}}]}),signal:AbortSignal.timeout(8000)});
   const data=await r.json();if(!r.ok||!data.results?.[0]?.id)throw Error('crm_unavailable');return {id:data.results[0].id};
  }};
 }

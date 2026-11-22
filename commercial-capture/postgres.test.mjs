@@ -1,11 +1,15 @@
 // Opt-in isolated PostgreSQL integration suite; never uses hosted credentials.
-import {test} from 'node:test';
+import {test,before,after} from 'node:test';
+import {readFileSync} from 'node:fs';
 import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
 import {normalize} from './core.mjs';
 const container=process.env.LR_CAPTURE_POSTGRES_CONTAINER;
-function sql(query){return new Promise((resolve,reject)=>{const c=spawn('docker',['exec','-i',container,'psql','-U','postgres','-qAt','-v','ON_ERROR_STOP=1']);let out='',err='';c.stdout.on('data',d=>out+=d);c.stderr.on('data',d=>err+=d);c.on('error',reject);c.on('close',code=>code?reject(Error(err)):resolve(out.trim()));c.stdin.end(query);});}
+const database='lr_capture_qa_'+randomUUID().replaceAll('-','');
+function sql(query,db=database){return new Promise((resolve,reject)=>{const c=spawn('docker',['exec','-i',container,'psql','-U','postgres','-d',db,'-qAt','-v','ON_ERROR_STOP=1']);let out='',err='';c.stdout.on('data',d=>out+=d);c.stderr.on('data',d=>err+=d);c.on('error',reject);c.on('close',code=>code?reject(Error(err)):resolve(out.trim()));c.stdin.end(query);});}
+before(async()=>{if(!container)return;await sql('create database '+database,'postgres');await sql(readFileSync(new URL('./schema-proposal.sql',import.meta.url),'utf8'));});
+after(async()=>{if(container)await sql('drop database if exists '+database,'postgres');});
 const value=()=>normalize({request_id:randomUUID(),profile:'atacado',intent:'envio',email:'pg-qa@example.test',name:'Ficticio',origin:{entry_path:'/',page_path:'/atacado/',utm_source:'instagram'},privacy_ack:true});
 const capture=d=>`set role service_role; select public.capture_commercial_request('${JSON.stringify(d)}'::jsonb);`;
 test('Postgres atomic capture handles concurrent retries, conflict, and role isolation',{skip:!container},async()=>{

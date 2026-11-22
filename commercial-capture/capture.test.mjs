@@ -33,7 +33,7 @@ test('unavailable or dishonest storage never confirms, or leaks errors',async()=
 });
 test('validation excludes personal fields from origin and rejects invalid requests',async()=>{
  const d=normalize(data({origin:{entry_path:'/person/john-smith/',page_path:'/varejo/?email=person@example.test',utm_source:'person@example.test',utm_medium:'social',utm_campaign:'my-personal-name',referrer:'https://secret.test?phone=5555555'}}));assert.deepEqual(d.origin,{entry_path:'/',page_path:'/',utm_medium:'social'});
- const f=fixture();try{const h=createCaptureHandler({store:f.store});for(const change of [{website:'spam'},{request_id:'bad'},{privacy_ack:false},{email:'bad'},{intent:'unknown'},{extra:'secret'}])assert.equal((await h(request(data(change)))).status,400);assert.equal(f.store.list().length,0);const r=await h(new Request('https://landerrio.com.br',{method:'POST',headers:{origin:'https://evil.test','content-type':'application/json'},body:JSON.stringify(data())}));assert.equal(r.status,403);}finally{f.done();}
+ const f=fixture();try{const h=createCaptureHandler({store:f.store});for(const change of [{website:'spam'},{request_id:'bad'},{privacy_ack:false},{email:'bad'},{email:'a@b@c.test'},{email:'a\u0000@b.test'},{intent:'unknown'},{extra:'secret'}])assert.equal((await h(request(data(change)))).status,400);assert.equal(f.store.list().length,0);const r=await h(new Request('https://landerrio.com.br',{method:'POST',headers:{origin:'https://evil.test','content-type':'application/json'},body:JSON.stringify(data())}));assert.equal(r.status,403);}finally{f.done();}
 });
 test('only one operator claims a pending request; failed CRM request can retry',async()=>{
  const f=fixture();try{await f.store.save(normalize(data()));const claims=await Promise.all([f.store.claim(),f.store.claim()]);assert.equal(claims.filter(Boolean).length,1);assert.equal(await f.store.finish(claims[0].request_id,'wrong-token','forged'),false);await f.store.release(claims[0].request_id,claims[0].claim_token);assert.ok(await f.store.claim());}finally{f.done();}
@@ -45,7 +45,7 @@ test('Supabase adapter uses RPC acknowledgment and does not expose secrets',asyn
 });
 test('HubSpot adapter upserts by stable email instead of creating duplicate contacts',async()=>{
  let sent;const crm=createHubSpotCRM({token:'synthetic-only',fetchImpl:async(url,opts)=>{sent={url,body:JSON.parse(opts.body)};return Response.json({results:[{id:'test-123'}]});}});
- assert.deepEqual(await crm.upsertContact({email:'qa@example.test',name:'QA'}),{id:'test-123'});assert.equal(sent.body.inputs[0].idProperty,'email');assert.equal(sent.body.inputs[0].id,'qa@example.test');assert.match(sent.url,/batch\/upsert$/);
+ assert.deepEqual(await crm.upsertContact({email:'qa@example.test',name:'QA'}),{id:'test-123'});assert.equal(sent.body.inputs[0].idProperty,'email');assert.equal(sent.body.inputs[0].id,'qa@example.test');assert.deepEqual(sent.body.inputs[0].properties,{email:'qa@example.test'});assert.match(sent.url,/batch\/upsert$/);
 });
 test('CRM timeout after its commit retries one contact and preserves immutable request context',async()=>{
  const f=fixture();try{

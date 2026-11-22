@@ -12,7 +12,7 @@ export function normalize(input){
  if(!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(input.request_id||''))throw new CaptureError('invalid_request_id');
  if(!profiles.has(input.profile)||!intents.has(input.intent))throw new CaptureError('invalid_intent');
  const email=String(input.email||'').trim().toLowerCase();
- if(email.length>254||!/^\S+@[^\s@]+\.[^\s@]+$/.test(email))throw new CaptureError('invalid_email');
+ if(email.length>254||(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||/[\x00-\x1f\x7f]/.test(email)))throw new CaptureError('invalid_email');
  const name=String(input.name||'').trim();
  if(name.length>80||/[\x00-\x1f<>]/.test(name))throw new CaptureError('invalid_name');
  if(input.privacy_ack!==true)throw new CaptureError('privacy_required');

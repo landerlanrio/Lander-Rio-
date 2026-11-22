@@ -5,14 +5,14 @@ export default async request=>{
  try{
   const edgeEndpoint=Netlify.env.get('COMMERCIAL_EDGE_ENDPOINT'),edgeKey=Netlify.env.get('COMMERCIAL_EDGE_ANON_KEY');
   if(edgeEndpoint||edgeKey){
-   if(Netlify.env.get('COMMERCIAL_SUPABASE_URL')||Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY'))throw Error('ambiguous_capture_configuration');
-   return await createEdgeBridge({endpoint:edgeEndpoint,key:edgeKey,origin:Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN')})(request);
+   if(Netlify.env.get('COMMERCIAL_SUPABASE_URL')||Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY')||Netlify.env.get('COMMERCIAL_DIRECT_FIXTURE'))throw Error('ambiguous_capture_configuration');
+   return await createEdgeBridge({endpoint:edgeEndpoint,key:edgeKey,origin:Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN'),environment:Netlify.env.get('COMMERCIAL_EDGE_ENVIRONMENT')})(request);
   }
-  const store=createSupabaseStore({url:Netlify.env.get('COMMERCIAL_SUPABASE_URL'),key:Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY')});
-  const origin=Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN');
-  let allowedOrigins;
-  if(origin){const parsed=new URL(origin);if(parsed.protocol!=='https:'||parsed.origin!==origin||parsed.username||parsed.password)throw Error('invalid_origin_configuration');allowedOrigins=[origin];}
-  return await createCaptureHandler({store,...(allowedOrigins?{allowedOrigins}:{})})(request);
+  // RPC mode exists only for the isolated local/CI compiled-function fixture.
+  const url=Netlify.env.get('COMMERCIAL_SUPABASE_URL'),origin=Netlify.env.get('COMMERCIAL_ALLOWED_ORIGIN');
+  if(Netlify.env.get('COMMERCIAL_DIRECT_FIXTURE')!=='true'||Netlify.env.get('COMMERCIAL_EDGE_ENVIRONMENT')||!['https://synthetic.supabase.co','https://localqa.supabase.co'].includes(url)||origin!=='https://isolated.example.test')throw Error('direct_fixture_only');
+  const store=createSupabaseStore({url,key:Netlify.env.get('COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY')});
+  return await createCaptureHandler({store,allowedOrigins:[origin]})(request);
  }catch{
   return Response.json({ok:false,error:'temporarily_unavailable'},{status:503,headers:{'cache-control':'no-store'}});
  }

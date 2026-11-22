@@ -22,7 +22,7 @@ test('bridge sanitizes gateway failures and preserves only reviewed conflict/rat
  }
 });
 test('health bridge confirms exact isolated database metadata without exposing key',async()=>{
- let hit;const health=createEdgeHealth({...config,fetchImpl:async(url,options)=>{hit={url,options};return Response.json({environment:'isolated-staging',supabase_project_id:'riplqdzgwlggvhbznovm',storage_ready:true,crm_sync_enabled:false,outbound_enabled:false,private_key:key});}});
+ let hit;const health=createEdgeHealth({...config,fetchImpl:async(url,options)=>{hit={url,options};return Response.json({environment:'isolated-staging',supabase_project_id:'riplqdzgwlggvhbznovm',storage_ready:true,crm_sync_enabled:false,outbound_enabled:false,version:'hml-20261122-1',private_key:key});}});
  const r=await health(new Request(STAGING_ALLOWED_ORIGIN+'/api/commercial/health'));assert.equal(r.status,200);assert.equal(hit.url,endpoint+'/health');assert.doesNotMatch(await r.text(),/synthetic-legacy|private_key/);
 });
 test('actual Netlify handler supports only one configured backend and never exports gateway JWT',async()=>{
@@ -33,4 +33,8 @@ test('actual Netlify handler supports only one configured backend and never expo
   const r=await h(req());assert.equal(r.status,201);assert.doesNotMatch(await r.text(),/synthetic-legacy/);
   env.COMMERCIAL_SUPABASE_URL=STAGING_PROJECT_URL;assert.equal((await h(req())).status,503);
  }finally{globalThis.Netlify=oldEnv;globalThis.fetch=oldFetch;}
+});
+
+test('health bridge rejects missing or stale runtime versions instead of claiming the expected release',async()=>{
+ for(const version of [undefined,'obsolete-release']){const h=createEdgeHealth({...config,fetchImpl:async()=>Response.json({environment:'isolated-staging',supabase_project_id:'riplqdzgwlggvhbznovm',storage_ready:true,crm_sync_enabled:false,outbound_enabled:false,version})});const r=await h(new Request(STAGING_ALLOWED_ORIGIN+'/api/commercial/health'));assert.equal(r.status,503);}
 });

@@ -8,7 +8,7 @@ import {normalize} from './core.mjs';
 const container=process.env.LR_CAPTURE_POSTGRES_CONTAINER;
 const database='lr_capture_qa_'+randomUUID().replaceAll('-','');
 function sql(query,db=database){return new Promise((resolve,reject)=>{const c=spawn('docker',['exec','-i',container,'psql','-U','postgres','-d',db,'-qAt','-v','ON_ERROR_STOP=1']);let out='',err='';c.stdout.on('data',d=>out+=d);c.stderr.on('data',d=>err+=d);c.on('error',reject);c.on('close',code=>code?reject(Error(err)):resolve(out.trim()));c.stdin.end(query);});}
-before(async()=>{if(!container)return;await sql('create database '+database,'postgres');await sql(readFileSync(new URL('./schema-proposal.sql',import.meta.url),'utf8'));await sql(readFileSync(new URL('./staging-rate-proposal.sql',import.meta.url),'utf8'));});
+before(async()=>{if(!container)return;await sql('create database '+database,'postgres');await sql(readFileSync(new URL('./schema-proposal.sql',import.meta.url),'utf8'));await sql(readFileSync(new URL('./staging-rate-proposal.sql',import.meta.url),'utf8'));await sql(readFileSync(new URL('./production-rate-proposal.sql',import.meta.url),'utf8'));});
 after(async()=>{if(container)await sql('drop database if exists '+database,'postgres');});
 const value=()=>normalize({request_id:randomUUID(),profile:'atacado',intent:'envio',email:'pg-qa@example.test',name:'Ficticio',origin:{entry_path:'/',page_path:'/atacado/',utm_source:'instagram'},privacy_ack:true});
 const capture=d=>`set role service_role; select public.capture_commercial_request('${JSON.stringify(d)}'::jsonb);`;
@@ -40,4 +40,14 @@ test('Postgres staging rate limiter is durable, atomic and unavailable to anonym
  await sql('truncate public.commercial_staging_rate_limits');
  const allowed=await sql("set role service_role; select count(*) filter(where (public.allow_commercial_staging_request(md5(s::text)||md5('synthetic-'||s::text))->>'allowed')::boolean) from generate_series(1,125) s;");assert.equal(allowed,'120');
  assert.equal(await sql('select count(*) from public.commercial_staging_rate_limits'),'121');
+});
+
+test('Postgres production secondary rate policy uses its own table and leaves requests intact',{skip:!container},async()=>{
+ const second=new Date().getUTCSeconds();if(second>55)await new Promise(r=>setTimeout(r,(61-second)*1000));
+ const beforeCount=await sql('select count(*) from public.commercial_requests');
+ const result=await sql("set role service_role; select count(*) filter(where (public.allow_commercial_capture_request(repeat('b',64))->>'allowed')::boolean) from generate_series(1,40);");assert.equal(result,'30');
+ await sql('truncate public.commercial_capture_rate_limits');
+ const global=await sql("set role service_role; select count(*) filter(where (public.allow_commercial_capture_request(md5(s::text)||md5('synthetic-'||s::text))->>'allowed')::boolean) from generate_series(1,125) s;");assert.equal(global,'120');
+ assert.equal(await sql('select count(*) from public.commercial_requests'),beforeCount);
+ await assert.rejects(()=>sql("set role anon; select public.allow_commercial_capture_request(repeat('b',64));"),/permission denied/);
 });

@@ -12,7 +12,7 @@ test('packaged Netlify function -> authenticated HTTP RPC -> one durable Postgre
  const key=unsigned+'.'+createHmac('sha256','lr-qa-only-jwt-secret-at-least-32-characters').update(unsigned).digest('base64url');
  const originalFetch=globalThis.fetch,oldNetlify=globalThis.Netlify;
  try{
-  globalThis.Netlify={env:{get:k=>({COMMERCIAL_SUPABASE_URL:'https://localqa.supabase.co',COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY:key,COMMERCIAL_ALLOWED_ORIGIN:'https://isolated.example.test'})[k]}};
+  globalThis.Netlify={env:{get:k=>({COMMERCIAL_DIRECT_FIXTURE:'true',COMMERCIAL_SUPABASE_URL:'https://localqa.supabase.co',COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY:key,COMMERCIAL_ALLOWED_ORIGIN:'https://isolated.example.test'})[k]}};
   globalThis.fetch=(target,opts)=>{assert.ok(target.startsWith('https://localqa.supabase.co/rest/v1/rpc/'));return originalFetch(target.replace('https://localqa.supabase.co/rest/v1',url),opts);};
   const {default:handler}=await import(pathToFileURL(bundle).href);
   const id=randomUUID(),data={request_id:id,profile:'atacado',intent:'envio',email:'packaged-qa@example.test',origin:{entry_path:'/',page_path:'/atacado/',utm_source:'instagram'},privacy_ack:true};

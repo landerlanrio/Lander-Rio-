@@ -15,7 +15,7 @@ if(rpcURL||bundle){
  const enc=x=>Buffer.from(JSON.stringify(x)).toString('base64url');
  const unsigned=enc({alg:'HS256',typ:'JWT'})+'.'+enc({role:'service_role',exp:Math.floor(Date.now()/1000)+3600});
  const token=unsigned+'.'+createHmac('sha256','lr-qa-only-jwt-secret-at-least-32-characters').update(unsigned).digest('base64url');
- globalThis.Netlify={env:{get:key=>({COMMERCIAL_SUPABASE_URL:'https://localqa.supabase.co',COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY:token,COMMERCIAL_ALLOWED_ORIGIN:'https://isolated.example.test'})[key]}};
+ globalThis.Netlify={env:{get:key=>({COMMERCIAL_DIRECT_FIXTURE:'true',COMMERCIAL_SUPABASE_URL:'https://localqa.supabase.co',COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY:token,COMMERCIAL_ALLOWED_ORIGIN:'https://isolated.example.test'})[key]}};
  globalThis.fetch=(target,options)=>{if(typeof target!=='string'||!target.startsWith('https://localqa.supabase.co/rest/v1/rpc/'))throw Error('QA hosted traffic disabled');if(mode==='database_down')throw Error('QA injected RPC transport unavailable');return baseFetch(target.replace('https://localqa.supabase.co/rest/v1',rpcURL),options);};
  const compiled=(await import(pathToFileURL(resolve(bundle)).href)).default;
  handler=request=>{const headers=new Headers(request.headers);headers.set('origin','https://isolated.example.test');return compiled(new Request('https://isolated.example.test/api/commercial/lead',{method:request.method,headers,body:request.body,duplex:'half'}));};

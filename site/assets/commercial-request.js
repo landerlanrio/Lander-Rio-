@@ -11,6 +11,7 @@ function origin(){let previous={};try{previous=JSON.parse(sessionStorage.getItem
  try{sessionStorage.setItem(key,JSON.stringify(value))}catch{}return value;
 }
 const attribution=origin();
+const receiptFormat = /^LR-[A-F0-9]{32}$/;
 for(const form of document.querySelectorAll('[data-commercial-request]')){
  const fields=form.querySelector('fieldset'),button=form.querySelector('button[type=submit]'),status=form.querySelector('[role=status]');let pending=false,complete=false,payload=null;
  const storageKey='lr_commercial_request_id_'+form.dataset.profile;let id;try{id=sessionStorage.getItem(storageKey)}catch{}if(!/^[0-9a-f-]{36}$/i.test(id||''))id=crypto.randomUUID();try{sessionStorage.setItem(storageKey,id)}catch{}
@@ -19,11 +20,23 @@ for(const form of document.querySelectorAll('[data-commercial-request]')){
  pending=true;fields.disabled=true;button.disabled=true;form.setAttribute('aria-busy','true');status.textContent='Salvando sua solicitação… Aguarde o protocolo.';
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),12000);
  try{const response=await fetch('/api/commercial/lead',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify(payload),signal:controller.signal});let result;try{result=await response.json()}catch{throw new Error('unconfirmed')}
- if(!response.ok||result.ok!==true||result.saved!==true||!/^LR-[A-Z0-9-]{8,64}$/.test(result.receipt||'')){
+ if(!response.ok||result.ok!==true||result.saved!==true||!receiptFormat.test(result.receipt||'')){
  if(response.status===400){payload=null;fields.disabled=false;status.textContent='Confira os campos e a confirmação de privacidade antes de enviar.';}else if(response.status===409){payload=null;fields.disabled=false;status.textContent='Os dados diferem do envio anterior desta aba. Repita os dados originais para recuperar o protocolo ou fale com a equipe. Nenhum novo registro foi criado.';button.textContent='Conferir dados e tentar novamente';}else throw new Error('unconfirmed');
- }else{complete=true;status.textContent='Solicitação recebida e salva. Protocolo '+result.receipt+'. A equipe poderá localizar seu interesse e responder pelo e-mail informado.';button.textContent='Solicitação recebida';try{sessionStorage.removeItem(storageKey)}catch{}window.LanderMeasurement?.push('commercial_request_saved',{profile:payload.profile,backend_confirmed:true});}
+ }else{complete=true;status.textContent='Solicitação recebida e salva. Protocolo '+result.receipt+'. A equipe poderá localizar seu interesse e responder pelo e-mail informado.';button.textContent='Solicitação recebida';try{sessionStorage.removeItem(storageKey)}catch{}}
  }catch{status.textContent='Ainda não foi possível confirmar o recebimento. Tente novamente: repetiremos a mesma solicitação para evitar duplicidade. Seus dados permanecem nesta tela.';button.textContent='Tentar novamente';}
  finally{clearTimeout(timer);pending=false;button.disabled=complete;form.setAttribute('aria-busy','false');}
+ if (complete) {
+   // The receipt is already committed and displayed. Telemetry is best effort.
+   try {
+     window.LanderMeasurement?.push('commercial_request_saved', {
+       profile: payload.profile,
+       backend_confirmed: true
+     });
+   } catch {}
+ }
  });
+ // Expose the form only after JSON submission has a handler.
+ form.hidden = false;
+ form.closest('.commercial-request').querySelector('[data-request-fallback]').hidden = true;
 }
 })();

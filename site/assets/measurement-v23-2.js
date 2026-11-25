@@ -1,6 +1,7 @@
 window.LR_PUBLIC_ANALYTICS_TOKEN='phc_w67bCNxbz4BhPM23ZKmkHQbxzCYL5kiqTUTbhX2Eq3Du';
 /* Minimal, consent-based event transport. No autocapture, session replay or advertising. */
 (()=>{'use strict';
+const productionHost='landerrio.com.br';
 const KEY='lr_measurement_consent_v20',SID='lr_measurement_session_v20',ATTR='lr_attribution_v20';
 const allowed=new Set(['site_visit','cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','commercial_request_saved','guide_share','rox_opened','rox_response','web_vital','hero_view','wholesale_selected','retail_selected','brand_interaction']);
 const pages={'/':'home','/atacado/':'wholesale','/varejo/':'retail','/contato/':'contact','/business-desk/':'business','/entregas/':'delivery','/perguntas-frequentes/':'faq','/sobre/':'about'};
@@ -35,7 +36,10 @@ function push(event,p={}){if(!hasConsent()||sensitive||!allowed.has(event))retur
  if(event==='web_vital'){data.metric=p.metric;data.value=Math.round(p.value*1000)/1000;data.rating=p.rating;data.device=window.innerWidth<=600?'mobile':window.innerWidth<=1024?'tablet':'desktop';}
  if(!toolPage&&event!=='web_vital')data.contact_reference=getContactReference();if(page==='guide')data.guide=guideId;const payload={api_key:window.LR_PUBLIC_ANALYTICS_TOKEN,event,properties:{distinct_id:identity(),...data,$process_person_profile:false,$geoip_disable:true,$ip:null}};
  events.push({event,...data});if(events.length>100)events.shift();window.dispatchEvent(new CustomEvent('lander:measurement',{detail:{event,...data}}));
- if(location.hostname==='landerrio.com.br'&&payload.api_key){try{fetch('https://us.i.posthog.com/i/v0/e/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'omit',referrerPolicy:'no-referrer',keepalive:true}).catch(()=>{});}catch{}}
+ if(location.hostname===productionHost&&payload.api_key){
+  payload.properties.$host=productionHost;
+  try{fetch('https://us.i.posthog.com/i/v0/e/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'omit',referrerPolicy:'no-referrer',keepalive:true}).catch(()=>{});}catch{}
+ }
  return true;}
 function getContactReference(){if(!hasConsent()||sensitive||toolPage)return null;return 'LR-'+identity().replace(/[^a-z0-9]/gi,'').slice(0,12).toUpperCase();}
 function visit(){if(!visited&&hasConsent()&&!sensitive){visited=true;push('site_visit')}}

@@ -21,6 +21,6 @@ for path in sorted(SITE.rglob('*')):
  if original.returncode==0 and original.stdout==current and rel not in PRESERVED_BRANCH_FIXES:continue
  files[rel]=digest(current)
  if original.returncode==0:replaces[rel]=digest(original.stdout)
-value={'version':'commercial-capture-20261122','base_manifest':'manifest-v23-10.json','source_base_commit':BASE_REF,'upstream_deploy':'6afe96a8a12db106eae1b9cd','scope':'Isolated review candidate; production bytes recovered by HTTP where available; not published. Full original Netlify ZIP/config inventory remains a release gate.','preserved_branch_fixes':sorted(PRESERVED_BRANCH_FIXES),'files':files,'replaces_sha256':replaces}
+value={'version':'commercial-capture-20261122','base_manifest':'manifest-v23-10.json','source_base_commit':BASE_REF,'upstream_deploy':'6afe96a8a12db106eae1b9cd','scope':'Static overlay against the recovered source. The official upstream ZIP is identified in release.json. Determine deployment state from the hosting provider.','preserved_branch_fixes':sorted(PRESERVED_BRANCH_FIXES),'files':files,'replaces_sha256':replaces}
 (SITE/TARGET).write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'manifest':TARGET,'pinned_files':len(files),'replaced_files':len(replaces),'published':False}))

@@ -50,8 +50,8 @@ function assertRow(row, profile, intent) {
   assert.equal(row.origin.utm_source,'instagram'); assert.equal(row.origin.utm_medium,'social'); assert.equal(row.origin.utm_campaign,'lr-261122');
   assert.match(row.receipt,/^LR-[A-Z0-9-]{8,64}$/);
 }
-async function context(width=390) {
-  const instance=await browser.newContext({viewport:{width,height:900},isMobile:width<500,hasTouch:width<500});
+async function context(width=390, javaScriptEnabled=true) {
+  const instance=await browser.newContext({viewport:{width,height:900},isMobile:width<500,hasTouch:width<500,javaScriptEnabled});
   const external=[];
   await instance.route('**/*', route=>{
     const destination=new URL(route.request().url());
@@ -119,6 +119,55 @@ async function verifyNoLeaks(state) {assert.deepEqual(state.external,[]); assert
       return {width,profile,http:response.status(),count:rows.length,row:sanitizeRow(rows[0]),status,spacing,externalRequests:0,pageErrors:0};
     });
   }
+  for (const profile of ['varejo', 'atacado']) {
+    await runCase('no-javascript-contact-' + profile, async () => {
+      const state = await context(390, false);
+      const {page, instance} = state;
+      await page.goto(host + '/' + profile + '/');
+      assert.equal(await page.locator('[data-commercial-request]').isVisible(), false);
+      const link = page.locator('[data-request-fallback] a');
+      assert.equal(await link.isVisible(), true);
+      assert.equal(await link.getAttribute('href'), await page.locator('a[data-wa][data-placement=hero]').getAttribute('href'));
+      await verifyNoLeaks(state);
+      await instance.close();
+      return {profile, nativeFormVisible:false, officialContactAvailable:true};
+    });
+  }
+  await runCase('receipt-survives-measurement-failure', async () => {
+    await mode('normal');
+    const state = await prepare(390, 'varejo', 'measurement-failure');
+    const {page, form, email, instance} = state;
+    await page.evaluate(() => {
+      window.LanderMeasurement.push = () => { throw Error('Synthetic telemetry failure'); };
+    });
+    const response = await submit(page, form);
+    assert.equal(response.status(), 201);
+    await success(form);
+    const rows = await rowsFor(email);
+    assert.equal(rows.length, 1);
+    assert((await form.locator('[role=status]').innerText()).includes(rows[0].receipt));
+    assert.equal(await form.locator('button[type=submit]').isDisabled(), true);
+    await verifyNoLeaks(state);
+    await instance.close();
+    return {http:201, durableRows:1, receiptVisible:true};
+  });
+  await runCase('unconfirmed-receipt-can-retry', async () => {
+    await mode('normal');
+    const state = await prepare(390, 'atacado', 'malformed-receipt');
+    const {page, form, email, instance} = state;
+    const endpoint = host + '/api/commercial/lead';
+    await page.route(endpoint, route => route.fulfill({status:201, json:{ok:true, saved:true, receipt:'LR-INVALID-ID'}}), {times:1});
+    await submit(page, form);
+    await uncertain(form);
+    assert.equal((await rowsFor(email)).length, 0);
+    assert.equal(await form.locator('button[type=submit]').isEnabled(), true);
+    await submit(page, form);
+    await success(form);
+    assert.equal((await rowsFor(email)).length, 1);
+    await verifyNoLeaks(state);
+    await instance.close();
+    return {firstConfirmed:false, retrySaved:true};
+  });
   await runCase('double-click-before-persistence',async()=>{
     await mode('delay'); const state=await prepare(390,'varejo','double'); const {page,form,email,instance}=state;
     let posts=0; page.on('request',request=>{if(request.url()===host+'/api/commercial/lead') posts++;});

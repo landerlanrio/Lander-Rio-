@@ -38,6 +38,13 @@ def page(route, title, description, body, index_page=False):
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)} | Enciclopédia LANDER RIO</title><meta name="description" content="{esc(description)}">
 <link rel="canonical" href="https://landerrio.com.br{route}"><meta name="robots" content="noindex,follow">
+<meta property="og:type" content="{'website' if index_page else 'article'}"><meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="{esc(title)} | Enciclopédia LANDER RIO"><meta property="og:description" content="{esc(description)}">
+<meta property="og:url" content="https://landerrio.com.br{route}">
+<meta property="og:site_name" content="LANDER RIO">
+<meta property="og:image" content="https://landerrio.com.br/assets/og-lander-v21.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LANDER RIO — Performance Culture"><meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/reference-fonts-rc6.css"><link rel="stylesheet" href="/enciclopedia/assets/guias-editoriais.css">{script}</head>
 <body class="guide-book"><a class="book-skip" href="#leitura">Pular para o conteúdo</a>
 <header class="book-header"><div><a class="book-brand" href="/">LANDER<span>.</span>RIO</a><nav aria-label="Navegação da Enciclopédia">{crumbs}</nav></div></header>

@@ -25,6 +25,17 @@ class Universe(unittest.TestCase):
                     ids={b.get('id') for _,b in Doc(target.read_text()).tags}
                     if unquote(u.fragment) not in ids: errors.append((str(p.relative_to(S)),a['href']))
         self.assertEqual(errors,[])
+    def test_radar_is_reachable_from_the_editorial_hub_and_its_generator(self):
+        from build_editorial import hub
+        pages = {'rendered': (S/'conteudos/index.html').read_text(), 'generated': hub()}
+        for name, source in pages.items():
+            with self.subTest(source=name):
+                science = re.search(r'<section[^>]*id="ciencia"[^>]*>(.*?)</section>', source, re.S)
+                self.assertIsNotNone(science)
+                links = re.findall(r'<a href="/radar-performance/">(.*?)</a>', science[1], re.S)
+                self.assertEqual(len(links), 1)
+                self.assertIn('Radar Performance', re.sub(r'<[^>]+>', '', links[0]))
+
     def test_indexable_sitemap_matches_robots_and_canonical(self):
         ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
         urls=[e.text for e in ET.parse(S/'sitemap.xml').findall('.//s:loc',ns)]

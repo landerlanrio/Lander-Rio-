@@ -5,7 +5,7 @@
   "site_id": "1632727b-a57d-4edb-85f7-9fc99bc98842",
   "base_package": "LANDER_RIO_RC10_SITE_DEPLOY.zip",
   "required_workout_endpoint_version": "1.1.0-contact-only-20261106",
-  "release_note": "Candidata local: Hero para Varejo/Revendedores, solicitação com protocolo após gravação durável e fila recuperável. Sem publicação ou alteração de serviços.",
+  "release_note": "Hero com acesso a Varejo e Revendedores. A solicitação gera protocolo após a gravação durável e permanece disponível para recuperação.",
   "integrated_module": "enciclopedia-bodybuilding-v1-2026-11-09",
   "status": "validated-hosted-release-candidate",
   "manifest": "manifest-commercial-capture-20261122.json",
@@ -98,10 +98,10 @@
     "Chave de idempotência preservada para clique duplo e repetição após timeout.",
     "Origem e intenção recuperáveis; CRM fora da transação de recebimento.",
     "Evento commercial_request_saved separado de WhatsApp e cadastros de ferramentas.",
-    "Bytes públicos de produção preservados quando recuperáveis; configurações completas ainda pendentes."
+    "Os 339 caminhos da baseline oficial foram conciliados com o ZIP do deploy identificado em production_deploy_at_audit."
   ],
   "previous_candidate": "digital-flagship-2026-rc14",
-  "publication_state": "candidate_not_published",
+  "publication_state": "environment_specific",
   "rc13_changes": [
     "Dois modelos CSV públicos sem cadastro e sem coleta de dados.",
     "Cinco páginas existentes aprimoradas; URLs e formulários preservados.",
@@ -117,5 +117,7 @@
     "post-publication-receipt-and-analytics-verification"
   ],
   "source_archive_sha256": "1cdea807f158dd14f808f619648dd817c85794f9c4cd58a2b22ab96d93854574",
-  "source_archive_file_count": 339
+  "source_archive_file_count": 339,
+  "publication_evidence": "O mesmo artefato pode ser usado em testes e em produção. Consulte o deploy ativo do domínio no Netlify para verificar publicação e origem.",
+  "validation_scope": "O status de homologação hospedada refere-se à versão comercial preparada em 22/11/2026. A revisão de auditoria de 24/11/2026 tem validação local e exige nova homologação antes da publicação."
 }

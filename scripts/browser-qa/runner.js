@@ -16,11 +16,23 @@ function layout(path,width){const broken=[...doc.images].filter(i=>i.complete&&!
 async function axe(path){const script=doc.createElement('script');script.src='/__qa/axe.min.js';const ready=new Promise(r=>script.onload=r);doc.head.append(script);await ready;const result=await win.axe.run(doc,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});const violations=result.violations.map(v=>({id:v.id,impact:v.impact,help:v.help,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))}));axeResults.push({path,violations,incomplete:result.incomplete.length});check('Acessibilidade automática '+path,!violations.some(v=>['serious','critical'].includes(v.impact)),violations.map(v=>v.id+':'+v.impact).join(', ')||'Nenhuma violação detectada')}
 function click(s){const el=$(s);if(!el)throw Error('Missing '+s);el.click()}
 function fill(s,value){const el=$(s);el.value=value;el.dispatchEvent(new win.Event('input',{bubbles:true}));el.dispatchEvent(new win.Event('change',{bubbles:true}))}
+async function registrationRetry(label, submit, back, email, message){
+ win.__qa.apiMode='pending';
+ click(submit);
+ check(label+': controles bloqueados durante confirmação',$(submit).disabled&&$(back).disabled&&$(email).disabled);
+ win.__qa.finishPending();
+ await until(()=>!$(submit).disabled);
+ check(label+': rejeição orienta revisar contato e permite edição',
+   /Revise/.test($(message).textContent)&&!$(back).disabled&&!$(email).disabled&&$(email).value==='qa@example.invalid');
+ // The confirmed receipt must work even when optional tracking is unavailable.
+ win.LanderAccess.confirmed=()=>{throw Error('Simulated telemetry failure')};
+}
 async function training(){
  await load('/treino/');for(let i=0;i<3;i++)click('#next-btn');click('#submit-btn');await pause(80);
  check('Treino: prévia antes de qualquer envio',!$('#lead-gate').hidden&&$('#training-preview-exercises').children.length===3&&win.__qa.requests.length===0);
  click('#gate-unlock');check('Treino: campos inválidos não enviam',win.__qa.requests.length===0&&!$('#lead-feedback').hidden);
  fill('#training-lead-name','Teste de qualidade');fill('#training-lead-whatsapp','21999999999');fill('#training-lead-email','qa@example.invalid');$('[name=consent_access]').checked=true;
+ await registrationRetry('Treino','#gate-unlock','#gate-back','#training-lead-email','#lead-feedback');
  for(const mode of ['failure','invalid','success']){win.__qa.apiMode=mode;click('#gate-unlock');await until(()=>!$('#gate-unlock').disabled);check('Treino: '+mode,mode==='success'?$('#lead-gate').hidden:!$('#lead-gate').hidden&&$('#training-lead-email').value==='qa@example.invalid')}
  const body=JSON.parse(win.__qa.requests.at(-1).body);check('Treino: envio mínimo e marketing opcional',body.consent_marketing===false&&!['peso','altura','objetivo','profile','plan'].some(k=>k in body),Object.keys(body).join(', '));check('Treino: sem erros JS',win.__qa.errors.length===0,win.__qa.errors.join(';'));await axe('/treino/ resultado');
 }
@@ -29,6 +41,7 @@ async function nutrition(){
  check('Dieta: prévia antes de qualquer envio',!$('[data-view=gate]').hidden&&$('#nutrition-preview-foods').children.length>0&&win.__qa.requests.length===0);
  click('#leadForm button[type=submit]');check('Dieta: campos inválidos não enviam',win.__qa.requests.length===0);
  fill('#field-name','Teste de qualidade');fill('#field-whatsapp','21999999999');fill('#field-email','qa@example.invalid');$('#leadForm [name=consent_access]').checked=true;
+ await registrationRetry('Dieta','#leadForm button[type=submit]','#gateBackBtn','#field-email','#gateError');
  for(const mode of ['failure','invalid','success']){win.__qa.apiMode=mode;click('#leadForm button[type=submit]');await until(()=>!$('#leadForm button[type=submit]').disabled);check('Dieta: '+mode,mode==='success'?!$('[data-view=results]').hidden:!$('[data-view=gate]').hidden&&$('#field-email').value==='qa@example.invalid')}
  const body=JSON.parse(win.__qa.requests.at(-1).body);check('Dieta: envio mínimo e marketing opcional',body.consent_marketing===false&&!['weight','height','profile','plan','calories'].some(k=>k in body),Object.keys(body).join(', '));check('Dieta: sem erros JS',win.__qa.errors.length===0,win.__qa.errors.join(';'));await axe('/dieta/ resultado');
 }

@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 
-function page(search, consent = 'granted', pathname = '/') {
+function page(search, consent = 'granted', pathname = '/', referrer = '') {
   const memory = (initial = {}) => {
     const values = new Map(Object.entries(initial));
     return {
@@ -27,12 +27,13 @@ function page(search, consent = 'granted', pathname = '/') {
     }
   };
   const document = {
+    referrer,
     body: { dataset: {} }, head: { appendChild() {} },
     createElement: () => ({}), querySelector: () => null, addEventListener() {}
   };
   const context = vm.createContext({
     window, document, location: { hostname: 'landerrio.com.br', pathname, search },
-    URLSearchParams, crypto: { randomUUID: () => 'local-qa' },
+    URL, URLSearchParams, crypto: { randomUUID: () => 'local-qa' },
     CustomEvent: class { constructor(type, options) { this.type = type; this.detail = options.detail; } },
     fetch: async () => ({ ok: true })
   });
@@ -86,5 +87,30 @@ test('opt-out and excluded pages keep Google Analytics off', () => {
                     page('?utm_source=ig&utm_medium=social', 'granted', '/enciclopedia/')]) {
     assert.equal(p.calls('config').length, 0);
     assert.equal(p.calls('event').length, 0);
+  }
+});
+
+test('search referrals expose only the approved origin after consent', () => {
+  const raw = 'https://www.google.com.br/search?q=private-term#private-fragment';
+  const accepted = page('', 'granted', '/', raw);
+  for (const entry of [accepted.calls('config')[0], accepted.calls('event', 'page_view')[0]]) {
+    assert.equal(entry[2].page_referrer, 'https://www.google.com.br/');
+  }
+  assert.doesNotMatch(JSON.stringify(accepted.window.dataLayer), /private-term|private-fragment|search\?/);
+  const denied = page('', 'denied', '/', raw);
+  assert.equal(denied.calls('event').length, 0);
+  assert.equal(denied.calls('config').length, 0);
+  assert.equal(page('', 'granted', '/marcas/', raw).calls('config').length, 0);
+});
+
+test('campaign signals, unapproved and internal referrers stay private', () => {
+  const raw = 'https://www.google.com/';
+  for (const query of ['?utm_source=ig&utm_medium=social','?utm_medium=social','?gclid=private','?wbraid=private','?gbraid=private','?gad_source=1','?dclid=private','?fbclid=private','?msclkid=private']) {
+    assert.equal(page(query, 'granted', '/', raw).calls('config')[0][2].page_referrer, '');
+  }
+  for (const url of ['', 'not-a-url', 'https://www.google.com.example.org/', 'https://example.org/?src=google.com',
+                     'https://landerrio.com.br/', 'http://www.google.com/', 'https://www.google.com:8443/',
+                     'https://docs.google.com/', 'https://pass@www.google.com/']) {
+    assert.equal(page('', 'granted', '/', url).calls('config')[0][2].page_referrer, '');
   }
 });

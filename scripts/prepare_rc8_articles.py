@@ -19,7 +19,7 @@ No Universo de Marcas, “documentado” significa que indicamos a publicação 
 
 ## 3. Leia o endereço antes de confiar no código
 
-Um QR code encaminha para um endereço. Observe o domínio completo, confirme a relação dele com a identidade pesquisada e leia o que a página realmente declara. Não digite dados pessoais em uma página desconhecida apenas porque ela foi aberta a partir de uma embalagem.
+Quando um QR code abrir um site, observe o domínio completo, confirme a relação dele com a identidade pesquisada e leia o que a página realmente declara. Não digite dados pessoais em uma página desconhecida apenas porque ela foi aberta a partir de uma embalagem.
 
 Se houver um procedimento de autenticidade publicado pela marca, consulte suas instruções no canal correspondente. O resultado dessa consulta deve ser interpretado dentro de seu escopo: não é uma avaliação clínica e não substitui a situação regulatória do produto.
 

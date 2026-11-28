@@ -31,12 +31,18 @@ jobs:
         run: python3 scripts/release_gate.py css
       - name: Check sitemap and JSON format
         run: python3 scripts/release_gate.py metadata
+      - name: Audit tracked repository files for credentials
+        run: |
+          python3 -m unittest -v scripts.test_public_repository_audit
+          python3 scripts/audit_public_repository.py
       - name: Check credentials and exposed secrets
         run: python3 scripts/release_gate.py security
       - name: Check release metadata and full site integrity
         run: python3 scripts/verify_site.py
       - name: JavaScript syntax
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
+      - name: Verify workout registration recovery
+        run: node scripts/test_workout_registration_retry.mjs
       - name: TITAN Flagship structural and semantic regression tests
         run: python3 scripts/test_flagship.py
       - name: Binary, manifest tampering and complete-site metadata regression

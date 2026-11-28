@@ -51,3 +51,43 @@ test('Postgres production secondary rate policy uses its own table and leaves re
  assert.equal(await sql('select count(*) from public.commercial_requests'),beforeCount);
  await assert.rejects(()=>sql("set role anon; select public.allow_commercial_capture_request(repeat('b',64));"),/permission denied/);
 });
+
+test('existing capture queue migration preserves grants, receipts and replay semantics', {skip:!container}, async () => {
+ const schema = readFileSync(new URL('./schema-proposal.sql', import.meta.url), 'utf8');
+ const repair = readFileSync(new URL('./capture-concurrency-repair.sql', import.meta.url), 'utf8');
+ const isolated = 'lr_capture_upgrade_' + randomUUID().replaceAll('-', '');
+ const query = statement => sql(statement, isolated);
+ const functionDefinition = "select pg_get_functiondef('public.capture_commercial_request(jsonb)'::regprocedure);";
+ const metadata = "select oid,proowner,proacl from pg_proc where oid='public.capture_commercial_request(jsonb)'::regprocedure;";
+ const records = 'select to_jsonb(r) from public.commercial_requests r order by request_id;';
+ await sql('create database ' + isolated, 'postgres');
+ try {
+  await assert.rejects(() => query(repair), /commercial capture schema is not installed/);
+  await query(schema);
+  const canonical = await query(functionDefinition);
+  assert.match(canonical, /on conflict do nothing/);
+  // Recreate the previously installed RPC, where only the primary key was an arbiter.
+  await query(canonical.replace('on conflict do nothing', 'on conflict(request_id) do nothing'));
+  const pending = value(), synced = value();
+  const saved = JSON.parse(await query(capture(pending)));
+  await query(capture(synced));
+  await query(`update public.commercial_requests set crm_status='synced', crm_contact_id='qa-existing' where request_id='${synced.request_id}';`);
+  const rowsBefore = await query(records), metadataBefore = await query(metadata);
+  await query(repair);
+  await query(repair);
+  assert.equal(await query(functionDefinition), canonical);
+  assert.equal(await query(records), rowsBefore);
+  assert.equal(await query(metadata), metadataBefore);
+  const replay = JSON.parse(await query(capture(pending)));
+  assert.equal(replay.duplicate, true);
+  assert.equal(replay.receipt, saved.receipt);
+  await assert.rejects(() => query(capture({...pending, fingerprint:'0'.repeat(64)})), /idempotency_conflict/);
+  const next = value();
+  const results = await Promise.all(Array.from({length:8}, () => query(capture(next)).then(JSON.parse)));
+  assert.equal(results.filter(result => !result.duplicate).length, 1);
+  assert.equal(new Set(results.map(result => result.receipt)).size, 1);
+  assert.equal(await query(`select count(*) from public.commercial_requests where request_id='${next.request_id}';`), '1');
+ } finally {
+  await sql('drop database ' + isolated, 'postgres');
+ }
+});

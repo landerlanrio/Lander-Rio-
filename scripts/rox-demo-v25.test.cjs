@@ -16,12 +16,20 @@ function env(){
  const root=new E('root'),launcher=new E('launcher'),panel=new E('panel'),close=new E('close'),log=new E('log'),form=new E('form'),input=new E('input'),quick=new E('quick'),handoff=new E('handoff'),submit=new E('submit');
  root.map={'[data-rox-launcher]':launcher,'[data-rox-dialog]':panel,'[data-rox-close]':close,'[data-rox-log]':log,'[data-rox-form]':form,'[data-rox-input]':input,'[data-rox-quick]':quick,'[data-rox-handoff]':handoff};form.map={'button[type="submit"]':submit};
  quick.children=[new E('button'),new E('button')];
- const doc={activeElement:launcher,createElement:n=>new E(n),querySelector:n=>n==='[data-rox-root]'?root:null};
+ const pageOpener=new E('pageOpener');
+ const doc={activeElement:launcher,createElement:n=>new E(n),querySelectorAll:s=>s==='[data-rox-open]'?[pageOpener]:[],querySelector:n=>n==='[data-rox-root]'?root:null};
  let requests=0;const win={};vm.runInNewContext(code,{document:doc,window:win,encodeURIComponent,fetch(){requests++;throw Error('unexpected fetch')}},{timeout:500});
- return {root,launcher,panel,close,log,form,input,quick,handoff,submit,win,requestCount:()=>requests};
+ return {root,launcher,pageOpener,panel,close,log,form,input,quick,handoff,submit,win,requestCount:()=>requests};
 }
 test('ROX is explicitly offline',()=>{let v=env();assert.equal(v.win.LanderRoxDemo.isDemo,true);assert.equal(v.requestCount(),0)});
 test('intents route reliably for major journeys',()=>{const c=env().win.LanderRoxDemo.classify;for(const [q,a] of [['Oi','hello'],['como montar treino','training'],['minha dieta','diet'],['Sou revendedor','wholesale'],['atendimento varejo','retail'],['quero parceria','partners'],['quero falar com equipe','human'],['Preço do pedido','commerce'],['dose 15mg testosterona','medical'],['pesquisa de fisiologia','science']])assert.equal(c(q),a,q)});
+test('page and widget triggers announce the same dialog state',()=>{
+ const x=env();
+ x.launcher.fire('click');
+ assert.equal(x.pageOpener.attrs['aria-expanded'],'true');
+ x.close.fire('click');
+ assert.equal(x.pageOpener.attrs['aria-expanded'],'false');
+});
 test('opening and escape restore focus',()=>{const x=env();x.launcher.fire('click');assert.equal(x.panel.hidden,false);assert.equal(x.launcher.attrs['aria-expanded'],'true');x.root.fire('keydown',{key:'Escape'});assert.equal(x.panel.hidden,true);assert.equal(x.launcher.attrs['aria-expanded'],'false')});
 test('text input is safe plain text, not HTML',()=>{const x=env();x.launcher.fire('click');x.input.value='<img src=x onerror=alert(1)>';x.form.fire('submit');assert.equal(x.log.children[0].textContent,'<img src=x onerror=alert(1)>');assert.equal(x.log.children[0].innerHTML,undefined)});
 test('commercial handoff requires explicit visitor click',()=>{const x=env();x.launcher.fire('click');assert.equal(x.handoff.hidden,true);x.input.value='Sou revendedor';x.form.fire('submit');assert.equal(x.handoff.hidden,false);assert.match(x.handoff.href,/^https:\/\/wa\.me\/5521920043538\?text=/);assert.equal(x.handoff.dataset.profile,'atacado');assert.equal(x.requestCount(),0)});

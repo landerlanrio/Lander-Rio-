@@ -143,13 +143,13 @@ async function postPrimaryLead(payload){
   const timer=setTimeout(()=>ctrl.abort(),12000);
   try{
     const res=await fetch(CONFIG.LEAD_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:ctrl.signal,keepalive:true});
+    if(res.status===400) return false;
     if(!res.ok) throw new Error(`lead endpoint ${res.status}`);
     const result=await res.json();
     if(result.ok!==true || typeof result.id!=='string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(result.id)) throw new Error('lead not confirmed');
     return true;
   }finally{ clearTimeout(timer); }
 }
-async function deliverLead(payload){ await postPrimaryLead(payload); return 'primary'; }
 async function submitLead(e){
   e.preventDefault();
   const form=e.currentTarget, fd=new FormData(form);
@@ -185,18 +185,31 @@ async function submitLead(e){
     ...utm
   };
 
-  submit.disabled=true; submit.textContent='Confirmando cadastro…';
+  const back = $('#gateBackBtn');
+  const contactInputs = Array.from(form.querySelectorAll('input:not([type=hidden]):enabled'));
+  contactInputs.forEach(input => { input.disabled = true; });
+  form.setAttribute('aria-busy','true');
+  back.disabled = submit.disabled = true;
+  submit.textContent='Confirmando cadastro…';
   try {
-    await deliverLead(payload);
+    const confirmed = await postPrimaryLead(payload);
+    if (!confirmed) {
+      gateError('Revise os dados de contato antes de tentar novamente. Seus dados continuam preenchidos.');
+      return;
+    }
     state.lead={access:true,contact_consent:consentMarketing,created_at:payload.created_at};
     save('lead',state.lead);
-    window.LanderAccess?.confirmed('nutrition',true);
+    // A confirmed registration remains valid if optional measurement fails.
+    try { window.LanderAccess?.confirmed('nutrition', true); } catch {}
     renderResults();
   } catch {
     error.textContent='Não foi possível confirmar o cadastro. Seus dados continuam preenchidos. Verifique a conexão e tente novamente.';
     error.hidden=false;
   } finally {
-    submit.disabled=false; submit.textContent='Liberar meu plano';
+    contactInputs.forEach(input => { input.disabled = false; });
+    form.removeAttribute('aria-busy');
+    back.disabled = submit.disabled = false;
+    submit.textContent='Liberar meu plano';
   }
 }
 

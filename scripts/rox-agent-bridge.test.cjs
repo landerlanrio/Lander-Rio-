@@ -31,7 +31,7 @@ function env(loadAgent=true){
  const log=new E('log'),form=new E('form'),input=new E('input'),quick=new E('quick'),handoff=new E('handoff'),submit=new E('submit');
  root.map={'[data-rox-launcher]':launcher,'[data-rox-dialog]':panel,'[data-rox-close]':closer,'[data-rox-log]':log,'[data-rox-form]':form,'[data-rox-input]':input,'[data-rox-quick]':quick,'[data-rox-handoff]':handoff};
  form.map={'button[type="submit"]':submit};quick.children=[new E('button')];
- const doc={activeElement:launcher,createElement:n=>new E(n),querySelector:n=>n==='[data-rox-root]'?root:null};
+ const doc={activeElement:launcher,createElement:n=>new E(n),querySelectorAll:()=>[],querySelector:n=>n==='[data-rox-root]'?root:null};
  const window={};let outbound=0;
  if(loadAgent)vm.runInNewContext(browser,{window},{timeout:2000});
  vm.runInNewContext(widget,{window,document:doc,encodeURIComponent,fetch(){outbound++;throw Error('Unexpected network request')}},{timeout:2000});

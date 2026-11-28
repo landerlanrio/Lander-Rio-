@@ -133,6 +133,49 @@ async function verifyNoLeaks(state) {assert.deepEqual(state.external,[]); assert
       return {profile, nativeFormVisible:false, officialContactAvailable:true};
     });
   }
+  await runCase('unusable-session-data-can-start-a-request', async () => {
+    await mode('normal');
+    const state = await context(390);
+    const {page, instance} = state;
+    await page.addInitScript(() => {
+      sessionStorage.setItem('lr_commercial_origin_v1', 'null');
+      sessionStorage.setItem('lr_commercial_request_id_atacado', '0'.repeat(36));
+    });
+    await page.goto(host + '/atacado/');
+    const form = page.locator('[data-commercial-request]');
+    const email = run + '-old-session@example.test';
+    await fill(form, {name:'', email, intent:'orcamento'});
+    assert.equal((await submit(page, form)).status(), 201);
+    await success(form);
+    const rows = await rowsFor(email);
+    assert.equal(rows.length, 1);
+    assert.equal(rows[0].origin.entry_path, '/atacado/');
+    await verifyNoLeaks(state);
+    await instance.close();
+    return {http:201, durableRows:1};
+  });
+  await runCase('correct-rejected-fields-without-restarting', async () => {
+    await mode('normal');
+    const state = await prepare(390, 'varejo', 'field-corrections');
+    const {page, form, instance, email} = state;
+    for (const [field, rejected, accepted] of [['email', 'teste@local', email], ['name', 'Teste <Local>', 'Teste Local']]) {
+      const control = form.locator('[name=' + field + ']');
+      await control.fill(rejected);
+      assert.equal((await submit(page, form)).status(), 400);
+      await page.waitForFunction(name => document.activeElement.name === name, field);
+      assert.equal(await control.getAttribute('aria-invalid'), 'true');
+      assert.match(await form.locator('[role=status]').innerText(), field === 'email' ? /e-mail/ : /nome/);
+      assert.equal((await rowsFor(email)).length, 0);
+      await control.fill(accepted);
+      assert.equal(await control.getAttribute('aria-invalid'), null);
+    }
+    assert.equal((await submit(page, form)).status(), 201);
+    await success(form);
+    assert.equal((await rowsFor(email)).length, 1);
+    await verifyNoLeaks(state);
+    await instance.close();
+    return {fieldsCorrected:2, durableRows:1};
+  });
   await runCase('receipt-survives-measurement-failure', async () => {
     await mode('normal');
     const state = await prepare(390, 'varejo', 'measurement-failure');

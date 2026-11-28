@@ -9,7 +9,7 @@ VERSION='digital-flagship-2026-rc8'; DATE='2026-11-13'
 DATA=json.loads((R/'content/brands.json').read_text()); BRANDS=DATA['brands']
 base.VERSION=VERSION
 def slug(s):return re.sub('[^a-z0-9]+','-',unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower()).strip('-')
-def schema(path,title,kind='WebPage',extra=None):
+def schema(path,title,kind='WebPage',extra=None,modified=DATE):
     crumbs=[{'@type':'ListItem','position':1,'name':'Início','item':ORIGIN+'/'}]
     if path.startswith('/marcas/'):
         crumbs.append({'@type':'ListItem','position':2,'name':'Universo de Marcas','item':ORIGIN+'/marcas/'})
@@ -17,7 +17,7 @@ def schema(path,title,kind='WebPage',extra=None):
     elif path.startswith('/conteudos/'):
         crumbs.append({'@type':'ListItem','position':2,'name':'Conhecimento','item':ORIGIN+'/conteudos/'})
         if path!='/conteudos/':crumbs.append({'@type':'ListItem','position':3,'name':title,'item':ORIGIN+path})
-    graph=[{'@type':kind,'@id':ORIGIN+path+'#page','url':ORIGIN+path,'name':title,'inLanguage':'pt-BR','dateModified':DATE,'publisher':{'@type':'Organization','name':'LANDER RIO','url':ORIGIN+'/'}},{'@type':'BreadcrumbList','itemListElement':crumbs}]
+    graph=[{'@type':kind,'@id':ORIGIN+path+'#page','url':ORIGIN+path,'name':title,'inLanguage':'pt-BR','dateModified':modified,'publisher':{'@type':'Organization','name':'LANDER RIO','url':ORIGIN+'/'}},{'@type':'BreadcrumbList','itemListElement':crumbs}]
     if extra:graph.append(extra)
     return '<script type="application/ld+json">'+json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False).replace('</','<\\/')+'</script>'
 def head(title,description,path,indexable=True):
@@ -26,25 +26,34 @@ def head(title,description,path,indexable=True):
     return h.replace('Todas as marcas','Universo de Marcas')
 def related(items):
     return '<section class="ba-related" aria-labelledby="related-title"><p class="ba-eyebrow">CONTINUE A EXPLORAÇÃO</p><h2 id="related-title">Conhecimento conectado.</h2><div class="ba-related-grid">'+''.join(f'<a href="{e(x["path"])}"><span>LEITURA EDITORIAL</span><strong>{e(x["title"])}</strong><span aria-hidden="true">↗</span></a>' for x in items)+'</div></section>'
-def policy():
-    return '<p class="ba-credit">Redação LANDER RIO · Perfil editorial independente · <time datetime="2026-11-13">Atualizado em 13 nov 2026</time></p>'
+def policy(reviewed_on=DATE):
+    return f'<p class="ba-credit">Redação LANDER RIO · Perfil editorial independente · <time datetime="{reviewed_on}">Atualizado em {base.review_date(reviewed_on, short=True)}</time></p>'
+def source_link(brand, item):
+    if 'source' not in item:
+        return ''
+    source = brand['sources'][item['source'] - 1]
+    ending = '' if source['label'].endswith('.') else '.'
+    return f' <a href="{e(source["url"])}">{e(source["label"])}</a>{ending}'
+
+
 def profile(b,i,items):
+    reviewed_on = b.get('verified_on', DATE)
     old=base.make_profile(b,i,items)
     oldhead=base.head(f'{b["name"]}: marca e produtos | LANDER RIO',f'Conheça {b["name"]}: apresentação da marca, linhas e referências de produtos documentados no arquivo editorial da LANDER RIO.',f'/marcas/{b["slug"]}/')
     h=old.replace(oldhead,head(b['seo']['title'],b['seo']['description'],f'/marcas/{b["slug"]}/',b['indexable']))
     h=h.replace('ARQUIVO DE MARCAS','UNIVERSO DE MARCAS').replace('Uma seleção do catálogo publicado.','Nomes atribuídos ao catálogo consultado.')
     h=h.replace('<p class="ba-focus">',f'<p class="ba-lede">{e(b["summary"])}</p><p class="ba-focus">',1)
-    h=h.replace('</figure></section>','</figure></section>'+policy()+'<nav class="ba-jump" aria-label="Nesta página"><a href="#about-title">Sobre</a><a href="#produtos">Linhas e produtos</a><a href="#conhecimento">Entenda</a><a href="#perguntas">Dúvidas</a><a href="#sources-title">Fontes</a></nav>',1)
+    h=h.replace('</figure></section>','</figure></section>'+policy(reviewed_on)+'<nav class="ba-jump" aria-label="Nesta página"><a href="#about-title">Sobre</a><a href="#produtos">Linhas e produtos</a><a href="#conhecimento">Entenda</a><a href="#perguntas">Dúvidas</a><a href="#sources-title">Fontes</a></nav>',1)
     for group in dict.fromkeys(p['group'] for p in b['products']):
         h=h.replace(f'<div class="ba-product-group"><h3>{e(group)}</h3>',f'<div class="ba-product-group" id="linha-{slug(group)}"><h3>{e(group)}</h3>')
     block='<section id="conhecimento" class="ba-knowledge"><p class="ba-eyebrow">03 / CONTEXTO</p><h2>Conhecer antes de concluir.</h2>'
-    for k in b['knowledge']:block+=f'<article><h3>{e(k["title"])}</h3><p>{e(k["text"])}</p></article>'
+    for k in b['knowledge']:block+=f'<article><h3>{e(k["title"])}</h3><p>{e(k["text"])}{source_link(b, k)}</p></article>'
     block+='</section><section id="perguntas" class="ba-faq"><p class="ba-eyebrow">04 / PERGUNTAS FREQUENTES</p><h2>Dúvidas sobre '+e(b['name'])+'.</h2>'
-    for f in b['faqs']:block+=f'<details><summary>{e(f["question"])}</summary><p>{e(f["answer"])}</p></details>'
+    for f in b['faqs']:block+=f'<details><summary>{e(f["question"])}</summary><p>{e(f["answer"])}{source_link(b, f)}</p></details>'
     block+='</section>'+related(b['related'])
     h=h.replace('<section class="ba-sources"',block+'<section class="ba-sources"',1)
     h=h.replace('Consulta editorial:','Fontes de catálogo atribuídas; isso não equivale a auditoria clínica, regulatória ou de lotes. Consulta editorial:')
-    h=h.replace('</head>',schema(f'/marcas/{b["slug"]}/',b['name'])+'</head>')
+    h=h.replace('</head>',schema(f'/marcas/{b["slug"]}/',b['name'],modified=reviewed_on)+'</head>')
     return base.vectors(h)
 def directory():
     h=head('Universo de Marcas: linhas e informações | LANDER RIO','Explore 14 marcas, suas identidades e linhas documentadas. Perfis independentes, fontes, perguntas frequentes e conhecimento sobre performance.','/marcas/')

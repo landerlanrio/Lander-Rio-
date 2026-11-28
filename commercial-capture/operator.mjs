@@ -1,8 +1,24 @@
 import { createSupabaseStore } from './supabase-store.mjs';
-import { createHubSpotCRM,reconcileOne } from './reconcile.mjs';
-// Not a daemon. Requires specific production approval before execution with real credentials.
-if(process.argv[2]!=='reconcile-one'||process.argv[3]!=='--apply')throw Error('Use reconcile-one --apply only after approval. For lookup, use the authenticated Supabase SQL Editor.');
-if(process.env.COMMERCIAL_CRM_SYNC_ENABLED!=='true')throw Error('CRM sync is disabled');
-const store=createSupabaseStore({url:process.env.COMMERCIAL_SUPABASE_URL,key:process.env.COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY});
-const crm=createHubSpotCRM({token:process.env.HUBSPOT_PRIVATE_APP_TOKEN});
-const result=await reconcileOne({store,crm});console.log(JSON.stringify(result));
+import { createHubSpotCRM } from './reconcile.mjs';
+import { createAssignmentReader, reconcileAndCheckAssignment } from './contact-assignment.mjs';
+
+const [command, argument, ...extra] = process.argv.slice(2);
+const apply = command === 'reconcile-one' && argument === '--apply';
+const verify = command === 'verify-assignment' && /^LR-[A-F0-9]{32}$/.test(argument || '');
+if ((!apply && !verify) || extra.length) {
+  throw Error('Use reconcile-one --apply after approval, or verify-assignment LR-<receipt>.');
+}
+if (apply && process.env.COMMERCIAL_CRM_SYNC_ENABLED !== 'true') throw Error('CRM sync is disabled');
+
+const supabaseUrl = process.env.COMMERCIAL_SUPABASE_URL;
+const supabaseKey = process.env.COMMERCIAL_SUPABASE_SERVICE_ROLE_KEY;
+const hubspotToken = process.env.HUBSPOT_PRIVATE_APP_TOKEN;
+const readAssignment = createAssignmentReader({ supabaseUrl, supabaseKey, hubspotToken });
+if (verify) {
+  console.log(JSON.stringify({ assignment_status: await readAssignment(argument) }));
+} else {
+  const store = createSupabaseStore({ url: supabaseUrl, key: supabaseKey });
+  const crm = createHubSpotCRM({ token: hubspotToken });
+  const result = await reconcileAndCheckAssignment({ store, crm, readAssignment });
+  console.log(JSON.stringify(result));
+}

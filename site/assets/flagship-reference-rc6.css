@@ -305,3 +305,7 @@
 .lfx-page #universo [role="tab"]{color:#52604d}
 
 .lfx-page #universo [role="tab"][aria-selected="true"]{color:#efeee6}
+
+.lfx-page .search-status {
+  margin: 12px 0;
+}

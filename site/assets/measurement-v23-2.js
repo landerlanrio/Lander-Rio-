@@ -6,7 +6,7 @@ const KEY='lr_measurement_consent_v20',SID='lr_measurement_session_v20',ATTR='lr
 const allowed=new Set(['site_visit','cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','commercial_request_saved','guide_share','rox_opened','rox_response','web_vital','hero_view','wholesale_selected','retail_selected','brand_interaction']);
 const pages={'/':'home','/atacado/':'wholesale','/varejo/':'retail','/contato/':'contact','/business-desk/':'business','/entregas/':'delivery','/perguntas-frequentes/':'faq','/sobre/':'about'};
 Object.assign(pages,{'/ferramentas/':'tools','/treino/':'training','/dieta/':'nutrition','/conteudos/':'content'});
-const path=location.pathname,guideId=document.body.dataset.guide;const page=pages[path]||(/^seo-[0-9]{2}$/.test(guideId||'')?'guide':null),sensitive=!page,toolPage=['training','nutrition'].includes(page);let milestones=new Set();let consent=null,session=null,visited=false,events=[],preferenceTrigger=null;
+const path=location.pathname,guideId=document.body.dataset.guide;const page=pages[path]||(/^seo-[0-9]{2}$/.test(guideId||'')?'guide':null),sensitive=!page,toolPage=['training','nutrition'].includes(page);let milestones=new Set(),utilityRegistrationRecorded=false;let consent=null,session=null,visited=false,events=[],preferenceTrigger=null;
 const get=(store,k)=>{try{return window[store].getItem(k)}catch{return null}};const set=(store,k,v)=>{try{window[store].setItem(k,v)}catch{}};const remove=(store,k)=>{try{window[store].removeItem(k)}catch{}};
 const validConsent=value=>['granted','denied'].includes(value)?value:null;
 consent=validConsent(get('localStorage',KEY));
@@ -28,6 +28,7 @@ function attribution(){
 }
 function push(event,p={}){if(!hasConsent()||sensitive||!allowed.has(event))return false;
  if(event==='commercial_request_saved'&&p.backend_confirmed!==true)return false;
+ if(event==='utility_registration_confirmed'&&(!toolPage||p.backend_confirmed!==true||utilityRegistrationRecorded))return false;
  if(event==='web_vital'&&(!['LCP','CLS','INP'].includes(p.metric)||!Number.isFinite(p.value)||p.value<0||p.value>600000||!['good','needs-improvement','poor'].includes(p.rating)))return false;
  const data={page,release:'digital-flagship-2026-rc14.2',...attribution()};if(['geral','atacado','varejo','suporte'].includes(p.profile))data.profile=p.profile;
  if(['hero','header','profile-card','optional-context','closing','mobile-sticky','fallback','content','rox','brand-directory'].includes(p.placement))data.placement=p.placement;
@@ -35,6 +36,8 @@ function push(event,p={}){if(!hasConsent()||sensitive||!allowed.has(event))retur
  if(['offline','unknown','handoff','privacy','clinical'].includes(p.mode))data.rox_mode=p.mode;
  if(event==='web_vital'){data.metric=p.metric;data.value=Math.round(p.value*1000)/1000;data.rating=p.rating;data.device=window.innerWidth<=600?'mobile':window.innerWidth<=1024?'tablet':'desktop';}
  if(!toolPage&&event!=='web_vital')data.contact_reference=getContactReference();if(page==='guide')data.guide=guideId;const payload={api_key:window.LR_PUBLIC_ANALYTICS_TOKEN,event,properties:{distinct_id:identity(),...data,$process_person_profile:false,$geoip_disable:true,$ip:null}};
+ // Keep a document-local boolean only; revocation clears stored data but must not replay this receipt.
+ if(event==='utility_registration_confirmed')utilityRegistrationRecorded=true;
  events.push({event,...data});if(events.length>100)events.shift();window.dispatchEvent(new CustomEvent('lander:measurement',{detail:{event,...data}}));
  if(location.hostname===productionHost&&payload.api_key){
   payload.properties.$host=productionHost;
@@ -50,9 +53,9 @@ function show(){if(document.querySelector('#lr-privacy'))return;const box=docume
  const footer=document.querySelector('footer');(footer||document.body).insertAdjacentElement(footer?'beforebegin':'beforeend',box);box.addEventListener('click',e=>{const b=e.target.closest('[data-choice]');if(b)choose(b.dataset.choice)});}
 window.LanderMeasurement={push,getContactReference,getAttribution:()=>({...attribution()}),getSnapshot:()=>events.map(e=>({...e})),getConsent:()=>consent,isEnabled:()=>hasConsent()&&!sensitive,showPreferences:show};
 document.addEventListener('click',e=>{const a=e.target.closest('[data-privacy-open]');if(a){e.preventDefault();preferenceTrigger=a;show();document.querySelector('#lr-privacy button').focus({preventScroll:true});}});
-function milestone(event){if(!toolPage||milestones.has(event))return;if(push(event))milestones.add(event);}
+function milestone(event,proof={}){if(!toolPage||milestones.has(event))return;if(push(event,proof))milestones.add(event);}
 window.addEventListener('lander:utility-started',()=>milestone('utility_started'));
 window.addEventListener('lander:utility-result',()=>milestone('utility_result_displayed'));
-window.addEventListener('lander:registration-confirmed',event=>{if(event.detail?.backend_confirmed===true)milestone('utility_registration_confirmed')});
+window.addEventListener('lander:registration-confirmed',event=>{if(event.detail?.backend_confirmed===true)milestone('utility_registration_confirmed',{backend_confirmed:true})});
 if(!consent&&!sensitive)show();visit();
 })();

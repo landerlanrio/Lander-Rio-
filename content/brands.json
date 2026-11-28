@@ -779,19 +779,34 @@
         {
           "label": "Indufar · apresentações de T.G.",
           "url": "https://indufar.com.py/TG",
-          "checked": "2026-11-13"
+          "checked": "2026-11-26"
+        },
+        {
+          "label": "Indufar · identificação de Solufin no vademécum",
+          "url": "https://www.indufar.com.py/vademecum/productos/detalles/400002465",
+          "checked": "2026-11-26"
+        },
+        {
+          "label": "Indufar · orientação sobre o AuthNow para o vial de T.G.",
+          "url": "https://www.indufar.com.py/blog/62",
+          "checked": "2026-11-26"
+        },
+        {
+          "label": "Indufar · contato oficial do laboratório",
+          "url": "https://www.indufar.com.py/contacto",
+          "checked": "2026-11-26"
         },
         {
           "label": "Indufar · publicações institucionais",
           "url": "https://www.indufar.com.py/blog",
-          "checked": "2026-11-13"
+          "checked": "2026-11-26"
         }
       ],
       "review_status": "catalog_attributed",
       "indexable": true,
       "seo": {
-        "title": "Indufar: marca, linhas e informações | LANDER RIO",
-        "description": "Indufar CISA e os comunicados institucionais sobre suas apresentações. Fontes, dúvidas e contexto editorial independente da LANDER RIO.",
+        "title": "Indufar: consulta de lote e canais oficiais | LANDER RIO",
+        "description": "Onde consultar a Indufar sobre um lote e como o fabricante orienta a verificar o vial de T.G. pelo AuthNow. Veja as fontes oficiais e o contato do laboratório.",
         "keyword": "indufar"
       },
       "related": [
@@ -806,8 +821,9 @@
       ],
       "faqs": [
         {
-          "question": "O que significa Indufar CISA neste perfil?",
-          "answer": "É a identificação usada pelo laboratório paraguaio em seus canais institucionais, que são as fontes deste perfil."
+          "question": "Como consultar a Indufar sobre um lote?",
+          "answer": "Tenha em mãos o nome do produto, a apresentação e o número do lote impresso na embalagem. Encaminhe a dúvida ao laboratório pelo formulário de contato. Um mesmo lote pode reunir várias unidades.",
+          "source": 4
         },
         {
           "question": "Quais referências da Indufar foram documentadas?",
@@ -815,20 +831,30 @@
         },
         {
           "question": "Onde consultar mudanças de apresentação?",
-          "answer": "O perfil aponta a página institucional de T.G. e a área de publicações da Indufar. Deve-se conferir a data e a identificação exata do comunicado."
+          "answer": "O perfil aponta a página institucional de T.G. e a área de publicações da Indufar. Deve-se conferir a data e a identificação exata do comunicado.",
+          "source": 5
         }
       ],
       "knowledge": [
         {
           "title": "Um comunicado também é uma fonte",
           "text": "Além de catálogos, fabricantes publicam avisos sobre identificação e apresentações. Para T.G. e Solufin, o perfil aponta as publicações da Indufar; essas referências não autenticam uma unidade específica."
+        },
+        {
+          "title": "Como conferir o frasco de T.G.",
+          "text": "Para o frasco (vial) de T.G. Tirzepatida, a Indufar orienta a abrir o AuthNow e escanear o QR da etiqueta do próprio frasco. Compare o número de série exibido no aplicativo com o da etiqueta. A câmera comum apenas abre um endereço. Se aparecer «Código Fraudulento», o laboratório orienta a não utilizar o produto, não abrir links nem inserir dados pessoais. Preserve o frasco e a caixa e procure o contato oficial da Indufar.",
+          "source": 3
         }
       ],
       "category": "laboratorios",
       "commercial_authorization": "not_verified",
       "regulatory_review": "pending_no_offers",
-      "verified_on": "2026-11-13",
-      "summary": "Indufar CISA e os comunicados institucionais sobre suas apresentações."
+      "verified_on": "2026-11-26",
+      "summary": "Indufar CISA e os comunicados institucionais sobre suas apresentações.",
+      "hero_cta": {
+        "label": "Consultar referências",
+        "href": "#sources-title"
+      }
     },
     {
       "slug": "life-peptideos",

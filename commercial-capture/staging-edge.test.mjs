@@ -3,11 +3,25 @@ import assert from 'node:assert/strict';
 import {randomUUID} from 'node:crypto';
 import {createStagingCaptureHandler,STAGING_PROJECT_URL,STAGING_ALLOWED_ORIGIN,STAGING_CAPTURE_VERSION} from './staging-edge.mjs';
 const data=changes=>({request_id:randomUUID(),profile:'varejo',intent:'envio',email:'edge-qa@example.test',origin:{entry_path:'/',page_path:'/varejo/'},privacy_ack:true,...changes});
-const env={get:key=>({SUPABASE_URL:STAGING_PROJECT_URL,SUPABASE_SERVICE_ROLE_KEY:'synthetic-staging-only-key'})[key]};
+const fixtureKey = randomUUID();
+const env = {get: key => ({SUPABASE_URL: STAGING_PROJECT_URL, SUPABASE_SERVICE_ROLE_KEY: fixtureKey})[key]};
 const req=(body=data(),origin=STAGING_ALLOWED_ORIGIN)=>new Request(STAGING_PROJECT_URL+'/functions/v1/commercial-capture-hml',{method:'POST',headers:{origin,'content-type':'application/json','x-forwarded-for':'192.0.2.123'},body:JSON.stringify(body)});
 test('staging edge saves only through guarded project and durable rate RPC, without exposing IP or credentials',async()=>{
  const calls=[];const h=createStagingCaptureHandler({env,fetchImpl:async(url,options)=>{calls.push({url,body:JSON.parse(options.body)});return Response.json(url.endsWith('/allow_commercial_staging_request')?{allowed:true}:{saved:true,receipt:'LR-'+randomUUID().replaceAll('-','').toUpperCase(),duplicate:false,crm_status:'pending'});}});
- const r=await h(req());assert.equal(r.status,201);assert.match(r.headers.get('x-robots-tag'),/noindex/);assert.equal(r.headers.get('cache-control'),'no-store');assert.equal(r.headers.get('x-lander-capture-version'),STAGING_CAPTURE_VERSION);assert.equal(calls.length,2);assert.match(calls[0].body.p_key,/^[a-f0-9]{64}$/);assert.doesNotMatch(JSON.stringify(calls),/192\.0\.2\.123|synthetic-staging-only-key/);assert.equal(calls[1].body.p_record.origin.page_path,'/varejo/');assert.doesNotMatch(await r.text(),/key|192\.0\.2/);
+ const response = await h(req());
+ assert.equal(response.status, 201);
+ assert.match(response.headers.get('x-robots-tag'), /noindex/);
+ assert.equal(response.headers.get('cache-control'), 'no-store');
+ assert.equal(response.headers.get('x-lander-capture-version'), STAGING_CAPTURE_VERSION);
+ assert.equal(calls.length, 2);
+ assert.match(calls[0].body.p_key, /^[a-f0-9]{64}$/);
+ const requestLog = JSON.stringify(calls);
+ assert.doesNotMatch(requestLog, /192\.0\.2\.123/);
+ assert.ok(!requestLog.includes(fixtureKey));
+ assert.equal(calls[1].body.p_record.origin.page_path, '/varejo/');
+ const responseText = await response.text();
+ assert.doesNotMatch(responseText, /key|192\.0\.2/);
+ assert.ok(!responseText.includes(fixtureKey));
 });
 test('staging guard rejects wrong project, origin, non-synthetic data or honeypot before any database call',async()=>{
  let hits=0;const fetchImpl=async()=>{hits++;throw Error('must not call');};

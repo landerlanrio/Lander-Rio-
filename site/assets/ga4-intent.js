@@ -3,12 +3,28 @@
  if(window.LanderGA4)return;
  const config=window.LanderGA4Config||{}, id='G-C3HWDYKEJK';
  let initialized=false,granted=false,pageSent=false;const seen=new WeakSet();
+ let searchReferrer='';
  const names=new Set(['cta_interaction','profile_selected','whatsapp_open_click','utility_started','utility_result_displayed','utility_registration_confirmed','commercial_request_saved','guide_share','rox_opened','hero_view','wholesale_selected','retail_selected']);
  const pages=new Set(['home','wholesale','retail','contact','business','delivery','faq','about','tools','training','nutrition','content','guide']);
  const values={profile:['geral','atacado','varejo','suporte'],placement:['hero','header','profile-card','optional-context','closing','mobile-sticky','fallback','content','rox','brand-directory'],action:['whatsapp','choose-profile','subject_changed','tool-training','tool-nutrition','tools-nav','tools-hero','download-diario-de-treino-csv','download-lista-de-compras-semanal-csv']};
  function permitted(){return config.enabled===true&&config.enhancedMeasurementReviewed===true&&location.hostname==='landerrio.com.br'&&window.LanderMeasurement?.isEnabled()===true;}
  function tag(){window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};window.gtag.apply(window,arguments);}
  function cleanLocation(){return 'https://landerrio.com.br'+location.pathname;}
+ // Keep free-form referrers, search terms and ad identifiers out of analytics.
+ const searchOrigins=new Set(['https://google.com','https://www.google.com','https://google.com.br','https://www.google.com.br']);
+ const clickIds=new Set(['gclid','gbraid','wbraid','dclid','gad_source','gad_campaignid','fbclid','msclkid']);
+ function approvedSearchOrigin(){
+  if(!document.referrer)return '';
+  for(const key of new URLSearchParams(location.search).keys()){
+   const name=key.toLowerCase();
+   if(name.startsWith('utm_')||clickIds.has(name))return '';
+  }
+  try{
+   const referrer=new URL(document.referrer);
+   if(!referrer.username&&!referrer.password&&searchOrigins.has(referrer.origin))return referrer.origin+'/';
+  }catch{}
+  return '';
+ }
  function landingCampaign(){
   // Use the existing measurement allowlist. Only explicit source/medium pairs can override GA4.
   const query=new URLSearchParams(location.search);
@@ -28,7 +44,8 @@
    initialized=true;window['ga-disable-'+id]=false;
    tag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
    tag('js',new Date());
-   tag('config',id,{...landingCampaign(),send_page_view:false,allow_google_signals:false,allow_ad_personalization_signals:false,page_location:cleanLocation(),page_referrer:'',page_title:'LANDER RIO'});
+   searchReferrer=approvedSearchOrigin();
+   tag('config',id,{...landingCampaign(),send_page_view:false,allow_google_signals:false,allow_ad_personalization_signals:false,page_location:cleanLocation(),page_referrer:searchReferrer,page_title:'LANDER RIO'});
    const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id='+id;script.referrerPolicy='no-referrer';document.head.appendChild(script);
   }
   if(!granted){window['ga-disable-'+id]=false;tag('consent','update',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});granted=true;}
@@ -40,7 +57,7 @@
   let event=data.event;if(event==='site_visit'){if(pageSent)return false;pageSent=true;event='page_view';}
   // This upstream event requires backend_confirmed=true in measurement-v23-2.js.
   if(event==='utility_registration_confirmed')event='generate_lead';
-  const params={send_to:id,page_location:cleanLocation(),page_referrer:'',page_title:'LANDER RIO',page_type:data.page,measurement_version:'intent-0.3.0'};
+  const params={send_to:id,page_location:cleanLocation(),page_referrer:searchReferrer,page_title:'LANDER RIO',page_type:data.page,measurement_version:'intent-0.3.1'};
   for(const [key,options]of Object.entries(values))if(options.includes(data[key]))params[key]=data[key];
   if(event==='generate_lead')params.lead_type='utility_registration';
   if(config.debug===true)params.debug_mode=true;

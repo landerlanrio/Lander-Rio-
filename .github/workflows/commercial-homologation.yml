@@ -59,6 +59,7 @@ jobs:
           python3 -m unittest discover -s scripts -p 'test_build_rc14_review.py' -v
           find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
           node --experimental-strip-types --test scripts/*.test.cjs scripts/test_seo_metadata.cjs prototypes/rox-ai-v2/*.test.mjs prototypes/rox-ai-v2/preview-private/server.test.mjs revenue-intelligence/test-*.cjs
+          node scripts/test_workout_registration_retry.mjs site
           python3 scripts/smoke_http.py
       - name: Start loopback PostgreSQL, PostgREST and packaged function
         shell: bash

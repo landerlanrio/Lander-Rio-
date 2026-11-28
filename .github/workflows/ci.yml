@@ -41,6 +41,8 @@ jobs:
         run: python3 scripts/verify_site.py
       - name: JavaScript syntax
         run: find site -name '*.js' -type f -print0 | xargs -0 -r -n1 node --check
+      - name: Verify workout registration recovery
+        run: node scripts/test_workout_registration_retry.mjs
       - name: TITAN Flagship structural and semantic regression tests
         run: python3 scripts/test_flagship.py
       - name: Binary, manifest tampering and complete-site metadata regression

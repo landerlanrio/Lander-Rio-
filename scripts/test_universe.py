@@ -3,6 +3,7 @@
 import json, re, hashlib, unittest
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
+from html import unescape
 from html.parser import HTMLParser
 from xml.etree import ElementTree as ET
 R=Path(__file__).resolve().parents[1]; S=R/'site'
@@ -25,6 +26,17 @@ class Universe(unittest.TestCase):
                     ids={b.get('id') for _,b in Doc(target.read_text()).tags}
                     if unquote(u.fragment) not in ids: errors.append((str(p.relative_to(S)),a['href']))
         self.assertEqual(errors,[])
+    def test_radar_is_reachable_from_the_editorial_hub_and_its_generator(self):
+        from build_editorial import hub
+        pages = {'rendered': (S/'conteudos/index.html').read_text(), 'generated': hub()}
+        for name, source in pages.items():
+            with self.subTest(source=name):
+                science = re.search(r'<section[^>]*id="ciencia"[^>]*>(.*?)</section>', source, re.S)
+                self.assertIsNotNone(science)
+                links = re.findall(r'<a href="/radar-performance/">(.*?)</a>', science[1], re.S)
+                self.assertEqual(len(links), 1)
+                self.assertIn('Radar Performance', re.sub(r'<[^>]+>', '', links[0]))
+
     def test_indexable_sitemap_matches_robots_and_canonical(self):
         ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
         urls=[e.text for e in ET.parse(S/'sitemap.xml').findall('.//s:loc',ns)]
@@ -56,6 +68,43 @@ class Universe(unittest.TestCase):
             self.assertEqual(crumb[-1]['item'],url)
             self.assertEqual([c['position'] for c in crumb],list(range(1,len(crumb)+1)))
             self.assertFalse(any(n['@type'] in ('Product','Offer','AggregateRating') for n in nodes))
+    def test_caderno_article_matches_the_visible_headline_and_sources(self):
+        entries = sorted((S / 'enciclopedia/cadernos').glob('*/index.html'))
+        self.assertTrue(entries)
+        for entry in entries:
+            with self.subTest(entry=entry.parent.name):
+                source = entry.read_text()
+                schema = re.search(r'<script type="application/ld\+json">(.*?)</script>', source, re.S)
+                nodes = json.loads(schema[1])['@graph']
+                page, = [node for node in nodes if node['@type'] == 'WebPage']
+                articles = [node for node in nodes if node['@type'] == 'Article']
+                self.assertEqual(len(articles), 1)
+                article = articles[0]
+                self.assertEqual(page['mainEntity'], {'@id': article['@id']})
+                self.assertEqual(article['mainEntityOfPage'], {'@id': page['@id']})
+                self.assertNotEqual(article['@id'], page['@id'])
+                headline = re.search(r'<h1[^>]*>(.*?)</h1>', source, re.S)[1]
+                self.assertEqual(article['headline'], unescape(re.sub(r'<[^>]+>', '', headline)))
+                references = re.search(r'<section class="sources">(.*?)</section>', source, re.S)[1]
+                urls = [attrs['href'] for tag, attrs in Doc(references).tags if tag == 'a']
+                self.assertTrue(urls)
+                self.assertEqual(article['citation'], urls)
+
+    def test_encyclopedia_hubs_are_websites_for_social_sharing(self):
+        expected = {'index.html': 'CollectionPage', 'cadernos/index.html': 'CollectionPage',
+                    'metodologia/index.html': 'AboutPage'}
+        for filename, kind in expected.items():
+            with self.subTest(page=filename):
+                source = (S / 'enciclopedia' / filename).read_text()
+                tags = [a['content'] for t, a in Doc(source).tags
+                        if t == 'meta' and a.get('property') == 'og:type']
+                self.assertEqual(tags, ['website'])
+                scripts = re.findall(r'<script type="application/ld\+json">(.*?)</script>', source, re.S)
+                types = {node['@type'] for data in map(json.loads, scripts)
+                         for node in data.get('@graph', [data])}
+                self.assertIn(kind, types)
+                self.assertNotIn('Article', types)
+
     def test_approved_hero_photo_title_and_destinations_are_preserved(self):
         fixture=R/'docs/fixtures/rc9-approved-home.html'
         self.assertEqual(hashlib.sha256(fixture.read_bytes()).hexdigest(),'a9392ff31ec63f2542ab431af452ee36c796699c78dd2716fd889847bcd50618')

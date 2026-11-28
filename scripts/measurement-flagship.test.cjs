@@ -30,3 +30,34 @@ test('commercial saved event needs backend confirmation and strips contact field
  for(const k of ['email','name','receipt','origin','backend_confirmed'])assert.equal(Object.hasOwn(payload.properties,k),false);
  for(const denied of [harness('denied','landerrio.com.br','/varejo/'),harness('granted','landerrio.com.br','/marcas/life-peptideos/')])assert.equal(denied.api.push('commercial_request_saved',{backend_confirmed:true}),false);
 });
+
+test('production transport stamps the canonical host without disclosing the page URL', () => {
+ const host = 'landerrio.com.br';
+ const {api, sent, revoke} = harness('granted', host, '/varejo/');
+ api.push('commercial_request_saved', {
+  backend_confirmed: true,
+  $host: 'test.invalid',
+  $current_url: 'https://test.invalid/customer?name=nonpublic',
+  $referrer: 'https://test.invalid/referrer'
+ });
+ assert.deepEqual(sent.map(([, options]) => JSON.parse(options.body).event), ['site_visit', 'commercial_request_saved']);
+ for (const [, options] of sent) {
+  const {properties} = JSON.parse(options.body);
+  assert.equal(properties.$host, host);
+  assert.equal(Object.hasOwn(properties, '$current_url'), false);
+  assert.equal(Object.hasOwn(properties, '$referrer'), false);
+  assert.equal(options.referrerPolicy, 'no-referrer');
+ }
+ revoke();
+ assert.equal(api.push('site_visit'), false);
+ assert.equal(sent.length, 2);
+});
+
+test('preview and lookalike hosts never send events or claim production origin', () => {
+ for (const host of ['localhost', 'lander-rio-v8-preview.netlify.app', 'landerrio.com.br.test.invalid']) {
+  const {api, sent} = harness('granted', host);
+  api.push('cta_interaction', {$host: 'landerrio.com.br'});
+  assert.equal(sent.length, 0);
+  assert.ok(api.getSnapshot().every(event => !Object.hasOwn(event, '$host')));
+ }
+});

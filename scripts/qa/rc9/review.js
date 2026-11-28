@@ -25,5 +25,30 @@ await visit('/');const home=frame.contentDocument;r.push({name:'Comercial antes 
 const ctas=[...home.querySelectorAll('.lfx-hero-actions .hero-cta')].map(a=>a.getBoundingClientRect());r.push({name:'CTAs com áreas equivalentes e altura mínima 48',passed:ctas.length===2&&ctas.every(a=>a.height>=48)&&Math.abs(ctas[0].width-ctas[1].width)<1});
 const menu=home.querySelector('#site-menu');menu.querySelector('summary').click();r.push({name:'Menu abre',passed:menu.open});menu.querySelector('summary').dispatchEvent(new frame.contentWindow.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));r.push({name:'Menu fecha com Escape',passed:!menu.open});
 const hq=home.querySelector('#brand-query');hq.value='Gold';hq.dispatchEvent(new frame.contentWindow.Event('input',{bubbles:true}));r.push({name:'Home busca linhas Gold',passed:[...home.querySelectorAll('[data-brand-name]')].filter(e=>!e.hidden).length>0&&[...home.querySelectorAll('[data-brand-name]')].filter(e=>!e.hidden).length<14});
+const typeQuery=(input,value)=>{
+ input.value=value;
+ input.dispatchEvent(new frame.contentWindow.Event('input',{bubbles:true}));
+};
+const gallery=home.querySelector('.lfx-brands-navigation');
+typeQuery(hq,'marca inexistente');
+r.push({name:'Diretório sem resultados oculta a posição e desativa as setas',passed:gallery.hidden&&[...home.querySelectorAll('[data-brand-step]')].every(button=>button.disabled)});
+typeQuery(hq,'');
+r.push({name:'Limpar a busca restaura o progresso e as 14 marcas',passed:!gallery.hidden&&home.querySelectorAll('.lfx-brand-tile:not([hidden])').length===14});
+home.querySelector('.search-toggle').click();
+const siteQuery=home.querySelector('#site-query');
+for(const [phrase,paths] of [
+ ['orçamento',['/atacado/','/varejo/']],
+ ['orcamento revenda',['/atacado/']],
+ ['NUTRICAO',['/dieta/']],
+ ['dados pessoais',['/privacidade']],
+ ['termo inexistente',[]],
+]){
+ typeQuery(siteQuery,phrase);
+ const found=[...home.querySelectorAll('.search-links a:not([hidden])')].map(link=>link.getAttribute('href'));
+ r.push({name:'Busca do site por '+phrase,passed:JSON.stringify(found)===JSON.stringify(paths)});
+}
+typeQuery(siteQuery,'');
+r.push({name:'Busca vazia restaura todos os destinos',passed:!home.querySelector('.search-links a[hidden]')});
+home.querySelector('[data-search-close]').click();
 r.push({name:'Transparência acessível',passed:!!home.querySelector('footer a[href="/equipe/"]')&&!!home.querySelector('footer a[href="/politica-editorial/"]')});
 document.querySelector('#journeys').textContent=JSON.stringify({passed:r.every(x=>x.passed),results:r});status.textContent='Jornadas: '+(r.every(x=>x.passed)?'PASS':'FALHAS');await visit('/marcas/');}catch(e){status.textContent=e.message;document.querySelector('#journeys').textContent=JSON.stringify({error:e.message,results:r})}};

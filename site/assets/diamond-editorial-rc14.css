@@ -55,3 +55,17 @@
 
 .dg-scroll-hint{display:none}
 @media(max-width:700px){.dg-scroll-hint{display:block;color:#cbd8bc;font-size:12px;margin:22px 0 12px}}
+
+@font-face {
+  font-family: 'Diamond heading fallback';
+  src: local('Arial Bold'), local('Liberation Sans Bold');
+  font-weight: 700;
+  size-adjust: 76%;
+}
+
+@media (max-width: 600px) {
+  .brand-archive .dg-feature h2 {
+    font-family: 'Barlow Condensed', 'Arial Narrow', 'Diamond heading fallback', sans-serif;
+    overflow-wrap: anywhere;
+  }
+}

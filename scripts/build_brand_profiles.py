@@ -4,6 +4,7 @@
 This is explicit content preparation, not a test. It never changes image bytes.
 """
 import json, re
+from datetime import date
 from html import escape as e
 from html.parser import HTMLParser
 from pathlib import Path
@@ -11,6 +12,18 @@ ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'site'
 VERSION='digital-flagship-2026-rc6.3'
 DATE='2026-11-13'
+
+MONTHS_PT = ('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+             'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro')
+
+
+def review_date(value, short=False):
+    reviewed = date.fromisoformat(value)
+    month = MONTHS_PT[reviewed.month - 1]
+    if short:
+        return f'{reviewed.day} {month[:3]} {reviewed.year}'
+    return f'{reviewed.day} de {month} de {reviewed.year}'
+
 
 class Logos(HTMLParser):
     def __init__(self):super().__init__();self.items=[];self.active=None
@@ -144,8 +157,9 @@ def make_profile(b,index,items):
     h=head(title,description,f'/marcas/{slug}/')
     tags=''.join(f'<li>{e(x)}</li>' for x in b['lines'])
     action='Explorar produtos' if b['products'] else 'Ver situação do catálogo'
+    hero_cta = b.get('hero_cta', {'label': action, 'href': '#produtos'})
     h+=f'''<main id="conteudo"><nav class="ba-breadcrumb" aria-label="Caminho da página"><a href="/">Início</a><span aria-hidden="true">/</span><a href="/marcas/">Marcas</a><span aria-hidden="true">/</span><span aria-current="page">{e(name)}</span></nav>
-<section class="ba-hero" aria-labelledby="brand-title"><div class="ba-intro"><p class="ba-eyebrow">ARQUIVO DE MARCAS <span>{index+1:02d} / {len(items):02d}</span></p><h1 id="brand-title">{e(name)}</h1><p class="ba-focus">{e(b['focus'])}</p><a class="ba-action" href="#produtos">{action} <span aria-hidden="true">↓</span></a></div><figure class="ba-showcase">{picture(b)}<figcaption>IDENTIDADE / {e(name).upper()}</figcaption></figure></section>
+<section class="ba-hero" aria-labelledby="brand-title"><div class="ba-intro"><p class="ba-eyebrow">ARQUIVO DE MARCAS <span>{index+1:02d} / {len(items):02d}</span></p><h1 id="brand-title">{e(name)}</h1><p class="ba-focus">{e(b['focus'])}</p><a class="ba-action" href="{e(hero_cta['href'])}">{e(hero_cta['label'])} <span aria-hidden="true">↓</span></a></div><figure class="ba-showcase">{picture(b)}<figcaption>IDENTIDADE / {e(name).upper()}</figcaption></figure></section>
 <section class="ba-about" aria-labelledby="about-title"><div><p class="ba-eyebrow">01 / IDENTIDADE</p><h2 id="about-title">Sobre a marca.</h2></div><div><p>{e(b['about'])}</p><ul class="ba-tags" aria-label="Linhas da marca">{tags}</ul></div></section>
 <section class="ba-catalog" id="produtos" aria-labelledby="products-title"><div class="ba-section-head"><div><p class="ba-eyebrow">02 / PORTFÓLIO</p><h2 id="products-title">Linhas &amp; produtos.</h2></div><p>Uma seleção do catálogo publicado.<br>Referência editorial, sem indicação de estoque.</p></div>'''
     if b['products']:
@@ -159,7 +173,8 @@ def make_profile(b,index,items):
         h+=f'<div class="ba-pending"><h3>Catálogo em verificação</h3><p>{e(b["pending"])}</p></div>'
     if b.get('note'):h+=f'<p class="ba-context">{e(b["note"])}</p>'
     h+='''<p class="ba-editorial-note">Informação sobre portfólio não equivale a autorização de comercialização ou recomendação de uso. Medicamentos exigem avaliação profissional; compostos experimentais não devem ser tratados como medicamentos aprovados.</p></section>'''
-    h+=f'<section class="ba-sources" aria-labelledby="sources-title"><h2 id="sources-title">Fontes &amp; atualização</h2><p>Consulta editorial: <time datetime="{DATE}">13 de novembro de 2026</time>. Nomes e apresentações atribuídos às publicações abaixo; seleção não exaustiva.</p>'
+    reviewed_on = b.get('verified_on', DATE)
+    h+=f'<section class="ba-sources" aria-labelledby="sources-title"><h2 id="sources-title">Fontes &amp; atualização</h2><p>Consulta editorial: <time datetime="{reviewed_on}">{review_date(reviewed_on)}</time>. Nomes e apresentações atribuídos às publicações abaixo; seleção não exaustiva.</p>'
     if b['sources']:
         h+='<ol>'
         for i,s in enumerate(b['sources']):h+=f'<li id="fonte-{i+1}"><a href="{e(s["url"])}" target="_blank" rel="noopener noreferrer">{e(s["label"])} <span class="ba-sr">(abre em nova aba)</span><span aria-hidden="true">↗</span></a></li>'

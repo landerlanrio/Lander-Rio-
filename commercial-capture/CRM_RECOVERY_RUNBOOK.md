@@ -75,3 +75,14 @@ Esse RPC retorna HTTP 204 sem corpo no PostgREST. O adapter trata isso como suce
 A gravação, idempotência e recuperação foram demonstradas contra PostgreSQL/PostgREST reais em um ambiente local descartável; o adapter HubSpot foi exercitado com um stub em memória, sem qualquer requisição externa. O stub demonstrou CRM indisponível, commit com resposta perdida, reutilização do mesmo contato após retry e reutilização de contato já existente sem alterar seu nome. Isso não comprova que a restrição do HubSpot foi resolvida nem que uma sincronização real ocorreu.
 
 O ensaio também criou dois registros legados fictícios como canários no banco descartável: contagem e digest permaneceram iguais. Nenhuma tabela, registro ou credencial de produção foi consultado ou alterado para essa prova.
+
+## Conferir o responsável de um protocolo
+
+O operador acrescenta `assignment_status` quando finaliza o vínculo do contato. Para rever o mesmo protocolo após uma atribuição manual ou falha temporária, execute `node commercial-capture/operator.mjs verify-assignment LR-<32 dígitos hexadecimais maiúsculos>` no ambiente autorizado. A consulta lê o vínculo já salvo e a propriedade `hubspot_owner_id` do contato. Ela não reserva a fila, não chama o upsert e funciona com a sincronização de escrita desligada.
+
+- `assigned` confirma que o contato vinculado e não arquivado tinha um identificador de responsável no instante da leitura. O atendimento e o recebimento de mensagem exigem comprovação própria.
+- `unassigned` significa que o CRM devolveu o campo vazio. Siga a regra de distribuição da equipe e repita a consulta do mesmo protocolo.
+- `receipt_not_found` e `contact_not_linked` indicam que ainda não há vínculo consultável para aquele recibo.
+- Em `queue_access_denied` ou `crm_access_denied`, confira a permissão de leitura do sistema indicado. Em `queue_unavailable` ou `contact_unverified`, repita a consulta após verificar a disponibilidade. Esses resultados deixam a atribuição em aberto.
+
+A consulta usa o token de servidor do leitor da fila e a permissão de leitura de contatos do HubSpot. A observação sai no resultado do operador. O estado persistido `synced` continua comprovando exclusivamente o vínculo ao contato. A atribuição pode mudar após a consulta.

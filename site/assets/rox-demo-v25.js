@@ -3,6 +3,7 @@
 (()=>{'use strict';
 const root=document.querySelector('[data-rox-root]');if(!root)return;
 const launcher=root.querySelector('[data-rox-launcher]'),panel=root.querySelector('[data-rox-dialog]'),closer=root.querySelector('[data-rox-close]'),log=root.querySelector('[data-rox-log]'),form=root.querySelector('[data-rox-form]'),input=root.querySelector('[data-rox-input]'),quick=root.querySelector('[data-rox-quick]'),handoff=root.querySelector('[data-rox-handoff]');
+const openers=[launcher,...document.querySelectorAll('[data-rox-open]')];
 const WA='5521920043538',MAX=24;let turns=0,returnTo=launcher,history=[];
 const agent=window.LanderRoxAgentV3&&typeof window.LanderRoxAgentV3.agentTurnV3==='function'?window.LanderRoxAgentV3.agentTurnV3:null;
 const clean=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
@@ -95,7 +96,7 @@ async function ask(raw){
    append('Limite de demonstração atingido. Recarregue a página ou fale com a equipe pelo canal oficial.','rox');
  }
 }
-function setOpen(open){if(open){returnTo=document.activeElement||launcher;}panel.hidden=!open;launcher.setAttribute('aria-expanded',String(open));root.dataset.open=String(open);if(open){input.focus({preventScroll:true});window.LanderMeasurement?.push('rox_opened',{placement:'rox'});}else if(returnTo&&typeof returnTo.focus==='function')returnTo.focus({preventScroll:true});}
+function setOpen(open){if(open){returnTo=document.activeElement||launcher;}panel.hidden=!open;for(const opener of openers)opener.setAttribute('aria-expanded',String(open));root.dataset.open=String(open);if(open){input.focus({preventScroll:true});window.LanderMeasurement?.push('rox_opened',{placement:'rox'});}else if(returnTo&&typeof returnTo.focus==='function')returnTo.focus({preventScroll:true});}
 launcher.addEventListener('click',()=>setOpen(panel.hidden));closer.addEventListener('click',()=>setOpen(false));root.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden){e.preventDefault();setOpen(false)}});
 form.addEventListener('submit',e=>{e.preventDefault();ask(input.value);input.value='';if(!input.disabled)input.focus()});quick.addEventListener('click',e=>{const b=e.target.closest('button[data-question]');if(!b||b.disabled)return;ask(b.dataset.question)});
 const hero=document.querySelector('.v26-hero')||document.querySelector('.v25-hero');if(hero&&'IntersectionObserver'in window){new IntersectionObserver(([e])=>{root.dataset.pastHero=String(!e.isIntersecting&&e.boundingClientRect.bottom<0)}, {threshold:0}).observe(hero);}else root.dataset.pastHero='true';

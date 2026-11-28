@@ -34,15 +34,30 @@ leadForm.addEventListener('submit',async(e)=>{e.preventDefault();if(processing)r
  });const name=$('#training-lead-name'),phone=$('#training-lead-whatsapp'),email=$('#training-lead-email');name.value=name.value.trim().replace(/\s+/g,' ');email.value=email.value.trim().toLowerCase();
  if(name.value.length<2||name.value.length>100){gateError('Informe seu nome para continuar.',name);return;}
  const normalized=normalizePhone(phone.value);if(!normalized){gateError('Informe um WhatsApp válido com DDD (10 ou 11 dígitos).',phone);return;}
- if(!email.checkValidity()||email.value.length>160){gateError('Informe um e-mail válido.',email);return;}
+ const hasEmailDomain=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+ if(!email.checkValidity()||!hasEmailDomain||email.value.length>160){gateError('Informe um e-mail válido.',email);return;}
  if(!leadForm.elements.consent_access.checked){gateError('Leia e aceite a Política de Privacidade para liberar a ficha.',leadForm.elements.consent_access);return;}
  if(leadForm.elements.company.value.trim()){gateError('Não foi possível validar os dados de contato.');return;}
  const payload={name:name.value,email:email.value,whatsapp:normalized,consent_access:true,consent_marketing:leadForm.elements.consent_marketing.checked,source_page:location.pathname,...(window.LanderAccess?.getAttribution()||{})};const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),12000);processing=true;const button=$('#gate-unlock');
  const restoreSubmitFocus=document.activeElement===button;
  leadForm.setAttribute('aria-busy','true');
+ const contactInputs = Array.from(leadForm.querySelectorAll('input:not([type=hidden]):enabled'));
+ contactInputs.forEach(input => { input.disabled = true; });
  button.disabled=gateBack.disabled=true;button.textContent='Confirmando cadastro…';
- try{const response=await fetch('/api/workout/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'same-origin',signal:controller.signal});if(!response.ok)throw new Error('Não confirmado');const receipt=await response.json();if(receipt.ok!==true||typeof receipt.id!=='string'||!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(receipt.id))throw new Error('Cadastro sem confirmação válida');window.LanderAccess?.confirmed('training',true);try{localStorage.setItem(UNLOCK,JSON.stringify({v:19,since:Date.now()}));}catch{}reveal();}catch(err){gateError('Não conseguimos confirmar seu cadastro agora. Seus dados continuam preenchidos. Verifique a conexão e toque novamente em “Liberar minha ficha”.');}
+ try{
+  const response=await fetch('/api/workout/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'same-origin',signal:controller.signal});
+  if(response.status===400){
+   gateError('Não conseguimos confirmar seu cadastro. Seus dados continuam preenchidos. Revise o e-mail e o WhatsApp antes de tentar novamente.');
+   return;
+  }
+  if(!response.ok)throw new Error('Não confirmado');
+  const receipt=await response.json();if(receipt.ok!==true||typeof receipt.id!=='string'||!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(receipt.id))throw new Error('Cadastro sem confirmação válida');try{localStorage.setItem(UNLOCK,JSON.stringify({v:19,since:Date.now()}));}catch{}
+  // A confirmed registration remains valid if optional measurement fails.
+  try { window.LanderAccess?.confirmed('training', true); } catch {}
+  reveal();
+ }catch(err){gateError('Não conseguimos confirmar seu cadastro agora. Seus dados continuam preenchidos. Verifique a conexão e toque novamente em “Liberar minha ficha”.');}
  finally{clearTimeout(timer);processing=false;
+  contactInputs.forEach(input => { input.disabled = false; });
   leadForm.removeAttribute('aria-busy');
   button.disabled=gateBack.disabled=false;
   button.textContent='Liberar minha ficha';
@@ -68,4 +83,6 @@ function showSavedBanner(){const banner=$('#saved-resume');if(banner)banner.hidd
 function restore(){try{const v=JSON.parse(localStorage.getItem(STORAGE)||localStorage.getItem(LEGACY)||'null');if(!v||!v.profile)return;const p=E.validated(v.profile);showSavedBanner();Object.entries(p).forEach(([key,val])=>{if(key==='enfase'||key==='limitacao')return;const els=$$(`[name="${key}"]`);els.forEach(el=>{if(el.type==='radio')el.checked=String(el.value)===String(val);else el.value=val})});$$('input[name="enfase"]').forEach(el=>el.checked=p.enfase.includes(el.value));$('#limited').checked=p.limitacao;updateDivision();$('#focus-hint').textContent='Preferências anteriores recuperadas deste dispositivo.';if(!steps[0].querySelector('.tb-legacy-notice')){const banner=document.createElement('p');banner.className='tb-help tb-legacy-notice';banner.textContent='Preferências recuperadas neste aparelho. A nova ficha usa critérios de volume muscular, não limite de tempo.';steps[0].append(banner);}}catch(e){/* ignore malformed/local storage unavailable */}}
 $('#resume-btn').addEventListener('click',()=>{try{const v=JSON.parse(localStorage.getItem(STORAGE)||localStorage.getItem(LEGACY)||'null');if(!v||!v.profile)throw Error('Ficha não encontrada.');if(v.profile.limitacao){go(3);announce('Você informou uma restrição. Revise seu treino com um profissional antes de continuar.',true);return;}lastPlan=E.plan(v.profile);selectedDay=0;advance();if(!result.hidden)$('#result-feedback').textContent='Ficha anterior recuperada neste aparelho e atualizada com as regras atuais. Confira antes de treinar.';}catch(e){announce('Não foi possível recuperar a ficha. Gere uma nova.',true)}});
 restore();
+form.hidden = false;
+$('#planner-unavailable').hidden = true;
 })();

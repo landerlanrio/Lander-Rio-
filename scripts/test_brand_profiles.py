@@ -18,6 +18,26 @@ class Brands(unittest.TestCase):
             for a in links:
                 self.assertEqual(a['href'],'/marcas/'+a['data-brand']+'/')
                 self.assertTrue((SITE/a['href'].lstrip('/')/'index.html').is_file())
+    def test_indufar_lot_guidance_points_to_manufacturer(self):
+        from build_universe import profile
+
+        index = next(i for i, brand in enumerate(DATA) if brand['slug'] == 'indufar')
+        brand = DATA[index]
+        question = 'Como consultar a Indufar sobre um lote?'
+        urls = ('https://www.indufar.com.py/contacto', 'https://www.indufar.com.py/blog/62')
+        rendered = (SITE / 'marcas/indufar/index.html').read_text()
+        for page in (profile(brand, index, DATA), rendered):
+            self.assertIn(question, page)
+            for url in urls:
+                # Each source is linked directly in the guidance and listed in the bibliography.
+                self.assertEqual(sum(tag == 'a' and attrs.get('href') == url
+                                     for tag, attrs in Document(page).tags), 2)
+            graph = json.loads(re.search(r'<script type="application/ld\+json">(.+?)</script>',
+                                         page, re.S).group(1))['@graph']
+            self.assertEqual(graph[0]['dateModified'], brand['verified_on'])
+            self.assertIn(f'<time datetime="{brand["verified_on"]}">', page)
+            self.assertNotIn('wa.me', page)
+
     def test_all_original_routes_still_exist(self):
         original=json.loads((SITE/'manifest-v23-10.json').read_text())['files']
         for name in original:

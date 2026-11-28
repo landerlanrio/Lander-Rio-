@@ -7,7 +7,16 @@
  if(lowPower)document.documentElement.classList.add('low-motion');
  const menu=$('#site-menu'),summary=menu?.querySelector('summary');
  const dialog=$('#search-dialog'),open=$('.search-toggle'),query=$('#site-query');
- const filterSearch=()=>{const q=normalize(query.value);let count=0;$$('.search-links a').forEach(a=>{a.hidden=!normalize(a.textContent).includes(q);if(!a.hidden)count++;});$('.search-status').textContent=count?`${count} caminho${count===1?'':'s'} encontrado${count===1?'':'s'}.`:'Nenhum resultado. Tente outra palavra.';};
+ function filterSearch(){
+  const words=normalize(query.value).split(/\s+/).filter(Boolean);
+  let count=0;
+  for(const link of $$('.search-links a')){
+   const keywords=normalize(link.textContent+' '+(link.dataset.search||''));
+   link.hidden=!words.every(word=>keywords.includes(word));
+   if(!link.hidden)count++;
+  }
+  $('.search-status').textContent=count?`${count} caminho${count===1?'':'s'} encontrado${count===1?'':'s'}.`:'Nenhum resultado. Tente outra palavra.';
+ }
  open?.addEventListener('click',()=>{
   menu.open=false;
   dialog.showModal();
@@ -28,8 +37,12 @@
  const track=$('#brand-track'),progress=$('.lfx-brands-progress-track'),label=$('.lfx-brands-navigation>span');
  function updateGallery(){
   if(!track)return;const max=Math.max(0,track.scrollWidth-track.clientWidth),ratio=max?Math.min(1,Math.max(0,track.scrollLeft/max)):0;
-  const visible=$$('.lfx-brand-tile').filter(e=>!e.hidden),columns=Math.max(1,Math.ceil(visible.length/2));
-  progress?.setAttribute('aria-valuenow',String(Math.round(ratio*100)));if(progress?.firstElementChild)progress.firstElementChild.style.width=(max?Math.max(12,ratio*100):100)+'%';
+  const visible=$$('.lfx-brand-tile').filter(e=>!e.hidden),columns=Math.ceil(visible.length/2);
+  const navigation=$('.lfx-brands-navigation');
+  if(navigation)navigation.hidden=columns===0;
+  const percent=max?Math.round(ratio*100):(columns?100:0);
+  progress?.setAttribute('aria-valuenow',String(percent));
+  if(progress?.firstElementChild)progress.firstElementChild.style.width=(max?Math.max(12,percent):percent)+'%';
   if(label)label.textContent=`${String(Math.min(columns,1+Math.round(ratio*(columns-1)))).padStart(2,'0')} / ${String(columns).padStart(2,'0')}`;
   const prev=$('[data-brand-step="-1"]'),next=$('[data-brand-step="1"]');if(prev)prev.disabled=track.scrollLeft<=1;if(next)next.disabled=max-track.scrollLeft<=1;
  }

@@ -55,6 +55,7 @@ for(const form of document.querySelectorAll('[data-commercial-request]')){
  });
  // Expose the form only after JSON submission has a handler.
  form.hidden = false;
- form.closest('.commercial-request').querySelector('[data-request-fallback]').hidden = true;
+ const fallback = form.closest('.commercial-request')?.querySelector('[data-request-fallback]');
+ if (fallback) fallback.hidden = true;
 }
 })();

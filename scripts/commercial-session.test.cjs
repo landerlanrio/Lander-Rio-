@@ -1,6 +1,7 @@
 'use strict';
 const assert = require('node:assert/strict');
 const { readFileSync } = require('node:fs');
+const { createHash } = require('node:crypto');
 const path = require('node:path');
 const test = require('node:test');
 const vm = require('node:vm');
@@ -11,17 +12,17 @@ const originKey = 'lr_commercial_origin_v1';
 const requestKey = 'lr_commercial_request_id_varejo';
 const freshId = 'd9428888-122b-4dac-b544-4735d12fd496';
 
-function visit(url, entries = new Map()) {
+function visit(url, entries = new Map(), fallback = {}) {
   const { pathname, search } = new URL(url, 'https://landerrio.com.br');
   const html = readFileSync(path.join(site, pathname, 'index.html'), 'utf8');
   const form = {
     dataset: { profile: 'varejo' },
     querySelector: () => ({}),
     addEventListener() {},
-    closest: () => ({ querySelector: () => ({}) }),
+    closest: () => ({ querySelector: () => fallback }),
     hidden: true
   };
-  if (html.includes('src="/assets/commercial-request.js"')) {
+  if (/src="\/assets\/commercial-request\.js(?:\?v=[0-9a-f]{12})?"/.test(html)) {
     vm.runInNewContext(script, {
       location: { pathname, search }, URLSearchParams,
       crypto: { randomUUID: () => freshId },
@@ -62,4 +63,21 @@ test('replaces an unusable request ID and preserves a valid UUID for retry', () 
   const entries = new Map([[requestKey, original]]);
   visit('/varejo/', entries);
   assert.equal(entries.get(requestKey), original);
+});
+
+test('initializes on previously published HTML without the fallback element', () => {
+  const { form } = visit('/varejo/', new Map(), null);
+  assert.equal(form.hidden, false);
+});
+
+test('commercial entry pages reference the deployed bytes with a cache version', () => {
+  for (const extension of ['js', 'css']) {
+    const asset = 'assets/commercial-request.' + extension;
+    const hash = createHash('sha256').update(readFileSync(path.join(site, asset))).digest('hex').slice(0, 12);
+    const pages = extension === 'css' ? ['atacado', 'varejo'] : ['', 'atacado', 'varejo', 'contato', 'marcas'];
+    for (const page of pages) {
+      const html = readFileSync(path.join(site, page, 'index.html'), 'utf8');
+      assert.ok(html.includes('/' + asset + '?v=' + hash + '"'), page || '/');
+    }
+  }
 });
